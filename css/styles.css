@@ -23,8 +23,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease-in-out;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: background 0.5s ease-in-out;
 }
 
 header:hover {
@@ -38,7 +38,7 @@ header:hover {
     max-width: 1200px;
     margin: auto;
     padding: 0 20px;
-    transition: padding 0.3s ease-in-out;
+    transition: padding 0.5s ease-in-out;
 }
 
 .header-container:hover {
@@ -100,6 +100,12 @@ nav ul {
     padding: 0;
 }
 
+nav ul.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 nav ul li a {
     text-decoration: none;
     color: #333333;
@@ -125,6 +131,35 @@ nav ul li a:hover i {
     transform: scale(1.2);
 }
 
+/* Estilos específicos para dispositivos móviles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    padding: 10px;
+}
+
+.menu-toggle span {
+    background: #333;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Botón hamburguesa activo */
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
 
 /*Segmentos de productos
 OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
@@ -280,14 +315,29 @@ footer {
     width: 100%;
 }
 
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+}
+
+
 
 /* Ajustes específicos para pantallas pequeñas */
 @media (max-width: 600px) {
 
     .header-container {
-        flex-direction: column;
+        flex-direction: row;
         gap: 15px;
         text-align: center;
+    }
+
+    .menu-toggle{
+        display: flex;
     }
 
     .logo img {
@@ -304,8 +354,25 @@ footer {
     }
 
     nav ul {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: white;
+        width: 200px;
         flex-direction: column;
-        gap: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
     }
 
     header h1 {
@@ -340,7 +407,3 @@ footer {
     }
 
 }
-
-
-
-
