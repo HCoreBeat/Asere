@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Asere Online Shop</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/AsereBlanco.jpeg" alt="Logo">
+            </div>
+            <div class="slogan">
+                <h1>Asere</h1>
+                <p>¡Calidad que supera expectativas!</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li>
+                        <a href="#carrito">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+    <main>
+        <!-- Aquí irán los productos -->
+        <section id="productos">
+            <h2>Productos Disponibles</h2>
+
+            <div class="producto">
+                <div class="producto-img">
+                    <img src="img/Piña.jpg" alt="Producto 1">
+                </div>
+                <div class="producto-info">
+                    <p class="nombre">Producto 1</p>
+                    <p class="precio">$50</p>
+                    
+                    <div class="cantidad">
+                        <button class="btn-cantidad" onclick="decrementar('cantidad1')">-</button>
+                        <span id="cantidad1">1</span>
+                        <button class="btn-cantidad" onclick="incrementar('cantidad1')">+</button>
+                    </div>
+                    
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            
+            <div class="producto">
+                <div class="producto-img">
+                    <img src="img/Piña.jpg" alt="Producto 2">
+                </div>
+                <div class="producto-info">
+                    <p class="nombre">Producto 1</p>
+                    <p class="precio">$50</p>
+
+                    <div class="cantidad">
+                        <button class="btn-cantidad" onclick="decrementar('cantidad2')">-</button>
+                        <span id="cantidad2">1</span>
+                        <button class="btn-cantidad" onclick="incrementar('cantidad2')">+</button>
+                    </div>
+                    
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+                     
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Asere. Todos los derechos reservados.</p>
+    </footer>
+    <script src="Js/script.js"></script>
+</body>
+</html>
