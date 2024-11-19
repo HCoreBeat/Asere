@@ -4,9 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-root { --primary-color: #28a745; --secondary-color: #00967d; --text-color: #333; --bg-color: #f4f4f9; --transition-time: 0.3s; }
-
+root { --primary-color: #28a745; 
+      --secondary-color: #00967d; 
+      --text-color: #333; 
+      --bg-color: #f4f4f9; 
+      --transition-time: 0.3s; 
+}
 /* Fuente predeterminada */
 body { font-family: 'Roboto', sans-serif; 
     background-color: var(--bg-color); 
