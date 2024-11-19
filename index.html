@@ -12,11 +12,17 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="img/LogoVerde.svg"Logo">
+                <img src="img/LogoVerde.svg" alt="Logo">
             </div>
             <div class="slogan">
                 <h1>Asere</h1>
                 <p>La mejor calidad al alcance de tu mano</p>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Buscar Asere...">
+                <button id="search-button" aria-label="Buscar">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
             <nav>
                 <ul>
@@ -35,49 +41,61 @@
                 <span></span>
             </div>
         </div>
+        <div class="categorias">
+            <ul>
+                <!-- aqui el data-categoria es para poder identificar que categoria se esta
+                seleccionando, es muy importante que lo tenga para los productos-->
+                <li><a href="#" data-categoria="all"><i class="fas fa-bars"></i> Todos</a></li>
+                <li><a href="#" data-categoria="frutas">Frutas</a></li> 
+                <li><a href="#" data-categoria="verduras">Verduras</a></li>
+                <li><a href="#" data-categoria="bebidas">Bebidas</a></li>
+                <li><a href="#" data-categoria="lacteos">Lácteos</a></li>
+                <li><a href="#" data-categoria="snacks">Snacks</a></li> 
+                <li><a href="#" data-categoria="higiene">Higiene</a></li> 
+                <li><a href="#" data-categoria="ofertas">Ofertas</a></li>
+                <!-- Añade más categorías según sea necesario -->
+            </ul>
+        </div>
+        
     </header>
-    
     
     <main>
         <!-- Aquí irán los productos -->
         <section id="productos">
             <h2>Productos Disponibles</h2>
-
-            <div class="producto">
+            <!--IMPORTANTE el "data-nombre" es para poder identificar el producto en el buscador-->
+            <!-- el nombre "data-Categorias" es para poder identificar por categorias los productos-->
+            <div class="producto" data-nombre="Piña 1" data-categoria="frutas">
                 <div class="producto-img">
                     <img src="img/Piña.jpg" alt="Producto 1">
                 </div>
                 <div class="producto-info">
-                    <p class="nombre">Producto 1</p>
+                    <p class="nombre">Piña 1</p>
                     <p class="precio">$50</p>
-                    
                     <div class="cantidad">
                         <button class="btn-cantidad" onclick="decrementar('cantidad1')">-</button>
                         <span id="cantidad1">1</span>
                         <button class="btn-cantidad" onclick="incrementar('cantidad1')">+</button>
                     </div>
-                    
                     <button>Añadir al carrito</button>
                 </div>
             </div>
             
-            <div class="producto">
+            <div class="producto" data-nombre="Piña 2" data-categoria="frutas">
                 <div class="producto-img">
                     <img src="img/Piña.jpg" alt="Producto 2">
                 </div>
                 <div class="producto-info">
-                    <p class="nombre">Producto 1</p>
+                    <p class="nombre">Piña 2</p>
                     <p class="precio">$50</p>
-
                     <div class="cantidad">
                         <button class="btn-cantidad" onclick="decrementar('cantidad2')">-</button>
                         <span id="cantidad2">1</span>
                         <button class="btn-cantidad" onclick="incrementar('cantidad2')">+</button>
                     </div>
-                    
                     <button>Añadir al carrito</button>
                 </div>
-            </div>
+            </div>            
                      
         </section>
     </main>
