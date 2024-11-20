@@ -4,12 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 root { --primary-color: #28a745; 
-      --secondary-color: #00967d; 
-      --text-color: #333; 
-      --bg-color: #f4f4f9; 
-      --transition-time: 0.3s; 
+    --secondary-color: #00967d; 
+    --text-color: #333; 
+    --bg-color: #f4f4f9; 
+    --transition-time: 0.3s; 
 }
+
 /* Fuente predeterminada */
 body { font-family: 'Roboto', sans-serif; 
     background-color: var(--bg-color); 
@@ -19,7 +21,8 @@ body { font-family: 'Roboto', sans-serif;
     padding: 0; }
 
 /* define como se vera el header o la parte del medio*/
-header { background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%,
+header { 
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%,
      rgba(226, 226, 226, 0.5) 100%); 
      backdrop-filter: blur(10px); 
      color: var(--text-color); 
@@ -28,8 +31,9 @@ header { background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%,
      top: 0; 
      z-index: 1000; 
      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
-     transition: background var(--transition-time) ease-in-out; 
-    }
+     transition: background 0.5 ease-in-out; 
+     margin-bottom: 60px; /* Añadir margen inferior para espacio extra */
+}
 
 header:hover {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgb(185, 185, 185, 0.5) 100%);
@@ -42,12 +46,12 @@ header:hover {
     align-items: center;
     max-width: 1200px;
     margin: auto;
-    padding: 0 20px;
+    padding: 0 10px;
     transition: padding 0.5s ease-in-out;
 }
 
 .header-container:hover {
-    padding: 0 30px;
+    padding: 0 15px;
 }
 
 .logo img {
@@ -83,7 +87,7 @@ header:hover {
 
 .slogan p {
     font-size: 15px;
-    margin-top: 5px;
+    margin-top: 2px;
     color: #272727;
     font-style: italic;
     opacity: 0.8;
@@ -98,10 +102,10 @@ header:hover {
 .slogan:hover p {
     opacity: 1;
 }
+
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
     margin: 0;
     padding: 0;
 }
@@ -139,11 +143,12 @@ nav ul li a:hover i {
 
 /* Estilos específicos para dispositivos móviles */
 .menu-toggle {
-    display: none;
+    display: flex;
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
     padding: 10px;
+    z-index: 1001; /*por encima del menu*/
 }
 
 .menu-toggle span {
@@ -151,7 +156,12 @@ nav ul li a:hover i {
     height: 5px;
     width: 30px;
     border-radius: 3px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.5s ease;
+}
+
+/* Color blanco cuando el menú está activo */ 
+.menu-toggle.active span { 
+    background: #ffffff; 
 }
 
 /* Botón hamburguesa activo */
@@ -246,17 +256,20 @@ nav ul li a:hover i {
 
 /*Categorias*/
 .categorias {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    background-color: #00796B;
-    padding: 10px 0;
-    margin-top: 10px;
-    border-radius: 0 0 12px 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow-x: auto; /* Permite desplazamiento horizontal */
-    white-space: nowrap; /* Evita que las categorías se rompan en múltiples líneas */
-    scrollbar-width: thin; /* Para navegadores Firefox */
+    position: absolute; /* Posicionar de manera absoluta respecto al header */ 
+    top: 100%; /* Mover las categorías justo debajo del header */ 
+    left: 0; /* Alinear al borde izquierdo del header */ 
+    right: 0; /* Alinear al borde derecho del header */ 
+    display: flex; 
+    justify-content: start; 
+    align-items: center; 
+    background-color: #00796B; 
+    padding: 10px 0; 
+    border-radius: 0 0 12px 12px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    overflow-x: auto; /* Permite desplazamiento horizontal */ 
+    white-space: nowrap; /* Evita que las categorías se rompan en múltiples líneas */ 
+    scrollbar-width: thin; /* Para navegadores Firefox */ 
     scrollbar-color: #00796B #f4f4f9; /* Para navegadores Firefox */
 }
 
@@ -309,6 +322,10 @@ nav ul li a:hover i {
     color: #f4f4f9;
 }
 
+/* Especifica el color del icono de la categoría "Ofertas" */ 
+.categorias ul li a[data-categoria="ofertas"] i { 
+    color: #FFD700; /* Color dorado para el icono */ 
+}
 
 /*Segmentos de productos
 OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
@@ -469,8 +486,21 @@ footer {
         display: none;
     }
 
+    nav ul .header{
+        display: none;
+    }
+
     nav ul {
         display: flex;
+        gap: 15px;
+    }
+
+    nav ul .home-button{
+        display: none;
+    }
+
+    nav ul hr{
+        display: none;
     }
 }
 
@@ -509,24 +539,127 @@ footer {
         order: 1;
     }
 
+    /* Menú lateral */
     nav ul {
-        display: none;
-        position: absolute;
-        top: 70px;
-        right: 10px;
-        background: rgb(255, 255, 255);
-        width: 50%;
-        flex-direction: column;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        border-radius: 8px;
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-        transform: translateY(-30px);
-        opacity: 0;
-        align-items: center;
+        position: fixed;
+        top: 0;
+        left: -250px; /* Inicialmente oculto fuera de la vista */
+        width: 250px;
+        height: 100vh; /* Ocupa toda la altura de la pantalla */
+        background-color: #fff; /* Fondo blanco */
+        padding: 0; /* Reducir el padding */
+        list-style: none;
+        transition: left 0.3s ease;
+        overflow-y: auto; /* Permite el desplazamiento vertical */
+        z-index: 1001; /* Por encima de otros elementos */
+        display: flex;
+        flex-direction: column; /* Alinea los elementos en columna */
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el menú */
+        gap: 3px;
     }
 
+    nav ul .header{
+        width: 100%; /* Ocupa toda la anchura del contenedor */ 
+        height: 140px; /* Altura del encabezado */ 
+        font-size: 35px; /* Tamaño de fuente más grande */ 
+        font-weight: bold; 
+        padding: 10px; /* Ajustar padding */ 
+        background-color: #131921; 
+        color: #fff; 
+        display: flex; 
+        flex-direction: column; /* Permite la alineación del texto en columna */ 
+        justify-content: flex-end; /* Alinear el texto en la parte inferior */ 
+        border-radius: 0; /* Sin bordes redondeados */ 
+        box-sizing: border-box; /* Incluye padding y border en el tamaño total */ 
+        text-align: left;
+        margin-bottom: 0; /* Eliminar margen inferior */
+    }
+    nav ul .header > * { 
+        margin: 0; /* Sin margen en los hijos de .header */ 
+    }
+
+    /* Botón Inicio de Asere */ 
+    nav ul .home-button { 
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; /* Para que el icono se alinee a la derecha */ 
+        padding: 8px 15px; 
+        margin: 0; /* Espaciado vertical */ 
+        color: #333; /* Color del texto */ 
+        text-decoration: none; /* Sin subrayado */ 
+        border-radius: 0;
+        transition: background-color 0.3s ease, color 0.3s ease; 
+        font-weight: bold; /* Resaltar el texto */ 
+        font-size: 18px; /* Aumentar el tamaño de la fuente */ 
+        margin-top: 0;
+    } 
+    nav ul .home-button:hover { 
+        background-color: #f0f0f0; /* Color de fondo al pasar el cursor */ 
+        color: #00796B; /* Color del texto al pasar el cursor */ 
+    }
+
+    nav ul .header .subtitle { 
+        font-size: 18px; /* Tamaño de fuente para el subtítulo */ 
+        font-weight: normal; 
+        color: #e0e0e0; /* Color más claro para el subtítulo */ 
+        margin-bottom: 0; /* Sin margen inferior */
+        align-self: flex-start; /* Alinear el subtítulo en la parte superior */ 
+    }
+
+    nav ul li {
+        margin-bottom: 0px; /* Reducir aún más el espaciado entre los elementos */
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333; /* Color del texto */
+        font-size: 16px; /* Tamaño de fuente */
+        padding: 8px 15px; /* Ajustar el padding para un diseño más limpio */
+        border-radius: 0; /* Bordes redondeados */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+        display: block; /* Asegura que los enlaces ocupen toda la anchura del contenedor */
+        text-align: left; /* Alinear el texto a la izquierda */
+    }
+
+    nav ul li a:hover {
+        background-color: #f0f0f0; /* Fondo gris claro al pasar el cursor */
+        color: #00796B; /* Cambia el color al pasar el cursor */
+    }
+
+    /* Separador gris */ 
+    nav ul hr { 
+        width: 100%; 
+        border: none; 
+        border-top: 3px solid #ccc; 
+        margin: 10px 0; /* Margen superior e inferior para espaciado */ 
+    }
+
+    /* Mostrar el menú cuando está activo */
     nav ul.active {
+        left: 0; /* Mostrar el menú */
+    }
+
+    /* Fondo oscuro cuando el menú está activo */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.836); /* Fondo oscuro semi-transparente */
+        display: none; /* Oculto por defecto */
+        z-index: 1000; /* Justo debajo del menú */
+        pointer-events: none; /* Deshabilitar los eventos de clic */
+    }
+
+    .overlay.active {
+        display: block; /* Mostrar cuando esté activo */
+        pointer-events: auto; /* Habilitar los eventos de clic solo cuando esté activo */
+    }
+
+
+    nav ul.active {
+        left: 0;
         display: flex;
         opacity: 1;
         transform: translateY(0);
@@ -566,6 +699,7 @@ footer {
         align-items: center;
     }
 
+    /*--------------------Categorias----------------------------*/
     .categorias ul {
         gap: 5px;
     }
