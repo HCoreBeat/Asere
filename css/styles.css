@@ -188,7 +188,7 @@ nav ul li a:hover i {
     padding: 5px 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     flex-grow: 1;
-    max-width: 500px;
+    max-width: 450px;
     transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -472,14 +472,124 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 
 /* la parte de abajo de la pagina*/
 footer {
+    background-color: #212529;
+    color: #adb5bd;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px;
-    background-color: #343a40;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    font-size: 15px; /* Incrementar el tamaño de la fuente */
 }
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px; /* Mantener el ancho máximo */
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1 1 150px; /* Mantener el tamaño de los contenedores */
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.footer-section h2 {
+    margin-bottom: 8px;
+    font-size: 1.4em; /* Incrementar el tamaño de la fuente */
+    color: #f8f9fa;
+    text-transform: uppercase;
+    border-bottom: none; /* Asegurar que no haya líneas debajo del texto */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #adb5bd;
+    text-decoration: none; /* Eliminar subrayado */
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f8f9fa;
+    text-decoration: none; /* Asegurar que no haya subrayado al pasar el cursor */
+}
+
+.footer-section p {
+    color: #adb5bd;
+    margin: 0;
+    text-decoration: none; /* Asegurar que no haya subrayado */
+}
+
+.footer-section .social ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer-section .social ul li {
+    margin: 0 8px;
+}
+
+.footer-section .social ul li a {
+    font-size: 1.2em;
+    color: #adb5bd;
+    transition: color 0.3s;
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+.footer-section .social ul li a:hover {
+    color: #f8f9fa;
+    text-decoration: none; /* Asegurar que no haya subrayado al pasar el cursor */
+}
+
+.footer-bottom {
+    background-color: #1a1d21;
+    color: #adb5bd;
+    padding: 10px 0;
+    margin-top: 15px;
+    font-size: 0.9em; /* Incrementar el tamaño de la fuente */
+    text-decoration: none; /* Asegurar que no haya subrayado */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section h2 {
+        font-size: 1.2em; /* Incrementar el tamaño de la fuente */
+        text-decoration: none; /* Asegurar que no haya subrayado */
+    }
+
+    .footer-section ul li a {
+        font-size: 1em; /* Incrementar el tamaño de la fuente */
+        text-decoration: none; /* Asegurar que no haya subrayado */
+    }
+
+    .footer-section p, .footer-bottom {
+        font-size: 0.9em; /* Incrementar el tamaño de la fuente */
+        text-decoration: none; /* Asegurar que no haya subrayado */
+    }
+}
+
 
 @media (min-width: 768px) {
     .menu-toggle {
