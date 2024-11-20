@@ -44,7 +44,7 @@ header {
 
 header:hover {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgb(185, 185, 185, 0.5) 100%);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) grayscale(100%);
 }
 
 .header-container {
