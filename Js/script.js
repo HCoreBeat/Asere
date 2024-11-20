@@ -21,6 +21,8 @@ function decrementar(id) {
 document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.querySelector(".menu-toggle");
     const navMenu = document.querySelector("nav ul");
+    const overlay = document.querySelector(".overlay");
+    const homeButton = document.querySelector(".home-button");
     const searchInput = document.getElementById("search-input");
     const searchButton = document.getElementById("search-button");
     const products = document.querySelectorAll(".producto");
@@ -30,7 +32,22 @@ document.addEventListener("DOMContentLoaded", () => {
     menuToggle.addEventListener("click", () => {
         menuToggle.classList.toggle("active");
         navMenu.classList.toggle("active");
+        overlay.classList.toggle("active");
     });
+    
+    overlay.addEventListener("click", () => {
+        menuToggle.classList.remove("active");
+        navMenu.classList.remove("active");
+        overlay.classList.remove("active");
+    });
+    homeButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        menuToggle.classList.remove("active");
+        navMenu.classList.remove("active");
+        overlay.classList.remove("active");
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
 
     // Filtrar productos en tiempo real
     searchInput.addEventListener("input", filterProducts);
