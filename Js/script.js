@@ -40,14 +40,17 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     window.addEventListener("scroll", () => { 
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
-        if (scrollTop > lastScrollTop) { 
+        
+        if (scrollTop > lastScrollTop && scrollTop > 170) { 
             // Scroll hacia abajo 
             header.style.top = "-210px"; // Oculta el header 
         } else { 
             // Scroll hacia arriba 
             header.style.top = "0"; // Muestra el header 
         } 
-        lastScrollTop = scrollTop; });
+        // Mantener el header en posición fija después de dejar el inicio de la página 
+        lastScrollTop = scrollTop; 
+    });
 
     // Toggle menú
     menuToggle.addEventListener("click", () => {
