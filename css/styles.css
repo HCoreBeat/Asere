@@ -21,13 +21,15 @@ body {
     color: var(--text-color); 
     line-height: 1.6; 
     margin: 0; 
-    padding: 0; }
+    padding: 0; 
+    margin-top: 190px;
+}
 
 /* define como se vera el header o la parte del medio*/
 header { 
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%,
      rgba(226, 226, 226, 0.5) 100%); 
-     backdrop-filter: blur(10px); 
+     backdrop-filter: blur(10px) grayscale(100%);
      color: var(--text-color); 
      padding: 15px 0; 
      position: fixed; 
@@ -565,24 +567,6 @@ footer {
 }
 
 
-@media (max-width: 480px) {
-    .footer-section h2 {
-        font-size: 1.2em; /* Incrementar el tamaño de la fuente */
-        text-decoration: none; /* Asegurar que no haya subrayado */
-    }
-
-    .footer-section ul li a {
-        font-size: 1em; /* Incrementar el tamaño de la fuente */
-        text-decoration: none; /* Asegurar que no haya subrayado */
-    }
-
-    .footer-section p, .footer-bottom {
-        font-size: 0.9em; /* Incrementar el tamaño de la fuente */
-        text-decoration: none; /* Asegurar que no haya subrayado */
-    }
-}
-
-
 @media (min-width: 768px) {
     .menu-toggle {
         display: none;
@@ -666,7 +650,7 @@ footer {
         font-size: 35px; /* Tamaño de fuente más grande */ 
         font-weight: bold; 
         padding: 10px; /* Ajustar padding */ 
-        background-color: #00796B; 
+        background: linear-gradient(45deg,#00796B 0%, #00362f 100%);
         color: #fff; 
         display: flex; 
         flex-direction: column; /* Permite la alineación del texto en columna */ 
@@ -826,6 +810,7 @@ footer {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        margin-top: 200px;
     }
 
     #productos {
