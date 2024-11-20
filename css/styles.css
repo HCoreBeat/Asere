@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border-bottom: none;
+    text-decoration: none;
 }
 
 root { --primary-color: #28a745; 
@@ -13,7 +15,8 @@ root { --primary-color: #28a745;
 }
 
 /* Fuente predeterminada */
-body { font-family: 'Roboto', sans-serif; 
+body { 
+    font-family: 'Roboto', sans-serif; 
     background-color: var(--bg-color); 
     color: var(--text-color); 
     line-height: 1.6; 
@@ -27,12 +30,14 @@ header {
      backdrop-filter: blur(10px); 
      color: var(--text-color); 
      padding: 15px 0; 
-     position: sticky; 
+     position: fixed; 
+     width: 100%;
+     transition: top 0.3s ease-in-out; /* Transición suave */
      top: 0; 
      z-index: 1000; 
      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
      transition: background 0.5 ease-in-out; 
-     margin-bottom: 60px; /* Añadir margen inferior para espacio extra */
+     margin-bottom: 50px; /* Añadir margen inferior para espacio extra */
 }
 
 header:hover {
@@ -463,9 +468,6 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
     font-size: 16px;
 }
 
-
-
-
 .producto button:hover {
     background-color: #218838;
 }
@@ -499,7 +501,8 @@ footer {
     font-size: 1.4em; /* Incrementar el tamaño de la fuente */
     color: #f8f9fa;
     text-transform: uppercase;
-    border-bottom: none; /* Asegurar que no haya líneas debajo del texto */
+    border-bottom: none;  /* Asegurar que no haya líneas debajo del texto */
+    text-decoration: none;
 }
 
 .footer-section ul {
@@ -528,6 +531,7 @@ footer {
     margin: 0;
     text-decoration: none; /* Asegurar que no haya subrayado */
 }
+
 
 .footer-section .social ul {
     display: flex;
@@ -560,18 +564,6 @@ footer {
     text-decoration: none; /* Asegurar que no haya subrayado */
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-section {
-        max-width: 100%;
-        margin-bottom: 10px;
-    }
-}
 
 @media (max-width: 480px) {
     .footer-section h2 {
@@ -674,7 +666,7 @@ footer {
         font-size: 35px; /* Tamaño de fuente más grande */ 
         font-weight: bold; 
         padding: 10px; /* Ajustar padding */ 
-        background-color: #131921; 
+        background-color: #00796B; 
         color: #fff; 
         display: flex; 
         flex-direction: column; /* Permite la alineación del texto en columna */ 
@@ -845,5 +837,14 @@ footer {
     .producto {
         padding: 10px;
     }
+     /*--Footer--*/
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .footer-section {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
 }
