@@ -1,0 +1,164 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #343a40;
+    background-color: #f8f9fa;
+}
+
+/* Estilos para el header */
+/* Estilos para el header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(45deg,#60DC00 0%, #00796B 100%);
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .header-container {
+    display: flex;
+    justify-content: flex-start; /* Alineación a la izquierda */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 20px; /* Espacio entre el logo y el texto */
+}
+
+header .slogan {
+    display: flex;
+    flex-direction: column; /* Textos uno debajo del otro */
+    justify-content: center;
+}
+
+header .slogan h1 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+header .slogan p {
+    font-size: 0.9rem;
+    color: #e9ecef;
+    margin: 0;
+}
+
+/* Estilos para el main */
+main {
+    padding-top: 100px;
+}
+
+/* Estilos para la sección de políticas de privacidad */
+#politica {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    color: #343a40;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#politica:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Efecto de sombra al pasar el cursor */
+}
+
+#politica .container {
+    padding: 30px;
+}
+
+#politica h2, #politica h3 {
+    color: #00796B;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#politica h2::after, #politica h3::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #00796B;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 5px;
+}
+
+#politica p, #politica ul {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#politica ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#politica ul li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+    border-left: 2px solid #00796B;
+}
+
+#politica ul li::marker {
+    color: #00796B;
+}
+
+#politica a {
+    color: #00796B;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+#politica a:hover {
+    color: #004d40;
+    border-bottom: 2px solid #004d40; /* Efecto de subrayado al pasar el cursor */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #00796B;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); /* Sombra para mayor profundidad */
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-bottom a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #b2dfdb;
+}
+
+.footer-bottom::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #b2dfdb;
+    margin: 0 auto 10px auto;
+    border-radius: 5px;
+}
