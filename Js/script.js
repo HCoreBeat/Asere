@@ -28,17 +28,45 @@ document.addEventListener("DOMContentLoaded", () => {
     const products = document.querySelectorAll(".producto");
     const categoryLinks = document.querySelectorAll(".categorias ul li a");
 
+    let lastScrollTop = 0; 
+    const header = document.querySelector("header");
+    // Deshabilitar scroll 
+    const disableScroll = () => { 
+        document.body.style.overflow = "hidden"; 
+    };
+    // Habilitar scroll 
+    const enableScroll = () => { 
+        document.body.style.overflow = "auto"; 
+    };
+    window.addEventListener("scroll", () => { 
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
+        if (scrollTop > lastScrollTop) { 
+            // Scroll hacia abajo 
+            header.style.top = "-210px"; // Oculta el header 
+        } else { 
+            // Scroll hacia arriba 
+            header.style.top = "0"; // Muestra el header 
+        } 
+        lastScrollTop = scrollTop; });
+
     // Toggle menú
     menuToggle.addEventListener("click", () => {
         menuToggle.classList.toggle("active");
         navMenu.classList.toggle("active");
         overlay.classList.toggle("active");
+
+        if (overlay.classList.contains("active")) { 
+            disableScroll(); // Deshabilita el scroll cuando el overlay está activo 
+        } else { 
+            enableScroll(); // Habilita el scroll cuando el overlay no está activo 
+        }
     });
     
     overlay.addEventListener("click", () => {
         menuToggle.classList.remove("active");
         navMenu.classList.remove("active");
         overlay.classList.remove("active");
+        enableScroll(); // Habilita el scroll cuando se oculta el overlay
     });
     homeButton.addEventListener("click", (event) => {
         event.preventDefault();
@@ -48,6 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
+    
 
     // Filtrar productos en tiempo real
     searchInput.addEventListener("input", filterProducts);
