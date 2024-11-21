@@ -10,5 +10,11 @@
         "categoria": "frutas",
         "precio": 60,
         "imagen": "img/Piña.jpg"
-    }
+    }, 
+    {
+        "nombre": "Cerdo",
+        "categoria": "bebidas",
+        "precio": 1000,
+        "imagen": "img/Piña.jpg" 
+    } 
 ]
