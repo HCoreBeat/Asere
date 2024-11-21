@@ -35,7 +35,7 @@
                     <hr> <!-- Separador gris -->
                     <li><a href="#productos">Productos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#carrito"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#carrito">Carrito<i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
             </nav>
             <div class="menu-toggle">
@@ -46,8 +46,7 @@
         </div>
         <div class="categorias">
             <ul>
-                <!-- aqui el data-categoria es para poder identificar que categoria se esta
-                seleccionando, es muy importante que lo tenga para los productos-->
+                <!-- el data-categoria es para poder identificar que categoria se esta seleccionando -->
                 <li><a href="#" data-categoria="all"><i class="fas fa-bars"></i> Todos</a></li>
                 <li><a href="#" data-categoria="frutas">Frutas</a></li> 
                 <li><a href="#" data-categoria="verduras">Verduras</a></li>
@@ -55,11 +54,9 @@
                 <li><a href="#" data-categoria="lacteos">Lácteos</a></li>
                 <li><a href="#" data-categoria="snacks">Snacks</a></li> 
                 <li><a href="#" data-categoria="higiene">Higiene</a></li> 
-                <li><a href="#" data-categoria="ofertas"><i class="fas fa-tags"></i> Ofertas
-                <!-- Añade más categorías según sea necesario -->
+                <li><a href="#" data-categoria="ofertas"><i class="fas fa-tags"></i> Ofertas</a></li>
             </ul>
-        </div>
-        
+        </div>    
     </header>
     
     <main>
@@ -67,39 +64,8 @@
         <section id="productos">
             <h2>Productos Disponibles</h2>
             <!--IMPORTANTE el "data-nombre" es para poder identificar el producto en el buscador-->
-            <!-- el nombre "data-Categorias" es para poder identificar por categorias los productos-->
-            <div class="producto" data-nombre="Piña 1" data-categoria="frutas">
-                <div class="producto-img">
-                    <img src="img/Piña.jpg" alt="Producto 1">
-                </div>
-                <div class="producto-info">
-                    <p class="nombre">Piña 1</p>
-                    <p class="precio">$50</p>
-                    <div class="cantidad">
-                        <button class="btn-cantidad" onclick="decrementar('cantidad1')">-</button>
-                        <span id="cantidad1">1</span>
-                        <button class="btn-cantidad" onclick="incrementar('cantidad1')">+</button>
-                    </div>
-                    <button>Añadir al carrito</button>
-                </div>
-            </div>
-            
-            <div class="producto" data-nombre="Piña 2" data-categoria="frutas">
-                <div class="producto-img">
-                    <img src="img/Piña.jpg" alt="Producto 2">
-                </div>
-                <div class="producto-info">
-                    <p class="nombre">Piña 2</p>
-                    <p class="precio">$50</p>
-                    <div class="cantidad">
-                        <button class="btn-cantidad" onclick="decrementar('cantidad2')">-</button>
-                        <span id="cantidad2">1</span>
-                        <button class="btn-cantidad" onclick="incrementar('cantidad2')">+</button>
-                    </div>
-                    <button>Añadir al carrito</button>
-                </div>
-            </div>            
-                     
+            <!--Aqui no se pone nada porque todo es controlado por el Js para agregar productos cuantas veces quiera-->
+            <!-- el nombre "data-Categorias" es para poder identificar por categorias los productos--> 
         </section>
     </main>
     <footer>
