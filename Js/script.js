@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector("header");
     const currencyText = document.getElementById("currency-text");
     const currencyOptions = document.getElementById("currency-options");
+    const currencySelector = document.querySelector(".currency-selector");
     let lastScrollTop = 0;
     let currency = 'USD';
 
@@ -125,6 +126,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     pvprElem.innerHTML = pvprElem.innerHTML.replace('€', 'US$');
                 }
             });
+            // Ocultar el panel de opciones de moneda
+            currencyOptions.style.display = 'none';
         }
     });
 
