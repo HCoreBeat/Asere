@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector("header");
     const currencyText = document.getElementById("currency-text");
     const currencyOptions = document.getElementById("currency-options");
-    const currencySelector = document.querySelector(".currency-selector");
+    const toggleCurrencyButton = document.getElementById("toggle-currency");
     let lastScrollTop = 0;
     let currency = 'USD';
 
@@ -107,6 +107,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     // Funcionalidad de cambio de moneda
+    toggleCurrencyButton.addEventListener('click', () => {
+        currencyOptions.style.display = currencyOptions.style.display === 'block' ? 'none' : 'block';
+    });
+
     currencyOptions.addEventListener('click', (e) => {
         if (e.target.classList.contains('currency-option')) {
             currency = e.target.dataset.currency;
