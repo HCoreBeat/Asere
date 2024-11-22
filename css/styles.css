@@ -538,7 +538,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 }
 
 #toggle-currency {
-    background-color: #1b1b1b;
+    background-color: #4CAF50;
     color: white;
     border: none;
     padding: 8px 14px;
@@ -551,7 +551,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 }
 
 #toggle-currency:hover {
-    background-color: #2e2e2e; /* Color al pasar el ratón */
+    background-color: #45a049; /* Color al pasar el ratón */
 }
 
 #toggle-currency i {
@@ -586,10 +586,6 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 
 .currency-option:hover {
     background-color: #f1f1f1;
-}
-
-.currency-selector:hover .currency-options {
-    display: block;
 }
 
 
