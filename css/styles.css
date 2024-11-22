@@ -341,132 +341,233 @@ nav ul li a:hover i {
 
 /*Segmentos de productos
 OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
+/* Estilos generales de los productos */
 .producto {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden; /* Asegurar que los elementos se mantengan dentro de los bordes */
 }
 
 .producto:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.producto-img {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .producto-img img {
     max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    border-radius: 8px;
+}
 
+/* Estilos para las etiquetas de oferta y más vendidos */
+.etiqueta-segmento {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px; /* Reducir espacio entre etiquetas */
+    z-index: 3; /* Asegurar que se muestren por encima de todo */
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 3px 6px; /* Reducir tamaño */
+    font-size: 0.7rem; /* Tamaño reducido */
+    color: #fff;
+    border-radius: 3px;
+    background-color: #00796B; /* Verde pastel */
+}
+
+.etiqueta.oferta {
+    background-color: #CC0C39; /* Color para la etiqueta de oferta */
+}
+
+.badge.mas-vendido {
+    background-color: #00796B; /* Verde pastel */
+    color: #fff;
+    padding: 3px 6px; /* Reducir tamaño */
+    border-radius: 3px;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 100%, 0 100%);
 }
 
 .producto-info {
-    text-align: center;
+    text-align: left; /* Alinear texto a la izquierda */
+    width: 100%; /* Asegurar que ocupe todo el ancho */
+    padding: 0 10px;
 }
 
-.producto-info .nombre {
-    font-size: 18px;
+.nombre {
+    font-size: 20px; /* Tamaño aumentado para resaltar */
     font-weight: bold;
+    margin-top: 10px; /* Margen para separar del resto del contenido */
+    color: #000; /* Color negro */
+}
+
+.pvpr-precio-contenedor {
+    display: flex;
+    justify-content: flex-start; /* Alinear elementos a la izquierda */
+    align-items: center;
+    gap: 10px;
     margin-bottom: 10px;
 }
 
-.producto-info .precio {
-    font-size: 16px;
-    color: #28a745;
+.precio {
+    font-size: 24px; /* Tamaño aumentado para resaltar el número */
+    color: #000; /* Color negro */
     font-weight: bold;
-    margin-bottom: 15px;
 }
 
-
-.producto p {
-    flex-grow: 1;
-    font-size: 16px;
+.precio .currency {
+    font-size: 0.8em; /* Tamaño reducido para la moneda */
+    vertical-align: top; /* Posiciona la moneda arriba del número */
 }
 
-.producto button {
-    background: linear-gradient(90deg, #20c997, #28a745);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
+.pvpr {
+    font-size: 1rem; /* Tamaño aumentado */
+    color: #757575;
+    text-decoration: line-through;
+    margin: 0;
 }
 
-.producto button:hover {
-    background: linear-gradient(90deg, #218838, #17a2b8);
-    transform: translateY(-3px);
+.descuento {
+    font-size: 1rem; /* Tamaño aumentado */
+    color: #fff;
+    background-color: #CC0C39; /* Color rojo */
+    padding: 3px 6px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 5px; /* Mover el descuento encima */
+    text-decoration: none; /* Eliminar línea roja */
+}
+
+.cantidad-carrito-contenedor {
+    display: flex;
+    justify-content: space-between; /* Alinear elementos a ambos lados */
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
 }
 
 /*para agregar los productos en cuadriculas o en fila*/
 #productos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-    background-color: #f8f9fa;
-    padding: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    background-color: #f5f5f5;
+    padding: 20px;
     border-radius: 10px;
 }
-
 
 /*Para el valor de cantidad*/
 .cantidad {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Alinear a la izquierda */
     align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
+    gap: 5px;
+    margin-bottom: 10px;
 }
 
 .btn-cantidad {
-    width: 40px;
-    height: 40px;
+    width: 35px; /* Tamaño aumentado */
+    height: 35px; /* Tamaño aumentado */
     border: none;
     border-radius: 50%;
-    background-color: #28a745;
+    background-color: #00796B; /* Verde pastel */
     color: white;
-    font-size: 20px;
+    font-size: 18px; /* Tamaño aumentado */
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 .btn-cantidad:hover {
-    background-color: #218838;
+    background-color: #005f56; /* Verde oscuro */
 }
 
 .cantidad span {
-    font-size: 18px;
+    font-size: 18px; /* Tamaño aumentado */
     font-weight: bold;
     text-align: center;
-    width: 40px;
+    width: 35px; /* Tamaño aumentado */
     display: inline-block;
 }
 
-
-.cantidad label {
-    font-size: 16px;
-    margin-right: 10px;
-    font-weight: bold;
+/* Estilos para el botón de Añadir al Carrito */
+.currency-selector {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px; /* Separar del cuadro de búsqueda */
 }
 
-.cantidad-input {
-    width: 80px;
-    padding: 10px;
-    border: 2px solid #ddd;
+#toggle-currency {
+    background-color:#202020;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
     border-radius: 5px;
-    text-align: center;
-    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
 }
 
-.producto button:hover {
-    background-color: #218838;
+#toggle-currency:hover {
+    background-color: #333333; /* Color al pasar el ratón */
+}
+
+#toggle-currency i {
+    margin-right: 5px;
+}
+
+.currency-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* Centrando el panel */
+    background-color: #f9f9f9;
+    min-width: 200px; /* Aumentar el ancho del panel */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.currency-option {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.currency-option i {
+    margin-right: 8px;
+}
+
+.currency-option:hover {
+    background-color: #f1f1f1;
+}
+
+.currency-selector:hover .currency-options {
+    display: block;
 }
 
 /* la parte de abajo de la pagina*/
