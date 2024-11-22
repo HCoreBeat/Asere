@@ -24,15 +24,22 @@
                     <i class="fas fa-search"></i>
                 </button>
             </div>
+            <div class="currency-selector">
+                <button id="toggle-currency"><i class="fas fa-money-bill-wave"></i> <span id="currency-text">USD</span></button>
+                <div id="currency-options" class="currency-options">
+                    <div class="currency-option" data-currency="USD">Dólar (USD)</div>
+                    <div class="currency-option" data-currency="EUR">Euro (€)</div>
+                </div>
+            </div>
             <div class="overlay"></div>
             <nav>
                 <ul>
                     <li class="header">
-                        <div class="subtitle">Explora</div> <!-- Subtítulo añadido -->
-                        Asere <!-- Encabezado añadido -->
+                        <div class="subtitle">Explora</div>
+                        Asere
                     </li> 
                     <li><a href="#inicio" class="home-button">Inicio de Asere <i class="fas fa-home"></i></a></li>
-                    <hr> <!-- Separador gris -->
+                    <hr>
                     <li><a href="#productos">Productos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                     <li><a href="#carrito">Carrito<i class="fas fa-shopping-cart"></i></a></li>
@@ -46,33 +53,34 @@
         </div>
         <div class="categorias">
             <ul>
-                <!-- el data-categoria es para poder identificar que categoria se esta seleccionando -->
                 <li><a href="#" data-categoria="all"><i class="fas fa-bars"></i> Todos</a></li>
-                <li><a href="#" data-categoria="frutas">Frutas</a></li> 
-                <li><a href="#" data-categoria="verduras">Verduras</a></li>
-                <li><a href="#" data-categoria="bebidas">Bebidas</a></li>
-                <li><a href="#" data-categoria="lacteos">Lácteos</a></li>
-                <li><a href="#" data-categoria="snacks">Snacks</a></li> 
-                <li><a href="#" data-categoria="higiene">Higiene</a></li> 
                 <li><a href="#" data-categoria="ofertas"><i class="fas fa-tags"></i> Ofertas</a></li>
+                <li><a href="#" data-categoria="combos"><i class="fas fa-box"></i> Combos</a></li>
+                <li><a href="#" data-categoria="frutas"><i class="fas fa-apple-alt"></i> Frutas</a></li>
+                <li><a href="#" data-categoria="carnes"><i class="fas fa-drumstick-bite"></i> Cárnicos</a></li>
+                <li><a href="#" data-categoria="enlatados"><i class="fas fa-box-open"></i> Enlatados</a></li>
+                <li><a href="#" data-categoria="aderezos"><i class="fas fa-utensils"></i> Aderezos</a></li>
+                <li><a href="#" data-categoria="pastas-y-granos"><i class="fas fa-boxes"></i> Pastas & Granos</a></li>
+                <li><a href="#" data-categoria="lacteos"><i class="fas fa-cheese"></i> Lácteos</a></li>
+                <li><a href="#" data-categoria="confituras"><i class="fas fa-cookie"></i> Confituras</a></li>
+                <li><a href="#" data-categoria="bebidas"><i class="fas fa-coffee"></i> Bebidas</a></li>
+                <li><a href="#" data-categoria="alcohol"><i class="fas fa-wine-bottle"></i> Bebidas Alcohólicas</a></li>
+                <li><a href="#" data-categoria="cakes"><i class="fas fa-birthday-cake"></i> Cakes</a></li>
+                <li><a href="#" data-categoria="otros"><i class="fas fa-ellipsis-h"></i> Otros</a></li>
             </ul>
-        </div>    
+        </div>
     </header>
     
     <main>
-        <!-- Aquí irán los productos -->
         <section id="productos">
             <h2>Productos Disponibles</h2>
-            <!--IMPORTANTE el "data-nombre" es para poder identificar el producto en el buscador-->
-            <!--Aqui no se pone nada porque todo es controlado por el Js para agregar productos cuantas veces quiera-->
-            <!-- el nombre "data-Categorias" es para poder identificar por categorias los productos--> 
         </section>
     </main>
     <footer>
         <div class="footer-container">
             <div class="footer-section about">
                 <h2>Sobre Nosotros</h2>
-                <p>Somos una empresa dedicada a ofrecer los mejores productos y servicios a nuestros clientes. Nuestro compromiso es tu satisfacción.</p>
+                <p>Somos el puente que une a cada cubano en el mundo con sus seres queridos en la isla. Nos dedicamos a ofrecer los mejores productos y servicios a nuestros clientes, con un compromiso inquebrantable hacia su satisfacción.</p>
             </div>
             <div class="footer-section links">
                 <h2>Enlaces Rápidos</h2>
@@ -106,6 +114,6 @@
         </div>
     </footer>
     <script src="Js/script.js"></script>
+    <script src="Js/iconos-categorias.js"></script>
 </body>
 </html>
-
