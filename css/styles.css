@@ -509,6 +509,28 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 }
 
 /* Estilos para el botón de Añadir al Carrito */
+.btn-carrito {
+    background: #00796B; /* Verde pastel */
+    color: white;
+    padding: 10px 20px; /* Tamaño aumentado */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px; /* Tamaño aumentado */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-carrito:hover {
+    background: #005f56; /* Verde oscuro */
+}
+
+.btn-carrito:active {
+    transform: translateY(0);
+}
+
+
+/*--------Panel de cambio de monedas------
+------------------------------------------*/
 .currency-selector {
     position: relative;
     display: inline-block;
@@ -516,7 +538,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 }
 
 #toggle-currency {
-    background-color:#202020;
+    background-color: #1b1b1b;
     color: white;
     border: none;
     padding: 8px 14px;
@@ -529,7 +551,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 }
 
 #toggle-currency:hover {
-    background-color: #333333; /* Color al pasar el ratón */
+    background-color: #2e2e2e; /* Color al pasar el ratón */
 }
 
 #toggle-currency i {
@@ -569,6 +591,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 .currency-selector:hover .currency-options {
     display: block;
 }
+
 
 /* la parte de abajo de la pagina*/
 footer {
