@@ -3,15 +3,17 @@ let carrito = [];
 function agregarAlCarrito(nombre, precio, cantidadId) {
     const cantidadElem = document.getElementById(cantidadId);
     const cantidad = parseInt(cantidadElem.textContent);
-    const productoExistente = carrito.find(item => item.nombre === nombre);
+    if (!isNaN(cantidad) && cantidad > 0) {
+        const productoExistente = carrito.find(item => item.nombre === nombre);
 
-    if (productoExistente) {
-        productoExistente.cantidad += cantidad;
-    } else {
-        carrito.push({ nombre, precio, cantidad });
+        if (productoExistente) {
+            productoExistente.cantidad += cantidad;
+        } else {
+            carrito.push({ nombre, precio, cantidad });
+        }
+
+        actualizarCarrito();
     }
-
-    actualizarCarrito();
 }
 
 function actualizarCarrito() {
@@ -34,8 +36,11 @@ function actualizarCarrito() {
             const productoDiv = document.createElement('div');
             productoDiv.className = 'carrito-producto';
             productoDiv.innerHTML = `
-                <span>${producto.nombre}</span>
-                <span>${producto.cantidad} x $${producto.precio}</span>
+                <div>
+                    <img src="img/producto.png" alt="${producto.nombre}">
+                    <span>${producto.nombre}</span>
+                </div>
+                <span>${producto.cantidad} x $${producto.precio.toFixed(2)}</span>
                 <button onclick="eliminarDelCarrito('${producto.nombre}')">Eliminar</button>
             `;
             carritoContainer.appendChild(productoDiv);
@@ -60,3 +65,9 @@ function ocultarCarrito() {
     document.getElementById('carrito').style.display = 'none';
     document.getElementById('productos').style.display = 'block';
 }
+
+// Exponer funciones globalmente si es necesario
+window.agregarAlCarrito = agregarAlCarrito;
+window.eliminarDelCarrito = eliminarDelCarrito;
+window.mostrarCarrito = mostrarCarrito;
+window.ocultarCarrito = ocultarCarrito;
