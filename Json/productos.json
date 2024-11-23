@@ -16,6 +16,15 @@
         "oferta": true,
         "mas_vendido": true,
         "imagen": "img/Piña.jpg"
+    },
+    {
+        "nombre": "Piña 2",
+        "categoria": "frutas",
+        "precio": 45,
+        "descuento": 15,
+        "oferta": true,
+        "mas_vendido": true,
+        "imagen": "img/Piña.jpg"
     }
 ]
 
