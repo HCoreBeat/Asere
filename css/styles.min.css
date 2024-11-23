@@ -705,6 +705,93 @@ footer {
     }
 }
 
+/*----------Panel del carrito--------------
+-----------------------------------------*/
+/* Estilo para el contenedor del carrito */
+#carrito {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#carrito h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.carrito-producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.carrito-producto span {
+    font-size: 16px;
+    color: #555;
+}
+
+.carrito-producto button {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carrito-producto button:hover {
+    background-color: #ff1a1a;
+}
+
+#total-container {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+#carrito-vacio {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#carrito-vacio img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+#carrito-vacio p {
+    font-size: 16px;
+    color: #888;
+}
+
+button#regresar {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#regresar:hover {
+    background-color: #45a049;
+}
+
+
 
 
 /* Ajustes específicos para pantallas pequeñas */
