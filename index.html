@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.min.css"> <!-- Utilizando archivo CSS minificado -->
     <title>Asere Online Shop</title>
 </head>
 <body>
@@ -27,8 +27,8 @@
             <div class="currency-selector">
                 <button id="toggle-currency"><i class="fas fa-money-bill-wave"></i> <span id="currency-text">USD</span></button>
                 <div id="currency-options" class="currency-options">
-                    <div class="currency-option" data-currency="USD">Dólar (USD)</div>
-                    <div class="currency-option" data-currency="EUR">Euro (€)</div>
+                    <div class="currency-option" data-currency="USD"><i class="fas fa-dollar-sign"></i> Dólar US$</div>
+                    <div class="currency-option" data-currency="EUR"><i class="fas fa-euro-sign"></i> Euro €</div>
                 </div>
             </div>
             <div class="overlay"></div>
@@ -42,7 +42,7 @@
                     <hr>
                     <li><a href="#productos">Productos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#carrito">Carrito<i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#carrito" onclick="mostrarCarrito()">Carrito<i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
             </nav>
             <div class="menu-toggle">
@@ -75,6 +75,20 @@
         <section id="productos">
             <h2>Productos Disponibles</h2>
         </section>
+        <section id="carrito" style="display: none;">
+            <h2>Tu Carrito de Compras</h2>
+            <button id="regresar" onclick="ocultarCarrito()">Regresar</button>
+            <div id="carrito-container">
+                <div id="carrito-vacio">
+                    <img src="img/empty-cart.png" alt="Carrito vacío">
+                    <p>Tu carrito de Asere no tiene nada aún.</p>
+                </div>
+            </div>
+            <div id="total-container" style="display: none;">
+                <p>Total: <span id="total">0</span></p>
+            </div>
+        </section>
+        
     </main>
     <footer>
         <div class="footer-container">
@@ -113,7 +127,7 @@
             &copy; 2024 Asere y afiliados H.A | Diseñado por H.A
         </div>
     </footer>
-    <script src="Js/script.js"></script>
-    <script src="Js/iconos-categorias.js"></script>
+    <script src="Js/script.min.js" defer></script> <!-- Utilizando archivo JS minificado y diferido -->
+    <script src="Js/carrito.js" defer></script> <!-- Nuevo archivo JS para carrito -->
 </body>
 </html>
