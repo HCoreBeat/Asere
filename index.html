@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -43,6 +44,13 @@
                     <li><a href="#productos">Productos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                     <li><a href="#carrito" onclick="mostrarCarrito()">Carrito<i class="fas fa-shopping-cart"></i></a></li>
+                    <div class="language-selector">
+                        <select id="language-select">
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                        </select>
+                    </div>
+                    
                 </ul>
             </nav>
             <div class="menu-toggle">
@@ -84,10 +92,11 @@
                     <p>Tu carrito de Asere no tiene nada aún.</p>
                 </div>
             </div>
-            <div id="total-container" style="display: none;">
-                <p>Total: <span id="total">0</span></p>
+            <div class="carrito-total">
+                <p>Total: <span id="carrito-total">0</span></p>
             </div>
-        </section>       
+            <button id="checkout-button" class="checkout-button">Proceder al Pago</button>
+        </section>   
     </main>
     <footer>
         <div class="footer-container">
@@ -126,7 +135,6 @@
             &copy; 2024 Asere y afiliados H.A | Diseñado por H.A
         </div>
     </footer>
-    <script src="Js/carrito.js" defer></script> <!-- Nuevo archivo JS para carrito -->
     <script src="Js/script.min.js" defer></script> <!-- Utilizando archivo JS minificado y diferido -->
 </body>
 </html>
