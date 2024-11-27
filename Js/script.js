@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", () => {
             slides.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
     
-        setInterval(showNextSlide, 5000); // Cambiado a 5000 ms para reducir la velocidad
+        setInterval(showNextSlide, 5000); // Reducir la velocidad del slider a 5000 ms (5 segundos)
 });
     
 
