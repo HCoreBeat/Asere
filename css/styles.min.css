@@ -22,7 +22,7 @@ body {
     line-height: 1.6; 
     margin: 0; 
     padding: 0; 
-    margin-top: 190px;
+    margin-top: 130px;
 }
 
 /* define como se vera el header o la parte del medio*/
@@ -342,6 +342,55 @@ nav ul li a:hover i {
 /*Segmentos de productos
 OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 /* Estilos generales de los productos */
+
+/*---------Los slider de promocion---------------------
+------------------------------------------------------*/
+.slider {
+    position: relative;
+    width: 100%;
+    height: 220px; /* Tamaño ajustado del slider */
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: 220px; /* Ajustado para coincidir con la altura del slider */
+    object-fit: cover;
+}
+
+.slider::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 110px; /* Altura del difuminado ajustada */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%);
+}
+
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        margin-bottom: 20px;
+    }
+}
+
+/*-----Para los productos-----------
+--------------------------------*/
 .producto {
     display: flex;
     flex-direction: column;
@@ -374,16 +423,21 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 }
 
 /* Estilos para las etiquetas de oferta y más vendidos */
-.etiqueta-segmento {
+.cart-count {
+    background-color: #ff0000;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 12px;
     position: absolute;
-    top: 5px;
-    left: 5px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2px; /* Reducir espacio entre etiquetas */
-    z-index: 3; /* Asegurar que se muestren por encima de todo */
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    min-width: 20px; /* Asegura que sea un círculo */
+    height: 20px;
 }
+
 
 .etiqueta {
     display: inline-block;
@@ -472,6 +526,8 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 10px;
+    margin-top: -60px;
+    z-index: 2;
 }
 
 /*Para el valor de cantidad*/
@@ -517,6 +573,10 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
     border-radius: 5px;
     font-size: 16px; /* Tamaño aumentado */
     cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
@@ -708,6 +768,23 @@ footer {
 /*----------Panel del carrito--------------
 -----------------------------------------*/
 /* Estilo para el contenedor del carrito */
+.cart-count {
+    position: absolute; /* Ahora se posicionará en relación a #nav-cart */
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-top: -40px;
+    margin-left: 10px;
+    padding: 2px 6px; /* Ajusta para un tamaño más pequeño o grande */
+    min-width: 18px; /* Garantiza que siempre sea visible */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    z-index: 10; /* Asegura que quede sobre otros elementos */
+}
+
 .carrito-marcador {
     background-color: #f0c14b;
     color: #111;
@@ -926,7 +1003,6 @@ footer {
 
 /* Carrito vacío */
 #carrito-vacio {
-    display: flex;
     align-items: center;
     justify-content: start; /* Imagen a la izquierda */
     gap: 20px;
@@ -950,7 +1026,7 @@ footer {
 }
 
 /* Sección del total */
-.carrito-total {
+.carrito_total {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -961,13 +1037,13 @@ footer {
     margin-top: 10px;
 }
 
-.carrito-total p {
+.carrito_total p {
     font-size: 1.2em;
     margin: 0;
     color: #2f4632;
 }
 
-.carrito-total span {
+.carrito_total span {
     font-size: 1.4em;
     font-weight: bold;
     color: #e76f51; /* Naranja pastel */
@@ -1013,6 +1089,42 @@ footer {
 .animacion-carrito {
     animation: agregarAlCarrito 0.5s forwards;
 }
+
+/*------Selector de lenguaje-------------
+----------------------------------------*/
+.language-selector {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#language-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #00796B; /* Cambia el color del borde */
+    border-radius: 8px;
+    padding: 6px 20px 6px 12px; /* Ajuste del padding para tamaño compacto */
+    font-size: 12px; /* Reducir el tamaño de la fuente */
+    cursor: pointer;
+    background-color: #00796B; /* Fondo con color personalizado */
+    background-image: linear-gradient(45deg, #004D40 0%, #00251A 100%), url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140"><path fill="white" d="M70 98.5L18 46.5 22.5 42 70 89.5 117.5 42 122 46.5z"/></svg>'); /* Fondo degradado y flecha */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    color: #fff; /* Color del texto blanco */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transición suave para cambios de estado */
+}
+
+#language-select:hover {
+    border-color: #004D40; /* Color del borde al pasar el cursor */
+}
+
+#language-select:focus {
+    outline: none;
+    border-color: #004D40; /* Color del borde al enfocar */
+    box-shadow: 0 0 8px rgba(0, 121, 107, 0.5); /* Sombra para indicar foco */
+}
+
 
 
 /* Responsivo */
@@ -1258,7 +1370,7 @@ footer {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        margin-top: 200px;
+        margin-top: 150px;
     }
 
     #productos {
