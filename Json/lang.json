@@ -1,0 +1,220 @@
+{
+    "es": {
+      "header": {
+        "slogan": "La mejor calidad al alcance de tu mano",
+        "search_placeholder": "Buscar Asere...",
+        "currency_usd": "USD",
+        "currency_eur": "EUR",
+        "nav": {
+          "home": "Inicio de Asere",
+          "products": "Productos",
+          "contact": "Contacto",
+          "cart": "Carrito"
+        }
+      },
+      "categories": {
+        "all": "Todos",
+        "offers": "Ofertas",
+        "combos": "Combos",
+        "fruits": "Frutas",
+        "meats": "Cárnicos",
+        "canned": "Enlatados",
+        "dressings": "Aderezos",
+        "pasta_grains": "Pastas & Granos",
+        "dairy": "Lácteos",
+        "confectionery": "Confituras",
+        "drinks": "Bebidas",
+        "alcohol": "Bebidas Alcohólicas",
+        "cakes": "Cakes",
+        "others": "Otros"
+      },
+      "productos": {
+        "oferta": "Oferta",
+        "mas_vendido": "Más Vendido",
+        "agregar_al_carrito": "Añadir al carrito"
+      },
+      "cart": {
+        "title": "Tu Carrito de Compras",
+        "empty": "Tu carrito de Asere no tiene nada aún.",
+        "total": "Total:",
+        "checkout": "Proceder al Pago",
+        "back": "Regresar"
+      },
+      "footer": {
+        "about_us": "Sobre Nosotros",
+        "quick_links": "Enlaces Rápidos",
+        "f_products": "Productos",
+        "contact": "Contacto",
+        "f_cart":"Carrito",
+        "f_contact":"Contacto",
+        "follow_us": "Síguenos",
+        "privacy_policy": "Política de Privacidad",
+        "terms_conditions": "Condiciones de Uso",
+        "about_text": "Somos el puente que une a cada cubano en el mundo con sus seres queridos en la isla. Nos dedicamos a ofrecer los mejores productos y servicios a nuestros clientes, con un compromiso inquebrantable hacia su satisfacción."
+      }
+    },
+    "en": {
+      "header": {
+        "slogan": "The best quality at your fingertips",
+        "search_placeholder": "Search Asere...",
+        "currency_usd": "USD",
+        "currency_eur": "EUR",
+        "nav": {
+          "home": "Home",
+          "products": "Products",
+          "contact": "Contact",
+          "cart": "Cart"
+        }
+      },
+      "categories": {
+        "all": "All",
+        "offers": "Offers",
+        "combos": "Combos",
+        "fruits": "Fruits",
+        "meats": "Meats",
+        "canned": "Canned",
+        "dressings": "Dressings",
+        "pasta_grains": "Pasta & Grains",
+        "dairy": "Dairy",
+        "confectionery": "Confectionery",
+        "drinks": "Drinks",
+        "alcohol": "Alcoholic Drinks",
+        "cakes": "Cakes",
+        "others": "Others"
+      },
+      "productos": { 
+        "oferta": "Offer", 
+        "mas_vendido": "Best Selling", 
+        "agregar_al_carrito": "Add to Cart"
+      },
+      "cart": {
+        "title": "Your Shopping Cart",
+        "empty": "Your Asere cart is still empty.",
+        "total": "Total:",
+        "checkout": "Proceed to Checkout",
+        "back": "Go Back"
+      },
+      "footer": {
+        "about_us": "About Us",
+        "quick_links": "Quick Links",
+        "f_products": "Products",
+        "contact": "Contact",
+        "f_cart":"Cart",
+        "follow_us": "Follow Us",
+        "privacy_policy": "Privacy Policy",
+        "terms_conditions": "Terms and Conditions",
+        "about_text": "We are the bridge that connects every Cuban in the world with their loved ones on the island. We are dedicated to offering the best products and services to our customers, with an unwavering commitment to their satisfaction."
+      }
+    },
+    "de": {
+      "header": {
+        "slogan": "Die beste Qualität in Ihren Händen",
+        "search_placeholder": "Suche Asere...",
+        "currency_usd": "USD",
+        "currency_eur": "EUR",
+        "nav": {
+          "home": "Startseite",
+          "products": "Produkte",
+          "contact": "Kontakt",
+          "cart": "Warenkorb"
+        }
+      },
+      "categories": {
+        "all": "Alle",
+        "offers": "Angebote",
+        "combos": "Combos",
+        "fruits": "Obst",
+        "meats": "Fleisch",
+        "canned": "Dosen",
+        "dressings": "Dressings",
+        "pasta_grains": "Pasta & Getreide",
+        "dairy": "Molkereiprodukte",
+        "confectionery": "Süßwaren",
+        "drinks": "Getränke",
+        "alcohol": "Alkoholische Getränke",
+        "cakes": "Kuchen",
+        "others": "Andere"
+      },
+      "productos": { 
+        "oferta": "Angebot", 
+        "mas_vendido": "Bestseller", 
+        "agregar_al_carrito": "In den Einkaufswagen"
+      },
+      "cart": {
+        "title": "Ihr Einkaufswagen",
+        "empty": "Ihr Asere-Warenkorb ist noch leer.",
+        "total": "Gesamt:",
+        "checkout": "Zur Kasse",
+        "back": "Zurück"
+      },
+      "footer": {
+        "about_us": "Über Uns",
+        "quick_links": "Schnelle Links",
+        "f_products": "Produkte",
+        "contact": "Kontakt",
+        "f_cart":"Warenkorb",
+        "f_contact": "Kontakt",
+        "follow_us": "Folgen Sie uns",
+        "privacy_policy": "Datenschutz-Bestimmungen",
+        "terms_conditions": "Geschäftsbedingungen",
+        "about_text": "Wir sind die Brücke, die jeden Kubaner in der Welt mit seinen Lieben auf der Insel verbindet. Wir bieten unseren Kunden die besten Produkte und Dienstleistungen mit einem unerschütterlichen Engagement für ihre Zufriedenheit."
+      }
+    },
+
+    "it": {
+    "header": {
+      "slogan": "La migliore qualità a portata di mano",
+      "search_placeholder": "Cerca Asere...",
+      "currency_usd": "USD",
+      "currency_eur": "EUR",
+      "nav": {
+        "home": "Home di Asere",
+        "products": "Prodotti",
+        "contact": "Contatti",
+        "cart": "Carrello"
+      }
+    },
+    "categories": {
+      "all": "Tutti",
+      "offers": "Offerte",
+      "combos": "Combinazioni",
+      "fruits": "Frutta",
+      "meats": "Carne",
+      "canned": "Conserve",
+      "dressings": "Condimenti",
+      "pasta_grains": "Pasta & Cereali",
+      "dairy": "Latticini",
+      "confectionery": "Dolci",
+      "drinks": "Bevande",
+      "alcohol": "Bevande alcoliche",
+      "cakes": "Torte",
+      "others": "Altri"
+    },
+    "productos": {
+      "oferta": "Offerta",
+      "mas_vendido": "Più Venduto",
+      "agregar_al_carrito": "Aggiungi al Carrello"
+    },
+    "cart": {
+      "title": "Il tuo Carrello",
+      "empty": "Il tuo carrello Asere è vuoto.",
+      "total": "Totale:",
+      "checkout": "Procedi al pagamento",
+      "back": "Indietro"
+    },
+    "footer": {
+      "about_us": "Chi siamo",
+      "quick_links": "Link Veloci",
+      "f_products": "Prodotti",
+      "contact": "Contatti",
+      "f_cart": "Carrello",
+      "f_contact": "Contatti",
+      "follow_us": "Seguici",
+      "privacy_policy": "Politica sulla Privacy",
+      "terms_conditions": "Termini e Condizioni",
+      "about_text": "Siamo il ponte che unisce ogni cubano nel mondo con i propri cari sull'isola. Ci dedichiamo a offrire i migliori prodotti e servizi ai nostri clienti, con un impegno incrollabile verso la loro soddisfazione."
+    }
+  }
+}
+
+  
