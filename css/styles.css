@@ -350,6 +350,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
     width: 100%;
     height: 300px; /* Reducir la altura del slider */
     overflow: hidden;
+    display: block;
 }
 
 .slides {
