@@ -22,7 +22,7 @@ body {
     line-height: 1.6; 
     margin: 0; 
     padding: 0; 
-    margin-top: 130px;
+    margin-top: 170px;
 }
 
 /* define como se vera el header o la parte del medio*/
@@ -348,13 +348,13 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 .slider {
     position: relative;
     width: 100%;
-    height: 220px; /* Tamaño ajustado del slider */
+    height: 200px; /* Reducir la altura del slider */
     overflow: hidden;
 }
 
 .slides {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.8s ease-in-out; /* Hacer la transición más suave */
 }
 
 .slide {
@@ -364,7 +364,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 
 .slide img {
     width: 100%;
-    height: 220px; /* Ajustado para coincidir con la altura del slider */
+    height: 200px; /* Ajustar para coincidir con la nueva altura del slider */
     object-fit: cover;
 }
 
@@ -374,8 +374,8 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 110px; /* Altura del difuminado ajustada */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%);
+    height: 100px; /* Altura del difuminado ajustada */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.5) 100%); /* Difuminado más suave */
 }
 
 @media (max-width: 768px) {
@@ -388,7 +388,6 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
         margin-bottom: 20px;
     }
 }
-
 /*-----Para los productos-----------
 --------------------------------*/
 .producto {
