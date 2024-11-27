@@ -18,7 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const productosButton = document.querySelector("nav ul li a[href='#productos']");
 
     let locales = {};
-    let currentLang = "es"; // Idioma por defecto
+    let productos = [];
+    let currentLang = 'es'; // Idioma por defecto
+    let productosRenderizados = false;
+
     let lastScrollTop = 0;
     let currency = 'USD';
 
@@ -34,130 +37,156 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.style.overflow = "auto";
     };
 
-    // Función para renderizar productos
-    function renderProductos(lang) {
-        productosContainer.innerHTML = ''; // Limpiar productos actuales
+    function removeDuplicates(productos) {
+        const uniqueProductos = [];
+        const productoNames = new Set();
+    
+        productos.forEach(producto => {
+            if (!productoNames.has(producto.nombre)) {
+                productoNames.add(producto.nombre);
+                uniqueProductos.push(producto);
+            }
+        });
+    
+        return uniqueProductos;
+    }
+    
 
+    function limpiarProductosContainer() {
+        while (productosContainer.firstChild) {
+            productosContainer.removeChild(productosContainer.firstChild);
+        }
+    }
+    
+    function renderProductos(lang) {
+        limpiarProductosContainer(); // Limpiar productos actuales
+    
+        // Eliminar productos duplicados
+        const productosUnicos = removeDuplicates(productos);
+    
         console.log('Renderizando productos en idioma:', lang);
         console.log('Locales:', locales);
-
-        fetch('Json/productos.json')
-            .then(response => response.json())
-            .then(productos => {
-                if (!locales[lang] || !locales[lang].productos) {
-                    console.error(`No se encontró el objeto 'productos' para el idioma '${lang}'`);
-                    console.log('locales[lang]:', locales[lang]);
-                    console.log('locales[lang].productos:', locales[lang]?.productos);
-                    return;
-                }
-                productos.forEach(producto => {
-                    const productoDiv = document.createElement("div");
-                    productoDiv.className = "producto";
-                    productoDiv.dataset.nombre = producto.nombre;
-                    productoDiv.dataset.categoria = producto.categoria;
-
-                    let precio = producto.precio;
-                    let pvpr = producto.pvpr;
-                    let descuento = '';
-
-                    if (producto.oferta) {
-                        pvpr = producto.precio;
-                        precio = (producto.precio - (producto.precio * (producto.descuento / 100))).toFixed(2);
-                        descuento = `<p class="descuento" style="text-decoration: none;">-${producto.descuento}%</p>`;
-                    }
-
-                    const pvprHtml = producto.oferta ? `<p class="pvpr">PVPR: US$<s>${pvpr}</s></p>` : '';
-
-                    const etiquetaOferta = producto.oferta ? `<span class="etiqueta oferta producto-oferta">${locales[lang].productos.oferta}</span>` : '';
-                    const etiquetaMasVendido = producto.mas_vendido ? `<div class="badge mas-vendido producto-masvendido">${locales[lang].productos.mas_vendido}</div>` : '';
-
-                    productoDiv.innerHTML = `
-                        <div class="producto-contenedor">
-                            <div class="etiqueta-segmento">
-                                ${etiquetaMasVendido}
-                                ${etiquetaOferta}
-                            </div>
-                            <div class="producto-img">
-                                <img src="${producto.imagen}" alt="${producto.nombre}">
-                            </div>
-                            <div class="producto-info">
-                                <div class="pvpr-precio-contenedor">
-                                    <p class="precio"><span class="currency">US$</span>${precio}</p>
-                                    ${pvprHtml}
-                                </div>
-                                ${descuento}
-                                <div class="cantidad-carrito-contenedor">
-                                    <div class="cantidad">
-                                        <button class="btn-cantidad" onclick="decrementar('cantidad${producto.nombre.replace(/\s+/g, '')}')">-</button>
-                                        <span id="cantidad${producto.nombre.replace(/\s+/g, '')}">1</span>
-                                        <button class="btn-cantidad" onclick="incrementar('cantidad${producto.nombre.replace(/\s+/g, '')}')">+</button>
-                                    </div>
-                                    <button class="btn-carrito boton-agregarcarrito" onclick="agregarAlCarrito('${producto.nombre}', ${precio}, 'cantidad${producto.nombre.replace(/\s+/g, '')}', '${producto.imagen}', this)">${locales[lang].productos.agregar_al_carrito}</button>
-                                </div>
-                                <p class="nombre">${producto.nombre}</p>
-                            </div>
+    
+        productosUnicos.forEach(producto => {
+            const productoDiv = document.createElement("div");
+            productoDiv.className = "producto";
+            productoDiv.dataset.nombre = producto.nombre;
+            productoDiv.dataset.categoria = producto.categoria;
+    
+            let precio = producto.precio;
+            let pvpr = producto.pvpr;
+            let descuento = '';
+    
+            if (producto.oferta) {
+                pvpr = producto.precio;
+                precio = (producto.precio - (producto.precio * (producto.descuento / 100))).toFixed(2);
+                descuento = `<p class="descuento" style="text-decoration: none;">-${producto.descuento}%</p>`;
+            }
+    
+            const pvprHtml = producto.oferta ? `<p class="pvpr">PVPR: US$<s>${pvpr}</s></p>` : '';
+    
+            const etiquetaOferta = producto.oferta ? `<span class="etiqueta oferta producto-oferta">${locales[lang].productos.oferta}</span>` : '';
+            const etiquetaMasVendido = producto.mas_vendido ? `<div class="badge mas-vendido producto-masvendido">${locales[lang].productos.mas_vendido}</div>` : '';
+    
+            productoDiv.innerHTML = `
+                <div class="producto-contenedor">
+                    <div class="etiqueta-segmento">
+                        ${etiquetaMasVendido}
+                        ${etiquetaOferta}
+                    </div>
+                    <div class="producto-img">
+                        <img src="${producto.imagen}" alt="${producto.nombre}">
+                    </div>
+                    <div class="producto-info">
+                        <div class="pvpr-precio-contenedor">
+                            <p class="precio"><span class="currency">US$</span>${precio}</p>
+                            ${pvprHtml}
                         </div>
-                    `;
-
-                    productosContainer.appendChild(productoDiv);
+                        ${descuento}
+                        <div class="cantidad-carrito-contenedor">
+                            <div class="cantidad">
+                                <button class="btn-cantidad" onclick="decrementar('cantidad${producto.nombre.replace(/\s+/g, '')}')">-</button>
+                                <span id="cantidad${producto.nombre.replace(/\s+/g, '')}">1</span>
+                                <button class="btn-cantidad" onclick="incrementar('cantidad${producto.nombre.replace(/\s+/g, '')}')">+</button>
+                            </div>
+                            <button class="btn-carrito boton-agregarcarrito" onclick="agregarAlCarrito('${producto.nombre}', ${precio}, 'cantidad${producto.nombre.replace(/\s+/g, '')}', '${producto.imagen}', this)">${locales[lang].productos.agregar_al_carrito}</button>
+                        </div>
+                        <p class="nombre">${producto.nombre}</p>
+                    </div>
+                </div>
+            `;
+    
+            productosContainer.appendChild(productoDiv);
+        });
+    
+        // Filtrar productos por categoría
+        document.querySelectorAll(".categorias ul li a").forEach(link => {
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+                const category = link.getAttribute("data-categoria");
+    
+                document.querySelectorAll(".producto").forEach(producto => {
+                    if (category === "ofertas" && producto.dataset.categoria !== "ofertas" && !producto.querySelector('.etiqueta.oferta')) {
+                        producto.style.display = "none";
+                    } else if (producto.getAttribute("data-categoria") === category || category === "all" || (category === "ofertas" && producto.querySelector('.etiqueta.oferta'))) {
+                        producto.style.display = "block";
+                    } else {
+                        producto.style.display = "none";
+                    }
                 });
-
-                // Filtrar productos por categoría
-                document.querySelectorAll(".categorias ul li a").forEach(link => {
-                    link.addEventListener("click", (e) => {
-                        e.preventDefault();
-                        const category = link.getAttribute("data-categoria");
-
-                        document.querySelectorAll(".producto").forEach(producto => {
-                            if (category === "ofertas" && producto.dataset.categoria !== "ofertas" && !producto.querySelector('.etiqueta.oferta')) {
-                                producto.style.display = "none";
-                            } else if (producto.getAttribute("data-categoria") === category || category === "all" || (category === "ofertas" && producto.querySelector('.etiqueta.oferta'))) {
-                                producto.style.display = "block";
-                            } else {
-                                producto.style.display = "none";
-                            }
-                        });
-
-                        // Ocultar el carrito al seleccionar una categoría
-                        ocultarCarrito();
-                    });
-                });
-
-                // Filtrar productos en tiempo real
-                searchInput.addEventListener("input", filterProducts);
-                searchButton.addEventListener("click", filterProducts);
-
-                function filterProducts() {
-                    const searchValue = searchInput.value.toLowerCase();
-
-                    productos.forEach(producto => {
-                        const productName = producto.nombre.toLowerCase();
-                        const productElement = document.querySelector(`.producto[data-nombre="${producto.nombre}"]`);
-                        if (productName.includes(searchValue)) {
-                            productElement.style.display = "block";
-                        } else {
-                            productElement.style.display = "none";
-                        }
-                    });
+    
+                // Ocultar el carrito al seleccionar una categoría
+                ocultarCarrito();
+            });
+        });
+    
+        // Filtrar productos en tiempo real
+        searchInput.addEventListener("input", filterProducts);
+        searchButton.addEventListener("click", filterProducts);
+    
+        function filterProducts() {
+            const searchValue = searchInput.value.toLowerCase();
+    
+            productosUnicos.forEach(producto => {
+                const productName = producto.nombre.toLowerCase();
+                const productElement = document.querySelector(`.producto[data-nombre="${producto.nombre}"]`);
+                if (productName.includes(searchValue)) {
+                    productElement.style.display = "block";
+                } else {
+                    productElement.style.display = "none";
                 }
             });
+        }
+    
+        productosRenderizados = true; // Marcar que los productos han sido renderizados
+        currentLang = lang; // Actualizar el idioma actual
     }
-
+    
     // Fetch de traducciones
     fetch("Json/lang.json")
-        .then(response => response.json())
-        .then(data => {
-            locales = data;
-            console.log('Traducciones cargadas:', locales);
-            // Renderizar productos al cargar la página
-            renderProductos(currentLang);
-        });
+    .then(response => response.json())
+    .then(data => {
+        locales = data;
+        console.log('Traducciones cargadas:', locales);
+
+        // Fetch de productos
+        fetch('Json/productos.json')
+            .then(response => response.json())
+            .then(data => {
+                productos = data;
+                console.log('Productos cargados:', productos);
+                // Renderizar productos al cargar la página
+                renderProductos(currentLang);
+            });
+    });
 
     // Escuchar el evento de cambio de idioma y traducir productos
     document.addEventListener('languageChanged', (event) => {
-        const lang = event.detail.lang;
-        renderProductos(lang);
+    const lang = event.detail.lang;
+    renderProductos(lang);
     });
+
+    
 
 
 // Funcionalidad de cambio de moneda
