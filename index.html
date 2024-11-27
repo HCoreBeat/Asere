@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.min.css"> <!-- Utilizando archivo CSS minificado -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Utilizando archivo CSS minificado -->
     <title>Asere Online Shop</title>
 </head>
 <body>
@@ -17,7 +16,7 @@
             </div>
             <div class="slogan">
                 <h1>Asere</h1>
-                <p>La mejor calidad al alcance de tu mano</p>
+                <p id="slogan">La mejor calidad al alcance de tu mano</p>
             </div>
             <div class="search-bar">
                 <input type="text" id="search-input" placeholder="Buscar Asere...">
@@ -26,7 +25,7 @@
                 </button>
             </div>
             <div class="currency-selector">
-                <button id="toggle-currency"><i class="fas fa-money-bill-wave"></i> <span id="currency-text">USD</span></button>
+                <button id="toggle-currency"><span id="currency-text">USD</span></button>
                 <div id="currency-options" class="currency-options">
                     <div class="currency-option" data-currency="USD"><i class="fas fa-dollar-sign"></i> Dólar US$</div>
                     <div class="currency-option" data-currency="EUR"><i class="fas fa-euro-sign"></i> Euro €</div>
@@ -39,18 +38,25 @@
                         <div class="subtitle">Explora</div>
                         Asere
                     </li> 
-                    <li><a href="#inicio" class="home-button">Inicio de Asere <i class="fas fa-home"></i></a></li>
+                    <li><a href="#inicio" class="home-button" id="nav-home"><i class="fas fa-home"></i> Inicio de Asere</a></li>
                     <hr>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#carrito" onclick="mostrarCarrito()">Carrito<i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#productos" id="nav-products">Productos</a></li>
+                    <li><a href="#contacto" id="nav-contact">Contacto</a></li>
+                    <li>
+                        <a href="#carrito" onclick="mostrarCarrito()" id="nav-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Carrito
+                        </a>
+                        <div id="cart-count" class="cart-count">0</div>
+                    </li>                    
                     <div class="language-selector">
                         <select id="language-select">
                             <option value="es">Español</option>
                             <option value="en">English</option>
+                            <option value="de">Deutsch</option>
+                            <option value="it">Italiano</option>
                         </select>
                     </div>
-                    
                 </ul>
             </nav>
             <div class="menu-toggle">
@@ -61,61 +67,70 @@
         </div>
         <div class="categorias">
             <ul>
-                <li><a href="#" data-categoria="all"><i class="fas fa-bars"></i> Todos</a></li>
-                <li><a href="#" data-categoria="ofertas"><i class="fas fa-tags"></i> Ofertas</a></li>
-                <li><a href="#" data-categoria="combos"><i class="fas fa-box"></i> Combos</a></li>
-                <li><a href="#" data-categoria="frutas"><i class="fas fa-apple-alt"></i> Frutas</a></li>
-                <li><a href="#" data-categoria="carnes"><i class="fas fa-drumstick-bite"></i> Cárnicos</a></li>
-                <li><a href="#" data-categoria="enlatados"><i class="fas fa-box-open"></i> Enlatados</a></li>
-                <li><a href="#" data-categoria="aderezos"><i class="fas fa-utensils"></i> Aderezos</a></li>
-                <li><a href="#" data-categoria="pastas-y-granos"><i class="fas fa-boxes"></i> Pastas & Granos</a></li>
-                <li><a href="#" data-categoria="lacteos"><i class="fas fa-cheese"></i> Lácteos</a></li>
-                <li><a href="#" data-categoria="confituras"><i class="fas fa-cookie"></i> Confituras</a></li>
-                <li><a href="#" data-categoria="bebidas"><i class="fas fa-coffee"></i> Bebidas</a></li>
-                <li><a href="#" data-categoria="alcohol"><i class="fas fa-wine-bottle"></i> Bebidas Alcohólicas</a></li>
-                <li><a href="#" data-categoria="cakes"><i class="fas fa-birthday-cake"></i> Cakes</a></li>
-                <li><a href="#" data-categoria="otros"><i class="fas fa-ellipsis-h"></i> Otros</a></li>
+                <li><a href="#" data-categoria="all" id="cat-all"><i class="fas fa-bars"></i> <span>Todos</span></a></li>
+                <li><a href="#" data-categoria="ofertas" id="cat-offers"><i class="fas fa-tags"></i> <span>Ofertas</span></a></li>
+                <li><a href="#" data-categoria="combos" id="cat-combos"><i class="fas fa-box"></i> <span>Combos</a></li>
+                <li><a href="#" data-categoria="frutas" id="cat-fruits"><i class="fas fa-apple-alt"></i> <span>Frutas</span></a></li>
+                <li><a href="#" data-categoria="carnes" id="cat-meats"><i class="fas fa-drumstick-bite"></i> <span>Cárnicos</span></a></li>
+                <li><a href="#" data-categoria="enlatados" id="cat-canned"><i class="fas fa-box-open"></i> <span>Enlatados</span></a></li>
+                <li><a href="#" data-categoria="aderezos" id="cat-dressings"><i class="fas fa-utensils"></i> <span>Aderezos</span></a></li>
+                <li><a href="#" data-categoria="pastas-y-granos" id="cat-pasta_grains"><i class="fas fa-boxes"></i> <span>Pastas & Granos</span></a></li>
+                <li><a href="#" data-categoria="lacteos" id="cat-dairy"><i class="fas fa-cheese"></i> <span>Lácteos</span></a></li>
+                <li><a href="#" data-categoria="confituras" id="cat-confectionery"><i class="fas fa-cookie"></i> <span>Confituras</span></a></li>
+                <li><a href="#" data-categoria="bebidas" id="cat-drinks"><i class="fas fa-coffee"></i> <span>Bebidas</span></a></li>
+                <li><a href="#" data-categoria="alcohol" id="cat-alcohol"><i class="fas fa-wine-bottle"></i> <span>Bebidas Alcohólicas</span></a></li>
+                <li><a href="#" data-categoria="cakes" id="cat-cakes"><i class="fas fa-birthday-cake"></i> <span>Cakes</span></a></li>
+                <li><a href="#" data-categoria="otros" id="cat-others"><i class="fas fa-ellipsis-h"></i> <span>Otros</span></a></li>
             </ul>
         </div>
     </header>
-    
+
     <main>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="img/fondo_promo_1.jpg" alt="Promoción 1"></div>
+                <div class="slide"><img src="img/fondo_promo_2.jpg" alt="Promoción 2"></div>
+                <div class="slide"><img src="img/fondo_promo_3.jpg" alt="Promoción 3"></div>
+            </div>
+        </div>
         <section id="productos">
-            <h2>Productos Disponibles</h2>
+            <h2 id="products-title">Productos Disponibles</h2>
         </section>
         <section id="carrito" style="display: none;">
-            <h2>Tu Carrito de Compras</h2>
+            <h2 id="cart-title">Tu Carrito de Compras</h2>
             <button id="regresar" onclick="ocultarCarrito()">Regresar</button>
             <div id="carrito-container">
-                <div id="carrito-vacio">
-                    <img src="img/empty-cart.png" alt="Carrito vacío">
-                    <p>Tu carrito de Asere no tiene nada aún.</p>
-                </div>
             </div>
-            <div class="carrito-total">
-                <p>Total: <span id="carrito-total">0</span></p>
+            <div id="carrito-vacio">
+                <img src="gif/Empty-cart-Animation.gif" alt="Carrito vacío">
+                <p id="cart-empty-text">Tu carrito de Asere no tiene nada aún.</p>
+            </div>
+            <div class="carrito_total">
+                <p id="total">Total: </p>
+                <span id="cart-total">0</span>
             </div>
             <button id="checkout-button" class="checkout-button">Proceder al Pago</button>
         </section>   
     </main>
+    
     <footer>
         <div class="footer-container">
             <div class="footer-section about">
-                <h2>Sobre Nosotros</h2>
-                <p>Somos el puente que une a cada cubano en el mundo con sus seres queridos en la isla. Nos dedicamos a ofrecer los mejores productos y servicios a nuestros clientes, con un compromiso inquebrantable hacia su satisfacción.</p>
+                <h2 id="footer-about-us">Sobre Nosotros</h2>
+                <p id="footer-about-text">Somos el puente que une a cada cubano en el mundo con sus seres queridos en la isla. Nos dedicamos a ofrecer los mejores productos y servicios a nuestros clientes, con un compromiso inquebrantable hacia su satisfacción.</p>
             </div>
             <div class="footer-section links">
-                <h2>Enlaces Rápidos</h2>
+                <h2 id="footer-quick-links">Enlaces Rápidos</h2>
                 <ul>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#carrito">Carrito</a></li>
-                    <li><a href="politica.html">Política de Privacidad</a></li>
-                    <li><a href="#condiciones">Condiciones de Uso</a></li>
+                    <li><a href="#productos" id="footer-products">Productos</a></li>
+                    <li><a href="#contacto" id="footer-contact">Contacto</a></li>
+                    <li><a href="#carrito" id="footer-cart">Carrito</a></li>
+                    <li><a href="politica.html" id="footer-privacy-policy">Política de Privacidad</a></li>
+                    <li><a href="#condiciones" id="footer-terms-conditions">Condiciones de Uso</a></li>
                 </ul>
             </div>
             <div class="footer-section contact">
-                <h2>Contacto</h2>
+                <h2 id="footer_contact">Contacto</h2>
                 <ul>
                     <li>Email: <a href="mailto:soporte.asere@gmail.com">soporte.asere@gmail.com</a></li>
                     <li>Teléfono: +1 (555) 123-4567</li>
@@ -123,7 +138,7 @@
                 </ul>
             </div>
             <div class="footer-section social">
-                <h2>Síguenos</h2>
+                <h2 id="footer-follow-us">Síguenos</h2>
                 <ul>
                     <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
                     <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
@@ -135,6 +150,10 @@
             &copy; 2024 Asere y afiliados H.A | Diseñado por H.A
         </div>
     </footer>
-    <script src="Js/script.min.js" defer></script> <!-- Utilizando archivo JS minificado y diferido -->
+
+
+    <!-- Archivos JS -->
+    <script src="Js/script.js" defer></script> <!-- Utilizando archivo JS minificado y diferido -->
+    <script src="Js/translate.js" defer></script> <!-- Nuevo archivo JS para traducción -->
 </body>
 </html>
