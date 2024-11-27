@@ -151,9 +151,20 @@
         </div>
     </footer>
 
-
     <!-- Archivos JS -->
     <script src="Js/script.js" defer></script> <!-- Utilizando archivo JS minificado y diferido -->
     <script src="Js/translate.js" defer></script> <!-- Nuevo archivo JS para traducción -->
+    <!-- Registro del Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('Js/service-worker.js')
+                .then(function(registration) {
+                    console.log('Service Worker registrado con éxito:', registration);
+                })
+                .catch(function(error) {
+                    console.log('Error al registrar el Service Worker:', error);
+                });
+        }
+    </script>
 </body>
 </html>
