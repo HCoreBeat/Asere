@@ -442,11 +442,13 @@ function agregarAlCarrito(nombre, precio, cantidadId, imagen, boton) {
 function mostrarCarrito() {
     document.getElementById('productos').style.display = 'none';
     document.getElementById('carrito').style.display = 'block';
+    document.querySelector(".slider").style.display = 'none';
 }
 
 function ocultarCarrito() {
     document.getElementById('carrito').style.display = 'none';
     document.getElementById('productos').style.display = 'block';
+    document.querySelector(".slider").style.display = 'block';
 }
 
 // Funciones de incrementar y decrementar cantidad
