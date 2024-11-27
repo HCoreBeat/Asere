@@ -88,9 +88,9 @@
     <main>
         <div class="slider">
             <div class="slides">
-                <div class="slide"><img src="img/fondo_promo_1.jpg" alt="Promoción 1"></div>
-                <div class="slide"><img src="img/fondo_promo_2.jpg" alt="Promoción 2"></div>
-                <div class="slide"><img src="img/fondo_promo_3.jpg" alt="Promoción 3"></div>
+                <div class="slide"><img src="img/fondo_promo_1.jpg" loading="lazy" alt="Promoción 1"></div>
+                <div class="slide"><img src="img/fondo_promo_2.jpg" loading="lazy" alt="Promoción 2"></div>
+                <div class="slide"><img src="img/fondo_promo_3.jpg" loading="lazy" alt="Promoción 3"></div>
             </div>
         </div>
         <section id="productos">
@@ -155,16 +155,5 @@
     <script src="Js/script.js" defer></script> <!-- Utilizando archivo JS minificado y diferido -->
     <script src="Js/translate.js" defer></script> <!-- Nuevo archivo JS para traducción -->
     <!-- Registro del Service Worker -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('Js/service-worker.js')
-                .then(function(registration) {
-                    console.log('Service Worker registrado con éxito:', registration);
-                })
-                .catch(function(error) {
-                    console.log('Error al registrar el Service Worker:', error);
-                });
-        }
-    </script>
 </body>
 </html>
