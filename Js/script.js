@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const currencyText = document.getElementById("currency-text");
     const currencyOptions = document.getElementById("currency-options");
     const toggleCurrencyButton = document.getElementById("toggle-currency");
-    const carritoButton = document.querySelector("nav ul li a[href='#carrito']");
+    const carritoButton = document.querySelector("li a[href='#carrito']");
     const productosButton = document.querySelector("nav ul li a[href='#productos']");
 
     let locales = {};
