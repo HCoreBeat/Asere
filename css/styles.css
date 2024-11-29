@@ -175,15 +175,16 @@ nav ul li a:hover i {
 
 /* Botón hamburguesa activo */
 .menu-toggle.active span:nth-child(1) {
-    transform: translateY(10px) rotate(45deg);
+    transform: translateX(800%) translateY(10px) rotate(45deg);
 }
 
 .menu-toggle.active span:nth-child(2) {
     opacity: 0;
+    transform: translateX(800%);
 }
 
 .menu-toggle.active span:nth-child(3) {
-    transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) translateX(800%) rotate(-45deg);
 }
 
 /* Barra de búsqueda */
@@ -422,21 +423,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
     border-radius: 8px;
 }
 
-/* Estilos para las etiquetas de oferta y más vendidos */
-.cart-count {
-    background-color: #ff0000;
-    color: white;
-    border-radius: 50%;
-    padding: 2px 8px;
-    font-size: 12px;
-    position: absolute;
-    display: flex;
-    margin-top: 0;
-    justify-content: center;
-    align-items: center;
-    min-width: 20px; /* Asegura que sea un círculo */
-    height: 20px;
-}
+
 
 
 .etiqueta {
@@ -455,7 +442,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 .badge.mas-vendido {
     background-color: #00796B; /* Verde pastel */
     color: #fff;
-    padding: 3px 6px; /* Reducir tamaño */
+    padding: 3px 3px; /* Reducir tamaño */
     border-radius: 3px;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 100%, 0 100%);
 }
@@ -768,6 +755,12 @@ footer {
 /*----------Panel del carrito--------------
 -----------------------------------------*/
 /* Estilo para el contenedor del carrito */
+.carrito-moneda{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
 .cart-count {
     position: absolute; /* Ahora se posicionará en relación a #nav-cart */
     background-color: red;
@@ -775,8 +768,8 @@ footer {
     font-size: 12px;
     font-weight: bold;
     border-radius: 50%;
-    margin-top: -40px;
-    margin-left: 10px;
+    margin-top: -50px;
+    margin-left: 40px;
     padding: 2px 6px; /* Ajusta para un tamaño más pequeño o grande */
     min-width: 18px; /* Garantiza que siempre sea visible */
     text-align: center;
@@ -802,27 +795,45 @@ footer {
 
 
 /* Carrito container */
-#carrito {
-    background-color: #ffffff; /* Fondo blanco */
-    border: 1px solid #cce7d0; /* Borde verde claro */
-    border-radius: 8px;
-    width: 80%;
-    max-width: 1200px;
-    margin: 30px auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+
+.cart { 
+    list-style: none;
+} 
+.cart a { 
+    text-decoration: none; 
+    color: #333333; /* Verde oscuro */
+    font-weight: 700;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+.cart a:hover{
+    background-color: #00796B;
+    color: white;
+    transform: translateY(-3px);
+}
+.cart a i{
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Título del carrito */
-#carrito h2 {
-    font-size: 1.8em;
-    color: #3b4a3b; /* Verde oscuro */
-    margin: 0 0 20px 0;
-    font-weight: bold;
-    border-bottom: 2px solid #cce7d0;
-    padding-bottom: 10px;
+.cart a :hover i{
+    transform: scale(1.2);
+}
+
+#nav-cart { 
+    border-radius: 8px;
+    width: 85%;
+    max-width: 1200px;
+    margin: 5px auto;
+    margin-left: 20px;
+    display: flex; 
+    padding: 8px;
+    align-items: 
+    center; 
+    gap: 5px; 
+} 
+#nav-cart i {
+     font-size: 24px; 
 }
 
 /* Botón regresar */
@@ -1125,12 +1136,19 @@ footer {
     box-shadow: 0 0 8px rgba(0, 121, 107, 0.5); /* Sombra para indicar foco */
 }
 
+#carrito{
+    width: 90%;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
 
 
 /* Responsivo */
 @media (max-width: 768px) {
     #carrito {
-        width: 95%;
+        width: 90%;
+        margin: 20px;
+        margin-top: 250px;
     }
 
     .carrito-producto img {
@@ -1221,6 +1239,40 @@ footer {
     nav ul .header > * { 
         margin: 0; /* Sin margen en los hijos de .header */ 
     }
+
+    .carrito-moneda{
+        width: 80px;
+        display: flex;
+        align-items:center;
+        flex-direction:column;
+    }
+
+    #nav-cart { 
+    border-radius: 8px;
+    width: 85%;
+    max-width: 1200px;
+    margin: 5px auto;
+    margin-left: 20px;
+    display: flex; 
+    padding: 8px;
+    align-items: 
+    center; 
+    gap: 5px; 
+    } 
+    #nav-cart i {
+        font-size: 40px; 
+   }
+
+   .cart a {
+    display: none;
+    font-size: 0%;
+   }
+
+   .cart-count{
+    margin-top: -60px;
+    margin-left: 45px;
+   }
+   
 
     /* Botón Inicio de Asere */ 
     nav ul .home-button { 
