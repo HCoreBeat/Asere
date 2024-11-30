@@ -483,3 +483,46 @@ function vaciarCarrito() {
     guardarCarrito(); // Limpiar localStorage
     renderCarrito();  // Actualizar la interfaz
 }
+
+// funsion para los afiliados
+// Función para obtener el parámetro de referencia de la URL
+function getRefParameter() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('ref');
+}
+
+// Función para cargar el archivo JSON y verificar si el afiliado existe
+async function verifyAffiliate(ref) {
+    try {
+        const response = await fetch('Json/afiliados.json');
+        const affiliates = await response.json();
+        const affiliate = affiliates.find(affiliate => affiliate.id === ref);
+        return affiliate ? affiliate : null;
+    } catch (error) {
+        console.error('Error al cargar el archivo JSON', error);
+        return null;
+    }
+}
+
+// Función principal para manejar la lógica de afiliados
+async function handleAffiliate() {
+    const ref = getRefParameter();
+    const affiliateMessage = document.getElementById('affiliate-message');
+    
+    if (ref) {
+        const affiliate = await verifyAffiliate(ref);
+        if (affiliate) {
+            localStorage.setItem('affiliateRef', ref);
+            localStorage.setItem('affiliateName', affiliate.nombre);
+            affiliateMessage.textContent = `Gracias por venir a través de nuestro afiliado: ${ref} ${affiliate.nombre}!`;
+        } else {
+            console.warn(`El afiliado con ID ${ref} no es válido.`);
+            affiliateMessage.textContent = `¡Bienvenido a Asere Online Shop!`;
+        }
+    } else {
+        affiliateMessage.textContent = `¡Bienvenido a Asere Online Shop!`;
+    }
+}
+
+// Ejecutar la función principal
+handleAffiliate();
