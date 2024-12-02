@@ -335,12 +335,19 @@ function updateCartCount() {
     cartCountElement.style.display = 'flex'; // Siempre visible
 }
 
+// Función para vaciar el carrito
+function vaciarCarrito() {
+    localStorage.removeItem('carrito');
+    renderCarrito();
+}
+
     // Función para renderizar el carrito
     function renderCarrito () {
         const carritoContainer = document.getElementById("carrito-container");
         const carritoTotal = document.getElementById("cart-total");
         const carritoVacio = document.getElementById("carrito-vacio");
         const cartCountElement = document.getElementById("cart-count");
+        const checkoutButton = document.getElementById("checkout-button");
         
     
         carritoContainer.innerHTML = '';  // Limpiar el contenido del carrito
@@ -383,6 +390,7 @@ function updateCartCount() {
         // Mostrar mensaje si el carrito está vacío
     if (carritoVacio) { // Verificar que el elemento existe
         carritoVacio.style.display = carrito.length === 0 ? 'block' : 'none';
+        checkoutButton.style.display = carrito.length === 0? 'none' : 'block';
     }
     
     carritoTotal.textContent = `$${total.toFixed(2)}`;
