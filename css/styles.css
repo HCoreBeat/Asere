@@ -36,8 +36,10 @@ header {
      z-index: 1000; 
      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
      transition: background 0.5 ease-in-out;
+     /*Background Navidad*/
+     background: linear-gradient(45deg, #ff7eb3, #ff758c,#00796B, #27b055);
      /*background: linear-gradient(45deg, #ff7eb3, #ff758c, #42a5f5, #9c27b0);*/
-     background: linear-gradient(45deg, #60dc00, #00796B,#00b39e);
+     /*background: linear-gradient(45deg, #60dc00, #00796B,#00b39e);*/
     background-size: 300% 300%;
     animation: gradientMove 20s infinite;
     height: auto;
@@ -66,6 +68,10 @@ header {
     padding: 0 15px;
 }
 
+.logo {
+    position: relative;
+    display: inline-block;
+}
 .logo img {
     width: 70px;
     height: 70px;
@@ -75,12 +81,6 @@ header {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.logo img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-
 .slogan {
     text-align:start;
     margin-left: 20px;
@@ -88,14 +88,13 @@ header {
     font-family: 'Arial', sans-serif;
     transition: transform 0.3s ease-in-out;
 }
-
-.slogan h1 {
-    font-size: 40px;
-    margin: 0;
-    font-weight: 700;
-    color: #202020;
-    letter-spacing: 1px;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+.gif-slogan{
+    width: 140px;
+    margin: 5px;
+}
+.gif-slogan img{
+    width: 100%;
+    height: auto;
 }
 
 .slogan p {
@@ -585,10 +584,10 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 }
 
 #toggle-currency {
-    background-color: #4CAF50;
+    background-color:#333333;
     color: white;
     border: none;
-    padding: 8px 14px;
+    padding: 4px 8px;
     font-size: 14px;
     cursor: pointer;
     border-radius: 5px;
@@ -1190,9 +1189,14 @@ footer {
         height: 50px;
     }
 
-    .slogan h1 {
-        font-size: 30px;
+    .gif-slogan{
+        width: 100px;
     }
+    .gif-slogan img{
+        width: 95%;
+        height: auto;
+    }
+
 
     .slogan p {
         font-size: 10px;
@@ -1260,7 +1264,7 @@ footer {
     gap: 5px; 
     } 
     #nav-cart i {
-        font-size: 40px; 
+        font-size: 30px; 
    }
 
    .cart a {
@@ -1444,4 +1448,122 @@ footer {
         max-width: 100%;
         margin-bottom: 10px;
     }
+}
+
+/*-----Copos de nieve para navidad------*/
+#snowflakes-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: white;
+    font-size: 1em;
+    user-select: none;
+    pointer-events: none;
+    animation: fall linear infinite, fadeOut linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(180px);
+    }
+}
+
+@keyframes fadeOut {
+    0%, 90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.santa-hat {
+    position: absolute;
+    top: -40px;
+    right: -35px;
+    width: 70px;
+    transform: rotate(15deg);
+}
+@media (max-width: 768px) {
+    .santa-hat {
+        position: absolute;
+        top: -27px;
+        right: -26px;
+        width: 70px;
+        transform: rotate(15deg);
+    }
+}
+
+/*------PLantilla de pago-------
+----------------------------------*/
+/* css/styles.css */
+
+#planilla-pago {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#planilla-pago form {
+    display: flex;
+    flex-direction: column;
+}
+
+#planilla-pago label {
+    margin-top: 10px;
+}
+
+#planilla-pago input, #planilla-pago textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+#planilla-pago table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#planilla-pago table th, #planilla-pago table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#planilla-pago table th {
+    background-color: #333;
+    color: #fff;
+}
+
+#summary-total {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+}
+
+#planilla-pago button {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#planilla-pago button:hover {
+    background-color: #555;
 }
