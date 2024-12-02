@@ -22,6 +22,9 @@ function fillPaymentForm() {
     const summaryItemsContainer = document.querySelector('#summary-items tbody');
     const summaryTotal = document.getElementById('summary-total');
 
+    // Limpiar contenido previo
+    summaryItemsContainer.innerHTML = '';
+
     // Llenar la tabla con los productos del carrito
     cartItems.forEach(item => {
         const row = document.createElement('tr');
@@ -41,7 +44,7 @@ function fillPaymentForm() {
 // Mostrar la planilla de pago al presionar "Proceder al Pago"
 document.getElementById('checkout-button').addEventListener('click', function() {
     document.getElementById('carrito').style.display = 'none';
-    document.getElementById('planilla-pago').style.display = 'block';
+    document.getElementById('planilla-pago').classList.remove('hidden');
     fillPaymentForm();
 });
 
@@ -66,12 +69,15 @@ document.getElementById('payment-form').addEventListener('submit', function(even
     // Vaciar el carrito
     vaciarCarrito();
 
+    // Esconder el formulario de pago cuando se haga el pago
+    cancelPayment();
+
     // Mostrar mensaje de éxito
     alert('Pago realizado con éxito');
 });
 
+// Función para simular el envío de correo electrónico
 function sendEmail(fullName, email, address, cartItems, total, affiliate) {
-    // Simulación del envío de correo electrónico
     console.log('Enviando correo a:', email);
     console.log('Nombre:', fullName);
     console.log('Dirección:', address);
@@ -80,4 +86,10 @@ function sendEmail(fullName, email, address, cartItems, total, affiliate) {
     console.log('Afiliado:', affiliate);
 
     // Aquí podrías implementar una lógica real para enviar el correo electrónico usando una API de servicio de correo como SendGrid, Mailgun, etc.
+}
+
+// Función para cancelar el pago y regresar al carrito
+function cancelPayment() {
+    document.getElementById('planilla-pago').classList.add('hidden');
+    document.getElementById('carrito').style.display = 'block';
 }
