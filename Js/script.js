@@ -560,4 +560,4 @@ const frames = ['img/N1.png','img/N2.png','img/N3.png','img/N4.png','img/N5.png'
     setInterval(() => {
         currentFrame = (currentFrame + 1) % frames.length; // Cicla entre los frames
         gifContainer.src = frames[currentFrame];
-    }, 100); // Cambia cada 250 ms (ajusta la velocidad según tus necesidades)
+ }, 100); // Cambia cada 250 ms (ajusta la velocidad según tus necesidades)
