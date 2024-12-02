@@ -30,6 +30,9 @@
 <body>
     <header>
         <div class="header-container">
+            <div id="snowflakes-container">
+                <!-- Los copos de nieve se generarán aquí -->
+            </div>
             <div class="menu-toggle">
                 <span></span>
                 <span></span>
@@ -37,9 +40,14 @@
             </div>
             <div class="logo">
                 <img src="img/LogoVerde.svg" alt="Logo">
+                <!--Quitar despues de navidad-->
+                <img src="img/sombrero_de_santa.png" alt="Sombrero de Santa" class="santa-hat">
             </div>
             <div class="slogan">
-                <h1>Asere</h1>
+                <!--Slogan basado en imagen-->
+                <div class="gif-slogan">
+                  <img src="img/N1.png" alt="Slogan" id="gif-slogan" class="gif-slogan">  
+                </div>
                 <p id="slogan">La mejor calidad al alcance de tu mano</p>
             </div>
             <div class="search-bar">
@@ -132,7 +140,46 @@
                 <span id="cart-total">0</span>
             </div>
             <button id="checkout-button" class="checkout-button">Proceder al Pago</button>
-        </section>   
+        </section>
+        <!--Seccion de plantilla de pago super importante-->
+        <section id="planilla-pago" style="display: none;">
+            <h2>Planilla de Pago</h2>
+            <form id="payment-form">
+                <label for="full-name">Nombre Completo:</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Número de Teléfono (Opcional):</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="address">Dirección de Envío:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <h3>Resumen del Pedido</h3>
+                <table id="summary-items">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio Unitario</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí se llenarán los productos dinámicamente -->
+                    </tbody>
+                </table>
+                <p id="summary-total"></p>
+
+                <label>
+                    <input type="checkbox" id="terms" name="terms" required> Acepto los <a href="politica.html" target="_blank">Términos y Condiciones</a> y la <a href="privacidad.html" target="_blank">Política de Privacidad</a>.
+                </label>
+
+                <button type="submit">Aceptar y Realizar Pago</button>
+            </form>
+        </section>       
     </main>
     
     <footer>
@@ -175,6 +222,7 @@
     <!-- Archivos JS -->
     <script src="Js/script.js" defer></script> <!-- Utilizando archivo JS minificado y diferido -->
     <script src="Js/translate.js" defer></script> <!-- Nuevo archivo JS para traducción -->
+    <script src="js/payment.js" defer></script> <!-- Nuevo archivo JS para la planilla de pago -->
     <!-- Registro del Service Worker -->
 </body>
 </html>
