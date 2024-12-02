@@ -1528,11 +1528,11 @@ footer {
         margin-top: 210px;
     }
 }
-#planilla-pago .hidden {
+.hidden {
     display: none;
 }
 
-#planilla-pago .payment-container {
+.payment-container {
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
@@ -1542,28 +1542,28 @@ footer {
     transition: transform 0.3s ease-in-out;
 }
 
-#planilla-pago .payment-container:hover {
+.payment-container:hover {
     transform: translateY(-10px);
 }
 
-#planilla-pago h2 {
+h2 {
     color: #333;
     text-align: center;
     font-size: 24px;
 }
 
-#planilla-pago .form-group {
+.form-group {
     margin-bottom: 20px;
 }
 
-#planilla-pago label {
+label {
     display: block;
     margin-bottom: 5px;
     color: #555;
     font-weight: bold;
 }
 
-#planilla-pago input, #planilla-pago textarea {
+input, textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -1574,29 +1574,29 @@ footer {
     transition: border-color 0.3s ease-in-out;
 }
 
-#planilla-pago input:focus, #planilla-pago textarea:focus {
+input:focus, textarea:focus {
     border-color: #28a745;
     outline: none;
 }
 
-#planilla-pago input[type="checkbox"] {
+input[type="checkbox"] {
     width: auto;
     margin-right: 10px;
 }
 
-#planilla-pago table {
+table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
 }
 
-#planilla-pago table th, #planilla-pago table td {
+table th, table td {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: left;
 }
 
-#planilla-pago table th {
+table th {
     background-color: #333;
     color: #fff;
 }
@@ -1607,12 +1607,12 @@ footer {
     margin-top: 10px;
 }
 
-#planilla-pago .button-group {
+.button-group {
     display: flex;
     flex-direction: column;
 }
 
-#planilla-pago .btn-submit, #planilla-pago .btn-cancel {
+.btn-submit, .btn-cancel {
     display: block;
     width: 100%;
     padding: 15px;
@@ -1626,66 +1626,68 @@ footer {
     transition: background-color 0.3s ease-in-out, transform 0.2s;
 }
 
-#planilla-pago .btn-submit {
+.btn-submit {
     background-color: #28a745;
     color: #fff;
 }
 
-#planilla-pago .btn-submit:hover {
+.btn-submit:hover {
     background-color: #218838;
     transform: translateY(-2px);
 }
 
-#planilla-pago .btn-cancel {
+.btn-cancel {
     background-color: #dc3545;
     color: #fff;
 }
 
-#planilla-pago .btn-cancel:hover {
+.btn-cancel:hover {
     background-color: #c82333;
     transform: translateY(-2px);
 }
 
-#planilla-pago .link {
+.link {
     color: inherit;
     text-decoration: underline;
     cursor: pointer;
 }
 
-#planilla-pago .link:hover {
+.link:hover {
     color: #28a745;
     text-decoration: none;
 }
 
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
-    #planilla-pago .payment-container {
+    .payment-container {
         padding: 20px;
         margin: 20px;
     }
 
-    #planilla-pago table th, #planilla-pago table td {
+    table th, table td {
         padding: 5px;
     }
 
-    #planilla-pago .btn-submit, #planilla-pago .btn-cancel {
+    .btn-submit, .btn-cancel {
         padding: 10px;
         font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
-    #planilla-pago .payment-container {
+    .payment-container {
         padding: 15px;
         margin: 10px;
     }
 
-    #planilla-pago table th, #planilla-pago table td {
+    table th, table td {
         padding: 3px;
     }
 
-    #planilla-pago .btn-submit, #planilla-pago .btn-cancel {
+    .btn-submit, .btn-cancel {
         padding: 8px;
         font-size: 12px;
     }
 }
+
+
