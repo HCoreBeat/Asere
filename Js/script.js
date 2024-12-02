@@ -526,3 +526,38 @@ async function handleAffiliate() {
 
 // Ejecutar la función principal
 handleAffiliate();
+
+
+// Función para generar copos de nieve
+const createSnowflake = () => {
+    const snowflake = document.createElement('div');
+    snowflake.className = 'snowflake';
+    snowflake.innerHTML = '&#10052;';
+    snowflake.style.left = `${Math.random() * document.getElementById('snowflakes-container').offsetWidth}px`;
+    
+    const duration = Math.random() * 3 + 2; // Duración entre 2 y 5 segundos
+    snowflake.style.animationDuration = `${duration}s`;
+    snowflake.style.fontSize = `${Math.random() * 1 + 0.5}em`;
+
+    document.getElementById('snowflakes-container').appendChild(snowflake);
+
+    setTimeout(() => {
+        snowflake.remove();
+    }, duration * 1000);
+};
+
+setInterval(createSnowflake, 100);
+
+
+//----Para el gif basado en imagens para mantener transparencia y mas profesional---
+const frames = ['img/N1.png','img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png','img/N7.png','img/N8.png',
+'img/N8.png','img/N7.png','img/N6.png','img/N5.png','img/N4.png','img/N3.png','img/N2.png','img/N1.png'
+]; // Rutas de las imágenes
+    let currentFrame = 0;
+
+    const gifContainer = document.getElementById('gif-slogan');
+
+    setInterval(() => {
+        currentFrame = (currentFrame + 1) % frames.length; // Cicla entre los frames
+        gifContainer.src = frames[currentFrame];
+    }, 100); // Cambia cada 250 ms (ajusta la velocidad según tus necesidades)
