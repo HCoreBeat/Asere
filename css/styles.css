@@ -1139,6 +1139,7 @@ footer {
     width: 90%;
     margin-left: 40px;
     margin-bottom: 20px;
+    margin-top: 250px;
 }
 
 
@@ -1513,22 +1514,74 @@ footer {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     margin: 20px auto;
+    margin-top: 250px;
+}
+/*Responsive*/
+@media (max-width: 768px) {
+    #planilla-pago {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin: 20px auto;
+        margin-top: 210px;
+    }
+}
+#planilla-pago .hidden {
+    display: none;
 }
 
-#planilla-pago form {
-    display: flex;
-    flex-direction: column;
+#planilla-pago .payment-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+#planilla-pago .payment-container:hover {
+    transform: translateY(-10px);
+}
+
+#planilla-pago h2 {
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+}
+
+#planilla-pago .form-group {
+    margin-bottom: 20px;
 }
 
 #planilla-pago label {
-    margin-top: 10px;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
 }
 
 #planilla-pago input, #planilla-pago textarea {
+    width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 4px;
+    box-sizing: border-box;
     margin-top: 5px;
+    font-family: inherit;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#planilla-pago input:focus, #planilla-pago textarea:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+#planilla-pago input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
 }
 
 #planilla-pago table {
@@ -1554,16 +1607,85 @@ footer {
     margin-top: 10px;
 }
 
-#planilla-pago button {
-    margin-top: 20px;
+#planilla-pago .button-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#planilla-pago .btn-submit, #planilla-pago .btn-cancel {
+    display: block;
+    width: 100%;
     padding: 15px;
-    background-color: #333;
-    color: #fff;
+    margin-bottom: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
 }
 
-#planilla-pago button:hover {
-    background-color: #555;
+#planilla-pago .btn-submit {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#planilla-pago .btn-submit:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+#planilla-pago .btn-cancel {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#planilla-pago .btn-cancel:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+#planilla-pago .link {
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#planilla-pago .link:hover {
+    color: #28a745;
+    text-decoration: none;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    #planilla-pago .payment-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    #planilla-pago table th, #planilla-pago table td {
+        padding: 5px;
+    }
+
+    #planilla-pago .btn-submit, #planilla-pago .btn-cancel {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #planilla-pago .payment-container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    #planilla-pago table th, #planilla-pago table td {
+        padding: 3px;
+    }
+
+    #planilla-pago .btn-submit, #planilla-pago .btn-cancel {
+        padding: 8px;
+        font-size: 12px;
+    }
 }
