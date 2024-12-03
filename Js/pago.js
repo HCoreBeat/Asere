@@ -18,8 +18,7 @@ function calculateTotal(items) {
 // Función para llenar la planilla de pago con los datos del carrito y el afiliado
 function fillPaymentForm() {
     const cartItems = getCartItems();
-    const affiliateName = getAffiliate();
-    const summaryItemsContainer = document.querySelector('#summary-items tbody');
+    const summaryItemsContainer = document.getElementById('summary-items');
     const summaryTotal = document.getElementById('summary-total');
 
     // Limpiar contenido previo
@@ -68,10 +67,12 @@ document.getElementById('payment-form').addEventListener('submit', function(even
 
     // Vaciar el carrito
     vaciarCarrito();
-    
 
     // Mostrar mensaje de éxito
     alert('Pago realizado con éxito');
+    // Ocultar la planilla de pago y mostrar el carrito vacío (o mensaje de confirmación)
+    document.getElementById('planilla-pago').classList.add('hidden');
+    document.getElementById('carrito').style.display = 'none';
 });
 
 // Función para simular el envío de correo electrónico
