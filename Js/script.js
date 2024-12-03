@@ -146,7 +146,8 @@ document.addEventListener("DOMContentLoaded", () => {
     
         function filterProducts() {
             const searchValue = searchInput.value.toLowerCase();
-    
+            ocultarCarrito();
+            document.getElementById('planilla-pago').classList.add('hidden');
             productosUnicos.forEach(producto => {
                 const productName = producto.nombre.toLowerCase();
                 const productElement = document.querySelector(`.producto[data-nombre="${producto.nombre}"]`);
@@ -273,6 +274,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (link.getAttribute("href") !== '#carrito') {
             link.addEventListener("click", () => {
                 ocultarCarrito();
+                document.getElementById('planilla-pago').classList.add('hidden');
             });
         }
     });
@@ -451,6 +453,7 @@ function mostrarCarrito() {
     document.getElementById('productos').style.display = 'none';
     document.getElementById('carrito').style.display = 'block';
     document.querySelector(".slider").style.display = 'none';
+    document.getElementById('planilla-pago').classList.add('hidden');
 }
 
 function ocultarCarrito() {
