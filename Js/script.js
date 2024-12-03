@@ -558,8 +558,8 @@ setInterval(createSnowflake, 100);
 
 
 //----Para el gif basado en imagens para mantener transparencia y mas profesional---
-const frames = ['img/N1.png','img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png','img/N7.png','img/N8.png',
-'img/N8.png','img/N7.png','img/N6.png','img/N5.png','img/N4.png','img/N3.png','img/N2.png','img/N1.png'
+const frames = ['img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png','img/N7.png','img/N8.png',
+'img/N8.png','img/N7.png','img/N6.png','img/N5.png','img/N4.png','img/N3.png','img/N2.png'
 ]; // Rutas de las imágenes
     let currentFrame = 0;
 
