@@ -68,9 +68,7 @@ document.getElementById('payment-form').addEventListener('submit', function(even
 
     // Vaciar el carrito
     vaciarCarrito();
-
-    // Esconder el formulario de pago cuando se haga el pago
-    cancelPayment();
+    
 
     // Mostrar mensaje de éxito
     alert('Pago realizado con éxito');
