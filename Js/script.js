@@ -367,26 +367,36 @@ function vaciarCarrito() {
         // Iterar sobre los productos del carrito
         carrito.forEach(producto => {
             total += producto.precio * producto.cantidad;
-    
             const productoDiv = document.createElement("div");
             productoDiv.className = "carrito-producto";
     
+            console.log(
+                "nombre: "+producto.nombre,
+                "precio: "+producto.precio,
+                "imagen: "+producto.imagen,
+                "cantidad: "+producto.cantidad
+            )
+
             productoDiv.innerHTML = `
+                <div class="carrito-item">
                 <img src="${producto.imagen}" alt="${producto.nombre}" class="carrito-imagen">
+
                 <div class="carrito-detalles">
                     <p class="carrito-nombre">${producto.nombre}</p>
                     <p class="carrito-precio">Precio: $${producto.precio}</p>
-                    <p class="carrito-cantidad">
-                        Cantidad: 
-                        <button class="carrito-cantidad" onclick="cambiarCantidad('${producto.id}', -1)">-</button>
-                        ${producto.cantidad}
-                        <button class="carrito-cantidad" onclick="cambiarCantidad('${producto.id}', 1)">+</button>
-                    </p>
-                    <button class="eliminar-producto" onclick="eliminarDelCarrito('${producto.id}')">Eliminar</button>
+                    <div class="carrito-cantidad">
+                        <button onclick="cambiarCantidad('${producto.id}', -1)">-</button>
+                        <span>${producto.cantidad}</span>
+                        <button onclick="cambiarCantidad('${producto.id}', 1)">+</button>
+                    </div>
                 </div>
+
+                <button class="eliminar-producto" onclick="eliminarDelCarrito('${producto.id}')">Eliminar</button>
+            </div>
             `;
     
             carritoContainer.appendChild(productoDiv);
+            
         });
     
         // Mostrar mensaje si el carrito está vacío
@@ -396,7 +406,6 @@ function vaciarCarrito() {
     }
     
     carritoTotal.textContent = `$${total.toFixed(2)}`;
-
     
     }
 
@@ -446,6 +455,13 @@ function agregarAlCarrito(nombre, precio, cantidadId, imagen, boton) {
          // Guardar en localStorage después de añadir
         guardarCarrito();
         renderCarrito();
+        console.log({
+            nombre,
+            precio,
+            cantidad,
+            imagen
+        });
+        
     }
 }
 
@@ -571,4 +587,4 @@ const frames = ['img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png'
     setInterval(() => {
         currentFrame = (currentFrame + 1) % frames.length; // Cicla entre los frames
         gifContainer.src = frames[currentFrame];
- }, 200); // Cambia cada 250 ms (ajusta la velocidad según tus necesidades)
+ }, 100); // Cambia cada 250 ms (ajusta la velocidad según tus necesidades)
