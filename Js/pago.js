@@ -62,8 +62,13 @@ document.getElementById('payment-form').addEventListener('submit', function(even
         return;
     }
 
-    // Enviar correo electrónico (simulación)
-    sendEmail(fullName, email, address, getCartItems(), calculateTotal(getCartItems()), getAffiliate());
+    // Enviar correo electrónico
+    if (typeof google !== 'undefined' && google.script && google.script.run) {
+        sendEmail(fullName, email, address, getCartItems(), calculateTotal(getCartItems()), getAffiliate());
+    } else {
+        console.error('Google Apps Script not loaded properly.');
+        alert('Error al enviar el correo. Intenta de nuevo más tarde.');
+    }
 
     // Vaciar el carrito
     vaciarCarrito();
@@ -75,16 +80,22 @@ document.getElementById('payment-form').addEventListener('submit', function(even
     document.getElementById('carrito').style.display = 'none';
 });
 
-// Función para simular el envío de correo electrónico
+// Función para enviar el correo electrónico utilizando Google Apps Script
 function sendEmail(fullName, email, address, cartItems, total, affiliate) {
-    console.log('Enviando correo a:', email);
-    console.log('Nombre:', fullName);
-    console.log('Dirección:', address);
-    console.log('Productos:', cartItems);
-    console.log('Total:', total);
-    console.log('Afiliado:', affiliate);
+    const emailContent = `
+        Nombre: ${fullName}\n
+        Correo Electrónico: ${email}\n
+        Dirección: ${address}\n
+        Productos: ${JSON.stringify(cartItems, null, 2)}\n
+        Total: $${total}\n
+        Afiliado: ${affiliate}
+    `;
 
-    // Aquí podrías implementar una lógica real para enviar el correo electrónico usando una API de servicio de correo como SendGrid, Mailgun, etc.
+    google.script.run.withSuccessHandler(function(response) {
+        console.log('Correo enviado exitosamente:', response);
+    }).withFailureHandler(function(error) {
+        console.log('Error al enviar el correo:', error);
+    }).sendOrderEmail(email, 'Confirmación de Pedido', emailContent);
 }
 
 // Función para cancelar el pago y regresar al carrito
