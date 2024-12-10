@@ -31,7 +31,9 @@
       "productos": {
         "oferta": "Oferta",
         "mas_vendido": "Más Vendido",
-        "agregar_al_carrito": "Añadir al carrito"
+        "agregar_al_carrito": "Añadir al carrito",
+        "disponible": "Disponible",
+        "no_disponible": "No Disponible"
       },
       "cart": {
         "title": "Tu Carrito de Compras",
@@ -85,7 +87,9 @@
       "productos": { 
         "oferta": "Offer", 
         "mas_vendido": "Best Selling", 
-        "agregar_al_carrito": "Add to Cart"
+        "agregar_al_carrito": "Add to Cart",
+        "disponible": "Available",
+        "no_disponible": "Not Available"
       },
       "cart": {
         "title": "Your Shopping Cart",
@@ -138,7 +142,9 @@
       "productos": { 
         "oferta": "Angebot", 
         "mas_vendido": "Bestseller", 
-        "agregar_al_carrito": "In den Einkaufswagen"
+        "agregar_al_carrito": "In den Einkaufswagen",
+        "disponible": "Verfügbar",
+        "no_disponible": "Nicht verfügbar"
       },
       "cart": {
         "title": "Ihr Einkaufswagen",
@@ -193,7 +199,9 @@
     "productos": {
       "oferta": "Offerta",
       "mas_vendido": "Più Venduto",
-      "agregar_al_carrito": "Aggiungi al Carrello"
+      "agregar_al_carrito": "Aggiungi al Carrello",
+      "disponible": "Disponibile",
+      "no_disponible": "Non disponibile"
     },
     "cart": {
       "title": "Il tuo Carrello",
@@ -216,5 +224,3 @@
     }
   }
 }
-
-  
