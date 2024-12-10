@@ -389,21 +389,160 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
         margin-bottom: 20px;
     }
 }
+
+
+/* Estilos mejorados para el mensaje de "No se encontraron resultados" */
+#no-result-message {
+    display: none; /* Inicialmente oculto */
+    padding: 20px;
+    background-color: #fce8e6; /* Fondo suave rosa claro */
+    color: #e03c31; /* Texto rojo suave */
+    border-left: 5px solid #e03c31; /* Barra roja a la izquierda */
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: center; /* Centrado vertical */
+}
+
+#no-result-message .icon {
+    font-size: 30px;
+    margin-right: 15px; /* Espaciado entre el icono y el texto */
+}
+
+#no-result-message p {
+    margin: 0;
+    flex-grow: 1; /* Para que el texto ocupe el espacio disponible */
+}
+
+/* Estilo cuando el mensaje es visible */
+#no-result-message:not(.hidden) {
+    display: flex;
+}
+
+/* Animación de desvanecimiento */
+#no-result-message {
+    opacity: 0;
+    transform: translateY(10px); /* Desplazamiento hacia abajo para el efecto */
+}
+
+#no-result-message:not(.hidden) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 /*-----Para los productos-----------
 --------------------------------*/
+/* Estilo general para los productos */
+#productos {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: -100px;
+    box-sizing: border-box;
+}
+
+/* Contenedor de productos "más vendidos" */
+.mas-vendidos-container {
+    display: flex; /* Usamos flexbox para el desplazamiento horizontal */
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 20px 5px; /* Agrega un poco de padding para el contenido */
+    scroll-snap-type: x mandatory; /* Alineación de los productos al hacer scroll */
+    -webkit-overflow-scrolling: touch; /* Mejora el rendimiento en dispositivos móviles */
+    border-radius: 10px; /* Bordes redondeados */
+    background: #ffffff; /* Fondo blanco para resaltar los productos */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    transition: box-shadow 0.3s ease; /* Transición para la sombra */
+}
+
+.mas-vendidos-container:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Aumenta la sombra al pasar el mouse */
+}
+
+/* Producto dentro del contenedor */
+.mas-vendidos-container .producto {
+    flex: 0 0 auto; /* Impide que los productos cambien de tamaño */
+    width: 180px; /* Ancho fijo para los productos */
+    scroll-snap-align: start; /* Alinea los productos al principio del contenedor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones para los productos */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Efecto hover sobre cada producto */
+.mas-vendidos-container .producto:hover {
+    transform: scale(1.05); /* Escala el producto ligeramente */
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15); /* Añade una sombra más fuerte */
+}
+
+/* Añadir un borde sutil alrededor del contenedor */
+.mas-vendidos-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05));
+    border-radius: 10px;
+    z-index: -1;
+}
+
+
+/* Categorías y otros contenedores */
+.categorias-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.categoria {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.categoria h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.productos-categoria-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 15px;
+    padding: 0 5px;
+}
+
+/* Estilo para cada producto */
 .producto {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
     background-color: #ffffff;
     border: 1px solid #eaeaea;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    overflow: hidden; /* Asegurar que los elementos se mantengan dentro de los bordes */
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .producto:hover {
@@ -412,152 +551,168 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 }
 
 .producto-img {
-    position: relative;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
+    height: 160px;
+    overflow: hidden;
 }
 
 .producto-img img {
     max-width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 8px;
 }
 
+/* Disponibilidad */
+.disponibilidad {
+    font-size: 0.7rem;  /* Reduce el tamaño del texto */
+    font-weight: bold;
+    text-align: center;
+    padding: 4px 8px; /* Ajusta el padding */
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: auto; /* No ocupa todo el ancho */
+    display: inline-block; /* Que no se extienda a lo largo de todo el contenedor */
+}
 
+.disponibilidad.disponible {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
 
+.disponibilidad.no-disponible {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
 
 .etiqueta {
     display: inline-block;
-    padding: 3px 6px; /* Reducir tamaño */
-    font-size: 0.7rem; /* Tamaño reducido */
+    padding: 3px 6px;
+    font-size: 0.7rem;
     color: #fff;
     border-radius: 3px;
-    background-color: #00796B; /* Verde pastel */
+    background-color: #00796B;
 }
 
 .etiqueta.oferta {
-    background-color: #CC0C39; /* Color para la etiqueta de oferta */
+    background-color: #CC0C39;
 }
 
 .badge.mas-vendido {
-    background-color: #00796B; /* Verde pastel */
+    background-color: #00796B;
     color: #fff;
-    padding: 3px 3px; /* Reducir tamaño */
+    padding: 3px 3px;
     border-radius: 3px;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 100%, 0 100%);
 }
 
+/* Información del producto */
 .producto-info {
-    text-align: left; /* Alinear texto a la izquierda */
-    width: 100%; /* Asegurar que ocupe todo el ancho */
-    padding: 0 10px;
+    text-align: left;
+    width: 100%;
+    padding: 0 5px;
 }
 
 .nombre {
-    font-size: 20px; /* Tamaño aumentado para resaltar */
+    font-size: 15px;
     font-weight: bold;
-    margin-top: 10px; /* Margen para separar del resto del contenido */
-    color: #000; /* Color negro */
+    margin-top: 6px;
+    color: #333;
+    line-height: 1.2;
+    max-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .pvpr-precio-contenedor {
     display: flex;
-    justify-content: flex-start; /* Alinear elementos a la izquierda */
+    justify-content: flex-start;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 8px;
+    margin-bottom: 8px;
 }
 
 .precio {
-    font-size: 24px; /* Tamaño aumentado para resaltar el número */
-    color: #000; /* Color negro */
+    font-size: 18px;
+    color: #333;
     font-weight: bold;
 }
 
 .precio .currency {
-    font-size: 0.8em; /* Tamaño reducido para la moneda */
-    vertical-align: top; /* Posiciona la moneda arriba del número */
+    font-size: 0.75em;
+    vertical-align: top;
 }
 
 .pvpr {
-    font-size: 1rem; /* Tamaño aumentado */
+    font-size: 0.9rem;
     color: #757575;
     text-decoration: line-through;
-    margin: 0;
 }
 
 .descuento {
-    font-size: 1rem; /* Tamaño aumentado */
+    font-size: 0.9rem;
     color: #fff;
-    background-color: #CC0C39; /* Color rojo */
-    padding: 3px 6px;
+    background-color: #CC0C39;
+    padding: 2px 5px;
     border-radius: 3px;
-    display: inline-block;
-    margin-bottom: 5px; /* Mover el descuento encima */
-    text-decoration: none; /* Eliminar línea roja */
+    margin-bottom: 5px;
+    text-decoration: none;
 }
 
+/* Botones de cantidad y carrito */
 .cantidad-carrito-contenedor {
     display: flex;
-    justify-content: space-between; /* Alinear elementos a ambos lados */
+    justify-content: space-between;
     align-items: center;
     gap: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
-/*para agregar los productos en cuadriculas o en fila*/
-#productos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 15px;
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: -140px;
-    z-index: 2;
-}
-
-/*Para el valor de cantidad*/
 .cantidad {
     display: flex;
-    justify-content: flex-start; /* Alinear a la izquierda */
+    justify-content: flex-start;
     align-items: center;
     gap: 5px;
-    margin-bottom: 10px;
 }
 
 .btn-cantidad {
-    width: 35px; /* Tamaño aumentado */
-    height: 35px; /* Tamaño aumentado */
+    width: 28px;
+    height: 28px;
     border: none;
     border-radius: 50%;
-    background-color: #00796B; /* Verde pastel */
+    background-color: #00796B;
     color: white;
-    font-size: 18px; /* Tamaño aumentado */
+    font-size: 15px;
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 .btn-cantidad:hover {
-    background-color: #005f56; /* Verde oscuro */
+    background-color: #005f56;
 }
 
 .cantidad span {
-    font-size: 18px; /* Tamaño aumentado */
+    font-size: 14px;
     font-weight: bold;
     text-align: center;
-    width: 35px; /* Tamaño aumentado */
+    width: 28px;
     display: inline-block;
+    padding: 0;
 }
 
 /* Estilos para el botón de Añadir al Carrito */
 .btn-carrito {
-    background: #00796B; /* Verde pastel */
+    background: #00796B;
     color: white;
-    padding: 10px 20px; /* Tamaño aumentado */
+    padding: 6px 12px;
     border: none;
     border-radius: 5px;
-    font-size: 16px; /* Tamaño aumentado */
+    font-size: 15px;
     cursor: pointer;
     position: relative;
     display: inline-flex;
@@ -567,13 +722,141 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 }
 
 .btn-carrito:hover {
-    background: #005f56; /* Verde oscuro */
+    background: #005f56;
 }
 
 .btn-carrito:active {
     transform: translateY(0);
 }
 
+/* Media Queries para Responsividad */
+@media (max-width: 1024px) {
+    .mas-vendidos-container {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Ajuste para productos más pequeños */
+        gap: 12px;
+    }
+
+    .producto-img {
+        height: 140px; /* Ajuste de la imagen */
+    }
+
+    .producto-info {
+        padding: 0 8px; /* Reducción del padding */
+    }
+
+    .nombre {
+        font-size: 13px;
+        max-height: 35px;
+    }
+
+    .precio {
+        font-size: 18px;
+    }
+
+    .btn-cantidad {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .cantidad span {
+        font-size: 13px;
+    }
+
+    .btn-carrito {
+        font-size: 15px;
+        padding: 1px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .productos-categoria-container {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Ajuste más pequeño */
+    }
+
+    .producto {
+        padding: 8px; /* Reduce el padding para mayor espacio */
+    }
+
+    .producto-img {
+        height: 120px; /* Ajusta la altura de la imagen */
+    }
+
+    .producto-info {
+        padding: 0 10px;
+    }
+
+    .nombre {
+        font-size: 12px;
+        max-height: 30px;
+    }
+
+    .precio {
+        font-size: 18px;
+    }
+
+    .btn-cantidad {
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+    }
+
+    .cantidad span {
+        font-size: 11px;
+    }
+
+    .btn-carrito {
+        font-size: 15px;
+        padding: 1px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .productos-categoria-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajuste para pantallas muy pequeñas */
+    }
+
+    .producto {
+        padding: 5px;
+        box-sizing: border-box; /* Asegura que no se desborde */
+    }
+
+    .producto-img {
+        height: 100px; /* Imagen más pequeña */
+    }
+
+    .producto-info {
+        padding: 0 5px;
+    }
+
+    .nombre {
+        font-size: 12px;
+        max-height: 30px;
+    }
+
+    .precio {
+        font-size: 18px;
+    }
+
+    .btn-cantidad {
+        width: 25px;
+        height: 25px;
+        font-size: 9px;
+    }
+
+    .cantidad span {
+        font-size: 10px;
+    }
+
+    .btn-carrito {
+        font-size: 9px;
+        padding: 3px 6px;
+    }
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------*/
 
 /*--------Panel de cambio de monedas------
 ------------------------------------------*/
@@ -1567,12 +1850,6 @@ hr {
         font-size: 14px;
     }
 
-    .btn-cantidad {
-        width: 35px;
-        height: 35px;
-        font-size: 18px;
-    }
-
     .cantidad span {
         font-size: 16px;
         width: 30px;
@@ -1583,16 +1860,6 @@ hr {
         padding: 0;
         box-sizing: border-box;
         margin-top: 170px;
-    }
-
-    #productos {
-        padding: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 15px;
-    }
-
-    .producto {
-        padding: 10px;
     }
      /*--Footer--*/
     .footer-container {
@@ -1919,4 +2186,3 @@ hr {
     margin: 0;
     cursor: pointer;
 }
-
