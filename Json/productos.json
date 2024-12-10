@@ -1,30 +1,183 @@
 [
     {
-        "nombre": "Piña 1",
-        "categoria": "frutas",
-        "precio": 50,
+        "nombre": "Refresco Instantáneo (2Lt)",
+        "categoria": "bebidas",
+        "precio": 0.35,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Refresco_Instantaneo.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Carne de cerdo x Lb",
+        "categoria": "carnes",
+        "precio": 3.45,
+        "//comentario":" el precio variara a 2.85", 
         "descuento": 10,
         "oferta": false,
         "mas_vendido": true,
-        "imagen": "img/Piña.jpg"
+        "imagen": "img/products/Carne_de_Cerdo.jpg",
+        "disponible": true
     },
     {
-        "nombre": "Piña 2",
-        "categoria": "frutas",
-        "precio": 45,
-        "descuento": 15,
-        "oferta": true,
-        "mas_vendido": true,
-        "imagen": "img/Piña.jpg"
+        "nombre": "Carne de Ovejo x Lb",
+        "categoria": "carnes",
+        "precio": 2.25,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Carne_de_Ovejo.jpg",
+        "disponible": true
     },
     {
-        "nombre": "Piña 3",
-        "categoria": "frutas",
-        "precio": 45,
-        "descuento": 15,
-        "oferta": true,
+        "nombre": "Picadillo Especial 400g",
+        "categoria": "carnes",
+        "precio": 2.00,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Picadillo_Especial.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Jamón de Pierna x Lb",
+        "categoria": "carnes",
+        "precio": 4.80,
+        "descuento": 10,
+        "oferta": false,
         "mas_vendido": true,
-        "imagen": "img/Piña.jpg"
+        "imagen": "img/products/Jamon_de_Pierna.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Chuletas de cerdo x Lb",
+        "categoria": "carnes",
+        "precio": 3.00,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Chuletas_de_Cerdo.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Paquete de picadillo de pollo 1kg",
+        "categoria": "carnes",
+        "precio": 3.00,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": true,
+        "imagen": "img/products/Paquete_de_Picadillo_Pollo.jpg",
+        "disponible": false
+    },
+    {
+        "nombre": "Paquete de salchichas 7u (350g)",
+        "categoria": "carnes",
+        "precio": 1.97,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Paquete_de_Salchichas.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Pack de 4 Hamburguesas de pollo",
+        "categoria": "carnes",
+        "precio": 2.26,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Pack_de_4_Hamburguesas_de_Pollo.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Hígado de cerdo x Lb",
+        "categoria": "carnes",
+        "precio": 2.78,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Higado_de_Cerdo.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Pollo Entero 3 Libras",
+        "categoria": "carnes",
+        "precio": 5.00,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Pollo_Entero.jpg",
+        "disponible": false
+    },
+    {
+        "nombre": "Paquete de muslos de pollo 5.5lbs",
+        "categoria": "carnes",
+        "precio": 10.00,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Paquete_de_muslos_de_Pollo.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Jamón Bravo Rápido (2kg)",
+        "categoria": "carnes",
+        "precio": 28.00,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Jamon_Bravo_Rapido.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Masa deshuesada de cerdo x Kg",
+        "categoria": "carnes",
+        "precio": 10.95,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Masa_deshuesada_de_Cerdo.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Pernil de Cerdo asado (15 libras)",
+        "categoria": "carnes",
+        "precio": 52.74,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": true,
+        "imagen": "img/products/Pernil_de_Cerdo.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Maíz Dulce en Grano (340g)",
+        "categoria": "enlatados",
+        "precio": 1.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Maiz_Dulce_en_Grano.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Salchicha de pollo y cerdo",
+        "categoria": "carnes",
+        "precio": 50,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Salchicha_Pollo_Cerdo.jpg",
+        "disponible": false
+    },
+    {
+        "nombre": "Picadillo Especial 800g",
+        "categoria": "carnes",
+        "precio": 4.00,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Picadillo_Especial_2.jpg",
+        "disponible": true
     }
 ]
-
