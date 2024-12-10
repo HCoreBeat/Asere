@@ -51,8 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
         return uniqueProductos;
     }
     
-
     function limpiarProductosContainer() {
+        // Limpiar el contenedor de productos
+        const productosContainer = document.getElementById("productos-container");
         while (productosContainer.firstChild) {
             productosContainer.removeChild(productosContainer.firstChild);
         }
@@ -67,7 +68,13 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log('Renderizando productos en idioma:', lang);
         console.log('Locales:', locales);
     
-        productosUnicos.forEach(producto => {
+        // Crear el contenedor de productos más vendidos
+        const masVendidosContainer = document.createElement("div");
+        masVendidosContainer.className = "mas-vendidos-container"; // Clase para el contenedor de productos más vendidos
+        const masVendidos = productosUnicos.filter(producto => producto.mas_vendido); // Filtrar los productos más vendidos
+    
+        // Crear un contenedor para los productos más vendidos
+        masVendidos.forEach(producto => {
             const productoDiv = document.createElement("div");
             productoDiv.className = "producto";
             productoDiv.dataset.nombre = producto.nombre;
@@ -77,16 +84,23 @@ document.addEventListener("DOMContentLoaded", () => {
             let pvpr = producto.pvpr;
             let descuento = '';
     
+            // Asegurarse de que el precio tenga dos decimales
+            precio = precio.toFixed(2);
             if (producto.oferta) {
                 pvpr = producto.precio;
                 precio = (producto.precio - (producto.precio * (producto.descuento / 100))).toFixed(2);
                 descuento = `<p class="descuento" style="text-decoration: none;">-${producto.descuento}%</p>`;
             }
     
-            const pvprHtml = producto.oferta ? `<p class="pvpr">PVPR: US$<s>${pvpr}</s></p>` : '';
+            const pvprHtml = producto.oferta ? `<p class="pvpr">PVPR: US$<s>${pvpr.toFixed(2)}</s></p>` : '';
     
             const etiquetaOferta = producto.oferta ? `<span class="etiqueta oferta producto-oferta">${locales[lang].productos.oferta}</span>` : '';
             const etiquetaMasVendido = producto.mas_vendido ? `<div class="badge mas-vendido producto-masvendido">${locales[lang].productos.mas_vendido}</div>` : '';
+    
+            // Mostrar disponibilidad
+            const disponibilidadHtml = producto.disponible
+                ? `<div class="disponibilidad disponible">${locales[lang].productos.disponible}</div>`
+                : `<div class="disponibilidad no-disponible">${locales[lang].productos.no_disponible}</div>`;
     
             productoDiv.innerHTML = `
                 <div class="producto-contenedor">
@@ -103,21 +117,127 @@ document.addEventListener("DOMContentLoaded", () => {
                             ${pvprHtml}
                         </div>
                         ${descuento}
+                        ${disponibilidadHtml} <!-- Agregar disponibilidad -->
                         <div class="cantidad-carrito-contenedor">
                             <div class="cantidad">
-                                <button class="btn-cantidad" onclick="decrementar('cantidad${producto.nombre.replace(/\s+/g, '')}')">-</button>
-                                <span id="cantidad${producto.nombre.replace(/\s+/g, '')}">1</span>
-                                <button class="btn-cantidad" onclick="incrementar('cantidad${producto.nombre.replace(/\s+/g, '')}')">+</button>
+                                <button class="btn-cantidad" onclick="decrementar('cantidad${producto.nombre.replace(/\s+/g, '-')}')">-</button>
+                                <span id="cantidad${producto.nombre.replace(/\s+/g, '-')}" class="cantidad-span">1</span>
+                                <button class="btn-cantidad" onclick="incrementar('cantidad${producto.nombre.replace(/\s+/g, '-')}')">+</button>
                             </div>
-                            <button class="btn-carrito boton-agregarcarrito" onclick="agregarAlCarrito('${producto.nombre}', ${precio}, 'cantidad${producto.nombre.replace(/\s+/g, '')}', '${producto.imagen}', this)">${locales[lang].productos.agregar_al_carrito}</button>
+                            <button class="btn-carrito boton-agregarcarrito" onclick="agregarAlCarrito('${producto.nombre}', ${precio}, 'cantidad${producto.nombre.replace(/\s+/g, '-')}', '${producto.imagen}', this)">${locales[lang].productos.agregar_al_carrito}</button>
                         </div>
                         <p class="nombre">${producto.nombre}</p>
                     </div>
                 </div>
             `;
     
-            productosContainer.appendChild(productoDiv);
+            // Ocultar botones y cantidad cuando el producto no está disponible
+            const disponibilidad = productoDiv.querySelector('.disponibilidad');
+            const botonesCantidad = productoDiv.querySelector('.cantidad-carrito-contenedor');
+            if (!producto.disponible) {
+                botonesCantidad.style.display = "none"; // Ocultar los botones de cantidad y el botón "Agregar al carrito"
+            }
+    
+            masVendidosContainer.appendChild(productoDiv);
         });
+    
+        // Crear el contenedor para los productos por categoría
+        const categoriasContainer = document.createElement("div");
+        categoriasContainer.className = "categorias-container"; // Clase para el contenedor de categorías
+    
+        // Agrupar productos por categorías
+        const categorias = [...new Set(productosUnicos.map(producto => producto.categoria))];
+    
+        categorias.forEach(categoria => {
+            const categoriaDiv = document.createElement("div");
+            categoriaDiv.className = "categoria";
+            categoriaDiv.dataset.categoria = categoria;
+    
+            // Crear el título de la categoría
+            const categoriaTitle = document.createElement("h2");
+            categoriaTitle.textContent = categoria;
+            categoriaDiv.appendChild(categoriaTitle);
+    
+            // Filtrar productos de esta categoría
+            const productosCategoria = productosUnicos.filter(producto => producto.categoria === categoria);
+            const categoriaProductosContainer = document.createElement("div");
+            categoriaProductosContainer.className = "productos-categoria-container";
+    
+            productosCategoria.forEach(producto => {
+                const productoDiv = document.createElement("div");
+                productoDiv.className = "producto";
+                productoDiv.dataset.nombre = producto.nombre;
+                productoDiv.dataset.categoria = producto.categoria;
+    
+                let precio = producto.precio;
+                let pvpr = producto.pvpr;
+                let descuento = '';
+    
+                // Asegurarse de que el precio tenga dos decimales
+                precio = precio.toFixed(2);
+                if (producto.oferta) {
+                    pvpr = producto.precio;
+                    precio = (producto.precio - (producto.precio * (producto.descuento / 100))).toFixed(2);
+                    descuento = `<p class="descuento" style="text-decoration: none;">-${producto.descuento}%</p>`;
+                }
+    
+                const pvprHtml = producto.oferta ? `<p class="pvpr">PVPR: US$<s>${pvpr.toFixed(2)}</s></p>` : '';
+    
+                const etiquetaOferta = producto.oferta ? `<span class="etiqueta oferta producto-oferta">${locales[lang].productos.oferta}</span>` : '';
+                const etiquetaMasVendido = producto.mas_vendido ? `<div class="badge mas-vendido producto-masvendido">${locales[lang].productos.mas_vendido}</div>` : '';
+    
+                // Mostrar disponibilidad
+                const disponibilidadHtml = producto.disponible
+                    ? `<div class="disponibilidad disponible">${locales[lang].productos.disponible}</div>`
+                    : `<div class="disponibilidad no-disponible">${locales[lang].productos.no_disponible}</div>`;
+    
+                productoDiv.innerHTML = `
+                    <div class="producto-contenedor">
+                        <div class="etiqueta-segmento">
+                            ${etiquetaMasVendido}
+                            ${etiquetaOferta}
+                        </div>
+                        <div class="producto-img">
+                            <img src="${producto.imagen}" alt="${producto.nombre}">
+                        </div>
+                        <div class="producto-info">
+                            <div class="pvpr-precio-contenedor">
+                                <p class="precio"><span class="currency">US$</span>${precio}</p>
+                                ${pvprHtml}
+                            </div>
+                            ${descuento}
+                            ${disponibilidadHtml} <!-- Agregar disponibilidad -->
+                            <div class="cantidad-carrito-contenedor">
+                                <div class="cantidad">
+                                    <button class="btn-cantidad" onclick="decrementar('cantidad${producto.nombre.replace(/\s+/g, '-')}')">-</button>
+                                    <span id="cantidad${producto.nombre.replace(/\s+/g, '-')}" class="cantidad-span">1</span>
+                                    <button class="btn-cantidad" onclick="incrementar('cantidad${producto.nombre.replace(/\s+/g, '-')}')">+</button>
+                                </div>
+                                <button class="btn-carrito boton-agregarcarrito" onclick="agregarAlCarrito('${producto.nombre}', ${precio}, 'cantidad${producto.nombre.replace(/\s+/g, '-')}', '${producto.imagen}', this)">${locales[lang].productos.agregar_al_carrito}</button>
+                            </div>
+                            <p class="nombre">${producto.nombre}</p>
+                        </div>
+                    </div>
+                `;
+    
+                // Ocultar botones y cantidad cuando el producto no está disponible
+                const disponibilidad = productoDiv.querySelector('.disponibilidad');
+                const botonesCantidad = productoDiv.querySelector('.cantidad-carrito-contenedor');
+                if (!producto.disponible) {
+                    botonesCantidad.style.display = "none"; // Ocultar los botones de cantidad y el botón "Agregar al carrito"
+                }
+    
+                categoriaProductosContainer.appendChild(productoDiv);
+            });
+    
+            categoriaDiv.appendChild(categoriaProductosContainer);
+            categoriasContainer.appendChild(categoriaDiv);
+        });
+    
+        // Insertar los contenedores en el DOM
+        const productosContainer = document.getElementById("productos-container");
+        productosContainer.appendChild(masVendidosContainer); // Insertar los más vendidos en la parte superior
+        productosContainer.appendChild(categoriasContainer); // Insertar los productos por categorías debajo
     
         // Filtrar productos por categoría
         document.querySelectorAll(".categorias ul li a").forEach(link => {
@@ -140,29 +260,66 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     
+
+        // Mejorar la función de filtrado de productos
+        const searchInput = document.getElementById("search-input");
+        const searchButton = document.getElementById("search-button");
+
         // Filtrar productos en tiempo real
         searchInput.addEventListener("input", filterProducts);
         searchButton.addEventListener("click", filterProducts);
     
         function filterProducts() {
-            const searchValue = searchInput.value.toLowerCase();
-            ocultarCarrito();
-            document.getElementById('planilla-pago').classList.add('hidden');
+            const searchValue = searchInput.value.trim().toLowerCase();
+            let foundProducts = false; // Variable para saber si encontramos productos
+        
+            if (searchValue === "") {
+                // Mostrar todos los productos si no hay búsqueda
+                mostrarTodosLosProductos();
+            } else {
+                // Filtrar los productos
+                productosUnicos.forEach(producto => {
+                    const productName = producto.nombre.toLowerCase();
+                    const productElement = document.querySelector(`.producto[data-nombre="${producto.nombre}"]`);
+                    
+                    if (productName.includes(searchValue)) {
+                        productElement.style.display = "block";
+                        foundProducts = true; // Si encontramos un producto, cambiamos esta variable
+                    } else {
+                        productElement.style.display = "none";
+                    }
+                });
+            }
+        
+            // Mostrar u ocultar el mensaje de "No se encontraron resultados"
+            const noResultMessage = document.getElementById("no-result-message");
+            if (!foundProducts && searchValue !== "") {
+                noResultMessage.classList.remove("hidden"); // Mostrar el mensaje
+                noResultMessage.style.display = "block"; // Asegurarse de que se vea
+            } else {
+                noResultMessage.classList.add("hidden"); // Ocultar el mensaje
+                noResultMessage.style.display = "none"; // Asegurarse de que no se vea
+            }
+        }        
+
+        // Función para mostrar todos los productos
+        function mostrarTodosLosProductos() {
             productosUnicos.forEach(producto => {
-                const productName = producto.nombre.toLowerCase();
                 const productElement = document.querySelector(`.producto[data-nombre="${producto.nombre}"]`);
-                if (productName.includes(searchValue)) {
-                    productElement.style.display = "block";
-                } else {
-                    productElement.style.display = "none";
+                if (productElement) {
+                    productElement.style.display = "block"; // Mostrar todos los productos
                 }
             });
-        }
+        
+            const noResultMessage = document.getElementById("no-result-message");
+            noResultMessage.classList.add("hidden"); // Ocultar mensaje de "No se encontraron resultados"
+            noResultMessage.style.display = "none"; // Asegurarse de que no se vea
+        }      
     
         productosRenderizados = true; // Marcar que los productos han sido renderizados
         currentLang = lang; // Actualizar el idioma actual
     }
-    
+      
     // Fetch de traducciones
     fetch("Json/lang.json")
     .then(response => response.json())
@@ -354,6 +511,7 @@ function vaciarCarrito() {
     
         carritoContainer.innerHTML = '';  // Limpiar el contenido del carrito
         let total = 0;
+
         if(!carritoTotal){
             carritoTotal = document.getElementById("cart-total");
         }
