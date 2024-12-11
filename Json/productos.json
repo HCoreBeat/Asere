@@ -179,5 +179,129 @@
         "mas_vendido": false,
         "imagen": "img/products/Picadillo_Especial_2.jpg",
         "disponible": true
+    },
+
+
+    
+
+    {
+        "nombre": "Leche en polvo (900g)",
+        "categoria": "lacteos",
+        "precio": 11.95,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": true,
+        "imagen": "img/products/Leche_en_Polvo.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Helado 4Lts",
+        "categoria": "lacteos",
+        "precio": 9.95,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Helado.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Leche Evaporada 400g",
+        "categoria": "lacteos",
+        "precio": 2.83,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Leche_Evaporada.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Leche Evaporada «Delite» (260g)",
+        "categoria": "lacteos",
+        "precio": 1.80,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Leche_Evaporada_Delite.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Pack de 4 yogurts de Macedonia Vima",
+        "categoria": "lacteos",
+        "precio": 2.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Pack_de_4_Yogurts_Macedonia.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Pack de 4 yogurts de Plátano Vima",
+        "categoria": "lacteos",
+        "precio": 2.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Pack_de_4_Yogurts_Platano.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Salsa Brava (320g)",
+        "categoria": "aderezos",
+        "precio": 2.87,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Salsa_Brava.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Sazón Mixto (250g)",
+        "categoria": "aderezos",
+        "precio": 4.93,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Sazon_Mixto.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Comino Molido (198.5g)",
+        "categoria": "aderezos",
+        "precio": 7.95,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": true,
+        "imagen": "img/products/Comino_Molido.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Ketchup (320g)",
+        "categoria": "aderezos",
+        "precio": 2.87,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Ketchup.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Queso Crema (200g)",
+        "categoria": "aderezos",
+        "precio": 2.47,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Queso_Crema.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Sazón Goya",
+        "categoria": "aderezos",
+        "precio": 0.34,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Sazon_Goya.jpg",
+        "disponible": true
     }
 ]
