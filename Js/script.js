@@ -3,9 +3,6 @@
 let carrito = [];
 
 document.addEventListener("DOMContentLoaded", () => {
-    const productosContainer = document.getElementById("productos");
-    const searchInput = document.getElementById("search-input");
-    const searchButton = document.getElementById("search-button");
     const menuToggle = document.querySelector(".menu-toggle");
     const navMenu = document.querySelector("nav ul");
     const overlay = document.querySelector(".overlay");
@@ -20,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let locales = {};
     let productos = [];
     let currentLang = 'es'; // Idioma por defecto
-    let productosRenderizados = false;
 
     let lastScrollTop = 0;
     let currency = 'USD';
@@ -132,7 +128,6 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
     
             // Ocultar botones y cantidad cuando el producto no está disponible
-            const disponibilidad = productoDiv.querySelector('.disponibilidad');
             const botonesCantidad = productoDiv.querySelector('.cantidad-carrito-contenedor');
             if (!producto.disponible) {
                 botonesCantidad.style.display = "none"; // Ocultar los botones de cantidad y el botón "Agregar al carrito"
@@ -163,6 +158,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const categoriaProductosContainer = document.createElement("div");
             categoriaProductosContainer.className = "productos-categoria-container";
     
+            let categoriaVisible = false; // Variable para saber si hay productos visibles en la categoría
+
             productosCategoria.forEach(producto => {
                 const productoDiv = document.createElement("div");
                 productoDiv.className = "producto";
@@ -221,17 +218,35 @@ document.addEventListener("DOMContentLoaded", () => {
                 `;
     
                 // Ocultar botones y cantidad cuando el producto no está disponible
-                const disponibilidad = productoDiv.querySelector('.disponibilidad');
                 const botonesCantidad = productoDiv.querySelector('.cantidad-carrito-contenedor');
                 if (!producto.disponible) {
                     botonesCantidad.style.display = "none"; // Ocultar los botones de cantidad y el botón "Agregar al carrito"
                 }
     
                 categoriaProductosContainer.appendChild(productoDiv);
+    
+                // Verificar si la categoría tiene productos visibles
+                if (productoDiv.style.display !== "none") {
+                    categoriaVisible = true;
+                }
+
+                // Agregar evento para abrir el modal cuando se hace clic en el producto, excluyendo los botones
+                productoDiv.addEventListener("click", (e) => {
+                    // Evitar que se active el modal si se hace clic en los botones
+                    if (e.target.closest(".btn-cantidad") || e.target.closest(".btn-carrito")) return;
+
+                    // Abrir modal
+                    abrirModal(producto);
+                });
             });
     
-            categoriaDiv.appendChild(categoriaProductosContainer);
-            categoriasContainer.appendChild(categoriaDiv);
+            // Si no hay productos visibles, ocultar la categoría
+            if (!categoriaVisible) {
+                categoriaDiv.style.display = "none";
+            } else {
+                categoriaDiv.appendChild(categoriaProductosContainer);
+                categoriasContainer.appendChild(categoriaDiv);
+            }
         });
     
         // Insertar los contenedores en el DOM
@@ -254,72 +269,138 @@ document.addEventListener("DOMContentLoaded", () => {
                         producto.style.display = "none";
                     }
                 });
+
+                // Ocultar categorías vacías
+                document.querySelectorAll(".categoria").forEach(categoriaDiv => {
+                    const productosCategoria = categoriaDiv.querySelectorAll(".producto");
+                    const categoriaVisible = Array.from(productosCategoria).some(producto => producto.style.display !== "none");
+        
+                    if (categoriaVisible) {
+                        categoriaDiv.style.display = "block";
+                    } else {
+                        categoriaDiv.style.display = "none";
+                    }
+                });
     
                 // Ocultar el carrito al seleccionar una categoría
                 ocultarCarrito();
             });
         });
     
-
         // Mejorar la función de filtrado de productos
         const searchInput = document.getElementById("search-input");
         const searchButton = document.getElementById("search-button");
-
+    
         // Filtrar productos en tiempo real
         searchInput.addEventListener("input", filterProducts);
         searchButton.addEventListener("click", filterProducts);
     
         function filterProducts() {
             const searchValue = searchInput.value.trim().toLowerCase();
-            let foundProducts = false; // Variable para saber si encontramos productos
-        
+    
+            // Mostrar todos los productos si el campo de búsqueda está vacío
             if (searchValue === "") {
-                // Mostrar todos los productos si no hay búsqueda
                 mostrarTodosLosProductos();
-            } else {
-                // Filtrar los productos
-                productosUnicos.forEach(producto => {
-                    const productName = producto.nombre.toLowerCase();
-                    const productElement = document.querySelector(`.producto[data-nombre="${producto.nombre}"]`);
-                    
-                    if (productName.includes(searchValue)) {
-                        productElement.style.display = "block";
-                        foundProducts = true; // Si encontramos un producto, cambiamos esta variable
-                    } else {
-                        productElement.style.display = "none";
-                    }
-                });
+                return;
             }
-        
+    
+            let foundProducts = false;
+    
+            document.querySelectorAll(".producto").forEach(producto => {
+                const productName = producto.dataset.nombre.toLowerCase();
+                const productCategoria = producto.dataset.categoria.toLowerCase();
+    
+                const matchesSearch = productName.includes(searchValue) || productCategoria.includes(searchValue);
+    
+                if (matchesSearch) {
+                    producto.style.display = "block";
+                    foundProducts = true;
+                } else {
+                    producto.style.display = "none";
+                }
+            });
+    
+            // Ocultar categorías vacías
+            document.querySelectorAll(".categoria").forEach(categoriaDiv => {
+                const productosCategoria = categoriaDiv.querySelectorAll(".producto");
+                const categoriaVisible = Array.from(productosCategoria).some(producto => producto.style.display !== "none");
+    
+                if (categoriaVisible) {
+                    categoriaDiv.style.display = "block";
+                } else {
+                    categoriaDiv.style.display = "none";
+                }
+            });
+    
+            // Ocultar productos más vendidos que no coinciden con la búsqueda
+            if (!foundProducts) {
+                masVendidosContainer.style.display = "none";
+            } else {
+                masVendidosContainer.style.display = "flex";
+            }
+
             // Mostrar u ocultar el mensaje de "No se encontraron resultados"
             const noResultMessage = document.getElementById("no-result-message");
             if (!foundProducts && searchValue !== "") {
                 noResultMessage.classList.remove("hidden"); // Mostrar el mensaje
                 noResultMessage.style.display = "block"; // Asegurarse de que se vea
+                noResultMessage.style.marginTop = (120)+'px';
             } else {
                 noResultMessage.classList.add("hidden"); // Ocultar el mensaje
                 noResultMessage.style.display = "none"; // Asegurarse de que no se vea
             }
-        }        
+        }
 
-        // Función para mostrar todos los productos
         function mostrarTodosLosProductos() {
-            productosUnicos.forEach(producto => {
-                const productElement = document.querySelector(`.producto[data-nombre="${producto.nombre}"]`);
-                if (productElement) {
-                    productElement.style.display = "block"; // Mostrar todos los productos
-                }
+            document.querySelectorAll(".producto").forEach(producto => {
+                producto.style.display = "block";  // Mostrar todos los productos
             });
         
-            const noResultMessage = document.getElementById("no-result-message");
-            noResultMessage.classList.add("hidden"); // Ocultar mensaje de "No se encontraron resultados"
-            noResultMessage.style.display = "none"; // Asegurarse de que no se vea
-        }      
-    
-        productosRenderizados = true; // Marcar que los productos han sido renderizados
-        currentLang = lang; // Actualizar el idioma actual
+            // Asegúrate de que las categorías y los más vendidos también se muestren si no hay filtros activos
+            document.querySelectorAll(".categoria").forEach(categoriaDiv => {
+                categoriaDiv.style.display = "block";
+            });
+        
+            masVendidosContainer.style.display = "flex";  // Mostrar productos más vendidos si no hay filtro de búsqueda
+        }
+        
     }
-      
+
+    
+    function abrirModal(producto) {
+        // Obtener el modal y el contenedor de la información
+        const modal = document.getElementById("product-modal");
+        const modalInfo = document.getElementById("modal-product-info");
+
+        // Llenar el modal con la información del producto
+        modalInfo.innerHTML = `
+            <h2>${producto.nombre}</h2>
+            <img src="${producto.imagen} " alt="${producto.nombre}" class="modal-img">
+            <p><strong>Precio:</strong> US$${producto.precio}</p>
+            <p><strong>Categoría:</strong> ${producto.categoria}</p>
+            <p><strong>Disponibilidad:</strong> ${producto.disponible ? "Disponible" : "No disponible"}</p>
+        `;
+
+        // Mostrar el modal
+        modal.style.display = "block";
+        disableScroll();
+
+        // Agregar evento para cerrar el modal
+        const closeBtn = modal.querySelector(".close-btn");
+        closeBtn.addEventListener("click", () => {
+            modal.style.display = "none"; // Cerrar modal
+            enableScroll();
+        });
+
+        // Cerrar modal cuando se haga clic fuera del contenido
+        window.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.style.display = "none"; // Cerrar modal
+                enableScroll();
+            }
+        });
+    }
+
     // Fetch de traducciones
     fetch("Json/lang.json")
     .then(response => response.json())
@@ -746,3 +827,14 @@ const frames = ['img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png'
         currentFrame = (currentFrame + 1) % frames.length; // Cicla entre los frames
         gifContainer.src = frames[currentFrame];
  }, 100); // Cambia cada 250 ms (ajusta la velocidad según tus necesidades)
+
+ window.onload = function() {
+    // Mostrar el div de desarrollo
+    document.getElementById("dev-info").style.display = "block";
+  
+    // Evento para cerrar el div
+    document.getElementById("close-dev-info").onclick = function() {
+      document.getElementById("dev-info").style.display = "none";
+    }
+  };
+  
