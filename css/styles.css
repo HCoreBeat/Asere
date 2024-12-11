@@ -77,7 +77,7 @@ header {
     height: 70px;
     /*Radio del logo*/
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);*/
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -444,9 +444,10 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
     background-color: #f5f5f5;
     padding: 15px;
     border-radius: 8px;
-    margin-top: -100px;
+    margin-top: -120px;
     box-sizing: border-box;
 }
+
 
 /* Contenedor de productos "más vendidos" */
 .mas-vendidos-container {
@@ -454,7 +455,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
     overflow-x: auto; /* Permite el desplazamiento horizontal */
     gap: 15px;
     margin-bottom: 30px;
-    padding: 20px 5px; /* Agrega un poco de padding para el contenido */
+    padding: 10px 5px; /* Agrega un poco de padding para el contenido */
     scroll-snap-type: x mandatory; /* Alineación de los productos al hacer scroll */
     -webkit-overflow-scrolling: touch; /* Mejora el rendimiento en dispositivos móviles */
     border-radius: 10px; /* Bordes redondeados */
@@ -496,7 +497,245 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 }
 
 
-/* Categorías y otros contenedores */
+
+/*----------------------- Estilo base del modal---------------------- 
+------------------------------------------------------------------------*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; /* Fondo oscuro ocupa toda la pantalla */
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo oscuro con mayor contraste */
+    overflow: hidden;
+    padding: 0;
+    backdrop-filter: blur(5px); /* Efecto de desenfoque para un look moderno */
+  }
+  
+  /* Animación de fadeIn con desplazamiento */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Contenido del modal */
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    background: #fdfdfd;
+    overflow: hidden;
+    animation: fadeInUp 0.5s ease-out;
+  }
+  
+  /* Header del modal */
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
+  
+  /* Título del header */
+  .modal h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+    text-align: left;
+    line-height: 1.2;
+  }
+  
+  /* Botón de cierre del header */
+  .close-btn {
+    color: #333;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: color 0.3s ease;
+    padding: 5px;
+  }
+  
+  /* Efecto hover en el botón de cierre */
+  .close-btn:hover,
+  .close-btn:focus {
+    color: #e74c3c;
+  }
+  
+  /* Imagen del modal */
+  .modal-img {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Efecto de zoom en la imagen */
+  .modal-img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Detalles de la información del producto */
+  .modal-content p {
+    font-size: 14px; /* Ajustado para mejor legibilidad */
+    color: #555;
+    margin: 8px 0;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  /* Estilo para los botones de acción */
+  .modal-content .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  /* Responsividad para dispositivos móviles */
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 85%;
+      padding: 20px;
+      max-width: 350px;
+    }
+  
+    .modal h2 {
+      font-size: 25px;
+    }
+  
+    .modal-img {
+      margin-bottom: 12px;
+      width: 80%;
+    }
+  
+    .modal-content p {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modal-content {
+      width: 95%;
+      max-width: 300px;
+      padding: 10px;
+    }
+  
+    .modal h2 {
+      font-size: 25px;
+    }
+  
+    .close-btn{
+      font-size: 24px;
+    }
+  
+    .modal-img {
+      margin-bottom: 8px;
+      width: 75%;
+    }
+  
+    .modal-content p {
+      font-size: 14px;
+    }
+  }
+  
+
+/*--------------------------------------------------Pagina en desarrollo-----------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+/* Estilo del div de información de desarrollo */
+.dev-info {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2d3436b9;
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    max-width: 80%;
+    width: 70%;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  .dev-info-summary {
+    font-size: 15px;
+    color: #ffffff;
+    margin: 10px 0;
+    line-height: 1.5;
+  }
+  
+  
+  /* Estilo del gif de carga */
+  .dev-info-gif {
+    width: auto;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo del texto */
+  .dev-info-text {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0;
+  }
+  
+  /* Estilo del texto de la hora de actualización */
+  .dev-info-updated {
+    font-size: 12px;
+    color: #b2bec3;
+    margin: 5px 0;
+  }
+  
+  /* Botón de cerrar */
+  .dev-info-close {
+    padding: 8px 16px;
+    background-color: #d63031;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dev-info-close:hover {
+    background-color: #e74c3c;
+  }
+  @media(max-width: 768px) {
+    .dev-info-summary {
+        font-size: 10px;
+      }
+  }
+
+/* --------------------------------------------------Categorías y otros contenedores --------------------------
+--------------------------------------------------------------------------------------------------------------*/
 .categorias-container {
     display: flex;
     flex-direction: column;
@@ -2186,3 +2425,4 @@ hr {
     margin: 0;
     cursor: pointer;
 }
+
