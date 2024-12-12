@@ -836,5 +836,16 @@ const frames = ['img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png'
     document.getElementById("close-dev-info").onclick = function() {
       document.getElementById("dev-info").style.display = "none";
     }
+    //------------Whatsapp----------
+    const whatsappButton = document.getElementById("whatsapp-button");
+    whatsappButton.style.opacity = 0;
+    whatsappButton.style.transform = "translateY(20px)";
+    setTimeout(() => {
+      whatsappButton.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+      whatsappButton.style.opacity = 1;
+      whatsappButton.style.transform = "translateY(0)";
+    }, 500);
   };
+  
+  
   
