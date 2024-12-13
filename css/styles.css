@@ -468,13 +468,50 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Aumenta la sombra al pasar el mouse */
 }
 
-/* Producto dentro del contenedor */
+/*----------------------------------- Producto dentro del contenedor  mas vendido-----------------------------------------------------
+------------------------------------------------------------------------------------------------------------------*/
 .mas-vendidos-container .producto {
-    flex: 0 0 auto; /* Impide que los productos cambien de tamaño */
-    width: 180px; /* Ancho fijo para los productos */
-    scroll-snap-align: start; /* Alinea los productos al principio del contenedor */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones para los productos */
-    border-radius: 8px; /* Bordes redondeados */
+    flex: 0 0 auto;
+    width: 180px;
+    height: 275px;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1px;
+}
+.mas-vendidos-container .producto .disponibilidad{
+    display: none;
+}
+.mas-vendidos-container .producto .cantidad-carrito-contenedor{
+    display: none;
+}
+.mas-vendidos-container .producto .descuento{
+    display: none;
+}
+
+.mas-vendidos-container .producto .nombre{
+    position: absolute;
+    top: 0;
+}
+
+.mas-vendidos-container .producto .producto-contenedor{
+    margin-top: 35px;
+}
+
+@media (max-width: 768px) {
+    /* Producto dentro del contenedor */
+    .mas-vendidos-container .producto {
+        flex: 0 0 auto;
+        width: 160px;
+        height: 210px;
+        scroll-snap-align: start;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 1px;
+    }
+
+    .mas-vendidos-container .producto .producto-img{
+        height: 100px;
+        width: 120px;
+    }
 }
 
 /* Efecto hover sobre cada producto */
@@ -762,7 +799,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 
 .productos-categoria-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
     padding: 0 5px;
 }
@@ -791,7 +828,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 
 .producto-img {
     text-align: center;
-    margin-bottom: 6px;
+    margin: 15px 10px;
     height: 160px;
     overflow: hidden;
 }
@@ -801,19 +838,21 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
+    padding-top: 5px;
 }
 
 /* Disponibilidad */
 .disponibilidad {
-    font-size: 0.7rem;  /* Reduce el tamaño del texto */
+    font-size: 0.6rem;
     font-weight: bold;
     text-align: center;
-    padding: 4px 8px; /* Ajusta el padding */
+    padding: 3px;
     border-radius: 5px;
     margin-top: 5px;
-    margin-bottom: 5px;
-    width: auto; /* No ocupa todo el ancho */
-    display: inline-block; /* Que no se extienda a lo largo de todo el contenedor */
+    margin-bottom: 15px;
+    width: auto;
+    height: 20px;
+    display: inline-block;
 }
 
 .disponibilidad.disponible {
@@ -842,11 +881,19 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 }
 
 .badge.mas-vendido {
+    font-size: 12px;
+    width: 85px;
+    height: 19px;
     background-color: #00796B;
     color: #fff;
-    padding: 3px 3px;
+    padding: 0px 3px;
     border-radius: 3px;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 99% 60%, 75% 100%, 0 100%);
+}
+
+.etiqueta-segmento{
+    display: block;
+    position: absolute;
 }
 
 /* Información del producto */
@@ -887,19 +934,19 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 }
 
 .pvpr {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     color: #757575;
     text-decoration: line-through;
 }
 
 .descuento {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #fff;
     background-color: #CC0C39;
-    padding: 2px 5px;
+    padding: 0px 5px;
     border-radius: 3px;
-    margin-bottom: 5px;
-    text-decoration: none;
+    width: 40px;
+    height: 20px;
 }
 
 /* Botones de cantidad y carrito */
@@ -922,7 +969,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
     width: 28px;
     height: 28px;
     border: none;
-    border-radius: 50%;
+    border-radius: 10%;
     background-color: #00796B;
     color: white;
     font-size: 15px;
@@ -948,7 +995,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 .btn-carrito {
     background: #00796B;
     color: white;
-    padding: 6px 12px;
+    padding: 6px 6px;
     border: none;
     border-radius: 5px;
     font-size: 15px;
@@ -995,7 +1042,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
     .btn-cantidad {
         width: 25px;
         height: 25px;
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .cantidad span {
@@ -1037,7 +1084,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
     .btn-cantidad {
         width: 25px;
         height: 25px;
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .cantidad span {
@@ -1080,7 +1127,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
     .btn-cantidad {
         width: 25px;
         height: 25px;
-        font-size: 9px;
+        font-size: 15px;
     }
 
     .cantidad span {
@@ -1747,17 +1794,6 @@ hr {
         margin-top: 5px;
         width: auto;
     }
-}
-.mas-vendido {
-    color: #FFA500; /* Color naranja */
-    font-weight: bold;
-    font-size: 0.9rem;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    background-color: #FFF3E0; /* Fondo claro */
-    padding: 3px 8px;
-    border-radius: 5px;
-    display: inline-block;
 }
 
 /*-----------------------------------------------------------------------------------------
