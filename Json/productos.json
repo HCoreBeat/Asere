@@ -78,7 +78,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Paquete_de_Salchichas.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Pack de 4 Hamburguesas de pollo",
@@ -145,7 +145,7 @@
         "categoria": "carnes",
         "precio": 52.74,
         "descuento": 10,
-        "oferta": false,
+        "oferta": true,
         "mas_vendido": true,
         "imagen": "img/products/Pernil_de_Cerdo.jpg",
         "disponible": true
@@ -161,14 +161,14 @@
         "disponible": true
     },
     {
-        "nombre": "Salchicha de pollo y cerdo",
+        "nombre": "Salchicha de pollo y cerdo 10u (340g)",
         "categoria": "carnes",
-        "precio": 50,
+        "precio": 2,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Salchicha_Pollo_Cerdo.jpg",
-        "disponible": false
+        "disponible": true
     },
     {
         "nombre": "Picadillo Especial 800g",
@@ -187,7 +187,7 @@
     {
         "nombre": "Leche en polvo (900g)",
         "categoria": "lacteos",
-        "precio": 11.95,
+        "precio": 13,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": true,
@@ -302,6 +302,209 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Sazon_Goya.jpg",
+        "disponible": true
+    },
+
+
+
+    {
+        "nombre": "Aceite Fritura 900ml",
+        "categoria": "despensa",
+        "precio": 2.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Aceite_Fritura.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Azúcar blanca x lb",
+        "categoria": "despensa",
+        "precio": 2,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Azucar_Blanca.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Frijol Negro x Lb",
+        "categoria": "despensa",
+        "precio": 2.50,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Frijol_Negro.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Paquete de pan de bola 10u",
+        "categoria": "despensa",
+        "precio": 1.20,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Pan.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Pastilla de Pollo",
+        "categoria": "despensa",
+        "precio": 0.20,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Pastilla_de_Pollo.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Azúcar Parda x lb",
+        "categoria": "despensa",
+        "precio": 2,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Azucar_Parda.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Café La Llave",
+        "categoria": "despensa",
+        "precio": 7,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Cafe_la_Llave.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Cartón de Huevos",
+        "categoria": "despensa",
+        "precio": 13,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": true,
+        "imagen": "img/products/Carton_de_Huevo.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Espaguetis (500g)",
+        "categoria": "despensa",
+        "precio": 1.80,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Espaguetis.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Leche Condensada azucarada (390g)",
+        "categoria": "despensa",
+        "precio": 2.50,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Leche_Condensada_Azucarada.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Sopa instantánea sabor Pollo (85g)",
+        "categoria": "despensa",
+        "precio": 0.96,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Sopa_Instantanea_sabor_Pollo.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Pasta de tomate Vima (400g)",
+        "categoria": "despensa",
+        "precio": 2.70,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Pasta_de_Tomate_Vima.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Azúcar (1Kg)",
+        "categoria": "despensa",
+        "precio": 4.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Azucar.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Frijol Rojo x Lb",
+        "categoria": "despensa",
+        "precio": 3,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Frijol_Rojo.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Mantequilla (250g)",
+        "categoria": "despensa",
+        "precio": 1.98,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Mantequilla.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Sal x Lb",
+        "categoria": "despensa",
+        "precio": 0.30,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Sal.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Gelatina Gely de Melocotón (125ml)",
+        "categoria": "despensa",
+        "precio": 1.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Gelatina_Gely_Melocoton.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Paquete de harina 1kg",
+        "categoria": "despensa",
+        "precio": 2.97,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Paquete_de_Harina.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Croqueta Jamón (500g)",
+        "categoria": "despensa",
+        "precio": 2.93,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Croqueta_Jamon.jpeg",
+        "disponible": true
+    },
+    {
+        "nombre": "Frijoles Negros (1Kg)",
+        "categoria": "despensa",
+        "precio": 3.40,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Frijoles_Negros.jpeg",
         "disponible": true
     }
 ]
