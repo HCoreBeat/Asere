@@ -22,7 +22,7 @@
         "dressings": "Aderezos",
         "pasta_grains": "Pastas & Granos",
         "dairy": "Lácteos",
-        "confectionery": "Confituras",
+        "pantry": "Despensa",
         "drinks": "Bebidas",
         "alcohol": "Bebidas Alcohólicas",
         "cakes": "Cakes",
@@ -55,6 +55,9 @@
         "about_text": "Somos el puente que une a cada cubano en el mundo con sus seres queridos en la isla. Nos dedicamos a ofrecer los mejores productos y servicios a nuestros clientes, con un compromiso inquebrantable hacia su satisfacción."
       }
     },
+
+
+
     "en": {
       "header": {
         "slogan": "The best quality at your fingertips",
@@ -78,7 +81,7 @@
         "dressings": "Dressings",
         "pasta_grains": "Pasta & Grains",
         "dairy": "Dairy",
-        "confectionery": "Confectionery",
+        "pantry": "Pantry",
         "drinks": "Drinks",
         "alcohol": "Alcoholic Drinks",
         "cakes": "Cakes",
@@ -110,6 +113,9 @@
         "about_text": "We are the bridge that connects every Cuban in the world with their loved ones on the island. We are dedicated to offering the best products and services to our customers, with an unwavering commitment to their satisfaction."
       }
     },
+
+
+
     "de": {
       "header": {
         "slogan": "Die beste Qualität in Ihren Händen",
@@ -132,8 +138,8 @@
         "canned": "Dosen",
         "dressings": "Dressings",
         "pasta_grains": "Pasta & Getreide",
-        "dairy": "Molkereiprodukte",
-        "confectionery": "Süßwaren",
+        "dairy": "Speisekammer",
+        "pantry": "Süßwaren",
         "drinks": "Getränke",
         "alcohol": "Alkoholische Getränke",
         "cakes": "Kuchen",
@@ -167,6 +173,8 @@
       }
     },
 
+
+
     "it": {
     "header": {
       "slogan": "La migliore qualità a portata di mano",
@@ -190,7 +198,7 @@
       "dressings": "Condimenti",
       "pasta_grains": "Pasta & Cereali",
       "dairy": "Latticini",
-      "confectionery": "Dolci",
+      "pantry": "Dispensa",
       "drinks": "Bevande",
       "alcohol": "Bevande alcoliche",
       "cakes": "Torte",
@@ -224,3 +232,5 @@
     }
   }
 }
+
+  
