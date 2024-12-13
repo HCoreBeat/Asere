@@ -846,6 +846,3 @@ const frames = ['img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png'
       whatsappButton.style.transform = "translateY(0)";
     }, 500);
   };
-  
-  
-  
