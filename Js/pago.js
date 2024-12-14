@@ -1,5 +1,3 @@
-// js/payment.js
-
 // Función para obtener datos del carrito desde localStorage
 function getCartItems() {
     return JSON.parse(localStorage.getItem('carrito')) || [];
@@ -56,50 +54,81 @@ document.getElementById('payment-form').addEventListener('submit', function(even
     const email = document.getElementById('email').value;
     const address = document.getElementById('address').value;
     const termsAccepted = document.getElementById('terms').checked;
+    const phone = document.getElementById('phone').value;
 
-    if (!fullName || !email || !address || !termsAccepted) {
+    if (!fullName || !email || !address || !termsAccepted || !phone) {
         alert('Por favor, rellena todos los campos obligatorios y acepta los términos y condiciones.');
         return;
     }
 
-    // Enviar correo electrónico
-    if (typeof google !== 'undefined' && google.script && google.script.run) {
-        sendEmail(fullName, email, address, getCartItems(), calculateTotal(getCartItems()), getAffiliate());
-    } else {
-        console.error('Google Apps Script not loaded properly.');
-        alert('Error al enviar el correo. Intenta de nuevo más tarde.');
-    }
+    // Obtener datos del carrito y afiliado
+    const cartItems = getCartItems();
+    const total = calculateTotal(cartItems);
+    const affiliate = getAffiliate();
 
-    // Vaciar el carrito
-    vaciarCarrito();
-
-    // Mostrar mensaje de éxito
-    alert('Pago realizado con éxito');
-    // Ocultar la planilla de pago y mostrar el carrito vacío (o mensaje de confirmación)
-    document.getElementById('planilla-pago').classList.add('hidden');
-    document.getElementById('carrito').style.display = 'none';
-});
-
-// Función para enviar el correo electrónico utilizando Google Apps Script
-function sendEmail(fullName, email, address, cartItems, total, affiliate) {
-    const emailContent = `
-        Nombre: ${fullName}\n
-        Correo Electrónico: ${email}\n
-        Dirección: ${address}\n
-        Productos: ${JSON.stringify(cartItems, null, 2)}\n
-        Total: $${total}\n
+    // Crear el mensaje con los detalles
+    const message = `
+        Nombre completo: ${fullName}
+        Correo electrónico: ${email}
+        Telefono: ${phone}
+        Dirección: ${address}
         Afiliado: ${affiliate}
+        
+        Detalles del pedido:
+        ${cartItems.map(item => `- ${item.nombre} (x${item.cantidad}): $${(item.precio * item.cantidad).toFixed(2)}`).join('\n')}
+
+        Total: $${total}
     `;
 
-    google.script.run.withSuccessHandler(function(response) {
-        console.log('Correo enviado exitosamente:', response);
-    }).withFailureHandler(function(error) {
-        console.log('Error al enviar el correo:', error);
-    }).sendOrderEmail(email, 'Confirmación de Pedido', emailContent);
+    // Enviar los datos a EmailJS
+    const serviceID = 'default_service';
+    const templateID = 'template_yw2stbs';
+
+    emailjs.send(
+        serviceID,
+        templateID,
+        {
+            name: fullName,
+            email: email,
+            message: message
+        },
+        "UE5xZtzvJ3W5lClZS"
+    ).then(function(response) {
+        console.log("Correo enviado exitosamente:", response);
+        
+        // Vaciar el carrito
+        vaciarCarrito();
+
+        // Mostrar panel de agradecimiento
+        mostrarPanelAgradecimiento();
+
+    }, function(error) {
+        console.log("Error al enviar el correo:", error);
+        alert("Error al enviar el correo. Por favor, inténtalo de nuevo.");
+    });
+});
+
+// Función para vaciar el carrito
+function vaciarCarrito() {
+    localStorage.removeItem('carrito');
+    document.getElementById('summary-items').innerHTML = '';
+    document.getElementById('summary-total').textContent = '';
+}
+
+// Función para mostrar el panel de agradecimiento
+function mostrarPanelAgradecimiento() {
+        // Mostrar el panel de agradecimiento
+    const panelAgradecimiento = document.getElementById('thank-you-panel');
+    panelAgradecimiento.style.display = 'flex';
 }
 
 // Función para cancelar el pago y regresar al carrito
 function cancelPayment() {
     document.getElementById('planilla-pago').classList.add('hidden');
     document.getElementById('carrito').style.display = 'block';
+}
+
+// Función para manejar el regreso a la página principal sin recargar
+function goBack() {
+    window.location.href = 'index.html'; // Redirige sin recargar la página
 }
