@@ -2,7 +2,7 @@
     {
         "nombre": "Refresco Instantáneo (2Lt)",
         "categoria": "bebidas",
-        "precio": 0.35,
+        "precio": 0.40,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -83,7 +83,7 @@
     {
         "nombre": "Pack de 4 Hamburguesas de pollo",
         "categoria": "carnes",
-        "precio": 2.26,
+        "precio": 2.40,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -93,7 +93,7 @@
     {
         "nombre": "Hígado de cerdo x Lb",
         "categoria": "carnes",
-        "precio": 2.78,
+        "precio": 2.87,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -247,7 +247,7 @@
     {
         "nombre": "Salsa Brava (320g)",
         "categoria": "aderezos",
-        "precio": 2.87,
+        "precio": 3,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -257,7 +257,7 @@
     {
         "nombre": "Sazón Mixto (250g)",
         "categoria": "aderezos",
-        "precio": 4.93,
+        "precio": 5.30,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -267,7 +267,7 @@
     {
         "nombre": "Comino Molido (198.5g)",
         "categoria": "aderezos",
-        "precio": 7.95,
+        "precio": 8.90,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": true,
@@ -277,7 +277,7 @@
     {
         "nombre": "Ketchup (320g)",
         "categoria": "aderezos",
-        "precio": 2.87,
+        "precio": 2.98,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -287,7 +287,7 @@
     {
         "nombre": "Queso Crema (200g)",
         "categoria": "aderezos",
-        "precio": 2.47,
+        "precio": 2.90,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -297,7 +297,7 @@
     {
         "nombre": "Sazón Goya",
         "categoria": "aderezos",
-        "precio": 0.34,
+        "precio": 0.45,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -320,7 +320,7 @@
     {
         "nombre": "Azúcar blanca x lb",
         "categoria": "despensa",
-        "precio": 2,
+        "precio": 2.50,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -350,7 +350,7 @@
     {
         "nombre": "Pastilla de Pollo",
         "categoria": "despensa",
-        "precio": 0.20,
+        "precio": 0.30,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -460,7 +460,7 @@
     {
         "nombre": "Sal x Lb",
         "categoria": "despensa",
-        "precio": 0.30,
+        "precio": 0.50,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -470,7 +470,7 @@
     {
         "nombre": "Gelatina Gely de Melocotón (125ml)",
         "categoria": "despensa",
-        "precio": 1.90,
+        "precio": 2,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -508,3 +508,6 @@
         "disponible": true
     }
 ]
+
+
+
