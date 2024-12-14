@@ -864,11 +864,11 @@ const frames = ['img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png'
   const daysDifference = calculateDaysDifference(lastUpdateDate);
   let prefix = "";
 
-  if (daysDifference === -1) {
+  if (daysDifference === 0) {
     prefix = "Hoy";
-  } else if (daysDifference === 0) {
-    prefix = "Ayer";
   } else if (daysDifference === 1) {
+    prefix = "Ayer";
+  } else if (daysDifference === 2) {
     prefix = "Antier";
   } else {
     const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
