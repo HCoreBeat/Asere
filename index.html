@@ -21,12 +21,14 @@
     <meta property="og:image" content="img/LogoVerde.svg"> <!--modificar para poner el link de la imagen-->
     <meta property="og:url" content="https://www.tuwebsite.com/quienes-somos.html">
     <meta property="og:type" content="website">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+    <script type="text/javascript">
+    emailjs.init('UE5xZtzvJ3W5lClZS')
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <!-- Incluir el script de Google Apps Script -->
-    <script async defer src="https://script.google.com/macros/s/AKfycbxWGU3KglDRRDxRlRQwVICb8H_b8V5Q5syGKGm488ijzR8oUWrDgsTae_T6OTxJWMvEYw/exec"></script>
     <link rel="stylesheet" href="css/styles.css"> <!-- Utilizando archivo CSS minificado -->
     <title>Asere Online Shop</title>
 </head>
@@ -122,12 +124,20 @@
         <div id="dev-info" class="dev-info">
             <div class="dev-info-content">
               <img src="gif/Pato.gif" alt="Cargando..." class="dev-info-gif">
-              <p class="dev-info-text">Esta página está en desarrollo. ¡Pronto más sorpresas!</p>
-              <p class="dev-info-summary">Resumen: <span id="dev-summary">La actualización de hoy incluye la incorporación de más productos en la base de datos, junto con sus imágenes y reajustes de precios. Además, se redujo las dimenciones de los paneles de productos superiores mas vendidos, optimizando así el rendimiento y la estabilidad de la página. Por último, se han realizado mejoras en la capacidad de respuesta del sitio para proporcionar una mejor experiencia de usuario.</span></p>
-              <p class="dev-info-updated">Última actualización: <span id="update-time">Hoy 13/12/2024, 4:00 PM</span></p>
+              <p class="dev-info-text">Página en desarrollo... LEE EL RESUMEN (╯‵□′)╯︵┻━┻.</p>
+              <p class="dev-info-summary">
+                Resumen: 
+                <span id="dev-summary">
+                  Nos complace anunciar la actualización de hoy, que incluye las siguientes mejoras: actualización de precios de productos, mejora de la interfaz visual para resoluciones más pequeñas, implementación del envío de correos electrónicos al comparar productos, integración de un nuevo servicio de pago, 
+                  adición de un panel de agradecimiento y notificación de pedido procesado, estabilización general de la página para mejorar la experiencia del usuario, y ajuste de IDs de productos para evitar conflictos en la base de datos. Estas mejoras reflejan nuestro compromiso continuo con la excelencia y la satisfacción del cliente......Matenme por favor 🙂
+                </span>
+              </p>
+              <p class="dev-info-updated">
+                Última actualización: <span id="update-time"></span>
+              </p>
               <button id="close-dev-info" class="dev-info-close">Cerrar</button>
             </div>
-          </div>          
+          </div>       
 
         <div class="slider">
             <div class="slides">
@@ -170,6 +180,16 @@
             </div>
             <button id="checkout-button" class="checkout-button">Proceder al Pago</button>
         </section>
+
+        <!--Segmento de panel de agradecimiento para cuando se hace el pago-->
+        <div id="thank-you-panel" class="hidden" style="display: none">
+            <div class="thank-you-container">
+                <h2 class="thank-you-title">¡Gracias por tu pedido! 🤗</h2>
+                <p class="thank-you-message">Tu pedido ha sido recibido y está siendo procesado. Nos pondremos en contacto contigo cuando esté listo.</p>
+                <button onclick="goBack()" class="thank-you-button">Volver a la Página Principal</button>
+            </div>
+        </div>        
+
         <!--Seccion de plantilla de pago super importante-->
         <section id="planilla-pago" class="hidden">
             <div class="payment-container">
@@ -184,7 +204,7 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="phone">Número de Teléfono (Opcional):</label>
+                        <label for="phone">Número de Teléfono:</label>
                         <input type="tel" id="phone" name="phone">
                     </div>
                     <div class="form-group">
