@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const masVendidos = productosUnicos.filter(producto => producto.mas_vendido); // Filtrar los productos más vendidos
     
         // Crear un contenedor para los productos más vendidos
-        masVendidos.forEach(producto => {
+        masVendidos.forEach((producto, index) => {
             const productoDiv = document.createElement("div");
             productoDiv.className = "producto";
             productoDiv.dataset.nombre = producto.nombre;
@@ -116,11 +116,11 @@ document.addEventListener("DOMContentLoaded", () => {
                         ${disponibilidadHtml} <!-- Agregar disponibilidad -->
                         <div class="cantidad-carrito-contenedor">
                             <div class="cantidad">
-                                <button class="btn-cantidad" onclick="decrementar('cantidad${producto.nombre.replace(/\s+/g, '-')}')">-</button>
-                                <span id="cantidad${producto.nombre.replace(/\s+/g, '-')}" class="cantidad-span">1</span>
-                                <button class="btn-cantidad" onclick="incrementar('cantidad${producto.nombre.replace(/\s+/g, '-')}')">+</button>
+                                <button class="btn-cantidad" onclick="decrementar('cantidad-masvendido-${index}')">-</button>
+                                <span id="cantidad-masvendido-${index}" class="cantidad-span">1</span>
+                                <button class="btn-cantidad" onclick="incrementar('cantidad-masvendido-${index}')">+</button>
                             </div>
-                            <button class="btn-carrito boton-agregarcarrito" onclick="agregarAlCarrito('${producto.nombre}', ${precio}, 'cantidad${producto.nombre.replace(/\s+/g, '-')}', '${producto.imagen}', this)">${locales[lang].productos.agregar_al_carrito}</button>
+                            <button class="btn-carrito boton-agregarcarrito" onclick="agregarAlCarrito('${producto.nombre}', ${precio}, 'cantidad-masvendido-${index}', '${producto.imagen}', this)">${locales[lang].productos.agregar_al_carrito}</button>
                         </div>
                         <p class="nombre">${producto.nombre}</p>
                     </div>
@@ -814,7 +814,6 @@ const createSnowflake = () => {
 
 setInterval(createSnowflake, 100);
 
-
 //----Para el gif basado en imagens para mantener transparencia y mas profesional---
 const frames = ['img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png','img/N7.png','img/N8.png',
 'img/N8.png','img/N7.png','img/N6.png','img/N5.png','img/N4.png','img/N3.png','img/N2.png'
@@ -831,7 +830,7 @@ const frames = ['img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png'
  window.onload = function() {
     // Mostrar el div de desarrollo
     document.getElementById("dev-info").style.display = "block";
-  
+
     // Evento para cerrar el div
     document.getElementById("close-dev-info").onclick = function() {
       document.getElementById("dev-info").style.display = "none";
@@ -846,3 +845,38 @@ const frames = ['img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png'
       whatsappButton.style.transform = "translateY(0)";
     }, 500);
   };
+  
+
+
+  //---------------------------------------------------------------------------------------------------------------------------
+  // Configuración de la fecha de la última actualización
+  const lastUpdateDate = new Date(2024, 11, 14, 12, 50); // Fecha configurada: 11/12/2024, 6:00 PM
+  const updateTimeElement = document.getElementById("update-time");
+
+  // Función para calcular la diferencia de días
+  function calculateDaysDifference(date) {
+    const now = new Date();
+    const difference = Math.floor((now - date) / (1000 * 60 * 60 * 24));
+    return difference;
+  }
+
+  // Generar el texto dinámico según la diferencia de días
+  const daysDifference = calculateDaysDifference(lastUpdateDate);
+  let prefix = "";
+
+  if (daysDifference === -1) {
+    prefix = "Hoy";
+  } else if (daysDifference === 0) {
+    prefix = "Ayer";
+  } else if (daysDifference === 1) {
+    prefix = "Antier";
+  } else {
+    const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
+    prefix = lastUpdateDate.toLocaleDateString("es-ES", options);
+  }
+
+  // Actualizar el contenido del elemento
+  const timeOptions = { hour: '2-digit', minute: '2-digit', hour12: true };
+  const formattedTime = lastUpdateDate.toLocaleTimeString("es-ES", timeOptions);
+  updateTimeElement.textContent = `${prefix} ${formattedTime}`;
+  
