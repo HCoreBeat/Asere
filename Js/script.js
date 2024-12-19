@@ -135,7 +135,20 @@ document.addEventListener("DOMContentLoaded", () => {
     
             masVendidosContainer.appendChild(productoDiv);
         });
+        
     
+        const separadorContainer = document.createElement("div");
+        separadorContainer.className = "separador-container";
+        
+        // Agregar la imagen al separador
+        const separadorImg = document.createElement("img");
+        separadorImg.src = "img/Pago_seguro.jpg"; // Cambia esto por la ruta de tu imagen
+        separadorImg.alt = "Separador";
+        separadorImg.className = "separador-img";
+        
+        separadorContainer.appendChild(separadorImg);
+
+
         // Crear el contenedor para los productos por categoría
         const categoriasContainer = document.createElement("div");
         categoriasContainer.className = "categorias-container"; // Clase para el contenedor de categorías
@@ -252,6 +265,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Insertar los contenedores en el DOM
         const productosContainer = document.getElementById("productos-container");
         productosContainer.appendChild(masVendidosContainer); // Insertar los más vendidos en la parte superior
+        productosContainer.appendChild(separadorContainer); 
         productosContainer.appendChild(categoriasContainer); // Insertar los productos por categorías debajo
     
         // Filtrar productos por categoría
@@ -297,7 +311,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
         function filterProducts() {
             const searchValue = searchInput.value.trim().toLowerCase();
-    
+
             // Mostrar todos los productos si el campo de búsqueda está vacío
             if (searchValue === "") {
                 mostrarTodosLosProductos();
