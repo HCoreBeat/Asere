@@ -143,9 +143,9 @@
     {
         "nombre": "Pernil de Cerdo asado (15 libras)",
         "categoria": "carnes",
-        "precio": 52.74,
+        "precio": 60,
         "descuento": 10,
-        "oferta": true,
+        "oferta": false,
         "mas_vendido": true,
         "imagen": "img/products/Pernil_de_Cerdo.jpg",
         "disponible": true
@@ -207,7 +207,7 @@
     {
         "nombre": "Leche Evaporada 400g",
         "categoria": "lacteos",
-        "precio": 2.83,
+        "precio": 2.93,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -277,7 +277,7 @@
     {
         "nombre": "Ketchup (320g)",
         "categoria": "aderezos",
-        "precio": 2.98,
+        "precio": 2.95,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -297,7 +297,7 @@
     {
         "nombre": "Sazón Goya",
         "categoria": "aderezos",
-        "precio": 0.45,
+        "precio": 0.60,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -350,7 +350,7 @@
     {
         "nombre": "Pastilla de Pollo",
         "categoria": "despensa",
-        "precio": 0.30,
+        "precio": 0.35,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -400,7 +400,7 @@
     {
         "nombre": "Leche Condensada azucarada (390g)",
         "categoria": "despensa",
-        "precio": 2.50,
+        "precio": 2.75,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -410,7 +410,7 @@
     {
         "nombre": "Sopa instantánea sabor Pollo (85g)",
         "categoria": "despensa",
-        "precio": 0.96,
+        "precio": 0.90,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -419,8 +419,8 @@
     },
     {
         "nombre": "Pasta de tomate Vima (400g)",
-        "categoria": "despensa",
-        "precio": 2.70,
+        "categoria": "enlatados",
+        "precio": 2.45,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -450,7 +450,7 @@
     {
         "nombre": "Mantequilla (250g)",
         "categoria": "despensa",
-        "precio": 1.98,
+        "precio": 2.30,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -460,7 +460,7 @@
     {
         "nombre": "Sal x Lb",
         "categoria": "despensa",
-        "precio": 0.50,
+        "precio": 0.60,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -470,7 +470,7 @@
     {
         "nombre": "Gelatina Gely de Melocotón (125ml)",
         "categoria": "despensa",
-        "precio": 2,
+        "precio": 1.90,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -480,7 +480,7 @@
     {
         "nombre": "Paquete de harina 1kg",
         "categoria": "despensa",
-        "precio": 2.97,
+        "precio": 2.80,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -506,8 +506,741 @@
         "mas_vendido": false,
         "imagen": "img/products/Frijoles_Negros.jpeg",
         "disponible": true
+    },
+
+
+
+
+    
+    {
+        "nombre": "Frazada de Piso",
+        "categoria": "otros",
+        "precio": 1.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Frazada_de_Piso.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Vasos Reutilizables (100/u)",
+        "categoria": "otros",
+        "precio": 3.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Vasos_Reutilizables.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Paquete de tenedores plásticos (25/u)",
+        "categoria": "otros",
+        "precio": 1.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Tenedores_Plasticos.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Paquete de cucharas plásticas (100/u)",
+        "categoria": "otros",
+        "precio": 8.46,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Cucharas_Plasticas.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Mano de plátano burro",
+        "categoria": "otros",
+        "precio": 0.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Platano_Burro.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Pepino x Lb",
+        "categoria": "otros",
+        "precio": 0.55,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Pepino.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Tomate x Lb",
+        "categoria": "otros",
+        "precio": 1.82,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Tomate.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Limón x Lb",
+        "categoria": "otros",
+        "precio": 1.20,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Limon.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Plátano macho x unidad",
+        "categoria": "otros",
+        "precio": 0.25,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Platano_Macho.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Boniato x Lb",
+        "categoria": "otros",
+        "precio": 0.40,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Boniato.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Cerveza «3 Horses» (330ml)",
+        "categoria": "alcohol",
+        "precio": 0.95,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Cerveza_3_Hourses.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Caja de Cerveza «3 Horses»",
+        "categoria": "alcohol",
+        "precio": 22.10,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Caja_Cerveza_3_Hourses.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Agua Purificada Niagara (500ml)",
+        "categoria": "bebidas",
+        "precio": 0.65,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Agua_Purificada.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Caja de Bebida energética 5 Shot (250ml x 24)",
+        "categoria": "bebidas",
+        "precio": 21.15,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Caja_Bebida_Energetica.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Ron Habana Club Añejo Reserva",
+        "categoria": "alcohol",
+        "precio": 17.05,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Ron_Habana_Club_Añejo_Reserva.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Caja de malta Morena (24x237ml)",
+        "categoria": "bebidas",
+        "precio": 17.99,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Caja_de_Malta_Morena.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Malta Morena (237ml)",
+        "categoria": "bebidas",
+        "precio": 0.82,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Malta_Morena.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Caja de jugos Santa Juice Uva (24 x 200ml)",
+        "categoria": "bebidas",
+        "precio": 15.88,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Caja_de_Jugos_Santa_Juice_Uva.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Blister Agua Purificada Niagara (24 x 500ml)",
+        "categoria": "bebidas",
+        "precio": 11.95,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Blister_Agua_Purificada.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Ron Habana Club Añejo Especial",
+        "categoria": "alcohol",
+        "precio": 13.10,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Ron_Habana_Club_Añejo_Especial.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Bebida energética 5 Shot (250ml)",
+        "categoria": "bebidas",
+        "precio": 0.95,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Bebida_Energetica_5_Shot.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Pack de 6 maltas Morena (6x237ml)",
+        "categoria": "bebidas",
+        "precio": 4.81,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Pack_de_6_Maltas_Morena.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Jugo Santa Juice de Uva (200ml)",
+        "categoria": "bebidas",
+        "precio": 0.72,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Caja_de_Jugos_Santa_Juice_Uva.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Caja de refresco Piña",
+        "categoria": "bebidas",
+        "precio": 19.35,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Caja_de_Refresco_Piña.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Sidra «La Aldeana» (sin alcohol)",
+        "categoria": "bebidas",
+        "precio": 4.19,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Sidra_La_Aldeana.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Coca Cola",
+        "categoria": "bebidas",
+        "precio": 2.48,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Coca_Cola.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Caja de refresco Naranja",
+        "categoria": "bebidas",
+        "precio": 19.35,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Caja_de_Refresco_Naranja.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Whisky Chancelier",
+        "categoria": "alcohol",
+        "precio": 5.70,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Whisky_Chancelier.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Caja de refresco Limón",
+        "categoria": "bebidas",
+        "precio": 19.35,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Caja_de_Refresco_Limon.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Refresco Piña 2Lts",
+        "categoria": "bebidas",
+        "precio": 2.99,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Refresco_Piña.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Refresco Cola (330ml)",
+        "categoria": "bebidas",
+        "precio": 0.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Refresco_Cola.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Caja de Cervezas Bucanero",
+        "categoria": "alcohol",
+        "precio": 23.95,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Caja_Cerveza_Bucanero.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Cervezas Bucanero (355ml)",
+        "categoria": "alcohol",
+        "precio": 1.05,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Cerveza_Bucanero.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Caja de refresco Cola",
+        "categoria": "bebidas",
+        "precio": 19.35,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Caja_de_Refresco_Brio_Cola.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Caja de Malta Bucanero",
+        "categoria": "bebidas",
+        "precio": 24.98,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Caja_de_Malta_Bucanero.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Refresco Limón (330ml)",
+        "categoria": "bebidas",
+        "precio": 0.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Caja_de_Refresco_Limon.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Cervezas Cristal (355ml)",
+        "categoria": "alcohol",
+        "precio": 1.05,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Cerveza_Cristal.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Caja de Cervezas Cristal",
+        "categoria": "alcohol",
+        "precio": 23.95,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Caja_Cerveza_Cristal.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Malta Bucanero",
+        "categoria": "bebidas",
+        "precio": 1.15,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Malta_Bucanero.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Refresco Naranja (330ml)",
+        "categoria": "bebidas",
+        "precio": 0.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Refresco_Naranja.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Refresco Piña (330ml)",
+        "categoria": "bebidas",
+        "precio": 0.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Refresco_Piña_Brio.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Rollitos de Primavera (200g)",
+        "categoria": "carnes",
+        "precio": 1.93,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Rollitos_de_Primavera.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Nuggets de pollo x Kg",
+        "categoria": "despensa",
+        "precio": 7.20,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Nuggets_de_Pollo.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Lomo de cerdo deshuesado Premium x Kg",
+        "categoria": "carnes",
+        "precio": 3.40,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Lomo_de_Cerdo_Deshuesado.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Caja de Jurel (20Libras)",
+        "categoria": "carnes",
+        "precio": 35.98,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Caja_de_Jurel.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Galletas de Soda con Mantequilla Doricas",
+        "categoria": "confituas",
+        "precio": 5,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Galleta_de_Soda_Con_Mantequilla.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Galletas de soda Salricas",
+        "categoria": "confituas",
+        "precio": 2.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Galleta_de_Soda_Salricas.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Galletas Porleo (45g)",
+        "categoria": "confituas",
+        "precio": 0.87,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Galletas_Porleo.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Orégano (14.2g)",
+        "categoria": "despensa",
+        "precio": 1.87,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Oregano.jpg",
+        "disponible": false
+    },
+    {
+        "nombre": "Vinagre (1Litro)",
+        "categoria": "despensa",
+        "precio": 2.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Vinagre.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Leche entera en polvo «Vima» (1kg)",
+        "categoria": "despensa",
+        "precio": 13,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Leche_Entera_En_Polvo_Vima.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Cebollitas en Vinagre (290g)",
+        "categoria": "despensa",
+        "precio": 2.17,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Cebollitas_En_Vinagre.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Café Espresso «El Ricote»",
+        "categoria": "despensa",
+        "precio": 6,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Cafe_Expresso.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Chocolate en Polvo «Rico» (500g)",
+        "categoria": "despensa",
+        "precio": 4,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Chocolate_en_Polvo_Riko.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Pasta de tomate 400g",
+        "categoria": "enlatados",
+        "precio": 2.40,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Pasta_de_Tomate.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Menthoplus",
+        "categoria": "despensa",
+        "precio": 0.60,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Menthoplus.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Melocotón en almibar (425g)",
+        "categoria": "enlatados",
+        "precio": 2.65,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Melocoton_en_Almibar_Vima.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Fresas en almibar (425g)",
+        "categoria": "enlatados",
+        "precio": 2.65,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Fresas_en_Almibar.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Maicena Nezka (500g)",
+        "categoria": "despensa",
+        "precio": 5.99,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Maicena_Nezka.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Lata de Frijoles Rojos (410g)",
+        "categoria": "enlatados",
+        "precio": 1.80,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Lata_de_Frijol_Rojo.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Pasta de tomate OZER 400g",
+        "categoria": "enlatados",
+        "precio": 3.60,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Pasta_de_Tomate_Ozer.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Codito Badelli (350g)",
+        "categoria": "despensa",
+        "precio": 1.80,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Codito_Badelli.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Aceite Saude 900ml",
+        "categoria": "despensa",
+        "precio": 2.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Aceite_Saude.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Arroz Criollo 1Lb",
+        "categoria": "despensa",
+        "precio": 0.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Arroz_Criollo.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Servilletas «Bingo» (40u)",
+        "categoria": "otros",
+        "precio": 0.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Servilletas.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Pasta Dental Coigore (100g)",
+        "categoria": "otros",
+        "precio": 3.27,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Pasta_dental.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Desodorante Keewell",
+        "categoria": "otros",
+        "precio": 2.87,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Desodorante_Keewell.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Toallitas Húmedas (80u)",
+        "categoria": "otros",
+        "precio": 6,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Toallitas_Humedas.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Jabón de Baño (100g)",
+        "categoria": "otros",
+        "precio": 1,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Jabon_de_Baño.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Paquete de Papel Sanitario",
+        "categoria": "otros",
+        "precio": 1.99,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Paquete_de_Papel_Sanitario.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Detergente «STB» (1Kg)",
+        "categoria": "otros",
+        "precio": 3.20,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Detergente.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Colonia Bonabel de Violetas",
+        "categoria": "otros",
+        "precio": 5,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Colobnia_Bonabel_de_Violetas.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Mayonesa Vima (450ml)",
+        "categoria": "aderezos",
+        "precio": 4,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Mayonesa_Vima.jpg",
+        "disponible": true
     }
+
 ]
-
-
-
