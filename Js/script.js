@@ -794,7 +794,7 @@ async function handleAffiliate() {
         if (affiliate) {
             localStorage.setItem('affiliateRef', ref);
             localStorage.setItem('affiliateName', affiliate.nombre);
-            affiliateMessage.textContent = `Gracias por venir a través de nuestro afiliado: ${ref} ${affiliate.nombre}!`;
+            affiliateMessage.textContent = `Gracias por venir a través de uno de nuestros afiliados!`;
         } else {
             console.warn(`El afiliado con ID ${ref} no es válido.`);
             affiliateMessage.textContent = `¡Bienvenido a Asere Online Shop!`;
@@ -842,13 +842,6 @@ const frames = ['img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png'
  }, 100); // Cambia cada 250 ms (ajusta la velocidad según tus necesidades)
 
  window.onload = function() {
-    // Mostrar el div de desarrollo
-    document.getElementById("dev-info").style.display = "block";
-
-    // Evento para cerrar el div
-    document.getElementById("close-dev-info").onclick = function() {
-      document.getElementById("dev-info").style.display = "none";
-    }
     //------------Whatsapp----------
     const whatsappButton = document.getElementById("whatsapp-button");
     whatsappButton.style.opacity = 0;
@@ -859,38 +852,4 @@ const frames = ['img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png'
       whatsappButton.style.transform = "translateY(0)";
     }, 500);
   };
-  
-
-
-  //---------------------------------------------------------------------------------------------------------------------------
-  // Configuración de la fecha de la última actualización
-  const lastUpdateDate = new Date(2024, 11, 14, 12, 50); // Fecha configurada: 11/12/2024, 6:00 PM
-  const updateTimeElement = document.getElementById("update-time");
-
-  // Función para calcular la diferencia de días
-  function calculateDaysDifference(date) {
-    const now = new Date();
-    const difference = Math.floor((now - date) / (1000 * 60 * 60 * 24));
-    return difference;
-  }
-
-  // Generar el texto dinámico según la diferencia de días
-  const daysDifference = calculateDaysDifference(lastUpdateDate);
-  let prefix = "";
-
-  if (daysDifference === 0) {
-    prefix = "Hoy";
-  } else if (daysDifference === 1) {
-    prefix = "Ayer";
-  } else if (daysDifference === 2) {
-    prefix = "Antier";
-  } else {
-    const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
-    prefix = lastUpdateDate.toLocaleDateString("es-ES", options);
-  }
-
-  // Actualizar el contenido del elemento
-  const timeOptions = { hour: '2-digit', minute: '2-digit', hour12: true };
-  const formattedTime = lastUpdateDate.toLocaleTimeString("es-ES", timeOptions);
-  updateTimeElement.textContent = `${prefix} ${formattedTime}`;
   
