@@ -266,6 +266,8 @@ nav ul li a:hover i {
     font-size: 16px;
 }
 
+/*------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------*/
 /*Categorias*/
 .categorias {
     position:absolute; /* Posicionar de manera absoluta respecto al header */ 
@@ -284,6 +286,7 @@ nav ul li a:hover i {
     scrollbar-width: thin; /* Para navegadores Firefox */ 
     scrollbar-color: #00796B #f4f4f9; /* Para navegadores Firefox */
 }
+
 
 .categorias::-webkit-scrollbar {
     height: 6px; /* Altura de la barra de desplazamiento horizontal */
@@ -337,6 +340,47 @@ nav ul li a:hover i {
 /* Especifica el color del icono de la categoría "Ofertas" */ 
 .categorias ul li a[data-categoria="ofertas"] i { 
     color: #FFD700; /* Color dorado para el icono */ 
+}
+
+.categoria[data-categoria="carnes"] {
+    background-color: #FF0103; /* Cambia el color según tu preferencia */
+}
+
+.categoria[data-categoria="carnes"] h2 {
+    color: white; /* Cambia el color según tu preferencia */
+}
+
+.categorias-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.categoria {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.categoria h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.categorias ul {
+    gap: 5px;
+}
+
+.categorias ul li a {
+    padding: 8px 10px;
+    font-size: 14px;
 }
 
 /*Segmentos de productos
@@ -725,31 +769,8 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
   }
 
 
-/* --------------------------------------------------Categorías y otros contenedores --------------------------
+/* --------------------------------------------------otros contenedores --------------------------
 --------------------------------------------------------------------------------------------------------------*/
-.categorias-container {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.categoria {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.categoria h2 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
 
 .productos-categoria-container {
     display: grid;
@@ -2069,16 +2090,6 @@ hr {
         align-items: center;
     }
 
-    /*--------------------Categorias----------------------------*/
-    .categorias ul {
-        gap: 5px;
-    }
-
-    .categorias ul li a {
-        padding: 8px 10px;
-        font-size: 14px;
-    }
-
     .cantidad span {
         font-size: 16px;
         width: 30px;
@@ -2554,6 +2565,12 @@ hr {
 .separador-img {
     width: 100%; /* O ajusta al tamaño que desees */
     max-width: auto; /* Tamaño máximo opcional */
+    height: auto;
+}
+
+.separador-extra-img{
+    width: 100%;
+    max-width: auto;
     height: auto;
 }
 
