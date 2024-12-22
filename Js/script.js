@@ -54,12 +54,24 @@ document.addEventListener("DOMContentLoaded", () => {
             productosContainer.removeChild(productosContainer.firstChild);
         }
     }
+
+    // Función para actualizar los precios con el cálculo del precio total
+    function actualizarPrecios(productos) {
+        productos.forEach(producto => {
+            if (producto.precio !== undefined) {
+                const total = producto.precio * 0.23;
+                producto.precio = +(producto.precio + total).toFixed(2); // Actualiza el precio con el total calculado
+            }
+        });
+        return productos;
+    }
     
     function renderProductos(lang) {
         limpiarProductosContainer(); // Limpiar productos actuales
     
         // Eliminar productos duplicados
         const productosUnicos = removeDuplicates(productos);
+        const productosActualizados = actualizarPrecios(productosUnicos); // Actualizar precios
     
         console.log('Renderizando productos en idioma:', lang);
         console.log('Locales:', locales);
@@ -67,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Crear el contenedor de productos más vendidos
         const masVendidosContainer = document.createElement("div");
         masVendidosContainer.className = "mas-vendidos-container"; // Clase para el contenedor de productos más vendidos
-        const masVendidos = productosUnicos.filter(producto => producto.mas_vendido); // Filtrar los productos más vendidos
+        const masVendidos = productosActualizados.filter(producto => producto.mas_vendido); // Filtrar los productos más vendidos
     
         // Crear un contenedor para los productos más vendidos
         masVendidos.forEach((producto, index) => {
@@ -156,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Agrupar productos por categorías
         const categorias = [...new Set(productosUnicos.map(producto => producto.categoria))];
     
-        categorias.forEach(categoria => {
+        categorias.forEach((categoria, index) => {
             const categoriaDiv = document.createElement("div");
             categoriaDiv.className = "categoria";
             categoriaDiv.dataset.categoria = categoria;
@@ -259,6 +271,22 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 categoriaDiv.appendChild(categoriaProductosContainer);
                 categoriasContainer.appendChild(categoriaDiv);
+
+//---------------------------------------------------------------------------------------------------------------------------------                
+//----------------------------------------------------------------------------------------------------------------------------------
+                // Agregar un separador después de la primera categoría
+                if (index === 0) {
+                    const separadorExtraContainer = document.createElement("div");
+                    separadorExtraContainer.className = "separador-container-extra";
+
+                    const separadorExtraImg = document.createElement("img");
+                    separadorExtraImg.src = "img/Separador_2.jpg"; // Cambia por la ruta de tu imagen extra
+                    separadorExtraImg.alt = "Separador Extra";
+                    separadorExtraImg.className = "separador-extra-img";
+
+                    separadorExtraContainer.appendChild(separadorExtraImg);
+                    categoriasContainer.appendChild(separadorExtraContainer);
+                }
             }
         });
     
@@ -871,5 +899,3 @@ adjustImages();
 
 // Ajustar imágenes al redimensionar la ventana
 window.addEventListener('resize', adjustImages);
-
-  
