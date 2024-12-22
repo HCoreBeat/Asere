@@ -13,7 +13,6 @@
         "nombre": "Carne de cerdo x Lb",
         "categoria": "carnes",
         "precio": 3.45,
-        "//comentario":" el precio variara a 2.85", 
         "descuento": 10,
         "oferta": false,
         "mas_vendido": true,
@@ -329,7 +328,7 @@
     },
     {
         "nombre": "Frijol Negro x Lb",
-        "categoria": "despensa",
+        "categoria": "pastas-y-granos",
         "precio": 2.50,
         "descuento": 10,
         "oferta": false,
@@ -389,7 +388,7 @@
     },
     {
         "nombre": "Espaguetis (500g)",
-        "categoria": "despensa",
+        "categoria": "pastas-y-granos",
         "precio": 1.80,
         "descuento": 10,
         "oferta": false,
@@ -439,7 +438,7 @@
     },
     {
         "nombre": "Frijol Rojo x Lb",
-        "categoria": "despensa",
+        "categoria": "pastas-y-granos",
         "precio": 3,
         "descuento": 10,
         "oferta": false,
@@ -499,7 +498,7 @@
     },
     {
         "nombre": "Frijoles Negros (1Kg)",
-        "categoria": "despensa",
+        "categoria": "pastas-y-granos",
         "precio": 3.40,
         "descuento": 10,
         "oferta": false,
@@ -1124,7 +1123,7 @@
     },
     {
         "nombre": "Codito Badelli (350g)",
-        "categoria": "despensa",
+        "categoria": "pastas-y-granos",
         "precio": 1.80,
         "descuento": 10,
         "oferta": false,
@@ -1144,7 +1143,7 @@
     },
     {
         "nombre": "Arroz Criollo 1Lb",
-        "categoria": "despensa",
+        "categoria": "pastas-y-granos",
         "precio": 0.90,
         "descuento": 10,
         "oferta": false,
@@ -1240,6 +1239,26 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Mayonesa_Vima.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Cerveza UNLAGUER",
+        "categoria": "alcohol",
+        "precio": 0.80,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Cerveza_Unlaguer.jpg",
+        "disponible": true
+    },
+    {
+        "nombre": "Caja de Cerveza UNLAGUER",
+        "categoria": "alcohol",
+        "precio": 18,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Caja_cerveza_unlaguer.jpg",
         "disponible": true
     }
 
