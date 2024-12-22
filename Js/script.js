@@ -852,4 +852,24 @@ const frames = ['img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png'
       whatsappButton.style.transform = "translateY(0)";
     }, 500);
   };
+
+
+  //------------------------Ajuste de imagen del slider------------------------
+  //----------------------------------------------------------------------------
+  function adjustImages() {
+    if (window.innerWidth <= 720) {
+        document.querySelectorAll('.img-pc').forEach(img => img.style.display = 'none');
+        document.querySelectorAll('.img-mobile').forEach(img => img.style.display = 'block');
+    } else {
+        document.querySelectorAll('.img-pc').forEach(img => img.style.display = 'block');
+        document.querySelectorAll('.img-mobile').forEach(img => img.style.display = 'none');
+    }
+}
+
+// Ajustar imágenes al cargar la página
+adjustImages();
+
+// Ajustar imágenes al redimensionar la ventana
+window.addEventListener('resize', adjustImages);
+
   
