@@ -451,7 +451,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 
 @media (max-width: 768px) {
     .slider{
-        top: 5px;
+        top: 0px;
     }
 
     .products {
