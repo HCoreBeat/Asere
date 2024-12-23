@@ -345,6 +345,7 @@ nav ul li a:hover i {
 .categoria[data-categoria="carnes"] {
     background-color: #FF0103; /* Cambia el color según tu preferencia */
     margin: 0px;
+    padding: 30px 25px;
 }
 
 .categoria[data-categoria="carnes"] h2 {
@@ -1869,6 +1870,7 @@ hr {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        padding: 0px 5px;
     }
 
     .menu-toggle{
@@ -2575,3 +2577,51 @@ hr {
     max-width: auto;
     height: auto;
 }
+
+
+/* Contenedor de la barra de carga */
+#progress-bar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px; /* Un poco más gruesa para destacarla */
+    background: rgba(0, 0, 0, 0.2); /* Fondo tenue */
+    z-index: 9999; /* Asegúrate de que esté encima de todo */
+    display: none; /* Solo visible durante la carga */
+    overflow: hidden; /* Ocultar bordes desbordados */
+    border-radius: 0 0 5px 5px; /* Bordes redondeados en la parte inferior */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
+}
+
+/* Barra de progreso */
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #3498db, #2ecc71, #f39c12, #9b59b6); /* Degradado multicolor */
+    background-size: 300% 100%; /* Amplitud del degradado para animación */
+    animation: moveGradient 1.5s linear infinite, pulseBar 1s ease-in-out infinite; /* Animación del degradado y efecto pulso */
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.7); /* Efecto brillante */
+    transition: width 0.3s ease-in-out; /* Movimiento suave al avanzar */
+}
+
+/* Animación del degradado */
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Efecto pulso */
+@keyframes pulseBar {
+    0%, 100% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(1.2);
+    }
+}
+
