@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const toggleCurrencyButton = document.getElementById("toggle-currency");
     const carritoButton = document.querySelector("li a[href='#carrito']");
     const productosButton = document.querySelector("nav ul li a[href='#productos']");
+    const progressBarContainer = document.getElementById("progress-bar-container");
+    const progressBar = document.getElementById("progress-bar");
 
     let locales = {};
     let productos = [];
@@ -22,6 +24,26 @@ document.addEventListener("DOMContentLoaded", () => {
     let currency = 'USD';
 
     header.style.transition = "top 0.3s ease";
+    
+    // Mostrar la barra de progreso al comenzar a cargar
+    progressBarContainer.style.display = "block";
+
+    // Simular el progreso de carga (puedes personalizar según el comportamiento de tu página)
+    let progress = 0;
+    const interval = setInterval(() => {
+        progress += Math.random() * 10; // Incrementa aleatoriamente
+        progressBar.style.width = `${progress}%`;
+
+        if (progress >= 100) {
+            clearInterval(interval);
+            progressBar.style.width = "100%";
+
+            // Ocultar la barra después de un breve momento
+            setTimeout(() => {
+                progressBarContainer.style.display = "none";
+            }, 500);
+        }
+    }, 150);
 
     // Deshabilitar scroll
     const disableScroll = () => {
@@ -296,6 +318,36 @@ document.addEventListener("DOMContentLoaded", () => {
         productosContainer.appendChild(separadorContainer); 
         productosContainer.appendChild(categoriasContainer); // Insertar los productos por categorías debajo
     
+
+        // Ocultar botones de categoría que no tienen productos, excepto "all"
+        const categoriaLinks = document.querySelectorAll(".categorias ul li a");
+        categoriaLinks.forEach(link => {
+            const category = link.getAttribute("data-categoria");
+            const productos = document.querySelectorAll(`.producto[data-categoria='${category}']`);
+            const hasVisibleProducts = Array.from(productos).some(producto => producto.style.display !== "none");
+
+            if (category !== "all" && !hasVisibleProducts) {
+                link.parentElement.style.display = "none"; // Ocultar el botón si no hay productos visibles y no es "all"
+            } else {
+                link.parentElement.style.display = "block"; // Mostrar el botón si hay productos o si es "all"
+            }
+        });
+
+
+        // Mostrar/ocultar separadores según la categoría seleccionada
+        document.querySelectorAll(".categorias ul li a").forEach(link => {
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+                const category = link.getAttribute("data-categoria");
+
+                const separadorContainers = document.querySelectorAll(".separador-container, .separador-container-extra");
+                separadorContainers.forEach(separador => {
+                    separador.style.display = category === "all" ? "block" : "none";
+                });
+            });
+        });
+        
+
         // Filtrar productos por categoría
         document.querySelectorAll(".categorias ul li a").forEach(link => {
             link.addEventListener("click", (e) => {
@@ -316,7 +368,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.querySelectorAll(".categoria").forEach(categoriaDiv => {
                     const productosCategoria = categoriaDiv.querySelectorAll(".producto");
                     const categoriaVisible = Array.from(productosCategoria).some(producto => producto.style.display !== "none");
-        
+                
                     if (categoriaVisible) {
                         categoriaDiv.style.display = "block";
                     } else {
@@ -339,6 +391,13 @@ document.addEventListener("DOMContentLoaded", () => {
     
         function filterProducts() {
             const searchValue = searchInput.value.trim().toLowerCase();
+
+            //-----Ocultar los separadores cuando se esta buscando algo-----
+            //--------------------------------------------------------------
+            const separadorContainers = document.querySelectorAll(".separador-container, .separador-container-extra");
+            separadorContainers.forEach(separador => {
+                separador.style.display = searchValue === "" ? "block" : "none";
+            });
 
             // Mostrar todos los productos si el campo de búsqueda está vacío
             if (searchValue === "") {
@@ -402,6 +461,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelectorAll(".categoria").forEach(categoriaDiv => {
                 categoriaDiv.style.display = "block";
             });
+            
         
             masVendidosContainer.style.display = "flex";  // Mostrar productos más vendidos si no hay filtro de búsqueda
         }
