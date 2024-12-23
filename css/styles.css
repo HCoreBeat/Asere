@@ -344,6 +344,7 @@ nav ul li a:hover i {
 
 .categoria[data-categoria="carnes"] {
     background-color: #FF0103; /* Cambia el color según tu preferencia */
+    margin: 0px;
 }
 
 .categoria[data-categoria="carnes"] h2 {
@@ -361,6 +362,7 @@ nav ul li a:hover i {
     flex-direction: column;
     background-color: #fff;
     padding: 10px;
+    margin: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -508,7 +510,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 /* Estilo general para los productos */
 #productos {
     background-color: #f5f5f5;
-    padding: 15px;
+    padding: 0px;
     border-radius: 8px;
     margin-top: -100px;
     box-sizing: border-box;
@@ -2573,5 +2575,3 @@ hr {
     max-width: auto;
     height: auto;
 }
-
-
