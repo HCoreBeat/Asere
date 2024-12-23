@@ -419,6 +419,9 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 
 /* Ajustes específicos para móviles */
 @media (max-width: 720px) {
+    .slider{
+        top: -5px;
+    }
     .img-pc {
         display: none;
     }
@@ -450,10 +453,6 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 
 
 @media (max-width: 768px) {
-    .slider{
-        top: 0px;
-    }
-
     .products {
         flex-direction: column;
         align-items: center;
