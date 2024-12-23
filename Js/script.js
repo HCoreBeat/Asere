@@ -448,7 +448,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(response => response.json())
     .then(data => {
         locales = data;
-        console.log('Traducciones cargadas:', locales);
 
         // Fetch de productos
         fetch('Json/productos.json')
@@ -599,10 +598,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const carritoVacio = document.getElementById("carrito-vacio");
 
 
-    console.log("carritoContainer:", carritoContainer);
-    console.log("carritoTotal:", carritoTotal);
-    console.log("carritoVacio:", carritoVacio);
-
     if (!carritoContainer || !carritoTotal || !carritoVacio) {
         console.error("Uno o más elementos no existen en el DOM");
     } else {
@@ -650,13 +645,6 @@ function vaciarCarrito() {
             total += producto.precio * producto.cantidad;
             const productoDiv = document.createElement("div");
             productoDiv.className = "carrito-producto";
-    
-            console.log(
-                "nombre: "+producto.nombre,
-                "precio: "+producto.precio,
-                "imagen: "+producto.imagen,
-                "cantidad: "+producto.cantidad
-            )
 
             productoDiv.innerHTML = `
                 <div class="carrito-item">
@@ -736,13 +724,6 @@ function agregarAlCarrito(nombre, precio, cantidadId, imagen, boton) {
          // Guardar en localStorage después de añadir
         guardarCarrito();
         renderCarrito();
-        console.log({
-            nombre,
-            precio,
-            cantidad,
-            imagen
-        });
-        
     }
 }
 
@@ -822,6 +803,7 @@ async function handleAffiliate() {
         if (affiliate) {
             localStorage.setItem('affiliateRef', ref);
             localStorage.setItem('affiliateName', affiliate.nombre);
+            console.log("Afiliado:" + affiliate.nombre);
             affiliateMessage.textContent = `Gracias por venir a través de uno de nuestros afiliados!`;
         } else {
             console.warn(`El afiliado con ID ${ref} no es válido.`);
