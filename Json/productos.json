@@ -1248,15 +1248,5 @@
     "mas_vendido": false,
     "imagen": "img/products/Caja_cerveza_unlaguer.jpg",
     "disponible": true
-  },
-  {
-    "nombre": "Testing Producto",
-    "categoria": "frutas",
-    "precio": 10,
-    "descuento": 10,
-    "oferta": true,
-    "mas_vendido": true,
-    "imagen": "",
-    "disponible": true
   }
 ]
