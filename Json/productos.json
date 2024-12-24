@@ -117,7 +117,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Paquete_de_muslos_de_Pollo.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Jamón Bravo Rápido (2kg)",
