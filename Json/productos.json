@@ -1248,5 +1248,15 @@
     "mas_vendido": false,
     "imagen": "img/products/Caja_cerveza_unlaguer.jpg",
     "disponible": true
+  },
+  {
+    "nombre": "testin de producto",
+    "categoria": "",
+    "precio": 1,
+    "descuento": 1,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/WhatsApp_Image_2024-12-19_at_8.20.20_AM.jpeg",
+    "disponible": true
   }
 ]
