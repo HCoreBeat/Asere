@@ -25,6 +25,7 @@
         "pantry": "Despensa",
         "drinks": "Bebidas",
         "alcohol": "Bebidas Alcohólicas",
+        "confituras": "Confituras",
         "cakes": "Cakes",
         "others": "Otros"
       },
@@ -84,6 +85,7 @@
         "pantry": "Pantry",
         "drinks": "Drinks",
         "alcohol": "Alcoholic Drinks",
+        "confituras": "Jams",
         "cakes": "Cakes",
         "others": "Others"
       },
@@ -142,6 +144,7 @@
         "pantry": "Süßwaren",
         "drinks": "Getränke",
         "alcohol": "Alkoholische Getränke",
+        "confituras": "Marmeladen",
         "cakes": "Kuchen",
         "others": "Andere"
       },
@@ -201,6 +204,7 @@
       "pantry": "Dispensa",
       "drinks": "Bevande",
       "alcohol": "Bevande alcoliche",
+      "confituras": "Marmellate",
       "cakes": "Torte",
       "others": "Altri"
     },
