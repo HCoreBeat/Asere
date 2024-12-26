@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('cat-pantry').innerHTML = `<i class="fa-solid fa-mug-hot"></i> ${locales[lang].categories.pantry}`;
         document.getElementById('cat-drinks').innerHTML = `<i class="fas fa-coffee"></i> ${locales[lang].categories.drinks}`;
         document.getElementById('cat-alcohol').innerHTML = `<i class="fas fa-wine-bottle"></i> ${locales[lang].categories.alcohol}`;
+        document.getElementById('cat-confituras').innerHTML = `<i class="fas fa-birthday-cake"></i> ${locales[lang].categories.confituras}`;
         document.getElementById('cat-cakes').innerHTML = `<i class="fas fa-birthday-cake"></i> ${locales[lang].categories.cakes}`;
         document.getElementById('cat-others').innerHTML = `<i class="fas fa-ellipsis-h"></i> ${locales[lang].categories.others}`;
 
