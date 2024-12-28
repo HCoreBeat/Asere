@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="css/styleManager.css">
+</head>
+
+<body>
+    <header>
+        <div class="sidebar">
+            <div class="sidebar-icon">
+                <i class="fas fa-cogs"></i>  <!-- Ícono de gestión -->
+            </div>
+            <h1><i class="fas fa-cogs"></i> Gestión</h1>
+            <div class="button-group">
+                <button id="loadJson" aria-label="Cargar productos">
+                    <i class="fas fa-upload"></i>
+                </button>
+                <button id="saveJson" aria-label="Guardar cambios">
+                    <i class="fas fa-save"></i>
+                </button>
+                <button id="addProduct" aria-label="Agregar un producto">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </div>
+    </header>        
+    <main>
+        <div class="container">
+            <div class="holders-container">
+                <!-- Panel de Promociones -->
+                <section id="promotionsPanel" class="panel promotions-panel">
+                    <h2 class="panel-title"><i class="fas fa-bolt"></i>Fotos de Promociones</h2>
+                    <div id="promotionsHolder" class="promotions-holder"></div>
+                </section>
+            
+                <!-- Panel de Fotos de productos -->
+                <section id="imageHolderContainer" class="panel image-holder-container">
+                    <h2 class="panel-title"><i class="fas fa-camera"></i> Fotos de productos</h2>
+                    <div id="imageHolder" class="image-holder"></div>
+                </section>
+            </div>
+            
+
+            <!-- Contenedor de la gráfica y el texto informativo -->
+            <div class="info-chart-row">
+                <div class="char-Categorias">
+                    <h3>Cantidad de Productos por Categoría</h3>
+                    <div class="chart-container">
+                        <canvas id="categoriaChart"></canvas>
+                    </div>                    
+                </div>
+                <div class="char-Mas-Vendidos">
+                    <h3>Estadísticas de Productos Más Vendidos</h3>
+                    <div class="chart-container">
+                        <canvas id="masVendidoChart"></canvas>
+                    </div>
+                    <div class="chart-text">
+                        <p id="masVendidoText"></p>
+                    </div>
+                </div>
+                <div class="char-Precios">
+                    <h3>Distribución de Precios</h3>
+                    <div class="chart-container">
+                        <canvas id="priceDistributionChart"></canvas>
+                    </div>
+                </div>
+            </div>
+                               
+            <h3>Gestión de Productos</h3>
+            <div class="main-container">
+                <!-- Panel de Filtro de Categorías -->
+                <div class="filter-panel">
+                    <h4><i class="fas fa-th-large"></i> Filtrar por Categorías</h4>
+                    <select id="categoriaFiltro" onchange="filtrarProductos()">
+                        <option value="">Todas las Categorías</option>
+                        <!-- Las categorías se insertan aquí de forma dinámica -->
+                    </select>
+
+                    <h4><i class="fas fa-certificate"></i> Filtrar por Más Vendido</h4>
+                    <select id="masVendidoFiltro" onchange="filtrarProductos()">
+                        <option value="">Todos</option>
+                        <option value="true">Sí</option>
+                        <option value="false">No</option>
+                    </select>
+                </div>
+
+                <!-- Panel de Productos y Búsqueda -->
+                <div class="product-panel">
+                    <div class="container-flex">
+                        <!-- Input de búsqueda -->
+                        <div class="search-container">
+                            <span class="search-icon">&#x1F50D;</span>
+                            <input 
+                                type="text" 
+                                id="searchInput" 
+                                placeholder="Buscar productos..." 
+                                onkeyup="filtrarProductos()" 
+                            />
+                        </div>
+                        
+                        <!-- Contador de productos -->
+                        <div class="product-counter">
+                            <p>Total de productos: <span id="productCount" class="count-badge">0</span></p>
+                        </div>
+                    </div>                    
+                    <!-- Tabla de productos -->
+                    <div class="scroll-container">
+                        <table id="productosTable">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Categoría</th>
+                                    <th>Precio</th>
+                                    <th>Descuento</th>
+                                    <th>Oferta</th>
+                                    <th>Más Vendido</th>
+                                    <th>Disponible</th>
+                                    <th>Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <div id="loader" class="hidden">
+                                    <p>Cargando productos...</p>
+                                </div>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>                            
+            </div>
+        </div>
+    </main>   
+    <footer id="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 HCoreBeat. Todos los derechos reservados.</p>
+            <p><a href="mailto:alederibia@gmail.com">Contacto</a></p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Js/scriptManager.js"></script>
+</body>
+
+</html>
