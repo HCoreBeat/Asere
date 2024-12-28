@@ -1,0 +1,844 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ECEFF4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Barra lateral */
+.sidebar {
+    height: 100vh;
+    width: 70px; /* Ancho más estrecho por defecto */
+    position: fixed;
+    background-color: #121212; /* Fondo aún más oscuro */
+    top: 0;
+    left: 0;
+    color: #bbb; /* Texto gris suave */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.8); /* Sombra más profunda */
+    border-radius: 12px;
+    transition: width 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+    overflow: hidden;
+}
+
+/* Ícono grande en la parte superior */
+.sidebar-icon {
+    font-size: 32px; /* Ícono aún más grande */
+    color: #bbb; /* Gris claro */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    margin-bottom: 20px;
+    opacity: 1;
+    transform: translateY(-5px); /* Desplazado sutilmente hacia arriba */
+}
+
+/* Título */
+.sidebar h1 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ddd; /* Gris más claro */
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateX(-30px); /* Desplazado hacia la izquierda por defecto */
+    transition: opacity 0.3s ease, transform 0.3s ease, font-size 0.3s ease;
+}
+
+/* Icono junto al título */
+.sidebar h1 i {
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+
+/* Botones */
+.button-group button {
+    background: none;
+    border: none;
+    color: #bbb; /* Color gris suave */
+    font-size: 22px; /* Botones más grandes por defecto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    margin: 12px 0;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover en los botones */
+.button-group button:hover {
+    background-color: #333; /* Fondo oscuro en hover */
+    transform: scale(1.1); /* Aumento de tamaño */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+    color: #ff6347; /* Rojo suave para contraste */
+}
+
+/* Iconos dentro de los botones */
+.button-group button i {
+    margin-right: 10px; /* Separación más sutil */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover sobre el icono */
+.button-group button:hover i {
+    transform: rotate(12deg); /* Leve rotación al pasar el mouse */
+    color: #ff6347; /* Icono en rojo suave */
+}
+
+/* Expansión de la barra lateral */
+.sidebar:hover {
+    width: 180px; /* Barra más ancha al pasar el mouse */
+    border-radius: 0;
+}
+
+/* Mostrar el texto de gestión al hacer hover */
+.sidebar:hover h1 {
+    opacity: 1;
+    transform: translateX(10px); /* Aparece el texto desplazado */
+    font-size: 22px;
+}
+
+/* Ocultar el ícono cuando la barra lateral está expandida */
+.sidebar:hover .sidebar-icon {
+    opacity: 0;
+    transform: scale(0.8); /* Reducción del icono */
+}
+
+/* Mostrar el ícono cuando no se pasa el mouse */
+.sidebar .sidebar-icon {
+    opacity: 1;
+}
+
+/* Media Queries para pantallas grandes */
+@media (min-width: 768px) {
+    .sidebar {
+        width: 80px; /* Barra lateral más ancha en pantallas grandes */
+    }
+    .button-group button {
+        font-size: 26px; /* Botones más grandes */
+        padding: 16px;
+    }
+    .button-group button i {
+        margin-right: 14px; /* Separación mayor entre icono y texto */
+    }
+    .sidebar h1 {
+        font-size: 22px;
+    }
+}
+
+.button-group button.active {
+    background-color: #444; /* Color más oscuro */
+    color: #ff6347; /* Contraste más fuerte */
+    transform: scale(1.05);
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.toast.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.button-group button:active {
+    transform: scale(0.95); /* Leve efecto de compresión al presionar */
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+
+/*------------------------------------------------------------------------------*/
+/* Contenedor principal */
+.container {
+    margin-left: 80px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Título */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+.panel {
+    width: 48%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    color: rgb(56, 56, 56);
+    transition: all 0.3s ease;
+}
+/* Títulos de los paneles */
+.panel-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: #000000;
+}
+.panel-title i {
+    font-size: 24px;
+}
+/* Estilo para las áreas de contenido dentro de los paneles */
+.promotions-holder, .image-holder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #d4d4d4;
+    background-color: #ffffff;
+    min-height: 150px;
+    justify-content: space-around; /* Alinea los elementos horizontalmente */
+}
+
+/* Contenedor del panel con scroll */
+.scroll-container {
+    max-height: 500px;
+    height: 400px; /* Altura fija para el scroll */
+    overflow-y: auto; /* Permite el scroll hacia abajo */
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Estilos para la tabla */
+#productosTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+}
+
+/* Encabezado de la tabla */
+#productosTable thead {
+    position: sticky;
+    top: 0; /* Mantener el encabezado fijo en la parte superior */
+    background-color: #ffffff; /* Fondo blanco puro */
+    color: #212529; /* Color del texto gris oscuro */
+    text-align: center;
+    z-index: 1; /* Asegurar que el encabezado esté por encima de las imágenes */
+    border-bottom: 2px solid #e9ecef; /* Línea de separación gris claro */
+    font-weight: 600; /* Fuente un poco más gruesa */
+    letter-spacing: 0.5px; /* Espaciado entre letras */
+}
+
+/* Estilo para las celdas */
+#productosTable th, #productosTable td {
+    padding: 12px 15px; /* Un poco más de espacio */
+    text-align: left;
+    border-bottom: 1px solid #e9ecef; /* Línea de separación gris claro */
+    vertical-align: middle;
+    color: #495057; /* Color del texto gris neutro */
+    font-family: 'Helvetica', 'Arial', sans-serif; /* Fuente simple y limpia */
+    transition: background-color 0.3s ease; /* Suavizar la transición */
+}
+
+/* Estilo adicional para mejorar la estética */
+#productosTable th {
+    font-size: 14px; /* Tamaño de fuente del encabezado */
+}
+
+#productosTable td {
+    font-size: 13px; /* Tamaño de fuente de las celdas */
+}
+
+#productosTable tr:nth-child(even) {
+    background-color: #f8f9fa; /* Alternar colores de fila */
+}
+
+#productosTable tr:hover {
+    background-color: #e9ecef; /* Color de fondo al pasar el cursor */
+}
+
+
+/* Ajuste de ancho de inputs y select */
+td input, td select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+td input[type="text"] {
+    width: 150px; /* Ancho del input del nombre */
+}
+
+td input[type="number"] {
+    width: 80px; /* Ancho ajustado del input de precio y descuento */
+}
+
+td select {
+    width: 100px; /* Ajustar tamaño del select de categorías */
+}
+
+td select[data-key="oferta"],
+td select[data-key="mas_vendido"],
+td select[data-key="disponible"] {
+    width: 80px; /* Ancho ajustado de los select de oferta, más vendido, disponible */
+}
+
+/* Estilo para los botones de eliminación */
+.delete-btn {
+    background-color: #DC3545;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.delete-btn:hover {
+    background-color: #C82333;
+}
+
+/* Estilo para las celdas de las imágenes */
+td img {
+    max-width: 80px; /* Tamaño de las imágenes más pequeño */
+    height: auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* Estilo para la carga de imágenes */
+.upload-container {
+    position: relative;
+    display: inline-block;
+}
+
+.upload-btn {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Mostrar el botón cuando el mouse pase sobre la imagen */
+.upload-container:hover .upload-btn {
+    display: block;
+}
+
+/* Estilos para el indicador de carga */
+#loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilo para mejorar el formulario */
+td input[type="text"],
+td input[type="number"] {
+    height: 35px;
+    padding: 5px 10px;
+}
+
+/* Estilo del contenedor de imágenes */
+.image-holder-container {
+    width: 50%;
+    border: 1px solid #e0e0e0; /* Color de borde suave */
+    padding: 15px; /* Espacio interior */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra ligera */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre imágenes */
+}
+  
+.image-holder {
+    max-height: 250px; /* Altura mayor */
+    overflow-y: auto; /* Desplazamiento automático */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centramos las imágenes */
+    gap: 10px; /* Espacio entre contenedores de imágenes */
+}
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    position: relative;  /* Añadir para posicionar el botón encima */
+}
+
+.image-holder-container .image-container {
+    width: 60px;
+    position: relative; /* Necesario para posicionar el botón encima */
+    background-color: #f5f5f5; /* Fondo claro */
+    border: 1px solid #e0e0e0; /* Borde suave */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    padding: 10px; /* Espacio interior */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease; /* Suave aumento de escala */
+}
+  
+  .image-holder .image-container {
+    position: relative;
+    margin: 10px;
+  }
+  
+  .image-holder img {
+    width: 80px; /* Tamaño consistente */
+    height: 80px; /* Tamaño consistente */
+    border-radius: 4px; /* Bordes suavemente redondeados */
+}
+
+  
+  /* Estilo para el botón de eliminar imagen */
+  .image-holder .delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #e74c3c; /* Color rojo suave */
+    color: white;
+    border: none;
+    padding: 4px 6px; /* Espacio interior ajustado */
+    border-radius: 5px; /* Bordes suavemente redondeados */
+    cursor: pointer;
+    font-size: 12px; /* Fuente pequeña */
+    display: none;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+  
+  .image-holder .image-container:hover .delete-btn {
+    display: block;
+  }
+
+
+/* Estilo para cada contenedor de promoción */
+.promotion-container {
+    width: 30%; /* Ajustado para que los contenedores ocupen un tercio del espacio */
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden; /* Evita que los elementos sobresalgan */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
+}
+
+/* Estilo para las imágenes dentro del contenedor */
+.promotion-images {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Las imágenes se apilan verticalmente */
+    gap: 5px;
+}
+
+/* Estilo para las imágenes */
+.promotion-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que las imágenes se recorten adecuadamente */
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Efecto suave en hover */
+}
+
+/* Estilo cuando el mouse pasa por encima de la imagen */
+.promotion-image:hover {
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+/* Estilo para el botón de actualización (Cambiar Imagen) */
+.update-btn {
+    position: absolute;
+    left: 41%;
+    transform: translateX(-50%); /* Centrado horizontalmente */
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.8); /* Borde sutil */
+    border-radius: 50%;
+    width: 45px; /* Botón más grande */
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Icono más grande */
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    backdrop-filter: blur(6px); /* Efecto de blur */
+}
+
+/* Mostrar el botón de cambiar imagen al pasar el ratón */
+.image-container:hover .update-btn {
+    opacity: 1; /* Muestra el botón al pasar el ratón */
+    transform: translateX(-50%) scale(1.2); /* Efecto de aumento */
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo sutil en hover */
+}
+
+/* Estilo para el título de cada promoción */
+.promotion-container h3 {
+    font-size: 14px; /* Reduce el tamaño del título */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px; /* Espacio reducido debajo del título */
+    color: #000000;
+    padding: 5px 0; /* Espaciado para que no se sienta pegado a la imagen */
+}
+
+.promotion-images .image-container p{
+    margin: 3px;
+
+}
+
+/*-----------------------------------------------------------*/
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-panel {
+    flex-grow: 1;
+    padding: 20px 5px;
+    border: 1px solid #ddd;
+    width: 100px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.search-container .search-icon {
+    font-size: 18px;
+}
+
+
+.tbody{
+    width: auto;
+}
+
+/*---------------------------------------------------------------*/
+
+/* Estilo general del panel de filtros */
+.filter-panel {
+    background-color: #292929; /* Fondo más oscuro pero con un tono más cálido */
+    color: #ddd; /* Gris muy claro para el texto, buen contraste */
+    padding: 18px 16px;
+    border-radius: 8px; /* Bordes sutiles */
+    width: 220px; /* Reducido el ancho del panel */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra más suave para un diseño más limpio */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Títulos de las secciones de filtros */
+.filter-panel h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #bbb; /* Gris claro para los títulos */
+    margin: 0;
+    padding-bottom: 8px;
+    text-align: center; /* Centrar los títulos */
+}
+
+/* Estilo para los select */
+.filter-panel select {
+    background-color: #444; /* Fondo más neutro para los select */
+    color: white;
+    border: 1px solid #555;
+    padding: 8px 14px;
+    border-radius: 6px; /* Bordes más suaves */
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    margin-bottom: 12px; /* Espaciado entre los select */
+}
+
+/* Efecto de hover (más suave) */
+.filter-panel select:hover {
+    background-color: #555; /* Fondo ligeramente más claro */
+    border-color: #777; /* Bordes más claros al hover */
+    transform: scale(1.02); /* Aumento sutil */
+}
+
+/* Efecto cuando el select está enfocado (focus) */
+.filter-panel select:focus {
+    background-color: #666; /* Fondo más claro cuando se enfoca */
+    border-color: #4CAF50; /* Resaltado verde suave en el borde */
+}
+
+/* Espaciado entre el título y los select */
+.filter-panel h4 + select {
+    margin-top: 10px;
+}
+
+/* Agregar sombra delicada al panel cuando el mouse pasa por encima */
+.filter-panel:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al interactuar */
+}
+
+/* Opcional: si se desea un borde con el color verde suave al pasar el ratón */
+.filter-panel select:hover, .filter-panel select:focus {
+    border-color: #66bb6a; /* Verde sutil para interactuar */
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 600px) {
+    .filter-panel {
+        width: 180px; /* Reducción de ancho en dispositivos pequeños */
+        padding: 12px 14px;
+    }
+
+    .filter-panel select {
+        font-size: 12px; /* Ajustar el tamaño de la fuente en dispositivos pequeños */
+        padding: 6px 12px; /* Reducir el padding de los select */
+    }
+}
+
+
+
+/*---------------------------------------------------------------*/
+
+.holders-container{
+    display: flex;
+}
+
+.badge-success {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+tr.promocion {
+    background-color: #f9f9f9;
+    border-left: 5px solid #28a745;
+}
+
+
+#footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    bottom: 0px;
+    position:fixed;
+    left: 0;
+    width: 100%;
+    z-index: 999; 
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#footer p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+#footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+
+/*Input de busqueda---------------------------------------*/
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 40px; /* Espacio para el ícono */
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #007bff; /* Azul para enfoque */
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.search-container .search-icon {
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+    color: #aaa;
+    pointer-events: none; /* Para que no interfiera con el input */
+}
+
+.search-container:hover .search-icon {
+    color: #007bff;
+}
+
+
+/* Estilo del contador de productos */
+.product-counter {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.product-counter .count-badge {
+    background-color: #7a7a7a; /* Color de fondo azul */
+    color: white; /* Color del texto blanco */
+    padding: 5px 10px; /* Espacio interior */
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 16px;
+}
+/* Contenedor flexible */
+.container-flex {
+    display: flex;
+    height: 50px;
+    justify-content: flex-start; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 25px;
+}
+
+/*-------------------Graficas----------------------------------------------*/
+/* Contenedor principal para las gráficas */
+.info-chart-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+/* Estilo común para cada contenedor de gráfico */
+.char-Categorias, .char-Mas-Vendidos, .char-Precios {
+    background-color: #FFFFFF;
+    border-radius: 10px; /* Bordes más redondeados */
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto de sombra al pasar el mouse */
+.char-Categorias:hover, .char-Mas-Vendidos:hover, .char-Precios:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos de las secciones */
+.char-Categorias h3, .char-Mas-Vendidos h3, .char-Precios h3 {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: #444;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+}
+
+/* Contenedores de los gráficos (sin bordes innecesarios) */
+.chart-container {
+    position: relative;
+    height: 240px; /* Altura ajustada para gráficos compactos */
+    background-color: #FAFAFA; /* Fondo neutro */
+    border-radius: 8px;
+}
+
+/* Canvas de los gráficos */
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Diseño para el texto en la sección "Productos Más Vendidos" */
+.chart-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 12px;
+    text-align: center;
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .info-chart-row {
+        flex-direction: column; /* Pone los gráficos en una columna */
+        gap: 20px;
+    }
+
+    .char-Categorias, .char-Mas-Vendidos, .char-Precios {
+        min-width: 100%; /* Ancho completo para gráficos en pantallas pequeñas */
+    }
+
+    .chart-container {
+        height: 220px; /* Reducimos ligeramente la altura */
+    }
+}
