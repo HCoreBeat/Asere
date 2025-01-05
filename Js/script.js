@@ -948,7 +948,7 @@ handleAffiliate();
 
 
 // Función para generar copos de nieve
-const createSnowflake = () => {
+/*const createSnowflake = () => {
     const snowflake = document.createElement('div');
     snowflake.className = 'snowflake';
     snowflake.innerHTML = '&#10052;';
@@ -965,10 +965,10 @@ const createSnowflake = () => {
     }, duration * 1000);
 };
 
-setInterval(createSnowflake, 100);
+setInterval(createSnowflake, 100);*/
 
 //----Para el gif basado en imagens para mantener transparencia y mas profesional---
-const frames = ['img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png','img/N7.png','img/N8.png',
+/*const frames = ['img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png','img/N7.png','img/N8.png',
 'img/N8.png','img/N7.png','img/N6.png','img/N5.png','img/N4.png','img/N3.png','img/N2.png'
 ]; // Rutas de las imágenes
     let currentFrame = 0;
@@ -978,7 +978,7 @@ const frames = ['img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png'
     setInterval(() => {
         currentFrame = (currentFrame + 1) % frames.length; // Cicla entre los frames
         gifContainer.src = frames[currentFrame];
- }, 100); // Cambia cada 250 ms (ajusta la velocidad según tus necesidades)
+ }, 100); // Cambia cada 250 ms (ajusta la velocidad según tus necesidades)*/
 
  window.onload = function() {
     //------------Whatsapp----------
