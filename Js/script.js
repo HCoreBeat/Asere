@@ -1010,3 +1010,67 @@ adjustImages();
 
 // Ajustar imágenes al redimensionar la ventana
 window.addEventListener('resize', adjustImages);
+
+//-----------------------------Notificaciones-----------------------------------------
+//-------------------------------------------------------------------------------------
+// Verificar soporte de Notificaciones
+if ('Notification' in window) {
+    // Función para enviar una notificación visualmente atractiva
+    const sendNotification = () => {
+        const notification = new Notification('🌟 ¡Hola Asere! 🌟', {
+            body: `Son las ${new Date().toLocaleTimeString()}. ¡Echa un vistazo a nuestros productos más vendidos! 🛒💕`,
+            icon: 'img/LogoVerde.jpeg', // Cambia este URL por tu ícono preferido
+            image: 'img/Notificacion.jpg', // Imagen atractiva
+            badge: 'img/badge.png', // Añadir un badge para hacerla más llamativa
+            vibrate: [200, 100, 200], // Vibración
+            requireInteraction: true, // Mantener la notificación hasta que el usuario interactúe
+            sound: 'https://www.soundjay.com/button/beep-07.wav', // Sonido de notificación (opcional)
+        });
+
+        // Agregar un pequeño efecto visual a la notificación
+        notification.onshow = () => {
+            console.log("Notificación mostrada.");
+        };
+
+        // Manejar el evento de clic en la notificación
+        notification.onclick = (event) => {
+            event.preventDefault();  // Evitar el comportamiento por defecto
+            window.open('https://asereshops.com'); // Cambia a la URL de tu página web
+            notification.close();  // Cerrar la notificación al hacer clic
+        };
+
+        // Establecer un retraso para animar la aparición de la notificación
+        setTimeout(() => {
+            console.log('Notificación enviada con éxito');
+        }, 1000);
+    };
+
+    // Solicitar permiso de notificaciones
+    const requestPermission = async () => {
+        try {
+            const permission = await Notification.requestPermission();
+
+            if (permission === 'granted') {
+                console.log('Permiso concedido. Las notificaciones se enviarán automáticamente.');
+
+                // Enviar la primera notificación inmediatamente
+                sendNotification();
+
+                // Establecer el intervalo para enviar notificaciones cada 60 segundos (1 minuto)
+                setInterval(() => {
+                    sendNotification(); // Llamar a la función para mostrar la notificación
+                    console.log('Enviando notificación automática...');
+                }, 60000*10); // 1 minuto
+            } else {
+                console.warn('El usuario denegó el permiso de notificaciones.');
+            }
+        } catch (error) {
+            console.error('Error al solicitar permiso de notificaciones:', error);
+        }
+    };
+
+    // Solicitar permisos al cargar la página
+    requestPermission();
+} else {
+    console.error('Tu navegador no soporta notificaciones.');
+}
