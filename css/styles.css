@@ -22,7 +22,7 @@ body {
     line-height: normal; 
     margin: 0; 
     padding: 0; 
-    margin-top: 175px;
+    margin-top: 130px;
 }
 
 /* define como se vera el header o la parte del medio*/
@@ -37,9 +37,9 @@ header {
      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
      transition: background 0.5 ease-in-out;
      /*Background Navidad*/
-     background: linear-gradient(45deg, #ff7eb3, #ff758c,#00796B, #27b055);
+     /*background: linear-gradient(45deg, #ff7eb3, #ff758c,#00796B, #27b055);*/
      /*background: linear-gradient(45deg, #ff7eb3, #ff758c, #42a5f5, #9c27b0);*/
-     /*background: linear-gradient(45deg, #60dc00, #00796B,#00b39e);*/
+     background: linear-gradient(45deg, #3FEE61, #00796B,#00b39e);
     background-size: 300% 300%;
     animation: gradientMove 20s infinite;
     height: auto;
@@ -95,20 +95,6 @@ header {
 .gif-slogan img{
     width: 100%;
     height: auto;
-}
-
-.slogan p {
-    font-size: 15px;
-    margin-top: 0px;
-    font-weight: 600;
-    color: #272727;
-    font-style: italic;
-    opacity: 0.8;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.slogan:hover p {
-    opacity: 1;
 }
 
 nav ul {
@@ -343,7 +329,7 @@ nav ul li a:hover i {
 }
 
 .categoria[data-categoria="carnes"] {
-    background-color: #FF0103; /* Cambia el color según tu preferencia */
+    background-color: #f5c455; /* Cambia el color según tu preferencia */
     margin: 0px;
     padding: 30px 25px;
 }
@@ -364,7 +350,6 @@ nav ul li a:hover i {
     background-color: #fff;
     padding: 10px;
     margin: 15px;
-    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -2110,7 +2095,7 @@ hr {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        margin-top: 170px;
+        margin-top: 165px;
     }
      /*--Footer--*/
     .footer-container {
@@ -2125,15 +2110,14 @@ hr {
 }
 
 /*-----Copos de nieve para navidad------*/
-#snowflakes-container {
+/*#snowflakes-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     pointer-events: none;
-}
-
+}*/
 .snowflake {
     position: absolute;
     top: -10px;
@@ -2159,22 +2143,6 @@ hr {
     }
 }
 
-.santa-hat {
-    position: absolute;
-    top: -40px;
-    right: -35px;
-    width: 70px;
-    transform: rotate(15deg);
-}
-@media (max-width: 768px) {
-    .santa-hat {
-        position: absolute;
-        top: -27px;
-        right: -26px;
-        width: 70px;
-        transform: rotate(15deg);
-    }
-}
 
 
 /*------PLantilla de pago-------
