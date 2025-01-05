@@ -379,7 +379,7 @@
     {
         "nombre": "Cartón de Huevos",
         "categoria": "despensa",
-        "precio": 13,
+        "precio": 12.05,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": true,
