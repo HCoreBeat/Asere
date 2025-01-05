@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function actualizarPrecios(productos) {
         productos.forEach(producto => {
             if (producto.precio !== undefined) {
-                const total = producto.precio * 0.23;
+                const total = producto.precio * 0.05;
                 producto.precio = +(producto.precio + total).toFixed(2); // Actualiza el precio con el total calculado
             }
         });
