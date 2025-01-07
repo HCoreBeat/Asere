@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('cat-offers').innerHTML = `<i class="fas fa-tags"></i> ${locales[lang].categories.offers}`;
         document.getElementById('cat-combos').innerHTML = `<i class="fas fa-box"></i> ${locales[lang].categories.combos}`;
         document.getElementById('cat-fruits').innerHTML = `<i class="fas fa-apple-alt"></i> ${locales[lang].categories.fruits}`;
+        document.getElementById('cat-coffee').innerHTML = `<i class="fas fa-coffee"></i> ${locales[lang].categories.coffee}`;
         document.getElementById('cat-meats').innerHTML = `<i class="fas fa-drumstick-bite"></i> ${locales[lang].categories.meats}`;
         document.getElementById('cat-canned').innerHTML = `<i class="fas fa-box-open"></i> ${locales[lang].categories.canned}`;
         document.getElementById('cat-dressings').innerHTML = `<i class="fas fa-utensils"></i> ${locales[lang].categories.dressings}`;
