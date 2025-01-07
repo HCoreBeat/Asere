@@ -12,7 +12,7 @@
     {
         "nombre": "Carne de cerdo x Lb",
         "categoria": "carnes",
-        "precio": 3.45,
+        "precio": 3.047,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": true,
@@ -172,7 +172,7 @@
     {
         "nombre": "Picadillo Especial 800g",
         "categoria": "carnes",
-        "precio": 4.00,
+        "precio": 3.657,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -375,7 +375,7 @@
     {
         "nombre": "Café Espresso",
         "categoria": "cafe",
-        "precio": 7,
+        "precio": 6.666,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -965,7 +965,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Caja_de_Jurel.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Galletas de Soda con Mantequilla Doricas",
@@ -1040,7 +1040,7 @@
     {
         "nombre": "Café Espresso «El Ricote»",
         "categoria": "cafe",
-        "precio": 6,
+        "precio": 6.54,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
