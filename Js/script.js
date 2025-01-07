@@ -97,11 +97,16 @@ document.addEventListener("DOMContentLoaded", () => {
     
         console.log('Renderizando productos en idioma:', lang);
         console.log('Locales:', locales);
+
+        // Filtrar productos disponibles
+        const productosDisponibles = productosActualizados.filter(producto => producto.disponible);
+
+
     
         // Crear el contenedor de productos más vendidos
         const masVendidosContainer = document.createElement("div");
         masVendidosContainer.className = "mas-vendidos-container"; // Clase para el contenedor de productos más vendidos
-        const masVendidos = productosActualizados.filter(producto => producto.mas_vendido); // Filtrar los productos más vendidos
+        const masVendidos = productosDisponibles.filter(producto => producto.mas_vendido); // Filtrar los productos más vendidos
     
         // Crear un contenedor para los productos más vendidos
         masVendidos.forEach((producto, index) => {
@@ -188,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
         categoriasContainer.className = "categorias-container"; // Clase para el contenedor de categorías
 
         // Agrupar productos por categorías
-        const categorias = [...new Set(productosUnicos.map(producto => producto.categoria))];
+        const categorias = [...new Set(productosDisponibles.map(producto => producto.categoria))];
 
         categorias.forEach((categoria, index) => {
             const categoriaDiv = document.createElement("div");
@@ -201,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
             categoriaDiv.appendChild(categoriaTitle);
 
             // Filtrar productos de esta categoría
-            const productosCategoria = productosUnicos.filter(producto => producto.categoria === categoria);
+            const productosCategoria = productosDisponibles.filter(producto => producto.categoria === categoria);
             const categoriaProductosContainer = document.createElement("div");
             categoriaProductosContainer.className = "productos-categoria-container";
 
@@ -1060,7 +1065,7 @@ if ('Notification' in window) {
                 setInterval(() => {
                     sendNotification(); // Llamar a la función para mostrar la notificación
                     console.log('Enviando notificación automática...');
-                }, 60000*10); // 1 minuto
+                }, 60000*20); // 1 minuto
             } else {
                 console.warn('El usuario denegó el permiso de notificaciones.');
             }
