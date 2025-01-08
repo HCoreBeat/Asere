@@ -1061,11 +1061,11 @@ if ('Notification' in window) {
                 // Enviar la primera notificación inmediatamente
                 sendNotification();
 
-                // Establecer el intervalo para enviar notificaciones cada 60 segundos (1 minuto)
+                // Establecer el intervalo para enviar notificaciones cada 20 minutos
                 setInterval(() => {
                     sendNotification(); // Llamar a la función para mostrar la notificación
                     console.log('Enviando notificación automática...');
-                }, 60000*20); // 1 minuto
+                }, 60000 * 20); // 20 minutos
             } else {
                 console.warn('El usuario denegó el permiso de notificaciones.');
             }
@@ -1079,3 +1079,4 @@ if ('Notification' in window) {
 } else {
     console.error('Tu navegador no soporta notificaciones.');
 }
+
