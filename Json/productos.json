@@ -380,7 +380,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Cafe_Expreso.jpeg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Cartón de Huevos",
