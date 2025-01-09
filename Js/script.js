@@ -1019,64 +1019,53 @@ window.addEventListener('resize', adjustImages);
 //-----------------------------Notificaciones-----------------------------------------
 //-------------------------------------------------------------------------------------
 // Verificar soporte de Notificaciones
-if ('Notification' in window) {
-    // Función para enviar una notificación visualmente atractiva
-    const sendNotification = () => {
-        const notification = new Notification('🌟 ¡Hola Asere! 🌟', {
-            body: `Son las ${new Date().toLocaleTimeString()}. ¡Echa un vistazo a nuestros productos más vendidos! 🛒💕`,
-            icon: 'img/LogoVerde.jpeg', // Cambia este URL por tu ícono preferido
-            image: 'img/Notificacion.jpg', // Imagen atractiva
-            badge: 'img/badge.png', // Añadir un badge para hacerla más llamativa
-            vibrate: [200, 100, 200], // Vibración
-            requireInteraction: true, // Mantener la notificación hasta que el usuario interactúe
-            sound: 'https://www.soundjay.com/button/beep-07.wav', // Sonido de notificación (opcional)
-        });
+if ('Notification' in window && 'serviceWorker' in navigator) {
+    // Registrar un service worker
+    navigator.serviceWorker.register('Js/service-worker.js').then(function(registration) {
+        console.log('Service Worker registrado con éxito:', registration);
 
-        // Agregar un pequeño efecto visual a la notificación
-        notification.onshow = () => {
-            console.log("Notificación mostrada.");
+        // Función para enviar una notificación visualmente atractiva
+        const sendNotification = () => {
+            registration.showNotification('🌟 ¡Hola Asere! 🌟', {
+                body: `Son las ${new Date().toLocaleTimeString()}. ¡Echa un vistazo a nuestros productos más vendidos! 🛒💕`,
+                icon: 'img/LogoVerde.jpeg', // Cambia este URL por tu ícono preferido
+                image: 'img/Notificacion.jpg', // Imagen atractiva
+                badge: 'img/badge.png', // Añadir un badge para hacerla más llamativa
+                vibrate: [200, 100, 200], // Vibración
+                requireInteraction: true, // Mantener la notificación hasta que el usuario interactúe
+                sound: 'https://www.soundjay.com/button/beep-07.wav', // Sonido de notificación (opcional)
+            });
         };
 
-        // Manejar el evento de clic en la notificación
-        notification.onclick = (event) => {
-            event.preventDefault();  // Evitar el comportamiento por defecto
-            window.open('https://asereshops.com'); // Cambia a la URL de tu página web
-            notification.close();  // Cerrar la notificación al hacer clic
-        };
+        // Solicitar permiso de notificaciones
+        const requestPermission = async () => {
+            try {
+                const permission = await Notification.requestPermission();
 
-        // Establecer un retraso para animar la aparición de la notificación
-        setTimeout(() => {
-            console.log('Notificación enviada con éxito');
-        }, 1000);
-    };
+                if (permission === 'granted') {
+                    console.log('Permiso concedido. Las notificaciones se enviarán automáticamente.');
 
-    // Solicitar permiso de notificaciones
-    const requestPermission = async () => {
-        try {
-            const permission = await Notification.requestPermission();
+                    // Enviar la primera notificación inmediatamente
+                    sendNotification();
 
-            if (permission === 'granted') {
-                console.log('Permiso concedido. Las notificaciones se enviarán automáticamente.');
-
-                // Enviar la primera notificación inmediatamente
-                sendNotification();
-
-                // Establecer el intervalo para enviar notificaciones cada 20 minutos
-                setInterval(() => {
-                    sendNotification(); // Llamar a la función para mostrar la notificación
-                    console.log('Enviando notificación automática...');
-                }, 60000 * 20); // 20 minutos
-            } else {
-                console.warn('El usuario denegó el permiso de notificaciones.');
+                    // Establecer el intervalo para enviar notificaciones cada 20 minutos
+                    setInterval(() => {
+                        sendNotification(); // Llamar a la función para mostrar la notificación
+                        console.log('Enviando notificación automática...');
+                    }, 60000 * 20); // 20 minutos
+                } else {
+                    console.warn('El usuario denegó el permiso de notificaciones.');
+                }
+            } catch (error) {
+                console.error('Error al solicitar permiso de notificaciones:', error);
             }
-        } catch (error) {
-            console.error('Error al solicitar permiso de notificaciones:', error);
-        }
-    };
+        };
 
-    // Solicitar permisos al cargar la página
-    requestPermission();
+        // Solicitar permisos al cargar la página
+        requestPermission();
+    }).catch(function(error) {
+        console.error('Error al registrar el Service Worker:', error);
+    });
 } else {
     console.error('Tu navegador no soporta notificaciones.');
 }
-
