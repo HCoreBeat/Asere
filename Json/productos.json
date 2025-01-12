@@ -167,7 +167,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Salchicha_Pollo_Cerdo.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Picadillo Especial 800g",
@@ -177,7 +177,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Picadillo_Especial_2.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Leche en polvo (900g)",
@@ -185,9 +185,9 @@
         "precio": 13,
         "descuento": 10,
         "oferta": false,
-        "mas_vendido": true,
+        "mas_vendido": false,
         "imagen": "img/products/Leche_en_Polvo.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Helado 4Lts",
@@ -535,7 +535,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Vasos_Reutilizables.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Paquete de tenedores plásticos (25/u)",
@@ -545,7 +545,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Tenedores_Plasticos.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Paquete de cucharas plásticas (100/u)",
@@ -555,7 +555,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Cucharas_Plasticas.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Mano de plátano burro",
@@ -1035,7 +1035,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Cebollitas_En_Vinagre.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Café Espresso «El Ricote»",
@@ -1165,7 +1165,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Servilletas.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Pasta Dental Coigore (100g)",
@@ -1225,7 +1225,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Detergente.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Colonia Bonabel de Violetas",
