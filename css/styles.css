@@ -2693,3 +2693,38 @@ hr {
         box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
     }
 }
+
+/* Estilo del mensaje de advertencia */
+.warning-message {
+    color: #d9534f;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    animation: fadeOut 5s forwards;
+}
+
+.warning-message p {
+    margin: 0;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
+/* Estilo del mensaje de tiempo de entrega */
+.delivery-time-message {
+    color: #28a745;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
