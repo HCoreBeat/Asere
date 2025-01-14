@@ -377,6 +377,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 e.preventDefault();
                 const category = link.getAttribute("data-categoria");
 
+                // 1. Limpiar la barra de búsqueda
+                const searchInput = document.getElementById("search-input");
+                searchInput.value = ""; // Vacia el campo de búsqueda
+
+                // 2. Ocultar el mensaje de "No se encontraron resultados"
+                const noResultMessage = document.getElementById("no-result-message");
+                if (noResultMessage) noResultMessage.style.display = "none";
+
+                // Opcional: si tienes secciones como "más vendidos", puedes asegurarte de que también se muestren.
+            const masVendidosContainer = document.querySelector(".mas-vendidos-container");
+            if (masVendidosContainer) masVendidosContainer.style.display = "flex";
+
                 document.querySelectorAll(".producto").forEach(producto => {
                     if (category === "ofertas" && producto.dataset.categoria !== "ofertas" && !producto.querySelector('.etiqueta.oferta')) {
                         producto.style.display = "none";
