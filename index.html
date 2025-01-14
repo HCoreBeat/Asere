@@ -173,6 +173,12 @@
                 <p id="total">Total: </p>
                 <span id="cart-total">0</span>
             </div>
+
+            <!-- Mensaje de advertencia -->
+            <div id="warning-message" class="warning-message" style="display: none;">
+                <p><strong>Atención:</strong> El total del carrito debe ser de al menos $10 para proceder al pago.</p>
+            </div>
+
             <button id="checkout-button" class="checkout-button">Proceder al Pago</button>
         </section>
 
@@ -207,6 +213,11 @@
                         <textarea id="address" name="address" required></textarea>
                     </div>
 
+                    <!-- Mensaje de tiempo de entrega -->
+                    <div id="delivery-time-message" class="delivery-time-message">
+                        <p>El pedido se entregará en un rango de tiempo de 48 horas.</p>
+                    </div>
+
                     <h3>Resumen del Pedido</h3>
                     <table>
                         <thead>
@@ -235,7 +246,7 @@
                     </div>
                 </form>
             </div>
-        </section>    
+        </section>
 
         <div id="whatsapp-button">
             <a href="https://wa.me/+18032399264?text=¡Hola!%20Me%20gustaría%20saber%20más%20sobre%20sus%20productos." target="_blank" aria-label="Contáctanos en WhatsApp">
