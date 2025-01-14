@@ -1,6 +1,11 @@
 // Función para obtener datos del carrito desde localStorage
 function getCartItems() {
-    return JSON.parse(localStorage.getItem('carrito')) || [];
+    try {
+        return JSON.parse(localStorage.getItem('carrito')) || [];
+    } catch (error) {
+        console.error("Error al obtener los datos del carrito:", error);
+        return [];
+    }
 }
 
 // Función para obtener el afiliado desde localStorage
@@ -46,7 +51,7 @@ function fillPaymentForm() {
 }
 
 // Mostrar la planilla de pago al presionar "Proceder al Pago"
-document.getElementById('checkout-button').addEventListener('click', function() {
+document.getElementById('checkout-button').addEventListener('click', () => {
     const warningMessage = document.getElementById('warning-message');
     
     if (isTotalAboveMinimum()) {
@@ -62,7 +67,7 @@ document.getElementById('checkout-button').addEventListener('click', function() 
 });
 
 // Manejar el envío del formulario de pago
-document.getElementById('payment-form').addEventListener('submit', function(event) {
+document.getElementById('payment-form').addEventListener('submit', async (event) => {
     event.preventDefault();
 
     // Validar que todos los campos obligatorios están rellenados
@@ -100,28 +105,29 @@ document.getElementById('payment-form').addEventListener('submit', function(even
     const serviceID = 'default_service';
     const templateID = 'template_yw2stbs';
 
-    emailjs.send(
-        serviceID,
-        templateID,
-        {
-            name: fullName,
-            email: email,
-            message: message
-        },
-        "UE5xZtzvJ3W5lClZS"
-    ).then(function(response) {
+    try {
+        const response = await emailjs.send(
+            serviceID,
+            templateID,
+            {
+                name: fullName,
+                email: email,
+                message: message
+            },
+            "UE5xZtzvJ3W5lClZS"
+        );
         console.log("Correo enviado exitosamente:", response);
-        
+
         // Vaciar el carrito
         vaciarCarrito();
 
         // Mostrar panel de agradecimiento
         mostrarPanelAgradecimiento();
 
-    }, function(error) {
+    } catch (error) {
         console.log("Error al enviar el correo:", error);
         alert("Error al enviar el correo. Por favor, inténtalo de nuevo.");
-    });
+    }
 });
 
 // Función para vaciar el carrito
