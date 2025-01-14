@@ -1286,5 +1286,15 @@
         "mas_vendido": false,
         "imagen": "img/products/Spam.jpg",
         "disponible": true
+    },
+    {
+        "nombre": "Picadillo de pollo (1Kg)",
+        "categoria": "carnes",
+        "precio": 3.71,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Picadillo_de_Pollo.jpg",
+        "disponible": true
     }
 ]
