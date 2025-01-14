@@ -13,6 +13,13 @@ function calculateTotal(items) {
     return items.reduce((total, item) => total + item.precio * item.cantidad, 0).toFixed(2);
 }
 
+// Función para verificar si el total cumple con el mínimo requerido
+function isTotalAboveMinimum() {
+    const cartItems = getCartItems();
+    const total = calculateTotal(cartItems);
+    return total >= 10;
+}
+
 // Función para llenar la planilla de pago con los datos del carrito y el afiliado
 function fillPaymentForm() {
     const cartItems = getCartItems();
@@ -40,9 +47,18 @@ function fillPaymentForm() {
 
 // Mostrar la planilla de pago al presionar "Proceder al Pago"
 document.getElementById('checkout-button').addEventListener('click', function() {
-    document.getElementById('carrito').style.display = 'none';
-    document.getElementById('planilla-pago').classList.remove('hidden');
-    fillPaymentForm();
+    const warningMessage = document.getElementById('warning-message');
+    
+    if (isTotalAboveMinimum()) {
+        document.getElementById('carrito').style.display = 'none';
+        document.getElementById('planilla-pago').classList.remove('hidden');
+        fillPaymentForm();
+    } else {
+        warningMessage.style.display = 'block';
+        setTimeout(() => {
+            warningMessage.style.display = 'none';
+        }, 5000); // Ocultar después de 5 segundos
+    }
 });
 
 // Manejar el envío del formulario de pago
