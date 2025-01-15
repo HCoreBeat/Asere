@@ -735,7 +735,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Pack_de_6_Maltas_Morena.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Jugo Santa Juice de Uva (200ml)",
