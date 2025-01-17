@@ -32,7 +32,7 @@
     {
         "nombre": "Picadillo Especial 400g",
         "categoria": "carnes",
-        "precio": 2.00,
+        "precio": 1.876,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -62,7 +62,7 @@
     {
         "nombre": "Paquete de picadillo de pollo 1kg",
         "categoria": "carnes",
-        "precio": 3.00,
+        "precio": 2.828,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": true,
@@ -97,7 +97,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Higado_de_Cerdo.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Pollo Entero 3 Libras",
