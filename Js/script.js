@@ -1,6 +1,7 @@
 
 // Array para almacenar los productos del carrito
 let carrito = [];
+let productos = [];
 
 document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.querySelector(".menu-toggle");
@@ -16,9 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const progressBarContainer = document.getElementById("progress-bar-container");
     const progressBar = document.getElementById("progress-bar");
 
-    let locales = {};
-    let productos = [];
-    let currentLang = 'es'; // Idioma por defecto
 
     let lastScrollTop = 0;
     let currency = 'USD';
@@ -88,21 +86,19 @@ document.addEventListener("DOMContentLoaded", () => {
         return productos;
     }
     
-    function renderProductos(lang) {
+    function renderProductos() {
         limpiarProductosContainer(); // Limpiar productos actuales
     
+        // Combinar productos y combos en un solo array
+        const productosYCombos = [...productos, ...combos]; 
+
         // Eliminar productos duplicados
-        const productosUnicos = removeDuplicates(productos);
+        const productosUnicos = removeDuplicates(productosYCombos);
         const productosActualizados = actualizarPrecios(productosUnicos); // Actualizar precios
-    
-        console.log('Renderizando productos en idioma:', lang);
-        console.log('Locales:', locales);
 
         // Filtrar productos disponibles
-        const productosDisponibles = productosActualizados.filter(producto => producto.disponible);
+        const productosDisponibles = productosActualizados.filter(producto => producto.disponible && producto.categoria !== "combos");
 
-
-    
         // Crear el contenedor de productos más vendidos
         const masVendidosContainer = document.createElement("div");
         masVendidosContainer.className = "mas-vendidos-container"; // Clase para el contenedor de productos más vendidos
@@ -129,16 +125,17 @@ document.addEventListener("DOMContentLoaded", () => {
     
             const pvprHtml = producto.oferta ? `<p class="pvpr">PVPR: US$<s>${pvpr.toFixed(2)}</s></p>` : '';
     
-            const etiquetaOferta = producto.oferta ? `<span class="etiqueta oferta producto-oferta">${locales[lang].productos.oferta}</span>` : '';
-            const etiquetaMasVendido = producto.mas_vendido ? `<div class="badge mas-vendido producto-masvendido">${locales[lang].productos.mas_vendido}</div>` : '';
+            const etiquetaOferta = producto.oferta ? `<span class="etiqueta oferta producto-oferta">Oferta</span>` : '';
+            const etiquetaMasVendido = producto.mas_vendido ? `<div class="badge mas-vendido producto-masvendido">Más Vendido</div>` : '';
     
             // Mostrar disponibilidad
             const disponibilidadHtml = producto.disponible
-                ? `<div class="disponibilidad disponible">${locales[lang].productos.disponible}</div>`
-                : `<div class="disponibilidad no-disponible">${locales[lang].productos.no_disponible}</div>`;
+                ? `<div class="disponibilidad disponible">Disponible</div>`
+                : `<div class="disponibilidad no-disponible">No Disponible</div>`;
     
             productoDiv.innerHTML = `
                 <div class="producto-contenedor">
+                <p class="nombre">${producto.nombre}</p>
                     <div class="etiqueta-segmento">
                         ${etiquetaMasVendido}
                         ${etiquetaOferta}
@@ -153,15 +150,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                         ${descuento}
                         ${disponibilidadHtml} <!-- Agregar disponibilidad -->
-                        <div class="cantidad-carrito-contenedor">
-                            <div class="cantidad">
-                                <button class="btn-cantidad" onclick="decrementar('cantidad-masvendido-${index}')">-</button>
-                                <span id="cantidad-masvendido-${index}" class="cantidad-span">1</span>
-                                <button class="btn-cantidad" onclick="incrementar('cantidad-masvendido-${index}')">+</button>
-                            </div>
-                            <button class="btn-carrito boton-agregarcarrito" onclick="agregarAlCarrito('${producto.nombre}', ${precio}, 'cantidad-masvendido-${index}', '${producto.imagen}', this)">${locales[lang].productos.agregar_al_carrito}</button>
-                        </div>
-                        <p class="nombre">${producto.nombre}</p>
                     </div>
                 </div>
             `;
@@ -222,6 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 let pvpr = producto.pvpr;
                 let descuento = '';
 
+
                 // Asegurarse de que el precio tenga dos decimales
                 precio = precio.toFixed(2);
                 if (producto.oferta) {
@@ -232,13 +221,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const pvprHtml = producto.oferta ? `<p class="pvpr">PVPR: US$<s>${pvpr.toFixed(2)}</s></p>` : '';
 
-                const etiquetaOferta = producto.oferta ? `<span class="etiqueta oferta producto-oferta">${locales[lang].productos.oferta}</span>` : '';
-                const etiquetaMasVendido = producto.mas_vendido ? `<div class="badge mas-vendido producto-masvendido">${locales[lang].productos.mas_vendido}</div>` : '';
+                const etiquetaOferta = producto.oferta ? `<span class="etiqueta oferta producto-oferta">Oferta</span>` : '';
+                const etiquetaMasVendido = producto.mas_vendido ? `<div class="badge mas-vendido producto-masvendido">Más Vendido</div>` : '';
 
                 // Mostrar disponibilidad
                 const disponibilidadHtml = producto.disponible
-                    ? `<div class="disponibilidad disponible">${locales[lang].productos.disponible}</div>`
-                    : `<div class="disponibilidad no-disponible">${locales[lang].productos.no_disponible}</div>`;
+                    ? `<div class="disponibilidad disponible">Disponible</div>`
+                    : `<div class="disponibilidad no-disponible">No Disponible</div>`;
 
                 productoDiv.innerHTML = `
                     <div class="producto-contenedor">
@@ -262,7 +251,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     <span id="cantidad${producto.nombre.replace(/\s+/g, '-')}" class="cantidad-span">1</span>
                                     <button class="btn-cantidad" onclick="incrementar('cantidad${producto.nombre.replace(/\s+/g, '-')}')">+</button>
                                 </div>
-                                <button class="btn-carrito boton-agregarcarrito" onclick="agregarAlCarrito('${producto.nombre}', ${precio}, 'cantidad${producto.nombre.replace(/\s+/g, '-')}', '${producto.imagen}', this)">${locales[lang].productos.agregar_al_carrito}</button>
+                                <button class="btn-carrito boton-agregarcarrito" onclick="agregarAlCarrito('${producto.nombre}', ${precio}, 'cantidad${producto.nombre.replace(/\s+/g, '-')}', '${producto.imagen}', this)">Añadir al Carrito</button>
                             </div>
                             <p class="nombre">${producto.nombre}</p>
                         </div>
@@ -334,10 +323,88 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             }
         });
-    
+
+        // Contenedor para los combos
+        const combosContainer = document.createElement("div");
+        combosContainer.className = "combos-container"; // Clase para el contenedor de combos
+
+        const combosTitle = document.createElement("h2");
+        combosTitle.textContent = "Combos Especiales";
+        combosTitle.style.textAlign = 'center';
+        combosTitle.style.marginBottom = '20px';
+        combosContainer.appendChild(combosTitle);
+
+        const comboSlider = document.createElement("div");
+        comboSlider.className = "combo-slider"; // Clase para el slider vertical u horizontal
+        combosContainer.appendChild(comboSlider);
+
+        const sliderIndicator = document.createElement("div");
+        sliderIndicator.className = "slider-indicator"; // Indicador de deslizamiento
+        combosContainer.appendChild(sliderIndicator);
+
+        const updateIndicatorDirection = () => {
+            if (window.innerWidth <= 768) {
+                sliderIndicator.classList.remove("vertical");
+                sliderIndicator.classList.add("horizontal");
+            } else {
+                sliderIndicator.classList.remove("horizontal");
+                sliderIndicator.classList.add("vertical");
+            }
+        };
+
+        // Llamar a la función de actualización de la dirección del indicador en el cambio de tamaño de la ventana
+        window.addEventListener('resize', updateIndicatorDirection);
+        updateIndicatorDirection(); // Llamar a la función en la carga inicial de la página
+
+        const combosDisponibles = combos.filter(combos => combos.disponible);
+
+        combosDisponibles.forEach((combo, comboIndex) => {
+            const comboDiv = document.createElement("div");
+            comboDiv.className = "combo";
+            comboDiv.dataset.nombre = combo.nombre;
+            comboDiv.dataset.categoria = combo.categoria;
+
+            let precio = combo.precio.toFixed(2);
+
+            // Estructura del combo
+            comboDiv.innerHTML = `
+                <div class="combo-contenedor">
+                    <div class="combo-img">
+                        <img src="${combo.imagen}" alt="${combo.nombre}">
+                    </div>
+                    <div class="combo-info">
+                        <p class="nombre">${combo.nombre}</p>
+                        <div class="productos">
+                            ${combo.productos.map(producto => `<div class="producto-item">${producto}</div>`).join('')}
+                        </div>
+                        <p class="precio"><span class="currency">US$</span>${precio}</p>
+                        <div class="cantidad-carrito-contenedor">
+                            <div class="cantidad">
+                                <button class="btn-cantidad" onclick="decrementar('cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}')">-</button>
+                                <span id="cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}">1</span>
+                                <button class="btn-cantidad" onclick="incrementar('cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}')">+</button>
+                            </div>
+                            <button class="btn-carrito boton-agregarcarrito" 
+                                onclick="agregarAlCarrito('${combo.nombre}', ${combo.precio}, 
+                                'cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}',
+                                '${combo.imagen}', this, [${combo.productos.map(producto => `'${producto}'`).join(', ')}])">
+                                Añadir al Carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            comboSlider.appendChild(comboDiv);
+        });
+
+        // Añadir el contenedor principal al cuerpo del documento
+        document.body.appendChild(combosContainer);
+
         // Insertar los contenedores en el DOM
         const productosContainer = document.getElementById("productos-container");
         productosContainer.appendChild(masVendidosContainer); // Insertar los más vendidos en la parte superior
+        productosContainer.appendChild(combosContainer);     // Insertar los combos
         productosContainer.appendChild(separadorContainer); 
         productosContainer.appendChild(categoriasContainer); // Insertar los productos por categorías debajo
     
@@ -370,27 +437,33 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
         
-
         // Filtrar productos por categoría
         document.querySelectorAll(".categorias ul li a").forEach(link => {
             link.addEventListener("click", (e) => {
                 e.preventDefault();
                 const category = link.getAttribute("data-categoria");
 
-                // 1. Limpiar la barra de búsqueda
+                // Limpiar la barra de búsqueda
                 const searchInput = document.getElementById("search-input");
-                searchInput.value = ""; // Vacia el campo de búsqueda
+                searchInput.value = ""; // Vaciar el campo de búsqueda
 
-                // 2. Ocultar el mensaje de "No se encontraron resultados"
+                // Ocultar el mensaje de "No se encontraron resultados"
                 const noResultMessage = document.getElementById("no-result-message");
                 if (noResultMessage) noResultMessage.style.display = "none";
 
                 // Opcional: si tienes secciones como "más vendidos", puedes asegurarte de que también se muestren.
-            const masVendidosContainer = document.querySelector(".mas-vendidos-container");
-            if (masVendidosContainer) masVendidosContainer.style.display = "flex";
+                const masVendidosContainer = document.querySelector(".mas-vendidos-container");
+                if (masVendidosContainer) masVendidosContainer.style.display = "flex";
 
-                document.querySelectorAll(".producto").forEach(producto => {
-                    if (category === "ofertas" && producto.dataset.categoria !== "ofertas" && !producto.querySelector('.etiqueta.oferta')) {
+                // Actualizar la clase 'selected' del enlace de categoría
+                document.querySelectorAll(".categorias ul li a").forEach(link => {
+                    link.classList.remove("selected");
+                });
+                link.classList.add("selected");
+
+                document.querySelectorAll(".producto, .combos-container").forEach(producto => {
+                    if ((category === "ofertas" && producto.dataset.categoria !== "ofertas" && !producto.querySelector('.etiqueta.oferta')) ||
+                        (producto.getAttribute("data-categoria") !== category && category !== "all" && producto.getAttribute("data-categoria") === "combos")) {
                         producto.style.display = "none";
                     } else if (producto.getAttribute("data-categoria") === category || category === "all" || (category === "ofertas" && producto.querySelector('.etiqueta.oferta'))) {
                         producto.style.display = "block";
@@ -403,7 +476,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.querySelectorAll(".categoria").forEach(categoriaDiv => {
                     const productosCategoria = categoriaDiv.querySelectorAll(".producto");
                     const categoriaVisible = Array.from(productosCategoria).some(producto => producto.style.display !== "none");
-                
+
                     if (categoriaVisible) {
                         categoriaDiv.style.display = "block";
                     } else {
@@ -438,99 +511,110 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
+
         // Mejorar la función de filtrado de productos
         const searchInput = document.getElementById("search-input");
         const searchButton = document.getElementById("search-button");
-
+        
         // Filtrar productos en tiempo real
         searchInput.addEventListener("input", filterProducts);
         searchButton.addEventListener("click", filterProducts);
-
+        
         function filterProducts() {
             const searchValue = searchInput.value.trim().toLowerCase();
-
-            //-----Ocultar los separadores cuando se está buscando algo-----
-            //--------------------------------------------------------------
+            const selectedCategory = document.querySelector(".categorias ul li a.selected")?.getAttribute("data-categoria");
+        
+            // Ocultar los separadores cuando se está buscando algo
             const separadorContainers = document.querySelectorAll(".separador-container, .separador-container-extra");
             separadorContainers.forEach(separador => {
                 separador.style.display = searchValue === "" ? "block" : "none";
             });
-
-            // Mostrar todos los productos si el campo de búsqueda está vacío
-            if (searchValue === "") {
+        
+            // Mostrar todos los productos si el campo de búsqueda está vacío y la categoría seleccionada es "All"
+            if (searchValue === "" && (selectedCategory === "all" || !selectedCategory)) {
                 mostrarTodosLosProductos();
+                combosContainer.style.display = "block"; // Mostrar el contenedor de combos cuando la búsqueda está vacía
                 return;
             }
-
+        
             let foundProducts = false;
-
-            document.querySelectorAll(".producto").forEach(producto => {
-                const productName = producto.dataset.nombre.toLowerCase();
-                const productCategoria = producto.dataset.categoria.toLowerCase();
-
+            let foundCombos = false;
+        
+            document.querySelectorAll(".producto, .combo").forEach(item => {
+                const productName = item.dataset.nombre ? item.dataset.nombre.toLowerCase() : '';
+                const productCategoria = item.dataset.categoria ? item.dataset.categoria.toLowerCase() : '';
+        
                 const matchesSearch = productName.includes(searchValue) || productCategoria.includes(searchValue);
-
-                if (matchesSearch) {
-                    producto.style.display = "block";
+        
+                if (matchesSearch && (selectedCategory === "all" || !selectedCategory || (productCategoria !== "combos" || (productCategoria === "combos" && searchValue.includes("combo"))))) {
+                    item.style.display = "block";
                     foundProducts = true;
+                    if (item.classList.contains("combo")) {
+                        foundCombos = true;
+                    }
                 } else {
-                    producto.style.display = "none";
+                    item.style.display = "none";
                 }
             });
-
+        
+            // Ocultar el contenedor de combos si no hay combos visibles
+            combosContainer.style.display = foundCombos ? "block" : "none";
+        
             // Ocultar categorías vacías
             document.querySelectorAll(".categoria").forEach(categoriaDiv => {
                 const productosCategoria = categoriaDiv.querySelectorAll(".producto");
                 const categoriaVisible = Array.from(productosCategoria).some(producto => producto.style.display !== "none");
-
+        
                 if (categoriaVisible) {
                     categoriaDiv.style.display = "block";
                 } else {
                     categoriaDiv.style.display = "none";
                 }
             });
-
+        
             // Ocultar productos más vendidos que no coinciden con la búsqueda
-            if (!foundProducts) {
-                masVendidosContainer.style.display = "none";
-            } else {
-                masVendidosContainer.style.display = "flex";
+            const masVendidosContainer = document.querySelector(".mas-vendidos-container");
+            if (masVendidosContainer) {
+                masVendidosContainer.style.display = foundProducts ? "flex" : "none";
             }
-
+        
             // Mostrar u ocultar el mensaje de "No se encontraron resultados"
             const noResultMessage = document.getElementById("no-result-message");
             if (!foundProducts && searchValue !== "") {
                 noResultMessage.classList.remove("hidden"); // Mostrar el mensaje
                 noResultMessage.style.display = "block"; // Asegurarse de que se vea
-                noResultMessage.style.marginTop = (120)+'px';
+                noResultMessage.style.marginTop = '120px';
             } else {
                 noResultMessage.classList.add("hidden"); // Ocultar el mensaje
                 noResultMessage.style.display = "none"; // Asegurarse de que no se vea
             }
-
+        
             // Ocultar botones "Cargar más" al buscar
             document.querySelectorAll(".btn-cargar-mas").forEach(btn => {
                 btn.style.display = "none";
             });
-        }
-
+        }                        
+        
         function mostrarTodosLosProductos() {
             document.querySelectorAll(".producto").forEach(producto => {
                 producto.style.display = "block";  // Mostrar todos los productos
             });
-
+        
             // Asegúrate de que las categorías y los más vendidos también se muestren si no hay filtros activos
             document.querySelectorAll(".categoria").forEach(categoriaDiv => {
                 categoriaDiv.style.display = "block";
             });
             
-            masVendidosContainer.style.display = "flex";  // Mostrar productos más vendidos si no hay filtro de búsqueda
-            
+            const masVendidosContainer = document.querySelector(".mas-vendidos-container");
+            if (masVendidosContainer) {
+                masVendidosContainer.style.display = "flex";  // Mostrar productos más vendidos si no hay filtro de búsqueda
+            }
+        
             // Eliminar botones "Cargar más" cuando se muestran todos los productos
             document.querySelectorAll(".btn-cargar-mas").forEach(btn => {
                 btn.style.display = "none";
             });
-
+        
             // Volver a configurar la visualización de 4 productos por categoría con el botón "Cargar más" al seleccionar "all"
             document.querySelectorAll(".categoria").forEach(categoriaDiv => {
                 const productosCategoria = categoriaDiv.querySelectorAll(".producto");
@@ -541,7 +625,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         producto.style.display = "block";
                     }
                 });
-
+        
                 if (productosCategoria.length > 4) {
                     const cargarMasBtn = categoriaDiv.querySelector(".btn-cargar-mas");
                     if (cargarMasBtn) {
@@ -549,8 +633,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                 }
             });
+        
+            // Mostrar el contenedor de combos cuando se muestran todos los productos
+            combosContainer.style.display = "block";
         }
-
         
     }
 
@@ -589,31 +675,18 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Fetch de traducciones
-    fetch("Json/lang.json")
-    .then(response => response.json())
-    .then(data => {
-        locales = data;
-
-        // Fetch de productos
-        fetch('Json/productos.json')
-            .then(response => response.json())
-            .then(data => {
-                productos = data;
-                console.log('Productos cargados:', productos);
-                // Renderizar productos al cargar la página
-                renderProductos(currentLang);
-            });
+    // Fetch de productos y combos
+    Promise.all([
+        fetch('Json/productos.json').then(response => response.json()),
+        fetch('Json/combos.json').then(response => response.json())
+    ])
+    .then(([productosData, combosData]) => {
+        productos = productosData;
+        combos = combosData;
+        console.log('Productos cargados:', productos);
+        console.log('Combos cargados:', combos);
+        renderProductos(); // Renderizar productos y combos
     });
-
-    // Escuchar el evento de cambio de idioma y traducir productos
-    document.addEventListener('languageChanged', (event) => {
-    const lang = event.detail.lang;
-    renderProductos(lang);
-    });
-
-    
-
 
 // Funcionalidad de cambio de moneda
     toggleCurrencyButton.addEventListener('click', () => {
@@ -764,66 +837,87 @@ function vaciarCarrito() {
     renderCarrito();
 }
 
-    // Función para renderizar el carrito
-    function renderCarrito () {
-        const carritoContainer = document.getElementById("carrito-container");
-        const carritoTotal = document.getElementById("cart-total");
-        const carritoVacio = document.getElementById("carrito-vacio");
-        const cartCountElement = document.getElementById("cart-count");
-        const checkoutButton = document.getElementById("checkout-button");
-        
-    
-        carritoContainer.innerHTML = '';  // Limpiar el contenido del carrito
-        let total = 0;
+// Función para renderizar el carrito
+function renderCarrito() {
+    const carritoContainer = document.getElementById("carrito-container");
+    const carritoTotal = document.getElementById("cart-total");
+    const carritoVacio = document.getElementById("carrito-vacio");
+    const cartCountElement = document.getElementById("cart-count");
+    const checkoutButton = document.getElementById("checkout-button");
 
-        if(!carritoTotal){
-            carritoTotal = document.getElementById("cart-total");
-        }
+    carritoContainer.innerHTML = ''; // Limpiar el contenido del carrito
+    let total = 0;
 
-        const itemCount = carrito.reduce((total, producto) => total + producto.cantidad, 0);
+    const itemCount = carrito.reduce((total, producto) => total + producto.cantidad, 0);
+    if (cartCountElement) {
         cartCountElement.textContent = itemCount;
-        if(cartCountElement){
-            cartCountElement.style.display = itemCount != 0 ? 'block' : 'none'; // Siempre visible
-        }
-    
-        // Iterar sobre los productos del carrito
-        carrito.forEach(producto => {
-            total += producto.precio * producto.cantidad;
-            const productoDiv = document.createElement("div");
-            productoDiv.className = "carrito-producto";
+        cartCountElement.style.display = itemCount !== 0 ? 'block' : 'none';
+    }
 
+    carrito.forEach(producto => {
+        total += producto.precio * producto.cantidad;
+
+        // Crear contenedor para producto/combo
+        const productoDiv = document.createElement("div");
+        productoDiv.className = "carrito-producto";
+
+        // Detectar si es un combo
+        const esCombo = producto.esCombo;
+
+        if (esCombo) {
+            // Si es un combo, mostrar una estructura diferente con un identificador visual claro
+            productoDiv.innerHTML = `
+                <div class="carrito-item combo">
+                    <div class="combo-badge">Combo</div>
+                    <img src="${producto.imagen}" alt="${producto.nombre}" class="carrito-imagen">
+                    <div class="carrito-detalles">
+                        <p class="carrito-nombre">${producto.nombre}</p>
+                        <div class="carrito-combo-detalles">
+                            <strong>Incluye:</strong>
+                            <ul>
+                                ${producto.productos.map(item => `<li>${item}</li>`).join('')}
+                            </ul>
+                        </div>
+                        <p class="carrito-precio">Precio: $${producto.precio.toFixed(2)}</p>
+                        <div class="carrito-cantidad">
+                            <button class="btn-cantidad" onclick="cambiarCantidad('${producto.id}', -1)">-</button>
+                            <span>${producto.cantidad}</span>
+                            <button class="btn-cantidad" onclick="cambiarCantidad('${producto.id}', 1)">+</button>
+                        </div>
+                    </div>
+                    <button class="eliminar-producto" onclick="eliminarDelCarrito('${producto.id}')">Eliminar</button>
+                </div>
+            `;
+        } else {
+            // Si no es un combo, mostrar la estructura normal del producto
             productoDiv.innerHTML = `
                 <div class="carrito-item">
-                <img src="${producto.imagen}" alt="${producto.nombre}" class="carrito-imagen">
-
-                <div class="carrito-detalles">
-                    <p class="carrito-nombre">${producto.nombre}</p>
-                    <p class="carrito-precio">Precio: $${producto.precio}</p>
-                    <div class="carrito-cantidad">
-                        <button onclick="cambiarCantidad('${producto.id}', -1)">-</button>
-                        <span>${producto.cantidad}</span>
-                        <button onclick="cambiarCantidad('${producto.id}', 1)">+</button>
+                    <img src="${producto.imagen}" alt="${producto.nombre}" class="carrito-imagen">
+                    <div class="carrito-detalles">
+                        <p class="carrito-nombre">${producto.nombre}</p>
+                        <p class="carrito-precio">Precio: $${producto.precio.toFixed(2)}</p>
+                        <div class="carrito-cantidad">
+                            <button class="btn-cantidad" onclick="cambiarCantidad('${producto.id}', -1)">-</button>
+                            <span>${producto.cantidad}</span>
+                            <button class="btn-cantidad" onclick="cambiarCantidad('${producto.id}', 1)">+</button>
+                        </div>
                     </div>
+                    <button class="eliminar-producto" onclick="eliminarDelCarrito('${producto.id}')">Eliminar</button>
                 </div>
-
-                <button class="eliminar-producto" onclick="eliminarDelCarrito('${producto.id}')">Eliminar</button>
-            </div>
             `;
-    
-            carritoContainer.appendChild(productoDiv);
-            
-        });
-    
-        // Mostrar mensaje si el carrito está vacío
-    if (carritoVacio) { // Verificar que el elemento existe
+        }
+
+        carritoContainer.appendChild(productoDiv);
+    });
+
+    // Mostrar mensaje si el carrito está vacío
+    if (carritoVacio) {
         carritoVacio.style.display = carrito.length === 0 ? 'block' : 'none';
-        checkoutButton.style.display = carrito.length === 0? 'none' : 'block';
-    }
-    
-    carritoTotal.textContent = `$${total.toFixed(2)}`;
-    
+        checkoutButton.style.display = carrito.length === 0 ? 'none' : 'block';
     }
 
+    carritoTotal.textContent = `$${total.toFixed(2)}`;
+}
 
 // Función para cambiar la cantidad de un producto
 function cambiarCantidad(id, change) {
@@ -844,8 +938,13 @@ function eliminarDelCarrito(id) {
     renderCarrito();
 }
 
-function agregarAlCarrito(nombre, precio, cantidadId, imagen, boton) {
+function agregarAlCarrito(nombre, precio, cantidadId, imagen, boton, productosCombo = []) {
+    console.log('cantidadId recibido:', cantidadId); // Depuración
     const cantidadElemento = document.getElementById(cantidadId);
+    if (!cantidadElemento) {
+        console.error(`El elemento con id "${cantidadId}" no se encontró en el DOM.`);
+        return; // Salir de la función si el elemento no existe
+    }
     const cantidad = parseInt(cantidadElemento.textContent);
     const productoExistente = carrito.find(producto => producto.nombre === nombre);
 
@@ -853,21 +952,22 @@ function agregarAlCarrito(nombre, precio, cantidadId, imagen, boton) {
         cambiarCantidad(productoExistente.id, cantidad);
     } else {
         const nuevoProducto = {
-            id: `${carrito.length + 1}`, // Generar un ID simple
+            id: `${carrito.length + 1}`, // Generar un ID único
             nombre,
             precio,
             imagen,
-            cantidad
+            cantidad,
+            esCombo: productosCombo.length > 0, // Marcar como combo si tiene productos
+            productos: productosCombo // Lista de productos si es un combo
         };
         carrito.push(nuevoProducto);
 
-        // Añadir animación al botón
+        // Animación del botón
         boton.classList.add('animacion-carrito');
         setTimeout(() => {
             boton.classList.remove('animacion-carrito');
         }, 500);
 
-         // Guardar en localStorage después de añadir
         guardarCarrito();
         renderCarrito();
     }
