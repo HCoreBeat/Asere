@@ -1646,13 +1646,13 @@ hr {
 .carrito-cantidad {
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 15px;
-    color: #666666;
+    gap: 10px;
+    font-size: 17px;
 }
 
 .carrito-cantidad button {
     background-color: #f9f9f9;
+    color: #000;
     border: 1px solid #cccccc;
     border-radius: 6px;
     padding: 6px 10px;
@@ -1754,7 +1754,7 @@ hr {
     }
 
     .carrito-precio {
-        font-size: 13px;
+        font-size: 17px;
     }
 
     .carrito-cantidad {
@@ -2089,7 +2089,7 @@ hr {
 
     .cantidad span {
         font-size: 16px;
-        width: 30px;
+        width: 10px;
     }
     /* Asegura que todo sea responsive */
     body {
@@ -2727,4 +2727,319 @@ hr {
     text-align: center;
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+
+/* Fondo animado para el contenedor de combos */
+.combos-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 12px;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fbc2eb, #8fd3f4);
+    background-size: 200% 200%;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    animation: backgroundAnimation 10s ease infinite;
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Ajustar al ancho de la pantalla */
+    max-width: none; /* Sin límite máximo de ancho */
+    max-height: 550px; /* Ajustar el alto del contenedor */
+}
+
+/* Animación de fondo */
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Estilo del título */
+.combos-container h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 12px;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor de combos para el slider */
+.combo-slider {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 450px; /* Ajustar la altura para el slider */
+    gap: 12px;
+    scroll-snap-type: y mandatory;
+}
+
+/* Quitar barra de desplazamiento */
+.combo-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.combo-contenedor {
+    scroll-snap-align: center;
+    margin: 10px 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, margin 0.3s ease;
+    width: calc(100% - 20px); /* Ajustar tamaño del contenedor */
+    max-width: none;
+    align-self: center;
+}
+
+/* Indicador de deslizamiento */
+.slider-indicator {
+    position: absolute;
+
+    top: auto;
+    bottom: 50%;
+    right: 3%;
+    transform: translateX(50%);
+
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5); /* Cambiar color y opacidad */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Cambiar la sombra */
+    animation: bounce 2s infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.slider-indicator::before {
+    content: "↓";
+    font-size: 1.2rem; /* Aumentar el tamaño de la flecha */
+    color: #ffffff; /* Cambiar color de la flecha */
+    transition: transform 0.3s ease;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Estilos para cada combo */
+.combo-contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 14px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.combo-contenedor:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.85);
+    margin: 0 20px;
+}
+
+/* Imagen del combo */
+.combo-img {
+    flex: 0 0 80px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.combo-img img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.combo-contenedor:hover .combo-img img {
+    transform: scale(1.05);
+}
+
+/* Información del combo */
+.combo-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.combo-info .nombre {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.combo-info .productos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.combo-info .productos .producto-item {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 6px;
+    padding: 5px 8px;
+    font-size: 0.85rem;
+    text-align: center;
+    color: #555;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.combo-info .productos .producto-item:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+}
+
+/* Precio del combo */
+.combo-info .precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+/* Ajustes Responsive */
+@media (max-width: 768px) {
+    .combos-container {
+        max-height: none; /* Permitir altura flexible */
+        padding: 12px;
+    }
+
+    .combo-slider {
+        flex-direction: row;
+        overflow-x: auto;
+        max-height: none;
+        gap: 10px;
+        padding-bottom: 20px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .slider-indicator {
+        top: auto;
+        bottom: 50%;
+        right: 3%;
+        transform: translateX(50%);
+    }
+
+    .slider-indicator::before {
+        content: "→"; /* Indicador de flecha horizontal */
+    }
+
+    .combo-contenedor {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-width: 280px;
+        scroll-snap-align: center;
+        margin: 10px 45px;
+    }
+
+    .combo-contenedor:hover {
+        margin: 10px 50px;
+    }
+
+    .combo-img {
+        flex: 0 0 60px;
+        margin-bottom: 15px;
+    }
+
+    .combo-img img {
+        width: 50%;
+        border-radius: 12px;
+    }
+
+    .combo-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .combo-info .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/*------Detalles del combo en el carrito-------*/
+.carrito-producto.combo {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.carrito-combo-detalles ul {
+    margin: 10px 0 0 20px;
+    padding: 0;
+    list-style-type: disc;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.carrito-combo-detalles ul li {
+    margin-bottom: 5px;
+}
+
+/* Identificador visual de combo */
+.combo-badge {
+    background-color: #ffd700; /* Color verde */
+    color: #000;  /* Color de texto blanco */
+    padding: 0.3rem 0.6rem; /* Espaciado interno */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    font-size: 0.9rem; /* Tamaño de fuente */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carrito-item.combo {
+    border: 2px solid #4CAF50; /* Borde verde */
+    background-color: #f0fff4; /* Fondo claro para combos */
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carrito-item.combo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.carrito-detalles {
+    flex: 1;
+}
+
+.carrito-combo-detalles {
+    margin-top: 8px;
+}
+
+.carrito-cantidad span {
+    font-size: 20px; /* Tamaño de fuente normal */
+    font-weight: bold; /* Negrita para destacar */
+    color: #333; /* Gris oscuro, sutil */
+    letter-spacing: 0.5px; /* Espaciado entre letras para mayor claridad */
+}
+
+.combo-contenedor .btn-carrito{
+    font-size: 17px;
+    padding: 3px 6px;
 }
