@@ -1,0 +1,76 @@
+[
+    {
+        "nombre": "Combo Pa La Isla",
+        "categoria": "combos",
+        "productos": [
+          "10lb Cerdo", 
+          "5lb Obejo", 
+          "x1 Paquete de Pollo",
+          "x1 Fill de Huevo",
+          "x2 Paquete de Salchicha",
+          "1Kg Picadillo de Pollo",
+          "x2 Lata de Spam",
+          "x12 Hamburguesas",
+          "2Kg Arroz",
+          "x2 Spaguettis",
+          "x4 Sopas Instantaneas",
+          "x5 Refrescos de Polvo",
+          "x1 Pomo de Aceite"],
+        "precio": 85.71,
+        "imagen": "img/combos/combo1.jpg",
+        "disponible": true
+    },{
+      "nombre": "Combo Pa La Isla 2",
+      "categoria": "combos",
+      "productos": [
+        "x1 1Kg Leche en Polvo", 
+        "x1 Paquete Café el Ricote", 
+        "x1 Paquete de Chocolate",
+        "2Kg Azúcar Blanca",
+        "x2 Latas de Leche condensada",
+        "x2 Latas de Leche evaporada",
+        "x1 Paquete de Galleta salada",
+        "x1 Paquete de Pollo",
+        "x2 Unidades de Salchichas",
+        "x1 Fill de Huevos",
+        "3Kg Arroz",
+        "x1 Paquete de Garbanzo 500g",
+        "1Kg Frijoles",
+        "x2 Spaguettis",
+        "x1 Lata de Puré",
+        "x1 Pomo Aceite",
+        "x2 Latas de Spam"],
+      "precio": 85.71,
+      "imagen": "img/combos/combo1.jpg",
+      "disponible": false
+  }
+  ,{
+    "nombre": "Combo Pa La Isla 3",
+    "categoria": "combos",
+    "productos": [
+      "x4lt Helado", 
+      "x2 Latas de Leche condensada", 
+      "x2 Gelatina",
+      "x1 Caja de Malta",
+      "x1 Chocolate en Polvo",
+      "x1 Paquete de Maicena",
+      "x1 Paquete de Galleta Salrica"],
+    "precio": 85.71,
+    "imagen": "img/combos/combo1.jpg",
+    "disponible": false
+  },{
+    "nombre": "Combo Pa La Isla 4",
+    "categoria": "combos",
+    "productos": [
+      "10lb Cerdo", 
+      "x1 Paquete de Pollo", 
+      "5lb Obejo",
+      "x2 Paquete de Salchicha",
+      "2kg Picadillo de Pollo",
+      "x2 Latas de Spam",
+      "x1 Fill de Huevo"],
+    "precio": 85.71,
+    "imagen": "img/combos/combo1.jpg",
+    "disponible": false
+  }
+]
