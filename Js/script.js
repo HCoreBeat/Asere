@@ -365,35 +365,72 @@ document.addEventListener("DOMContentLoaded", () => {
             comboDiv.dataset.categoria = combo.categoria;
 
             let precio = combo.precio.toFixed(2);
-
-            // Estructura del combo
+            
+            //aqui agregamos los cambios para cuando hay algun evento en especifico
+            if(combo.categoria === "febrero")
+            {
+                console.log("Hay Eventos agregados")
+            // estructura del combo personalizado por evento
             comboDiv.innerHTML = `
-                <div class="combo-contenedor">
-                    <div class="combo-img">
-                        <img src="${combo.imagen}" alt="${combo.nombre}">
+            <div class="combo-contenedor-evento">
+                <div class="combo-img">
+                    <img src="${combo.imagen}" alt="${combo.nombre}">
+                </div>
+                <div class="combo-info">
+                    <p class="nombre">${combo.nombre} 💘</p>
+                    <div class="productos">
+                        ${combo.productos.map(producto => `<div class="producto-item">${producto} ❤️</div>`).join('')}
                     </div>
-                    <div class="combo-info">
-                        <p class="nombre">${combo.nombre}</p>
-                        <div class="productos">
-                            ${combo.productos.map(producto => `<div class="producto-item">${producto}</div>`).join('')}
+                    <p class="precio"><span class="currency">US$</span>${precio}</p>
+                    <div class="cantidad-carrito-contenedor">
+                        <div class="cantidad">
+                            <button class="btn-cantidad" onclick="decrementar('cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}')">-</button>
+                            <span id="cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}">1</span>
+                            <button class="btn-cantidad" onclick="incrementar('cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}')">+</button>
                         </div>
-                        <p class="precio"><span class="currency">US$</span>${precio}</p>
-                        <div class="cantidad-carrito-contenedor">
-                            <div class="cantidad">
-                                <button class="btn-cantidad" onclick="decrementar('cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}')">-</button>
-                                <span id="cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}">1</span>
-                                <button class="btn-cantidad" onclick="incrementar('cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}')">+</button>
-                            </div>
-                            <button class="btn-carrito boton-agregarcarrito" 
-                                onclick="agregarAlCarrito('${combo.nombre}', ${combo.precio}, 
-                                'cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}',
-                                '${combo.imagen}', this, [${combo.productos.map(producto => `'${producto}'`).join(', ')}])">
-                                Añadir al Carrito
-                            </button>
-                        </div>
+                        <button class="btn-carrito boton-agregarcarrito" 
+                            onclick="agregarAlCarrito('${combo.nombre}', ${combo.precio}, 
+                            'cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}',
+                            '${combo.imagen}', this, [${combo.productos.map(producto => `'${producto}'`).join(', ')}])">
+                            Añadir al Carrito 💝
+                        </button>
                     </div>
                 </div>
-            `;
+            </div>
+        `;
+            }
+            else
+            {
+            console.log("Hay Combos")
+            // Estructura del combo
+            comboDiv.innerHTML = `
+            <div class="combo-contenedor">
+                <div class="combo-img">
+                    <img src="${combo.imagen}" alt="${combo.nombre}">
+                </div>
+                <div class="combo-info">
+                    <p class="nombre">${combo.nombre}</p>
+                    <div class="productos">
+                        ${combo.productos.map(producto => `<div class="producto-item">${producto}</div>`).join('')}
+                    </div>
+                    <p class="precio"><span class="currency">US$</span>${precio}</p>
+                    <div class="cantidad-carrito-contenedor">
+                        <div class="cantidad">
+                            <button class="btn-cantidad" onclick="decrementar('cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}')">-</button>
+                            <span id="cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}">1</span>
+                            <button class="btn-cantidad" onclick="incrementar('cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}')">+</button>
+                        </div>
+                        <button class="btn-carrito boton-agregarcarrito" 
+                            onclick="agregarAlCarrito('${combo.nombre}', ${combo.precio}, 
+                            'cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}',
+                            '${combo.imagen}', this, [${combo.productos.map(producto => `'${producto}'`).join(', ')}])">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
+            }
 
             comboSlider.appendChild(comboDiv);
         });
