@@ -3043,3 +3043,326 @@ hr {
     font-size: 17px;
     padding: 3px 6px;
 }
+
+
+/* Estilos para cada combo de evento */
+.combo-contenedor-evento {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 14px;
+    padding: 12px;
+    background-image: url('/img/Evento_PC.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2); /* Sombra rosa */
+    border: 1px solid rgba(255, 105, 180, 0.3); /* Borde sutil */
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto de brillo y animación al hacer hover */
+.combo-contenedor-evento::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 77, 109, 0.3), transparent);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    pointer-events: none;
+}
+
+.combo-contenedor-evento:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.combo-contenedor-evento:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(255, 105, 180, 0.4); /* Sombra rosa más intensa */
+}
+
+@keyframes float-hearts {
+    0% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-50%) translateY(-20px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 0;
+    }
+}
+
+/* Imagen del combo */
+.combo-contenedor-evento .combo-img {
+    flex: 0 0 80px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.combo-contenedor-evento .combo-img img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.combo-contenedor-evento:hover .combo-img img {
+    transform: scale(1.05);
+    filter: brightness(1.1); /* Aumenta el brillo de la imagen */
+}
+
+/* Corazones flotantes */
+.combo-contenedor-evento .combo-img::after {
+    content: "❤️";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 20px;
+    opacity: 0;
+    transform: translateY(0);
+    animation: float-heart 3s infinite ease-in-out;
+}
+
+@keyframes float-heart {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+}
+
+/* Información del combo */
+.combo-contenedor-evento .combo-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.combo-contenedor-evento .combo-info .nombre {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffcedf; /* Color rosa oscuro */
+    margin-bottom: 8px;
+    text-shadow: 0px 1px 3px rgba(214, 51, 108, 0.2); /* Sombra suave */
+    position: relative;
+}
+
+.combo-contenedor-evento .cantidad span {
+    font-size: 16px;
+    color: #ffcedf;
+    width: 10px;
+}
+
+.combo-contenedor-evento .combo-info .nombre::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #ff4d6d, transparent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.combo-contenedor-evento:hover .combo-info .nombre::after {
+    transform: scaleX(1);
+}
+
+/* Productos del combo */
+.combo-contenedor-evento .combo-info .productos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.combo-contenedor-evento .combo-info .productos .producto-item {
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    border-radius: 6px;
+    padding: 5px 8px;
+    font-size: 0.85rem;
+    text-align: center;
+    color: #a4133c; /* Color rojo oscuro */
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 105, 180, 0.2); /* Borde sutil */
+}
+
+.combo-contenedor-evento .combo-info .productos .producto-item:hover {
+    background: rgba(255, 255, 255, 0.95); /* Fondo más sólido al hacer hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.2); /* Sombra rosa */
+}
+
+/* Precio del combo */
+.combo-contenedor-evento .combo-info .precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffcedf; /* Color rosa oscuro */
+    position: relative;
+}
+
+.combo-contenedor-evento .combo-info .precio::after {
+    content: "💖";
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.combo-contenedor-evento:hover .combo-info .precio::after {
+    opacity: 1;
+}
+
+/* Botones de cantidad y carrito */
+.combo-contenedor-evento .cantidad-carrito-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.combo-contenedor-evento .cantidad {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.combo-contenedor-evento .btn-cantidad {
+    background: #ff4d6d; /* Fondo rosa */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.combo-contenedor-evento .btn-cantidad:hover {
+    background: #d6336c; /* Rosa más oscuro al hacer hover */
+    transform: scale(1.1);
+}
+
+.combo-contenedor-evento .btn-carrito {
+    background: #ff4d6d; /* Fondo rosa */
+    border: none;
+    color: white;
+    padding: 10px 45px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.combo-contenedor-evento .btn-carrito::after {
+    content: "💝";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.combo-contenedor-evento .btn-carrito:hover {
+    background: #d6336c; /* Rosa más oscuro al hacer hover */
+    transform: scale(1.05);
+}
+
+/* Botones de cantidad y carrito */
+.combo-contenedor-evento .btn-carrito:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+/* Ajustes Responsive */
+@media (max-width: 768px) {
+    .combo-contenedor-evento {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-image: url('/img/Evento_PC_Movil.jpg');
+        min-width: 360px;
+        min-height: 570px;
+        scroll-snap-align: center;
+        margin: 10px 45px;
+    }
+
+    .combo-contenedor-evento:hover {
+        margin: 10px 50px;
+    }
+
+    .combo-contenedor-evento .combo-img {
+        flex: 0 0 60px;
+        margin-bottom: 15px;
+        padding-top: 25px;
+    }
+
+    .combo-contenedor-evento .combo-img img {
+        width: 65%;
+        border-radius: 12px;
+    }
+
+    .combo-contenedor-evento .combo-info {
+        padding-top: 30px;
+        width: 300px;
+        align-items: center;
+        display: inline-grid;
+        text-align: center;
+        justify-items: start;
+    }
+
+    .combo-contenedor-evento .combo-img::after {
+        top: 35px;
+        right: 55px;
+        font-size: 25px;
+    }
+
+    .combo-contenedor-evento .combo-info .productos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .combo-contenedor-evento .btn-carrito {
+        font-size: 12px;
+    }
+}
+
+/*------Detalles del combo en el carrito-------*/
+.combo-contenedor-evento .carrito-producto.combo {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.combo-contenedor-evento .carrito-combo-detalles ul {
+    margin: 10px 0 0 20px;
+    padding: 0;
+    list-style-type: disc;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.combo-contenedor-evento .carrito-combo-detalles ul li {
+    margin-bottom: 5px;
+}
+
