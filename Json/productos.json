@@ -192,7 +192,7 @@
     {
         "nombre": "Leche Entera",
         "categoria": "lacteos",
-        "precio": 10.85,
+        "precio": 10.857,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
