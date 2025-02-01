@@ -190,6 +190,16 @@
         "disponible": false
     },
     {
+        "nombre": "Leche Entera",
+        "categoria": "lacteos",
+        "precio": 10.85,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Leche_Entera.jpg",
+        "disponible": true
+    },
+    {
         "nombre": "Helado 4Lts",
         "categoria": "lacteos",
         "precio": 9.95,
