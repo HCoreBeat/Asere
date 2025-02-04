@@ -197,7 +197,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Leche_Entera.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Helado 4Lts",
@@ -217,7 +217,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Leche_Evaporada.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Leche Evaporada «Delite» (260g)",
@@ -297,7 +297,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Queso_Crema.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Sazón Goya",
