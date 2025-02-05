@@ -510,7 +510,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Croqueta_Jamon.jpeg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Frijoles Negros (1Kg)",
@@ -955,7 +955,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Nuggets_de_Pollo.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Lomo de cerdo deshuesado Premium x Kg",
