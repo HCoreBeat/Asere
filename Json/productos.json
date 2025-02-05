@@ -1306,5 +1306,15 @@
         "mas_vendido": true,
         "imagen": "img/products/Picadillo_de_Pollo.jpg",
         "disponible": true
+    },
+    {
+        "nombre": "Pollo Country Pride",
+        "categoria": "carnes",
+        "precio": 12.38,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": true,
+        "imagen": "img/products/Pollo_Country.jpg",
+        "disponible": true
     }
 ]
