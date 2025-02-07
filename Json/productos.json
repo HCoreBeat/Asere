@@ -1315,6 +1315,16 @@
         "oferta": true,
         "mas_vendido": true,
         "imagen": "img/products/Pollo_Country.jpg",
-        "disponible": true
+        "disponible": false
+    },
+    {
+        "nombre": "Pollo Golden Phoenix (2Kg)",
+        "categoria": "carnes",
+        "precio": 9.52,
+        "descuento": 20.4,
+        "oferta": true,
+        "mas_vendido": true,
+        "imagen": "img/products/Pollo_Golden.jpg",
+        "disponible": false
     }
 ]
