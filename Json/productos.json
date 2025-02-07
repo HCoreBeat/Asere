@@ -1325,6 +1325,6 @@
         "oferta": true,
         "mas_vendido": true,
         "imagen": "img/products/Pollo_Golden.jpg",
-        "disponible": false
+        "disponible": true
     }
 ]
