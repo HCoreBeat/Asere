@@ -10,6 +10,16 @@
         "disponible": true
     },
     {
+        "nombre": "Pollo Golden Phoenix (2Kg)",
+        "categoria": "carnes",
+        "precio": 9.52,
+        "descuento": 20.4,
+        "oferta": true,
+        "mas_vendido": true,
+        "imagen": "img/products/Pollo_Golden.jpg",
+        "disponible": true
+    },
+    {
         "nombre": "Carne de cerdo x Lb",
         "categoria": "carnes",
         "precio": 3.047,
@@ -1316,15 +1326,5 @@
         "mas_vendido": true,
         "imagen": "img/products/Pollo_Country.jpg",
         "disponible": false
-    },
-    {
-        "nombre": "Pollo Golden Phoenix (2Kg)",
-        "categoria": "carnes",
-        "precio": 9.52,
-        "descuento": 20.4,
-        "oferta": true,
-        "mas_vendido": true,
-        "imagen": "img/products/Pollo_Golden.jpg",
-        "disponible": true
     }
 ]
