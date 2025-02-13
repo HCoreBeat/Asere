@@ -207,7 +207,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Leche_Entera.jpg",
-        "disponible": false
+        "disponible": true
     },
     {
         "nombre": "Helado 4Lts",
