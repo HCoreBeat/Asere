@@ -13,7 +13,7 @@
         "nombre": "Pollo Golden Phoenix (2Kg)",
         "categoria": "carnes",
         "precio": 9.52,
-        "descuento": 20.4,
+        "descuento": 25.4,
         "oferta": true,
         "mas_vendido": true,
         "imagen": "img/products/Pollo_Golden.jpg",
@@ -23,8 +23,8 @@
         "nombre": "Carne de cerdo x Lb",
         "categoria": "carnes",
         "precio": 3.047,
-        "descuento": 10,
-        "oferta": false,
+        "descuento": 9.375,
+        "oferta": true,
         "mas_vendido": true,
         "imagen": "img/products/Carne_de_Cerdo.jpg",
         "disponible": true
@@ -390,7 +390,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Cafe_la_Llave.jpeg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Café Espresso",
