@@ -380,7 +380,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Azucar_Parda.jpeg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Café La Llave",
