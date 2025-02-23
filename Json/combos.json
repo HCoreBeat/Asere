@@ -8,7 +8,7 @@
           "Dulce Cajita de Confituras"],
         "precio": 61.90,
         "imagen": "img/combos/combo_febrero.jpg",
-        "disponible": true
+        "disponible": false
     },{
         "nombre": "Combo Pa La Isla",
         "categoria": "combos",
