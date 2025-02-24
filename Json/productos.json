@@ -1005,7 +1005,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Galleta_de_Soda_Salricas.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Galletas Porleo (45g)",
