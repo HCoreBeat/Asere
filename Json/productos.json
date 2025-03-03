@@ -43,9 +43,9 @@
         "nombre": "Picadillo Especial 400g",
         "categoria": "carnes",
         "precio": 1.876,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
+        "descuento": 24.37,
+        "oferta": true,
+        "mas_vendido": true,
         "imagen": "img/products/Picadillo_Especial.jpg",
         "disponible": true
     },
@@ -485,7 +485,7 @@
     {
         "nombre": "Sal x Lb",
         "categoria": "despensa",
-        "precio": 0.60,
+        "precio": 0.809,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -745,7 +745,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Bebida_Energetica_5_Shot.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Pack de 6 maltas Morena (6x237ml)",
@@ -1320,7 +1320,7 @@
     {
         "nombre": "Pollo Country Pride",
         "categoria": "carnes",
-        "precio": 14.285,
+        "precio": 14.142,
         "descuento": 13.6,
         "oferta": true,
         "mas_vendido": true,
