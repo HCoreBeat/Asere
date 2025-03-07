@@ -93,7 +93,7 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
     const pais = ipInfo.country_name || 'Desconocido';
 
     // Crear la estadística a enviar
-    const estadistica = {
+    const estadisticas = {
         ip,
         pais,
         fecha_hora_entrada: new Date().toISOString(),
@@ -118,7 +118,7 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
         const response = await fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(estadistica)
+            body: JSON.stringify(estadisticas)
         });
         const result = await response.text();
         console.log("Estadística enviada exitosamente:", result);
@@ -216,7 +216,7 @@ async function registrarVisita() {
         const pais = ipInfo.country_name || 'Desconocido';
 
         // Crea la estadística inicial
-        const estadistica = {
+        const estadisticas = {
             ip,
             pais,
             fecha_hora_entrada: new Date().toISOString(),
@@ -228,7 +228,7 @@ async function registrarVisita() {
         const response = await fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(estadistica)
+            body: JSON.stringify(estadisticas)
         });
 
         if (response.ok) {
