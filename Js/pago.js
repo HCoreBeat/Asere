@@ -204,24 +204,24 @@ function goBack() {
 // Captura el inicio de la sesión al cargar la página
 const inicioSesion = Date.now();
 
-// Función para obtener información del usuario
+// Función para obtener información del usuario y registrar la visita
 async function registrarVisita() {
-    // Información del navegador y página
-    const referrer = document.referrer || 'Acceso directo';
-
     try {
-        // Información IP y geolocalización
+        // Obtener información del navegador y página
+        const referrer = document.referrer || 'Acceso directo';
+
+        // Obtener información IP y geolocalización
         const ipInfo = await fetch('https://ipapi.co/json/').then(res => res.json());
         const ip = ipInfo.ip || 'Desconocido';
         const pais = ipInfo.country_name || 'Desconocido';
 
-        // Crea la estadística inicial
+        // Crear la estadística inicial
         const estadisticas = {
             ip,
             pais,
             fecha_hora_entrada: new Date().toISOString(),
             origen: referrer,
-            duracion_sesion_segundos: 0 // Actualizaremos este campo más adelante
+            duracion_sesion_segundos: 0 // Inicialmente 0, se actualizará al cerrar la página
         };
 
         // Enviar al backend
@@ -234,7 +234,7 @@ async function registrarVisita() {
         if (response.ok) {
             console.log("Visita registrada exitosamente.");
         } else {
-            console.error("Error al registrar la visita.");
+            console.error("Error al registrar la visita:", await response.text());
         }
     } catch (error) {
         console.error("Error al obtener información del usuario:", error);
@@ -244,17 +244,20 @@ async function registrarVisita() {
 // Ejecutar la función cuando se cargue la página
 window.addEventListener("load", registrarVisita);
 
-
+// Actualizar la duración de la sesión al cerrar la página
 window.addEventListener("beforeunload", async () => {
     const duracionSesionSegundos = Math.round((Date.now() - inicioSesion) / 1000);
 
     try {
-        // Actualizar duración de la sesión al backend
+        // Obtener la IP del usuario
+        const ip = await fetch('https://ipapi.co/ip/').then(res => res.text());
+
+        // Actualizar duración de la sesión en el backend
         const response = await fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-                ip: await fetch('https://ipapi.co/ip/').then(res => res.text()),
+                ip,
                 duracion_sesion_segundos: duracionSesionSegundos
             })
         });
@@ -262,7 +265,7 @@ window.addEventListener("beforeunload", async () => {
         if (response.ok) {
             console.log("Duración de la sesión actualizada correctamente.");
         } else {
-            console.error("Error al actualizar la duración de la sesión.");
+            console.error("Error al actualizar la duración de la sesión:", await response.text());
         }
     } catch (error) {
         console.error("Error al enviar la duración de la sesión:", error);
