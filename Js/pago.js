@@ -87,6 +87,52 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
     const total = calculateTotal(cartItems);
     const affiliate = getAffiliate();
 
+    // Obtener información adicional (IP, país, etc.)
+    const ipInfo = await fetch('https://ipapi.co/json/').then(res => res.json());
+    const ip = ipInfo.ip || 'Desconocida';
+    const pais = ipInfo.country_name || 'Desconocido';
+
+    // Crear la estadística a enviar
+    const estadistica = {
+        ip,
+        pais,
+        fecha_hora_entrada: new Date().toISOString(),
+        origen: document.referrer || 'Acceso directo',
+        afiliado: affiliate,
+        duracion_sesion_segundos: 300, // Aquí puedes calcularlo dinámicamente
+        tiempo_carga_pagina_ms: performance.timing.domContentLoadedEventEnd - performance.timing.navigationStart,
+        nombre_comprador: fullName,
+        telefono_comprador: phone,
+        correo_comprador: email,
+        compras: cartItems.map(item => ({
+            producto: item.nombre,
+            cantidad: item.cantidad,
+            precio_unitario: item.precio,
+            precio_total: (item.cantidad * item.precio)
+        })),
+        precio_compra_total: total
+    };
+
+    // Enviar la estadística al backend
+    try {
+        const response = await fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(estadistica)
+        });
+        const result = await response.text();
+        console.log("Estadística enviada exitosamente:", result);
+
+        // Vaciar el carrito
+        vaciarCarrito();
+
+        // Mostrar panel de agradecimiento
+        mostrarPanelAgradecimiento();
+    } catch (error) {
+        console.error("Error al enviar la estadística:", error);
+        alert("Hubo un problema al registrar tu estadística. Intenta nuevamente.");
+    }
+
     // Crear el mensaje con los detalles
     const message = `
         Nombre completo: ${fullName}
@@ -154,3 +200,71 @@ function cancelPayment() {
 function goBack() {
     window.location.href = 'index.html'; // Redirige sin recargar la página
 }
+
+// Captura el inicio de la sesión al cargar la página
+const inicioSesion = Date.now();
+
+// Función para obtener información del usuario
+async function registrarVisita() {
+    // Información del navegador y página
+    const referrer = document.referrer || 'Acceso directo';
+
+    try {
+        // Información IP y geolocalización
+        const ipInfo = await fetch('https://ipapi.co/json/').then(res => res.json());
+        const ip = ipInfo.ip || 'Desconocido';
+        const pais = ipInfo.country_name || 'Desconocido';
+
+        // Crea la estadística inicial
+        const estadistica = {
+            ip,
+            pais,
+            fecha_hora_entrada: new Date().toISOString(),
+            origen: referrer,
+            duracion_sesion_segundos: 0 // Actualizaremos este campo más adelante
+        };
+
+        // Enviar al backend
+        const response = await fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(estadistica)
+        });
+
+        if (response.ok) {
+            console.log("Visita registrada exitosamente.");
+        } else {
+            console.error("Error al registrar la visita.");
+        }
+    } catch (error) {
+        console.error("Error al obtener información del usuario:", error);
+    }
+}
+
+// Ejecutar la función cuando se cargue la página
+window.addEventListener("load", registrarVisita);
+
+
+window.addEventListener("beforeunload", async () => {
+    const duracionSesionSegundos = Math.round((Date.now() - inicioSesion) / 1000);
+
+    try {
+        // Actualizar duración de la sesión al backend
+        const response = await fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                ip: await fetch('https://ipapi.co/ip/').then(res => res.text()),
+                duracion_sesion_segundos: duracionSesionSegundos
+            })
+        });
+
+        if (response.ok) {
+            console.log("Duración de la sesión actualizada correctamente.");
+        } else {
+            console.error("Error al actualizar la duración de la sesión.");
+        }
+    } catch (error) {
+        console.error("Error al enviar la duración de la sesión:", error);
+    }
+});
