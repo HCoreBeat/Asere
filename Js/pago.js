@@ -66,6 +66,58 @@ document.getElementById('checkout-button').addEventListener('click', () => {
     }
 });
 
+// Función para enviar estadísticas al realizar una compra
+async function enviarEstadisticaCompra(fullName, email, phone, cartItems, total, affiliate) {
+    try {
+        // Obtener información adicional (IP, país, etc.)
+        const ipInfo = await fetch('https://ipapi.co/json/').then(res => res.json());
+        const ip = ipInfo.ip || 'Desconocida';
+        const pais = ipInfo.country_name || 'Desconocido';
+
+        // Obtener navegador y sistema operativo
+        const { navegador, sistemaOperativo } = getBrowserAndOS();
+
+        // Crear la estadística de compra
+        const estadisticaCompra = {
+            ip,
+            pais,
+            fecha_hora_entrada: new Date().toISOString(),
+            origen: document.referrer || 'Acceso directo',
+            afiliado: affiliate,
+            duracion_sesion_segundos: Math.round((Date.now() - inicioSesion) / 1000), // Duración de la sesión
+            tiempo_carga_pagina_ms: performance.timing.domContentLoadedEventEnd - performance.timing.navigationStart,
+            nombre_comprador: fullName,
+            telefono_comprador: phone,
+            correo_comprador: email,
+            compras: cartItems.map(item => ({
+                producto: item.nombre,
+                cantidad: item.cantidad,
+                precio_unitario: item.precio,
+                precio_total: (item.cantidad * item.precio)
+            })),
+            precio_compra_total: total,
+            navegador,
+            sistema_operativo: sistemaOperativo,
+            tipo_usuario: "Comprador" // Marcamos como comprador
+        };
+
+        // Enviar la estadística al backend
+        const response = await fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(estadisticaCompra)
+        });
+
+        if (response.ok) {
+            console.log("Estadística de compra enviada exitosamente.");
+        } else {
+            console.error("Error al enviar la estadística de compra:", await response.text());
+        }
+    } catch (error) {
+        console.error("Error al enviar la estadística de compra:", error);
+    }
+}
+
 // Manejar el envío del formulario de pago
 document.getElementById('payment-form').addEventListener('submit', async (event) => {
     event.preventDefault();
@@ -87,51 +139,8 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
     const total = calculateTotal(cartItems);
     const affiliate = getAffiliate();
 
-    // Obtener información adicional (IP, país, etc.)
-    const ipInfo = await fetch('https://ipapi.co/json/').then(res => res.json());
-    const ip = ipInfo.ip || 'Desconocida';
-    const pais = ipInfo.country_name || 'Desconocido';
-
-    // Crear la estadística a enviar
-    const estadisticas = {
-        ip,
-        pais,
-        fecha_hora_entrada: new Date().toISOString(),
-        origen: document.referrer || 'Acceso directo',
-        afiliado: affiliate,
-        duracion_sesion_segundos: 300, // Aquí puedes calcularlo dinámicamente
-        tiempo_carga_pagina_ms: performance.timing.domContentLoadedEventEnd - performance.timing.navigationStart,
-        nombre_comprador: fullName,
-        telefono_comprador: phone,
-        correo_comprador: email,
-        compras: cartItems.map(item => ({
-            producto: item.nombre,
-            cantidad: item.cantidad,
-            precio_unitario: item.precio,
-            precio_total: (item.cantidad * item.precio)
-        })),
-        precio_compra_total: total
-    };
-
-    // Enviar la estadística al backend
-    try {
-        const response = await fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(estadisticas)
-        });
-        const result = await response.text();
-        console.log("Estadística enviada exitosamente:", result);
-
-        // Vaciar el carrito
-        vaciarCarrito();
-
-        // Mostrar panel de agradecimiento
-        mostrarPanelAgradecimiento();
-    } catch (error) {
-        console.error("Error al enviar la estadística:", error);
-        alert("Hubo un problema al registrar tu estadística. Intenta nuevamente.");
-    }
+    // Enviar estadísticas de la compra
+    await enviarEstadisticaCompra(fullName, email, phone, cartItems, total, affiliate);
 
     // Crear el mensaje con los detalles
     const message = `
@@ -169,7 +178,6 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
 
         // Mostrar panel de agradecimiento
         mostrarPanelAgradecimiento();
-
     } catch (error) {
         console.log("Error al enviar el correo:", error);
         alert("Error al enviar el correo. Por favor, inténtalo de nuevo.");
@@ -201,8 +209,39 @@ function goBack() {
     window.location.href = 'index.html'; // Redirige sin recargar la página
 }
 
-// Captura el inicio de la sesión al cargar la página
-const inicioSesion = Date.now();
+
+// Función para obtener el navegador y sistema operativo
+function getBrowserAndOS() {
+    const userAgent = navigator.userAgent;
+    let navegador = "Desconocido";
+    let sistemaOperativo = "Desconocido";
+
+    // Detectar navegador
+    if (userAgent.includes("Firefox")) {
+        navegador = "Firefox";
+    } else if (userAgent.includes("Edg")) {
+        navegador = "Edge";
+    } else if (userAgent.includes("Chrome")) {
+        navegador = "Chrome";
+    } else if (userAgent.includes("Safari")) {
+        navegador = "Safari";
+    }
+
+    // Detectar sistema operativo
+    if (userAgent.includes("Windows")) {
+        sistemaOperativo = "Windows";
+    } else if (userAgent.includes("Android")) {
+        sistemaOperativo = "Android";
+    } else if (userAgent.includes("iPhone") || userAgent.includes("iPad")) {
+        sistemaOperativo = "iOS";
+    } else if (userAgent.includes("Mac")) {
+        sistemaOperativo = "MacOS";
+    } else if (userAgent.includes("Linux")) {
+        sistemaOperativo = "Linux";
+    }
+
+    return { navegador, sistemaOperativo };
+}
 
 // Función para registrar la visita al cargar la página
 async function registrarVisita() {
@@ -220,14 +259,20 @@ async function registrarVisita() {
         const ip = ipInfo.ip || 'Desconocida';
         const pais = ipInfo.country_name || 'Desconocido';
 
+        // Obtener navegador y sistema operativo
+        const { navegador, sistemaOperativo } = getBrowserAndOS();
+
         // Crear la estadística inicial
         const estadistica = {
             ip,
             pais,
             fecha_hora_entrada: new Date().toISOString(),
             origen: referrer,
-            afiliado: affiliate, // Incluimos el afiliado aquí
-            duracion_sesion_segundos: 0 // Inicialmente en 0, se actualizará al salir
+            afiliado: affiliate,
+            duracion_sesion_segundos: 0, // Inicialmente en 0, se actualizará al salir
+            navegador,
+            sistema_operativo: sistemaOperativo,
+            tipo_usuario: "Único" // Inicialmente único, se actualizará si es recurrente
         };
 
         // Enviar al backend
@@ -267,7 +312,8 @@ window.addEventListener("beforeunload", async () => {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
                 ip,
-                duracion_sesion_segundos: duracionSesionSegundos
+                duracion_sesion_segundos: duracionSesionSegundos,
+                tiempo_promedio_pagina: duracionSesionSegundos // Actualizar tiempo promedio
             })
         });
 
@@ -280,3 +326,6 @@ window.addEventListener("beforeunload", async () => {
         console.error("Error al enviar la duración de la sesión:", error);
     }
 });
+
+// Captura el inicio de la sesión al cargar la página
+const inicioSesion = Date.now();
