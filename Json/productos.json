@@ -325,7 +325,7 @@
     {
         "nombre": "Aceite Fritura 900ml",
         "categoria": "despensa",
-        "precio": 2.90,
+        "precio": 3.619,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -1160,7 +1160,7 @@
     {
         "nombre": "Aceite Saude 900ml",
         "categoria": "despensa",
-        "precio": 2.90,
+        "precio": 3.619,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
