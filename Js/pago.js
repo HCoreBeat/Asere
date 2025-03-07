@@ -234,7 +234,8 @@ async function registrarVisita() {
         if (response.ok) {
             console.log("Visita registrada exitosamente.");
         } else {
-            console.error("Error al registrar la visita:", await response.text());
+            const errorResponse = await response.json();
+            console.error("Error al registrar la visita:", errorResponse);
         }
     } catch (error) {
         console.error("Error al obtener información del usuario:", error);
@@ -250,7 +251,8 @@ window.addEventListener("beforeunload", async () => {
 
     try {
         // Obtener la IP del usuario
-        const ip = await fetch('https://ipapi.co/ip/').then(res => res.text());
+        const ipInfo = await fetch('https://ipapi.co/json/').then(res => res.json());
+        const ip = ipInfo.ip || 'Desconocido';
 
         // Actualizar duración de la sesión en el backend
         const response = await fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
@@ -265,7 +267,8 @@ window.addEventListener("beforeunload", async () => {
         if (response.ok) {
             console.log("Duración de la sesión actualizada correctamente.");
         } else {
-            console.error("Error al actualizar la duración de la sesión:", await response.text());
+            const errorResponse = await response.json();
+            console.error("Error al actualizar la duración de la sesión:", errorResponse);
         }
     } catch (error) {
         console.error("Error al enviar la duración de la sesión:", error);
