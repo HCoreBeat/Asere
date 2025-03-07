@@ -210,6 +210,9 @@ async function registrarVisita() {
         // Obtener el origen (referrer)
         const referrer = document.referrer || 'Acceso directo';
 
+        // Obtener información del afiliado desde localStorage
+        const affiliate = getAffiliate();
+
         // Obtener información IP y geolocalización
         const ipInfo = await fetch('https://ipapi.co/json/')
             .then(res => res.ok ? res.json() : { ip: 'Desconocida', country_name: 'Desconocido' });
@@ -223,6 +226,7 @@ async function registrarVisita() {
             pais,
             fecha_hora_entrada: new Date().toISOString(),
             origen: referrer,
+            afiliado: affiliate, // Incluimos el afiliado aquí
             duracion_sesion_segundos: 0 // Inicialmente en 0, se actualizará al salir
         };
 
@@ -245,17 +249,19 @@ async function registrarVisita() {
 
 // Llamar a `registrarVisita` al cargar la página
 window.addEventListener("load", registrarVisita);
+
+// Función para registrar la duración de la sesión antes de que el usuario cierre o recargue la página
 window.addEventListener("beforeunload", async () => {
     const duracionSesionSegundos = Math.round((Date.now() - inicioSesion) / 1000);
 
     try {
-        // Obtener IP para identificar la visita
+        // Obtener la información de la IP del usuario
         const ipInfo = await fetch('https://ipapi.co/json/')
             .then(res => res.ok ? res.json() : { ip: 'Desconocida' });
 
         const ip = ipInfo.ip || 'Desconocida';
 
-        // Actualizar duración de la sesión
+        // Enviar la duración al backend
         const response = await fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -268,9 +274,9 @@ window.addEventListener("beforeunload", async () => {
         if (response.ok) {
             console.log("Duración de la sesión actualizada correctamente.");
         } else {
-            console.error("Error en la respuesta del servidor al actualizar duración:", await response.text());
+            console.error("Error al actualizar la duración de la sesión:", await response.text());
         }
     } catch (error) {
-        console.error("Error al actualizar duración de la sesión:", error);
+        console.error("Error al enviar la duración de la sesión:", error);
     }
 });
