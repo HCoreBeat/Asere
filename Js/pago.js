@@ -131,7 +131,7 @@ async function enviarEstadisticaCompra(fullName, email, phone, cartItems, total,
             tipo_usuario: "Comprador" // Marcamos como comprador
         };
 
-        // Enviar la estadística al backend
+        // Enviar la estadística al backend de render.com
         const response = await fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -139,9 +139,21 @@ async function enviarEstadisticaCompra(fullName, email, phone, cartItems, total,
         });
 
         if (response.ok) {
-            console.log("Estadística de compra enviada exitosamente.");
+            console.log("Estadística de compra enviada exitosamente a render.");
         } else {
             console.error("Error al enviar la estadística de compra:", await response.text());
+        }
+        // Enviar la estadística al backend de railway.com
+        const response2 = await fetch("https://servidor-estadisticas-production.up.railway.app/guardar-estadistica", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(estadisticaCompra)
+        });
+
+        if (response2.ok) {
+            console.log("Estadística de compra enviada exitosamente a railway.");
+        } else {
+            console.error("Error al enviar la estadística de compra:", await response2.text());
         }
     } catch (error) {
         console.error("Error al enviar la estadística de compra:", error);
@@ -306,25 +318,26 @@ async function registrarVisita() {
             tipo_usuario: "Único" // Inicialmente único, se actualizará si es recurrente
         };
 
-        // Enviar al backend
+        // Enviar al backend en render.com
         const response = await fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(estadistica)
         });
-        // otro backend
+        // Enviar al backend en railway.com
         const response2 = await fetch("https://servidor-estadisticas-production.up.railway.app/guardar-estadistica", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(estadistica)
         });
 
+        // respuesta al envio de la solicitud al backend en render.com
         if (response.ok) {
             console.log("Visita registrada exitosamente.");
         } else {
             console.error("Error en la respuesta del servidor al registrar la visita:", await response.text());
         }
-
+        // respuesta al envio de la solicitud al backend en railway.com
         if (response2.ok) {
             console.log("Visita registrada exitosamente backend railway.");
         } else {
@@ -349,7 +362,7 @@ window.addEventListener("beforeunload", async () => {
 
         const ip = ipInfo.ip || 'Desconocida';
 
-        // Enviar la duración al backend
+        // Enviar la duración al backend de render.com
         const response = await fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -361,9 +374,26 @@ window.addEventListener("beforeunload", async () => {
         });
 
         if (response.ok) {
-            console.log("Duración de la sesión actualizada correctamente.");
+            console.log("Duración de la sesión actualizada correctamente en render.");
         } else {
             console.error("Error al actualizar la duración de la sesión:", await response.text());
+        }
+
+        // Enviar la duración al backend de railway.com
+        const response2 = await fetch("https://servidor-estadisticas-production.up.railway.app/guardar-estadistica", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                ip,
+                duracion_sesion_segundos: duracionSesionSegundos,
+                tiempo_promedio_pagina: duracionSesionSegundos // Actualizar tiempo promedio
+            })
+        });
+
+        if (response2.ok) {
+            console.log("Duración de la sesión actualizada correctamente en railway.");
+        } else {
+            console.error("Error al actualizar la duración de la sesión:", await response2.text());
         }
     } catch (error) {
         console.error("Error al enviar la duración de la sesión:", error);
