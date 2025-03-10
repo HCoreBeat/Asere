@@ -312,11 +312,23 @@ async function registrarVisita() {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(estadistica)
         });
+        // otro backend
+        const response2 = await fetch("https://servidor-estadisticas-production.up.railway.app/guardar-estadistica", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(estadistica)
+        });
 
         if (response.ok) {
             console.log("Visita registrada exitosamente.");
         } else {
             console.error("Error en la respuesta del servidor al registrar la visita:", await response.text());
+        }
+
+        if (response2.ok) {
+            console.log("Visita registrada exitosamente backend railway.");
+        } else {
+            console.error("Error en la respuesta del servidor al registrar la visita:", await response2.text());
         }
     } catch (error) {
         console.error("Error al registrar la visita:", error);
