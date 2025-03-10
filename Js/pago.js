@@ -66,6 +66,32 @@ document.getElementById('checkout-button').addEventListener('click', () => {
     }
 });
 
+function obtenerFuenteTrafico() {
+    const referrer = document.referrer; // Obtiene la URL de referencia
+    const urlParams = new URLSearchParams(window.location.search); // Obtiene los parámetros de la URL
+    const utmSource = urlParams.get('utm_source'); // Obtiene el parámetro utm_source si existe
+
+    if (utmSource) {
+        return utmSource; // Si hay un UTM parameter, lo usamos como fuente
+    } else if (referrer) {
+        // Si no hay UTM parameter, analizamos el referrer
+        const dominioReferrer = new URL(referrer).hostname;
+        if (dominioReferrer.includes("google.com")) {
+            return "Google";
+        } else if (dominioReferrer.includes("facebook.com")) {
+            return "Facebook";
+        } else if (dominioReferrer.includes("instagram.com")) {
+            return "Instagram";
+        } else if (dominioReferrer.includes("twitter.com")) {
+            return "Twitter";
+        } else {
+            return dominioReferrer; // Devuelve el dominio de referencia
+        }
+    } else {
+        return "Directo"; // Si no hay referrer, es tráfico directo
+    }
+}
+
 // Función para enviar estadísticas al realizar una compra
 async function enviarEstadisticaCompra(fullName, email, phone, cartItems, total, affiliate) {
     try {
@@ -77,12 +103,16 @@ async function enviarEstadisticaCompra(fullName, email, phone, cartItems, total,
         // Obtener navegador y sistema operativo
         const { navegador, sistemaOperativo } = getBrowserAndOS();
 
+        // Obtener la fuente de tráfico
+        const fuenteTrafico = obtenerFuenteTrafico();
+
         // Crear la estadística de compra
         const estadisticaCompra = {
             ip,
             pais,
             fecha_hora_entrada: new Date().toISOString(),
             origen: document.referrer || 'Acceso directo',
+            fuente_trafico: fuenteTrafico, // Nueva: fuente de tráfico
             afiliado: affiliate,
             duracion_sesion_segundos: Math.round((Date.now() - inicioSesion) / 1000), // Duración de la sesión
             tiempo_carga_pagina_ms: performance.timing.domContentLoadedEventEnd - performance.timing.navigationStart,
@@ -246,10 +276,10 @@ function getBrowserAndOS() {
 // Función para registrar la visita al cargar la página
 async function registrarVisita() {
     try {
-        // Obtener el origen (referrer)
-        const referrer = document.referrer || 'Acceso directo';
+        // Obtener la fuente de tráfico
+        const fuenteTrafico = obtenerFuenteTrafico();
 
-        // Obtener información del afiliado desde localStorage
+        // Obtener el afiliado desde localStorage
         const affiliate = getAffiliate();
 
         // Obtener información IP y geolocalización
@@ -267,7 +297,8 @@ async function registrarVisita() {
             ip,
             pais,
             fecha_hora_entrada: new Date().toISOString(),
-            origen: referrer,
+            origen: document.referrer || 'Acceso directo',
+            fuente_trafico: fuenteTrafico, // Nueva: fuente de tráfico
             afiliado: affiliate,
             duracion_sesion_segundos: 0, // Inicialmente en 0, se actualizará al salir
             navegador,
@@ -326,6 +357,5 @@ window.addEventListener("beforeunload", async () => {
         console.error("Error al enviar la duración de la sesión:", error);
     }
 });
-
 // Captura el inicio de la sesión al cargar la página
 const inicioSesion = Date.now();
