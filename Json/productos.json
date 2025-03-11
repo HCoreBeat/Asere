@@ -1320,11 +1320,11 @@
     {
         "nombre": "Pollo Country Pride",
         "categoria": "carnes",
-        "precio": 14.142,
+        "precio": 12,314,
         "descuento": 13.6,
-        "oferta": true,
+        "oferta": false,
         "mas_vendido": true,
         "imagen": "img/products/Pollo_Country.jpg",
-        "disponible": false
+        "disponible": true
     }
 ]
