@@ -137,7 +137,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Jamon_Bravo_Rapido.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Masa deshuesada de cerdo x Kg",
