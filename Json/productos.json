@@ -450,7 +450,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Pasta_de_Tomate_Vima.jpeg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Azúcar (1Kg)",
