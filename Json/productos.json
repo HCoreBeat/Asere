@@ -277,7 +277,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Sazon_Mixto.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Comino Molido (198.5g)",
@@ -287,7 +287,7 @@
         "oferta": false,
         "mas_vendido": true,
         "imagen": "img/products/Comino_Molido.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Ketchup (320g)",
@@ -460,7 +460,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Azucar.jpeg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Frijol Rojo x Lb",
@@ -675,7 +675,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Caja_Bebida_Energetica.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Ron Habana Club Añejo Reserva",
@@ -685,7 +685,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Ron_Habana_Club_Añejo_Reserva.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Caja de malta Morena (24x237ml)",
@@ -735,7 +735,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Ron_Habana_Club_Añejo_Especial.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Bebida energética 5 Shot (250ml)",
@@ -1045,7 +1045,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Leche_Entera_En_Polvo_Vima.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Cebollitas en Vinagre (290g)",
@@ -1125,7 +1125,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Maicena_Nezka.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Lata de Frijoles Rojos (410g)",
