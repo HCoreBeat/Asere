@@ -795,7 +795,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Coca_Cola.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Caja de refresco Naranja",
