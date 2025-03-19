@@ -29,8 +29,10 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css"> <!-- Utilizando archivo CSS minificado -->
+    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="stylesheet" href="css/styleProducto.css">
     <title>Asere Shops</title>
+    
 </head>
 <body>
     <div id="progress-bar-container">
@@ -47,39 +49,29 @@
                 <span></span>
                 <span></span>
             </div>
-            <div class="logo">
-                <img src="img/LogoVerde.jpeg" alt="Logo">
-            </div>
             <div class="slogan">
-                <!--Slogan basado en imagen-->
                 <div class="gif-slogan">
-                  <!--<img src="img/N1.png" alt="Slogan" id="gif-slogan" class="gif-slogan">-->
-                  <img src="img/Slogan.png" alt="Slogan" id="gif-slogan" class="gif-slogan">
+                    <img src="img/Slogan.png" alt="Slogan" id="gif-slogan" class="gif-slogan">
                 </div>
-            </div>
+                <div class="ubicacion-entrega">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Las Tunas</span>
+                </div>
+            </div>            
             <div class="search-bar">
                 <input type="text" id="search-input" placeholder="Buscar Asere...">
                 <button id="search-button" aria-label="Buscar">
                     <i class="fas fa-search"></i>
                 </button>
             </div>
-            <div class="carrito-moneda">
-                <li class="cart">
-                    <a href="#carrito" onclick="mostrarCarrito()" id="nav-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                        Carrito
-                    </a>
-                    <div id="cart-count" class="cart-count">0</div>
-                </li>   
-                <div class="currency-selector">
-                    <button id="toggle-currency"><span id="currency-text">USD</span></button>
-                    <div id="currency-options" class="currency-options">
-                        <div class="currency-option" data-currency="USD"><i class="fas fa-dollar-sign"></i> Dólar US$</div>
-                        <div class="currency-option" data-currency="EUR"><i class="fas fa-euro-sign"></i> Euro €</div>
-                    </div>
-                </div>   
-            </div>
-             
+            <li class="cart">
+                <a href="#carrito" onclick="mostrarCarrito()" id="nav-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    Carrito
+                </a>
+                <div id="cart-count" class="cart-count">0</div>
+            </li>  
+
             <div class="overlay"></div>
             <nav>
                 <ul>
@@ -91,14 +83,6 @@
                     <hr>
                     <li><a href="#productos" id="nav-products">Productos</a></li>
                     <li><a href="about.html" id="nav-contact">Contacto</a></li>                  
-                    <div class="language-selector" style="display: none;">
-                        <select id="language-select">
-                            <option value="es">Español</option>
-                            <option value="en">English</option>
-                            <option value="de">Deutsch</option>
-                            <option value="it">Italiano</option>
-                        </select>
-                    </div>
                 </ul>
             </nav>
         </div>
@@ -107,6 +91,7 @@
                 <li><a href="#" data-categoria="all" id="cat-all"><i class="fas fa-bars"></i> <span>Todos</span></a></li>
                 <li><a href="#" data-categoria="ofertas" id="cat-offers"><i class="fas fa-tags"></i> <span>Ofertas</span></a></li>
                 <li><a href="#" data-categoria="combos" id="cat-combos"><i class="fas fa-box"></i> <span>Combos</a></li>
+                <li><a href="#" data-categoria="electrodomesticos" id="cat-electrodomesticos"><i class="fas fa-plug"></i> <span>Electrodomésticos</span></a></li>
                 <li><a href="#" data-categoria="frutas" id="cat-fruits"><i class="fas fa-apple-alt"></i> <span>Frutas</span></a></li>
                 <li><a href="#" data-categoria="cafe" id="cat-coffee"><i class="fas fa-coffee"></i> <span>Café</span></a></li>
                 <li><a href="#" data-categoria="carnes" id="cat-meats"><i class="fas fa-drumstick-bite"></i> <span>Cárnicos</span></a></li>
@@ -120,11 +105,79 @@
                 <li><a href="#" data-categoria="cakes" id="cat-cakes"><i class="fas fa-birthday-cake"></i> <span>Cakes</span></a></li>
                 <li><a href="#" data-categoria="confituras" id="cat-confituras"><i class="fas fa-birthday-cake"></i> <span>Confituras</span></a></li>
                 <li><a href="#" data-categoria="otros" id="cat-others"><i class="fas fa-ellipsis-h"></i> <span>Otros</span></a></li>
-            </ul>
+             </ul>
+        </div>
+         <!-- Contenedor responsivo para la ubicación (mostrado solo en responsive) -->
+         <div class="ubicacion-entrega-responsive">
+            <i class="fas fa-map-marker-alt"> </i>
+            <span>Entregamos en Las Tunas, Cuba</span>
         </div>
     </header>
 
     <main>     
+        <section id="detalle-producto" style="display: none;">
+            <button id="volver-productos" class="btn-volver">⬅ Volver a Productos</button>
+            <div id="detalle-contenido">
+                <!-- Contenedor de imagen -->
+                <div id="detalle-imagen-container">
+                    <div id="imagen-principal-container">
+                        <img id="detalle-imagen" src="" alt="Imagen del producto">
+                        <!-- Puntos indicadores para las fotos -->
+                        <div id="puntos-indicadores"></div>
+                    </div>
+                    <div id="imagenes-adicionales">
+                        <!-- Aquí se agregarán las miniaturas de las imágenes adicionales -->
+                    </div>
+                </div>
+                <!-- Información y extras del producto -->
+                <div class="detalle-info">
+                    <h2 id="detalle-nombre"></h2>
+                    <div class="precio-container">
+                        <!--define el valor oculto del precio para agregarlo al carrito sin que de problema con los decimales-->
+                        <p id="valor-precio-total" style="display: none;"></p>
+                        <p id="detalle-precio">
+                            <span class="entero"></span>
+                            <span class="decimales"></span>
+                        </p>
+                        <div class="descuento-pvpr-container">
+                            <p id="detalle-pvpr"></p>
+                            <p id="detalle-descuento"></p>
+                        </div>
+                    </div>
+                    <div id="detalle-extra">
+                        <p id="detalle-mas-vendido" class="mas-vendido-badge">Más Vendido</p>
+                        <p id="detalle-disponibilidad"></p>
+                        <p id="detalle-envio">Envío gratuito</p>
+                    </div>
+                    <div class="cantidad">
+                        <label for="cantidad">Cantidad:</label>
+                        <button class="btn-cantidad" id="btn-restar">-</button>
+                        <span id="detalle-cantidad">1</span>
+                        <button class="btn-cantidad" id="btn-sumar">+</button>
+                    </div>
+                    <button id="detalle-agregar-carrito" class="btn-carrito">Añadir al Carrito</button>
+                    <p id="detalle-descripcion"></p>
+                </div>
+            </div>
+            <!-- Galería de imágenes adicionales -->
+            <div id="galeria-imagenes" class="galeria-imagenes">
+                <h3>Galería de imágenes</h3>
+                <div class="galeria-contenedor"></div>
+            </div>
+            <!-- Sección de sugerencias integrada dentro del detalle -->
+            <div id="productos-sugeridos">
+                <h3>Clientes que compraron este artículo también compraron</h3>
+                <div class="sugeridos-contenedor"></div>
+            </div>
+        </section>
+        <!-- Dentro de <main>, después de la sección de productos -->
+            <section id="panel-electrodomesticos" style="display: none;">
+                <button id="cerrar-electrodomesticos" class="btn-volver">⬅ Volver a Productos</button>
+                <h2 class="panel-title">Electrodomésticos</h2>
+                <div id="lista-electrodomesticos">
+                    <!-- Aquí se renderizarán los electrodomésticos dinámicamente -->
+                </div>
+            </section>
         <div class="slider">
             <div class="slides">
                 <div class="slide">
@@ -141,20 +194,16 @@
                 </div>
             </div>            
         </div>
-        
+        <!-- Mensaje de producto no disponible -->
+        <div id="producto-no-disponible" class="hidden">
+            <span class="icon">⚠️</span>
+            <p>El producto que buscas no está disponible.</p>
+        </div>
         <section id="productos">
             <div id="no-result-message" class="hidden" style="display: none;">
                 <span class="icon">⚠️</span>
                 <p>No se encontraron resultados</p>
             </div> 
-            <div id="product-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close-btn">&times;</span>
-                    <div id="modal-product-info">
-                        <!-- La información del producto se llenará dinámicamente aquí -->
-                    </div>
-                </div>
-            </div>
             <div id="productos-container">
                 <!-- Aquí se agregarán los productos dinámicamente -->
             </div>
@@ -215,7 +264,7 @@
 
                     <!-- Mensaje de tiempo de entrega -->
                     <div id="delivery-time-message" class="delivery-time-message">
-                        <p>El pedido se entregará en un rango de tiempo de 48 horas.</p>
+                        <p>Nuestro envio es gratuito. El pedido se entregará en un rango de tiempo de 48 horas.</p>
                     </div>
 
                     <h3>Resumen del Pedido</h3>
