@@ -9,9 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const overlay = document.querySelector(".overlay");
     const homeButton = document.querySelector(".home-button");
     const header = document.querySelector("header");
-    const currencyText = document.getElementById("currency-text");
-    const currencyOptions = document.getElementById("currency-options");
-    const toggleCurrencyButton = document.getElementById("toggle-currency");
     const carritoButton = document.querySelector("li a[href='#carrito']");
     const productosButton = document.querySelector("nav ul li a[href='#productos']");
     const progressBarContainer = document.getElementById("progress-bar-container");
@@ -97,8 +94,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const productosActualizados = actualizarPrecios(productosUnicos); // Actualizar precios
 
         // Filtrar productos disponibles
-        const productosDisponibles = productosActualizados.filter(producto => producto.disponible && producto.categoria !== "combos");
-
+        const productosDisponibles = productosActualizados.filter(producto => 
+            producto.disponible && producto.categoria !== "combos" && producto.categoria !== "electrodomesticos"
+        );
         // Crear el contenedor de productos más vendidos
         const masVendidosContainer = document.createElement("div");
         masVendidosContainer.className = "mas-vendidos-container"; // Clase para el contenedor de productos más vendidos
@@ -154,6 +152,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             `;
     
+            // Agregar evento para abrir el modal cuando se hace clic en el producto, excluyendo los botones
+            productoDiv.addEventListener('click', (e) => {
+                if (e.target.closest(".btn-cantidad") || e.target.closest(".btn-carrito")) return;
+            
+                mostrarDetallesProducto(producto);
+            });
+
             // Ocultar botones y cantidad cuando el producto no está disponible
             const botonesCantidad = productoDiv.querySelector('.cantidad-carrito-contenedor');
             if (!producto.disponible) {
@@ -163,7 +168,21 @@ document.addEventListener("DOMContentLoaded", () => {
             masVendidosContainer.appendChild(productoDiv);
         });
         
-    
+        // Crear el panel cuadrado para electrodomésticos
+        const botonElectrodomesticos = document.createElement("div"); // Definir la variable aquí
+        botonElectrodomesticos.className = "panel-categoria";
+        botonElectrodomesticos.innerHTML = `
+            <p>Tecnologia</p>
+            <img src="img/tecnologia.jpg" alt="Tecnologia">
+            <p id="texto-comprar-ahora">Comprar ahora</p>
+        `;
+
+        // Añadir evento para abrir el panel de electrodomésticos
+        botonElectrodomesticos.addEventListener("click", () => {
+            mostrarPanelElectrodomesticos();
+        });
+
+       // Insertar el botón en el contenedor de productos
         const separadorContainer = document.createElement("div");
         separadorContainer.className = "separador-container";
         
@@ -216,7 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (producto.oferta) {
                     pvpr = producto.precio;
                     precio = (producto.precio - (producto.precio * (producto.descuento / 100))).toFixed(2);
-                    descuento = `<p class="descuento" style="text-decoration: none;">-${producto.descuento}%</p>`;
+                    descuento = `<p class="descuento" style="text-decoration: none;">-${producto.descuento.toFixed()}%</p>`;
                 }
 
                 const pvprHtml = producto.oferta ? `<p class="pvpr">PVPR: US$<s>${pvpr.toFixed(2)}</s></p>` : '';
@@ -277,14 +296,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
                 // Agregar evento para abrir el modal cuando se hace clic en el producto, excluyendo los botones
-                productoDiv.addEventListener("click", (e) => {
-                    // Evitar que se active el modal si se hace clic en los botones
+                productoDiv.addEventListener('click', (e) => {
                     if (e.target.closest(".btn-cantidad") || e.target.closest(".btn-carrito")) return;
-
-                    // Abrir modal
-                    abrirModal(producto);
+                
+                    mostrarDetallesProducto(producto);
                 });
+                
+                
             });
+
 
             // Si no hay productos visibles, ocultar la categoría
             if (!categoriaVisible) {
@@ -329,7 +349,7 @@ document.addEventListener("DOMContentLoaded", () => {
         combosContainer.className = "combos-container"; // Clase para el contenedor de combos
 
         const combosTitle = document.createElement("h2");
-        combosTitle.textContent = "Combos Especiales";
+        combosTitle.textContent = "Packs Especiales"; // nombre del contenedor de los packs
         combosTitle.style.textAlign = 'center';
         combosTitle.style.marginBottom = '20px';
         combosContainer.appendChild(combosTitle);
@@ -438,10 +458,12 @@ document.addEventListener("DOMContentLoaded", () => {
         // Añadir el contenedor principal al cuerpo del documento
         document.body.appendChild(combosContainer);
 
+        // define el orden en que se crean en el doom
         // Insertar los contenedores en el DOM
         const productosContainer = document.getElementById("productos-container");
         productosContainer.appendChild(masVendidosContainer); // Insertar los más vendidos en la parte superior
         productosContainer.appendChild(combosContainer);     // Insertar los combos
+        productosContainer.appendChild(botonElectrodomesticos);
         productosContainer.appendChild(separadorContainer); 
         productosContainer.appendChild(categoriasContainer); // Insertar los productos por categorías debajo
     
@@ -467,18 +489,28 @@ document.addEventListener("DOMContentLoaded", () => {
                 e.preventDefault();
                 const category = link.getAttribute("data-categoria");
 
+                // Ocultar el panel de electrodomésticos
+                const panelElectrodomesticos = document.getElementById("panel-electrodomesticos");
+                if (panelElectrodomesticos) {
+                    panelElectrodomesticos.style.display = "none";
+                }
+
+                // Ocultar el panel-categoria
+                const panelCategoria = document.querySelector(".panel-categoria");
+                if (panelCategoria) {
+                    panelCategoria.style.display = "none";
+                }
+                
+
+                //mostrar o ocultar los separadores
                 const separadorContainers = document.querySelectorAll(".separador-container, .separador-container-extra");
                 separadorContainers.forEach(separador => {
                     separador.style.display = category === "all" ? "block" : "none";
                 });
-            });
-        });
-        
-        // Filtrar productos por categoría
-        document.querySelectorAll(".categorias ul li a").forEach(link => {
-            link.addEventListener("click", (e) => {
-                e.preventDefault();
-                const category = link.getAttribute("data-categoria");
+
+                // Filtrar productos por categoría
+                // Ocultar el detalle del producto cuando se selecciona una categoría
+                document.getElementById("detalle-producto").style.display = "none";
 
                 // Limpiar la barra de búsqueda
                 const searchInput = document.getElementById("search-input");
@@ -491,12 +523,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Opcional: si tienes secciones como "más vendidos", puedes asegurarte de que también se muestren.
                 const masVendidosContainer = document.querySelector(".mas-vendidos-container");
                 if (masVendidosContainer) masVendidosContainer.style.display = "flex";
-
-                // Actualizar la clase 'selected' del enlace de categoría
-                document.querySelectorAll(".categorias ul li a").forEach(link => {
-                    link.classList.remove("selected");
-                });
-                link.classList.add("selected");
 
                 document.querySelectorAll(".producto, .combos-container").forEach(producto => {
                     if ((category === "ofertas" && producto.dataset.categoria !== "ofertas" && !producto.querySelector('.etiqueta.oferta')) ||
@@ -537,6 +563,9 @@ document.addEventListener("DOMContentLoaded", () => {
                         });
                     });
 
+                    // mostrar el panel de categoria cuando se presiona la categoria all
+                    panelCategoria.style.display = "flex";
+
                     document.querySelectorAll(".btn-cargar-mas").forEach(btn => {
                         btn.style.display = "block";
                     });
@@ -547,8 +576,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
         });
-
-
+        
         // Mejorar la función de filtrado de productos
         const searchInput = document.getElementById("search-input");
         const searchButton = document.getElementById("search-button");
@@ -561,6 +589,24 @@ document.addEventListener("DOMContentLoaded", () => {
             const searchValue = searchInput.value.trim().toLowerCase();
             const selectedCategory = document.querySelector(".categorias ul li a.selected")?.getAttribute("data-categoria");
         
+            // Ocultar el panel de electrodomésticos si está visible
+            const panelElectrodomesticos = document.getElementById("panel-electrodomesticos");
+            if (panelElectrodomesticos) {
+                panelElectrodomesticos.style.display = "none";
+            }
+            const panelCategoria = document.querySelector(".panel-categoria");
+            if (panelCategoria) {
+                panelCategoria.style.display = "none";
+            }
+
+            // Ocultar el detalle del producto cuando se busca o se selecciona una categoría
+            document.getElementById("detalle-producto").style.display = "none";
+            document.getElementById("productos").style.display = "block";
+            let slider = document.querySelector(".slider");
+            if (slider) {
+                slider.style.display = "block";
+            }
+
             // Ocultar los separadores cuando se está buscando algo
             const separadorContainers = document.querySelectorAll(".separador-container, .separador-container-extra");
             separadorContainers.forEach(separador => {
@@ -571,6 +617,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (searchValue === "" && (selectedCategory === "all" || !selectedCategory)) {
                 mostrarTodosLosProductos();
                 combosContainer.style.display = "block"; // Mostrar el contenedor de combos cuando la búsqueda está vacía
+                // mostrar el panel de categoria cuando se presiona la categoria all
+                panelCategoria.style.display = "flex";
                 return;
             }
         
@@ -677,41 +725,6 @@ document.addEventListener("DOMContentLoaded", () => {
         
     }
 
-    
-    function abrirModal(producto) {
-        // Obtener el modal y el contenedor de la información
-        const modal = document.getElementById("product-modal");
-        const modalInfo = document.getElementById("modal-product-info");
-
-        // Llenar el modal con la información del producto
-        modalInfo.innerHTML = `
-            <h2>${producto.nombre}</h2>
-            <img src="${producto.imagen} " alt="${producto.nombre}" class="modal-img">
-            <p><strong>Precio:</strong> US$${producto.precio}</p>
-            <p><strong>Categoría:</strong> ${producto.categoria}</p>
-            <p><strong>Disponibilidad:</strong> ${producto.disponible ? "Disponible" : "No disponible"}</p>
-        `;
-
-        // Mostrar el modal
-        modal.style.display = "block";
-        disableScroll();
-
-        // Agregar evento para cerrar el modal
-        const closeBtn = modal.querySelector(".close-btn");
-        closeBtn.addEventListener("click", () => {
-            modal.style.display = "none"; // Cerrar modal
-            enableScroll();
-        });
-
-        // Cerrar modal cuando se haga clic fuera del contenido
-        window.addEventListener("click", (e) => {
-            if (e.target === modal) {
-                modal.style.display = "none"; // Cerrar modal
-                enableScroll();
-            }
-        });
-    }
-
     // Fetch de productos y combos
     Promise.all([
         fetch('Json/productos.json').then(response => response.json()),
@@ -723,38 +736,6 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log('Productos cargados:', productos);
         console.log('Combos cargados:', combos);
         renderProductos(); // Renderizar productos y combos
-    });
-
-// Funcionalidad de cambio de moneda
-    toggleCurrencyButton.addEventListener('click', () => {
-        currencyOptions.style.display = currencyOptions.style.display === 'block' ? 'none' : 'block';
-    });
-
-    currencyOptions.addEventListener('click', (e) => {
-        if (e.target.classList.contains('currency-option')) {
-            currency = e.target.dataset.currency;
-
-            if(currency){
-                currencyText.textContent = currency;
-            }
-            document.querySelectorAll('.precio').forEach(precioElem => {
-                if (currency === 'EUR') {
-                    precioElem.innerHTML = precioElem.innerHTML.replace('US$', '€');
-                } else {
-                    precioElem.innerHTML = precioElem.innerHTML.replace('€', 'US$');
-                }
-            });
-
-            document.querySelectorAll('.pvpr').forEach(pvprElem => {
-                if (currency === 'EUR') {
-                    pvprElem.innerHTML = pvprElem.innerHTML.replace('US$', '€');
-                } else {
-                    pvprElem.innerHTML = pvprElem.innerHTML.replace('€', 'US$');
-                }
-            });
-            // Ocultar el panel de opciones de moneda
-            currencyOptions.style.display = 'none';
-        }
     });
 
     // Toggle menú
@@ -839,29 +820,94 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     
         setInterval(showNextSlide, 5000); // Reducir la velocidad del slider a 5000 ms (5 segundos)
-});
+
+
+        cargarCarrito();  // Cargar carrito cuando la página esté lista
+
+        // Verifica los elementos del DOM
+        const carritoContainer = document.getElementById("carrito-container");
+        const carritoTotal = document.getElementById("cart-total");
+        const carritoVacio = document.getElementById("carrito-vacio");
     
+    
+        if (!carritoContainer || !carritoTotal || !carritoVacio) {
+            console.error("Uno o más elementos no existen en el DOM");
+        } else {
+            console.log("Todos los elementos se encontraron correctamente");
+            renderCarrito(); // Llama a la función solo si todo está listo
+        }
 
 
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    cargarCarrito();  // Cargar carrito cuando la página esté lista
-
-    // Verifica los elementos del DOM
-    const carritoContainer = document.getElementById("carrito-container");
-    const carritoTotal = document.getElementById("cart-total");
-    const carritoVacio = document.getElementById("carrito-vacio");
-
-
-    if (!carritoContainer || !carritoTotal || !carritoVacio) {
-        console.error("Uno o más elementos no existen en el DOM");
-    } else {
-        console.log("Todos los elementos se encontraron correctamente");
-        renderCarrito(); // Llama a la función solo si todo está listo
+        // Función para normalizar nombres (eliminar caracteres especiales y convertir a minúsculas)
+    function normalizarNombre(nombre) {
+        return nombre
+            .toLowerCase() // Convertir a minúsculas
+            .replace(/[^a-z0-9]+/g, ' ') // Reemplazar caracteres especiales con espacios
+            .trim(); // Eliminar espacios al inicio y al final
     }
-});
 
+    // Función para buscar un producto por nombre normalizado
+    function buscarProductoPorNombre(nombre) {
+        const nombreNormalizado = normalizarNombre(nombre);
+        return productos.find(producto => normalizarNombre(producto.nombre) === nombreNormalizado);
+    }
+
+    // Cargar productos y combos
+    Promise.all([
+        fetch('Json/productos.json').then(response => response.json()),
+        fetch('Json/combos.json').then(response => response.json())
+    ])
+    .then(([productosData, combosData]) => {
+        productos = productosData;
+        combos = combosData;
+        console.log('Productos cargados:', productos);
+        console.log('Combos cargados:', combos);
+        renderProductos(); // Renderizar productos y combos
+    
+        // Verificar si la URL contiene un producto
+        const hash = window.location.hash;
+        if (hash.startsWith("#producto-")) {
+            const nombreProductoAmigable = hash.replace("#producto-", "");
+    
+            // Normalizar el nombre del producto en la URL
+            const nombreProductoNormalizado = normalizarNombre(nombreProductoAmigable);
+    
+            // Buscar el producto por nombre normalizado
+            const producto = buscarProductoPorNombre(nombreProductoNormalizado);
+    
+            if (producto) {
+                // Mostrar el panel de detalles
+                document.getElementById("productos").style.display = "none"; // Ocultar productos
+                document.getElementById("detalle-producto").style.display = "block"; // Mostrar detalles
+    
+                // Cargar los datos del producto en el panel de detalles
+                mostrarDetallesProducto(producto);
+            } else {
+                console.warn("Producto no encontrado:", nombreProductoNormalizado);
+                // Mostrar el mensaje de "Producto no disponible"
+                mostrarMensajeNoDisponible();
+            }
+        }
+    });
+});
+// fusion para mostrara el mensaje no disponible para el producto que se busca por la url
+function mostrarMensajeNoDisponible() {
+    const mensaje = document.getElementById("producto-no-disponible");
+    if (mensaje) {
+        // Mostrar el mensaje con animación
+        mensaje.style.display = "block";
+        mensaje.style.animation = "fadeIn 0.5s ease-in-out";
+
+        // Ocultar el mensaje después de 5 segundos
+        setTimeout(() => {
+            mensaje.style.animation = "fadeOut 0.5s ease-in-out";
+            setTimeout(() => {
+                mensaje.style.display = "none";
+            }, 500); // Tiempo de la animación de fadeOut
+        }, 5000); // Tiempo que el mensaje estará visible
+    }
+}
+    
 function updateCartCount() {
     const itemCount = carrito.reduce((total, producto) => total + producto.cantidad, 0);
     cartCountElement.textContent = itemCount;
@@ -905,7 +951,7 @@ function renderCarrito() {
             // Si es un combo, mostrar una estructura diferente con un identificador visual claro
             productoDiv.innerHTML = `
                 <div class="carrito-item combo">
-                    <div class="combo-badge">Combo</div>
+                    <div class="combo-badge">Pack</div>
                     <img src="${producto.imagen}" alt="${producto.nombre}" class="carrito-imagen">
                     <div class="carrito-detalles">
                         <p class="carrito-nombre">${producto.nombre}</p>
@@ -975,6 +1021,7 @@ function eliminarDelCarrito(id) {
     renderCarrito();
 }
 
+
 function agregarAlCarrito(nombre, precio, cantidadId, imagen, boton, productosCombo = []) {
     console.log('cantidadId recibido:', cantidadId); // Depuración
     const cantidadElemento = document.getElementById(cantidadId);
@@ -1011,17 +1058,43 @@ function agregarAlCarrito(nombre, precio, cantidadId, imagen, boton, productosCo
 }
 
 function mostrarCarrito() {
-    document.getElementById('productos').style.display = 'none';
-    document.getElementById('carrito').style.display = 'block';
-    document.querySelector(".slider").style.display = 'none';
     document.getElementById('planilla-pago').classList.add('hidden');
+
+    document.getElementById("productos").style.display = "none";
+    document.getElementById("detalle-producto").style.display = "none";
+    document.getElementById("carrito").style.display = "block";
+
+    let slider = document.querySelector(".slider");
+    if (slider) {
+        slider.style.display = "none";
+    }
+
+    // **Guardar estado en el historial**
+    history.pushState({ tipo: "carrito" }, "", "#carrito");
+
+    renderCarrito();
+
 }
 
 function ocultarCarrito() {
-    document.getElementById('carrito').style.display = 'none';
-    document.getElementById('productos').style.display = 'block';
-    document.querySelector(".slider").style.display = 'block';
+    document.getElementById('planilla-pago').classList.add('hidden');
+    
+    document.getElementById("detalle-producto").style.display = "none";
+
+
+    document.getElementById("carrito").style.display = "none";
+    document.getElementById("productos").style.display = "block";
+
+    let slider = document.querySelector(".slider");
+    if (slider) {
+        slider.style.display = "block";
+    }
+
+    // **Regresar a la vista principal en la URL sin recargar**
+    history.pushState({ tipo: "productos" }, "", window.location.pathname);
 }
+
+
 
 // Funciones de incrementar y decrementar cantidad
 function incrementar(id) {
@@ -1100,40 +1173,6 @@ async function handleAffiliate() {
 // Ejecutar la función principal
 handleAffiliate();
 
-
-// Función para generar copos de nieve
-/*const createSnowflake = () => {
-    const snowflake = document.createElement('div');
-    snowflake.className = 'snowflake';
-    snowflake.innerHTML = '&#10052;';
-    snowflake.style.left = `${Math.random() * document.getElementById('snowflakes-container').offsetWidth}px`;
-    
-    const duration = Math.random() * 3 + 2; // Duración entre 2 y 5 segundos
-    snowflake.style.animationDuration = `${duration}s`;
-    snowflake.style.fontSize = `${Math.random() * 1 + 0.5}em`;
-
-    document.getElementById('snowflakes-container').appendChild(snowflake);
-
-    setTimeout(() => {
-        snowflake.remove();
-    }, duration * 1000);
-};
-
-setInterval(createSnowflake, 100);*/
-
-//----Para el gif basado en imagens para mantener transparencia y mas profesional---
-/*const frames = ['img/N2.png','img/N3.png','img/N4.png','img/N5.png','img/N6.png','img/N7.png','img/N8.png',
-'img/N8.png','img/N7.png','img/N6.png','img/N5.png','img/N4.png','img/N3.png','img/N2.png'
-]; // Rutas de las imágenes
-    let currentFrame = 0;
-
-    const gifContainer = document.getElementById('gif-slogan');
-
-    setInterval(() => {
-        currentFrame = (currentFrame + 1) % frames.length; // Cicla entre los frames
-        gifContainer.src = frames[currentFrame];
- }, 100); // Cambia cada 250 ms (ajusta la velocidad según tus necesidades)*/
-
  window.onload = function() {
     //------------Whatsapp----------
     const whatsappButton = document.getElementById("whatsapp-button");
@@ -1165,10 +1204,444 @@ adjustImages();
 // Ajustar imágenes al redimensionar la ventana
 window.addEventListener('resize', adjustImages);
 
+let productoActual = null; // Variable global para almacenar el producto actual
+let totalImagenes = 0; // Variable global para almacenar el total de imágenes
+
+function mostrarDetallesProducto(producto) {
+    productoActual = producto; // Almacenar el producto actual en la variable global
+    // Desplazar la página al inicio
+    window.scrollTo({ top: 0 });
+
+    let currentImageIndex = 0; // Definir la variable aquí
+
+    // Actualizar la información del producto
+    document.getElementById("detalle-nombre").textContent = producto.nombre;
+    document.getElementById("detalle-imagen").src = producto.imagen;
+    
+    // Formatear la descripción
+    const descripcion = producto.descripcion || "Por el momento, no contamos con una descripción para este producto."
+    const descripcionFormateada = formatearDescripcion(descripcion); // Llamar a la función de formateo
+    document.getElementById("detalle-descripcion").innerHTML = descripcionFormateada;
+    
+    // Calcular el precio de descuento si aplica
+    let precio = producto.precio;
+    let pvpr = producto.pvpr || producto.precio; // Si no hay PVPR, usar el precio principal
+
+    if (producto.oferta && producto.descuento) {
+        precio = (producto.precio - (producto.precio * (producto.descuento / 100)).toFixed(2));
+    }
+
+    // Dividir el precio en entero y decimales
+    const precioParts = precio.toFixed(2).split('.');
+    const entero = precioParts[0];
+    const decimales = precioParts[1];
+
+    // Mostrar precio con decimales más pequeños
+    document.getElementById("detalle-precio").innerHTML = `
+        <span class="simbolo">Precio: $</span>
+        <span class="entero">${entero}</span>
+        <span class="decimales">.${decimales}</span>
+    `;
+
+    // define el valor oculto del precio del producto para el carrito
+    document.getElementById("valor-precio-total").textContent = `Precio: $${precio.toFixed(2)}`;
+    
+    // Mostrar PVPR y descuento
+    if (producto.oferta) {
+        document.getElementById("detalle-pvpr").textContent = `PVPR: $${pvpr.toFixed(2)}`;
+        document.getElementById("detalle-descuento").textContent = `-${producto.descuento.toFixed()}%`;
+    } else {
+        document.getElementById("detalle-pvpr").textContent = "";
+        document.getElementById("detalle-descuento").textContent = "";
+    }
+
+    // Mostrar descuento si aplica
+    const detalleDescuento = document.getElementById("detalle-descuento");
+    if (producto.oferta && producto.descuento) {
+        detalleDescuento.style.display = "block";
+        detalleDescuento.textContent = `¡En oferta! -${producto.descuento.toFixed()}%`;
+    } else {
+        detalleDescuento.textContent = ""; // Ocultar si no hay oferta
+        detalleDescuento.style.display = "none";
+    }
+
+    // Mostrar disponibilidad
+    const detalleDisponibilidad = document.getElementById("detalle-disponibilidad");
+    detalleDisponibilidad.innerHTML = producto.disponible
+        ? `<span class="disponible">✅ En stock</span>`
+        : `<span class="no-disponible">❌ No disponible</span>`;
+
+    // Mostrar envío gratuito
+     const detalleEnvio = document.getElementById("detalle-envio");
+    detalleEnvio.innerHTML = `
+        <i class="fas fa-truck" style="margin-right: 8px;"></i> <!-- Ícono de envío -->
+        <span>Envío gratuito</span> <!-- Texto de envío gratuito -->
+        <br> <!-- Salto de línea para el tiempo estimado -->
+        <small style="color: #666;">Entrega en 24-48 horas</small> <!-- Tiempo estimado -->
+    `;
+
+    // Mostrar si es más vendido
+    const detalleMasVendido = document.getElementById("detalle-mas-vendido");
+    if (producto.mas_vendido) {
+        detalleMasVendido.style.display = "inline-block";
+    } else {
+        detalleMasVendido.style.display = "none";
+    }
+
+    // Mostrar imágenes adicionales (incluyendo la foto principal)
+    const imagenesAdicionales = document.getElementById("imagenes-adicionales");
+    imagenesAdicionales.innerHTML = ""; // Limpiar imágenes previas
+    const galeriaImagenes = document.getElementById("galeria-imagenes");
+
+    // Calcular el total de imágenes (principal + adicionales)
+    totalImagenes = 1 + (producto.imagenesAdicionales ? producto.imagenesAdicionales.length : 0);
+
+    // Ocultar el selector de imágenes adicionales si solo hay una imagen
+    if (totalImagenes <= 1) {
+        imagenesAdicionales.style.display = "none";
+        galeriaImagenes.style.display = "none";
+    } else {
+        imagenesAdicionales.style.display = "flex";
+        galeriaImagenes.style.display = "block";
+    }
+
+    // Mostrar miniaturas de imágenes adicionales en modo normal (escritorio)
+    if (window.innerWidth > 768) {
+        // Agregar la imagen principal como primera miniatura
+        const imgPrincipal = document.createElement("img");
+        imgPrincipal.src = producto.imagen;
+        imgPrincipal.alt = "Imagen principal del producto";
+        imgPrincipal.addEventListener("click", () => {
+            cambiarImagen(0); // Cambiar a la imagen principal
+        });
+        imagenesAdicionales.appendChild(imgPrincipal);
+
+        // Agregar las imágenes adicionales
+        if (producto.imagenesAdicionales && producto.imagenesAdicionales.length > 0) {
+            producto.imagenesAdicionales.forEach((imagen, index) => {
+                const img = document.createElement("img");
+                img.src = imagen;
+                img.alt = "Imagen adicional del producto";
+                img.addEventListener("click", () => {
+                    cambiarImagen(index + 1); // Cambiar a la imagen adicional
+                });
+                imagenesAdicionales.appendChild(img);
+            });
+        }
+    }
+
+   // Mostrar puntos indicadores
+   const puntosIndicadores = document.getElementById("puntos-indicadores");
+   puntosIndicadores.innerHTML = ""; // Limpiar puntos previos
+   for (let i = 0; i < totalImagenes; i++) {
+       const punto = document.createElement("div");
+       punto.className = "punto-indicador";
+       punto.addEventListener("click", () => cambiarImagen(i));
+       puntosIndicadores.appendChild(punto);
+   }
+   actualizarPuntosIndicadores(0); // Activar el primer punto
+
+    // Mostrar galería de imágenes adicionales (solo en responsive)
+    const galeriaContenedor = document.querySelector(".galeria-contenedor");
+    galeriaContenedor.innerHTML = ""; // Limpiar galería previa
+    if (producto.imagenesAdicionales && producto.imagenesAdicionales.length > 0) {
+        producto.imagenesAdicionales.forEach((imagen, index) => {
+            const img = document.createElement("img");
+            img.src = imagen;
+            img.alt = "Imagen adicional del producto";
+            img.addEventListener("click", () => {
+                cambiarImagen(index + 1); // Cambiar a la imagen adicional
+            });
+            galeriaContenedor.appendChild(img);
+        });
+    }
+
+    // Resetear cantidad a 1
+    document.getElementById("detalle-cantidad").textContent = "1";
+
+    // Mostrar productos sugeridos (solo productos disponibles)
+    mostrarProductosSugeridos(producto);
+
+    // Ocultar productos y carrito; mostrar detalle
+    document.getElementById("productos").style.display = "none";
+    document.getElementById("carrito").style.display = "none";
+    document.getElementById("detalle-producto").style.display = "block";
+
+    // Ocultar el slider si existe
+    let slider = document.querySelector(".slider");
+    if (slider) {
+        slider.style.display = "none";
+    }
+
+    document.getElementById("imagen-principal-container").addEventListener("touchstart", (e) => {
+        touchStartX = e.touches[0].clientX;
+    });
+
+    document.getElementById("imagen-principal-container").addEventListener("touchend", (e) => {
+        const touchEndX = e.changedTouches[0].clientX;
+        const deltaX = touchStartX - touchEndX;
+
+        if (Math.abs(deltaX) > 50) {
+            if (deltaX > 0) {
+                // Deslizamiento hacia la izquierda (siguiente imagen)
+                currentImageIndex = (currentImageIndex + 1) % totalImagenes;
+            } else {
+                // Deslizamiento hacia la derecha (imagen anterior)
+                currentImageIndex = (currentImageIndex - 1 + totalImagenes) % totalImagenes;
+            }
+            cambiarImagen(currentImageIndex); // Cambiar a la imagen correspondiente
+        }
+    });
+    // Guardar estado en el historial
+    history.pushState({ tipo: "producto", producto }, "", `#producto-${encodeURIComponent(producto.nombre)}`);
+    const nombreProductoAmigable = producto.nombre
+        .toLowerCase() // Convertir a minúsculas
+        .replace(/[^a-z0-9]+/g, '-') // Reemplazar espacios y caracteres especiales con guiones
+        .replace(/^-+|-+$/g, ''); // Eliminar guiones al inicio y al final
+
+    history.pushState(
+        { tipo: "producto", producto },
+        "",
+        `#producto-${nombreProductoAmigable}`
+    );
+}
+
+
+function actualizarPuntosIndicadores(index) {
+    document.querySelectorAll(".punto-indicador").forEach((punto, i) => {
+        punto.classList.toggle("activo", i === index);
+    });
+}
+
+
+
+function cambiarImagen(index) {
+    const imagenPrincipal = document.getElementById("detalle-imagen");
+    imagenPrincipal.style.opacity = 0;
+
+    setTimeout(() => {
+        imagenPrincipal.src = index === 0 ? 
+            productoActual.imagen : 
+            productoActual.imagenesAdicionales[index - 1];
+        imagenPrincipal.style.opacity = 1;
+        actualizarPuntosIndicadores(index);
+
+        // Actualizar currentImageIndex
+        currentImageIndex = index;
+    }, 300);
+}
+
+function mostrarProductosSugeridos(producto) {
+    const sugeridosContainer = document.getElementById("productos-sugeridos");
+    const sugeridosContenedor = sugeridosContainer.querySelector(".sugeridos-contenedor");
+    sugeridosContenedor.innerHTML = ""; // Limpiar sugerencias previas
+
+    // Filtrar productos de la misma categoría, disponibles y excluir el actual
+    const productosSugeridos = productos
+        .filter(p => p.categoria === producto.categoria && p.nombre !== producto.nombre && p.disponible)
+        .slice(0, 6); // Mostrar hasta 6 sugerencias
+
+    if (productosSugeridos.length === 0) {
+        sugeridosContainer.style.display = "none"; // Ocultar si no hay sugerencias
+        return;
+    }
+
+    sugeridosContainer.style.display = "block"; // Mostrar el contenedor de sugerencias
+
+    productosSugeridos.forEach(sugerido => {
+        const productoDiv = document.createElement("div");
+        productoDiv.className = "producto-sugerido";
+        productoDiv.innerHTML = `
+            <img src="${sugerido.imagen}" alt="${sugerido.nombre}" class="sugerido-imagen">
+            <p class="nombre">${sugerido.nombre}</p>
+            <p class="precio">$${sugerido.precio.toFixed(2)}</p>
+            ${sugerido.oferta ? `<p class="oferta-badge">¡En oferta!</p>` : ''}
+            ${sugerido.mas_vendido ? `<p class="mas-vendido-badge">Más Vendido</p>` : ''}
+        `;
+
+        // Agregar efecto hover
+        productoDiv.addEventListener("mouseenter", () => {
+            productoDiv.style.transform = "scale(1.05)";
+            productoDiv.style.transition = "transform 0.3s ease";
+        });
+        productoDiv.addEventListener("mouseleave", () => {
+            productoDiv.style.transform = "scale(1)";
+        });
+
+        // Mostrar detalles del producto sugerido al hacer clic
+        productoDiv.addEventListener("click", () => mostrarDetallesProducto(sugerido));
+
+        sugeridosContenedor.appendChild(productoDiv);
+    });
+}
+
+// Función para agregar al carrito desde los detalles
+document.getElementById("detalle-agregar-carrito").addEventListener("click", () => {
+    const nombre = document.getElementById("detalle-nombre").textContent;
+    const precio = parseFloat(document.getElementById("valor-precio-total").textContent.replace("Precio: $", ""));
+    const imagen = document.getElementById("detalle-imagen").src;
+    const cantidad = parseInt(document.getElementById("detalle-cantidad").textContent);
+
+    // Usar la función agregarAlCarrito que ya está definida
+    agregarAlCarrito(nombre, precio, 'detalle-cantidad', imagen, document.getElementById("detalle-agregar-carrito"));
+});
+
+// Función para volver a los productos
+document.getElementById("volver-productos").addEventListener("click", (e) => {
+    e.preventDefault(); // Evitar la recarga de la página
+
+    // Verificar si el usuario estaba en el panel de electrodomésticos
+    const panelElectrodomesticos = document.getElementById("panel-electrodomesticos");
+    if (panelElectrodomesticos && panelElectrodomesticos.style.display === "block") {
+        // Volver al panel de electrodomésticos
+        document.getElementById("detalle-producto").style.display = "none";
+        panelElectrodomesticos.style.display = "block";
+    } else {
+        // Volver a la página principal
+        document.getElementById("detalle-producto").style.display = "none";
+        document.getElementById("productos").style.display = "block";
+
+        // Mostrar el slider si existe
+        const slider = document.querySelector(".slider");
+        if (slider) {
+            slider.style.display = "block";
+        }
+    }
+
+    // Actualizar el historial de navegación sin recargar la página
+    history.pushState({ tipo: "productos" }, "", window.location.pathname + window.location.search);
+});
+
+// Incrementar y decrementar cantidad
+document.getElementById("btn-sumar").addEventListener("click", () => {
+    let cantidad = parseInt(document.getElementById("detalle-cantidad").textContent);
+    document.getElementById("detalle-cantidad").textContent = cantidad + 1;
+});
+
+document.getElementById("btn-restar").addEventListener("click", () => {
+    let cantidad = parseInt(document.getElementById("detalle-cantidad").textContent);
+    if (cantidad > 1) {
+        document.getElementById("detalle-cantidad").textContent = cantidad - 1;
+    }
+});
+
+function renderProductosEnContenedor(productos, contenedorId) {
+    const contenedor = document.getElementById(contenedorId);
+    contenedor.innerHTML = ""; // Limpiar el contenedor
+
+    productos.forEach((producto) => {
+        const productoDiv = document.createElement("div");
+        productoDiv.className = "product-card";
+        productoDiv.dataset.nombre = producto.nombre;
+        productoDiv.dataset.categoria = producto.categoria;
+
+        let precio = producto.precio;
+        let pvpr = producto.precio; // Precio original (PVPR)
+        let descuento = '';
+
+        // Asegurarse de que el precio tenga dos decimales
+        precio = precio.toFixed(2);
+        if (producto.oferta) {
+            pvpr = producto.precio;
+            precio = (producto.precio - (producto.precio * (producto.descuento / 100))).toFixed(2);
+            descuento = `<span class="oferta-badge">Oferta</span>`;
+        }
+
+        const pvprHtml = producto.oferta ? `<p class="pvpr">PVPR: US$<s>${pvpr.toFixed(2)}</s></p>` : '';
+
+        // Mostrar disponibilidad
+        const disponibilidadHtml = producto.disponible
+            ? `<div class="disponibilidad disponible">Disponible</div>`
+            : `<div class="disponibilidad no-disponible">No Disponible</div>`;
+
+        // Estructura de la tarjeta de producto en formato horizontal
+        productoDiv.innerHTML = `
+            <div class="product-image-container">
+                ${descuento}
+                <img src="${producto.imagen}" alt="${producto.nombre}" class="product-image">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">${producto.nombre}</h2>
+                <div class="price-container">
+                    <p class="product-price">US$${precio}</p>
+                    ${pvprHtml}
+                </div>
+                ${disponibilidadHtml}
+            </div>
+        `;
+
+        // Agregar evento para abrir el modal cuando se hace clic en el producto
+        productoDiv.addEventListener('click', (e) => {
+            mostrarDetallesProducto(producto);
+        });
+
+        contenedor.appendChild(productoDiv);
+    });
+}
+
+function mostrarPanelElectrodomesticos() {
+    window.scrollTo({ top: 0 });
+    // Ocultar otros paneles
+    document.getElementById("productos").style.display = "none";
+    document.getElementById("detalle-producto").style.display = "none";
+    document.getElementById("carrito").style.display = "none";
+
+    // Ocultar el slider
+    const slider = document.querySelector(".slider");
+    if (slider) {
+        slider.style.display = "none";
+    }
+
+    // Mostrar el panel de electrodomésticos
+    const panelElectrodomesticos = document.getElementById("panel-electrodomesticos");
+    panelElectrodomesticos.style.display = "block";
+
+    // Filtrar solo los electrodomésticos disponibles
+    const electrodomesticos = productos.filter(producto => 
+        producto.categoria === "electrodomesticos" && producto.disponible
+    );
+
+    // Renderizar solo los electrodomésticos en el panel
+    renderProductosEnContenedor(electrodomesticos, "lista-electrodomesticos");
+
+    // Actualizar el historial de navegación
+    history.pushState({ tipo: "electrodomesticos" }, "", "#electrodomesticos");
+}
+
+// Cerrar el panel de electrodomésticos
+document.getElementById("cerrar-electrodomesticos").addEventListener("click", () => {
+    document.getElementById("panel-electrodomesticos").style.display = "none";
+    document.getElementById("productos").style.display = "block";
+
+    // Mostrar el slider si existe
+    const slider = document.querySelector(".slider");
+    if (slider) {
+        slider.style.display = "block";
+    }
+
+    // Actualizar el historial de navegación
+    history.pushState({ tipo: "productos" }, "", window.location.pathname + window.location.search);
+});
+
+
+function formatearDescripcion(descripcion) {
+    // Si la descripción tiene puntos clave separados por comas o puntos, la convertimos en una lista
+    if (descripcion.includes(". ") || descripcion.includes(", ")) {
+        // Dividir la descripción en puntos clave
+        const puntosClave = descripcion.split(". ").filter(punto => punto.trim() !== "");
+
+        // Crear una lista HTML con los puntos clave
+        const listaHTML = puntosClave.map(punto => `<li>${punto}</li>`).join("");
+        return `<ul class="descripcion-lista">${listaHTML}</ul>`;
+    } else {
+        // Si no, mostrar la descripción como párrafos
+        return `<p class="descripcion-parrafo">${descripcion}</p>`;
+    }
+}
 //-----------------------------Notificaciones-----------------------------------------
 //-------------------------------------------------------------------------------------
 // Verificar soporte de Notificaciones
-if ('Notification' in window && 'serviceWorker' in navigator) {
+/*if ('Notification' in window && 'serviceWorker' in navigator) {
     // Registrar un service worker
     navigator.serviceWorker.register('Js/service-worker.js').then(function(registration) {
         console.log('Service Worker registrado con éxito:', registration);
@@ -1218,3 +1691,4 @@ if ('Notification' in window && 'serviceWorker' in navigator) {
 } else {
     console.error('Tu navegador no soporta notificaciones.');
 }
+*/
