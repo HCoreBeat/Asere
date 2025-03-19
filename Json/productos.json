@@ -510,7 +510,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Paquete_Harina.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Croqueta Jamón (500g)",
