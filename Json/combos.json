@@ -10,26 +10,6 @@
         "imagen": "img/combos/combo_febrero.jpg",
         "disponible": false
     },{
-        "nombre": "Pack Pa La Isla",
-        "categoria": "combos",
-        "productos": [
-          "10lb Cerdo", 
-          "5lb Ovejo", 
-          "x1 Paquete de Pollo",
-          "x1 Fill de Huevo",
-          "x2 Paquete de Salchicha",
-          "1Kg Picadillo de Pollo",
-          "x2 Lata de Spam",
-          "x12 Hamburguesas",
-          "2Kg Arroz",
-          "x2 Spaguettis",
-          "x4 Sopas Instantaneas",
-          "x5 Refrescos de Polvo",
-          "x1 Pomo de Aceite"],
-        "precio": 85.71,
-        "imagen": "img/combos/combo1.jpg",
-        "disponible": true
-    },{
     "nombre": "Pack Especial",
     "categoria": "combos",
     "productos": [
@@ -93,6 +73,26 @@
       "x27 Confituras Varias"],
     "precio": 14.285,
     "imagen": "img/combos/Pack_Confituras.jpg",
+    "disponible": true
+  },{
+    "nombre": "Pack Pa La Isla",
+    "categoria": "combos",
+    "productos": [
+      "10lb Cerdo", 
+      "5lb Ovejo", 
+      "x1 Paquete de Pollo",
+      "x1 Fill de Huevo",
+      "x2 Paquete de Salchicha",
+      "1Kg Picadillo de Pollo",
+      "x2 Lata de Spam",
+      "x12 Hamburguesas",
+      "2Kg Arroz",
+      "x2 Spaguettis",
+      "x4 Sopas Instantaneas",
+      "x5 Refrescos de Polvo",
+      "x1 Pomo de Aceite"],
+    "precio": 85.71,
+    "imagen": "img/combos/combo1.jpg",
     "disponible": true
   }
 ]
