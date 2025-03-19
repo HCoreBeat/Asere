@@ -10,7 +10,7 @@
         "imagen": "img/combos/combo_febrero.jpg",
         "disponible": false
     },{
-        "nombre": "Combo Pa La Isla",
+        "nombre": "Pack Pa La Isla",
         "categoria": "combos",
         "productos": [
           "10lb Cerdo", 
@@ -30,57 +30,69 @@
         "imagen": "img/combos/combo1.jpg",
         "disponible": true
     },{
-      "nombre": "Combo Pa La Isla 2",
-      "categoria": "combos",
-      "productos": [
-        "x1 1Kg Leche en Polvo", 
-        "x1 Paquete Café el Ricote", 
-        "x1 Paquete de Chocolate",
-        "2Kg Azúcar Blanca",
-        "x2 Latas de Leche condensada",
-        "x2 Latas de Leche evaporada",
-        "x1 Paquete de Galleta salada",
-        "x1 Paquete de Pollo",
-        "x2 Unidades de Salchichas",
-        "x1 Fill de Huevos",
-        "3Kg Arroz",
-        "x1 Paquete de Garbanzo 500g",
-        "1Kg Frijoles",
-        "x2 Spaguettis",
-        "x1 Lata de Puré",
-        "x1 Pomo Aceite",
-        "x2 Latas de Spam"],
-      "precio": 85.71,
-      "imagen": "img/combos/combo1.jpg",
-      "disponible": false
-  }
-  ,{
-    "nombre": "Combo Pa La Isla 3",
+    "nombre": "Pack Especial",
     "categoria": "combos",
     "productos": [
-      "x4lt Helado", 
-      "x2 Latas de Leche condensada", 
-      "x2 Gelatina",
-      "x1 Caja de Malta",
-      "x1 Chocolate en Polvo",
-      "x1 Paquete de Maicena",
-      "x1 Paquete de Galleta Salrica"],
-    "precio": 85.71,
-    "imagen": "img/combos/combo1.jpg",
-    "disponible": false
+      "x1 Spaguettis", 
+      "x1 Paquete de Salchicha", 
+      "x1 Pasta de Tomate",
+      "x1 Zason Goya",
+      "x5 Paquetes de Refresco",
+      "x1 Ketchup"],
+    "precio": 11.3333,
+    "imagen": "img/combos/pack_1.jpg",
+    "disponible": true
   },{
-    "nombre": "Combo Pa La Isla 4",
+    "nombre": "Pack del Momento",
     "categoria": "combos",
     "productos": [
-      "10lb Cerdo", 
-      "x1 Paquete de Pollo", 
-      "5lb Obejo",
-      "x2 Paquete de Salchicha",
-      "2kg Picadillo de Pollo",
-      "x2 Latas de Spam",
-      "x1 Fill de Huevo"],
-    "precio": 85.71,
-    "imagen": "img/combos/combo1.jpg",
-    "disponible": false
+      "x1 Bolsa de Pan", 
+      "x1 Mantequilla Mesa", 
+      "x1 Chocolate en Polvo",
+      "x4 Hamburguesas"],
+    "precio": 10.18,
+    "imagen": "img/combos/pack_3.jpg",
+    "disponible": true
+  },{
+    "nombre": "Pack Estilizado",
+    "categoria": "combos",
+    "productos": [
+      "x1 Pomo de aceite", 
+      "x1 Paquete de pollo 2Kg (Muslos)", 
+      "1Kg Arroz",
+      "x1 Picadillo Especial (400g)"],
+    "precio": 15.238,
+    "imagen": "img/combos/pack_4.jpg",
+    "disponible": true
+  },{
+    "nombre": "Pack Familiar",
+    "categoria": "combos",
+    "productos": [
+      "1Kg Picadillo Pollo", 
+      "x1 Pomo de Aceite", 
+      "1Kg Arroz",
+      "x2 Pastillas de Pollo",
+      "x3 Sopa Instantanea"],
+    "precio": 12.38,
+    "imagen": "img/combos/pack_5.jpg",
+    "disponible": true
+  },{
+    "nombre": "Pack Ligero",
+    "categoria": "combos",
+    "productos": [
+      "x1 Paquete de Cafe", 
+      "5Lb Azucar", 
+      "x2 Bolsa de Pan"],
+    "precio": 15.238,
+    "imagen": "img/combos/pack_6.jpg",
+    "disponible": true
+  },{
+    "nombre": "Pack Confituras",
+    "categoria": "combos",
+    "productos": [
+      "x27 Confituras Varias"],
+    "precio": 14.285,
+    "imagen": "img/combos/Pack_Confituras.jpg",
+    "disponible": true
   }
 ]
