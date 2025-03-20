@@ -1063,6 +1063,8 @@ function mostrarCarrito() {
     document.getElementById("productos").style.display = "none";
     document.getElementById("detalle-producto").style.display = "none";
     document.getElementById("carrito").style.display = "block";
+    
+    document.getElementById("panel-electrodomesticos").style.display = "none";
 
     let slider = document.querySelector(".slider");
     if (slider) {
@@ -1073,7 +1075,6 @@ function mostrarCarrito() {
     history.pushState({ tipo: "carrito" }, "", "#carrito");
 
     renderCarrito();
-
 }
 
 function ocultarCarrito() {
@@ -1658,24 +1659,6 @@ function formatearDescripcion(descripcion) {
     }
 }
 
-window.addEventListener("popstate", (event) => {
-    if (event.state && event.state.tipo === "electrodomesticos") {
-        // Mostrar el panel de electrodomésticos
-        document.getElementById("panel-electrodomesticos").style.display = "block";
-        document.getElementById("productos").style.display = "none";
-        document.getElementById("detalle-producto").style.display = "none";
-        document.getElementById("carrito").style.display = "none";
-    } else if (event.state && event.state.tipo === "producto") {
-        // Mostrar el detalle del producto
-        mostrarDetallesProducto(event.state.producto);
-    } else {
-        // Mostrar la página principal
-        document.getElementById("productos").style.display = "block";
-        document.getElementById("panel-electrodomesticos").style.display = "none";
-        document.getElementById("detalle-producto").style.display = "none";
-        document.getElementById("carrito").style.display = "none";
-    }
-});
 //-----------------------------Notificaciones-----------------------------------------
 //-------------------------------------------------------------------------------------
 // Verificar soporte de Notificaciones
