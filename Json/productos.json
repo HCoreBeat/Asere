@@ -1035,7 +1035,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Vinagre.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Leche entera en polvo «Vima» (1kg)",
