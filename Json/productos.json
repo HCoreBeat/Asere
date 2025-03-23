@@ -654,7 +654,7 @@
     },
     {
         "nombre": "Mano de plátano burro",
-        "categoria": "otros",
+        "categoria": "agro",
         "precio": 0.90,
         "descuento": 10,
         "oferta": false,
@@ -664,7 +664,7 @@
     },
     {
         "nombre": "Pepino x Lb",
-        "categoria": "otros",
+        "categoria": "agro",
         "precio": 0.55,
         "descuento": 10,
         "oferta": false,
@@ -674,7 +674,7 @@
     },
     {
         "nombre": "Tomate x Lb",
-        "categoria": "otros",
+        "categoria": "agro",
         "precio": 0.885,
         "descuento": 10,
         "oferta": false,
@@ -684,7 +684,7 @@
     },
     {
         "nombre": "Limón x Lb",
-        "categoria": "otros",
+        "categoria": "agro",
         "precio": 1.20,
         "descuento": 10,
         "oferta": false,
@@ -694,7 +694,7 @@
     },
     {
         "nombre": "Plátano macho x unidad",
-        "categoria": "otros",
+        "categoria": "agro",
         "precio": 0.25,
         "descuento": 10,
         "oferta": false,
@@ -704,7 +704,7 @@
     },
     {
         "nombre": "Boniato x Lb",
-        "categoria": "otros",
+        "categoria": "agro",
         "precio": 0.40,
         "descuento": 10,
         "oferta": false,
