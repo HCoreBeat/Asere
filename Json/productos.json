@@ -160,14 +160,15 @@
         "disponible": true
     },
     {
-        "nombre": "Maíz Dulce en Grano (340g)",
+        "nombre": "Maíz Dulce en Grano Vima (425g)",
         "categoria": "enlatados",
-        "precio": 1.90,
+        "precio": 1.809,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
-        "imagen": "img/products/Maiz_Dulce_en_Grano.jpg",
-        "disponible": true
+        "imagen": "img/products/maiz_en_grano_dulce_vima_425gm.jpg",
+        "disponible": true,
+        "descripcion":"El maíz dulce en grano de Vima Foods, disponible en una lata de 15 oz (425 g), es ideal para añadir sabor y calidad a tus recetas favoritas. Con un drenado neto de 8.1 oz (230 g), este producto vegano y de calidad premium ofrece granos frescos y tiernos que son perfectos para ensaladas, guisos, sopas y más. Disfruta de la versatilidad del maíz dulce en grano Vima Foods, diseñado para satisfacer a los paladares más exigentes."
     },
     {
         "nombre": "Salchicha de pollo y cerdo 10u (340g)",
@@ -445,12 +446,71 @@
     {
         "nombre": "Pasta de tomate Vima (400g)",
         "categoria": "enlatados",
-        "precio": 2.45,
+        "precio": 1.885,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Pasta_de_Tomate_Vima.jpeg",
-        "disponible": false
+        "disponible": true,
+        "descripcion":"El puré de tomate Vima Foods es el aliado perfecto para realzar el sabor de tus platillos favoritos. Con un contenido neto de 400 g (14 oz.), este puré de alta calidad cuenta con una textura suave y un sabor concentrado que lo hace ideal para salsas, guisos y más. Presentado en una lata con abre fácil, garantiza practicidad y frescura en cada uso. Transforma tus recetas con el auténtico toque del puré de tomate Vima Foods, diseñado para satisfacer a los paladares más exigentes."
+    },
+    {
+        "nombre": "Arroz grano largo Vima (1Kg)",
+        "categoria": "despensa",
+        "precio": 2.828,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/arroz_grano_largo_vima.jpg",
+        "disponible": true,
+        "descripcion":"El arroz de grano largo Vima Foods, con un contenido neto de 1 kg (2.2 lb), es ideal para preparar tus comidas favoritas. Este producto 100% natural, vegano y libre de organismos modificados genéticamente (GMO), garantiza una excelente calidad en cada grano. Perfecto para acompañar guisos, ensaladas y recetas internacionales, el arroz de grano largo Vima Foods es la elección inteligente para una alimentación saludable y deliciosa."
+    },
+    {
+        "nombre": "Queso Gouda Premium (3Kg)",
+        "categoria": "lacteos",
+        "precio": 40,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/queso_gouda premium.jpg",
+        "disponible": true,
+        "descripcion":"Disfruta del auténtico sabor del queso Gouda de Vima Foods, elaborado con ingredientes 100% naturales que garantizan una calidad inigualable. Su textura suave y cremosa es perfecta para realzar tus recetas favoritas, desde sándwiches y ensaladas hasta platos gourmet. Además, viene empacado para preservar su frescura y sabor, convirtiéndolo en una elección ideal tanto para bocadillos sencillos como para ocasiones especiales.",
+        "imagenesAdicionales":[
+            "img/products/queso_gouda_premium_2.jpg"
+        ]
+    },
+    {
+        "nombre": "Kg de Queso Gouda Premium",
+        "categoria": "lacteos",
+        "precio": 17.4,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/queso_gouda_Kg.jpg",
+        "disponible": true,
+        "descripcion":"Descubre el exquisito sabor del queso Gouda Premium, ahora disponible por kilogramos para adaptarse a tus necesidades. Este queso premium, elaborado con ingredientes 100% naturales, ofrece una textura suave y un sabor intenso que lo convierte en la elección ideal para tus recetas gourmet o para disfrutar en bocadillos frescos. Perfecto para amantes de la calidad y la frescura, cada kilogramo está cuidadosamente empacado para garantizar que llegue a ti en óptimas condiciones. Lleva la excelencia del queso Gouda Premium a tu cocina y deleita tu paladar con cada porción."
+    },
+    {
+        "nombre": "Salsa Cocktail Vima (225ml)",
+        "categoria": "aderezos",
+        "precio": 2.533,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/salsa_cocktail_225ml_vima.jpg",
+        "disponible": true,
+        "descripcion":"La salsa cocktail de Vima Foods es el complemento perfecto para tus platos de pescados, mariscos y ensaladas. Con un contenido neto de 225 ml, esta salsa destaca por su sabor delicioso y su versatilidad en la cocina. Presentada en un frasco con tapa verde y diseño elegante, garantiza frescura y calidad en cada cucharada. Dale un toque especial a tus comidas con la salsa cocktail de Vima Foods, ideal para realzar sabores y sorprender a tus invitados."
+    },
+    {
+        "nombre": "Mayonesa Vima (450ml)",
+        "categoria": "aderezos",
+        "precio": 3.971,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/Mayonesa_Vima.jpg",
+        "disponible": true,
+        "descripcion":"Descubre la mayonesa Vima Foods de 450 ml, elaborada con ingredientes de alta calidad para garantizar un sabor auténtico y delicioso. Perfecta para acompañar sándwiches, ensaladas y tus recetas favoritas, esta mayonesa destaca por su textura cremosa y su frescura incomparable. Su presentación en un frasco práctico con tapa verde asegura la conservación del sabor y la comodidad en cada uso. Haz de Vima Foods tu elección de confianza para realzar cada bocado."
     },
     {
         "nombre": "Azúcar (1Kg)",
@@ -503,7 +563,7 @@
         "disponible": true
     },
     {
-        "nombre": "Paquete de harina 1kg",
+        "nombre": "Paquete de harina (1kg)",
         "categoria": "despensa",
         "precio": 2.80,
         "descuento": 10,
@@ -513,14 +573,29 @@
         "disponible": false
     },
     {
-        "nombre": "Croqueta Jamón (500g)",
+        "nombre": "Ajo Pelado (1kg)",
         "categoria": "despensa",
-        "precio": 2.93,
+        "precio": 6.857,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
-        "imagen": "img/products/Croqueta_Jamon.jpeg",
-        "disponible": false
+        "imagen": "img/products/ajo_pelado_1_Kg_Vima.jpg",
+        "disponible": true,
+        "descripcion":"Los dientes de ajo pelados de Vima Foods, con un peso neto de 1 kg (35.2 oz.), son ideales para facilitar la preparación de tus recetas. Este producto 100% natural garantiza frescura y calidad, ofreciendo comodidad y ahorro de tiempo en la cocina. Perfectos para realzar el sabor de tus platos, los dientes de ajo pelados de Vima Foods se presentan en un envase práctico que conserva su textura y aroma característico. Simplifica tu cocina sin renunciar a la calidad."
+    },
+    {
+        "nombre": "Croqueta Jamón (500g)",
+        "categoria": "despensa",
+        "precio": 2.666,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/croqueta_jamon_vima.jpg",
+        "disponible": true,
+        "imagenesAdicionales":[
+            "img/products/croqueta_jamon_vima_2.jpg"
+        ],
+        "descripcion":"Las croquetas de jamón Vima Foods son la opción ideal para disfrutar de un sabor auténtico y delicioso en cada bocado. Con un peso neto de 500 g (17.6 oz.), estas croquetas están elaboradas siguiendo una receta tradicional española que garantiza calidad y frescura. Perfectas para freír directamente desde el estado congelado, son ideales como aperitivo, acompañamiento o incluso plato principal. Disfruta de la tradición y el sabor de las croquetas de jamón Vima Foods en tu mesa."
     },
     {
         "nombre": "Frijoles Negros (1Kg)",
@@ -1085,7 +1160,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Pasta_de_Tomate.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Menthoplus",
@@ -1255,16 +1330,6 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Colobnia_Bonabel_de_Violetas.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Mayonesa Vima (450ml)",
-        "categoria": "aderezos",
-        "precio": 4,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Mayonesa_Vima.jpg",
         "disponible": true
     },
     {
