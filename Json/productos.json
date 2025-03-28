@@ -872,7 +872,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Caja_de_Refresco_Piña.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Sidra «La Aldeana» (sin alcohol)",
