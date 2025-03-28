@@ -7,5 +7,12 @@
     { "id": "SDFiop0", "nombre": "Salomon" },
     { "id": "HCoreBeat", "nombre": "Huguito" },
     { "id": "E0325as=", "nombre": "Eliza" },
-    { "id": "M00mAr25", "nombre": "Milena" }
+    { "id": "M00mAr25", "nombre": "Milena" },
+    
+    
+    { "id": "Qer35Tg", "nombre": "Rigo", "fecha": "2025-03-27T20:06:00-05:00" },
+    { "id": "K83ufh=", "nombre": "Manolo", "fecha": "2025-03-27T20:06:00-05:00" },
+    { "id": "Goi204j", "nombre": "Elier Barbero", "fecha": "2025-03-27T20:06:00-05:00" },
+    { "id": "Ajd46vu=", "nombre": "Pica", "fecha": "2025-03-27T20:06:00-05:00" },
+    { "id": "KJF84Jljg", "nombre": "Rafiki", "fecha": "2025-03-27T20:06:00-05:00" }
 ]
