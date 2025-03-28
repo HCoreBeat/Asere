@@ -922,7 +922,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Caja_de_Refresco_Limon.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Refresco Piña 2Lts",
@@ -932,7 +932,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Refresco_Piña.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Refresco Cola (330ml)",
