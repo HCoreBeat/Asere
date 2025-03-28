@@ -1042,7 +1042,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Refresco_Piña_Brio.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Rollitos de Primavera (200g)",
