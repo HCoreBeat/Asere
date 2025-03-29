@@ -43,7 +43,7 @@
       "x1 Picadillo Especial (400g)"],
     "precio": 15.238,
     "imagen": "img/combos/pack_4.jpg",
-    "disponible": true
+    "disponible": false
   },{
     "nombre": "Pack Familiar",
     "categoria": "combos",
@@ -93,6 +93,6 @@
       "x1 Pomo de Aceite"],
     "precio": 85.71,
     "imagen": "img/combos/combo1.jpg",
-    "disponible": true
+    "disponible": false
   }
 ]
