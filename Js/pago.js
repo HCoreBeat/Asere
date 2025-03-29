@@ -18,10 +18,15 @@ function calculateTotal(items) {
     return items.reduce((total, item) => total + item.precio * item.cantidad, 0).toFixed(2);
 }
 
-// Función para verificar si el total cumple con el mínimo requerido
 function isTotalAboveMinimum() {
     const cartItems = getCartItems();
-    const total = calculateTotal(cartItems);
+    // Filtrar solo productos disponibles
+    const productosDisponibles = cartItems.filter(item => {
+        const productoEnDB = productos.find(p => p.nombre === item.nombre) || 
+                            combos.find(c => c.nombre === item.nombre);
+        return productoEnDB ? productoEnDB.disponible : false;
+    });
+    const total = calculateTotal(productosDisponibles);
     return total >= 10;
 }
 
@@ -34,8 +39,15 @@ function fillPaymentForm() {
     // Limpiar contenido previo
     summaryItemsContainer.innerHTML = '';
 
-    // Llenar la tabla con los productos del carrito
-    cartItems.forEach(item => {
+    // Filtrar solo productos disponibles
+    const productosDisponibles = cartItems.filter(item => {
+        const productoEnDB = productos.find(p => p.nombre === item.nombre) || 
+                            combos.find(c => c.nombre === item.nombre);
+        return productoEnDB ? productoEnDB.disponible : false;
+    });
+
+    // Llenar la tabla con los productos disponibles del carrito
+    productosDisponibles.forEach(item => {
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${item.nombre}</td>
@@ -46,8 +58,21 @@ function fillPaymentForm() {
         summaryItemsContainer.appendChild(row);
     });
 
-    // Mostrar el total de la compra
-    summaryTotal.textContent = `Total a pagar: $${calculateTotal(cartItems)}`;
+    // Mostrar el total de la compra solo con productos disponibles
+    const totalDisponible = calculateTotal(productosDisponibles);
+    summaryTotal.textContent = `Total a pagar: $${totalDisponible}`;
+    
+    // Mostrar advertencia si hay productos no disponibles
+    if (productosDisponibles.length < cartItems.length) {
+        const warningRow = document.createElement('tr');
+        warningRow.innerHTML = `
+            <td colspan="4" class="warning-row">
+                <i class="fas fa-exclamation-triangle"></i>
+                Algunos productos de tu carrito no están disponibles y se mantendrán en el carrito
+            </td>
+        `;
+        summaryItemsContainer.appendChild(warningRow);
+    }
 }
 
 // Mostrar la planilla de pago al presionar "Proceder al Pago"
@@ -170,8 +195,11 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
     const address = document.getElementById('address').value;
     const termsAccepted = document.getElementById('terms').checked;
     const phone = document.getElementById('phone').value;
+    // Nuevos campos
+    const recipientName = document.getElementById('recipient-name').value;
+    const recipientPhone = document.getElementById('recipient-phone').value;
 
-    if (!fullName || !email || !address || !termsAccepted || !phone) {
+    if (!fullName || !email || !address || !termsAccepted || !phone || !recipientName || !recipientPhone) {
         alert('Por favor, rellena todos los campos obligatorios y acepta los términos y condiciones.');
         return;
     }
@@ -188,8 +216,13 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
     const message = `
         Nombre completo: ${fullName}
         Correo electrónico: ${email}
-        Telefono: ${phone}
-        Dirección: ${address}
+        Teléfono del comprador: ${phone}
+
+        Datos del destinatario:
+        Nombre del destinatario: ${recipientName}
+        Teléfono del destinatario: ${recipientPhone}
+
+        Dirección de envío: ${address}
         Afiliado: ${affiliate}
         
         Detalles del pedido:
