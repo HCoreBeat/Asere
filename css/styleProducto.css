@@ -186,7 +186,7 @@
     margin-bottom: 20px;
 }
 
-.cantidad label {
+#cantidad-text {
     font-size: 20px;
     color: white;
     background-color: #00796b;
