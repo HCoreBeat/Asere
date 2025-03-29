@@ -17,7 +17,7 @@
         "oferta": true,
         "mas_vendido": true,
         "imagen": "img/products/Pollo_Golden.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Carne de cerdo x Lb",
@@ -1213,7 +1213,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Melocoton_en_Almibar_Vima.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Fresas en almibar (425g)",
@@ -1223,7 +1223,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Fresas_en_Almibar.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Maicena Nezka (500g)",
@@ -1243,7 +1243,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Lata_de_Frijol_Rojo.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Pasta de tomate OZER 400g",
@@ -1253,7 +1253,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Pasta_de_Tomate_Ozer.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Codito Badelli (350g)",
@@ -1303,7 +1303,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Pasta_dental.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Desodorante Keewell",
@@ -1323,7 +1323,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Toallitas_Humedas.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Jabón de Baño (100g)",
