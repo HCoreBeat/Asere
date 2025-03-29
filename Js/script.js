@@ -2,8 +2,15 @@
 // Array para almacenar los productos del carrito
 let carrito = [];
 let productos = [];
+let combos = [];
+let productoActual = null; // Variable global para almacenar el producto actual
+let totalImagenes = 0; // Variable global para almacenar el total de imágenes
+// para definir si el panel electrodomesticos esta abierto o no
+let panelElectrodomesticosAbierto = false; // Variable para guardar el estado del panel
+
 
 document.addEventListener("DOMContentLoaded", () => {
+    
     const menuToggle = document.querySelector(".menu-toggle");
     const navMenu = document.querySelector("nav ul");
     const overlay = document.querySelector(".overlay");
@@ -49,694 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const enableScroll = () => {
         document.body.style.overflow = "auto";
     };
-
-    function removeDuplicates(productos) {
-        const uniqueProductos = [];
-        const productoNames = new Set();
-    
-        productos.forEach(producto => {
-            if (!productoNames.has(producto.nombre)) {
-                productoNames.add(producto.nombre);
-                uniqueProductos.push(producto);
-            }
-        });
-    
-        return uniqueProductos;
-    }
-    
-    function limpiarProductosContainer() {
-        // Limpiar el contenedor de productos
-        const productosContainer = document.getElementById("productos-container");
-        while (productosContainer.firstChild) {
-            productosContainer.removeChild(productosContainer.firstChild);
-        }
-    }
-
-    // Función para actualizar los precios con el cálculo del precio total
-    function actualizarPrecios(productos) {
-        productos.forEach(producto => {
-            if (producto.precio !== undefined) {
-                const total = producto.precio * 0.05;
-                producto.precio = +(producto.precio + total).toFixed(2); // Actualiza el precio con el total calculado
-            }
-        });
-        return productos;
-    }
-    
-    function renderProductos() {
-        limpiarProductosContainer(); // Limpiar productos actuales
-    
-        // Combinar productos y combos en un solo array
-        const productosYCombos = [...productos, ...combos]; 
-
-        // Eliminar productos duplicados
-        const productosUnicos = removeDuplicates(productosYCombos);
-        const productosActualizados = actualizarPrecios(productosUnicos); // Actualizar precios
-
-        // Filtrar productos disponibles
-        const productosDisponibles = productosActualizados.filter(producto => 
-            producto.disponible && producto.categoria !== "combos" && producto.categoria !== "electrodomesticos"
-        );
-        // Crear el contenedor de productos más vendidos
-        const masVendidosContainer = document.createElement("div");
-        masVendidosContainer.className = "mas-vendidos-container"; // Clase para el contenedor de productos más vendidos
-        const masVendidos = productosDisponibles.filter(producto => producto.mas_vendido); // Filtrar los productos más vendidos
-    
-        // Crear un contenedor para los productos más vendidos
-        masVendidos.forEach((producto, index) => {
-            const productoDiv = document.createElement("div");
-            productoDiv.className = "producto";
-            productoDiv.dataset.nombre = producto.nombre;
-            productoDiv.dataset.categoria = producto.categoria;
-    
-            let precio = producto.precio;
-            let pvpr = producto.pvpr;
-            let descuento = '';
-    
-            // Asegurarse de que el precio tenga dos decimales
-            precio = precio.toFixed(2);
-            if (producto.oferta) {
-                pvpr = producto.precio;
-                precio = (producto.precio - (producto.precio * (producto.descuento / 100))).toFixed(2);
-                descuento = `<p class="descuento" style="text-decoration: none;">-${producto.descuento}%</p>`;
-            }
-    
-            const pvprHtml = producto.oferta ? `<p class="pvpr">PVPR: US$<s>${pvpr.toFixed(2)}</s></p>` : '';
-    
-            const etiquetaOferta = producto.oferta ? `<span class="etiqueta oferta producto-oferta">Oferta</span>` : '';
-            const etiquetaMasVendido = producto.mas_vendido ? `<div class="badge mas-vendido producto-masvendido">Más Vendido</div>` : '';
-    
-            // Mostrar disponibilidad
-            const disponibilidadHtml = producto.disponible
-                ? `<div class="disponibilidad disponible">Disponible</div>`
-                : `<div class="disponibilidad no-disponible">No Disponible</div>`;
-    
-            productoDiv.innerHTML = `
-                <div class="producto-contenedor">
-                <p class="nombre">${producto.nombre}</p>
-                    <div class="etiqueta-segmento">
-                        ${etiquetaMasVendido}
-                        ${etiquetaOferta}
-                    </div>
-                    <div class="producto-img">
-                        <img src="${producto.imagen}" alt="${producto.nombre}">
-                    </div>
-                    <div class="producto-info">
-                        <div class="pvpr-precio-contenedor">
-                            <p class="precio"><span class="currency">US$</span>${precio}</p>
-                            ${pvprHtml}
-                        </div>
-                        ${descuento}
-                        ${disponibilidadHtml} <!-- Agregar disponibilidad -->
-                    </div>
-                </div>
-            `;
-    
-            // Agregar evento para abrir el modal cuando se hace clic en el producto, excluyendo los botones
-            productoDiv.addEventListener('click', (e) => {
-                if (e.target.closest(".btn-cantidad") || e.target.closest(".btn-carrito")) return;
-            
-                mostrarDetallesProducto(producto);
-            });
-
-            // Ocultar botones y cantidad cuando el producto no está disponible
-            const botonesCantidad = productoDiv.querySelector('.cantidad-carrito-contenedor');
-            if (!producto.disponible) {
-                botonesCantidad.style.display = "none"; // Ocultar los botones de cantidad y el botón "Agregar al carrito"
-            }
-    
-            masVendidosContainer.appendChild(productoDiv);
-        });
-        
-        // Crear el panel cuadrado para electrodomésticos
-        const botonElectrodomesticos = document.createElement("div"); // Definir la variable aquí
-        botonElectrodomesticos.className = "panel-categoria";
-        botonElectrodomesticos.innerHTML = `
-            <p>Tecnologia</p>
-            <img src="img/tecnologia.jpg" alt="Tecnologia">
-            <p id="texto-comprar-ahora">Comprar ahora</p>
-        `;
-
-        // Añadir evento para abrir el panel de electrodomésticos
-        botonElectrodomesticos.addEventListener("click", () => {
-            mostrarPanelElectrodomesticos();
-        });
-
-       // Insertar el botón en el contenedor de productos
-        const separadorContainer = document.createElement("div");
-        separadorContainer.className = "separador-container";
-        
-        // Agregar la imagen al separador
-        const separadorImg = document.createElement("img");
-        separadorImg.src = "img/Pago_seguro.jpg"; // Cambia esto por la ruta de tu imagen
-        separadorImg.alt = "Separador";
-        separadorImg.className = "separador-img";
-        
-        separadorContainer.appendChild(separadorImg);
-
-
-        // Crear el contenedor para los productos por categoría
-        const categoriasContainer = document.createElement("div");
-        categoriasContainer.className = "categorias-container"; // Clase para el contenedor de categorías
-
-        // Agrupar productos por categorías
-        const categorias = [...new Set(productosDisponibles.map(producto => producto.categoria))];
-
-        categorias.forEach((categoria, index) => {
-            const categoriaDiv = document.createElement("div");
-            categoriaDiv.className = "categoria";
-            categoriaDiv.dataset.categoria = categoria;
-
-            // Crear el título de la categoría
-            const categoriaTitle = document.createElement("h2");
-            categoriaTitle.textContent = categoria;
-            categoriaDiv.appendChild(categoriaTitle);
-
-            // Filtrar productos de esta categoría
-            const productosCategoria = productosDisponibles.filter(producto => producto.categoria === categoria);
-            const categoriaProductosContainer = document.createElement("div");
-            categoriaProductosContainer.className = "productos-categoria-container";
-
-            let categoriaVisible = false; // Variable para saber si hay productos visibles en la categoría
-
-            productosCategoria.forEach((producto, productoIndex) => {
-                const productoDiv = document.createElement("div");
-                productoDiv.className = "producto";
-                productoDiv.dataset.nombre = producto.nombre;
-                productoDiv.dataset.categoria = producto.categoria;
-
-                let precio = producto.precio;
-                let pvpr = producto.pvpr;
-                let descuento = '';
-
-
-                // Asegurarse de que el precio tenga dos decimales
-                precio = precio.toFixed(2);
-                if (producto.oferta) {
-                    pvpr = producto.precio;
-                    precio = (producto.precio - (producto.precio * (producto.descuento / 100))).toFixed(2);
-                    descuento = `<p class="descuento" style="text-decoration: none;">-${producto.descuento.toFixed()}%</p>`;
-                }
-
-                const pvprHtml = producto.oferta ? `<p class="pvpr">PVPR: US$<s>${pvpr.toFixed(2)}</s></p>` : '';
-
-                const etiquetaOferta = producto.oferta ? `<span class="etiqueta oferta producto-oferta">Oferta</span>` : '';
-                const etiquetaMasVendido = producto.mas_vendido ? `<div class="badge mas-vendido producto-masvendido">Más Vendido</div>` : '';
-
-                // Mostrar disponibilidad
-                const disponibilidadHtml = producto.disponible
-                    ? `<div class="disponibilidad disponible">Disponible</div>`
-                    : `<div class="disponibilidad no-disponible">No Disponible</div>`;
-
-                productoDiv.innerHTML = `
-                    <div class="producto-contenedor">
-                        <div class="etiqueta-segmento">
-                            ${etiquetaMasVendido}
-                            ${etiquetaOferta}
-                        </div>
-                        <div class="producto-img">
-                            <img src="${producto.imagen}" alt="${producto.nombre}">
-                        </div>
-                        <div class="producto-info">
-                            <div class="pvpr-precio-contenedor">
-                                <p class="precio"><span class="currency">US$</span>${precio}</p>
-                                ${pvprHtml}
-                            </div>
-                            ${descuento}
-                            ${disponibilidadHtml} <!-- Agregar disponibilidad -->
-                            <div class="cantidad-carrito-contenedor">
-                                <div class="cantidad">
-                                    <button class="btn-cantidad" onclick="decrementar('cantidad${producto.nombre.replace(/\s+/g, '-')}')">-</button>
-                                    <span id="cantidad${producto.nombre.replace(/\s+/g, '-')}" class="cantidad-span">1</span>
-                                    <button class="btn-cantidad" onclick="incrementar('cantidad${producto.nombre.replace(/\s+/g, '-')}')">+</button>
-                                </div>
-                                <button class="btn-carrito boton-agregarcarrito" onclick="agregarAlCarrito('${producto.nombre}', ${precio}, 'cantidad${producto.nombre.replace(/\s+/g, '-')}', '${producto.imagen}', this)">Añadir al Carrito</button>
-                            </div>
-                            <p class="nombre">${producto.nombre}</p>
-                        </div>
-                    </div>
-                `;
-
-                // Ocultar productos que excedan el límite de 4 por categoría
-                if (productoIndex >= 4) {
-                    productoDiv.style.display = "none";
-                }
-
-                // Ocultar botones y cantidad cuando el producto no está disponible
-                const botonesCantidad = productoDiv.querySelector('.cantidad-carrito-contenedor');
-                if (!producto.disponible) {
-                    botonesCantidad.style.display = "none"; // Ocultar los botones de cantidad y el botón "Agregar al carrito"
-                }
-
-                categoriaProductosContainer.appendChild(productoDiv);
-
-                // Verificar si la categoría tiene productos visibles
-                if (productoDiv.style.display !== "none") {
-                    categoriaVisible = true;
-                }
-
-                // Agregar evento para abrir el modal cuando se hace clic en el producto, excluyendo los botones
-                productoDiv.addEventListener('click', (e) => {
-                    if (e.target.closest(".btn-cantidad") || e.target.closest(".btn-carrito")) return;
-                
-                    mostrarDetallesProducto(producto);
-                });
-                
-                
-            });
-
-
-            // Si no hay productos visibles, ocultar la categoría
-            if (!categoriaVisible) {
-                categoriaDiv.style.display = "none";
-            } else {
-                categoriaDiv.appendChild(categoriaProductosContainer);
-                categoriasContainer.appendChild(categoriaDiv);
-
-                // Agregar un botón para cargar más productos si hay más de 4 productos
-                if (productosCategoria.length > 4) {
-                    const cargarMasBtn = document.createElement("button");
-                    cargarMasBtn.textContent = "Cargar más";
-                    cargarMasBtn.className = "btn-cargar-mas";
-                    cargarMasBtn.addEventListener("click", () => {
-                        productosCategoria.slice(4).forEach((producto, productoIndex) => {
-                            const productoDiv = categoriaProductosContainer.children[productoIndex + 4];
-                            productoDiv.style.display = "block";
-                        });
-                        cargarMasBtn.style.display = "none"; // Ocultar el botón después de mostrar todos los productos
-                    });
-                    categoriaDiv.appendChild(cargarMasBtn);
-                }
-
-                // Agregar un separador después de la primera categoría
-                if (index === 0) {
-                    const separadorExtraContainer = document.createElement("div");
-                    separadorExtraContainer.className = "separador-container-extra";
-
-                    const separadorExtraImg = document.createElement("img");
-                    separadorExtraImg.src = "img/Separador_2.jpg"; // Cambia por la ruta de tu imagen extra
-                    separadorExtraImg.alt = "Separador Extra";
-                    separadorExtraImg.className = "separador-extra-img";
-
-                    separadorExtraContainer.appendChild(separadorExtraImg);
-                    categoriasContainer.appendChild(separadorExtraContainer);
-                }
-            }
-        });
-
-        // Contenedor para los combos
-        const combosContainer = document.createElement("div");
-        combosContainer.className = "combos-container"; // Clase para el contenedor de combos
-
-        const combosTitle = document.createElement("h2");
-        combosTitle.textContent = "Packs Especiales"; // nombre del contenedor de los packs
-        combosTitle.style.textAlign = 'center';
-        combosTitle.style.marginBottom = '20px';
-        combosContainer.appendChild(combosTitle);
-
-        const comboSlider = document.createElement("div");
-        comboSlider.className = "combo-slider"; // Clase para el slider vertical u horizontal
-        combosContainer.appendChild(comboSlider);
-
-        const sliderIndicator = document.createElement("div");
-        sliderIndicator.className = "slider-indicator"; // Indicador de deslizamiento
-        combosContainer.appendChild(sliderIndicator);
-
-        const updateIndicatorDirection = () => {
-            if (window.innerWidth <= 768) {
-                sliderIndicator.classList.remove("vertical");
-                sliderIndicator.classList.add("horizontal");
-            } else {
-                sliderIndicator.classList.remove("horizontal");
-                sliderIndicator.classList.add("vertical");
-            }
-        };
-
-        // Llamar a la función de actualización de la dirección del indicador en el cambio de tamaño de la ventana
-        window.addEventListener('resize', updateIndicatorDirection);
-        updateIndicatorDirection(); // Llamar a la función en la carga inicial de la página
-
-        const combosDisponibles = combos.filter(combos => combos.disponible);
-
-        combosDisponibles.forEach((combo, comboIndex) => {
-            const comboDiv = document.createElement("div");
-            comboDiv.className = "combo";
-            comboDiv.dataset.nombre = combo.nombre;
-            comboDiv.dataset.categoria = combo.categoria;
-
-            let precio = combo.precio.toFixed(2);
-            
-            //aqui agregamos los cambios para cuando hay algun evento en especifico
-            if(combo.categoria === "febrero")
-            {
-                console.log("Hay Eventos agregados")
-            // estructura del combo personalizado por evento
-            comboDiv.innerHTML = `
-            <div class="combo-contenedor-evento">
-                <div class="combo-img">
-                    <img src="${combo.imagen}" alt="${combo.nombre}">
-                </div>
-                <div class="combo-info">
-                    <p class="nombre">${combo.nombre} 💘</p>
-                    <div class="productos">
-                        ${combo.productos.map(producto => `<div class="producto-item">${producto} ❤️</div>`).join('')}
-                    </div>
-                    <p class="precio"><span class="currency">US$</span>${precio}</p>
-                    <div class="cantidad-carrito-contenedor">
-                        <div class="cantidad">
-                            <button class="btn-cantidad" onclick="decrementar('cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}')">-</button>
-                            <span id="cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}">1</span>
-                            <button class="btn-cantidad" onclick="incrementar('cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}')">+</button>
-                        </div>
-                        <button class="btn-carrito boton-agregarcarrito" 
-                            onclick="agregarAlCarrito('${combo.nombre}', ${combo.precio}, 
-                            'cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}',
-                            '${combo.imagen}', this, [${combo.productos.map(producto => `'${producto}'`).join(', ')}])">
-                            Añadir al Carrito 💝
-                        </button>
-                    </div>
-                </div>
-            </div>
-        `;
-            }
-            else
-            {
-            console.log("Hay Combos")
-            // Estructura del combo
-            comboDiv.innerHTML = `
-            <div class="combo-contenedor">
-                <div class="combo-img">
-                    <img src="${combo.imagen}" alt="${combo.nombre}">
-                </div>
-                <div class="combo-info">
-                    <p class="nombre">${combo.nombre}</p>
-                    <div class="productos">
-                        ${combo.productos.map(producto => `<div class="producto-item">${producto}</div>`).join('')}
-                    </div>
-                    <p class="precio"><span class="currency">US$</span>${precio}</p>
-                    <div class="cantidad-carrito-contenedor">
-                        <div class="cantidad">
-                            <button class="btn-cantidad" onclick="decrementar('cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}')">-</button>
-                            <span id="cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}">1</span>
-                            <button class="btn-cantidad" onclick="incrementar('cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}')">+</button>
-                        </div>
-                        <button class="btn-carrito boton-agregarcarrito" 
-                            onclick="agregarAlCarrito('${combo.nombre}', ${combo.precio}, 
-                            'cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}',
-                            '${combo.imagen}', this, [${combo.productos.map(producto => `'${producto}'`).join(', ')}])">
-                            Añadir al Carrito
-                        </button>
-                    </div>
-                </div>
-            </div>
-        `;
-            }
-
-            comboSlider.appendChild(comboDiv);
-        });
-
-        // Añadir el contenedor principal al cuerpo del documento
-        document.body.appendChild(combosContainer);
-
-        // define el orden en que se crean en el doom
-        // Insertar los contenedores en el DOM
-        const productosContainer = document.getElementById("productos-container");
-        productosContainer.appendChild(masVendidosContainer); // Insertar los más vendidos en la parte superior
-        productosContainer.appendChild(combosContainer);     // Insertar los combos
-        productosContainer.appendChild(botonElectrodomesticos);
-        productosContainer.appendChild(separadorContainer); 
-        productosContainer.appendChild(categoriasContainer); // Insertar los productos por categorías debajo
-    
-
-        // Ocultar botones de categoría que no tienen productos, excepto "all"
-        const categoriaLinks = document.querySelectorAll(".categorias ul li a");
-        categoriaLinks.forEach(link => {
-            const category = link.getAttribute("data-categoria");
-            const productos = document.querySelectorAll(`.producto[data-categoria='${category}']`);
-            const hasVisibleProducts = Array.from(productos).some(producto => producto.style.display !== "none");
-
-            if (category !== "all" && !hasVisibleProducts) {
-                link.parentElement.style.display = "none"; // Ocultar el botón si no hay productos visibles y no es "all"
-            } else {
-                link.parentElement.style.display = "block"; // Mostrar el botón si hay productos o si es "all"
-            }
-        });
-
-
-        // Mostrar/ocultar separadores según la categoría seleccionada
-        document.querySelectorAll(".categorias ul li a").forEach(link => {
-            link.addEventListener("click", (e) => {
-                e.preventDefault();
-                const category = link.getAttribute("data-categoria");
-
-                // Ocultar el panel de electrodomésticos
-                const panelElectrodomesticos = document.getElementById("panel-electrodomesticos");
-                if (panelElectrodomesticos) {
-                    panelElectrodomesticos.style.display = "none";
-                }
-
-                // Ocultar el panel-categoria
-                const panelCategoria = document.querySelector(".panel-categoria");
-                if (panelCategoria) {
-                    panelCategoria.style.display = "none";
-                }
-                
-
-                //mostrar o ocultar los separadores
-                const separadorContainers = document.querySelectorAll(".separador-container, .separador-container-extra");
-                separadorContainers.forEach(separador => {
-                    separador.style.display = category === "all" ? "block" : "none";
-                });
-
-                // Filtrar productos por categoría
-                // Ocultar el detalle del producto cuando se selecciona una categoría
-                document.getElementById("detalle-producto").style.display = "none";
-
-                // Limpiar la barra de búsqueda
-                const searchInput = document.getElementById("search-input");
-                searchInput.value = ""; // Vaciar el campo de búsqueda
-
-                // Ocultar el mensaje de "No se encontraron resultados"
-                const noResultMessage = document.getElementById("no-result-message");
-                if (noResultMessage) noResultMessage.style.display = "none";
-
-                // Opcional: si tienes secciones como "más vendidos", puedes asegurarte de que también se muestren.
-                const masVendidosContainer = document.querySelector(".mas-vendidos-container");
-                if (masVendidosContainer) masVendidosContainer.style.display = "flex";
-
-                document.querySelectorAll(".producto, .combos-container").forEach(producto => {
-                    if ((category === "ofertas" && producto.dataset.categoria !== "ofertas" && !producto.querySelector('.etiqueta.oferta')) ||
-                        (producto.getAttribute("data-categoria") !== category && category !== "all" && producto.getAttribute("data-categoria") === "combos")) {
-                        producto.style.display = "none";
-                    } else if (producto.getAttribute("data-categoria") === category || category === "all" || (category === "ofertas" && producto.querySelector('.etiqueta.oferta'))) {
-                        producto.style.display = "block";
-                    } else {
-                        producto.style.display = "none";
-                    }
-                });
-
-                // Ocultar categorías vacías
-                document.querySelectorAll(".categoria").forEach(categoriaDiv => {
-                    const productosCategoria = categoriaDiv.querySelectorAll(".producto");
-                    const categoriaVisible = Array.from(productosCategoria).some(producto => producto.style.display !== "none");
-
-                    if (categoriaVisible) {
-                        categoriaDiv.style.display = "block";
-                    } else {
-                        categoriaDiv.style.display = "none";
-                    }
-                });
-
-                // Ocultar el carrito al seleccionar una categoría
-                ocultarCarrito();
-
-                // Mostrar u ocultar los botones "Cargar más" según la categoría seleccionada
-                if (category === "all") {
-                    document.querySelectorAll(".categoria").forEach(categoriaDiv => {
-                        const productosCategoria = categoriaDiv.querySelectorAll(".producto");
-                        productosCategoria.forEach((producto, productoIndex) => {
-                            if (productoIndex >= 4) {
-                                producto.style.display = "none";
-                            } else {
-                                producto.style.display = "block";
-                            }
-                        });
-                    });
-
-                    // mostrar el panel de categoria cuando se presiona la categoria all
-                    panelCategoria.style.display = "flex";
-
-                    document.querySelectorAll(".btn-cargar-mas").forEach(btn => {
-                        btn.style.display = "block";
-                    });
-                } else {
-                    document.querySelectorAll(".btn-cargar-mas").forEach(btn => {
-                        btn.style.display = "none";
-                    });
-                }
-            });
-        });
-        
-        // Mejorar la función de filtrado de productos
-        const searchInput = document.getElementById("search-input");
-        const searchButton = document.getElementById("search-button");
-        
-        // Filtrar productos en tiempo real
-        searchInput.addEventListener("input", filterProducts);
-        searchButton.addEventListener("click", filterProducts);
-        
-        function filterProducts() {
-            const searchValue = searchInput.value.trim().toLowerCase();
-            const selectedCategory = document.querySelector(".categorias ul li a.selected")?.getAttribute("data-categoria");
-        
-            // Ocultar el panel de electrodomésticos si está visible
-            const panelElectrodomesticos = document.getElementById("panel-electrodomesticos");
-            if (panelElectrodomesticos) {
-                panelElectrodomesticos.style.display = "none";
-            }
-            const panelCategoria = document.querySelector(".panel-categoria");
-            if (panelCategoria) {
-                panelCategoria.style.display = "none";
-            }
-
-            // Ocultar el detalle del producto cuando se busca o se selecciona una categoría
-            document.getElementById("detalle-producto").style.display = "none";
-            document.getElementById("productos").style.display = "block";
-            let slider = document.querySelector(".slider");
-            if (slider) {
-                slider.style.display = "block";
-            }
-
-            // Ocultar los separadores cuando se está buscando algo
-            const separadorContainers = document.querySelectorAll(".separador-container, .separador-container-extra");
-            separadorContainers.forEach(separador => {
-                separador.style.display = searchValue === "" ? "block" : "none";
-            });
-        
-            // Mostrar todos los productos si el campo de búsqueda está vacío y la categoría seleccionada es "All"
-            if (searchValue === "" && (selectedCategory === "all" || !selectedCategory)) {
-                mostrarTodosLosProductos();
-                combosContainer.style.display = "block"; // Mostrar el contenedor de combos cuando la búsqueda está vacía
-                // mostrar el panel de categoria cuando se presiona la categoria all
-                panelCategoria.style.display = "flex";
-                return;
-            }
-        
-            let foundProducts = false;
-            let foundCombos = false;
-        
-            document.querySelectorAll(".producto, .combo").forEach(item => {
-                const productName = item.dataset.nombre ? item.dataset.nombre.toLowerCase() : '';
-                const productCategoria = item.dataset.categoria ? item.dataset.categoria.toLowerCase() : '';
-        
-                const matchesSearch = productName.includes(searchValue) || productCategoria.includes(searchValue);
-        
-                if (matchesSearch && (selectedCategory === "all" || !selectedCategory || (productCategoria !== "combos" || (productCategoria === "combos" && searchValue.includes("combo"))))) {
-                    item.style.display = "block";
-                    foundProducts = true;
-                    if (item.classList.contains("combo")) {
-                        foundCombos = true;
-                    }
-                } else {
-                    item.style.display = "none";
-                }
-            });
-        
-            // Ocultar el contenedor de combos si no hay combos visibles
-            combosContainer.style.display = foundCombos ? "block" : "none";
-        
-            // Ocultar categorías vacías
-            document.querySelectorAll(".categoria").forEach(categoriaDiv => {
-                const productosCategoria = categoriaDiv.querySelectorAll(".producto");
-                const categoriaVisible = Array.from(productosCategoria).some(producto => producto.style.display !== "none");
-        
-                if (categoriaVisible) {
-                    categoriaDiv.style.display = "block";
-                } else {
-                    categoriaDiv.style.display = "none";
-                }
-            });
-        
-            // Ocultar productos más vendidos que no coinciden con la búsqueda
-            const masVendidosContainer = document.querySelector(".mas-vendidos-container");
-            if (masVendidosContainer) {
-                masVendidosContainer.style.display = foundProducts ? "flex" : "none";
-            }
-        
-            // Mostrar u ocultar el mensaje de "No se encontraron resultados"
-            const noResultMessage = document.getElementById("no-result-message");
-            if (!foundProducts && searchValue !== "") {
-                noResultMessage.classList.remove("hidden"); // Mostrar el mensaje
-                noResultMessage.style.display = "block"; // Asegurarse de que se vea
-                noResultMessage.style.marginTop = '120px';
-            } else {
-                noResultMessage.classList.add("hidden"); // Ocultar el mensaje
-                noResultMessage.style.display = "none"; // Asegurarse de que no se vea
-            }
-        
-            // Ocultar botones "Cargar más" al buscar
-            document.querySelectorAll(".btn-cargar-mas").forEach(btn => {
-                btn.style.display = "none";
-            });
-        }                        
-        
-        function mostrarTodosLosProductos() {
-            document.querySelectorAll(".producto").forEach(producto => {
-                producto.style.display = "block";  // Mostrar todos los productos
-            });
-        
-            // Asegúrate de que las categorías y los más vendidos también se muestren si no hay filtros activos
-            document.querySelectorAll(".categoria").forEach(categoriaDiv => {
-                categoriaDiv.style.display = "block";
-            });
-            
-            const masVendidosContainer = document.querySelector(".mas-vendidos-container");
-            if (masVendidosContainer) {
-                masVendidosContainer.style.display = "flex";  // Mostrar productos más vendidos si no hay filtro de búsqueda
-            }
-        
-            // Eliminar botones "Cargar más" cuando se muestran todos los productos
-            document.querySelectorAll(".btn-cargar-mas").forEach(btn => {
-                btn.style.display = "none";
-            });
-        
-            // Volver a configurar la visualización de 4 productos por categoría con el botón "Cargar más" al seleccionar "all"
-            document.querySelectorAll(".categoria").forEach(categoriaDiv => {
-                const productosCategoria = categoriaDiv.querySelectorAll(".producto");
-                productosCategoria.forEach((producto, productoIndex) => {
-                    if (productoIndex >= 4) {
-                        producto.style.display = "none";
-                    } else {
-                        producto.style.display = "block";
-                    }
-                });
-        
-                if (productosCategoria.length > 4) {
-                    const cargarMasBtn = categoriaDiv.querySelector(".btn-cargar-mas");
-                    if (cargarMasBtn) {
-                        cargarMasBtn.style.display = "block";
-                    }
-                }
-            });
-        
-            // Mostrar el contenedor de combos cuando se muestran todos los productos
-            combosContainer.style.display = "block";
-        }
-        
-    }
-
-    // Fetch de productos y combos
-    Promise.all([
-        fetch('Json/productos.json').then(response => response.json()),
-        fetch('Json/combos.json').then(response => response.json())
-    ])
-    .then(([productosData, combosData]) => {
-        productos = productosData;
-        combos = combosData;
-        console.log('Productos cargados:', productos);
-        console.log('Combos cargados:', combos);
-        renderProductos(); // Renderizar productos y combos
-    });
 
     // Toggle menú
     menuToggle.addEventListener("click", () => {
@@ -833,62 +152,825 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!carritoContainer || !carritoTotal || !carritoVacio) {
             console.error("Uno o más elementos no existen en el DOM");
         } else {
-            console.log("Todos los elementos se encontraron correctamente");
+            //console.log("Todos los elementos se encontraron correctamente");
             renderCarrito(); // Llama a la función solo si todo está listo
         }
+    
+});
+// Función para buscar un producto por nombre normalizado
+function buscarProductoPorNombre(nombre) {
+    if (!nombre) return null;
+    
+    // Normalización más completa
+    const normalizar = (str) => {
+        return str.toLowerCase()
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Elimina acentos
+            .replace(/[^a-z0-9]+/g, ' ') // Reemplaza caracteres especiales por espacios
+            .trim()
+            .replace(/\s+/g, ' '); // Multiples espacios por uno solo
+    };
 
+    const nombreBuscado = normalizar(nombre);
+    let mejorCoincidencia = null;
+    let mejorPuntaje = 0;
 
-        // Función para normalizar nombres (eliminar caracteres especiales y convertir a minúsculas)
-    function normalizarNombre(nombre) {
-        return nombre
-            .toLowerCase() // Convertir a minúsculas
-            .replace(/[^a-z0-9]+/g, ' ') // Reemplazar caracteres especiales con espacios
-            .trim(); // Eliminar espacios al inicio y al final
-    }
-
-    // Función para buscar un producto por nombre normalizado
-    function buscarProductoPorNombre(nombre) {
-        const nombreNormalizado = normalizarNombre(nombre);
-        return productos.find(producto => normalizarNombre(producto.nombre) === nombreNormalizado);
-    }
-
-    // Cargar productos y combos
-    Promise.all([
-        fetch('Json/productos.json').then(response => response.json()),
-        fetch('Json/combos.json').then(response => response.json())
-    ])
-    .then(([productosData, combosData]) => {
-        productos = productosData;
-        combos = combosData;
-        console.log('Productos cargados:', productos);
-        console.log('Combos cargados:', combos);
-        renderProductos(); // Renderizar productos y combos
-    
-        // Verificar si la URL contiene un producto
-        const hash = window.location.hash;
-        if (hash.startsWith("#producto-")) {
-            const nombreProductoAmigable = hash.replace("#producto-", "");
-    
-            // Normalizar el nombre del producto en la URL
-            const nombreProductoNormalizado = normalizarNombre(nombreProductoAmigable);
-    
-            // Buscar el producto por nombre normalizado
-            const producto = buscarProductoPorNombre(nombreProductoNormalizado);
-    
-            if (producto) {
-                // Mostrar el panel de detalles
-                document.getElementById("productos").style.display = "none"; // Ocultar productos
-                document.getElementById("detalle-producto").style.display = "block"; // Mostrar detalles
-    
-                // Cargar los datos del producto en el panel de detalles
-                mostrarDetallesProducto(producto);
-            } else {
-                console.warn("Producto no encontrado:", nombreProductoNormalizado);
-                // Mostrar el mensaje de "Producto no disponible"
-                mostrarMensajeNoDisponible();
+    // Buscar en productos normales y combos
+    [...productos, ...combos].forEach(item => {
+        const nombreItem = normalizar(item.nombre);
+        
+        // Coincidencia exacta
+        if (nombreItem === nombreBuscado) {
+            mejorCoincidencia = item;
+            return;
+        }
+        
+        // Coincidencia parcial (solo si no hay exacta)
+        if (!mejorCoincidencia) {
+            const palabrasBuscadas = nombreBuscado.split(' ');
+            const palabrasItem = nombreItem.split(' ');
+            const puntaje = palabrasBuscadas.filter(p => 
+                palabrasItem.includes(p)
+            ).length;
+            
+            if (puntaje > mejorPuntaje) {
+                mejorPuntaje = puntaje;
+                mejorCoincidencia = item;
             }
         }
     });
+
+    return mejorCoincidencia;
+}
+
+// Función para manejar parámetros de URL al cargar
+function manejarParametrosURL() {
+    // Extraer parámetros correctamente aunque haya una barra antes del ?
+    const urlParts = window.location.href.split('?');
+    const queryString = urlParts.length > 1 ? urlParts[1] : '';
+    const urlParams = new URLSearchParams(queryString);
+    
+    const productoParam = urlParams.get('producto');
+    const refParam = urlParams.get('ref');
+    
+    // Manejar el parámetro de afiliado primero
+    if (refParam) {
+        // Limpiar el parámetro ref por si viene con otros datos
+        const cleanRef = refParam.split('?')[0].split('&')[0];
+        handleAffiliate(cleanRef);
+    }
+    
+    // Luego manejar el producto
+    if (productoParam) {
+        const producto = buscarProductoPorNombre(productoParam);
+        if (producto) {
+            mostrarDetallesProducto(producto);
+        } else {
+            console.warn(`Producto no encontrado: ${productoParam}`);
+            mostrarMensajeNoDisponible();
+            // Redirigir después de 3 segundos si el producto no existe
+            setTimeout(() => {
+                // Mantener el parámetro ref si existe con el formato /?ref=
+                const newUrl = refParam 
+                    ? `${window.location.pathname}/?ref=${refParam}`
+                    : window.location.pathname;
+                window.location.href = newUrl;
+            }, 3000);
+        }
+    }
+}
+// Función para normalizar nombres (eliminar caracteres especiales y convertir a minúsculas)
+function normalizarNombre(nombre) {
+    return nombre
+        .toLowerCase() // Convertir a minúsculas
+        .replace(/[^a-z0-9]+/g, ' ') // Reemplazar caracteres especiales con espacios
+        .trim(); // Eliminar espacios al inicio y al final
+}
+
+function removeDuplicates(productos) {
+    const uniqueProductos = [];
+    const productoNames = new Set();
+
+    productos.forEach(producto => {
+        if (!productoNames.has(producto.nombre)) {
+            productoNames.add(producto.nombre);
+            uniqueProductos.push(producto);
+        }
+    });
+
+    return uniqueProductos;
+}
+function limpiarProductosContainer() {
+    // Limpiar el contenedor de productos
+    const productosContainer = document.getElementById("productos-container");
+    while (productosContainer.firstChild) {
+        productosContainer.removeChild(productosContainer.firstChild);
+    }
+}
+// Función para actualizar los precios con el cálculo del precio total
+function actualizarPrecios(productos) {
+    productos.forEach(producto => {
+        if (producto.precio !== undefined) {
+            const total = producto.precio * 0.05;
+            producto.precio = +(producto.precio + total).toFixed(2); // Actualiza el precio con el total calculado
+        }
+    });
+    return productos;
+}
+function renderProductos() {
+    limpiarProductosContainer(); // Limpiar productos actuales
+
+    // Combinar productos y combos en un solo array
+    const productosYCombos = [...productos, ...combos]; 
+
+    // Eliminar productos duplicados
+    const productosUnicos = removeDuplicates(productosYCombos);
+    const productosActualizados = actualizarPrecios(productosUnicos); // Actualizar precios
+
+    // Filtrar productos disponibles
+    const productosDisponibles = productosActualizados.filter(producto => 
+        producto.disponible && producto.categoria !== "combos" && producto.categoria !== "electrodomesticos"
+    );
+    // Crear el contenedor de productos más vendidos
+    const masVendidosContainer = document.createElement("div");
+    masVendidosContainer.className = "mas-vendidos-container"; // Clase para el contenedor de productos más vendidos
+    const masVendidos = productosDisponibles.filter(producto => producto.mas_vendido); // Filtrar los productos más vendidos
+
+    // Crear un contenedor para los productos más vendidos
+    masVendidos.forEach((producto, index) => {
+        const productoDiv = document.createElement("div");
+        productoDiv.className = "producto";
+        productoDiv.dataset.nombre = producto.nombre;
+        productoDiv.dataset.categoria = producto.categoria;
+
+        let precio = producto.precio;
+        let pvpr = producto.pvpr;
+        let descuento = '';
+
+        // Asegurarse de que el precio tenga dos decimales
+        precio = precio.toFixed(2);
+        if (producto.oferta) {
+            pvpr = producto.precio;
+            precio = (producto.precio - (producto.precio * (producto.descuento / 100))).toFixed(2);
+            descuento = `<p class="descuento" style="text-decoration: none;">-${producto.descuento}%</p>`;
+        }
+
+        const pvprHtml = producto.oferta ? `<p class="pvpr">PVPR: US$<s>${pvpr.toFixed(2)}</s></p>` : '';
+
+        const etiquetaOferta = producto.oferta ? `<span class="etiqueta oferta producto-oferta">Oferta</span>` : '';
+        const etiquetaMasVendido = producto.mas_vendido ? `<div class="badge mas-vendido producto-masvendido">Más Vendido</div>` : '';
+
+        // Mostrar disponibilidad
+        const disponibilidadHtml = producto.disponible
+            ? `<div class="disponibilidad disponible">Disponible</div>`
+            : `<div class="disponibilidad no-disponible">No Disponible</div>`;
+
+        productoDiv.innerHTML = `
+            <div class="producto-contenedor">
+            <p class="nombre">${producto.nombre}</p>
+                <div class="etiqueta-segmento">
+                    ${etiquetaMasVendido}
+                    ${etiquetaOferta}
+                </div>
+                <div class="producto-img">
+                    <img src="${producto.imagen}" alt="${producto.nombre}">
+                </div>
+                <div class="producto-info">
+                    <div class="pvpr-precio-contenedor">
+                        <p class="precio"><span class="currency">US$</span>${precio}</p>
+                        ${pvprHtml}
+                    </div>
+                    ${descuento}
+                    ${disponibilidadHtml} <!-- Agregar disponibilidad -->
+                </div>
+            </div>
+        `;
+
+        // Agregar evento para abrir el modal cuando se hace clic en el producto, excluyendo los botones
+        productoDiv.addEventListener('click', (e) => {
+            if (e.target.closest(".btn-cantidad") || e.target.closest(".btn-carrito")) return;
+        
+            mostrarDetallesProducto(producto);
+        });
+
+        // Ocultar botones y cantidad cuando el producto no está disponible
+        const botonesCantidad = productoDiv.querySelector('.cantidad-carrito-contenedor');
+        if (!producto.disponible) {
+            botonesCantidad.style.display = "none"; // Ocultar los botones de cantidad y el botón "Agregar al carrito"
+        }
+
+        masVendidosContainer.appendChild(productoDiv);
+    });
+    
+    // Crear el panel cuadrado para electrodomésticos
+    const botonElectrodomesticos = document.createElement("div"); // Definir la variable aquí
+    botonElectrodomesticos.className = "panel-categoria";
+    botonElectrodomesticos.innerHTML = `
+        <p>Tecnologia</p>
+        <img src="img/tecnologia.jpg" alt="Tecnologia">
+        <p id="texto-comprar-ahora">Comprar ahora</p>
+    `;
+
+    // Añadir evento para abrir el panel de electrodomésticos
+    botonElectrodomesticos.addEventListener("click", () => {
+        mostrarPanelElectrodomesticos();
+    });
+
+   // Insertar el botón en el contenedor de productos
+    const separadorContainer = document.createElement("div");
+    separadorContainer.className = "separador-container";
+    
+    // Agregar la imagen al separador
+    const separadorImg = document.createElement("img");
+    separadorImg.src = "img/Pago_seguro.jpg"; // Cambia esto por la ruta de tu imagen
+    separadorImg.alt = "Separador";
+    separadorImg.className = "separador-img";
+    
+    separadorContainer.appendChild(separadorImg);
+
+
+    // Crear el contenedor para los productos por categoría
+    const categoriasContainer = document.createElement("div");
+    categoriasContainer.className = "categorias-container"; // Clase para el contenedor de categorías
+
+    // Agrupar productos por categorías
+    const categorias = [...new Set(productosDisponibles.map(producto => producto.categoria))];
+
+    categorias.forEach((categoria, index) => {
+        const categoriaDiv = document.createElement("div");
+        categoriaDiv.className = "categoria";
+        categoriaDiv.dataset.categoria = categoria;
+
+        // Crear el título de la categoría
+        const categoriaTitle = document.createElement("h2");
+        categoriaTitle.textContent = categoria;
+        categoriaDiv.appendChild(categoriaTitle);
+
+        // Filtrar productos de esta categoría
+        const productosCategoria = productosDisponibles.filter(producto => producto.categoria === categoria);
+        const categoriaProductosContainer = document.createElement("div");
+        categoriaProductosContainer.className = "productos-categoria-container";
+
+        let categoriaVisible = false; // Variable para saber si hay productos visibles en la categoría
+
+        productosCategoria.forEach((producto, productoIndex) => {
+            const productoDiv = document.createElement("div");
+            productoDiv.className = "producto";
+            productoDiv.dataset.nombre = producto.nombre;
+            productoDiv.dataset.categoria = producto.categoria;
+
+            let precio = producto.precio;
+            let pvpr = producto.pvpr;
+            let descuento = '';
+
+
+            // Asegurarse de que el precio tenga dos decimales
+            precio = precio.toFixed(2);
+            if (producto.oferta) {
+                pvpr = producto.precio;
+                precio = (producto.precio - (producto.precio * (producto.descuento / 100))).toFixed(2);
+                descuento = `<p class="descuento" style="text-decoration: none;">-${producto.descuento.toFixed()}%</p>`;
+            }
+
+            const pvprHtml = producto.oferta ? `<p class="pvpr">PVPR: US$<s>${pvpr.toFixed(2)}</s></p>` : '';
+
+            const etiquetaOferta = producto.oferta ? `<span class="etiqueta oferta producto-oferta">Oferta</span>` : '';
+            const etiquetaMasVendido = producto.mas_vendido ? `<div class="badge mas-vendido producto-masvendido">Más Vendido</div>` : '';
+
+            // Mostrar disponibilidad
+            const disponibilidadHtml = producto.disponible
+                ? `<div class="disponibilidad disponible">Disponible</div>`
+                : `<div class="disponibilidad no-disponible">No Disponible</div>`;
+
+            productoDiv.innerHTML = `
+                <div class="producto-contenedor">
+                    <div class="etiqueta-segmento">
+                        ${etiquetaMasVendido}
+                        ${etiquetaOferta}
+                    </div>
+                    <div class="producto-img">
+                        <img src="${producto.imagen}" alt="${producto.nombre}">
+                    </div>
+                    <div class="producto-info">
+                        <div class="pvpr-precio-contenedor">
+                            <p class="precio"><span class="currency">US$</span>${precio}</p>
+                            ${pvprHtml}
+                        </div>
+                        ${descuento}
+                        ${disponibilidadHtml} <!-- Agregar disponibilidad -->
+                        <div class="cantidad-carrito-contenedor">
+                            <div class="cantidad">
+                                <button class="btn-cantidad" onclick="decrementar('cantidad${producto.nombre.replace(/\s+/g, '-')}')">-</button>
+                                <span id="cantidad${producto.nombre.replace(/\s+/g, '-')}" class="cantidad-span">1</span>
+                                <button class="btn-cantidad" onclick="incrementar('cantidad${producto.nombre.replace(/\s+/g, '-')}')">+</button>
+                            </div>
+                            <button class="btn-carrito boton-agregarcarrito" onclick="agregarAlCarrito('${producto.nombre}', ${precio}, 'cantidad${producto.nombre.replace(/\s+/g, '-')}', '${producto.imagen}', this)">Añadir al Carrito</button>
+                        </div>
+                        <p class="nombre">${producto.nombre}</p>
+                    </div>
+                </div>
+            `;
+
+            // Ocultar productos que excedan el límite de 4 por categoría
+            if (productoIndex >= 4) {
+                productoDiv.style.display = "none";
+            }
+
+            // Ocultar botones y cantidad cuando el producto no está disponible
+            const botonesCantidad = productoDiv.querySelector('.cantidad-carrito-contenedor');
+            if (!producto.disponible) {
+                botonesCantidad.style.display = "none"; // Ocultar los botones de cantidad y el botón "Agregar al carrito"
+            }
+
+            categoriaProductosContainer.appendChild(productoDiv);
+
+            // Verificar si la categoría tiene productos visibles
+            if (productoDiv.style.display !== "none") {
+                categoriaVisible = true;
+            }
+
+            // Agregar evento para abrir el modal cuando se hace clic en el producto, excluyendo los botones
+            productoDiv.addEventListener('click', (e) => {
+                if (e.target.closest(".btn-cantidad") || e.target.closest(".btn-carrito")) return;
+            
+                mostrarDetallesProducto(producto);
+            });
+            
+            
+        });
+
+
+        // Si no hay productos visibles, ocultar la categoría
+        if (!categoriaVisible) {
+            categoriaDiv.style.display = "none";
+        } else {
+            categoriaDiv.appendChild(categoriaProductosContainer);
+            categoriasContainer.appendChild(categoriaDiv);
+
+            // Agregar un botón para cargar más productos si hay más de 4 productos
+            if (productosCategoria.length > 4) {
+                const cargarMasBtn = document.createElement("button");
+                cargarMasBtn.textContent = "Cargar más";
+                cargarMasBtn.className = "btn-cargar-mas";
+                cargarMasBtn.addEventListener("click", () => {
+                    productosCategoria.slice(4).forEach((producto, productoIndex) => {
+                        const productoDiv = categoriaProductosContainer.children[productoIndex + 4];
+                        productoDiv.style.display = "block";
+                    });
+                    cargarMasBtn.style.display = "none"; // Ocultar el botón después de mostrar todos los productos
+                });
+                categoriaDiv.appendChild(cargarMasBtn);
+            }
+
+            // Agregar un separador después de la primera categoría
+            if (index === 0) {
+                const separadorExtraContainer = document.createElement("div");
+                separadorExtraContainer.className = "separador-container-extra";
+
+                const separadorExtraImg = document.createElement("img");
+                separadorExtraImg.src = "img/Separador_2.jpg"; // Cambia por la ruta de tu imagen extra
+                separadorExtraImg.alt = "Separador Extra";
+                separadorExtraImg.className = "separador-extra-img";
+
+                separadorExtraContainer.appendChild(separadorExtraImg);
+                categoriasContainer.appendChild(separadorExtraContainer);
+            }
+        }
+    });
+
+    // Contenedor para los combos
+    const combosContainer = document.createElement("div");
+    combosContainer.className = "combos-container"; // Clase para el contenedor de combos
+
+    const combosTitle = document.createElement("h2");
+    combosTitle.textContent = "Packs Especiales"; // nombre del contenedor de los packs
+    combosTitle.style.textAlign = 'center';
+    combosTitle.style.marginBottom = '20px';
+    combosContainer.appendChild(combosTitle);
+
+    const comboSlider = document.createElement("div");
+    comboSlider.className = "combo-slider"; // Clase para el slider vertical u horizontal
+    combosContainer.appendChild(comboSlider);
+
+    const sliderIndicator = document.createElement("div");
+    sliderIndicator.className = "slider-indicator"; // Indicador de deslizamiento
+    combosContainer.appendChild(sliderIndicator);
+
+    const updateIndicatorDirection = () => {
+        if (window.innerWidth <= 768) {
+            sliderIndicator.classList.remove("vertical");
+            sliderIndicator.classList.add("horizontal");
+        } else {
+            sliderIndicator.classList.remove("horizontal");
+            sliderIndicator.classList.add("vertical");
+        }
+    };
+
+    // Llamar a la función de actualización de la dirección del indicador en el cambio de tamaño de la ventana
+    window.addEventListener('resize', updateIndicatorDirection);
+    updateIndicatorDirection(); // Llamar a la función en la carga inicial de la página
+
+    const combosDisponibles = combos.filter(combos => combos.disponible);
+
+    combosDisponibles.forEach((combo, comboIndex) => {
+        const comboDiv = document.createElement("div");
+        comboDiv.className = "combo";
+        comboDiv.dataset.nombre = combo.nombre;
+        comboDiv.dataset.categoria = combo.categoria;
+
+        let precio = combo.precio.toFixed(2);
+        
+        //aqui agregamos los cambios para cuando hay algun evento en especifico
+        if(combo.categoria === "febrero")
+        {
+            console.log("Hay Eventos agregados")
+        // estructura del combo personalizado por evento
+        comboDiv.innerHTML = `
+        <div class="combo-contenedor-evento">
+            <div class="combo-img">
+                <img src="${combo.imagen}" alt="${combo.nombre}">
+            </div>
+            <div class="combo-info">
+                <p class="nombre">${combo.nombre} 💘</p>
+                <div class="productos">
+                    ${combo.productos.map(producto => `<div class="producto-item">${producto} ❤️</div>`).join('')}
+                </div>
+                <p class="precio"><span class="currency">US$</span>${precio}</p>
+                <div class="cantidad-carrito-contenedor">
+                    <div class="cantidad">
+                        <button class="btn-cantidad" onclick="decrementar('cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}')">-</button>
+                        <span id="cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}">1</span>
+                        <button class="btn-cantidad" onclick="incrementar('cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}')">+</button>
+                    </div>
+                    <button class="btn-carrito boton-agregarcarrito" 
+                        onclick="agregarAlCarrito('${combo.nombre}', ${combo.precio}, 
+                        'cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}',
+                        '${combo.imagen}', this, [${combo.productos.map(producto => `'${producto}'`).join(', ')}])">
+                        Añadir al Carrito 💝
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+        }
+        else
+        {
+        // Estructura del combo
+        comboDiv.innerHTML = `
+        <div class="combo-contenedor">
+            <div class="combo-img">
+                <img src="${combo.imagen}" alt="${combo.nombre}">
+            </div>
+            <div class="combo-info">
+                <p class="nombre">${combo.nombre}</p>
+                <div class="productos">
+                    ${combo.productos.map(producto => `<div class="producto-item">${producto}</div>`).join('')}
+                </div>
+                <p class="precio"><span class="currency">US$</span>${precio}</p>
+                <div class="cantidad-carrito-contenedor">
+                    <div class="cantidad">
+                        <button class="btn-cantidad" onclick="decrementar('cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}')">-</button>
+                        <span id="cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}">1</span>
+                        <button class="btn-cantidad" onclick="incrementar('cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}')">+</button>
+                    </div>
+                    <button class="btn-carrito boton-agregarcarrito" 
+                        onclick="agregarAlCarrito('${combo.nombre}', ${combo.precio}, 
+                        'cantidadCombo-${combo.nombre.replace(/\s+/g, '-')}',
+                        '${combo.imagen}', this, [${combo.productos.map(producto => `'${producto}'`).join(', ')}])">
+                        Añadir al Carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+        }
+
+        comboSlider.appendChild(comboDiv);
+    });
+
+    // Añadir el contenedor principal al cuerpo del documento
+    document.body.appendChild(combosContainer);
+
+    // define el orden en que se crean en el doom
+    // Insertar los contenedores en el DOM
+    const productosContainer = document.getElementById("productos-container");
+    productosContainer.appendChild(masVendidosContainer); // Insertar los más vendidos en la parte superior
+    productosContainer.appendChild(combosContainer);     // Insertar los combos
+    productosContainer.appendChild(botonElectrodomesticos);
+    productosContainer.appendChild(separadorContainer); 
+    productosContainer.appendChild(categoriasContainer); // Insertar los productos por categorías debajo
+
+
+    // Ocultar botones de categoría que no tienen productos, excepto "all"
+    const categoriaLinks = document.querySelectorAll(".categorias ul li a");
+    categoriaLinks.forEach(link => {
+        const category = link.getAttribute("data-categoria");
+        const productos = document.querySelectorAll(`.producto[data-categoria='${category}']`);
+        const hasVisibleProducts = Array.from(productos).some(producto => producto.style.display !== "none");
+
+        if (category !== "all" && !hasVisibleProducts) {
+            link.parentElement.style.display = "none"; // Ocultar el botón si no hay productos visibles y no es "all"
+        } else {
+            link.parentElement.style.display = "block"; // Mostrar el botón si hay productos o si es "all"
+        }
+    });
+
+
+    // Mostrar/ocultar separadores según la categoría seleccionada
+    document.querySelectorAll(".categorias ul li a").forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const category = link.getAttribute("data-categoria");
+
+            // Ocultar el panel de electrodomésticos
+            const panelElectrodomesticos = document.getElementById("panel-electrodomesticos");
+            if (panelElectrodomesticos) {
+                panelElectrodomesticos.style.display = "none";
+            }
+
+            // Ocultar el panel-categoria
+            const panelCategoria = document.querySelector(".panel-categoria");
+            if (panelCategoria) {
+                panelCategoria.style.display = "none";
+            }
+            
+
+            //mostrar o ocultar los separadores
+            const separadorContainers = document.querySelectorAll(".separador-container, .separador-container-extra");
+            separadorContainers.forEach(separador => {
+                separador.style.display = category === "all" ? "block" : "none";
+            });
+
+            // Filtrar productos por categoría
+            // Ocultar el detalle del producto cuando se selecciona una categoría
+            document.getElementById("detalle-producto").style.display = "none";
+
+            // Limpiar la barra de búsqueda
+            const searchInput = document.getElementById("search-input");
+            searchInput.value = ""; // Vaciar el campo de búsqueda
+
+            // Ocultar el mensaje de "No se encontraron resultados"
+            const noResultMessage = document.getElementById("no-result-message");
+            if (noResultMessage) noResultMessage.style.display = "none";
+
+            // Opcional: si tienes secciones como "más vendidos", puedes asegurarte de que también se muestren.
+            const masVendidosContainer = document.querySelector(".mas-vendidos-container");
+            if (masVendidosContainer) masVendidosContainer.style.display = "flex";
+
+            document.querySelectorAll(".producto, .combos-container").forEach(producto => {
+                if ((category === "ofertas" && producto.dataset.categoria !== "ofertas" && !producto.querySelector('.etiqueta.oferta')) ||
+                    (producto.getAttribute("data-categoria") !== category && category !== "all" && producto.getAttribute("data-categoria") === "combos")) {
+                    producto.style.display = "none";
+                } else if (producto.getAttribute("data-categoria") === category || category === "all" || (category === "ofertas" && producto.querySelector('.etiqueta.oferta'))) {
+                    producto.style.display = "block";
+                } else {
+                    producto.style.display = "none";
+                }
+            });
+
+            // Ocultar categorías vacías
+            document.querySelectorAll(".categoria").forEach(categoriaDiv => {
+                const productosCategoria = categoriaDiv.querySelectorAll(".producto");
+                const categoriaVisible = Array.from(productosCategoria).some(producto => producto.style.display !== "none");
+
+                if (categoriaVisible) {
+                    categoriaDiv.style.display = "block";
+                } else {
+                    categoriaDiv.style.display = "none";
+                }
+            });
+
+            // Ocultar el carrito al seleccionar una categoría
+            ocultarCarrito();
+
+            // Mostrar u ocultar los botones "Cargar más" según la categoría seleccionada
+            if (category === "all") {
+                document.querySelectorAll(".categoria").forEach(categoriaDiv => {
+                    const productosCategoria = categoriaDiv.querySelectorAll(".producto");
+                    productosCategoria.forEach((producto, productoIndex) => {
+                        if (productoIndex >= 4) {
+                            producto.style.display = "none";
+                        } else {
+                            producto.style.display = "block";
+                        }
+                    });
+                });
+
+                // mostrar el panel de categoria cuando se presiona la categoria all
+                panelCategoria.style.display = "flex";
+
+                document.querySelectorAll(".btn-cargar-mas").forEach(btn => {
+                    btn.style.display = "block";
+                });
+            } else {
+                document.querySelectorAll(".btn-cargar-mas").forEach(btn => {
+                    btn.style.display = "none";
+                });
+            }
+        });
+    });
+    
+    // Mejorar la función de filtrado de productos
+    const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-button");
+    
+    // Filtrar productos en tiempo real
+    searchInput.addEventListener("input", filterProducts);
+    searchButton.addEventListener("click", filterProducts);
+    
+    function filterProducts() {
+        const searchValue = searchInput.value.trim().toLowerCase();
+        const selectedCategory = document.querySelector(".categorias ul li a.selected")?.getAttribute("data-categoria");
+    
+        // Ocultar el panel de electrodomésticos si está visible
+        const panelElectrodomesticos = document.getElementById("panel-electrodomesticos");
+        if (panelElectrodomesticos) {
+            panelElectrodomesticos.style.display = "none";
+        }
+        const panelCategoria = document.querySelector(".panel-categoria");
+        if (panelCategoria) {
+            panelCategoria.style.display = "none";
+        }
+
+        // Ocultar el detalle del producto cuando se busca o se selecciona una categoría
+        document.getElementById("detalle-producto").style.display = "none";
+        document.getElementById("productos").style.display = "block";
+        let slider = document.querySelector(".slider");
+        if (slider) {
+            slider.style.display = "block";
+        }
+
+        // Ocultar los separadores cuando se está buscando algo
+        const separadorContainers = document.querySelectorAll(".separador-container, .separador-container-extra");
+        separadorContainers.forEach(separador => {
+            separador.style.display = searchValue === "" ? "block" : "none";
+        });
+    
+        // Mostrar todos los productos si el campo de búsqueda está vacío y la categoría seleccionada es "All"
+        if (searchValue === "" && (selectedCategory === "all" || !selectedCategory)) {
+            mostrarTodosLosProductos();
+            combosContainer.style.display = "block"; // Mostrar el contenedor de combos cuando la búsqueda está vacía
+            // mostrar el panel de categoria cuando se presiona la categoria all
+            panelCategoria.style.display = "flex";
+            return;
+        }
+    
+        let foundProducts = false;
+        let foundCombos = false;
+    
+        document.querySelectorAll(".producto, .combo").forEach(item => {
+            const productName = item.dataset.nombre ? item.dataset.nombre.toLowerCase() : '';
+            const productCategoria = item.dataset.categoria ? item.dataset.categoria.toLowerCase() : '';
+    
+            const matchesSearch = productName.includes(searchValue) || productCategoria.includes(searchValue);
+    
+            if (matchesSearch && (selectedCategory === "all" || !selectedCategory || (productCategoria !== "combos" || (productCategoria === "combos" && searchValue.includes("combo"))))) {
+                item.style.display = "block";
+                foundProducts = true;
+                if (item.classList.contains("combo")) {
+                    foundCombos = true;
+                }
+            } else {
+                item.style.display = "none";
+            }
+        });
+    
+        // Ocultar el contenedor de combos si no hay combos visibles
+        combosContainer.style.display = foundCombos ? "block" : "none";
+    
+        // Ocultar categorías vacías
+        document.querySelectorAll(".categoria").forEach(categoriaDiv => {
+            const productosCategoria = categoriaDiv.querySelectorAll(".producto");
+            const categoriaVisible = Array.from(productosCategoria).some(producto => producto.style.display !== "none");
+    
+            if (categoriaVisible) {
+                categoriaDiv.style.display = "block";
+            } else {
+                categoriaDiv.style.display = "none";
+            }
+        });
+    
+        // Ocultar productos más vendidos que no coinciden con la búsqueda
+        const masVendidosContainer = document.querySelector(".mas-vendidos-container");
+        if (masVendidosContainer) {
+            masVendidosContainer.style.display = foundProducts ? "flex" : "none";
+        }
+    
+        // Mostrar u ocultar el mensaje de "No se encontraron resultados"
+        const noResultMessage = document.getElementById("no-result-message");
+        if (!foundProducts && searchValue !== "") {
+            noResultMessage.classList.remove("hidden"); // Mostrar el mensaje
+            noResultMessage.style.display = "block"; // Asegurarse de que se vea
+            noResultMessage.style.marginTop = '120px';
+        } else {
+            noResultMessage.classList.add("hidden"); // Ocultar el mensaje
+            noResultMessage.style.display = "none"; // Asegurarse de que no se vea
+        }
+    
+        // Ocultar botones "Cargar más" al buscar
+        document.querySelectorAll(".btn-cargar-mas").forEach(btn => {
+            btn.style.display = "none";
+        });
+    }                        
+    
+    function mostrarTodosLosProductos() {
+        document.querySelectorAll(".producto").forEach(producto => {
+            producto.style.display = "block";  // Mostrar todos los productos
+        });
+    
+        // Asegúrate de que las categorías y los más vendidos también se muestren si no hay filtros activos
+        document.querySelectorAll(".categoria").forEach(categoriaDiv => {
+            categoriaDiv.style.display = "block";
+        });
+        
+        const masVendidosContainer = document.querySelector(".mas-vendidos-container");
+        if (masVendidosContainer) {
+            masVendidosContainer.style.display = "flex";  // Mostrar productos más vendidos si no hay filtro de búsqueda
+        }
+    
+        // Eliminar botones "Cargar más" cuando se muestran todos los productos
+        document.querySelectorAll(".btn-cargar-mas").forEach(btn => {
+            btn.style.display = "none";
+        });
+    
+        // Volver a configurar la visualización de 4 productos por categoría con el botón "Cargar más" al seleccionar "all"
+        document.querySelectorAll(".categoria").forEach(categoriaDiv => {
+            const productosCategoria = categoriaDiv.querySelectorAll(".producto");
+            productosCategoria.forEach((producto, productoIndex) => {
+                if (productoIndex >= 4) {
+                    producto.style.display = "none";
+                } else {
+                    producto.style.display = "block";
+                }
+            });
+    
+            if (productosCategoria.length > 4) {
+                const cargarMasBtn = categoriaDiv.querySelector(".btn-cargar-mas");
+                if (cargarMasBtn) {
+                    cargarMasBtn.style.display = "block";
+                }
+            }
+        });
+    
+        // Mostrar el contenedor de combos cuando se muestran todos los productos
+        combosContainer.style.display = "block";
+    }
+    
+}
+// Cargar productos y combos
+Promise.all([
+    fetch('Json/productos.json').then(response => response.json()),
+    fetch('Json/combos.json').then(response => response.json())
+])
+.then(([productosData, combosData]) => {
+    productos = productosData;
+    combos = combosData;
+
+    // Verificar si hay parámetro de producto en la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const productoParam = urlParams.get('producto');
+
+    if (productoParam) {
+        const producto = productos.find(p => 
+            normalizarNombre(p.nombre) === normalizarNombre(productoParam)
+        ) || combos.find(c => 
+            normalizarNombre(c.nombre) === normalizarNombre(productoParam)
+        );
+        
+        if (producto) {
+            mostrarDetallesProducto(producto);
+        }
+    }
+
+    // Verificar si la URL contiene un producto
+    const hash = window.location.hash;
+    if (hash.startsWith("#producto-")) {
+        const nombreProductoAmigable = hash.replace("#producto-", "");
+
+        // Normalizar el nombre del producto en la URL
+        const nombreProductoNormalizado = normalizarNombre(nombreProductoAmigable);
+
+        // Buscar el producto por nombre normalizado
+        const producto = buscarProductoPorNombre(nombreProductoNormalizado);
+
+        if (producto) {
+            // Mostrar el panel de detalles
+            document.getElementById("productos").style.display = "none"; // Ocultar productos
+            document.getElementById("detalle-producto").style.display = "block"; // Mostrar detalles
+
+            // Cargar los datos del producto en el panel de detalles
+            mostrarDetallesProducto(producto);
+        } else {
+            console.warn("Producto no encontrado:", nombreProductoNormalizado);
+            // Mostrar el mensaje de "Producto no disponible"
+            mostrarMensajeNoDisponible();
+        }
+    }
+    renderProductos();
+    cargarCarrito();
+})
+.catch(error => {
+    console.error('Error cargando datos:', error);
+    manejarParametrosURL(); // Intentar manejar parámetros igualmente
 });
 // fusion para mostrara el mensaje no disponible para el producto que se busca por la url
 function mostrarMensajeNoDisponible() {
@@ -909,14 +991,35 @@ function mostrarMensajeNoDisponible() {
 }
     
 function updateCartCount() {
-    const itemCount = carrito.reduce((total, producto) => total + producto.cantidad, 0);
+    const cartCountElement = document.getElementById("cart-count");
+    if (!cartCountElement) return;
+    
+    // Calcular solo productos disponibles
+    const itemCount = carrito.reduce((total, producto) => {
+        const productoEnDB = (productos && productos.find(p => p.nombre === producto.nombre)) || 
+                           (combos && combos.find(c => c.nombre === producto.nombre));
+        const disponible = productoEnDB ? productoEnDB.disponible : false;
+        return disponible ? total + producto.cantidad : total;
+    }, 0);
+
     cartCountElement.textContent = itemCount;
-    cartCountElement.style.display = 'flex'; // Siempre visible
+    cartCountElement.style.display = itemCount > 0 ? 'flex' : 'none';
 }
 
 // Función para vaciar el carrito
 function vaciarCarrito() {
-    localStorage.removeItem('carrito');
+    // Obtener productos no disponibles para mantenerlos
+    const productosNoDisponibles = carrito.filter(producto => {
+        const productoEnDB = productos.find(p => p.nombre === producto.nombre) || 
+                            combos.find(c => c.nombre === producto.nombre);
+        return productoEnDB ? !productoEnDB.disponible : false;
+    });
+
+    // Guardar solo los no disponibles
+    carrito = productosNoDisponibles;
+    guardarCarrito();
+    
+    // Actualizar la interfaz
     renderCarrito();
 }
 
@@ -929,77 +1032,122 @@ function renderCarrito() {
     const checkoutButton = document.getElementById("checkout-button");
 
     carritoContainer.innerHTML = ''; // Limpiar el contenido del carrito
-    let total = 0;
+    let totalDisponible = 0;
 
-    const itemCount = carrito.reduce((total, producto) => total + producto.cantidad, 0);
+    // Separar productos disponibles y no disponibles
+    const [disponibles, noDisponibles] = carrito.reduce(([disp, noDisp], producto) => {
+        // Buscar en productos y combos (asegurándonos de que combos esté definido)
+        const productoEnDB = (productos && productos.find(p => p.nombre === producto.nombre)) || 
+                            (combos && combos.find(c => c.nombre === producto.nombre));
+        const disponible = productoEnDB ? productoEnDB.disponible : false;
+        
+        if (disponible) {
+            disp.push(producto);
+            totalDisponible += producto.precio * producto.cantidad;
+        } else {
+            noDisp.push(producto);
+        }
+        return [disp, noDisp];
+    }, [[], []]);
+
+    // Mostrar contador de productos (solo disponibles)
     if (cartCountElement) {
-        cartCountElement.textContent = itemCount;
-        cartCountElement.style.display = itemCount !== 0 ? 'block' : 'none';
+        cartCountElement.textContent = disponibles.reduce((total, p) => total + p.cantidad, 0);
+        cartCountElement.style.display = cartCountElement.textContent === '0' ? 'none' : 'block';
     }
 
-    carrito.forEach(producto => {
-        total += producto.precio * producto.cantidad;
+    // Crear sección de productos disponibles
+    if (disponibles.length > 0) {
+        const disponiblesSection = document.createElement('div');
+        disponiblesSection.className = 'carrito-section';
+        disponiblesSection.innerHTML = '<h3>Productos Disponibles</h3>';
+        
+        disponibles.forEach(producto => {
+            disponiblesSection.appendChild(crearItemCarrito(producto, true));
+        });
+        
+        carritoContainer.appendChild(disponiblesSection);
+    }
 
-        // Crear contenedor para producto/combo
-        const productoDiv = document.createElement("div");
-        productoDiv.className = "carrito-producto";
-
-        // Detectar si es un combo
-        const esCombo = producto.esCombo;
-
-        if (esCombo) {
-            // Si es un combo, mostrar una estructura diferente con un identificador visual claro
-            productoDiv.innerHTML = `
-                <div class="carrito-item combo">
-                    <div class="combo-badge">Pack</div>
-                    <img src="${producto.imagen}" alt="${producto.nombre}" class="carrito-imagen">
-                    <div class="carrito-detalles">
-                        <p class="carrito-nombre">${producto.nombre}</p>
-                        <div class="carrito-combo-detalles">
-                            <strong>Incluye:</strong>
-                            <ul>
-                                ${producto.productos.map(item => `<li>${item}</li>`).join('')}
-                            </ul>
-                        </div>
-                        <p class="carrito-precio">Precio: $${producto.precio.toFixed(2)}</p>
-                        <div class="carrito-cantidad">
-                            <button class="btn-cantidad" onclick="cambiarCantidad('${producto.id}', -1)">-</button>
-                            <span>${producto.cantidad}</span>
-                            <button class="btn-cantidad" onclick="cambiarCantidad('${producto.id}', 1)">+</button>
-                        </div>
-                    </div>
-                    <button class="eliminar-producto" onclick="eliminarDelCarrito('${producto.id}')">Eliminar</button>
-                </div>
-            `;
-        } else {
-            // Si no es un combo, mostrar la estructura normal del producto
-            productoDiv.innerHTML = `
-                <div class="carrito-item">
-                    <img src="${producto.imagen}" alt="${producto.nombre}" class="carrito-imagen">
-                    <div class="carrito-detalles">
-                        <p class="carrito-nombre">${producto.nombre}</p>
-                        <p class="carrito-precio">Precio: $${producto.precio.toFixed(2)}</p>
-                        <div class="carrito-cantidad">
-                            <button class="btn-cantidad" onclick="cambiarCantidad('${producto.id}', -1)">-</button>
-                            <span>${producto.cantidad}</span>
-                            <button class="btn-cantidad" onclick="cambiarCantidad('${producto.id}', 1)">+</button>
-                        </div>
-                    </div>
-                    <button class="eliminar-producto" onclick="eliminarDelCarrito('${producto.id}')">Eliminar</button>
-                </div>
-            `;
-        }
-
-        carritoContainer.appendChild(productoDiv);
-    });
+    // Crear sección de productos no disponibles
+    if (noDisponibles.length > 0) {
+        const noDisponiblesSection = document.createElement('div');
+        noDisponiblesSection.className = 'carrito-section no-disponibles';
+        noDisponiblesSection.innerHTML = '<h3>Productos No Disponibles</h3>';
+        
+        noDisponibles.forEach(producto => {
+            noDisponiblesSection.appendChild(crearItemCarrito(producto, false));
+        });
+        
+        carritoContainer.appendChild(noDisponiblesSection);
+    }
 
     // Mostrar mensaje si el carrito está vacío
     if (carritoVacio) {
         carritoVacio.style.display = carrito.length === 0 ? 'block' : 'none';
-        checkoutButton.style.display = carrito.length === 0 ? 'none' : 'block';
+        checkoutButton.style.display = disponibles.length === 0 ? 'none' : 'block';
     }
 
-    carritoTotal.textContent = `$${total.toFixed(2)}`;
+    // Mostrar el total solo de productos disponibles
+    carritoTotal.textContent = `$${totalDisponible.toFixed(2)}`;
+}
+
+// Función auxiliar para crear items del carrito (actualizada para ocultar cantidad)
+function crearItemCarrito(producto, disponible) {
+    const esCombo = producto.esCombo;
+    const productoDiv = document.createElement("div");
+    productoDiv.className = `carrito-producto ${!disponible ? 'no-disponible' : ''}`;
+
+    let cantidadControls = '';
+    if (disponible) {
+        cantidadControls = `
+            <div class="carrito-cantidad">
+                <button class="btn-cantidad" onclick="cambiarCantidad('${producto.id}', -1)">-</button>
+                <span>${producto.cantidad}</span>
+                <button class="btn-cantidad" onclick="cambiarCantidad('${producto.id}', 1)">+</button>
+            </div>
+        `;
+    } else {
+        // Ocultamos completamente el contador de cantidad para no disponibles
+        cantidadControls = '';
+    }
+
+    if (esCombo) {
+        productoDiv.innerHTML = `
+            <div class="carrito-item combo">
+                <div class="combo-badge">Pack</div>
+                ${!disponible ? '<div class="no-disponible-overlay">No disponible</div>' : ''}
+                <img src="${producto.imagen}" alt="${producto.nombre}" class="carrito-imagen ${!disponible ? 'no-disponible-img' : ''}">
+                <div class="carrito-detalles">
+                    <p class="carrito-nombre ${!disponible ? 'no-disponible-text' : ''}">${producto.nombre}</p>
+                    <div class="carrito-combo-detalles">
+                        <strong>Incluye:</strong>
+                        <ul>
+                            ${producto.productos.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                    <p class="carrito-precio ${!disponible ? 'no-disponible-text' : ''}">Precio: $${producto.precio.toFixed(2)}</p>
+                    ${cantidadControls}
+                </div>
+                <button class="eliminar-producto" onclick="eliminarDelCarrito('${producto.id}')">Eliminar</button>
+            </div>
+        `;
+    } else {
+        productoDiv.innerHTML = `
+            <div class="carrito-item">
+                ${!disponible ? '<div class="no-disponible-overlay">No disponible</div>' : ''}
+                <img src="${producto.imagen}" alt="${producto.nombre}" class="carrito-imagen ${!disponible ? 'no-disponible-img' : ''}">
+                <div class="carrito-detalles">
+                    <p class="carrito-nombre ${!disponible ? 'no-disponible-text' : ''}">${producto.nombre}</p>
+                    <p class="carrito-precio ${!disponible ? 'no-disponible-text' : ''}">Precio: $${producto.precio.toFixed(2)}</p>
+                    ${cantidadControls}
+                </div>
+                <button class="eliminar-producto" onclick="eliminarDelCarrito('${producto.id}')">Eliminar</button>
+            </div>
+        `;
+    }
+
+    return productoDiv;
 }
 
 // Función para cambiar la cantidad de un producto
@@ -1031,6 +1179,10 @@ function agregarAlCarrito(nombre, precio, cantidadId, imagen, boton, productosCo
     }
     const cantidad = parseInt(cantidadElemento.textContent);
     const productoExistente = carrito.find(producto => producto.nombre === nombre);
+ 
+    // Buscar el producto en la base de datos para obtener la imagen principal
+    const productoEnDB = productos.find(p => p.nombre === nombre) || combos.find(c => c.nombre === nombre);
+    const imagenPrincipal = productoEnDB ? productoEnDB.imagen : imagen;    
 
     if (productoExistente) {
         cambiarCantidad(productoExistente.id, cantidad);
@@ -1039,7 +1191,7 @@ function agregarAlCarrito(nombre, precio, cantidadId, imagen, boton, productosCo
             id: `${carrito.length + 1}`, // Generar un ID único
             nombre,
             precio,
-            imagen,
+            imagen: imagenPrincipal,
             cantidad,
             esCombo: productosCombo.length > 0, // Marcar como combo si tiene productos
             productos: productosCombo // Lista de productos si es un combo
@@ -1120,8 +1272,10 @@ function cargarCarrito() {
     const carritoGuardado = localStorage.getItem("carrito");
     if (carritoGuardado) {
         carrito = JSON.parse(carritoGuardado);
-        renderCarrito();
+        // Actualizar el contador inmediatamente
+        updateCartCount();
     }
+    renderCarrito(); // Esto ahora se puede llamar después
 }
 
 function vaciarCarrito() {
@@ -1170,7 +1324,6 @@ async function handleAffiliate() {
         affiliateMessage.textContent = `¡Bienvenido a Asere Online Shop!`;
     }
 }
-
 // Ejecutar la función principal
 handleAffiliate();
 
@@ -1205,16 +1358,11 @@ adjustImages();
 // Ajustar imágenes al redimensionar la ventana
 window.addEventListener('resize', adjustImages);
 
-let productoActual = null; // Variable global para almacenar el producto actual
-let totalImagenes = 0; // Variable global para almacenar el total de imágenes
-
-// para definir si el panel electrodomesticos esta abierto o no
-let panelElectrodomesticosAbierto = false; // Variable para guardar el estado del panel
-
 function mostrarDetallesProducto(producto) {
     productoActual = producto; // Almacenar el producto actual en la variable global
-    // Desplazar la página al inicio
     window.scrollTo({ top: 0 });
+
+    actualizarMetaEtiquetas(producto);
 
     let currentImageIndex = 0; // Definir la variable aquí
 
@@ -1404,15 +1552,24 @@ function mostrarDetallesProducto(producto) {
     });
     // Guardar estado en el historial
     history.pushState({ tipo: "producto", producto }, "", `#producto-${encodeURIComponent(producto.nombre)}`);
+    // Extraer parámetros manteniendo el formato con /
+    const urlParts = window.location.href.split('?');
+    const refParam = urlParts.length > 1 ? new URLSearchParams(urlParts[1]).get('ref') : null;
+    
     const nombreProductoAmigable = producto.nombre
-        .toLowerCase() // Convertir a minúsculas
-        .replace(/[^a-z0-9]+/g, '-') // Reemplazar espacios y caracteres especiales con guiones
-        .replace(/^-+|-+$/g, ''); // Eliminar guiones al inicio y al final
-
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+    
+    // Mantener el formato /?ref= en la URL
+    const newUrl = refParam 
+        ? `#producto-${nombreProductoAmigable}/?ref=${refParam}`
+        : `#producto-${nombreProductoAmigable}`;
+    
     history.pushState(
         { tipo: "producto", producto },
         "",
-        `#producto-${nombreProductoAmigable}`
+        newUrl
     );
 }
 
@@ -1499,6 +1656,18 @@ document.getElementById("detalle-agregar-carrito").addEventListener("click", () 
 // Función para volver a los productos
 document.getElementById("volver-productos").addEventListener("click", (e) => {
     e.preventDefault(); // Evitar la recarga de la página
+
+
+    // Extraer parámetros manteniendo el formato con /
+    const urlParts = window.location.href.split('?');
+    const refParam = urlParts.length > 1 ? new URLSearchParams(urlParts[1]).get('ref') : null;
+    
+    // Limpiar la URL pero mantener el parámetro ref con el formato /?ref= si existe
+    const urlLimpia = refParam 
+        ? `${window.location.origin}${window.location.pathname}/?ref=${refParam}`
+        : `${window.location.origin}${window.location.pathname}`;
+    
+    history.replaceState({}, "", urlLimpia);
 
     // Mostrar el panel de electrodomésticos si estaba abierto
     if (panelElectrodomesticosAbierto) {
@@ -1659,57 +1828,71 @@ function formatearDescripcion(descripcion) {
     }
 }
 
-//-----------------------------Notificaciones-----------------------------------------
-//-------------------------------------------------------------------------------------
-// Verificar soporte de Notificaciones
-/*if ('Notification' in window && 'serviceWorker' in navigator) {
-    // Registrar un service worker
-    navigator.serviceWorker.register('Js/service-worker.js').then(function(registration) {
-        console.log('Service Worker registrado con éxito:', registration);
+// Función para actualizar metaetiquetas OG automáticamente
+function actualizarMetaEtiquetas(producto) {
+    // Validación segura de propiedades
+    const nombre = producto?.nombre || 'Producto Asere';
+    const descripcion = producto?.descripcion ? 
+        (producto.descripcion.length > 160 ? 
+         producto.descripcion.substring(0, 160) + '...' : 
+         producto.descripcion) : 
+        'Descubre este producto en Asere Shops';
+    const imagen = producto?.imagen || 'img/LogoVerde.jpeg';
+    
+    // CALCULAR PRECIO SEGÚN OFERTA
+    let precioMostrado = producto?.precio || 0;
+    if (producto?.oferta && producto?.descuento) {
+        precioMostrado = producto.precio - (producto.precio * (producto.descuento / 100));
+    }
+    const precio = precioMostrado.toFixed(2);
+    
+    const disponible = producto?.disponible ? 'in stock' : 'out of stock';
 
-        // Función para enviar una notificación visualmente atractiva
-        const sendNotification = () => {
-            registration.showNotification('🌟 ¡Hola Asere! 🌟', {
-                body: `Son las ${new Date().toLocaleTimeString()}. ¡Echa un vistazo a nuestros productos más vendidos! 🛒💕`,
-                icon: 'img/LogoVerde.jpeg', // Cambia este URL por tu ícono preferido
-                image: 'img/Notificacion.jpg', // Imagen atractiva
-                badge: 'img/badge.png', // Añadir un badge para hacerla más llamativa
-                vibrate: [200, 100, 200], // Vibración
-                requireInteraction: true, // Mantener la notificación hasta que el usuario interactúe
-                sound: 'https://www.soundjay.com/button/beep-07.wav', // Sonido de notificación (opcional)
-            });
-        };
+    const urlBase = window.location.origin + window.location.pathname;
+    const urlProducto = `${urlBase}?producto=${encodeURIComponent(nombre)}`;
+    
+    history.replaceState({}, '', urlProducto);
 
-        // Solicitar permiso de notificaciones
-        const requestPermission = async () => {
-            try {
-                const permission = await Notification.requestPermission();
+    // Función auxiliar para actualizar metaetiquetas
+    const setMetaTag = (attr, name, value) => {
+        let element = document.querySelector(`meta[${attr}="${name}"]`);
+        if (!element) {
+            element = document.createElement('meta');
+            element.setAttribute(attr, name);
+            document.head.appendChild(element);
+        }
+        element.content = value;
+    };
 
-                if (permission === 'granted') {
-                    console.log('Permiso concedido. Las notificaciones se enviarán automáticamente.');
-
-                    // Enviar la primera notificación inmediatamente
-                    sendNotification();
-
-                    // Establecer el intervalo para enviar notificaciones cada 20 minutos
-                    setInterval(() => {
-                        sendNotification(); // Llamar a la función para mostrar la notificación
-                        console.log('Enviando notificación automática...');
-                    }, 60000 * 20); // 20 minutos
-                } else {
-                    console.warn('El usuario denegó el permiso de notificaciones.');
-                }
-            } catch (error) {
-                console.error('Error al solicitar permiso de notificaciones:', error);
-            }
-        };
-
-        // Solicitar permisos al cargar la página
-        requestPermission();
-    }).catch(function(error) {
-        console.error('Error al registrar el Service Worker:', error);
-    });
-} else {
-    console.error('Tu navegador no soporta notificaciones.');
+    // Actualizar metaetiquetas
+    setMetaTag('property', 'og:title', `${nombre} | Asere Shops`);
+    setMetaTag('property', 'og:description', descripcion);
+    setMetaTag('property', 'og:image', obtenerUrlAbsoluta(imagen));
+    setMetaTag('property', 'og:url', urlProducto);
+    setMetaTag('property', 'og:type', 'product');
+    setMetaTag('property', 'product:price:amount', precio);
+    setMetaTag('property', 'product:price:currency', 'USD/EUR');
+    setMetaTag('property', 'product:brand', 'Asere Shops');
+    setMetaTag('property', 'product:availability', disponible);
+    
+    // Añadir etiqueta de descuento si está en oferta
+    if (producto?.oferta && producto?.descuento) {
+        setMetaTag('property', 'product:sale_price:amount', precio);
+        setMetaTag('property', 'product:sale_price:currency', 'USD/EUR');
+        setMetaTag('property', 'product:sale_price:start_date', new Date().toISOString());
+        setMetaTag('property', 'product:sale_price:end_date', 
+                  producto.finOferta || new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString());
+    }
 }
-*/
+
+function obtenerUrlAbsoluta(rutaRelativa) {
+    if (!rutaRelativa) return window.location.origin + '/img/LogoVerde.jpeg';
+    return window.location.origin + '/' + rutaRelativa.replace(/^\//, '');
+}
+function normalizarNombre(nombre) {
+    return nombre.toLowerCase()
+                .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+                .replace(/[^a-z0-9]+/g, '-')
+                .replace(/^-+|-+$/g, '');
+}
+
