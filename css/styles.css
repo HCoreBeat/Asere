@@ -315,19 +315,20 @@ nav ul li a:hover i {
     color: #f4f4f9;
 }
 
-/* Especifica el color del icono de la categoría "Ofertas" */ 
-.categorias ul li a[data-categoria="ofertas"] i { 
-    color: #FFD700; /* Color dorado para el icono */ 
+/*Especifica el color del icono de las categorias*/
+.categorias ul li a[data-categoria="carnes"] {
+    color: #fffec1;
 }
 
 .categoria[data-categoria="carnes"] {
-    background-color: #f5c455; /* Cambia el color según tu preferencia */
+    background-color: #f5c455;
     margin: 0px;
     padding: 30px 25px;
 }
 
+/*Cambiar el color del texto dentro de la categoria carnes (el h2)*/
 .categoria[data-categoria="carnes"] h2 {
-    color: white; /* Cambia el color según tu preferencia */
+    color: white;
 }
 
 .categorias-container {
@@ -427,20 +428,6 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
     width: 100%;
     height: 200px; /* Altura del difuminado ajustada */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, #f5f5f5 80%); /* Difuminado más suave */
-}
-
-
-
-@media (max-width: 768px) {
-
-    .products {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .product {
-        margin-bottom: 20px;
-    }
 }
 
 
@@ -552,23 +539,6 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
 
 .mas-vendidos-container .producto .producto-contenedor{
     margin-top: 35px;
-}
-
-@media (max-width: 768px) {
-    /* Producto dentro del contenedor */
-    .mas-vendidos-container .producto {
-        flex: 0 0 auto;
-        width: 160px;
-        height: 210px;
-        scroll-snap-align: start;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border-radius: 1px;
-    }
-
-    .mas-vendidos-container .producto .producto-img{
-        height: 100px;
-        width: 120px;
-    }
 }
 
 /* Efecto hover sobre cada producto */
@@ -848,48 +818,6 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
     .btn-carrito {
         font-size: 15px;
         padding: 1px 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    .productos-categoria-container {
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Ajuste más pequeño */
-    }
-
-    .producto {
-        padding: 8px; /* Reduce el padding para mayor espacio */
-    }
-
-    .producto-img {
-        height: 120px; /* Ajusta la altura de la imagen */
-    }
-
-    .producto-info {
-        padding: 0 10px;
-    }
-
-    .nombre {
-        font-size: 12px;
-        max-height: 30px;
-    }
-
-    .precio {
-        font-size: 18px;
-    }
-
-    .btn-cantidad {
-        width: 25px;
-        height: 25px;
-        font-size: 15px;
-    }
-
-    .cantidad span {
-        font-size: 11px;
-    }
-
-    .btn-carrito {
-        font-size: 15px;
-        padding: 1px 8px;
     }
 }
 
@@ -1447,49 +1375,6 @@ hr {
     transform: scale(1.05);
 }
 
-/* Responsive para pantallas pequeñas */
-@media (max-width: 768px) {
-    .carrito-item {
-        flex-wrap: nowrap;
-        align-items: flex-start;
-        gap: 15px;
-    }
-
-    .carrito-imagen {
-        width: 80px;
-        height: 80px;
-    }
-
-    .carrito-detalles {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-        align-items: center;
-        flex-grow: 1;
-    }
-
-    .carrito-nombre {
-        font-size: 15px;
-        flex-basis: 60%;
-    }
-
-    .carrito-precio {
-        font-size: 14px;
-        flex-basis: 40%;
-        color: #2a9d8f; /* Color acentuado */
-    }
-
-    .carrito-cantidad {
-        flex-basis: 60%;
-        justify-content: flex-start;
-    }
-
-    .eliminar-producto {
-        flex-basis: 30%;
-        margin-left: auto;
-    }
-}
-
 /* Extra small devices */
 @media (max-width: 480px) {
     .carrito-item {
@@ -1872,7 +1757,6 @@ hr {
     padding: 35px 30px;
     position: relative;
     z-index: 2;
-    animation: fadeIn 1s ease-out;
 }
 
 /* Header titles */
@@ -1986,7 +1870,7 @@ hr {
 
 #planilla-pago .btn-submit,
 #planilla-pago .btn-cancel {
-    padding: 14px 28px; /* Aumenté el padding para que sean más grandes */
+    padding: 10px 20px; /* Aumenté el padding para que sean más grandes */
     border: none;
     border-radius: 8px;
     font-size: 1.1rem;
@@ -1999,7 +1883,7 @@ hr {
 
 /* Submit button */
 #planilla-pago .btn-submit {
-    background-color: #27ae60; /* Verde brillante */
+    background-color: #00a550; /* Verde brillante */
     color: white;
     box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
     border: none;
@@ -2023,47 +1907,6 @@ hr {
     background-color: #c0392b;
     box-shadow: 0 8px 25px rgba(231, 76, 60, 0.5);
     transform: translateY(-4px);
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    #planilla-pago {
-        padding: 25px;
-        width: 100%;
-        margin: 0 auto;
-        margin-top: 200px;
-    }
-
-    #planilla-pago input,
-    #planilla-pago textarea,
-    #planilla-pago button {
-        width: 100%;
-    }
-
-    #planilla-pago .button-group {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    #planilla-pago table {
-        font-size: 0.95rem;
-    }
-
-    #planilla-pago #summary-total {
-        font-size: 1.1rem;
-    }
-}
-
-/* Fade-in effect */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 /* Animated background with wave effect */
@@ -2163,7 +2006,6 @@ hr {
     align-items: center;
     z-index: 9999; /* Asegura que esté por encima de otros elementos */
     transition: opacity 0.5s ease;
-    animation: fadeIn 0.5s ease-out; /* Animación de entrada */
 }
 
 /* Contenedor del mensaje de agradecimiento */
@@ -2227,17 +2069,6 @@ hr {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Animación de entrada */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 /* Cuando el panel está visible */
 #thank-you-panel.show {
@@ -2414,17 +2245,10 @@ hr {
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
-    animation: fadeOut 5s forwards;
 }
 
 .warning-message p {
     margin: 0;
-}
-
-@keyframes fadeOut {
-    0% { opacity: 1; }
-    80% { opacity: 1; }
-    100% { opacity: 0; display: none; }
 }
 
 /* Estilo del mensaje de tiempo de entrega */
@@ -2620,67 +2444,6 @@ hr {
     font-size: 1.2rem;
     font-weight: bold;
     color: #27ae60;
-}
-
-/* Ajustes Responsive */
-@media (max-width: 768px) {
-    .combos-container {
-        max-height: none; /* Permitir altura flexible */
-        padding: 12px;
-    }
-
-    .combo-slider {
-        flex-direction: row;
-        overflow-x: auto;
-        max-height: none;
-        gap: 10px;
-        padding-bottom: 20px;
-        scroll-snap-type: x mandatory;
-    }
-
-    .slider-indicator {
-        top: auto;
-        bottom: 50%;
-        right: 3%;
-        transform: translateX(50%);
-    }
-
-    .slider-indicator::before {
-        content: "→"; /* Indicador de flecha horizontal */
-    }
-
-    .combo-contenedor {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        min-width: 280px;
-        scroll-snap-align: center;
-        margin: 10px 45px;
-    }
-
-    .combo-contenedor:hover {
-        margin: 10px 50px;
-    }
-
-    .combo-img {
-        flex: 0 0 60px;
-        margin-bottom: 15px;
-    }
-
-    .combo-img img {
-        width: 50%;
-        border-radius: 12px;
-    }
-
-    .combo-info {
-        align-items: center;
-        text-align: center;
-    }
-
-    .combo-info .productos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
 }
 
 /*------Detalles del combo en el carrito-------*/
@@ -3003,58 +2766,6 @@ hr {
     opacity: 1;
 }
 
-/* Ajustes Responsive */
-@media (max-width: 768px) {
-    .combo-contenedor-evento {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        background-image: url('/img/Evento_PC_Movil.jpg');
-        min-width: 360px;
-        min-height: 570px;
-        scroll-snap-align: center;
-        margin: 10px 45px;
-    }
-
-    .combo-contenedor-evento:hover {
-        margin: 10px 50px;
-    }
-
-    .combo-contenedor-evento .combo-img {
-        flex: 0 0 60px;
-        margin-bottom: 15px;
-        padding-top: 25px;
-    }
-
-    .combo-contenedor-evento .combo-img img {
-        width: 65%;
-        border-radius: 12px;
-    }
-
-    .combo-contenedor-evento .combo-info {
-        padding-top: 30px;
-        width: 300px;
-        align-items: center;
-        display: inline-grid;
-        text-align: center;
-        justify-items: start;
-    }
-
-    .combo-contenedor-evento .combo-img::after {
-        top: 35px;
-        right: 55px;
-        font-size: 25px;
-    }
-
-    .combo-contenedor-evento .combo-info .productos {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .combo-contenedor-evento .btn-carrito {
-        font-size: 12px;
-    }
-}
-
 /*------Detalles del combo en el carrito-------*/
 .combo-contenedor-evento .carrito-producto.combo {
     border: 1px solid #ddd;
@@ -3111,8 +2822,310 @@ hr {
     gap: 10px;
 }
 
+/* Estilos para productos no disponibles en el carrito */
+.no-disponible-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.no-disponible-img {
+    opacity: 0.6;
+}
+
+.no-disponible-text {
+    color: #999;
+}
+
+.carrito-item {
+    position: relative;
+}
+
+.warning-row {
+    background-color: #fff3cd;
+    color: #856404;
+    text-align: center;
+    padding: 10px;
+}
+
+.warning-row i {
+    margin-right: 8px;
+    color: #ffc107;
+}
+/* Estilos para las secciones del carrito */
+.carrito-section {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.carrito-section h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #eee;
+}
+
+.carrito-section.no-disponibles h3 {
+    color: #999;
+    border-bottom-color: #ff6b6b;
+}
+
+.carrito-producto.no-disponible .eliminar-producto {
+    background-color: #999;
+}
+
+.carrito-producto.no-disponible .eliminar-producto:hover {
+    background-color: #777;
+}
+
+.carrito-cantidad span {
+    display: inline-block;
+    min-width: 20px;
+    text-align: center;
+}
+
+
 /* Diseño responsive */
 @media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        margin-bottom: 20px;
+    }
+    
+    /* Producto dentro del contenedor */
+    .mas-vendidos-container .producto {
+        flex: 0 0 auto;
+        width: 160px;
+        height: 210px;
+        scroll-snap-align: start;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 1px;
+    }
+
+    .mas-vendidos-container .producto .producto-img{
+        height: 100px;
+        width: 120px;
+    }
+    .productos-categoria-container {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Ajuste más pequeño */
+    }
+
+    .producto {
+        padding: 8px; /* Reduce el padding para mayor espacio */
+    }
+
+    .producto-img {
+        height: 120px; /* Ajusta la altura de la imagen */
+    }
+
+    .producto-info {
+        padding: 0 10px;
+    }
+
+    .nombre {
+        font-size: 12px;
+        max-height: 30px;
+    }
+
+    .precio {
+        font-size: 18px;
+    }
+
+    .btn-cantidad {
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
+    }
+
+    .cantidad span {
+        font-size: 11px;
+    }
+
+    .btn-carrito {
+        font-size: 15px;
+        padding: 1px 8px;
+    }
+    .carrito-item {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .carrito-imagen {
+        width: 80px;
+        height: 80px;
+    }
+
+    .carrito-detalles {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .carrito-nombre {
+        font-size: 15px;
+        flex-basis: 60%;
+    }
+
+    .carrito-precio {
+        font-size: 14px;
+        flex-basis: 40%;
+        color: #2a9d8f; /* Color acentuado */
+    }
+
+    .carrito-cantidad {
+        flex-basis: 60%;
+        justify-content: flex-start;
+    }
+
+    .eliminar-producto {
+        flex-basis: 30%;
+        margin-left: auto;
+    }
+    #planilla-pago {
+        padding: 25px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 200px;
+    }
+
+    #planilla-pago input,
+    #planilla-pago textarea,
+    #planilla-pago button {
+        width: 100%;
+    }
+
+    #planilla-pago .button-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #planilla-pago table {
+        font-size: 0.95rem;
+    }
+
+    #planilla-pago #summary-total {
+        font-size: 1.1rem;
+    }
+    .combos-container {
+        max-height: none; /* Permitir altura flexible */
+        padding: 12px;
+    }
+
+    .combo-slider {
+        flex-direction: row;
+        overflow-x: auto;
+        max-height: none;
+        gap: 10px;
+        padding-bottom: 20px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .slider-indicator {
+        top: auto;
+        bottom: 50%;
+        right: 3%;
+        transform: translateX(50%);
+    }
+
+    .slider-indicator::before {
+        content: "→"; /* Indicador de flecha horizontal */
+    }
+
+    .combo-contenedor {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-width: 280px;
+        scroll-snap-align: center;
+        margin: 10px 45px;
+    }
+
+    .combo-contenedor:hover {
+        margin: 10px 50px;
+    }
+
+    .combo-img {
+        flex: 0 0 60px;
+        margin-bottom: 15px;
+    }
+
+    .combo-img img {
+        width: 50%;
+        border-radius: 12px;
+    }
+
+    .combo-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .combo-info .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .combo-contenedor-evento {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-image: url('/img/Evento_PC_Movil.jpg');
+        min-width: 360px;
+        min-height: 570px;
+        scroll-snap-align: center;
+        margin: 10px 45px;
+    }
+
+    .combo-contenedor-evento:hover {
+        margin: 10px 50px;
+    }
+
+    .combo-contenedor-evento .combo-img {
+        flex: 0 0 60px;
+        margin-bottom: 15px;
+        padding-top: 25px;
+    }
+
+    .combo-contenedor-evento .combo-img img {
+        width: 65%;
+        border-radius: 12px;
+    }
+
+    .combo-contenedor-evento .combo-info {
+        padding-top: 30px;
+        width: 300px;
+        align-items: center;
+        display: inline-grid;
+        text-align: center;
+        justify-items: start;
+    }
+
+    .combo-contenedor-evento .combo-img::after {
+        top: 35px;
+        right: 55px;
+        font-size: 25px;
+    }
+
+    .combo-contenedor-evento .combo-info .productos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .combo-contenedor-evento .btn-carrito {
+        font-size: 12px;
+    }
     .ubicacion-entrega {
         display: none; /* Oculta el mensaje en pantallas pequeñas */
     }
