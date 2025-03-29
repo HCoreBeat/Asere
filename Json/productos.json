@@ -324,6 +324,17 @@
 
 
     {
+        "nombre": "Nutela",
+        "categoria": "despensa",
+        "precio": 4.476,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/nutela_365.jpg",
+        "disponible": true,
+        "descripcion":"Crema de Avellanas con Cacao 365 Cacao Hazelnut Cream Eviza Nezka 400 g combina chocolate y avellanas en una fórmula única con textura suave y cremosa. Versátil y deliciosa, es perfecta para untar en panes, galletas, crepas o para agregar un toque especial a tus postres y recetas de repostería. Elaborada con ingredientes seleccionados, garantiza calidad premium y un sabor inigualable. Su práctico envase ergonómico facilita el uso y almacenamiento, asegurando frescura en cada porción. Ideal para desayunos, meriendas y momentos especiales que se convierten en dulces experiencias diarias. Disponible con pedido fácil y envío rápido para disfrutar sin complicaciones."
+    },
+    {
         "nombre": "Aceite Fritura 900ml",
         "categoria": "despensa",
         "precio": 3.619,
@@ -922,7 +933,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Caja_de_Refresco_Limon.jpg",
-        "disponible": false
+        "disponible": true
     },
     {
         "nombre": "Refresco Piña 2Lts",
@@ -1444,6 +1455,21 @@
         "imagenesAdicionales":[
             "img/products/Table_fill_light_2.jpg",
             "img/products/Table_fill_light_3.jpg"
+        ]
+    },{
+        "nombre": "Ventilador solar portátil",
+        "categoria": "electrodomesticos",
+        "precio": 71.428,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": true,
+        "imagen": "img/products/ventilador_solar_portatil.jpg",
+        "disponible": true,
+        "descripcion": "1- Ventilador solar portátil: el ventilador solar para exteriores es pequeño, fácil de transportar, no ocupa espacio en la mochila, no hay necesidad de preocuparse por la batería y la escasez de iluminación al acampar al aire libre, vida útil ultralarga. 2- Ventilador con altavoz Bluetooth: El ventilador viene con función Bluetooth y debe estar conectado a su teléfono móvil para reproducir música, llévelo con usted en sus viajes de campamento al aire libre y le brindará el sonido de canciones animadas en la naturaleza silenciosa, lo que contribuirá a la atmósfera agradable de su viaje. 3- Aspa del ventilador de hélice: ventilador de cinco aspas con poco ruido, que corta el flujo de aire de manera uniforme y densa, haciendo que el viento esté mejor concentrado, un flujo de aire suave y un viento más fuerte, ventilador eléctrico multifuncional de cinco aspas. 4- Ventilador con iluminación: Nuestro ventilador viene con una función de iluminación, una exquisita lámpara de mesa pequeña, ¡el corte de energía se niega a tocar la oscuridad, enfría e ilumina tanto en la noche de verano! 5 Con función de temporizador: apagado inteligente del temporizador, puede configurar el apagado del temporizador en 30 minutos, no es necesario levantarse en medio de la noche para apagar el ventilador, no hay necesidad de preocuparse por resfriarse después de quedarse dormido !",
+        "imagenesAdicionales":[
+            "img/products/ventilador_solar_portatil_2.jpg",
+            "img/products/ventilador_solar_portatil_3.jpg",
+            "img/products/ventilador_solar_portatil_4.jpg"
         ]
     }
 ]
