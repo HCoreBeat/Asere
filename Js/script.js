@@ -204,7 +204,6 @@ function buscarProductoPorNombre(nombre) {
 
 // Función para manejar parámetros de URL al cargar
 function manejarParametrosURL() {
-    // Extraer parámetros correctamente aunque haya una barra antes del ?
     const urlParts = window.location.href.split('?');
     const queryString = urlParts.length > 1 ? urlParts[1] : '';
     const urlParams = new URLSearchParams(queryString);
@@ -212,9 +211,7 @@ function manejarParametrosURL() {
     const productoParam = urlParams.get('producto');
     const refParam = urlParams.get('ref');
     
-    // Manejar el parámetro de afiliado primero
     if (refParam) {
-        // Limpiar el parámetro ref por si viene con otros datos
         const cleanRef = refParam.split('?')[0].split('&')[0];
         handleAffiliate(cleanRef);
     }
@@ -281,13 +278,10 @@ function renderProductos() {
 
     // Combinar productos y combos en un solo array
     const productosYCombos = [...productos, ...combos]; 
-
     // Eliminar productos duplicados
     const productosUnicos = removeDuplicates(productosYCombos);
-    const productosActualizados = actualizarPrecios(productosUnicos); // Actualizar precios
-
     // Filtrar productos disponibles
-    const productosDisponibles = productosActualizados.filter(producto => 
+    const productosDisponibles = productosUnicos.filter(producto => 
         producto.disponible && producto.categoria !== "combos" && producto.categoria !== "electrodomesticos"
     );
     // Crear el contenedor de productos más vendidos
@@ -925,17 +919,15 @@ Promise.all([
     productos = productosData;
     combos = combosData;
 
-    // Verificar si hay parámetro de producto en la URL
+    productos = actualizarPrecios(productosData);
+    combos = actualizarPrecios(combosData);
+
+    // Verificar parámetros de URL
     const urlParams = new URLSearchParams(window.location.search);
     const productoParam = urlParams.get('producto');
 
     if (productoParam) {
-        const producto = productos.find(p => 
-            normalizarNombre(p.nombre) === normalizarNombre(productoParam)
-        ) || combos.find(c => 
-            normalizarNombre(c.nombre) === normalizarNombre(productoParam)
-        );
-        
+        const producto = buscarProductoPorNombre(productoParam);
         if (producto) {
             mostrarDetallesProducto(producto);
         }
