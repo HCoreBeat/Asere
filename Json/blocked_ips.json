@@ -1,7 +1,6 @@
 {
     "blocked_ips": [
-      "152.207.244.55",
-      "152.206.234.0"
+      "152.207.244.55"
     ],
     "error_code": 503,
     "error_message": "Acceso restringido temporalmente"
