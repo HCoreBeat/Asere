@@ -9,7 +9,62 @@ let totalImagenes = 0; // Variable global para almacenar el total de imágenes
 let panelElectrodomesticosAbierto = false; // Variable para guardar el estado del panel
 
 
-document.addEventListener("DOMContentLoaded", () => {
+// Función independiente para verificación de IP
+async function checkBlockedIP() {
+    try {
+        
+        // Obtener IP del usuario
+        const ipResponse = await fetch('https://api.ipify.org?format=json');
+        const { ip: userIP } = await ipResponse.json();
+
+        //console.log("ip: "+userIP);
+        
+        // Cargar IPs bloqueadas
+        const blockedResponse = await fetch('Json/blocked_ips.json');
+        const { blocked_ips, error_code } = await blockedResponse.json();
+
+        // Obtener datos de bloqueo previos
+        const blockedIPCookie = document.cookie.split('; ').find(row => row.startsWith('blocked_ip='))?.split('=')[1];
+        const blockedIPStorage = localStorage.getItem('blocked_ip');
+
+        // Verificar si la IP actual está bloqueada
+        const isCurrentIPBlocked = blocked_ips.includes(userIP);
+        
+        // Verificar si hay IPs bloqueadas almacenadas
+        const isStoredIPBlocked = (blockedIPCookie && blocked_ips.includes(blockedIPCookie)) || 
+                                 (blockedIPStorage && blocked_ips.includes(blockedIPStorage));
+
+        // Lógica de bloqueo
+        if (isCurrentIPBlocked) {
+            // Guardar en cookies y localStorage
+            document.cookie = `blocked_ip=${userIP}; path=/; max-age=2592000`; // 30 días
+            localStorage.setItem('blocked_ip', userIP);
+            window.location.href = `error.html?code=${error_code}`;
+            return true;
+        } 
+        else if (isStoredIPBlocked) {
+            // Si la IP almacenada sigue bloqueada
+            window.location.href = `error.html?code=${error_code}`;
+            return true;
+        } 
+        else {
+            // Limpiar datos si ya no está bloqueado
+            if (blockedIPCookie) document.cookie = 'blocked_ip=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+            if (blockedIPStorage) localStorage.removeItem('blocked_ip');
+            return false;
+        }
+
+    } catch (error) {
+        console.error('Error en verificación de IP:', error);
+        return false;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", async () => {
+
+    // Ejecutar primero la verificación de IP
+    const isBlocked = await checkBlockedIP();
+    if (isBlocked) return; // Detener ejecución si está bloqueado
     
     const menuToggle = document.querySelector(".menu-toggle");
     const navMenu = document.querySelector("nav ul");
@@ -1887,4 +1942,3 @@ function normalizarNombre(nombre) {
                 .replace(/[^a-z0-9]+/g, '-')
                 .replace(/^-+|-+$/g, '');
 }
-
