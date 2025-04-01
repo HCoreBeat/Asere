@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asere Shops - Acceso restringido por seguridad">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="img/LogoVerde.jpg" type="image/x-icon">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.asereshops.com/error">
+    <meta property="og:title" content="Acceso Restringido - Asere Shops">
+    <meta property="og:description" content="Protección activa de seguridad">
+    <meta property="og:image" content="https://www.asereshops.com/img/LogoVerde.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.asereshops.com/error">
+    <meta property="twitter:title" content="Acceso Restringido - Asere Shops">
+    <meta property="twitter:description" content="Protección activa de seguridad">
+    <meta property="twitter:image" content="https://www.asereshops.com/img/LogoVerde.jpg">
+
+    <title>Acceso Restringido - Asere Shops</title>
+    <style>
+        :root {
+            --primary: #2D333A;
+            --secondary: #656D76;
+            --error-red: #dc3545;
+            --background: #F8F9FA;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--background);
+            line-height: 1.6;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .error-card {
+            background: #fff;
+            padding: 2.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .error-code {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--error-red);
+            margin-bottom: 1rem;
+        }
+
+        .security-info {
+            background: #fff3f3;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .security-id {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            letter-spacing: 0.05rem;
+        }
+
+        .reason {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            border-left: 3px solid var(--error-red);
+            text-align: left;
+            background: #f8f9fa;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            background: var(--error-red);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #c82333;
+            transform: translateY(-1px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--secondary);
+            font-size: 0.875rem;
+            border-top: 1px solid #e9ecef;
+        }
+
+        @media (max-width: 480px) {
+            .error-card {
+                padding: 1.5rem;
+            }
+            
+            .error-code {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="error-card">
+            <div class="error-code" id="dynamicErrorCode">503</div>
+            
+            <div class="security-info">
+                <div class="security-id">ID de Seguridad: ASERE-<span id="securityId"></span></div>
+            </div>
+
+            <div class="reason">
+                <div style="font-weight: 500; margin-bottom: 0.5rem;">Razón del bloqueo:</div>
+                <div id="blockReason"></div>
+            </div>
+
+            <a href="mailto:soporte.asere@gmail.com" class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                </svg>
+                Contactar Soporte
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 Asere Shops - Sistema de protección activa
+    </footer>
+
+    <script>
+        // Función faltante que generaba el error
+        const generateSecurityData = () => {
+            const securityId = Math.random().toString(36).substring(2, 8).toUpperCase();
+            const reasons = [
+                "Intento de acceso no autorizado"
+            ];
+            
+            document.getElementById('securityId').textContent = securityId;
+            document.getElementById('blockReason').textContent = 
+                reasons[Math.floor(Math.random() * reasons.length)];
+        };
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const checkAccess = async () => {
+                try {
+                    const ipResponse = await fetch('https://api.ipify.org?format=json');
+                    const { ip: currentIP } = await ipResponse.json();
+                    
+                    const blockedResponse = await fetch('Json/blocked_ips.json');
+                    const { blocked_ips } = await blockedResponse.json();
+
+                    const storedIP = localStorage.getItem('blocked_ip') || 
+                                   document.cookie.split('; ').find(row => row.startsWith('blocked_ip='))?.split('=')[1];
+
+                    const shouldBlock = blocked_ips.includes(currentIP) || 
+                                      (storedIP && blocked_ips.includes(storedIP));
+
+                    if (!shouldBlock) {
+                        document.cookie = 'blocked_ip=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+                        localStorage.removeItem('blocked_ip');
+                        window.location.href = '/';
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    window.location.href = '/';
+                }
+            };
+
+            await checkAccess();
+            generateSecurityData(); // Llamada correcta a la función ahora definida
+        });
+    </script>
+</body>
+</html>
