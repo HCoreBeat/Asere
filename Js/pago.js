@@ -152,31 +152,29 @@ function getCubanDateTime() {
     return `${dateTimeParts.year}-${dateTimeParts.month}-${dateTimeParts.day}T${dateTimeParts.hour}:${dateTimeParts.minute}:${dateTimeParts.second}(${dateTimeParts.timeZone})`;
 }
 
-// Función para enviar estadísticas al realizar una compra (versión mejorada)
+// Función para enviar estadísticas al realizar una compra
 async function enviarEstadisticaCompra(fullName, email, phone, cartItems, total, affiliate) {
     try {
-        // Obtener información IP con timeout de 5 segundos
-        const ipInfo = await Promise.race([
-            fetch('https://ipapi.co/json/'),
-            new Promise((_, reject) => 
-                setTimeout(() => reject(new Error('Timeout IP API')), 10000)
-            )
-        ]).then(res => res.ok ? res.json() : { ip: 'Desconocida', country_name: 'Desconocido' })
-            .catch(() => ({ ip: 'Desconocida', country_name: 'Desconocido' }));
+        // Obtener información adicional (IP, país, etc.)
+        const ipInfo = await fetch('https://ipapi.co/json/').then(res => res.json());
+        const ip = ipInfo.ip || 'Desconocida';
+        const pais = ipInfo.country_name || 'Desconocido';
 
-        // Obtener datos técnicos
+        // Obtener navegador y sistema operativo
         const { navegador, sistemaOperativo } = getBrowserAndOS();
+
+        // Obtener la fuente de tráfico
         const fuenteTrafico = obtenerFuenteTrafico();
-        
-        // Construir objeto de estadísticas
+
+        // Crear la estadística de compra
         const estadisticaCompra = {
-            ip: ipInfo.ip || 'Desconocida',
-            pais: ipInfo.country_name || 'Desconocido',
+            ip,
+            pais,
             fecha_hora_entrada: getCubanDateTime(),
             origen: document.referrer || 'Acceso directo',
-            fuente_trafico: fuenteTrafico,
+            fuente_trafico: fuenteTrafico, // Nueva: fuente de tráfico
             afiliado: affiliate,
-            duracion_sesion_segundos: Math.round((Date.now() - inicioSesion) / 1000),
+            duracion_sesion_segundos: Math.round((Date.now() - inicioSesion) / 1000), // Duración de la sesión
             tiempo_carga_pagina_ms: performance.timing.domContentLoadedEventEnd - performance.timing.navigationStart,
             nombre_comprador: fullName,
             telefono_comprador: phone,
@@ -190,36 +188,35 @@ async function enviarEstadisticaCompra(fullName, email, phone, cartItems, total,
             precio_compra_total: total,
             navegador,
             sistema_operativo: sistemaOperativo,
-            tipo_usuario: "Comprador"
+            tipo_usuario: "Comprador" // Marcamos como comprador
         };
 
-        // Enviar en paralelo a ambos servidores con timeout
-        await Promise.all([
-            fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(estadisticaCompra)
-            })
-            .then(res => {
-                if (!res.ok) console.error("Error Render:", res.status);
-            })
-            .catch(error => console.error("Falló Render:", error)),
+        // Enviar la estadística al backend de render.com
+        const response = await fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(estadisticaCompra)
+        });
 
-            fetch("https://servidor-estadisticas-production.up.railway.app/guardar-estadistica", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(estadisticaCompra)
-            })
-            .then(res => {
-                if (!res.ok) console.error("Error Railway:", res.status);
-            })
-            .catch(error => console.error("Falló Railway:", error))
-        ]).catch(error => console.error("Error en estadísticas:", error));
+        if (response.ok) {
+            console.log("Estadística de compra enviada exitosamente a render.");
+        } else {
+            console.error("Error al enviar la estadística de compra:", await response.text());
+        }
+        // Enviar la estadística al backend de railway.com
+        const response2 = await fetch("https://servidor-estadisticas-production.up.railway.app/guardar-estadistica", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(estadisticaCompra)
+        });
 
+        if (response2.ok) {
+            console.log("Estadística de compra enviada exitosamente a railway.");
+        } else {
+            console.error("Error al enviar la estadística de compra:", await response2.text());
+        }
     } catch (error) {
-        console.error("Error crítico en estadísticas:", error);
-    } finally {
-        // Limpiar recursos si es necesario
+        console.error("Error al enviar la estadística de compra:", error);
     }
 }
 
