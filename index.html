@@ -236,13 +236,50 @@
         </section>
 
         <!--Segmento de panel de agradecimiento para cuando se hace el pago-->
-        <div id="thank-you-panel" class="hidden" style="display: none">
+        <div id="thank-you-panel" class="thank-you-panel hidden">
             <div class="thank-you-container">
-                <h2 class="thank-you-title">¡Gracias por tu tiempo! 🤗</h2>
-                <p class="thank-you-message">Tu pedido ha sido recibido y está siendo procesado. Nos pondremos en contacto contigo cuando esté listo.</p>
-                <button onclick="goBack()" class="thank-you-button">Volver a la Página Principal</button>
+                <!-- Check animado centrado -->
+                <div class="check-wrapper">
+                    <svg class="check-svg" viewBox="0 0 100 100">
+                        <circle class="check-circle" cx="50" cy="50" r="45"/>
+                        <path class="check-mark" d="M25,52 l14,14 l28,-28"/>
+                    </svg>
+                </div>
+        
+                <div class="content">
+                    <h1 class="title">¡Pedido Confirmado!</h1>
+                    <p class="main-message">Gracias por confiar en Asere Shops</p>
+                    <p class="contact-message">Nos pondremos en contacto contigo para coordinar la entrega</p>
+                    
+                    <div class="total-container">
+                        <div class="total-content">
+                            <span class="total-label">Total de tu pedido</span>
+                            <span id="order-total-amount" class="total-amount">$${total}</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="actions">
+                    <button id="continue-shopping" class="btn primary">
+                        <i class="fas fa-chevron-left"></i> Seguir Comprando
+                    </button>
+                    <a href="https://wa.me/+18032399264" target="_blank" class="btn whatsapp">
+                        <i class="fab fa-whatsapp"></i> Contactar Ahora
+                    </a>
+                </div>
+        
+                <div class="brand-footer">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/15uMv3FLZr/" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/asereonlineshops?igsh=MXB5dHlhNGZ0NXZzbg==" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>        
+        </div>
 
         <!--Seccion de plantilla de pago super importante-->
         <section id="planilla-pago" class="hidden">
@@ -303,7 +340,11 @@
                     </div>
         
                     <div class="button-group">
-                        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Aceptar y Realizar Pedido</button>
+                        <!-- Encuentra el botón de submit en la planilla de pago y modifícalo así: -->
+                        <button type="submit" class="btn-submit" id="submit-button">
+                            <span class="button-text"><i class="fas fa-paper-plane"></i> Aceptar y Realizar Pedido</span>
+                            <div class="spinner hidden"></div>
+                        </button>
                         <button type="button" class="btn-cancel" onclick="cancelPayment()"><i class="fas fa-times-circle"></i> Cancelar Pedido</button>
                     </div>
                 </form>
