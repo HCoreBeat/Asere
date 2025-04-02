@@ -383,66 +383,91 @@ function getBrowserAndOS() {
     return { navegador, sistemaOperativo };
 }
 
-// Función para registrar la visita al cargar la página
+// Función auxiliar para fetch con timeout
+const fetchWithTimeout = async (url, options = {}, timeout = 10000) => {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), timeout);
+    
+    try {
+        const response = await fetch(url, {
+            ...options,
+            signal: controller.signal
+        });
+        clearTimeout(timeoutId);
+        return response;
+    } catch (error) {
+        if (error.name === 'AbortError') {
+            throw new Error(`Timeout de ${timeout}ms excedido para: ${url}`);
+        }
+        throw error;
+    }
+};
+
+// Función principal mejorada
 async function registrarVisita() {
     try {
-        // Obtener la fuente de tráfico
         const fuenteTrafico = obtenerFuenteTrafico();
+        const affiliate = getAffiliate(); // Cambié getAffiliate() para coincidir con tu código original
+        
+        // Obtener IP con timeout
+        const ipInfo = await fetchWithTimeout('https://ipapi.co/json/', {}, 3000)
+            .then(res => res.ok ? res.json() : { ip: 'Desconocida', country_name: 'Desconocido' })
+            .catch(() => ({ ip: 'Desconocida', country_name: 'Desconocido' }));
 
-        // Obtener el afiliado desde localStorage
-        const affiliate = getAffiliate();
-
-        // Obtener información IP y geolocalización
-        const ipInfo = await fetch('https://ipapi.co/json/')
-            .then(res => res.ok ? res.json() : { ip: 'Desconocida', country_name: 'Desconocido' });
-
-        const ip = ipInfo.ip || 'Desconocida';
-        const pais = ipInfo.country_name || 'Desconocido';
-
-        // Obtener navegador y sistema operativo
         const { navegador, sistemaOperativo } = getBrowserAndOS();
-
-        // Crear la estadística inicial
+        
         const estadistica = {
-            ip,
-            pais,
-            fecha_hora_entrada: new Date().toISOString(),
+            ip: ipInfo.ip,
+            pais: ipInfo.country_name,
+            fecha_hora_entrada: getCubanDateTime(),
             origen: document.referrer || 'Acceso directo',
-            fuente_trafico: fuenteTrafico, // Nueva: fuente de tráfico
+            fuente_trafico: fuenteTrafico,
             afiliado: affiliate,
-            duracion_sesion_segundos: 0, // Inicialmente en 0, se actualizará al salir
+            duracion_sesion_segundos: 0,
             navegador,
             sistema_operativo: sistemaOperativo,
-            tipo_usuario: "Único" // Inicialmente único, se actualizará si es recurrente
+            tipo_usuario: "Único"
         };
 
-        // Enviar al backend en render.com
-        const response = await fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(estadistica)
-        });
-        // Enviar al backend en railway.com
-        const response2 = await fetch("https://servidor-estadisticas-production.up.railway.app/guardar-estadistica", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(estadistica)
+        // Enviar en paralelo con Promise.allSettled()
+        const resultados = await Promise.allSettled([
+            fetchWithTimeout(
+                "https://servidor-estadisticas.onrender.com/guardar-estadistica",
+                {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(estadistica)
+                },
+                5000 // 5 segundos timeout
+            ),
+            fetchWithTimeout(
+                "https://servidor-estadisticas-production.up.railway.app/guardar-estadistica",
+                {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(estadistica)
+                },
+                5000 // 5 segundos timeout
+            )
+        ]);
+
+        // Analizar resultados
+        resultados.forEach((resultado, index) => {
+            const servicio = index === 0 ? "Render" : "Railway";
+            
+            if (resultado.status === "fulfilled") {
+                if (resultado.value.ok) {
+                    console.log(`${servicio}: Registro exitoso`);
+                } else {
+                    console.error(`${servicio}: Error HTTP ${resultado.value.status}`);
+                }
+            } else {
+                console.error(`${servicio}: Error de conexión`, resultado.reason.message);
+            }
         });
 
-        // respuesta al envio de la solicitud al backend en render.com
-        if (response.ok) {
-            console.log("Visita registrada exitosamente.");
-        } else {
-            console.error("Error en la respuesta del servidor al registrar la visita:", await response.text());
-        }
-        // respuesta al envio de la solicitud al backend en railway.com
-        if (response2.ok) {
-            console.log("Visita registrada exitosamente backend railway.");
-        } else {
-            console.error("Error en la respuesta del servidor al registrar la visita:", await response2.text());
-        }
     } catch (error) {
-        console.error("Error al registrar la visita:", error);
+        console.error("Error crítico en registro:", error);
     }
 }
 
