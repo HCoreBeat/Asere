@@ -17,7 +17,7 @@
         "oferta": true,
         "mas_vendido": true,
         "imagen": "img/products/Pollo_Golden.jpg",
-        "disponible": false
+        "disponible": true
     },
     {
         "nombre": "Carne de cerdo x Lb",
@@ -47,7 +47,7 @@
         "oferta": true,
         "mas_vendido": true,
         "imagen": "img/products/Picadillo_Especial.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Jamón de Pierna x Lb",
@@ -342,6 +342,20 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Aceite_Fritura.jpeg",
+        "disponible": false
+    },
+    {
+        "nombre": "Aceite refinado de girasol 1L",
+        "categoria": "despensa",
+        "precio": 3.619,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/aceite_girasol.jpg",
+        "descripcion":"El aceite refinado de girasol de 1 litro es una opción extra grande ideal para cocinar, freír, asar o preparar aderezos. Su calidad refinada garantiza un sabor neutro que realza los platillos sin dominarlos, siendo una elección práctica y confiable para cualquier cocina. Perfecto tanto para chefs como para cocineros caseros que buscan resultados excelentes.",
+        "imagenesAdicionales":[
+            "img/products/aceite_girasol_2.jpg"
+        ],
         "disponible": true
     },
     {
@@ -556,7 +570,7 @@
     {
         "nombre": "Sal x Lb",
         "categoria": "despensa",
-        "precio": 0.809,
+        "precio": 0.333,
         "descuento": 10,
         "oferta": false,
         "mas_vendido": false,
@@ -589,7 +603,7 @@
         "precio": 6.857,
         "descuento": 10,
         "oferta": false,
-        "mas_vendido": false,
+        "mas_vendido": true,
         "imagen": "img/products/ajo_pelado_1_Kg_Vima.jpg",
         "disponible": true,
         "descripcion":"Los dientes de ajo pelados de Vima Foods, con un peso neto de 1 kg (35.2 oz.), son ideales para facilitar la preparación de tus recetas. Este producto 100% natural garantiza frescura y calidad, ofreciendo comodidad y ahorro de tiempo en la cocina. Perfectos para realzar el sabor de tus platos, los dientes de ajo pelados de Vima Foods se presentan en un envase práctico que conserva su textura y aroma característico. Simplifica tu cocina sin renunciar a la calidad."
@@ -600,7 +614,7 @@
         "precio": 2.666,
         "descuento": 10,
         "oferta": false,
-        "mas_vendido": false,
+        "mas_vendido": true,
         "imagen": "img/products/croqueta_jamon_vima.jpg",
         "disponible": true,
         "imagenesAdicionales":[
@@ -753,7 +767,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Cerveza_3_Hourses.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Caja de Cerveza «3 Horses»",
@@ -763,7 +777,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Caja_Cerveza_3_Hourses.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Agua Purificada Niagara (500ml)",
@@ -1103,6 +1117,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Galleta_de_Soda_Con_Mantequilla.jpg",
+        "descripcion":"Extra grandes y deliciosas, las galletas semidulces DoRicas son perfectas para cualquier ocasión, ofreciendo un sabor único que encanta a todos. Este paquete de 525 g es ideal para compartir en reuniones familiares, eventos o simplemente para disfrutar durante varios días. Presentadas en un empaque azul oscuro, estas galletas no solo son sabrosas, sino también visualmente atractivas gracias a su diseño profesional. En la parte frontal del paquete destaca una imagen tentadora de las galletas acompañadas de una espiga de trigo, que resalta la calidad de sus ingredientes seleccionados. Cada paquete incluye cinco tacos, asegurando una experiencia prolongada de disfrute. Son perfectas para acompañar con café, té o como un snack ligero en cualquier momento del día.",
         "disponible": true
     },
     {
@@ -1284,7 +1299,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Aceite_Saude.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Arroz Criollo 1Lb",
@@ -1384,7 +1399,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Cerveza_Unlaguer.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Caja de Cerveza UNLAGUER",
@@ -1394,7 +1409,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Caja_cerveza_unlaguer.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Pescado de mar (Corvina) 4lb",
