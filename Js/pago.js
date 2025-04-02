@@ -1,3 +1,8 @@
+let isProcessing = false;
+const submitButton = document.getElementById('submit-button');
+const buttonText = submitButton.querySelector('.button-text');
+const spinner = submitButton.querySelector('.spinner');
+
 // Función para obtener datos del carrito desde localStorage
 function getCartItems() {
     try {
@@ -77,17 +82,16 @@ function fillPaymentForm() {
 
 // Mostrar la planilla de pago al presionar "Proceder al Pago"
 document.getElementById('checkout-button').addEventListener('click', () => {
-    const warningMessage = document.getElementById('warning-message');
+    if (isProcessing) return;
     
+    const warningMessage = document.getElementById('warning-message');
     if (isTotalAboveMinimum()) {
         document.getElementById('carrito').style.display = 'none';
         document.getElementById('planilla-pago').classList.remove('hidden');
         fillPaymentForm();
     } else {
         warningMessage.style.display = 'block';
-        setTimeout(() => {
-            warningMessage.style.display = 'none';
-        }, 5000); // Ocultar después de 5 segundos
+        setTimeout(() => warningMessage.style.display = 'none', 5000);
     }
 });
 
@@ -117,29 +121,62 @@ function obtenerFuenteTrafico() {
     }
 }
 
-// Función para enviar estadísticas al realizar una compra
+// Función para obtener fecha/hora actual en formato ISO con zona horaria de Cuba
+function getCubanDateTime() {
+    const options = {
+        timeZone: 'America/Havana',
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false,
+        timeZoneName: 'short'
+    };
+    
+    const formatter = new Intl.DateTimeFormat('en-US', options);
+    const parts = formatter.formatToParts(new Date());
+    
+    const dateTimeParts = {
+        year: parts.find(p => p.type === 'year').value,
+        month: parts.find(p => p.type === 'month').value,
+        day: parts.find(p => p.type === 'day').value,
+        hour: parts.find(p => p.type === 'hour').value,
+        minute: parts.find(p => p.type === 'minute').value,
+        second: parts.find(p => p.type === 'second').value,
+        timeZone: parts.find(p => p.type === 'timeZoneName').value
+    };
+
+    // Formato ISO 8601 sin desplazamiento (ya que estamos representando hora local)
+    return `${dateTimeParts.year}-${dateTimeParts.month}-${dateTimeParts.day}T${dateTimeParts.hour}:${dateTimeParts.minute}:${dateTimeParts.second}(${dateTimeParts.timeZone})`;
+}
+
+// Función para enviar estadísticas al realizar una compra (versión mejorada)
 async function enviarEstadisticaCompra(fullName, email, phone, cartItems, total, affiliate) {
     try {
-        // Obtener información adicional (IP, país, etc.)
-        const ipInfo = await fetch('https://ipapi.co/json/').then(res => res.json());
-        const ip = ipInfo.ip || 'Desconocida';
-        const pais = ipInfo.country_name || 'Desconocido';
+        // Obtener información IP con timeout de 5 segundos
+        const ipInfo = await Promise.race([
+            fetch('https://ipapi.co/json/'),
+            new Promise((_, reject) => 
+                setTimeout(() => reject(new Error('Timeout IP API')), 10000)
+            )
+        ]).then(res => res.ok ? res.json() : { ip: 'Desconocida', country_name: 'Desconocido' })
+            .catch(() => ({ ip: 'Desconocida', country_name: 'Desconocido' }));
 
-        // Obtener navegador y sistema operativo
+        // Obtener datos técnicos
         const { navegador, sistemaOperativo } = getBrowserAndOS();
-
-        // Obtener la fuente de tráfico
         const fuenteTrafico = obtenerFuenteTrafico();
-
-        // Crear la estadística de compra
+        
+        // Construir objeto de estadísticas
         const estadisticaCompra = {
-            ip,
-            pais,
-            fecha_hora_entrada: new Date().toISOString(),
+            ip: ipInfo.ip || 'Desconocida',
+            pais: ipInfo.country_name || 'Desconocido',
+            fecha_hora_entrada: getCubanDateTime(),
             origen: document.referrer || 'Acceso directo',
-            fuente_trafico: fuenteTrafico, // Nueva: fuente de tráfico
+            fuente_trafico: fuenteTrafico,
             afiliado: affiliate,
-            duracion_sesion_segundos: Math.round((Date.now() - inicioSesion) / 1000), // Duración de la sesión
+            duracion_sesion_segundos: Math.round((Date.now() - inicioSesion) / 1000),
             tiempo_carga_pagina_ms: performance.timing.domContentLoadedEventEnd - performance.timing.navigationStart,
             nombre_comprador: fullName,
             telefono_comprador: phone,
@@ -153,109 +190,120 @@ async function enviarEstadisticaCompra(fullName, email, phone, cartItems, total,
             precio_compra_total: total,
             navegador,
             sistema_operativo: sistemaOperativo,
-            tipo_usuario: "Comprador" // Marcamos como comprador
+            tipo_usuario: "Comprador"
         };
 
-        // Enviar la estadística al backend de render.com
-        const response = await fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(estadisticaCompra)
-        });
+        // Enviar en paralelo a ambos servidores con timeout
+        await Promise.all([
+            fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(estadisticaCompra)
+            })
+            .then(res => {
+                if (!res.ok) console.error("Error Render:", res.status);
+            })
+            .catch(error => console.error("Falló Render:", error)),
 
-        if (response.ok) {
-            console.log("Estadística de compra enviada exitosamente a render.");
-        } else {
-            console.error("Error al enviar la estadística de compra:", await response.text());
-        }
-        // Enviar la estadística al backend de railway.com
-        const response2 = await fetch("https://servidor-estadisticas-production.up.railway.app/guardar-estadistica", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(estadisticaCompra)
-        });
+            fetch("https://servidor-estadisticas-production.up.railway.app/guardar-estadistica", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(estadisticaCompra)
+            })
+            .then(res => {
+                if (!res.ok) console.error("Error Railway:", res.status);
+            })
+            .catch(error => console.error("Falló Railway:", error))
+        ]).catch(error => console.error("Error en estadísticas:", error));
 
-        if (response2.ok) {
-            console.log("Estadística de compra enviada exitosamente a railway.");
-        } else {
-            console.error("Error al enviar la estadística de compra:", await response2.text());
-        }
     } catch (error) {
-        console.error("Error al enviar la estadística de compra:", error);
+        console.error("Error crítico en estadísticas:", error);
+    } finally {
+        // Limpiar recursos si es necesario
     }
 }
 
 // Manejar el envío del formulario de pago
 document.getElementById('payment-form').addEventListener('submit', async (event) => {
     event.preventDefault();
-
-    // Validar que todos los campos obligatorios están rellenados
-    const fullName = document.getElementById('full-name').value;
-    const email = document.getElementById('email').value;
-    const address = document.getElementById('address').value;
-    const termsAccepted = document.getElementById('terms').checked;
-    const phone = document.getElementById('phone').value;
-    // Nuevos campos
-    const recipientName = document.getElementById('recipient-name').value;
-    const recipientPhone = document.getElementById('recipient-phone').value;
-
-    if (!fullName || !email || !address || !termsAccepted || !phone || !recipientName || !recipientPhone) {
-        alert('Por favor, rellena todos los campos obligatorios y acepta los términos y condiciones.');
-        return;
-    }
-
-    // Obtener datos del carrito y afiliado
-    const cartItems = getCartItems();
-    const total = calculateTotal(cartItems);
-    const affiliate = getAffiliate();
-
-    // Enviar estadísticas de la compra
-    await enviarEstadisticaCompra(fullName, email, phone, cartItems, total, affiliate);
-
-    // Crear el mensaje con los detalles
-    const message = `
-        Nombre completo: ${fullName}
-        Correo electrónico: ${email}
-        Teléfono del comprador: ${phone}
-
-        Datos del destinatario:
-        Nombre del destinatario: ${recipientName}
-        Teléfono del destinatario: ${recipientPhone}
-
-        Dirección de envío: ${address}
-        Afiliado: ${affiliate}
-        
-        Detalles del pedido:
-        ${cartItems.map(item => `- ${item.nombre} (x${item.cantidad}): $${(item.precio * item.cantidad).toFixed(2)}`).join('\n')}
-
-        Total: $${total}
-    `;
-
-    // Enviar los datos a EmailJS
-    const serviceID = 'default_service';
-    const templateID = 'template_yw2stbs';
-
+    
+    if (isProcessing) return;
+    
     try {
+        // Bloquear UI
+        isProcessing = true;
+        submitButton.disabled = true;
+        buttonText.classList.add('hidden');
+        spinner.classList.remove('hidden');
+
+        // Validaciones previas
+        const fullName = document.getElementById('full-name').value;
+        const email = document.getElementById('email').value;
+        const address = document.getElementById('address').value;
+        const termsAccepted = document.getElementById('terms').checked;
+        const phone = document.getElementById('phone').value;
+        const recipientName = document.getElementById('recipient-name').value;
+        const recipientPhone = document.getElementById('recipient-phone').value;
+
+        if (!fullName || !email || !address || !termsAccepted || !phone || !recipientName || !recipientPhone) {
+            alert('Por favor, rellena todos los campos obligatorios y acepta los términos y condiciones.');
+            return;
+        }
+
+        // Obtener datos
+        const cartItems = getCartItems();
+        const total = calculateTotal(cartItems);
+        const affiliate = getAffiliate();
+
+        // Enviar estadísticas
+        await enviarEstadisticaCompra(fullName, email, phone, cartItems, total, affiliate);
+
+        // Crear y enviar mensaje
+        const message = `
+            Nombre completo: ${fullName}
+            Correo electrónico: ${email}
+            Teléfono del comprador: ${phone}
+        
+            Datos del destinatario:
+            Nombre del destinatario: ${recipientName}
+            Teléfono del destinatario: ${recipientPhone}
+        
+            Dirección de envío: ${address}
+            Afiliado: ${affiliate}
+            
+            Detalles del pedido:
+            ${cartItems.map(item => `- ${item.nombre} (x${item.cantidad}): $${(item.precio * item.cantidad).toFixed(2)}`).join('\n')}
+        
+            Total: $${total}
+        `;
+        
+        const serviceID = 'default_service';
+        const templateID = 'template_yw2stbs';
+        
         const response = await emailjs.send(
             serviceID,
             templateID,
-            {
-                name: fullName,
-                email: email,
-                message: message
+            {   
+                name: fullName, 
+                email: email, 
+                message: message 
             },
             "UE5xZtzvJ3W5lClZS"
         );
-        console.log("Correo enviado exitosamente:", response);
 
-        // Vaciar el carrito
+        // Post-procesamiento
         vaciarCarrito();
-
-        // Mostrar panel de agradecimiento
         mostrarPanelAgradecimiento();
+
     } catch (error) {
-        console.log("Error al enviar el correo:", error);
-        alert("Error al enviar el correo. Por favor, inténtalo de nuevo.");
+        console.error("Error en el proceso:", error);
+        alert("Error al procesar el pedido. Por favor, inténtalo de nuevo.");
+    } finally {
+        // Restaurar UI
+        isProcessing = false;
+        submitButton.disabled = false;
+        buttonText.classList.remove('hidden');
+        spinner.classList.add('hidden');
     }
 });
 
@@ -268,20 +316,40 @@ function vaciarCarrito() {
 
 // Función para mostrar el panel de agradecimiento
 function mostrarPanelAgradecimiento() {
-        // Mostrar el panel de agradecimiento
-    const panelAgradecimiento = document.getElementById('thank-you-panel');
-    panelAgradecimiento.style.display = 'flex';
+    const panel = document.getElementById('thank-you-panel');
+    const cartItems = getCartItems();
+    const total = calculateTotal(cartItems);
+    
+    document.getElementById('order-total-amount').textContent = `$${total}`;
+    
+    panel.style.display = 'flex';
+    setTimeout(() => {
+        panel.classList.add('active');
+        // Forzar reflow para activar animaciones
+        void panel.offsetHeight;
+    }, 10);
+    
+    document.getElementById('planilla-pago').classList.add('hidden');
+    
+    document.getElementById('continue-shopping').addEventListener('click', goBack);
 }
+
+
+// Función para manejar el regreso a la página principal sin mostrar index.html en la URL
+function goBack() {
+    window.location.href = 'index.html'; // Redirige al archivo
+    // Al cargar la página, actualiza el historial del navegador para eliminar index.html
+    window.addEventListener('load', () => {
+        const newUrl = window.location.origin + window.location.pathname.replace('index.html', '');
+        history.replaceState(null, '', newUrl);
+    });
+}
+
 
 // Función para cancelar el pago y regresar al carrito
 function cancelPayment() {
     document.getElementById('planilla-pago').classList.add('hidden');
     document.getElementById('carrito').style.display = 'block';
-}
-
-// Función para manejar el regreso a la página principal sin recargar
-function goBack() {
-    window.location.href = 'index.html'; // Redirige sin recargar la página
 }
 
 
