@@ -43,5 +43,11 @@
     { "id": "GKsdf45r", "nombre": "Christopher Luis López Ricardo", "fecha": "2025-03-30T20:06:00-05:00", "numero": "26"  },
     { "id": "sjJF830sf", "nombre": "Melani", "fecha": "2025-03-30T20:06:00-05:00", "numero": "27"  },
     { "id": "ZjLdsG58", "nombre": "Membrado", "fecha": "2025-03-30T20:06:00-05:00", "numero": "28"  }, 
-    { "id": "Wikd37Yi2", "nombre": "Yisel (Ale)", "fecha": "2025-04-01T20:00:00-05:00", "numero": "29" }
+    { "id": "Wikd37Yi2", "nombre": "Yisel (Ale)", "fecha": "2025-04-01T20:00:00-05:00", "numero": "29" }, 
+
+
+    { "id": "Plfeu33dj", "nombre": "Yankiel", "fecha": "2025-04-03T20:00:00-05:00", "numero": "30" }, 
+    { "id": "Bndf34tyd", "nombre": "Claudia Vigil", "fecha": "2025-04-03T20:00:00-05:00", "numero": "31" }, 
+    { "id": "Wrdf8yts", "nombre": "Thalia Aponte Almaguer", "fecha": "2025-04-03T20:00:00-05:00", "numero": "32" }, 
+    { "id": "Ni3jdAs3", "nombre": "Mosatorner", "fecha": "2025-04-03T20:00:00-05:00", "numero": "33" }
 ]
