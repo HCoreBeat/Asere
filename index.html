@@ -251,7 +251,7 @@
                     <p class="main-message">Gracias por confiar en Asere Shops</p>
                     <p class="contact-message">Nos pondremos en contacto contigo para coordinar la entrega</p>
                     
-                    <div class="total-container">
+                    <div class="total-container" style="display: none;">
                         <div class="total-content">
                             <span class="total-label">Total de tu pedido</span>
                             <span id="order-total-amount" class="total-amount">$${total}</span>
@@ -330,8 +330,10 @@
                             <!-- Aquí se llenarán los productos dinámicamente -->
                         </tbody>
                     </table>
-                    <p id="summary-total"><i class="fas fa-receipt"></i> Total a pagar: $0.00</p>
-        
+                    <!-- ... código anterior sin cambios ... -->
+
+                    <p id="summary-total"><i class="fas fa-receipt"></i> Total a pagar: <span id="total-compra">$0.00</span></p>
+
                     <div class="form-group terms">
                         <label>
                             <input type="checkbox" id="terms" name="terms" required>
