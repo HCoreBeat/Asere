@@ -651,7 +651,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/garbanzos.jpg",
-        "disponible": true,
+        "disponible": false,
         "descripcion":"Los garbanzos secos de Huerto San Genaro, presentados en un paquete de diseño verde con detalles de espirales y una ventana transparente, garantizan calidad y autenticidad en cada grano. Este producto, elaborado en España, destaca por su empaque práctico que incluye información multilingüe, ideal para satisfacer las necesidades de los amantes de la cocina tradicional y saludable. Perfectos para preparar recetas nutritivas y versátiles, los garbanzos secos Huerto San Genaro son la opción ideal para llevar sabor y calidad a tu mesa."
     },
 
