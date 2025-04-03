@@ -630,7 +630,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Frijoles_Negros.jpeg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Frijoles Rojos (1kg)",
