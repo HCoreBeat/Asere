@@ -242,7 +242,7 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
   submitButton.disabled = true;
   buttonText.classList.add('hidden');
   spinner.classList.remove('hidden');
-  
+
   try {
     // Recopilar datos del formulario
     const formData = {
@@ -254,29 +254,33 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
         cantidad: item.cantidad,
         precio: item.precio.toFixed(2)
       })),
-      total: calculateTotal(getCartItems())
+      total: calculateTotal(getCartItems()).toFixed(2)
     };
-    
-    // Enviar a Google Apps Script
-    const response = await fetch('https://script.google.com/macros/s/AKfycbzQ-eKnJKqgpKvS0BGXaOhMAkPlWPMSCt4zcLoh7xqYLwKIMINKxjNK6ezo2fWcaTG0/exec', {
+
+    // URL del script con parámetro authuser=0
+    const scriptURL = "https://script.google.com/macros/s/AKfycbwqU7PFFz9S7XF-1g9g587JorwIoR9mYrwBtXEAPeWLYssuxp_QC2oLaXx-Mwjk35xB/exec?authuser=0";
+
+    // Enviar datos
+    const response = await fetch(scriptURL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData)
+      body: JSON.stringify(formData),
+      redirect: 'follow' // Necesario para seguir redirecciones de Google
     });
-    
-    const result = await response.json();
-    
-    if (!response.ok || result.error) {
-      throw new Error(result.error || 'Error al procesar el pedido');
+
+    // Verificar respuesta
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.error || "Error desconocido");
     }
-    
+
     // Éxito: Vaciar carrito y mostrar mensaje
     vaciarCarrito();
     mostrarPanelAgradecimiento();
-    
+
   } catch (error) {
     console.error('Error:', error);
-    alert(error.message || 'Error en el servidor');
+    alert(error.message || "Error al procesar el pedido. Intenta de nuevo.");
   } finally {
     // Restablecer UI
     isProcessing = false;
