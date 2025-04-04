@@ -236,83 +236,49 @@ function validatePaymentForm() {
 // Manejar el envío del formulario de pago
 document.getElementById('payment-form').addEventListener('submit', async (event) => {
   event.preventDefault();
-
-  // Validar el formulario
-  const validation = validatePaymentForm();
-  if (!validation.valid) {
-    alert(validation.message);
-    return;
-  }
   
-  // Bloquear UI y mostrar spinner
+  // Bloquear UI (spinner)
   isProcessing = true;
   submitButton.disabled = true;
   buttonText.classList.add('hidden');
   spinner.classList.remove('hidden');
-
-  // Mostrar mensaje de procesamiento si tarda más de 5 segundos
-  const processingTimeout = setTimeout(() => {
-    processingMessage.textContent = "Estamos procesando su pedido, por favor espere...";
-    processingMessage.style.display = "block";
-  }, 5000);
-
+  
   try {
     // Recopilar datos del formulario
-    const fullName = document.getElementById('full-name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const address = document.getElementById('address').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const recipientName = document.getElementById('recipient-name').value.trim();
-    const recipientPhone = document.getElementById('recipient-phone').value.trim();
-
-    // Obtener datos del carrito
-    const cartItems = getCartItems();
-    const total = calculateTotal(cartItems);
-    const affiliate = getAffiliate();
-
-    // Enviar estadísticas de compra
-    await enviarEstadisticaCompra(fullName, email, phone, cartItems, total, affiliate);
-
-    // Crear mensaje de pedido
-    const message = `
-Nombre completo: ${fullName}
-Correo electrónico: ${email}
-Teléfono del comprador: ${phone}
-
-Datos del destinatario:
-Nombre del destinatario: ${recipientName}
-Teléfono del destinatario: ${recipientPhone}
-
-Dirección de envío: ${address}
-Afiliado: ${affiliate}
-
-Detalles del pedido:
-${cartItems.map(item => `- ${item.nombre} (x${item.cantidad}): $${(item.precio * item.cantidad).toFixed(2)}`).join('\n')}
-
-Total: $${total}
-    `;
-
-    const serviceID = 'default_service';
-    const templateID = 'template_yw2stbs';
+    const formData = {
+      nombre: document.getElementById('full-name').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      telefono: document.getElementById('phone').value.trim(),
+      productos: getCartItems().map(item => ({
+        nombre: item.nombre,
+        cantidad: item.cantidad,
+        precio: item.precio.toFixed(2)
+      })),
+      total: calculateTotal(getCartItems())
+    };
     
-    // Enviar correo mediante emailjs
-    await emailjs.send(
-      serviceID,
-      templateID,
-      { name: fullName, email: email, message: message },
-      "UE5xZtzvJ3W5lClZS"
-    );
-
-    // Vaciar carrito y mostrar panel de agradecimiento
+    // Enviar a Google Apps Script
+    const response = await fetch('https://script.google.com/macros/s/AKfycbzQ-eKnJKqgpKvS0BGXaOhMAkPlWPMSCt4zcLoh7xqYLwKIMINKxjNK6ezo2fWcaTG0/exec', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    });
+    
+    const result = await response.json();
+    
+    if (!response.ok || result.error) {
+      throw new Error(result.error || 'Error al procesar el pedido');
+    }
+    
+    // Éxito: Vaciar carrito y mostrar mensaje
     vaciarCarrito();
     mostrarPanelAgradecimiento();
-
+    
   } catch (error) {
-    console.error("Error en el proceso:", error);
-    alert("Error al procesar el pedido. Por favor, inténtalo de nuevo.");
+    console.error('Error:', error);
+    alert(error.message || 'Error en el servidor');
   } finally {
-    clearTimeout(processingTimeout);
-    processingMessage.style.display = "none";
+    // Restablecer UI
     isProcessing = false;
     submitButton.disabled = false;
     buttonText.classList.remove('hidden');
