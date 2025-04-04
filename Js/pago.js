@@ -234,18 +234,19 @@ function validatePaymentForm() {
 }
 
 // Manejar el envío del formulario de pago
+// pago.js (parte crítica)
 document.getElementById('payment-form').addEventListener('submit', async (event) => {
   event.preventDefault();
   
-  // Bloquear UI durante el envío
+  // Bloquear UI
   isProcessing = true;
   submitButton.disabled = true;
   buttonText.classList.add('hidden');
   spinner.classList.remove('hidden');
 
   try {
+    // 1. Recopilar datos
     const cartItems = getCartItems();
-    // Recopilar datos del formulario
     const formData = {
       nombre: document.getElementById('full-name').value.trim(),
       email: document.getElementById('email').value.trim(),
@@ -258,28 +259,28 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
       total: calculateTotal(cartItems)
     };
 
-    // URL del script (¡cambia el ID si actualizas el script!)
-    const scriptURL = "https://script.google.com/macros/s/AKfycbwL38brayev3UTjT_ohaRGv9IfcpDiaJsJGx179X9xUK60rVb6gj6vAQhfBsfPY22WJ/exec?authuser=0";
+    // 2. URL del script (¡ACTUALIZAR CON TU ID!)
+    const scriptURL = "https://script.google.com/macros/s/AKfycbwP86DJ9eY-mc2BP0eEBitaR9pOd973EB43894uWR5m-YdVW1xNH1n6-7uLK6n93LKV/exec";
 
-    // Enviar datos (¡clave usar "text/plain"!)
+    // 3. Enviar datos (clave usar 'text/plain')
     const response = await fetch(scriptURL, {
       method: 'POST',
-      headers: { 'Content-Type': 'text/plain' }, // Evita preflight CORS
+      headers: { 'Content-Type': 'text/plain' }, // ¡No cambiar!
       body: JSON.stringify(formData),
-      redirect: 'follow',
+      redirect: 'follow'
     });
 
-    // Verificar respuesta
-    const result = await response.text(); // Usar .text() en lugar de .json()
+    // 4. Procesar respuesta
+    const result = await response.text();
     if (!response.ok) throw new Error(result.error || "Error del servidor");
 
-    // Éxito: Vaciar carrito y mostrar confirmación
+    // 5. Éxito
     vaciarCarrito();
     mostrarPanelAgradecimiento();
 
   } catch (error) {
-    console.error('Error:', error);
-    alert(error.message || "Error al procesar el pedido");
+    alert(`Error: ${error.message}`);
+    console.error("Detalles:", error);
   } finally {
     // Restablecer UI
     isProcessing = false;
