@@ -233,7 +233,8 @@ function validatePaymentForm() {
   return { valid: true };
 }
 
-// Manejar el envío del formulario de pago
+// Manejar el envío del formulario de pago con EmailJs
+/*
 document.getElementById('payment-form').addEventListener('submit', async (event) => {
   event.preventDefault();
 
@@ -318,6 +319,85 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
         buttonText.classList.remove('hidden');
         spinner.classList.add('hidden');
     }
+});
+
+*/
+
+// ... (Código existente hasta el submit del formulario)
+
+document.getElementById('payment-form').addEventListener('submit', async (event) => {
+  event.preventDefault();
+  if (isProcessing) return;
+  
+  // Validación del formulario (tu código existente)
+  const validation = validatePaymentForm();
+  if (!validation.valid) {
+      alert(validation.message);
+      return;
+  }
+
+  // Bloquear UI
+  isProcessing = true;
+  submitButton.disabled = true;
+  buttonText.classList.add('hidden');
+  spinner.classList.remove('hidden');
+
+  try {
+      // Recopilar datos
+      const pedidoData = {
+          comprador: {
+              nombre: document.getElementById('full-name').value.trim(),
+              email: document.getElementById('email').value.trim(),
+              telefono: document.getElementById('phone').value.trim(),
+              direccion: document.getElementById('address').value.trim()
+          },
+          destinatario: {
+              nombre: document.getElementById('recipient-name').value.trim(),
+              telefono: document.getElementById('recipient-phone').value.trim()
+          },
+          pedido: {
+              productos: getCartItems().map(item => ({
+                  nombre: item.nombre,
+                  cantidad: item.cantidad,
+                  precio: item.precio,
+                  total: item.precio * item.cantidad
+              })),
+              total: calculateTotal(getCartItems())
+          },
+          metadata: {
+              afiliado: getAffiliate(),
+              fuente_trafico: obtenerFuenteTrafico(),
+              ...await getBrowserAndOS(),
+              ...await fetch('https://ipapi.co/json/').then(res => res.json()),
+              duracion_sesion: Math.round((Date.now() - inicioSesion) / 1000),
+              fecha: getCubanDateTime()
+          }
+      };
+
+      // Enviar al backend
+      const response = await fetch("https://servidor-estadisticas.onrender.com/procesar-pedido", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(pedidoData)
+      });
+
+      if (!response.ok) throw new Error("Error en el servidor");
+      
+      // Éxito
+      vaciarCarrito();
+      mostrarPanelAgradecimiento();
+
+  } catch (error) {
+      console.error("Error:", error);
+      alert("Error al procesar el pedido");
+  } finally {
+      // Restablecer UI
+      isProcessing = false;
+      submitButton.disabled = false;
+      buttonText.classList.remove('hidden');
+      spinner.classList.add('hidden');
+      processingMessage.style.display = 'none';
+  }
 });
 
 // Función para vaciar el carrito
