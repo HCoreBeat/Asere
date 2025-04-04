@@ -237,15 +237,15 @@ function validatePaymentForm() {
 document.getElementById('payment-form').addEventListener('submit', async (event) => {
   event.preventDefault();
   
-  // Bloquear UI (spinner)
+  // Bloquear UI durante el envío
   isProcessing = true;
   submitButton.disabled = true;
   buttonText.classList.add('hidden');
   spinner.classList.remove('hidden');
 
   try {
-    // Recopilar datos del formulario
     const cartItems = getCartItems();
+    // Recopilar datos del formulario
     const formData = {
       nombre: document.getElementById('full-name').value.trim(),
       email: document.getElementById('email').value.trim(),
@@ -258,30 +258,28 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
       total: calculateTotal(cartItems)
     };
 
-    // URL del script con parámetro authuser=0
-    const scriptURL = "https://script.google.com/macros/s/AKfycbwqU7PFFz9S7XF-1g9g587JorwIoR9mYrwBtXEAPeWLYssuxp_QC2oLaXx-Mwjk35xB/exec?authuser=0";
+    // URL del script (¡cambia el ID si actualizas el script!)
+    const scriptURL = "https://script.google.com/macros/s/AKfycbwL38brayev3UTjT_ohaRGv9IfcpDiaJsJGx179X9xUK60rVb6gj6vAQhfBsfPY22WJ/exec?authuser=0";
 
-    // Enviar datos
+    // Enviar datos (¡clave usar "text/plain"!)
     const response = await fetch(scriptURL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'text/plain' }, // Evita preflight CORS
       body: JSON.stringify(formData),
-      redirect: 'follow' // Necesario para seguir redirecciones de Google
+      redirect: 'follow',
     });
 
     // Verificar respuesta
-    if (!response.ok) {
-      const errorData = await response.json();
-      throw new Error(errorData.error || "Error desconocido");
-    }
+    const result = await response.text(); // Usar .text() en lugar de .json()
+    if (!response.ok) throw new Error(result.error || "Error del servidor");
 
-    // Éxito: Vaciar carrito y mostrar mensaje
+    // Éxito: Vaciar carrito y mostrar confirmación
     vaciarCarrito();
     mostrarPanelAgradecimiento();
 
   } catch (error) {
     console.error('Error:', error);
-    alert(error.message || "Error al procesar el pedido. Intenta de nuevo.");
+    alert(error.message || "Error al procesar el pedido");
   } finally {
     // Restablecer UI
     isProcessing = false;
