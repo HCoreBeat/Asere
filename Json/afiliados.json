@@ -54,5 +54,7 @@
     
     { "id": "Brz3Gfh", "nombre": "Rachel", "fecha": "2025-04-04T20:00:00-05:00", "numero": "34" },
     { "id": "Ps22Cngm", "nombre": "Idalmis Martinez Lora", "fecha": "2025-04-04T20:00:00-05:00", "numero": "35" },
-    { "id": "L03fHt3", "nombre": "Andres Borrero Ricardo", "fecha": "2025-04-04T20:00:00-05:00", "numero": "36","telefono":"+53 54865949" }
+    { "id": "L03fHt3", "nombre": "Andres Borrero Ricardo", "fecha": "2025-04-04T20:00:00-05:00", "numero": "36","telefono":"+53 54865949" },
+    { "id": "Zx4ghA3q", "nombre": "David Barber", "fecha": "2025-04-04T20:00:00-05:00", "numero": "37" },
+    { "id": "Oty6hG4s", "nombre": "Yoannet Dieguez Perez", "fecha": "2025-04-04T20:00:00-05:00", "numero": "38","telefono":"+53 58016333" }
 ]
