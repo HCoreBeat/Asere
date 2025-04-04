@@ -234,10 +234,9 @@ function validatePaymentForm() {
 }
 
 // Manejar el envío del formulario de pago
-// pago.js (parte crítica)
 document.getElementById('payment-form').addEventListener('submit', async (event) => {
   event.preventDefault();
-  
+
   // Bloquear UI
   isProcessing = true;
   submitButton.disabled = true;
@@ -245,50 +244,51 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
   spinner.classList.remove('hidden');
 
   try {
-    // 1. Recopilar datos
-    const cartItems = getCartItems();
-    const formData = {
-      nombre: document.getElementById('full-name').value.trim(),
-      email: document.getElementById('email').value.trim(),
-      telefono: document.getElementById('phone').value.trim(),
-      productos: getCartItems().map(item => ({
-        nombre: item.nombre,
-        cantidad: item.cantidad,
-        precio: item.precio.toFixed(2)
-      })),
-      total: calculateTotal(cartItems)
-    };
+      // Recopilar datos del formulario
+      const cartItems = getCartItems();
+      const formData = {
+          nombre: document.getElementById('full-name').value.trim(),
+          email: document.getElementById('email').value.trim(),
+          telefono: document.getElementById('phone').value.trim(),
+          productos: getCartItems().map(item => ({
+              nombre: item.nombre,
+              cantidad: item.cantidad,
+              precio: item.precio.toFixed(2)
+          })),
+          total: calculateTotal(cartItems)
+      };
 
-    // 2. URL del script (¡ACTUALIZAR CON TU ID!)
-    const scriptURL = "https://script.google.com/macros/s/AKfycbwP86DJ9eY-mc2BP0eEBitaR9pOd973EB43894uWR5m-YdVW1xNH1n6-7uLK6n93LKV/exec";
+      // URL del script de Google Apps Script
+      const scriptURL = "https://script.google.com/macros/s/AKfycby_DsYkEcoPHUNY_1pxPo_ofz0IB1khCE_5ndTn2B_-nMTl3yoEnoChc0M9aPHlNJnV/exec";
 
-    // 3. Enviar datos (clave usar 'text/plain')
-    const response = await fetch(scriptURL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'text/plain' }, // ¡No cambiar!
-      body: JSON.stringify(formData),
-      redirect: 'follow'
-    });
+      // Enviar datos al servidor
+      const response = await fetch(scriptURL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' }, // Cambiamos el encabezado a 'application/json'
+          body: JSON.stringify(formData),
+          redirect: 'follow'
+      });
 
-    // 4. Procesar respuesta
-    const result = await response.text();
-    if (!response.ok) throw new Error(result.error || "Error del servidor");
+      const result = await response.json(); // Cambiamos a JSON para manejar mejor la respuesta
 
-    // 5. Éxito
-    vaciarCarrito();
-    mostrarPanelAgradecimiento();
+      if (!response.ok) throw new Error(result.error || "Error del servidor");
+
+      // Éxito: Vaciar carrito y mostrar mensaje de confirmación
+      vaciarCarrito();
+      mostrarPanelAgradecimiento();
 
   } catch (error) {
-    alert(`Error: ${error.message}`);
-    console.error("Detalles:", error);
+      alert(`Error: ${error.message}`);
+      console.error("Detalles:", error);
   } finally {
-    // Restablecer UI
-    isProcessing = false;
-    submitButton.disabled = false;
-    buttonText.classList.remove('hidden');
-    spinner.classList.add('hidden');
+      // Restablecer UI
+      isProcessing = false;
+      submitButton.disabled = false;
+      buttonText.classList.remove('hidden');
+      spinner.classList.add('hidden');
   }
 });
+
 
 // Función para vaciar el carrito
 function vaciarCarrito() {
