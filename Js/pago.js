@@ -6,206 +6,206 @@ const processingMessage = document.getElementById('processing-message');
 
 // Función para obtener datos del carrito desde localStorage
 function getCartItems() {
-  try {
-    return JSON.parse(localStorage.getItem('carrito')) || [];
-  } catch (error) {
-    console.error("Error al obtener los datos del carrito:", error);
-    return [];
-  }
+    try {
+        return JSON.parse(localStorage.getItem('carrito')) || [];
+    } catch (error) {
+        console.error("Error al obtener los datos del carrito:", error);
+        return [];
+    }
 }
 
 // Función para obtener el afiliado desde localStorage
 function getAffiliate() {
-  return localStorage.getItem('affiliateName') || 'Ninguno';
+    return localStorage.getItem('affiliateName') || 'Ninguno';
 }
 
 // Función para calcular el total de la compra
 function calculateTotal(items) {
-  return items.reduce((total, item) => total + item.precio * item.cantidad, 0).toFixed(2);
+    return items.reduce((total, item) => total + item.precio * item.cantidad, 0).toFixed(2);
 }
 
 function isTotalAboveMinimum() {
-  const cartItems = getCartItems();
-  // Filtrar solo productos disponibles
-  const productosDisponibles = cartItems.filter(item => {
-    const productoEnDB = productos.find(p => p.nombre === item.nombre) || combos.find(c => c.nombre === item.nombre);
-    return productoEnDB ? productoEnDB.disponible : false;
-  });
-  const total = calculateTotal(productosDisponibles);
-  return total >= 10;
+    const cartItems = getCartItems();
+    // Filtrar solo productos disponibles
+    const productosDisponibles = cartItems.filter(item => {
+        const productoEnDB = productos.find(p => p.nombre === item.nombre) || combos.find(c => c.nombre === item.nombre);
+        return productoEnDB ? productoEnDB.disponible : false;
+    });
+    const total = calculateTotal(productosDisponibles);
+    return total >= 10;
 }
 
 // Función para llenar la planilla de pago con los datos del carrito y el afiliado
 function fillPaymentForm() {
-  const cartItems = getCartItems();
-  const summaryItemsContainer = document.getElementById('summary-items');
-  const summaryTotal = document.getElementById('summary-total');
+    const cartItems = getCartItems();
+    const summaryItemsContainer = document.getElementById('summary-items');
+    const summaryTotal = document.getElementById('summary-total');
 
-  // Limpiar contenido previo
-  summaryItemsContainer.innerHTML = '';
+    // Limpiar contenido previo
+    summaryItemsContainer.innerHTML = '';
 
-  // Filtrar solo productos disponibles
-  const productosDisponibles = cartItems.filter(item => {
-    const productoEnDB = productos.find(p => p.nombre === item.nombre) || combos.find(c => c.nombre === item.nombre);
-    return productoEnDB ? productoEnDB.disponible : false;
-  });
+    // Filtrar solo productos disponibles
+    const productosDisponibles = cartItems.filter(item => {
+        const productoEnDB = productos.find(p => p.nombre === item.nombre) || combos.find(c => c.nombre === item.nombre);
+        return productoEnDB ? productoEnDB.disponible : false;
+    });
 
-  // Llenar la tabla con los productos disponibles del carrito
-  productosDisponibles.forEach(item => {
+    // Llenar la tabla con los productos disponibles del carrito
+    productosDisponibles.forEach(item => {
     const row = document.createElement('tr');
     row.innerHTML = `
-      <td>${item.nombre}</td>
-      <td>${item.cantidad}</td>
-      <td>$${item.precio.toFixed(2)}</td>
-      <td>$${(item.cantidad * item.precio).toFixed(2)}</td>
-    `;
-    summaryItemsContainer.appendChild(row);
-  });
+        <td>${item.nombre}</td>
+        <td>${item.cantidad}</td>
+        <td>$${item.precio.toFixed(2)}</td>
+        <td>$${(item.cantidad * item.precio).toFixed(2)}</td>
+        `;
+        summaryItemsContainer.appendChild(row);
+    });
 
-  // Mostrar el total de la compra solo con productos disponibles
-  const totalDisponible = calculateTotal(productosDisponibles);
-  summaryTotal.textContent = `Total a pagar: $${totalDisponible}`;
-  
-  // Advertencia si hay productos no disponibles
-  if (productosDisponibles.length < cartItems.length) {
-    const warningRow = document.createElement('tr');
-    warningRow.innerHTML = `
-      <td colspan="4" class="warning-row">
-        <i class="fas fa-exclamation-triangle"></i>
-        Algunos productos de tu carrito no están disponibles y se mantendrán en el carrito
-      </td>
-    `;
-    summaryItemsContainer.appendChild(warningRow);
-  }
+    // Mostrar el total de la compra solo con productos disponibles
+    const totalDisponible = calculateTotal(productosDisponibles);
+    summaryTotal.textContent = `Total a pagar: $${totalDisponible}`;
+    
+    // Advertencia si hay productos no disponibles
+    if (productosDisponibles.length < cartItems.length) {
+        const warningRow = document.createElement('tr');
+        warningRow.innerHTML = `
+            <td colspan="4" class="warning-row">
+                <i class="fas fa-exclamation-triangle"></i>
+                Algunos productos de tu carrito no están disponibles y se mantendrán en el carrito
+            </td>
+            `;
+        summaryItemsContainer.appendChild(warningRow);
+    }
 }
 
 // Mostrar la planilla de pago al presionar "Proceder al Pedido"
 document.getElementById('checkout-button').addEventListener('click', () => {
-  if (isProcessing) return;
-  
-  const warningMessage = document.getElementById('warning-message');
-  if (isTotalAboveMinimum()) {
-    document.getElementById('carrito').style.display = 'none';
-    document.getElementById('planilla-pago').classList.remove('hidden');
-    fillPaymentForm();
-  } else {
-    warningMessage.style.display = 'block';
-    setTimeout(() => warningMessage.style.display = 'none', 5000);
-  }
+    if (isProcessing) return;
+    
+    const warningMessage = document.getElementById('warning-message');
+    if (isTotalAboveMinimum()) {
+        document.getElementById('carrito').style.display = 'none';
+        document.getElementById('planilla-pago').classList.remove('hidden');
+        fillPaymentForm();
+    } else {
+        warningMessage.style.display = 'block';
+        setTimeout(() => warningMessage.style.display = 'none', 5000);
+    }
 });
 
 // Función para obtener la fuente de tráfico
 function obtenerFuenteTrafico() {
-  const referrer = document.referrer;
-  const urlParams = new URLSearchParams(window.location.search);
-  const utmSource = urlParams.get('utm_source');
+    const referrer = document.referrer;
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmSource = urlParams.get('utm_source');
 
-  if (utmSource) return utmSource;
-  else if (referrer) {
-    const dominioReferrer = new URL(referrer).hostname;
-    if (dominioReferrer.includes("google.com")) return "Google";
-    if (dominioReferrer.includes("facebook.com")) return "Facebook";
-    if (dominioReferrer.includes("instagram.com")) return "Instagram";
-    if (dominioReferrer.includes("twitter.com")) return "Twitter";
-    return dominioReferrer;
-  } else return "Directo";
+    if (utmSource) return utmSource;
+    else if (referrer) {
+        const dominioReferrer = new URL(referrer).hostname;
+        if (dominioReferrer.includes("google.com")) return "Google";
+        if (dominioReferrer.includes("facebook.com")) return "Facebook";
+        if (dominioReferrer.includes("instagram.com")) return "Instagram";
+        if (dominioReferrer.includes("twitter.com")) return "Twitter";
+        return dominioReferrer;
+    } else return "Directo";
 }
 
 // Función para obtener fecha/hora actual en formato ISO con zona horaria de Cuba
 function getCubanDateTime() {
-  const options = {
-    timeZone: 'America/Havana',
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-    hour12: false,
-    timeZoneName: 'short'
-  };
-  
-  const formatter = new Intl.DateTimeFormat('en-US', options);
-  const parts = formatter.formatToParts(new Date());
-  
-  const dateTimeParts = {
-    year: parts.find(p => p.type === 'year').value,
-    month: parts.find(p => p.type === 'month').value,
-    day: parts.find(p => p.type === 'day').value,
-    hour: parts.find(p => p.type === 'hour').value,
-    minute: parts.find(p => p.type === 'minute').value,
-    second: parts.find(p => p.type === 'second').value,
-    timeZone: parts.find(p => p.type === 'timeZoneName').value
-  };
+    const options = {
+        timeZone: 'America/Havana',
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false,
+        timeZoneName: 'short'
+    };
 
-  return `${dateTimeParts.year}-${dateTimeParts.month}-${dateTimeParts.day}T${dateTimeParts.hour}:${dateTimeParts.minute}:${dateTimeParts.second}(${dateTimeParts.timeZone})`;
+    const formatter = new Intl.DateTimeFormat('en-US', options);
+    const parts = formatter.formatToParts(new Date());
+
+    const dateTimeParts = {
+        year: parts.find(p => p.type === 'year').value,
+        month: parts.find(p => p.type === 'month').value,
+        day: parts.find(p => p.type === 'day').value,
+        hour: parts.find(p => p.type === 'hour').value,
+        minute: parts.find(p => p.type === 'minute').value,
+        second: parts.find(p => p.type === 'second').value,
+        timeZone: parts.find(p => p.type === 'timeZoneName').value
+    };
+
+    return `${dateTimeParts.year}-${dateTimeParts.month}-${dateTimeParts.day}T${dateTimeParts.hour}:${dateTimeParts.minute}:${dateTimeParts.second}(${dateTimeParts.timeZone})`;
 }
 
 // Función para enviar estadísticas al realizar una compra
 async function enviarEstadisticaCompra(fullName, email, phone, cartItems, total, affiliate) {
-  try {
-    // Obtener información adicional (IP, país, etc.)
-    const ipInfo = await fetch('https://ipapi.co/json/').then(res => res.json());
-    const ip = ipInfo.ip || 'Desconocida';
-    const pais = ipInfo.country_name || 'Desconocido';
+    try {
+      // Obtener información adicional (IP, país, etc.)
+      const ipInfo = await fetch('https://ipapi.co/json/').then(res => res.json());
+      const ip = ipInfo.ip || 'Desconocida';
+      const pais = ipInfo.country_name || 'Desconocido';
 
-    // Obtener navegador y sistema operativo
-    const { navegador, sistemaOperativo } = getBrowserAndOS();
+      // Obtener navegador y sistema operativo
+      const { navegador, sistemaOperativo } = getBrowserAndOS();
 
-    // Obtener la fuente de tráfico
-    const fuenteTrafico = obtenerFuenteTrafico();
+      // Obtener la fuente de tráfico
+      const fuenteTrafico = obtenerFuenteTrafico();
 
-    // Crear la estadística de compra
-    const estadisticaCompra = {
-      ip,
-      pais,
-      fecha_hora_entrada: getCubanDateTime(),
-      origen: document.referrer || 'Acceso directo',
-      fuente_trafico: fuenteTrafico,
-      afiliado: affiliate,
-      duracion_sesion_segundos: Math.round((Date.now() - inicioSesion) / 1000),
-      tiempo_carga_pagina_ms: performance.timing.domContentLoadedEventEnd - performance.timing.navigationStart,
-      nombre_comprador: fullName,
-      telefono_comprador: phone,
-      correo_comprador: email,
-      compras: cartItems.map(item => ({
-        producto: item.nombre,
-        cantidad: item.cantidad,
-        precio_unitario: item.precio,
-        precio_total: (item.cantidad * item.precio)
-      })),
-      precio_compra_total: total,
-      navegador,
-      sistema_operativo: sistemaOperativo,
-      tipo_usuario: "Comprador"
-    };
+      // Crear la estadística de compra
+      const estadisticaCompra = {
+        ip,
+        pais,
+        fecha_hora_entrada: getCubanDateTime(),
+        origen: document.referrer || 'Acceso directo',
+        fuente_trafico: fuenteTrafico,
+        afiliado: affiliate,
+        duracion_sesion_segundos: Math.round((Date.now() - inicioSesion) / 1000),
+        tiempo_carga_pagina_ms: performance.timing.domContentLoadedEventEnd - performance.timing.navigationStart,
+        nombre_comprador: fullName,
+        telefono_comprador: phone,
+        correo_comprador: email,
+        compras: cartItems.map(item => ({
+            producto: item.nombre,
+            cantidad: item.cantidad,
+            precio_unitario: item.precio,
+            precio_total: (item.cantidad * item.precio)
+        })),
+            precio_compra_total: total,
+            navegador,
+            sistema_operativo: sistemaOperativo,
+            tipo_usuario: "Comprador"
+        };
 
-    // Enviar la estadística a dos backends en paralelo
-    const responseEndpoints = await Promise.allSettled([
-      fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(estadisticaCompra)
-      }),
-      fetch("https://servidor-estadisticas-production.up.railway.app/guardar-estadistica", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(estadisticaCompra)
-      })
-    ]);
+      // Enviar la estadística a dos backends en paralelo
+      const responseEndpoints = await Promise.allSettled([
+        fetch("https://servidor-estadisticas.onrender.com/guardar-estadistica", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(estadisticaCompra)
+        }),
+        fetch("https://servidor-estadisticas-production.up.railway.app/guardar-estadistica", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(estadisticaCompra)
+        })
+      ]);
 
-    responseEndpoints.forEach((resultado, index) => {
-      const servicio = index === 0 ? "Render" : "Railway";
-      if (resultado.status === "fulfilled") {
-        if (resultado.value.ok) console.log(`${servicio}: Registro exitoso`);
-        else console.error(`${servicio}: Error HTTP ${resultado.value.status}`);
-      } else {
-        console.error(`${servicio}: Error de conexión`, resultado.reason.message);
-      }
-    });
-  } catch (error) {
-    console.error("Error al enviar la estadística de compra:", error);
-  }
+        responseEndpoints.forEach((resultado, index) => {
+            const servicio = index === 0 ? "Render" : "Railway";
+            if (resultado.status === "fulfilled") {
+                if (resultado.value.ok) console.log(`${servicio}: Registro exitoso`);
+                else console.error(`${servicio}: Error HTTP ${resultado.value.status}`);
+            } else {
+                console.error(`${servicio}: Error de conexión`, resultado.reason.message);
+            }
+        });
+    } catch (error) {
+        console.error("Error al enviar la estadística de compra:", error);
+    }
 }
 
 // Función auxiliar para validar el formulario de pago
@@ -237,135 +237,165 @@ function validatePaymentForm() {
 document.getElementById('payment-form').addEventListener('submit', async (event) => {
   event.preventDefault();
 
-  // Bloquear UI
+  // Validar el formulario
+  const validation = validatePaymentForm();
+  if (!validation.valid) {
+    alert(validation.message);
+    return;
+  }
+  
+  // Bloquear UI y mostrar spinner
   isProcessing = true;
   submitButton.disabled = true;
   buttonText.classList.add('hidden');
   spinner.classList.remove('hidden');
 
+  // Mostrar mensaje de procesamiento si tarda más de 5 segundos
+  const processingTimeout = setTimeout(() => {
+    processingMessage.textContent = "Estamos procesando su pedido, por favor espere...";
+    processingMessage.style.display = "block";
+  }, 5000);
+
   try {
-      // Recopilar datos del formulario
-      const cartItems = getCartItems();
-      const formData = {
-          nombre: document.getElementById('full-name').value.trim(),
-          email: document.getElementById('email').value.trim(),
-          telefono: document.getElementById('phone').value.trim(),
-          productos: getCartItems().map(item => ({
-              nombre: item.nombre,
-              cantidad: item.cantidad,
-              precio: item.precio.toFixed(2)
-          })),
-          total: calculateTotal(cartItems)
-      };
+    // Recopilar datos del formulario
+    const fullName = document.getElementById('full-name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const address = document.getElementById('address').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const recipientName = document.getElementById('recipient-name').value.trim();
+    const recipientPhone = document.getElementById('recipient-phone').value.trim();
 
-      // URL del script de Google Apps Script
-      const scriptURL = "https://script.google.com/macros/s/AKfycbzWyb4C-wHcx-iCE35inexMbRtuqHZlcduDziHU2mQxBd3ADyHGIKU2URUBf3xjQJbp/exec";
+    // Obtener datos del carrito
+    const cartItems = getCartItems();
+    const total = calculateTotal(cartItems);
+    const affiliate = getAffiliate();
 
-      // Enviar datos al servidor
-      const response = await fetch(scriptURL, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(formData),
-          mode: 'cors' // Asegúrate de que el modo sea 'cors'
-      });
+    // Enviar estadísticas de compra
+    await enviarEstadisticaCompra(fullName, email, phone, cartItems, total, affiliate);
 
-      const result = await response.json();
-      if (!response.ok) throw new Error(result.error || "Error del servidor");
+    // Crear mensaje de pedido
+    const message = `
+    Nombre completo: ${fullName}
+    Correo electrónico: ${email}
+    Teléfono del comprador: ${phone}
 
-      // Éxito: Vaciar carrito y mostrar mensaje de confirmación
-      vaciarCarrito();
-      mostrarPanelAgradecimiento();
+    Datos del destinatario:
+    Nombre del destinatario: ${recipientName}
+    Teléfono del destinatario: ${recipientPhone}
+
+    Dirección de envío: ${address}
+    Afiliado: ${affiliate}
+
+    Detalles del pedido:
+    ${cartItems.map(item => `- ${item.nombre} (x${item.cantidad}): $${(item.precio * item.cantidad).toFixed(2)}`).join('\n')}
+
+    Total: $${total}
+    `;
+
+    const serviceID = 'default_service';
+    const templateID = 'template_yw2stbs';
+    
+    // Enviar correo mediante emailjs
+    await emailjs.send(
+      serviceID,
+      templateID,
+      { name: fullName, email: email, message: message },
+      "UE5xZtzvJ3W5lClZS"
+    );
+
+    // Vaciar carrito y mostrar panel de agradecimiento
+    vaciarCarrito();
+    mostrarPanelAgradecimiento();
 
   } catch (error) {
-      alert(`Error: ${error.message}`);
-      console.error("Detalles:", error);
+        console.error("Error en el proceso:", error);
+        alert("Error al procesar el pedido. Por favor, inténtalo de nuevo.");
   } finally {
-      // Restablecer UI
-      isProcessing = false;
-      submitButton.disabled = false;
-      buttonText.classList.remove('hidden');
-      spinner.classList.add('hidden');
-  }
+        clearTimeout(processingTimeout);
+        processingMessage.style.display = "none";
+        isProcessing = false;
+        submitButton.disabled = false;
+        buttonText.classList.remove('hidden');
+        spinner.classList.add('hidden');
+    }
 });
-
-
 
 // Función para vaciar el carrito
 function vaciarCarrito() {
-  localStorage.removeItem('carrito');
-  document.getElementById('summary-items').innerHTML = '';
-  document.getElementById('summary-total').textContent = '';
+    localStorage.removeItem('carrito');
+    document.getElementById('summary-items').innerHTML = '';
+    document.getElementById('summary-total').textContent = '';
 }
 
 // Función para mostrar el panel de agradecimiento
 function mostrarPanelAgradecimiento() {
-  const panel = document.getElementById('thank-you-panel');
-  const cartItems = getCartItems();
-  const total = calculateTotal(cartItems);
+    const panel = document.getElementById('thank-you-panel');
+    const cartItems = getCartItems();
+    const total = calculateTotal(cartItems);
+    
+    document.getElementById('order-total-amount').textContent = `$${total}`;
+    
+    panel.style.display = 'flex';
+    setTimeout(() => {
+        panel.classList.add('active');
+        void panel.offsetHeight;
+    }, 10);
   
-  document.getElementById('order-total-amount').textContent = `$${total}`;
+    document.getElementById('planilla-pago').classList.add('hidden');
   
-  panel.style.display = 'flex';
-  setTimeout(() => {
-    panel.classList.add('active');
-    void panel.offsetHeight;
-  }, 10);
-  
-  document.getElementById('planilla-pago').classList.add('hidden');
-  
-  document.getElementById('continue-shopping').addEventListener('click', goBack);
+    document.getElementById('continue-shopping').addEventListener('click', goBack);
 }
 
 // Función para manejar el regreso a la página principal sin mostrar index.html en la URL
 function goBack() {
-  window.location.href = 'index.html';
-  window.addEventListener('load', () => {
-    const newUrl = window.location.origin + window.location.pathname.replace('index.html', '');
-    history.replaceState(null, '', newUrl);
-  });
+    window.location.href = 'index.html';
+    window.addEventListener('load', () => {
+        const newUrl = window.location.origin + window.location.pathname.replace('index.html', '');
+        history.replaceState(null, '', newUrl);
+    });
 }
 
 // Función para cancelar el pago y regresar al carrito
 function cancelPayment() {
-  document.getElementById('planilla-pago').classList.add('hidden');
-  document.getElementById('carrito').style.display = 'block';
+    document.getElementById('planilla-pago').classList.add('hidden');
+    document.getElementById('carrito').style.display = 'block';
 }
 
 // Función para obtener el navegador y sistema operativo
 function getBrowserAndOS() {
-  const userAgent = navigator.userAgent;
-  let navegador = "Desconocido";
-  let sistemaOperativo = "Desconocido";
+    const userAgent = navigator.userAgent;
+    let navegador = "Desconocido";
+    let sistemaOperativo = "Desconocido";
 
-  if (userAgent.includes("Firefox")) navegador = "Firefox";
-  else if (userAgent.includes("Edg")) navegador = "Edge";
-  else if (userAgent.includes("Chrome")) navegador = "Chrome";
-  else if (userAgent.includes("Safari")) navegador = "Safari";
+    if (userAgent.includes("Firefox")) navegador = "Firefox";
+    else if (userAgent.includes("Edg")) navegador = "Edge";
+    else if (userAgent.includes("Chrome")) navegador = "Chrome";
+    else if (userAgent.includes("Safari")) navegador = "Safari";
 
-  if (userAgent.includes("Windows")) sistemaOperativo = "Windows";
-  else if (userAgent.includes("Android")) sistemaOperativo = "Android";
-  else if (userAgent.includes("iPhone") || userAgent.includes("iPad")) sistemaOperativo = "iOS";
-  else if (userAgent.includes("Mac")) sistemaOperativo = "MacOS";
-  else if (userAgent.includes("Linux")) sistemaOperativo = "Linux";
+    if (userAgent.includes("Windows")) sistemaOperativo = "Windows";
+    else if (userAgent.includes("Android")) sistemaOperativo = "Android";
+    else if (userAgent.includes("iPhone") || userAgent.includes("iPad")) sistemaOperativo = "iOS";
+    else if (userAgent.includes("Mac")) sistemaOperativo = "MacOS";
+    else if (userAgent.includes("Linux")) sistemaOperativo = "Linux";
 
   return { navegador, sistemaOperativo };
 }
 
 // Función auxiliar para fetch con timeout
 const fetchWithTimeout = async (url, options = {}, timeout = 10000) => {
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), timeout);
-  
-  try {
-    const response = await fetch(url, { ...options, signal: controller.signal });
-    clearTimeout(timeoutId);
-    return response;
-  } catch (error) {
-    if (error.name === 'AbortError') {
-      throw new Error(`Timeout de ${timeout}ms excedido para: ${url}`);
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), timeout);
+    
+    try {
+        const response = await fetch(url, { ...options, signal: controller.signal });
+        clearTimeout(timeoutId);
+        return response;
+    } catch (error) {
+        if (error.name === 'AbortError') {
+          throw new Error(`Timeout de ${timeout}ms excedido para: ${url}`);
+        }
+        throw error;
     }
-    throw error;
-  }
 };
 
 // Función principal mejorada para registrar la visita
