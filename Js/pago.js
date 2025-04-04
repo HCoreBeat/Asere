@@ -259,18 +259,17 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
       };
 
       // URL del script de Google Apps Script
-      const scriptURL = "https://script.google.com/macros/s/AKfycby_DsYkEcoPHUNY_1pxPo_ofz0IB1khCE_5ndTn2B_-nMTl3yoEnoChc0M9aPHlNJnV/exec";
+      const scriptURL = "https://script.google.com/macros/s/AKfycbzWyb4C-wHcx-iCE35inexMbRtuqHZlcduDziHU2mQxBd3ADyHGIKU2URUBf3xjQJbp/exec";
 
       // Enviar datos al servidor
       const response = await fetch(scriptURL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' }, // Cambiamos el encabezado a 'application/json'
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData),
-          redirect: 'follow'
+          mode: 'cors' // Asegúrate de que el modo sea 'cors'
       });
 
-      const result = await response.json(); // Cambiamos a JSON para manejar mejor la respuesta
-
+      const result = await response.json();
       if (!response.ok) throw new Error(result.error || "Error del servidor");
 
       // Éxito: Vaciar carrito y mostrar mensaje de confirmación
@@ -288,6 +287,7 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
       spinner.classList.add('hidden');
   }
 });
+
 
 
 // Función para vaciar el carrito
