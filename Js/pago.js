@@ -245,6 +245,7 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
 
   try {
     // Recopilar datos del formulario
+    const cartItems = getCartItems();
     const formData = {
       nombre: document.getElementById('full-name').value.trim(),
       email: document.getElementById('email').value.trim(),
@@ -254,7 +255,7 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
         cantidad: item.cantidad,
         precio: item.precio.toFixed(2)
       })),
-      total: calculateTotal(getCartItems()).toFixed(2)
+      total: calculateTotal(cartItems)
     };
 
     // URL del script con parámetro authuser=0
