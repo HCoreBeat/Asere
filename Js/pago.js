@@ -328,12 +328,12 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
 document.getElementById('payment-form').addEventListener('submit', async (event) => {
   event.preventDefault();
   if (isProcessing) return;
-  
-  // Validación del formulario (tu código existente)
+
+  // Validación
   const validation = validatePaymentForm();
   if (!validation.valid) {
-      alert(validation.message);
-      return;
+    alert(validation.message);
+    return;
   }
 
   // Bloquear UI
@@ -343,60 +343,86 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
   spinner.classList.remove('hidden');
 
   try {
-      // Recopilar datos
-      const pedidoData = {
-          comprador: {
-              nombre: document.getElementById('full-name').value.trim(),
-              email: document.getElementById('email').value.trim(),
-              telefono: document.getElementById('phone').value.trim(),
-              direccion: document.getElementById('address').value.trim()
-          },
-          destinatario: {
-              nombre: document.getElementById('recipient-name').value.trim(),
-              telefono: document.getElementById('recipient-phone').value.trim()
-          },
-          pedido: {
-              productos: getCartItems().map(item => ({
-                  nombre: item.nombre,
-                  cantidad: item.cantidad,
-                  precio: item.precio,
-                  total: item.precio * item.cantidad
-              })),
-              total: calculateTotal(getCartItems())
-          },
-          metadata: {
-              afiliado: getAffiliate(),
-              fuente_trafico: obtenerFuenteTrafico(),
-              ...await getBrowserAndOS(),
-              ...await fetch('https://ipapi.co/json/').then(res => res.json()),
-              duracion_sesion: Math.round((Date.now() - inicioSesion) / 1000),
-              fecha: getCubanDateTime()
-          }
-      };
-
-      // Enviar al backend
-      const response = await fetch("https://servidor-estadisticas.onrender.com/procesar-pedido", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(pedidoData)
-      });
-
-      if (!response.ok) throw new Error("Error en el servidor");
+    // Obtener datos en paralelo
+    const [ipInfo, browserInfo] = await Promise.all([
+      fetch('https://ipapi.co/json/')
+        .then(res => res.ok ? res.json() : { ip: 'Desconocida', country_name: 'Desconocido' })
+        .catch(() => ({ ip: 'Desconocida', country_name: 'Desconocido' })),
       
-      // Éxito
-      vaciarCarrito();
-      mostrarPanelAgradecimiento();
+      getBrowserAndOS()
+    ]);
+
+    // Construir payload
+    const pedidoData = {
+      comprador: {
+        nombre: document.getElementById('full-name').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        telefono: document.getElementById('phone').value.trim(),
+        direccion: document.getElementById('address').value.trim()
+      },
+      destinatario: {
+        nombre: document.getElementById('recipient-name').value.trim(),
+        telefono: document.getElementById('recipient-phone').value.trim()
+      },
+      pedido: {
+        productos: getCartItems().map(item => ({
+          nombre: item.nombre,
+          cantidad: item.cantidad,
+          precio: item.precio,
+          total: item.precio * item.cantidad
+        })),
+        total: calculateTotal(getCartItems())
+      },
+      metadata: {
+        afiliado: getAffiliate(),
+        fuente_trafico: obtenerFuenteTrafico(),
+        navegador: browserInfo.navegador,
+        sistema_operativo: browserInfo.sistemaOperativo,
+        ip: ipInfo.ip,
+        pais: ipInfo.country_name,
+        duracion_sesion: Math.round((Date.now() - inicioSesion) / 1000),
+        fecha: new Date().toLocaleString('es-CU', {
+          timeZone: 'America/Havana',
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit'
+        })
+      }
+    };
+
+    // Enviar con timeout
+    const controller = new AbortController();
+    setTimeout(() => controller.abort(), 10000);
+
+    const response = await fetch("https://servidor-estadisticas.onrender.com/procesar-pedido", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(pedidoData),
+      signal: controller.signal
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.error || "Error en el servidor");
+    }
+
+    // Éxito
+    vaciarCarrito();
+    mostrarPanelAgradecimiento();
 
   } catch (error) {
-      console.error("Error:", error);
-      alert("Error al procesar el pedido");
+    console.error("Error:", error);
+    alert(error.message.includes("abort") 
+      ? "Tiempo de espera agotado. Intenta nuevamente."
+      : error.message
+    );
   } finally {
-      // Restablecer UI
-      isProcessing = false;
-      submitButton.disabled = false;
-      buttonText.classList.remove('hidden');
-      spinner.classList.add('hidden');
-      processingMessage.style.display = 'none';
+    isProcessing = false;
+    submitButton.disabled = false;
+    buttonText.classList.remove('hidden');
+    spinner.classList.add('hidden');
   }
 });
 
