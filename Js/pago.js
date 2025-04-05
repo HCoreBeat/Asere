@@ -391,6 +391,8 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
         })
       }
     };
+    
+    console.log("Datos enviados:", pedidoData);
 
     // Enviar con timeout
     const controller = new AbortController();
