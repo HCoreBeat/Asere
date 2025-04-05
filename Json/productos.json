@@ -585,6 +585,17 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Gelatina_Gely_Melocoton.jpeg",
+        "disponible": false
+    },
+    {
+        "nombre": "Gelatina Gely de Fresa (125ml)",
+        "categoria": "despensa",
+        "precio": 1.90,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/gelatina_gely_fresa.jpg",
+        "descripcion": "Este producto es una gelatina de la marca Coracan con sabor a fresa, que proporciona una opción deliciosa y refrescante para disfrutar en cualquier ocasión. Contiene vitamina C, lo que la convierte en una alternativa que no solo satisface el antojo, sino que también aporta un beneficio adicional a la dieta. Con un contenido neto de 170 gramos, es ideal para preparar hasta 8 porciones de 125 ml cada una, ofreciendo practicidad y buen rendimiento para compartir o disfrutar en familia.",
         "disponible": true
     },
     {
