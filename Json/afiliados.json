@@ -81,5 +81,8 @@
     { "id": "Jd7lw9c", "nombre": "Aliena", "fecha": "2025-04-07T20:00:00-05:00", "numero": "58" },
     { "id": "Cle8fy", "nombre": "Daniel", "fecha": "2025-04-07T20:00:00-05:00", "numero": "59" },
     { "id": "Zft6uk", "nombre": "Robert Barman", "fecha": "2025-04-07T20:00:00-05:00", "numero": "60" },
-    { "id": "Mjy5rdz2", "nombre": "Amanda de la Caridad Gonzalez Medina", "fecha": "2025-04-07T20:00:00-05:00", "numero": "61", "telefono": "+53 56531032" }
+    { "id": "Mjy5rdz2", "nombre": "Amanda de la Caridad Gonzalez Medina", "fecha": "2025-04-07T20:00:00-05:00", "numero": "61", "telefono": "+53 56531032" },
+    
+    { "id": "Hge38yt", "nombre": "Annier Alejandro Hechavarria Peña", "fecha": "2025-04-08T20:00:00-05:00", "numero": "62", "telefono": "+53 5 6993501" },
+    { "id": "Chg4rtF", "nombre": "Gabriela Maria Martinez Santiesteban", "fecha": "2025-04-08T20:00:00-05:00", "numero": "63" }
 ]
