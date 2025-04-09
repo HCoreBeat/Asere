@@ -349,7 +349,7 @@
      "precio": 1.619,
      "descuento": 10,
      "oferta": false,
-     "mas_vendido": false,
+     "mas_vendido": true,
      "imagen": "img/products/manzana.jpg",
      "disponible": true,
      "descripcion": "Descubre la frescura y el sabor de una manzana premium, cuidadosamente seleccionada para ofrecerte la mejor calidad. Perfecta como snack saludable, para añadir a tus recetas favoritas o para disfrutar en cualquier momento del día. Con una textura crujiente, un color vibrante y una dulzura natural irresistible, esta manzana es una fuente excelente de vitaminas y antioxidantes 🍎"
@@ -360,7 +360,7 @@
        "precio": 8.571,
        "descuento": 10,
        "oferta": false,
-       "mas_vendido": false,
+       "mas_vendido": true,
        "imagen": "img/products/manzana_cantidad.jpg",
        "disponible": true,
        "descripcion": "Disfruta de la frescura y el sabor natural de nuestras manzanas cuidadosamente seleccionadas. Este paquete incluye 6 manzanas premium, perfectas para tus meriendas saludables, recetas favoritas o para llevar un delicioso bocado en cualquier momento del día. Con su textura crujiente y dulzura irresistible, nuestras manzanas son una excelente fuente de vitaminas y antioxidantes. Llena tu cocina con lo mejor de la naturaleza 🍎"
