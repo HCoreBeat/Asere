@@ -332,7 +332,43 @@
     },
 
 
-
+    {
+        "nombre": "Papas Prefritas Vima 1Kg",
+        "categoria": "despensa",
+        "precio": 5.142,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/papas_prefritas.jpg",
+        "disponible": true,
+        "descripcion":"La patata frita Vima se presenta cortada en bastones de grosor 10x10mm (3/8 de pulgada). Está elaborada con las deliciosas variedades Bintje y Fontane, provenientes del centro de Europa (principalmente Bélgica). La patata Vima está prefrita, por eso se fríe directamente congelada y en menos de 5 minutos está lista. Como tiene un porcentaje de humedad muy bajo absorbe poco aceite y se mantiene crujiente más tiempo. No contiene sal y así se puede preparar al gusto."
+    
+    },
+    {
+  
+     "nombre": "Manzana",
+     "categoria": "despensa",
+     "precio": 1.619,
+     "descuento": 10,
+     "oferta": false,
+     "mas_vendido": false,
+     "imagen": "img/products/manzana.jpg",
+     "disponible": true,
+     "descripcion": "Descubre la frescura y el sabor de una manzana premium, cuidadosamente seleccionada para ofrecerte la mejor calidad. Perfecta como snack saludable, para añadir a tus recetas favoritas o para disfrutar en cualquier momento del día. Con una textura crujiente, un color vibrante y una dulzura natural irresistible, esta manzana es una fuente excelente de vitaminas y antioxidantes 🍎"
+  
+    },
+    {
+  
+       "nombre": "Manzanas Pack x6",
+       "categoria": "despensa",
+       "precio": 8.571,
+       "descuento": 10,
+       "oferta": false,
+       "mas_vendido": false,
+       "imagen": "img/products/manzana_cantidad.jpg",
+       "disponible": true,
+       "descripcion": "Disfruta de la frescura y el sabor natural de nuestras manzanas cuidadosamente seleccionadas. Este paquete incluye 6 manzanas premium, perfectas para tus meriendas saludables, recetas favoritas o para llevar un delicioso bocado en cualquier momento del día. Con su textura crujiente y dulzura irresistible, nuestras manzanas son una excelente fuente de vitaminas y antioxidantes. Llena tu cocina con lo mejor de la naturaleza 🍎"
+    },
     {
         "nombre": "Nutela",
         "categoria": "despensa",
