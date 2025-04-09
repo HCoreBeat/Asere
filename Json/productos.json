@@ -1558,7 +1558,7 @@
         "oferta": false,
         "mas_vendido": true,
         "imagen": "img/products/cable_c.jpg",
-        "disponible": true,
+        "disponible": false,
         "descripcion": "Este resistente cable USB Tipo C combina funcionalidad y diseño, ideal para carga rápida y transferencia de datos eficiente. Su textura trenzada en colores rojo y negro garantiza durabilidad y evita enredos, haciéndolo perfecto para el uso diario. Equipado con conectores sólidos y confiables, el Supercarga Cable asegura máxima calidad y rendimiento para tus dispositivos compatibles. Este accesorio se convierte en la opción ideal para quienes buscan un cable versátil, resistente y estilizado.",
         "imagenesAdicionales":[
             "img/products/cable_c_2.jpg",
