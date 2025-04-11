@@ -1504,7 +1504,7 @@
         "oferta": false,
         "mas_vendido": false,
         "imagen": "img/products/Spam.jpg",
-        "disponible": true
+        "disponible": false
     },
     {
         "nombre": "Picadillo de pollo (1Kg)",
