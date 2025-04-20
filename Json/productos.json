@@ -691,7 +691,7 @@
         "oferta": false,
         "mas_vendido": true,
         "imagen": "img/products/croqueta_jamon_vima.jpg",
-        "disponible": true,
+        "disponible": false,
         "imagenesAdicionales":[
             "img/products/croqueta_jamon_vima_2.jpg"
         ],
