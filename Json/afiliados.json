@@ -844,6 +844,16 @@
     "nombre": "Test afiliado",
     "fecha": "2025-04-21T23:03:52.745Z",
     "numero": "76",
-    "telefono": "123456"
+    "telefono": "123456",
+    "link": "https://www.asereshops.com/?ref=2OZLB2",
+    "searchText": "test afiliado 2ozlb2 76 123456",
+    "numeroInt": 76
+  },
+  {
+    "id": "raStbc",
+    "nombre": "Test afiliado 2",
+    "fecha": "2025-04-21T23:30:44.053Z",
+    "numero": "77",
+    "telefono": "1239876"
   }
 ]
