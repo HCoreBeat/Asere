@@ -2,7 +2,7 @@
   {
     "id": "RGFsdmE=",
     "nombre": "Eddy",
-    "fecha": null,
+    "fecha": "1970-01-01T00:00:00.000Z",
     "telefono": "No especificado",
     "numero": "Permanente",
     "link": "https://www.asereshops.com/?ref=RGFsdmE=",
@@ -12,7 +12,7 @@
   {
     "id": "SmF2aWVy",
     "nombre": "Javier",
-    "fecha": null,
+    "fecha": "1970-01-01T00:00:00.000Z",
     "telefono": "No especificado",
     "numero": "Permanente",
     "link": "https://www.asereshops.com/?ref=SmF2aWVy",
@@ -22,7 +22,7 @@
   {
     "id": "SnVhbmE=",
     "nombre": "Juana",
-    "fecha": null,
+    "fecha": "1970-01-01T00:00:00.000Z",
     "telefono": "No especificado",
     "numero": "Permanente",
     "link": "https://www.asereshops.com/?ref=SnVhbmE=",
@@ -32,7 +32,7 @@
   {
     "id": "T3NjYXI=",
     "nombre": "Eddy_1",
-    "fecha": null,
+    "fecha": "1970-01-01T00:00:00.000Z",
     "telefono": "No especificado",
     "numero": "Permanente",
     "link": "https://www.asereshops.com/?ref=T3NjYXI=",
@@ -42,7 +42,7 @@
   {
     "id": "UGFibGl0",
     "nombre": "Pablito",
-    "fecha": null,
+    "fecha": "1970-01-01T00:00:00.000Z",
     "telefono": "No especificado",
     "numero": "Permanente",
     "link": "https://www.asereshops.com/?ref=UGFibGl0",
@@ -52,7 +52,7 @@
   {
     "id": "SDFiop0",
     "nombre": "Salomon",
-    "fecha": null,
+    "fecha": "1970-01-01T00:00:00.000Z",
     "telefono": "No especificado",
     "numero": "Permanente",
     "link": "https://www.asereshops.com/?ref=SDFiop0",
@@ -62,7 +62,7 @@
   {
     "id": "HCoreBeat",
     "nombre": "Huguito",
-    "fecha": null,
+    "fecha": "1970-01-01T00:00:00.000Z",
     "telefono": "No especificado",
     "numero": "Permanente",
     "link": "https://www.asereshops.com/?ref=HCoreBeat",
@@ -72,7 +72,7 @@
   {
     "id": "E0325as=",
     "nombre": "Eliza",
-    "fecha": null,
+    "fecha": "1970-01-01T00:00:00.000Z",
     "telefono": "No especificado",
     "numero": "Permanente",
     "link": "https://www.asereshops.com/?ref=E0325as=",
@@ -82,7 +82,7 @@
   {
     "id": "M00mAr25",
     "nombre": "Milena",
-    "fecha": null,
+    "fecha": "1970-01-01T00:00:00.000Z",
     "telefono": "No especificado",
     "numero": "Permanente",
     "link": "https://www.asereshops.com/?ref=M00mAr25",
@@ -838,12 +838,5 @@
     "link": "https://www.asereshops.com/?ref=Odt4u6e",
     "searchText": "karla thalia odt4u6e 75 no especificado",
     "numeroInt": 75
-  },
-  {
-    "id": "gP4Lr4",
-    "nombre": "Test Afiliado",
-    "fecha": "2025-04-21T11:52:12.856Z",
-    "numero": "76",
-    "telefono": "123456"
   }
 ]
