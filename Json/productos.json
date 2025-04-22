@@ -212,6 +212,17 @@
         "disponible": false
     },
     {
+        "nombre": "Queso criollo x Lb",
+        "categoria": "lacteos",
+        "precio": 2.285,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/queso_criollo.jpg",
+        "descripcion":"Queso Criollo Fresco, Disfruta del auténtico sabor del queso criollo, un clásico en la cocina tradicional. Este queso fresco tiene una textura firme y ligeramente quebradiza, ideal para rallar, cortar en cubos o simplemente disfrutarlo como está. Su color blanco puro y su aroma suave evocan frescura y calidad artesanal. Perfecto para acompañar tus platos favoritos, ya sea como ingrediente en ensaladas, arepas o junto a frutas y miel. Este queso es una opción deliciosa y versátil para los amantes de los sabores auténticos.",
+        "disponible": true
+    },
+    {
         "nombre": "Leche en polvo (900g)",
         "categoria": "lacteos",
         "precio": 13,
@@ -775,6 +786,28 @@
         "disponible": false
     },
     {
+        "nombre": "Maíz molido tierno x Lb",
+        "categoria": "agro",
+        "precio": 0.93,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/maiz_tierno.jpg",
+        "descripcion":"Maíz super fresco se muele al pedido. El maíz molido tierno es un ingrediente de alta calidad y frescura, perfecto para quienes buscan productos auténticos en su cocina. Su textura fina y color amarillo vibrante lo hacen ideal para elaborar recetas tradicionales como tamales, arepas o empanadas. Su sabor dulce y natural aporta un toque especial a cada preparación, convirtiéndolo en un aliado indispensable para realzar tus platillos favoritos. Este maíz es una opción versátil y nutritiva que garantiza excelencia en cada receta.",
+        "disponible": true
+    },
+    {
+        "nombre": "Mazo de cebolla blanca",
+        "categoria": "agro",
+        "precio": 1.428,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/cebolla_blanca.jpg",
+        "descripcion":"La cebolla blanca es un ingrediente esencial, reconocida por su frescura y calidad. Su forma redonda y su brillante color blanco la hacen atractiva, mientras que su sabor suave pero distintivo es ideal para una amplia variedad de recetas. Desde sofritos aromáticos hasta ensaladas crujientes, esta cebolla agrega un toque especial a cualquier platillo. Perfecta para quienes valoran productos naturales y versátiles en su cocina, garantizando satisfacción en cada preparación.",
+        "disponible": true
+    },
+    {
         "nombre": "Mano de plátano burro",
         "categoria": "agro",
         "precio": 0.90,
@@ -1185,6 +1218,50 @@
         "disponible": false
     },
     {
+        "nombre": "Pelly de Ajo",
+        "categoria": "confituras",
+        "precio": 2.838,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/pelly_ajo.jpg",
+        "descripcion":"Pelly Chicoticos de Ajo - 120g Experimenta el irresistible sabor de los Chicoticos de Ajo de la marca Pelly, perfectos para aquellos que buscan un snack único y delicioso. Con su audaz sabor a ajo, estos chicoticos garantizan un crujido inigualable en cada bocado. Presentados en un empaque llamativo de color azul con detalles vibrantes, el diseño incluye una imagen de ajos frescos que refuerzan la calidad del producto. ¡Ideales para compartir con amigos o disfrutar en cualquier momento del día!",
+        "disponible": true
+    },
+    {
+        "nombre": "Pelly de Queso",
+        "categoria": "confituras",
+        "precio": 2.838,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/pelly_queso.jpg",
+        "descripcion":"Pelly Bolitas de Queso - Snack de Maíz Crujiente Haz de cada momento una celebración con Pelly Bolitas de Queso, un snack irresistible hecho de maíz con un sabor intenso a queso. Este producto se presenta en un empaque vibrante de color naranja con detalles alegres que capturan la esencia divertida del snack. Con la frase destacada ¡Poca sal, más maíz!, estas bolitas de queso son la opción perfecta para aquellos que buscan un balance entre sabor y frescura. Cada bolsa contiene 120 gramos de felicidad crujiente, ideal para compartir o disfrutar en cualquier ocasión. El diseño incluye un personaje sonriente que refuerza el carácter amigable y llamativo del producto. ¡Atrévete a probarlas y llena tu día de color y sabor!",
+        "disponible": true
+    },
+    {
+        "nombre": "Batata Lisa",
+        "categoria": "confituras",
+        "precio": 1.714,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/batata_lisa.jpg",
+        "descripcion":"Batata Lisa Natural - Friteli Descubre el auténtico sabor de las papas fritas Friteli Batata Lisa Natural, hechas con 100% batata de verdad para brindarte una experiencia genuina y crujiente. Cada bolsa de 100 gramos contiene papas cuidadosamente seleccionadas y preparadas para mantener su frescura y calidad excepcional. Este snack combina tradición y sabor natural, ideal para disfrutar en cualquier momento. El empaque llamativo incluye un diseño moderno en color negro, destacando la autenticidad del producto con frases como Papas Seleccionadas y el sello de calidad de la marca Friteli. Ten en cuenta que el empaque también indica los niveles de grasas, mostrando transparencia hacia los consumidores.",
+        "disponible": true
+    },
+    {
+        "nombre": "Papas Crunchy",
+        "categoria": "confituras",
+        "precio": 1.714,
+        "descuento": 10,
+        "oferta": false,
+        "mas_vendido": false,
+        "imagen": "img/products/papas_crunchy.jpg",
+        "descripcion":"CRUNCHY - Papas Fritas Sabor Salt & Vinegar Déjate llevar por la explosión de sabores con estas papas fritas CRUNCHY, una deliciosa combinación de sal y vinagre que te hará agua la boca. Presentadas en una bolsa vibrante de color morado, estas papas ofrecen un crujido irresistible y el equilibrio perfecto entre lo salado y lo ácido. Con un diseño llamativo, incluyen la imagen de una botella de vinagre, un salero y papas fritas que evocan frescura y calidad. Ideales para disfrutar en cualquier momento, estas papas vienen con 240 calorías por porción y son perfectas para compartir o darte un gusto. ¡Un sabor clásico reinventado para los amantes del buen snack!",
+        "disponible": true
+    },
+    {
         "nombre": "Galletas de Soda con Mantequilla Doricas",
         "categoria": "confituras",
         "precio": 5,
@@ -1569,7 +1646,7 @@
         "oferta": false,
         "mas_vendido": true,
         "imagen": "img/products/cable_c.jpg",
-        "disponible": false,
+        "disponible": true,
         "descripcion": "Este resistente cable USB Tipo C combina funcionalidad y diseño, ideal para carga rápida y transferencia de datos eficiente. Su textura trenzada en colores rojo y negro garantiza durabilidad y evita enredos, haciéndolo perfecto para el uso diario. Equipado con conectores sólidos y confiables, el Supercarga Cable asegura máxima calidad y rendimiento para tus dispositivos compatibles. Este accesorio se convierte en la opción ideal para quienes buscan un cable versátil, resistente y estilizado.",
         "imagenesAdicionales":[
             "img/products/cable_c_2.jpg",
