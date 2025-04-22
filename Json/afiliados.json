@@ -845,5 +845,12 @@
     "fecha": "2025-04-22T11:52:00.006Z",
     "numero": "76",
     "telefono": "123456"
+  },
+  {
+    "id": "1vzhgt",
+    "nombre": "Test Afiliado",
+    "fecha": "2025-04-22T11:52:29.346Z",
+    "numero": "NaN",
+    "telefono": "123456"
   }
 ]
