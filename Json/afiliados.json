@@ -840,16 +840,6 @@
     "numeroInt": 75
   },
   {
-    "id": "r5Gbhy",
-    "nombre": "Test Afiliado",
-    "fecha": "2025-04-22T11:52:00.006Z",
-    "numero": "76",
-    "telefono": "123456",
-    "link": "https://www.asereshops.com/?ref=r5Gbhy",
-    "searchText": "test afiliado r5gbhy 76 123456",
-    "numeroInt": 76
-  },
-  {
     "id": "1vzhgt",
     "nombre": "Test Afiliado",
     "fecha": "2025-04-22T11:52:29.346Z",
@@ -858,5 +848,15 @@
     "link": "https://www.asereshops.com/?ref=1vzhgt",
     "searchText": "test afiliado 1vzhgt nan 123456",
     "numeroInt": 0
+  },
+  {
+    "id": "y2RU3h",
+    "nombre": "Test Afiliado 2",
+    "fecha": "2025-04-22T12:23:53.918Z",
+    "numero": "77",
+    "telefono": "123456",
+    "link": "https://www.asereshops.com/?ref=y2RU3h",
+    "searchText": "test afiliado 2 y2ru3h 77 123456",
+    "numeroInt": 77
   }
 ]
