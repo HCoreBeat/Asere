@@ -1646,19 +1646,5 @@
       "img/products/cable_c_2.jpg",
       "img/products/cable_c_3.jpg"
     ]
-  },
-  {
-    "nombre": "Test de producto",
-    "categoria": "electrodomesticos",
-    "precio": 11.429,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/test_de_producto.jpg",
-    "descripcion": "test. test. test",
-    "imagenesAdicionales": [
-      "img/products/test_de_producto_1.jpg"
-    ]
   }
 ]
