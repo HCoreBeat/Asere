@@ -1587,21 +1587,6 @@
     "disponible": true
   },
   {
-    "nombre": "Colorful desktop fan",
-    "categoria": "electrodomesticos",
-    "precio": 28.571,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Colorful_desktop_fan.jpg",
-    "descripcion": "Función de luz nocturna. Gran angular de suministro de aire circulante. Regulación del viento de 3 velocidades. Batería de litio de alta capacidad. Suministro de aire de cabezal oscilante de 180 grados. Carga tipo C. Luz de atmósfera.",
-    "imagenesAdicionales": [
-      "img/products/Colorful_desktop_fan_2.jpg",
-      "img/products/Colorful_desktop_fan_3.jpg"
-    ]
-  },
-  {
     "nombre": "Table fill light",
     "categoria": "electrodomesticos",
     "precio": 17.142,
