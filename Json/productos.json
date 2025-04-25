@@ -1653,7 +1653,7 @@
     "precio": 9.524,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
+    "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/test_de_producto.jpg",
     "descripcion": "Test. Test 2. Test 3.",
