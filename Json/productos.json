@@ -1646,5 +1646,16 @@
       "img/products/cable_c_2.jpg",
       "img/products/cable_c_3.jpg"
     ]
+  },
+  {
+    "nombre": "Producto unic",
+    "categoria": "carnes",
+    "precio": 9.524,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/producto_unic.jpg",
+    "descripcion": "Lol"
   }
 ]
