@@ -1,1656 +1,1650 @@
 [
-    {
-        "nombre": "Refresco Instantáneo (2Lt)",
-        "categoria": "bebidas",
-        "precio": 0.40,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Refresco_Instantaneo.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Pechuga de Pollo (1Kg)",
-        "categoria": "carnes",
-        "precio": 11.333,
-        "descuento": 25.4,
-        "oferta": false,
-        "mas_vendido": true,
-        "imagen": "img/products/pechuga_pollo.jpg",
-        "disponible": true, 
-        "descripcion": "Este producto es pechuga de pollo sin hueso y sin piel de la marca Sadia. Es un paquete de 1 kg de pechugas de pollo congeladas, ideales para preparar diversas recetas. Constituye una excelente fuente de proteínas, con bajo contenido de grasas, lo que lo convierte en una opción saludable y versátil en la cocina. Es imprescindible mantenerlo congelado a -18°C para conservar su frescura y calidad."
-    },
-    {
-        "nombre": "Pollo Golden Phoenix (2Kg)",
-        "categoria": "carnes",
-        "precio": 9.52,
-        "descuento": 25.4,
-        "oferta": true,
-        "mas_vendido": true,
-        "imagen": "img/products/Pollo_Golden.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Pollo Country Pride",
-        "categoria": "carnes",
-        "precio": 13.238,
-        "descuento": 13.6,
-        "oferta": false,
-        "mas_vendido": true,
-        "imagen": "img/products/Pollo_Country.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Pollo Entero 3 Libras",
-        "categoria": "carnes",
-        "precio": 5.00,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Pollo_Entero.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Paquete de muslos de pollo 5.5lbs",
-        "categoria": "carnes",
-        "precio": 10.00,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Paquete_de_muslos_de_Pollo.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Carne de cerdo x Lb",
-        "categoria": "carnes",
-        "precio": 3.047,
-        "descuento": 9.4,
-        "oferta": true,
-        "mas_vendido": true,
-        "imagen": "img/products/Carne_de_Cerdo.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Carne de Ovejo x Lb",
-        "categoria": "carnes",
-        "precio": 2.25,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Carne_de_Ovejo.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Picadillo Especial 400g",
-        "categoria": "carnes",
-        "precio": 1.876,
-        "descuento": 24.37,
-        "oferta": true,
-        "mas_vendido": true,
-        "imagen": "img/products/Picadillo_Especial.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Jamón de Pierna x Lb",
-        "categoria": "carnes",
-        "precio": 4.80,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": true,
-        "imagen": "img/products/Jamon_de_Pierna.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Chuletas de cerdo x Lb",
-        "categoria": "carnes",
-        "precio": 3.00,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Chuletas_de_Cerdo.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Paquete de picadillo de pollo 1kg",
-        "categoria": "carnes",
-        "precio": 2.828,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": true,
-        "imagen": "img/products/Paquete_de_Picadillo_Pollo.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Paquete de salchichas 7u (350g)",
-        "categoria": "carnes",
-        "precio": 1.97,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Paquete_de_Salchichas.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Pack de 4 Hamburguesas de pollo",
-        "categoria": "carnes",
-        "precio": 1.8,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Pack_de_4_Hamburguesas_de_Pollo.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Hígado de cerdo x Lb",
-        "categoria": "carnes",
-        "precio": 2.87,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Higado_de_Cerdo.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Jamón Bravo Rápido (2kg)",
-        "categoria": "carnes",
-        "precio": 28.00,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Jamon_Bravo_Rapido.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Masa deshuesada de cerdo x Kg",
-        "categoria": "carnes",
-        "precio": 10.95,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Masa_deshuesada_de_Cerdo.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Pernil de Cerdo asado (15 libras)",
-        "categoria": "carnes",
-        "precio": 49.52,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": true,
-        "imagen": "img/products/Pernil_de_Cerdo.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Maíz Dulce en Grano Vima (425g)",
-        "categoria": "enlatados",
-        "precio": 1.809,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/maiz_en_grano_dulce_vima_425gm.jpg",
-        "disponible": true,
-        "descripcion":"El maíz dulce en grano de Vima Foods, disponible en una lata de 15 oz (425 g), es ideal para añadir sabor y calidad a tus recetas favoritas. Con un drenado neto de 8.1 oz (230 g), este producto vegano y de calidad premium ofrece granos frescos y tiernos que son perfectos para ensaladas, guisos, sopas y más. Disfruta de la versatilidad del maíz dulce en grano Vima Foods, diseñado para satisfacer a los paladares más exigentes."
-    },
-    {
-        "nombre": "Salchicha de pollo y cerdo 10u (340g)",
-        "categoria": "carnes",
-        "precio": 1.809,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Salchicha_Pollo_Cerdo.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Picadillo Especial 800g",
-        "categoria": "carnes",
-        "precio": 3.657,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Picadillo_Especial_2.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Queso criollo x Lb",
-        "categoria": "lacteos",
-        "precio": 2.285,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/queso_criollo.jpg",
-        "descripcion":"Queso Criollo Fresco, Disfruta del auténtico sabor del queso criollo, un clásico en la cocina tradicional. Este queso fresco tiene una textura firme y ligeramente quebradiza, ideal para rallar, cortar en cubos o simplemente disfrutarlo como está. Su color blanco puro y su aroma suave evocan frescura y calidad artesanal. Perfecto para acompañar tus platos favoritos, ya sea como ingrediente en ensaladas, arepas o junto a frutas y miel. Este queso es una opción deliciosa y versátil para los amantes de los sabores auténticos.",
-        "disponible": true
-    },
-    {
-        "nombre": "Leche en polvo (900g)",
-        "categoria": "lacteos",
-        "precio": 13,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Leche_en_Polvo.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Leche Entera",
-        "categoria": "lacteos",
-        "precio": 10.86,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Leche_Entera.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Helado 4Lts",
-        "categoria": "lacteos",
-        "precio": 9.95,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Helado.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Leche Evaporada 400g",
-        "categoria": "lacteos",
-        "precio": 2.93,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Leche_Evaporada.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Leche Evaporada «Delite» (260g)",
-        "categoria": "lacteos",
-        "precio": 1.80,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Leche_Evaporada_Delite.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Pack de 4 yogurts de Macedonia Vima",
-        "categoria": "lacteos",
-        "precio": 2.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Pack_de_4_Yogurts_Macedonia.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Pack de 4 yogurts de Plátano Vima",
-        "categoria": "lacteos",
-        "precio": 2.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Pack_de_4_Yogurts_Platano.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Salsa Brava (320g)",
-        "categoria": "aderezos",
-        "precio": 3,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Salsa_Brava.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Sazón Mixto (250g)",
-        "categoria": "aderezos",
-        "precio": 5.30,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Sazon_Mixto.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Comino Molido (198.5g)",
-        "categoria": "aderezos",
-        "precio": 8.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": true,
-        "imagen": "img/products/Comino_Molido.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Ketchup (320g)",
-        "categoria": "aderezos",
-        "precio": 2.95,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Ketchup.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Queso Crema (200g)",
-        "categoria": "aderezos",
-        "precio": 2.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Queso_Crema.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Sazón Goya",
-        "categoria": "aderezos",
-        "precio": 0.60,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Sazon_Goya.jpg",
-        "disponible": true
-    },
-
-
-    {
-        "nombre": "Papas Prefritas Vima 1Kg",
-        "categoria": "despensa",
-        "precio": 5.142,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/papas_prefritas_vima.jpg",
-        "disponible": true,
-        "descripcion":"La patata frita Vima se presenta cortada en bastones de grosor 10x10mm (3/8 de pulgada). Está elaborada con las deliciosas variedades Bintje y Fontane, provenientes del centro de Europa (principalmente Bélgica). La patata Vima está prefrita, por eso se fríe directamente congelada y en menos de 5 minutos está lista. Como tiene un porcentaje de humedad muy bajo absorbe poco aceite y se mantiene crujiente más tiempo. No contiene sal y así se puede preparar al gusto."    
-    },
-    {
-     "nombre": "Manzana",
-     "categoria": "despensa",
-     "precio": 1.619,
-     "descuento": 10,
-     "oferta": false,
-     "mas_vendido": true,
-     "imagen": "img/products/manzana.jpg",
-     "disponible": true,
-     "descripcion": "Descubre la frescura y el sabor de una manzana premium, cuidadosamente seleccionada para ofrecerte la mejor calidad. Perfecta como snack saludable, para añadir a tus recetas favoritas o para disfrutar en cualquier momento del día. Con una textura crujiente, un color vibrante y una dulzura natural irresistible, esta manzana es una fuente excelente de vitaminas y antioxidantes 🍎"
-    },
-    { 
-       "nombre": "Manzanas Pack x6",
-       "categoria": "despensa",
-       "precio": 8.571,
-       "descuento": 10,
-       "oferta": false,
-       "mas_vendido": true,
-       "imagen": "img/products/manzana_cantidad.jpg",
-       "disponible": true,
-       "descripcion": "Disfruta de la frescura y el sabor natural de nuestras manzanas cuidadosamente seleccionadas. Este paquete incluye 6 manzanas premium, perfectas para tus meriendas saludables, recetas favoritas o para llevar un delicioso bocado en cualquier momento del día. Con su textura crujiente y dulzura irresistible, nuestras manzanas son una excelente fuente de vitaminas y antioxidantes. Llena tu cocina con lo mejor de la naturaleza 🍎"
-    },
-    {
-        "nombre": "Nutela",
-        "categoria": "despensa",
-        "precio": 4.476,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/nutela_365.jpg",
-        "disponible": true,
-        "descripcion":"Crema de Avellanas con Cacao 365 Cacao Hazelnut Cream Eviza Nezka 400 g combina chocolate y avellanas en una fórmula única con textura suave y cremosa. Versátil y deliciosa, es perfecta para untar en panes, galletas, crepas o para agregar un toque especial a tus postres y recetas de repostería. Elaborada con ingredientes seleccionados, garantiza calidad premium y un sabor inigualable. Su práctico envase ergonómico facilita el uso y almacenamiento, asegurando frescura en cada porción. Ideal para desayunos, meriendas y momentos especiales que se convierten en dulces experiencias diarias. Disponible con pedido fácil y envío rápido para disfrutar sin complicaciones."
-    },
-    {
-        "nombre": "Aceite Fritura 900ml",
-        "categoria": "despensa",
-        "precio": 4.00,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Aceite_Fritura.jpeg",
-        "disponible": true
-    },
-    {
-        "nombre": "Aceite refinado de girasol 1L",
-        "categoria": "despensa",
-        "precio": 4.00,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/aceite_girasol.jpg",
-        "descripcion":"El aceite refinado de girasol de 1 litro es una opción extra grande ideal para cocinar, freír, asar o preparar aderezos. Su calidad refinada garantiza un sabor neutro que realza los platillos sin dominarlos, siendo una elección práctica y confiable para cualquier cocina. Perfecto tanto para chefs como para cocineros caseros que buscan resultados excelentes.",
-        "imagenesAdicionales":[
-            "img/products/aceite_girasol_2.jpg"
-        ],
-        "disponible": false
-    },
-    {
-        "nombre": "Azúcar blanca x lb",
-        "categoria": "despensa",
-        "precio": 1.171,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Azucar_Blanca.jpeg",
-        "disponible": true
-    },
-    {
-        "nombre": "Frijol Negro x Lb",
-        "categoria": "pastas-y-granos",
-        "precio": 2.50,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Frijol_Negro.jpeg",
-        "disponible": true
-    },
-    {
-        "nombre": "Paquete de pan de bola 10u",
-        "categoria": "despensa",
-        "precio": 1.809,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Pan.jpeg",
-        "disponible": true
-    },
-    {
-        "nombre": "Pastilla de Pollo",
-        "categoria": "despensa",
-        "precio": 0.35,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Pastilla_de_Pollo.jpeg",
-        "disponible": true
-    },
-    {
-        "nombre": "Azúcar Parda x lb",
-        "categoria": "despensa",
-        "precio": 2,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Azucar_Parda.jpeg",
-        "disponible": false
-    },
-    {
-        "nombre": "Café La Llave",
-        "categoria": "cafe",
-        "precio": 7,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Cafe_la_Llave.jpeg",
-        "disponible": false
-    },
-    {
-        "nombre": "Café Espresso",
-        "categoria": "cafe",
-        "precio": 6.666,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Cafe_Expreso.jpeg",
-        "disponible": false
-    },
-    {
-        "nombre": "Cartón de Huevos",
-        "categoria": "despensa",
-        "precio": 12.05,
-        "descuento": 23.08,
-        "oferta": true,
-        "mas_vendido": true,
-        "imagen": "img/products/Carton_de_Huevo.jpeg",
-        "disponible": true
-    },
-    {
-        "nombre": "Espaguetis (500g)",
-        "categoria": "pastas-y-granos",
-        "precio": 1.80,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Espaguetis.jpeg",
-        "disponible": true
-    },
-    {
-        "nombre": "Leche Condensada azucarada (390g)",
-        "categoria": "despensa",
-        "precio": 2.75,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Leche_Condensada_Azucarada.jpeg",
-        "disponible": true
-    },
-    {
-        "nombre": "Sopa instantánea sabor Pollo (85g)",
-        "categoria": "despensa",
-        "precio": 0.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Sopa_Instantanea_sabor_Pollo.jpeg",
-        "disponible": true
-    },
-    {
-        "nombre": "Pasta de tomate Vima (400g)",
-        "categoria": "enlatados",
-        "precio": 1.885,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Pasta_de_Tomate_Vima.jpeg",
-        "disponible": true,
-        "descripcion":"El puré de tomate Vima Foods es el aliado perfecto para realzar el sabor de tus platillos favoritos. Con un contenido neto de 400 g (14 oz.), este puré de alta calidad cuenta con una textura suave y un sabor concentrado que lo hace ideal para salsas, guisos y más. Presentado en una lata con abre fácil, garantiza practicidad y frescura en cada uso. Transforma tus recetas con el auténtico toque del puré de tomate Vima Foods, diseñado para satisfacer a los paladares más exigentes."
-    },
-    {
-        "nombre": "Arroz grano largo Vima (1Kg)",
-        "categoria": "despensa",
-        "precio": 2.857,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/arroz_grano_largo_vima.jpg",
-        "disponible": true,
-        "descripcion":"El arroz de grano largo Vima Foods, con un contenido neto de 1 kg (2.2 lb), es ideal para preparar tus comidas favoritas. Este producto 100% natural, vegano y libre de organismos modificados genéticamente (GMO), garantiza una excelente calidad en cada grano. Perfecto para acompañar guisos, ensaladas y recetas internacionales, el arroz de grano largo Vima Foods es la elección inteligente para una alimentación saludable y deliciosa."
-    },
-    {
-        "nombre": "Arroz Rainha Brasil (1Kg)",
-        "categoria": "despensa",
-        "precio": 2.828,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/arroz_rainha.jpg",
-        "disponible": true,
-        "descripcion":"Este arroz blanco tipo 1 de la marca Rainha Brasil está compuesto por granos largos finos, pulidos y libres de grumos, lo que garantiza una textura uniforme y suave al cocinar. Es una opción nutritiva, ideal para acompañar diversos platos y adaptarse a recetas tradicionales como arroz con frijoles, risottos o guarniciones ligeras y saludables."
-    },
-    {
-        "nombre": "Queso Gouda Premium (3Kg)",
-        "categoria": "lacteos",
-        "precio": 40,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/queso_gouda premium.jpg",
-        "disponible": true,
-        "descripcion":"Disfruta del auténtico sabor del queso Gouda de Vima Foods, elaborado con ingredientes 100% naturales que garantizan una calidad inigualable. Su textura suave y cremosa es perfecta para realzar tus recetas favoritas, desde sándwiches y ensaladas hasta platos gourmet. Además, viene empacado para preservar su frescura y sabor, convirtiéndolo en una elección ideal tanto para bocadillos sencillos como para ocasiones especiales.",
-        "imagenesAdicionales":[
-            "img/products/queso_gouda_premium_2.jpg"
-        ]
-    },
-    {
-        "nombre": "Kg de Queso Gouda Premium",
-        "categoria": "lacteos",
-        "precio": 17.4,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/queso_gouda_Kg.jpg",
-        "disponible": true,
-        "descripcion":"Descubre el exquisito sabor del queso Gouda Premium, ahora disponible por kilogramos para adaptarse a tus necesidades. Este queso premium, elaborado con ingredientes 100% naturales, ofrece una textura suave y un sabor intenso que lo convierte en la elección ideal para tus recetas gourmet o para disfrutar en bocadillos frescos. Perfecto para amantes de la calidad y la frescura, cada kilogramo está cuidadosamente empacado para garantizar que llegue a ti en óptimas condiciones. Lleva la excelencia del queso Gouda Premium a tu cocina y deleita tu paladar con cada porción."
-    },
-    {
-        "nombre": "Salsa Cocktail Vima (225ml)",
-        "categoria": "aderezos",
-        "precio": 2.533,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/salsa_cocktail_225ml_vima.jpg",
-        "disponible": true,
-        "descripcion":"La salsa cocktail de Vima Foods es el complemento perfecto para tus platos de pescados, mariscos y ensaladas. Con un contenido neto de 225 ml, esta salsa destaca por su sabor delicioso y su versatilidad en la cocina. Presentada en un frasco con tapa verde y diseño elegante, garantiza frescura y calidad en cada cucharada. Dale un toque especial a tus comidas con la salsa cocktail de Vima Foods, ideal para realzar sabores y sorprender a tus invitados."
-    },
-    {
-        "nombre": "Mayonesa Vima (450ml)",
-        "categoria": "aderezos",
-        "precio": 3.971,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Mayonesa_Vima.jpg",
-        "disponible": true,
-        "descripcion":"Descubre la mayonesa Vima Foods de 450 ml, elaborada con ingredientes de alta calidad para garantizar un sabor auténtico y delicioso. Perfecta para acompañar sándwiches, ensaladas y tus recetas favoritas, esta mayonesa destaca por su textura cremosa y su frescura incomparable. Su presentación en un frasco práctico con tapa verde asegura la conservación del sabor y la comodidad en cada uso. Haz de Vima Foods tu elección de confianza para realzar cada bocado."
-    },
-    {
-        "nombre": "Azúcar (1Kg)",
-        "categoria": "despensa",
-        "precio": 4.476,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Azucar.jpeg",
-        "disponible": false
-    },
-    {
-        "nombre": "Frijol Rojo x Lb",
-        "categoria": "pastas-y-granos",
-        "precio": 3,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Frijol_Rojo.jpeg",
-        "disponible": true
-    },
-    {
-        "nombre": "Mantequilla (250g)",
-        "categoria": "despensa",
-        "precio": 2.30,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Mantequilla.jpeg",
-        "disponible": true
-    },
-    {
-        "nombre": "Sal x Lb",
-        "categoria": "despensa",
-        "precio": 0.333,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Sal.jpeg",
-        "disponible": true
-    },
-    {
-        "nombre": "Gelatina Gely de Melocotón (125ml)",
-        "categoria": "despensa",
-        "precio": 1.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Gelatina_Gely_Melocoton.jpeg",
-        "disponible": false
-    },
-    {
-        "nombre": "Gelatina Gely de Fresa (125ml)",
-        "categoria": "despensa",
-        "precio": 1.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/gelatina_gely_fresa.jpg",
-        "descripcion": "Este producto es una gelatina de la marca Coracan con sabor a fresa, que proporciona una opción deliciosa y refrescante para disfrutar en cualquier ocasión. Contiene vitamina C, lo que la convierte en una alternativa que no solo satisface el antojo, sino que también aporta un beneficio adicional a la dieta. Con un contenido neto de 170 gramos, es ideal para preparar hasta 8 porciones de 125 ml cada una, ofreciendo practicidad y buen rendimiento para compartir o disfrutar en familia.",
-        "disponible": true
-    },
-    {
-        "nombre": "Paquete de harina (1kg)",
-        "categoria": "despensa",
-        "precio": 2.80,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Paquete_Harina.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Ajo Pelado (1kg)",
-        "categoria": "despensa",
-        "precio": 6.857,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": true,
-        "imagen": "img/products/ajo_pelado_1_Kg_Vima.jpg",
-        "disponible": true,
-        "descripcion":"Los dientes de ajo pelados de Vima Foods, con un peso neto de 1 kg (35.2 oz.), son ideales para facilitar la preparación de tus recetas. Este producto 100% natural garantiza frescura y calidad, ofreciendo comodidad y ahorro de tiempo en la cocina. Perfectos para realzar el sabor de tus platos, los dientes de ajo pelados de Vima Foods se presentan en un envase práctico que conserva su textura y aroma característico. Simplifica tu cocina sin renunciar a la calidad."
-    },
-    {
-        "nombre": "Croqueta Jamón (500g)",
-        "categoria": "despensa",
-        "precio": 2.666,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": true,
-        "imagen": "img/products/croqueta_jamon_vima.jpg",
-        "disponible": false,
-        "imagenesAdicionales":[
-            "img/products/croqueta_jamon_vima_2.jpg"
-        ],
-        "descripcion":"Las croquetas de jamón Vima Foods son la opción ideal para disfrutar de un sabor auténtico y delicioso en cada bocado. Con un peso neto de 500 g (17.6 oz.), estas croquetas están elaboradas siguiendo una receta tradicional española que garantiza calidad y frescura. Perfectas para freír directamente desde el estado congelado, son ideales como aperitivo, acompañamiento o incluso plato principal. Disfruta de la tradición y el sabor de las croquetas de jamón Vima Foods en tu mesa."
-    },
-    {
-        "nombre": "Frijoles Negros (1Kg)",
-        "categoria": "pastas-y-granos",
-        "precio": 3.40,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Frijoles_Negros.jpeg",
-        "disponible": false
-    },
-    {
-        "nombre": "Frijoles Rojos (1kg)",
-        "categoria": "pastas-y-granos",
-        "precio": 4.571,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/frijoles_rojos.jpg",
-        "disponible": true,
-        "descripcion":"Los garbanzos secos de Huerto San Genaro son un producto de alta calidad, presentado en un paquete atractivo de color verde con espirales decorativos y una ventana transparente que permite apreciar los granos en su interior. Este producto, elaborado en España, es ideal para preparar una amplia variedad de platos saludables y nutritivos. Su empaque incluye información en varios idiomas, resaltando su autenticidad y versatilidad, lo que lo convierte en la elección perfecta para amantes de la cocina tradicional y de calidad."
-    },
-    {
-        "nombre": "Garbanzos (500g)",
-        "categoria": "pastas-y-granos",
-        "precio": 3.047,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/garbanzos.jpg",
-        "disponible": false,
-        "descripcion":"Los garbanzos secos de Huerto San Genaro, presentados en un paquete de diseño verde con detalles de espirales y una ventana transparente, garantizan calidad y autenticidad en cada grano. Este producto, elaborado en España, destaca por su empaque práctico que incluye información multilingüe, ideal para satisfacer las necesidades de los amantes de la cocina tradicional y saludable. Perfectos para preparar recetas nutritivas y versátiles, los garbanzos secos Huerto San Genaro son la opción ideal para llevar sabor y calidad a tu mesa."
-    },
-
-
-
-
-    
-    {
-        "nombre": "Frazada de Piso",
-        "categoria": "otros",
-        "precio": 1.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Frazada_de_Piso.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Vasos Reutilizables (100/u)",
-        "categoria": "otros",
-        "precio": 3.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Vasos_Reutilizables.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Paquete de tenedores plásticos (25/u)",
-        "categoria": "otros",
-        "precio": 1.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Tenedores_Plasticos.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Paquete de cucharas plásticas (100/u)",
-        "categoria": "otros",
-        "precio": 8.46,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Cucharas_Plasticas.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Maíz molido tierno x Lb",
-        "categoria": "agro",
-        "precio": 0.93,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/maiz_tierno.jpg",
-        "descripcion":"Maíz super fresco se muele al pedido. El maíz molido tierno es un ingrediente de alta calidad y frescura, perfecto para quienes buscan productos auténticos en su cocina. Su textura fina y color amarillo vibrante lo hacen ideal para elaborar recetas tradicionales como tamales, arepas o empanadas. Su sabor dulce y natural aporta un toque especial a cada preparación, convirtiéndolo en un aliado indispensable para realzar tus platillos favoritos. Este maíz es una opción versátil y nutritiva que garantiza excelencia en cada receta.",
-        "disponible": true
-    },
-    {
-        "nombre": "Mazo de cebolla blanca",
-        "categoria": "agro",
-        "precio": 1.428,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/cebolla_blanca.jpg",
-        "descripcion":"La cebolla blanca es un ingrediente esencial, reconocida por su frescura y calidad. Su forma redonda y su brillante color blanco la hacen atractiva, mientras que su sabor suave pero distintivo es ideal para una amplia variedad de recetas. Desde sofritos aromáticos hasta ensaladas crujientes, esta cebolla agrega un toque especial a cualquier platillo. Perfecta para quienes valoran productos naturales y versátiles en su cocina, garantizando satisfacción en cada preparación.",
-        "disponible": true
-    },
-    {
-        "nombre": "Mano de plátano burro",
-        "categoria": "agro",
-        "precio": 0.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Platano_Burro.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Pepino x Lb",
-        "categoria": "agro",
-        "precio": 0.55,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Pepino.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Tomate x Lb",
-        "categoria": "agro",
-        "precio": 0.885,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Tomate.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Limón x Lb",
-        "categoria": "agro",
-        "precio": 2.20,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Limon.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Plátano macho x unidad",
-        "categoria": "agro",
-        "precio": 0.25,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Platano_Macho.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Boniato x Lb",
-        "categoria": "agro",
-        "precio": 0.40,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Boniato.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Cerveza «3 Horses» (330ml)",
-        "categoria": "alcohol",
-        "precio": 0.95,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Cerveza_3_Hourses.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Caja de Cerveza «3 Horses»",
-        "categoria": "alcohol",
-        "precio": 22.10,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Caja_Cerveza_3_Hourses.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Agua Purificada Niagara (500ml)",
-        "categoria": "bebidas",
-        "precio": 0.714,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Agua_Purificada.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Caja de Bebida energética 5 Shot (250ml x 24)",
-        "categoria": "bebidas",
-        "precio": 21.15,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Caja_Bebida_Energetica.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Ron Habana Club Añejo Reserva",
-        "categoria": "alcohol",
-        "precio": 17.05,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Ron_Habana_Club_Añejo_Reserva.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Caja de malta Morena (24x237ml)",
-        "categoria": "bebidas",
-        "precio": 17.99,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Caja_de_Malta_Morena.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Malta Morena (237ml)",
-        "categoria": "bebidas",
-        "precio": 1.09,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Malta_Morena.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Caja de jugos Santa Juice Uva (24 x 200ml)",
-        "categoria": "bebidas",
-        "precio": 15.88,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Caja_de_Jugos_Santa_Juice_Uva.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Blister Agua Purificada Niagara (24 x 500ml)",
-        "categoria": "bebidas",
-        "precio": 11.95,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Blister_Agua_Purificada.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Ron Habana Club Añejo Especial",
-        "categoria": "alcohol",
-        "precio": 13.10,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Ron_Habana_Club_Añejo_Especial.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Bebida energética 5 Shot (250ml)",
-        "categoria": "bebidas",
-        "precio": 0.95,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Bebida_Energetica_5_Shot.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Pack de 6 maltas Morena (6x237ml)",
-        "categoria": "bebidas",
-        "precio": 4.81,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Pack_de_6_Maltas_Morena.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Jugo Santa Juice de Uva (200ml)",
-        "categoria": "bebidas",
-        "precio": 0.72,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Caja_de_Jugos_Santa_Juice_Uva.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Caja de refresco Piña",
-        "categoria": "bebidas",
-        "precio": 19.35,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Caja_de_Refresco_Piña.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Sidra «La Aldeana» (sin alcohol)",
-        "categoria": "bebidas",
-        "precio": 4.19,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Sidra_La_Aldeana.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Coca Cola",
-        "categoria": "bebidas",
-        "precio": 2.48,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Coca_Cola.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Caja de refresco Naranja",
-        "categoria": "bebidas",
-        "precio": 19.35,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Caja_de_Refresco_Naranja.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Whisky Chancelier",
-        "categoria": "alcohol",
-        "precio": 7.619,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Whisky_Chancelier.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Caja de refresco Limón",
-        "categoria": "bebidas",
-        "precio": 19.35,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Caja_de_Refresco_Limon.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Refresco Piña 2Lts",
-        "categoria": "bebidas",
-        "precio": 2.99,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Refresco_Piña.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Refresco Cola (330ml)",
-        "categoria": "bebidas",
-        "precio": 0.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Refresco_Cola.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Caja de Cervezas Bucanero",
-        "categoria": "alcohol",
-        "precio": 23.95,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Caja_Cerveza_Bucanero.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Cervezas Bucanero (355ml)",
-        "categoria": "alcohol",
-        "precio": 1.05,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Cerveza_Bucanero.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Caja de refresco Cola",
-        "categoria": "bebidas",
-        "precio": 19.35,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Caja_de_Refresco_Brio_Cola.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Caja de Malta Bucanero",
-        "categoria": "bebidas",
-        "precio": 23.81,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Caja_de_Malta_Bucanero.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Refresco Limón (330ml)",
-        "categoria": "bebidas",
-        "precio": 0.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Caja_de_Refresco_Limon.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Cervezas Cristal (355ml)",
-        "categoria": "alcohol",
-        "precio": 1.05,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Cerveza_Cristal.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Caja de Cervezas Cristal",
-        "categoria": "alcohol",
-        "precio": 23.95,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Caja_Cerveza_Cristal.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Malta Bucanero",
-        "categoria": "bebidas",
-        "precio": 1.095,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Malta_Bucanero.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Refresco Naranja (330ml)",
-        "categoria": "bebidas",
-        "precio": 0.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Refresco_Naranja.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Refresco Piña (330ml)",
-        "categoria": "bebidas",
-        "precio": 0.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Refresco_Piña_Brio.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Rollitos de Primavera (200g)",
-        "categoria": "carnes",
-        "precio": 1.93,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Rollitos_de_Primavera.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Nuggets de pollo x Kg",
-        "categoria": "despensa",
-        "precio": 7.20,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Nuggets_de_Pollo.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Lomo de cerdo deshuesado Premium x Kg",
-        "categoria": "carnes",
-        "precio": 3.40,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Lomo_de_Cerdo_Deshuesado.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Caja de Jurel (20Libras)",
-        "categoria": "carnes",
-        "precio": 35.98,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Caja_de_Jurel.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Pelly de Ajo",
-        "categoria": "confituras",
-        "precio": 2.838,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/pelly_ajo.jpg",
-        "descripcion":"Pelly Chicoticos de Ajo - 120g Experimenta el irresistible sabor de los Chicoticos de Ajo de la marca Pelly, perfectos para aquellos que buscan un snack único y delicioso. Con su audaz sabor a ajo, estos chicoticos garantizan un crujido inigualable en cada bocado. Presentados en un empaque llamativo de color azul con detalles vibrantes, el diseño incluye una imagen de ajos frescos que refuerzan la calidad del producto. ¡Ideales para compartir con amigos o disfrutar en cualquier momento del día!",
-        "disponible": true
-    },
-    {
-        "nombre": "Pelly de Queso",
-        "categoria": "confituras",
-        "precio": 2.838,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/pelly_queso.jpg",
-        "descripcion":"Pelly Bolitas de Queso - Snack de Maíz Crujiente Haz de cada momento una celebración con Pelly Bolitas de Queso, un snack irresistible hecho de maíz con un sabor intenso a queso. Este producto se presenta en un empaque vibrante de color naranja con detalles alegres que capturan la esencia divertida del snack. Con la frase destacada ¡Poca sal, más maíz!, estas bolitas de queso son la opción perfecta para aquellos que buscan un balance entre sabor y frescura. Cada bolsa contiene 120 gramos de felicidad crujiente, ideal para compartir o disfrutar en cualquier ocasión. El diseño incluye un personaje sonriente que refuerza el carácter amigable y llamativo del producto. ¡Atrévete a probarlas y llena tu día de color y sabor!",
-        "disponible": true
-    },
-    {
-        "nombre": "Batata Lisa",
-        "categoria": "confituras",
-        "precio": 1.714,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/batata_lisa.jpg",
-        "descripcion":"Batata Lisa Natural - Friteli Descubre el auténtico sabor de las papas fritas Friteli Batata Lisa Natural, hechas con 100% batata de verdad para brindarte una experiencia genuina y crujiente. Cada bolsa de 100 gramos contiene papas cuidadosamente seleccionadas y preparadas para mantener su frescura y calidad excepcional. Este snack combina tradición y sabor natural, ideal para disfrutar en cualquier momento. El empaque llamativo incluye un diseño moderno en color negro, destacando la autenticidad del producto con frases como Papas Seleccionadas y el sello de calidad de la marca Friteli. Ten en cuenta que el empaque también indica los niveles de grasas, mostrando transparencia hacia los consumidores.",
-        "disponible": true
-    },
-    {
-        "nombre": "Papas Crunchy",
-        "categoria": "confituras",
-        "precio": 1.714,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/papas_crunchy.jpg",
-        "descripcion":"CRUNCHY - Papas Fritas Sabor Salt & Vinegar Déjate llevar por la explosión de sabores con estas papas fritas CRUNCHY, una deliciosa combinación de sal y vinagre que te hará agua la boca. Presentadas en una bolsa vibrante de color morado, estas papas ofrecen un crujido irresistible y el equilibrio perfecto entre lo salado y lo ácido. Con un diseño llamativo, incluyen la imagen de una botella de vinagre, un salero y papas fritas que evocan frescura y calidad. Ideales para disfrutar en cualquier momento, estas papas vienen con 240 calorías por porción y son perfectas para compartir o darte un gusto. ¡Un sabor clásico reinventado para los amantes del buen snack!",
-        "disponible": true
-    },
-    {
-        "nombre": "Galletas de Soda con Mantequilla Doricas",
-        "categoria": "confituras",
-        "precio": 5,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Galleta_de_Soda_Con_Mantequilla.jpg",
-        "descripcion":"Extra grandes y deliciosas, las galletas semidulces DoRicas son perfectas para cualquier ocasión, ofreciendo un sabor único que encanta a todos. Este paquete de 525 g es ideal para compartir en reuniones familiares, eventos o simplemente para disfrutar durante varios días. Presentadas en un empaque azul oscuro, estas galletas no solo son sabrosas, sino también visualmente atractivas gracias a su diseño profesional. En la parte frontal del paquete destaca una imagen tentadora de las galletas acompañadas de una espiga de trigo, que resalta la calidad de sus ingredientes seleccionados. Cada paquete incluye cinco tacos, asegurando una experiencia prolongada de disfrute. Son perfectas para acompañar con café, té o como un snack ligero en cualquier momento del día.",
-        "disponible": true
-    },
-    {
-        "nombre": "Galletas de soda Salricas",
-        "categoria": "confituras",
-        "precio": 2.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Galleta_de_Soda_Salricas.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Galletas Porleo (45g)",
-        "categoria": "confituras",
-        "precio": 0.87,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Galletas_Porleo.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Orégano (14.2g)",
-        "categoria": "despensa",
-        "precio": 1.87,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Oregano.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Vinagre (1Litro)",
-        "categoria": "despensa",
-        "precio": 2.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Vinagre.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Leche entera en polvo «Vima» (1kg)",
-        "categoria": "lacteos",
-        "precio": 13,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Leche_Entera_En_Polvo_Vima.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Leche entera en polvo (1kg)",
-        "categoria": "lacteos",
-        "precio": 11.4,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/leche_entera_en_polvo.jpg",
-        "descripcion":"Descubre la leche entera en polvo Macro Food, perfecta para preparar deliciosas bebidas y recetas. Con un 26% de grasa láctea y un rendimiento aproximado de 8.5 litros por cada kilogramo, este producto combina calidad y conveniencia. Ideal para quienes buscan una alternativa práctica y duradera al consumo de leche fresca. Su presentación incluye un diseño funcional y moderno, reflejando el compromiso con la frescura y el sabor natural. ¡Una opción esencial para tu despensa y cocina!",
-        "disponible": true
-    },
-    {
-        "nombre": "Cebollitas en Vinagre (290g)",
-        "categoria": "despensa",
-        "precio": 2.17,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Cebollitas_En_Vinagre.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Café Espresso «El Ricote»",
-        "categoria": "cafe",
-        "precio": 6.54,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Cafe_Expresso.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Chocolate en Polvo «Rico» (500g)",
-        "categoria": "despensa",
-        "precio": 4,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Chocolate_en_Polvo_Riko.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Pasta de tomate 400g",
-        "categoria": "enlatados",
-        "precio": 2.40,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Pasta_de_Tomate.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Menthoplus",
-        "categoria": "despensa",
-        "precio": 0.60,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Menthoplus.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Melocotón en almibar (425g)",
-        "categoria": "enlatados",
-        "precio": 2.65,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Melocoton_en_Almibar_Vima.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Fresas en almibar (425g)",
-        "categoria": "enlatados",
-        "precio": 2.65,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Fresas_en_Almibar.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Maicena Nezka (500g)",
-        "categoria": "despensa",
-        "precio": 5.99,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Maicena_Nezka.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Lata de Frijoles Rojos (410g)",
-        "categoria": "enlatados",
-        "precio": 1.80,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Lata_de_Frijol_Rojo.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Pasta de tomate OZER 400g",
-        "categoria": "enlatados",
-        "precio": 3.60,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Pasta_de_Tomate_Ozer.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Codito Badelli (350g)",
-        "categoria": "pastas-y-granos",
-        "precio": 1.80,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Codito_Badelli.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Aceite Saude 900ml",
-        "categoria": "despensa",
-        "precio": 3.619,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Aceite_Saude.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Arroz Criollo 1Lb",
-        "categoria": "pastas-y-granos",
-        "precio": 0.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Arroz_Criollo.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Servilletas «Bingo» (40u)",
-        "categoria": "otros",
-        "precio": 0.90,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Servilletas.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Pasta Dental Coigore (100g)",
-        "categoria": "otros",
-        "precio": 3.27,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Pasta_dental.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Desodorante Keewell",
-        "categoria": "otros",
-        "precio": 2.87,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Desodorante_Keewell.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Toallitas Húmedas (80u)",
-        "categoria": "otros",
-        "precio": 6,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Toallitas_Humedas.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Jabón de Baño (100g)",
-        "categoria": "otros",
-        "precio": 1,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Jabon_de_Baño.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Paquete de Papel Sanitario",
-        "categoria": "otros",
-        "precio": 1.99,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Paquete_de_Papel_Sanitario.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Detergente «STB» (1Kg)",
-        "categoria": "otros",
-        "precio": 3.20,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Detergente.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Colonia Bonabel de Violetas",
-        "categoria": "otros",
-        "precio": 5,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Colobnia_Bonabel_de_Violetas.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Cerveza UNLAGUER",
-        "categoria": "alcohol",
-        "precio": 0.80,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Cerveza_Unlaguer.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Caja de Cerveza UNLAGUER",
-        "categoria": "alcohol",
-        "precio": 18,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Caja_cerveza_unlaguer.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Pescado de mar (Corvina) 4lb",
-        "categoria": "carnes",
-        "precio": 5.11,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Pescado_corvina.jpg",
-        "disponible": true
-    },
-    {
-        "nombre": "Spam",
-        "categoria": "enlatados",
-        "precio": 2.79,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Spam.jpg",
-        "disponible": false
-    },
-    {
-        "nombre": "Picadillo de pollo (1Kg)",
-        "categoria": "carnes",
-        "precio": 2.828,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": true,
-        "imagen": "img/products/Picadillo_de_Pollo.jpg",
-        "disponible": true
-    },
-    
-    
-    {
-        "nombre": "Colorful desktop fan",
-        "categoria": "electrodomesticos",
-        "precio": 28.571,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Colorful_desktop_fan.jpg",
-        "disponible": true,
-        "descripcion": "Función de luz nocturna. Gran angular de suministro de aire circulante. Regulación del viento de 3 velocidades. Batería de litio de alta capacidad. Suministro de aire de cabezal oscilante de 180 grados. Carga tipo C. Luz de atmósfera.",
-        "imagenesAdicionales":[
-            "img/products/Colorful_desktop_fan_2.jpg",
-            "img/products/Colorful_desktop_fan_3.jpg"
-        ]
-    },{
-        "nombre": "Table fill light",
-        "categoria": "electrodomesticos",
-        "precio": 17.142,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": false,
-        "imagen": "img/products/Table_fill_light.jpg",
-        "disponible": true,
-        "descripcion": "Lámpara de Relleno de Mesa PD-56 con Tonos de Luz Ajustables. Añade el toque perfecto de iluminación a tu espacio con la lámpara de relleno modelo PD-56. Con un diseño moderno y una altura de 55 cm, esta lámpara cuenta con cuatro bombillas verticales integradas en una estructura blanca. Ofrece tres opciones de tonalidades de luz para adaptarse a cualquier ambiente: cálida, neutra y fría. Además, incluye un práctico cable USB para una alimentación cómoda y segura. Ideal para oficinas, escritorios o cualquier rincón de tu hogar que necesite una iluminación versátil y elegante. ¡Optimiza tu espacio con estilo!",
-        "imagenesAdicionales":[
-            "img/products/Table_fill_light_2.jpg",
-            "img/products/Table_fill_light_3.jpg"
-        ]
-    },{
-        "nombre": "Ventilador solar portátil",
-        "categoria": "electrodomesticos",
-        "precio": 71.428,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": true,
-        "imagen": "img/products/ventilador_solar_portatil.jpg",
-        "disponible": true,
-        "descripcion": "1- Ventilador solar portátil: el ventilador solar para exteriores es pequeño, fácil de transportar, no ocupa espacio en la mochila, no hay necesidad de preocuparse por la batería y la escasez de iluminación al acampar al aire libre, vida útil ultralarga. 2- Ventilador con altavoz Bluetooth: El ventilador viene con función Bluetooth y debe estar conectado a su teléfono móvil para reproducir música, llévelo con usted en sus viajes de campamento al aire libre y le brindará el sonido de canciones animadas en la naturaleza silenciosa, lo que contribuirá a la atmósfera agradable de su viaje. 3- Aspa del ventilador de hélice: ventilador de cinco aspas con poco ruido, que corta el flujo de aire de manera uniforme y densa, haciendo que el viento esté mejor concentrado, un flujo de aire suave y un viento más fuerte, ventilador eléctrico multifuncional de cinco aspas. 4- Ventilador con iluminación: Nuestro ventilador viene con una función de iluminación, una exquisita lámpara de mesa pequeña, ¡el corte de energía se niega a tocar la oscuridad, enfría e ilumina tanto en la noche de verano! 5 Con función de temporizador: apagado inteligente del temporizador, puede configurar el apagado del temporizador en 30 minutos, no es necesario levantarse en medio de la noche para apagar el ventilador, no hay necesidad de preocuparse por resfriarse después de quedarse dormido !",
-        "imagenesAdicionales":[
-            "img/products/ventilador_solar_portatil_2.jpg",
-            "img/products/ventilador_solar_portatil_3.jpg",
-            "img/products/ventilador_solar_portatil_4.jpg"
-        ]
-    },{
-        "nombre": "Cable C",
-        "categoria": "electrodomesticos",
-        "precio": 2.38,
-        "descuento": 10,
-        "oferta": false,
-        "mas_vendido": true,
-        "imagen": "img/products/cable_c.jpg",
-        "disponible": true,
-        "descripcion": "Este resistente cable USB Tipo C combina funcionalidad y diseño, ideal para carga rápida y transferencia de datos eficiente. Su textura trenzada en colores rojo y negro garantiza durabilidad y evita enredos, haciéndolo perfecto para el uso diario. Equipado con conectores sólidos y confiables, el Supercarga Cable asegura máxima calidad y rendimiento para tus dispositivos compatibles. Este accesorio se convierte en la opción ideal para quienes buscan un cable versátil, resistente y estilizado.",
-        "imagenesAdicionales":[
-            "img/products/cable_c_2.jpg",
-            "img/products/cable_c_3.jpg"
-        ]
-    }
+  {
+    "nombre": "Refresco Instantáneo (2Lt)",
+    "categoria": "bebidas",
+    "precio": 0.4,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Refresco_Instantaneo.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Pechuga de Pollo (1Kg)",
+    "categoria": "carnes",
+    "precio": 11.333,
+    "descuento": 25.4,
+    "oferta": false,
+    "mas_vendido": true,
+    "imagen": "img/products/pechuga_pollo.jpg",
+    "disponible": true,
+    "descripcion": "Este producto es pechuga de pollo sin hueso y sin piel de la marca Sadia. Es un paquete de 1 kg de pechugas de pollo congeladas, ideales para preparar diversas recetas. Constituye una excelente fuente de proteínas, con bajo contenido de grasas, lo que lo convierte en una opción saludable y versátil en la cocina. Es imprescindible mantenerlo congelado a -18°C para conservar su frescura y calidad."
+  },
+  {
+    "nombre": "Pollo Golden Phoenix (2Kg)",
+    "categoria": "carnes",
+    "precio": 9.52,
+    "descuento": 25.4,
+    "oferta": true,
+    "mas_vendido": true,
+    "imagen": "img/products/Pollo_Golden.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Pollo Country Pride",
+    "categoria": "carnes",
+    "precio": 13.238,
+    "descuento": 13.6,
+    "oferta": false,
+    "mas_vendido": true,
+    "imagen": "img/products/Pollo_Country.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Pollo Entero 3 Libras",
+    "categoria": "carnes",
+    "precio": 5,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Pollo_Entero.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Paquete de muslos de pollo 5.5lbs",
+    "categoria": "carnes",
+    "precio": 10,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Paquete_de_muslos_de_Pollo.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Carne de cerdo x Lb",
+    "categoria": "carnes",
+    "precio": 3.047,
+    "descuento": 9.4,
+    "oferta": true,
+    "mas_vendido": true,
+    "imagen": "img/products/Carne_de_Cerdo.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Carne de Ovejo x Lb",
+    "categoria": "carnes",
+    "precio": 2.25,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Carne_de_Ovejo.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Picadillo Especial 400g",
+    "categoria": "carnes",
+    "precio": 1.876,
+    "descuento": 24.37,
+    "oferta": true,
+    "mas_vendido": true,
+    "imagen": "img/products/Picadillo_Especial.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Jamón de Pierna x Lb",
+    "categoria": "carnes",
+    "precio": 4.8,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": true,
+    "imagen": "img/products/Jamon_de_Pierna.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Chuletas de cerdo x Lb",
+    "categoria": "carnes",
+    "precio": 3,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Chuletas_de_Cerdo.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Paquete de picadillo de pollo 1kg",
+    "categoria": "carnes",
+    "precio": 2.828,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": true,
+    "imagen": "img/products/Paquete_de_Picadillo_Pollo.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Paquete de salchichas 7u (350g)",
+    "categoria": "carnes",
+    "precio": 1.97,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Paquete_de_Salchichas.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Pack de 4 Hamburguesas de pollo",
+    "categoria": "carnes",
+    "precio": 1.8,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Pack_de_4_Hamburguesas_de_Pollo.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Hígado de cerdo x Lb",
+    "categoria": "carnes",
+    "precio": 2.87,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Higado_de_Cerdo.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Jamón Bravo Rápido (2kg)",
+    "categoria": "carnes",
+    "precio": 28,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Jamon_Bravo_Rapido.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Masa deshuesada de cerdo x Kg",
+    "categoria": "carnes",
+    "precio": 10.95,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Masa_deshuesada_de_Cerdo.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Pernil de Cerdo asado (15 libras)",
+    "categoria": "carnes",
+    "precio": 49.52,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": true,
+    "imagen": "img/products/Pernil_de_Cerdo.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Maíz Dulce en Grano Vima (425g)",
+    "categoria": "enlatados",
+    "precio": 1.809,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/maiz_en_grano_dulce_vima_425gm.jpg",
+    "disponible": true,
+    "descripcion": "El maíz dulce en grano de Vima Foods, disponible en una lata de 15 oz (425 g), es ideal para añadir sabor y calidad a tus recetas favoritas. Con un drenado neto de 8.1 oz (230 g), este producto vegano y de calidad premium ofrece granos frescos y tiernos que son perfectos para ensaladas, guisos, sopas y más. Disfruta de la versatilidad del maíz dulce en grano Vima Foods, diseñado para satisfacer a los paladares más exigentes."
+  },
+  {
+    "nombre": "Salchicha de pollo y cerdo 10u (340g)",
+    "categoria": "carnes",
+    "precio": 1.809,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Salchicha_Pollo_Cerdo.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Picadillo Especial 800g",
+    "categoria": "carnes",
+    "precio": 3.657,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Picadillo_Especial_2.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Queso criollo x Lb",
+    "categoria": "lacteos",
+    "precio": 2.285,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/queso_criollo.jpg",
+    "descripcion": "Queso Criollo Fresco, Disfruta del auténtico sabor del queso criollo, un clásico en la cocina tradicional. Este queso fresco tiene una textura firme y ligeramente quebradiza, ideal para rallar, cortar en cubos o simplemente disfrutarlo como está. Su color blanco puro y su aroma suave evocan frescura y calidad artesanal. Perfecto para acompañar tus platos favoritos, ya sea como ingrediente en ensaladas, arepas o junto a frutas y miel. Este queso es una opción deliciosa y versátil para los amantes de los sabores auténticos.",
+    "disponible": true
+  },
+  {
+    "nombre": "Leche en polvo (900g)",
+    "categoria": "lacteos",
+    "precio": 13,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Leche_en_Polvo.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Leche Entera",
+    "categoria": "lacteos",
+    "precio": 10.86,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Leche_Entera.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Helado 4Lts",
+    "categoria": "lacteos",
+    "precio": 9.95,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Helado.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Leche Evaporada 400g",
+    "categoria": "lacteos",
+    "precio": 2.93,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Leche_Evaporada.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Leche Evaporada «Delite» (260g)",
+    "categoria": "lacteos",
+    "precio": 1.8,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Leche_Evaporada_Delite.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Pack de 4 yogurts de Macedonia Vima",
+    "categoria": "lacteos",
+    "precio": 2.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Pack_de_4_Yogurts_Macedonia.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Pack de 4 yogurts de Plátano Vima",
+    "categoria": "lacteos",
+    "precio": 2.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Pack_de_4_Yogurts_Platano.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Salsa Brava (320g)",
+    "categoria": "aderezos",
+    "precio": 3,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Salsa_Brava.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Sazón Mixto (250g)",
+    "categoria": "aderezos",
+    "precio": 5.3,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Sazon_Mixto.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Comino Molido (198.5g)",
+    "categoria": "aderezos",
+    "precio": 8.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": true,
+    "imagen": "img/products/Comino_Molido.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Ketchup (320g)",
+    "categoria": "aderezos",
+    "precio": 2.95,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Ketchup.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Queso Crema (200g)",
+    "categoria": "aderezos",
+    "precio": 2.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Queso_Crema.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Sazón Goya",
+    "categoria": "aderezos",
+    "precio": 0.6,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Sazon_Goya.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Papas Prefritas Vima 1Kg",
+    "categoria": "despensa",
+    "precio": 5.142,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/papas_prefritas_vima.jpg",
+    "disponible": true,
+    "descripcion": "La patata frita Vima se presenta cortada en bastones de grosor 10x10mm (3/8 de pulgada). Está elaborada con las deliciosas variedades Bintje y Fontane, provenientes del centro de Europa (principalmente Bélgica). La patata Vima está prefrita, por eso se fríe directamente congelada y en menos de 5 minutos está lista. Como tiene un porcentaje de humedad muy bajo absorbe poco aceite y se mantiene crujiente más tiempo. No contiene sal y así se puede preparar al gusto."
+  },
+  {
+    "nombre": "Manzana",
+    "categoria": "despensa",
+    "precio": 1.619,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": true,
+    "imagen": "img/products/manzana.jpg",
+    "disponible": true,
+    "descripcion": "Descubre la frescura y el sabor de una manzana premium, cuidadosamente seleccionada para ofrecerte la mejor calidad. Perfecta como snack saludable, para añadir a tus recetas favoritas o para disfrutar en cualquier momento del día. Con una textura crujiente, un color vibrante y una dulzura natural irresistible, esta manzana es una fuente excelente de vitaminas y antioxidantes 🍎"
+  },
+  {
+    "nombre": "Manzanas Pack x6",
+    "categoria": "despensa",
+    "precio": 8.571,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": true,
+    "imagen": "img/products/manzana_cantidad.jpg",
+    "disponible": true,
+    "descripcion": "Disfruta de la frescura y el sabor natural de nuestras manzanas cuidadosamente seleccionadas. Este paquete incluye 6 manzanas premium, perfectas para tus meriendas saludables, recetas favoritas o para llevar un delicioso bocado en cualquier momento del día. Con su textura crujiente y dulzura irresistible, nuestras manzanas son una excelente fuente de vitaminas y antioxidantes. Llena tu cocina con lo mejor de la naturaleza 🍎"
+  },
+  {
+    "nombre": "Nutela",
+    "categoria": "despensa",
+    "precio": 4.476,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/nutela_365.jpg",
+    "disponible": true,
+    "descripcion": "Crema de Avellanas con Cacao 365 Cacao Hazelnut Cream Eviza Nezka 400 g combina chocolate y avellanas en una fórmula única con textura suave y cremosa. Versátil y deliciosa, es perfecta para untar en panes, galletas, crepas o para agregar un toque especial a tus postres y recetas de repostería. Elaborada con ingredientes seleccionados, garantiza calidad premium y un sabor inigualable. Su práctico envase ergonómico facilita el uso y almacenamiento, asegurando frescura en cada porción. Ideal para desayunos, meriendas y momentos especiales que se convierten en dulces experiencias diarias. Disponible con pedido fácil y envío rápido para disfrutar sin complicaciones."
+  },
+  {
+    "nombre": "Aceite Fritura 900ml",
+    "categoria": "despensa",
+    "precio": 4,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Aceite_Fritura.jpeg",
+    "disponible": true
+  },
+  {
+    "nombre": "Aceite refinado de girasol 1L",
+    "categoria": "despensa",
+    "precio": 4,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/aceite_girasol.jpg",
+    "descripcion": "El aceite refinado de girasol de 1 litro es una opción extra grande ideal para cocinar, freír, asar o preparar aderezos. Su calidad refinada garantiza un sabor neutro que realza los platillos sin dominarlos, siendo una elección práctica y confiable para cualquier cocina. Perfecto tanto para chefs como para cocineros caseros que buscan resultados excelentes.",
+    "imagenesAdicionales": [
+      "img/products/aceite_girasol_2.jpg"
+    ],
+    "disponible": false
+  },
+  {
+    "nombre": "Azúcar blanca x lb",
+    "categoria": "despensa",
+    "precio": 1.171,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Azucar_Blanca.jpeg",
+    "disponible": true
+  },
+  {
+    "nombre": "Frijol Negro x Lb",
+    "categoria": "pastas-y-granos",
+    "precio": 2.5,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Frijol_Negro.jpeg",
+    "disponible": true
+  },
+  {
+    "nombre": "Paquete de pan de bola 10u",
+    "categoria": "despensa",
+    "precio": 1.809,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Pan.jpeg",
+    "disponible": true
+  },
+  {
+    "nombre": "Pastilla de Pollo",
+    "categoria": "despensa",
+    "precio": 0.35,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Pastilla_de_Pollo.jpeg",
+    "disponible": true
+  },
+  {
+    "nombre": "Azúcar Parda x lb",
+    "categoria": "despensa",
+    "precio": 2,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Azucar_Parda.jpeg",
+    "disponible": false
+  },
+  {
+    "nombre": "Café La Llave",
+    "categoria": "cafe",
+    "precio": 7,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Cafe_la_Llave.jpeg",
+    "disponible": false
+  },
+  {
+    "nombre": "Café Espresso",
+    "categoria": "cafe",
+    "precio": 6.666,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Cafe_Expreso.jpeg",
+    "disponible": false
+  },
+  {
+    "nombre": "Cartón de Huevos",
+    "categoria": "despensa",
+    "precio": 12.05,
+    "descuento": 23.08,
+    "oferta": true,
+    "mas_vendido": true,
+    "imagen": "img/products/Carton_de_Huevo.jpeg",
+    "disponible": true
+  },
+  {
+    "nombre": "Espaguetis (500g)",
+    "categoria": "pastas-y-granos",
+    "precio": 1.8,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Espaguetis.jpeg",
+    "disponible": true
+  },
+  {
+    "nombre": "Leche Condensada azucarada (390g)",
+    "categoria": "despensa",
+    "precio": 2.75,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Leche_Condensada_Azucarada.jpeg",
+    "disponible": true
+  },
+  {
+    "nombre": "Sopa instantánea sabor Pollo (85g)",
+    "categoria": "despensa",
+    "precio": 0.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Sopa_Instantanea_sabor_Pollo.jpeg",
+    "disponible": true
+  },
+  {
+    "nombre": "Pasta de tomate Vima (400g)",
+    "categoria": "enlatados",
+    "precio": 1.885,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Pasta_de_Tomate_Vima.jpeg",
+    "disponible": true,
+    "descripcion": "El puré de tomate Vima Foods es el aliado perfecto para realzar el sabor de tus platillos favoritos. Con un contenido neto de 400 g (14 oz.), este puré de alta calidad cuenta con una textura suave y un sabor concentrado que lo hace ideal para salsas, guisos y más. Presentado en una lata con abre fácil, garantiza practicidad y frescura en cada uso. Transforma tus recetas con el auténtico toque del puré de tomate Vima Foods, diseñado para satisfacer a los paladares más exigentes."
+  },
+  {
+    "nombre": "Arroz grano largo Vima (1Kg)",
+    "categoria": "despensa",
+    "precio": 2.857,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/arroz_grano_largo_vima.jpg",
+    "disponible": true,
+    "descripcion": "El arroz de grano largo Vima Foods, con un contenido neto de 1 kg (2.2 lb), es ideal para preparar tus comidas favoritas. Este producto 100% natural, vegano y libre de organismos modificados genéticamente (GMO), garantiza una excelente calidad en cada grano. Perfecto para acompañar guisos, ensaladas y recetas internacionales, el arroz de grano largo Vima Foods es la elección inteligente para una alimentación saludable y deliciosa."
+  },
+  {
+    "nombre": "Arroz Rainha Brasil (1Kg)",
+    "categoria": "despensa",
+    "precio": 2.828,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/arroz_rainha.jpg",
+    "disponible": true,
+    "descripcion": "Este arroz blanco tipo 1 de la marca Rainha Brasil está compuesto por granos largos finos, pulidos y libres de grumos, lo que garantiza una textura uniforme y suave al cocinar. Es una opción nutritiva, ideal para acompañar diversos platos y adaptarse a recetas tradicionales como arroz con frijoles, risottos o guarniciones ligeras y saludables."
+  },
+  {
+    "nombre": "Queso Gouda Premium (3Kg)",
+    "categoria": "lacteos",
+    "precio": 40,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/queso_gouda premium.jpg",
+    "disponible": true,
+    "descripcion": "Disfruta del auténtico sabor del queso Gouda de Vima Foods, elaborado con ingredientes 100% naturales que garantizan una calidad inigualable. Su textura suave y cremosa es perfecta para realzar tus recetas favoritas, desde sándwiches y ensaladas hasta platos gourmet. Además, viene empacado para preservar su frescura y sabor, convirtiéndolo en una elección ideal tanto para bocadillos sencillos como para ocasiones especiales.",
+    "imagenesAdicionales": [
+      "img/products/queso_gouda_premium_2.jpg"
+    ]
+  },
+  {
+    "nombre": "Kg de Queso Gouda Premium",
+    "categoria": "lacteos",
+    "precio": 17.4,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/queso_gouda_Kg.jpg",
+    "disponible": true,
+    "descripcion": "Descubre el exquisito sabor del queso Gouda Premium, ahora disponible por kilogramos para adaptarse a tus necesidades. Este queso premium, elaborado con ingredientes 100% naturales, ofrece una textura suave y un sabor intenso que lo convierte en la elección ideal para tus recetas gourmet o para disfrutar en bocadillos frescos. Perfecto para amantes de la calidad y la frescura, cada kilogramo está cuidadosamente empacado para garantizar que llegue a ti en óptimas condiciones. Lleva la excelencia del queso Gouda Premium a tu cocina y deleita tu paladar con cada porción."
+  },
+  {
+    "nombre": "Salsa Cocktail Vima (225ml)",
+    "categoria": "aderezos",
+    "precio": 2.533,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/salsa_cocktail_225ml_vima.jpg",
+    "disponible": true,
+    "descripcion": "La salsa cocktail de Vima Foods es el complemento perfecto para tus platos de pescados, mariscos y ensaladas. Con un contenido neto de 225 ml, esta salsa destaca por su sabor delicioso y su versatilidad en la cocina. Presentada en un frasco con tapa verde y diseño elegante, garantiza frescura y calidad en cada cucharada. Dale un toque especial a tus comidas con la salsa cocktail de Vima Foods, ideal para realzar sabores y sorprender a tus invitados."
+  },
+  {
+    "nombre": "Mayonesa Vima (450ml)",
+    "categoria": "aderezos",
+    "precio": 3.971,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Mayonesa_Vima.jpg",
+    "disponible": true,
+    "descripcion": "Descubre la mayonesa Vima Foods de 450 ml, elaborada con ingredientes de alta calidad para garantizar un sabor auténtico y delicioso. Perfecta para acompañar sándwiches, ensaladas y tus recetas favoritas, esta mayonesa destaca por su textura cremosa y su frescura incomparable. Su presentación en un frasco práctico con tapa verde asegura la conservación del sabor y la comodidad en cada uso. Haz de Vima Foods tu elección de confianza para realzar cada bocado."
+  },
+  {
+    "nombre": "Azúcar (1Kg)",
+    "categoria": "despensa",
+    "precio": 4.476,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Azucar.jpeg",
+    "disponible": false
+  },
+  {
+    "nombre": "Frijol Rojo x Lb",
+    "categoria": "pastas-y-granos",
+    "precio": 3,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Frijol_Rojo.jpeg",
+    "disponible": true
+  },
+  {
+    "nombre": "Mantequilla (250g)",
+    "categoria": "despensa",
+    "precio": 2.3,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Mantequilla.jpeg",
+    "disponible": true
+  },
+  {
+    "nombre": "Sal x Lb",
+    "categoria": "despensa",
+    "precio": 0.333,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Sal.jpeg",
+    "disponible": true
+  },
+  {
+    "nombre": "Gelatina Gely de Melocotón (125ml)",
+    "categoria": "despensa",
+    "precio": 1.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Gelatina_Gely_Melocoton.jpeg",
+    "disponible": false
+  },
+  {
+    "nombre": "Gelatina Gely de Fresa (125ml)",
+    "categoria": "despensa",
+    "precio": 1.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/gelatina_gely_fresa.jpg",
+    "descripcion": "Este producto es una gelatina de la marca Coracan con sabor a fresa, que proporciona una opción deliciosa y refrescante para disfrutar en cualquier ocasión. Contiene vitamina C, lo que la convierte en una alternativa que no solo satisface el antojo, sino que también aporta un beneficio adicional a la dieta. Con un contenido neto de 170 gramos, es ideal para preparar hasta 8 porciones de 125 ml cada una, ofreciendo practicidad y buen rendimiento para compartir o disfrutar en familia.",
+    "disponible": true
+  },
+  {
+    "nombre": "Paquete de harina (1kg)",
+    "categoria": "despensa",
+    "precio": 2.8,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Paquete_Harina.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Ajo Pelado (1kg)",
+    "categoria": "despensa",
+    "precio": 6.857,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": true,
+    "imagen": "img/products/ajo_pelado_1_Kg_Vima.jpg",
+    "disponible": true,
+    "descripcion": "Los dientes de ajo pelados de Vima Foods, con un peso neto de 1 kg (35.2 oz.), son ideales para facilitar la preparación de tus recetas. Este producto 100% natural garantiza frescura y calidad, ofreciendo comodidad y ahorro de tiempo en la cocina. Perfectos para realzar el sabor de tus platos, los dientes de ajo pelados de Vima Foods se presentan en un envase práctico que conserva su textura y aroma característico. Simplifica tu cocina sin renunciar a la calidad."
+  },
+  {
+    "nombre": "Croqueta Jamón (500g)",
+    "categoria": "despensa",
+    "precio": 2.666,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": true,
+    "imagen": "img/products/croqueta_jamon_vima.jpg",
+    "disponible": false,
+    "imagenesAdicionales": [
+      "img/products/croqueta_jamon_vima_2.jpg"
+    ],
+    "descripcion": "Las croquetas de jamón Vima Foods son la opción ideal para disfrutar de un sabor auténtico y delicioso en cada bocado. Con un peso neto de 500 g (17.6 oz.), estas croquetas están elaboradas siguiendo una receta tradicional española que garantiza calidad y frescura. Perfectas para freír directamente desde el estado congelado, son ideales como aperitivo, acompañamiento o incluso plato principal. Disfruta de la tradición y el sabor de las croquetas de jamón Vima Foods en tu mesa."
+  },
+  {
+    "nombre": "Frijoles Negros (1Kg)",
+    "categoria": "pastas-y-granos",
+    "precio": 3.4,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Frijoles_Negros.jpeg",
+    "disponible": false
+  },
+  {
+    "nombre": "Frijoles Rojos (1kg)",
+    "categoria": "pastas-y-granos",
+    "precio": 4.571,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/frijoles_rojos.jpg",
+    "disponible": true,
+    "descripcion": "Los garbanzos secos de Huerto San Genaro son un producto de alta calidad, presentado en un paquete atractivo de color verde con espirales decorativos y una ventana transparente que permite apreciar los granos en su interior. Este producto, elaborado en España, es ideal para preparar una amplia variedad de platos saludables y nutritivos. Su empaque incluye información en varios idiomas, resaltando su autenticidad y versatilidad, lo que lo convierte en la elección perfecta para amantes de la cocina tradicional y de calidad."
+  },
+  {
+    "nombre": "Garbanzos (500g)",
+    "categoria": "pastas-y-granos",
+    "precio": 3.047,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/garbanzos.jpg",
+    "disponible": false,
+    "descripcion": "Los garbanzos secos de Huerto San Genaro, presentados en un paquete de diseño verde con detalles de espirales y una ventana transparente, garantizan calidad y autenticidad en cada grano. Este producto, elaborado en España, destaca por su empaque práctico que incluye información multilingüe, ideal para satisfacer las necesidades de los amantes de la cocina tradicional y saludable. Perfectos para preparar recetas nutritivas y versátiles, los garbanzos secos Huerto San Genaro son la opción ideal para llevar sabor y calidad a tu mesa."
+  },
+  {
+    "nombre": "Frazada de Piso",
+    "categoria": "otros",
+    "precio": 1.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Frazada_de_Piso.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Vasos Reutilizables (100/u)",
+    "categoria": "otros",
+    "precio": 3.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Vasos_Reutilizables.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Paquete de tenedores plásticos (25/u)",
+    "categoria": "otros",
+    "precio": 1.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Tenedores_Plasticos.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Paquete de cucharas plásticas (100/u)",
+    "categoria": "otros",
+    "precio": 8.46,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Cucharas_Plasticas.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Maíz molido tierno x Lb",
+    "categoria": "agro",
+    "precio": 0.93,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/maiz_tierno.jpg",
+    "descripcion": "Maíz super fresco se muele al pedido. El maíz molido tierno es un ingrediente de alta calidad y frescura, perfecto para quienes buscan productos auténticos en su cocina. Su textura fina y color amarillo vibrante lo hacen ideal para elaborar recetas tradicionales como tamales, arepas o empanadas. Su sabor dulce y natural aporta un toque especial a cada preparación, convirtiéndolo en un aliado indispensable para realzar tus platillos favoritos. Este maíz es una opción versátil y nutritiva que garantiza excelencia en cada receta.",
+    "disponible": true
+  },
+  {
+    "nombre": "Mazo de cebolla blanca",
+    "categoria": "agro",
+    "precio": 1.428,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/cebolla_blanca.jpg",
+    "descripcion": "La cebolla blanca es un ingrediente esencial, reconocida por su frescura y calidad. Su forma redonda y su brillante color blanco la hacen atractiva, mientras que su sabor suave pero distintivo es ideal para una amplia variedad de recetas. Desde sofritos aromáticos hasta ensaladas crujientes, esta cebolla agrega un toque especial a cualquier platillo. Perfecta para quienes valoran productos naturales y versátiles en su cocina, garantizando satisfacción en cada preparación.",
+    "disponible": true
+  },
+  {
+    "nombre": "Mano de plátano burro",
+    "categoria": "agro",
+    "precio": 0.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Platano_Burro.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Pepino x Lb",
+    "categoria": "agro",
+    "precio": 0.55,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Pepino.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Tomate x Lb",
+    "categoria": "agro",
+    "precio": 0.885,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Tomate.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Limón x Lb",
+    "categoria": "agro",
+    "precio": 2.2,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Limon.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Plátano macho x unidad",
+    "categoria": "agro",
+    "precio": 0.25,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Platano_Macho.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Boniato x Lb",
+    "categoria": "agro",
+    "precio": 0.4,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Boniato.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Cerveza «3 Horses» (330ml)",
+    "categoria": "alcohol",
+    "precio": 0.95,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Cerveza_3_Hourses.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Caja de Cerveza «3 Horses»",
+    "categoria": "alcohol",
+    "precio": 22.1,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_Cerveza_3_Hourses.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Agua Purificada Niagara (500ml)",
+    "categoria": "bebidas",
+    "precio": 0.714,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Agua_Purificada.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Caja de Bebida energética 5 Shot (250ml x 24)",
+    "categoria": "bebidas",
+    "precio": 21.15,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_Bebida_Energetica.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Ron Habana Club Añejo Reserva",
+    "categoria": "alcohol",
+    "precio": 17.05,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Ron_Habana_Club_Añejo_Reserva.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Caja de malta Morena (24x237ml)",
+    "categoria": "bebidas",
+    "precio": 17.99,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_de_Malta_Morena.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Malta Morena (237ml)",
+    "categoria": "bebidas",
+    "precio": 1.09,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Malta_Morena.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Caja de jugos Santa Juice Uva (24 x 200ml)",
+    "categoria": "bebidas",
+    "precio": 15.88,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_de_Jugos_Santa_Juice_Uva.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Blister Agua Purificada Niagara (24 x 500ml)",
+    "categoria": "bebidas",
+    "precio": 11.95,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Blister_Agua_Purificada.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Ron Habana Club Añejo Especial",
+    "categoria": "alcohol",
+    "precio": 13.1,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Ron_Habana_Club_Añejo_Especial.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Bebida energética 5 Shot (250ml)",
+    "categoria": "bebidas",
+    "precio": 0.95,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Bebida_Energetica_5_Shot.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Pack de 6 maltas Morena (6x237ml)",
+    "categoria": "bebidas",
+    "precio": 4.81,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Pack_de_6_Maltas_Morena.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Jugo Santa Juice de Uva (200ml)",
+    "categoria": "bebidas",
+    "precio": 0.72,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_de_Jugos_Santa_Juice_Uva.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Caja de refresco Piña",
+    "categoria": "bebidas",
+    "precio": 19.35,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_de_Refresco_Piña.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Sidra «La Aldeana» (sin alcohol)",
+    "categoria": "bebidas",
+    "precio": 4.19,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Sidra_La_Aldeana.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Coca Cola",
+    "categoria": "bebidas",
+    "precio": 2.48,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Coca_Cola.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Caja de refresco Naranja",
+    "categoria": "bebidas",
+    "precio": 19.35,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_de_Refresco_Naranja.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Whisky Chancelier",
+    "categoria": "alcohol",
+    "precio": 7.619,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Whisky_Chancelier.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Caja de refresco Limón",
+    "categoria": "bebidas",
+    "precio": 19.35,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_de_Refresco_Limon.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Refresco Piña 2Lts",
+    "categoria": "bebidas",
+    "precio": 2.99,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Refresco_Piña.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Refresco Cola (330ml)",
+    "categoria": "bebidas",
+    "precio": 0.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Refresco_Cola.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Caja de Cervezas Bucanero",
+    "categoria": "alcohol",
+    "precio": 23.95,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_Cerveza_Bucanero.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Cervezas Bucanero (355ml)",
+    "categoria": "alcohol",
+    "precio": 1.05,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Cerveza_Bucanero.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Caja de refresco Cola",
+    "categoria": "bebidas",
+    "precio": 19.35,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_de_Refresco_Brio_Cola.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Caja de Malta Bucanero",
+    "categoria": "bebidas",
+    "precio": 23.81,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_de_Malta_Bucanero.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Refresco Limón (330ml)",
+    "categoria": "bebidas",
+    "precio": 0.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_de_Refresco_Limon.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Cervezas Cristal (355ml)",
+    "categoria": "alcohol",
+    "precio": 1.05,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Cerveza_Cristal.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Caja de Cervezas Cristal",
+    "categoria": "alcohol",
+    "precio": 23.95,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_Cerveza_Cristal.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Malta Bucanero",
+    "categoria": "bebidas",
+    "precio": 1.095,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Malta_Bucanero.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Refresco Naranja (330ml)",
+    "categoria": "bebidas",
+    "precio": 0.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Refresco_Naranja.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Refresco Piña (330ml)",
+    "categoria": "bebidas",
+    "precio": 0.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Refresco_Piña_Brio.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Rollitos de Primavera (200g)",
+    "categoria": "carnes",
+    "precio": 1.93,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Rollitos_de_Primavera.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Nuggets de pollo x Kg",
+    "categoria": "despensa",
+    "precio": 7.2,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Nuggets_de_Pollo.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Lomo de cerdo deshuesado Premium x Kg",
+    "categoria": "carnes",
+    "precio": 3.4,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Lomo_de_Cerdo_Deshuesado.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Caja de Jurel (20Libras)",
+    "categoria": "carnes",
+    "precio": 35.98,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_de_Jurel.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Pelly de Ajo",
+    "categoria": "confituras",
+    "precio": 2.838,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/pelly_ajo.jpg",
+    "descripcion": "Pelly Chicoticos de Ajo - 120g Experimenta el irresistible sabor de los Chicoticos de Ajo de la marca Pelly, perfectos para aquellos que buscan un snack único y delicioso. Con su audaz sabor a ajo, estos chicoticos garantizan un crujido inigualable en cada bocado. Presentados en un empaque llamativo de color azul con detalles vibrantes, el diseño incluye una imagen de ajos frescos que refuerzan la calidad del producto. ¡Ideales para compartir con amigos o disfrutar en cualquier momento del día!",
+    "disponible": true
+  },
+  {
+    "nombre": "Pelly de Queso",
+    "categoria": "confituras",
+    "precio": 2.838,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/pelly_queso.jpg",
+    "descripcion": "Pelly Bolitas de Queso - Snack de Maíz Crujiente Haz de cada momento una celebración con Pelly Bolitas de Queso, un snack irresistible hecho de maíz con un sabor intenso a queso. Este producto se presenta en un empaque vibrante de color naranja con detalles alegres que capturan la esencia divertida del snack. Con la frase destacada ¡Poca sal, más maíz!, estas bolitas de queso son la opción perfecta para aquellos que buscan un balance entre sabor y frescura. Cada bolsa contiene 120 gramos de felicidad crujiente, ideal para compartir o disfrutar en cualquier ocasión. El diseño incluye un personaje sonriente que refuerza el carácter amigable y llamativo del producto. ¡Atrévete a probarlas y llena tu día de color y sabor!",
+    "disponible": true
+  },
+  {
+    "nombre": "Batata Lisa",
+    "categoria": "confituras",
+    "precio": 1.714,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/batata_lisa.jpg",
+    "descripcion": "Batata Lisa Natural - Friteli Descubre el auténtico sabor de las papas fritas Friteli Batata Lisa Natural, hechas con 100% batata de verdad para brindarte una experiencia genuina y crujiente. Cada bolsa de 100 gramos contiene papas cuidadosamente seleccionadas y preparadas para mantener su frescura y calidad excepcional. Este snack combina tradición y sabor natural, ideal para disfrutar en cualquier momento. El empaque llamativo incluye un diseño moderno en color negro, destacando la autenticidad del producto con frases como Papas Seleccionadas y el sello de calidad de la marca Friteli. Ten en cuenta que el empaque también indica los niveles de grasas, mostrando transparencia hacia los consumidores.",
+    "disponible": true
+  },
+  {
+    "nombre": "Papas Crunchy",
+    "categoria": "confituras",
+    "precio": 1.714,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/papas_crunchy.jpg",
+    "descripcion": "CRUNCHY - Papas Fritas Sabor Salt & Vinegar Déjate llevar por la explosión de sabores con estas papas fritas CRUNCHY, una deliciosa combinación de sal y vinagre que te hará agua la boca. Presentadas en una bolsa vibrante de color morado, estas papas ofrecen un crujido irresistible y el equilibrio perfecto entre lo salado y lo ácido. Con un diseño llamativo, incluyen la imagen de una botella de vinagre, un salero y papas fritas que evocan frescura y calidad. Ideales para disfrutar en cualquier momento, estas papas vienen con 240 calorías por porción y son perfectas para compartir o darte un gusto. ¡Un sabor clásico reinventado para los amantes del buen snack!",
+    "disponible": true
+  },
+  {
+    "nombre": "Galletas de Soda con Mantequilla Doricas",
+    "categoria": "confituras",
+    "precio": 5,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Galleta_de_Soda_Con_Mantequilla.jpg",
+    "descripcion": "Extra grandes y deliciosas, las galletas semidulces DoRicas son perfectas para cualquier ocasión, ofreciendo un sabor único que encanta a todos. Este paquete de 525 g es ideal para compartir en reuniones familiares, eventos o simplemente para disfrutar durante varios días. Presentadas en un empaque azul oscuro, estas galletas no solo son sabrosas, sino también visualmente atractivas gracias a su diseño profesional. En la parte frontal del paquete destaca una imagen tentadora de las galletas acompañadas de una espiga de trigo, que resalta la calidad de sus ingredientes seleccionados. Cada paquete incluye cinco tacos, asegurando una experiencia prolongada de disfrute. Son perfectas para acompañar con café, té o como un snack ligero en cualquier momento del día.",
+    "disponible": true
+  },
+  {
+    "nombre": "Galletas de soda Salricas",
+    "categoria": "confituras",
+    "precio": 2.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Galleta_de_Soda_Salricas.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Galletas Porleo (45g)",
+    "categoria": "confituras",
+    "precio": 0.87,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Galletas_Porleo.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Orégano (14.2g)",
+    "categoria": "despensa",
+    "precio": 1.87,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Oregano.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Vinagre (1Litro)",
+    "categoria": "despensa",
+    "precio": 2.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Vinagre.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Leche entera en polvo «Vima» (1kg)",
+    "categoria": "lacteos",
+    "precio": 13,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Leche_Entera_En_Polvo_Vima.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Leche entera en polvo (1kg)",
+    "categoria": "lacteos",
+    "precio": 11.4,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/leche_entera_en_polvo.jpg",
+    "descripcion": "Descubre la leche entera en polvo Macro Food, perfecta para preparar deliciosas bebidas y recetas. Con un 26% de grasa láctea y un rendimiento aproximado de 8.5 litros por cada kilogramo, este producto combina calidad y conveniencia. Ideal para quienes buscan una alternativa práctica y duradera al consumo de leche fresca. Su presentación incluye un diseño funcional y moderno, reflejando el compromiso con la frescura y el sabor natural. ¡Una opción esencial para tu despensa y cocina!",
+    "disponible": true
+  },
+  {
+    "nombre": "Cebollitas en Vinagre (290g)",
+    "categoria": "despensa",
+    "precio": 2.17,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Cebollitas_En_Vinagre.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Café Espresso «El Ricote»",
+    "categoria": "cafe",
+    "precio": 6.54,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Cafe_Expresso.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Chocolate en Polvo «Rico» (500g)",
+    "categoria": "despensa",
+    "precio": 4,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Chocolate_en_Polvo_Riko.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Pasta de tomate 400g",
+    "categoria": "enlatados",
+    "precio": 2.4,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Pasta_de_Tomate.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Menthoplus",
+    "categoria": "despensa",
+    "precio": 0.6,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Menthoplus.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Melocotón en almibar (425g)",
+    "categoria": "enlatados",
+    "precio": 2.65,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Melocoton_en_Almibar_Vima.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Fresas en almibar (425g)",
+    "categoria": "enlatados",
+    "precio": 2.65,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Fresas_en_Almibar.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Maicena Nezka (500g)",
+    "categoria": "despensa",
+    "precio": 5.99,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Maicena_Nezka.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Lata de Frijoles Rojos (410g)",
+    "categoria": "enlatados",
+    "precio": 1.8,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Lata_de_Frijol_Rojo.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Pasta de tomate OZER 400g",
+    "categoria": "enlatados",
+    "precio": 3.6,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Pasta_de_Tomate_Ozer.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Codito Badelli (350g)",
+    "categoria": "pastas-y-granos",
+    "precio": 1.8,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Codito_Badelli.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Aceite Saude 900ml",
+    "categoria": "despensa",
+    "precio": 3.619,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Aceite_Saude.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Arroz Criollo 1Lb",
+    "categoria": "pastas-y-granos",
+    "precio": 0.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Arroz_Criollo.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Servilletas «Bingo» (40u)",
+    "categoria": "otros",
+    "precio": 0.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Servilletas.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Pasta Dental Coigore (100g)",
+    "categoria": "otros",
+    "precio": 3.27,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Pasta_dental.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Desodorante Keewell",
+    "categoria": "otros",
+    "precio": 2.87,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Desodorante_Keewell.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Toallitas Húmedas (80u)",
+    "categoria": "otros",
+    "precio": 6,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Toallitas_Humedas.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Jabón de Baño (100g)",
+    "categoria": "otros",
+    "precio": 1,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Jabon_de_Baño.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Paquete de Papel Sanitario",
+    "categoria": "otros",
+    "precio": 1.99,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Paquete_de_Papel_Sanitario.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Detergente «STB» (1Kg)",
+    "categoria": "otros",
+    "precio": 3.2,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Detergente.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Colonia Bonabel de Violetas",
+    "categoria": "otros",
+    "precio": 5,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Colobnia_Bonabel_de_Violetas.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Cerveza UNLAGUER",
+    "categoria": "alcohol",
+    "precio": 0.8,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Cerveza_Unlaguer.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Caja de Cerveza UNLAGUER",
+    "categoria": "alcohol",
+    "precio": 18,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_cerveza_unlaguer.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Pescado de mar (Corvina) 4lb",
+    "categoria": "carnes",
+    "precio": 5.11,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Pescado_corvina.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Spam",
+    "categoria": "enlatados",
+    "precio": 2.79,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Spam.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Picadillo de pollo (1Kg)",
+    "categoria": "carnes",
+    "precio": 2.828,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": true,
+    "imagen": "img/products/Picadillo_de_Pollo.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Colorful desktop fan",
+    "categoria": "electrodomesticos",
+    "precio": 28.571,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Colorful_desktop_fan.jpg",
+    "disponible": true,
+    "descripcion": "Función de luz nocturna. Gran angular de suministro de aire circulante. Regulación del viento de 3 velocidades. Batería de litio de alta capacidad. Suministro de aire de cabezal oscilante de 180 grados. Carga tipo C. Luz de atmósfera.",
+    "imagenesAdicionales": [
+      "img/products/Colorful_desktop_fan_2.jpg",
+      "img/products/Colorful_desktop_fan_3.jpg"
+    ]
+  },
+  {
+    "nombre": "Table fill light",
+    "categoria": "electrodomesticos",
+    "precio": 17.142,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Table_fill_light.jpg",
+    "disponible": true,
+    "descripcion": "Lámpara de Relleno de Mesa PD-56 con Tonos de Luz Ajustables. Añade el toque perfecto de iluminación a tu espacio con la lámpara de relleno modelo PD-56. Con un diseño moderno y una altura de 55 cm, esta lámpara cuenta con cuatro bombillas verticales integradas en una estructura blanca. Ofrece tres opciones de tonalidades de luz para adaptarse a cualquier ambiente: cálida, neutra y fría. Además, incluye un práctico cable USB para una alimentación cómoda y segura. Ideal para oficinas, escritorios o cualquier rincón de tu hogar que necesite una iluminación versátil y elegante. ¡Optimiza tu espacio con estilo!",
+    "imagenesAdicionales": [
+      "img/products/Table_fill_light_2.jpg",
+      "img/products/Table_fill_light_3.jpg"
+    ]
+  },
+  {
+    "nombre": "Ventilador solar portátil",
+    "categoria": "electrodomesticos",
+    "precio": 71.428,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": true,
+    "imagen": "img/products/ventilador_solar_portatil.jpg",
+    "disponible": true,
+    "descripcion": "1- Ventilador solar portátil: el ventilador solar para exteriores es pequeño, fácil de transportar, no ocupa espacio en la mochila, no hay necesidad de preocuparse por la batería y la escasez de iluminación al acampar al aire libre, vida útil ultralarga. 2- Ventilador con altavoz Bluetooth: El ventilador viene con función Bluetooth y debe estar conectado a su teléfono móvil para reproducir música, llévelo con usted en sus viajes de campamento al aire libre y le brindará el sonido de canciones animadas en la naturaleza silenciosa, lo que contribuirá a la atmósfera agradable de su viaje. 3- Aspa del ventilador de hélice: ventilador de cinco aspas con poco ruido, que corta el flujo de aire de manera uniforme y densa, haciendo que el viento esté mejor concentrado, un flujo de aire suave y un viento más fuerte, ventilador eléctrico multifuncional de cinco aspas. 4- Ventilador con iluminación: Nuestro ventilador viene con una función de iluminación, una exquisita lámpara de mesa pequeña, ¡el corte de energía se niega a tocar la oscuridad, enfría e ilumina tanto en la noche de verano! 5 Con función de temporizador: apagado inteligente del temporizador, puede configurar el apagado del temporizador en 30 minutos, no es necesario levantarse en medio de la noche para apagar el ventilador, no hay necesidad de preocuparse por resfriarse después de quedarse dormido !",
+    "imagenesAdicionales": [
+      "img/products/ventilador_solar_portatil_2.jpg",
+      "img/products/ventilador_solar_portatil_3.jpg",
+      "img/products/ventilador_solar_portatil_4.jpg"
+    ]
+  },
+  {
+    "nombre": "Cable C",
+    "categoria": "electrodomesticos",
+    "precio": 2.38,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": true,
+    "imagen": "img/products/cable_c.jpg",
+    "disponible": true,
+    "descripcion": "Este resistente cable USB Tipo C combina funcionalidad y diseño, ideal para carga rápida y transferencia de datos eficiente. Su textura trenzada en colores rojo y negro garantiza durabilidad y evita enredos, haciéndolo perfecto para el uso diario. Equipado con conectores sólidos y confiables, el Supercarga Cable asegura máxima calidad y rendimiento para tus dispositivos compatibles. Este accesorio se convierte en la opción ideal para quienes buscan un cable versátil, resistente y estilizado.",
+    "imagenesAdicionales": [
+      "img/products/cable_c_2.jpg",
+      "img/products/cable_c_3.jpg"
+    ]
+  }
 ]
