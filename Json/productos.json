@@ -1646,19 +1646,5 @@
       "img/products/cable_c_2.jpg",
       "img/products/cable_c_3.jpg"
     ]
-  },
-  {
-    "nombre": "Test de producto",
-    "categoria": "electrodomesticos",
-    "precio": 11.429,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Asere Simple.jpg",
-    "descripcion": "informacion test de producto. informacion 2",
-    "imagenesAdicionales": [
-      "img/products/Asere Logo M.png"
-    ]
   }
 ]
