@@ -113,12 +113,12 @@
   {
     "nombre": "Paquete de picadillo de pollo 1kg",
     "categoria": "carnes",
-    "precio": 2.828,
+    "precio": 2.829,
     "descuento": 10,
     "oferta": false,
     "mas_vendido": true,
-    "imagen": "img/products/Paquete_de_Picadillo_Pollo.jpg",
-    "disponible": false
+    "disponible": true,
+    "imagen": "img/products/Paquete_de_Picadillo_Pollo.jpg"
   },
   {
     "nombre": "Paquete de salchichas 7u (350g)",
