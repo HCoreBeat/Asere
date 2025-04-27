@@ -113,12 +113,12 @@
   {
     "nombre": "Paquete de picadillo de pollo 1kg",
     "categoria": "carnes",
-    "precio": 2.829,
+    "precio": 2.828,
     "descuento": 10,
     "oferta": false,
     "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/Paquete_de_Picadillo_Pollo.jpg"
+    "imagen": "img/products/Paquete_de_Picadillo_Pollo.jpg",
+    "disponible": false
   },
   {
     "nombre": "Paquete de salchichas 7u (350g)",
@@ -315,12 +315,12 @@
   {
     "nombre": "Comino Molido (198.5g)",
     "categoria": "aderezos",
-    "precio": 8.9,
+    "precio": 8.905,
     "descuento": 10,
     "oferta": false,
     "mas_vendido": true,
-    "imagen": "img/products/Comino_Molido.jpg",
-    "disponible": false
+    "disponible": true,
+    "imagen": "img/products/Comino_Molido.jpg"
   },
   {
     "nombre": "Ketchup (320g)",
