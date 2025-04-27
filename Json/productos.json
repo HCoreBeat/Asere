@@ -943,12 +943,12 @@
   {
     "nombre": "Blister Agua Purificada Niagara (24 x 500ml)",
     "categoria": "bebidas",
-    "precio": 14,
+    "precio": 11.95,
     "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/Blister_Agua_Purificada.jpg"
+    "imagen": "img/products/Blister_Agua_Purificada.jpg",
+    "disponible": false
   },
   {
     "nombre": "Ron Habana Club Añejo Especial",
@@ -1037,8 +1037,8 @@
     "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Whisky_Chancelier.jpg",
-    "disponible": true
+    "disponible": false,
+    "imagen": "img/products/Whisky_Chancelier.jpg"
   },
   {
     "nombre": "Caja de refresco Limón",
