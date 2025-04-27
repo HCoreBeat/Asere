@@ -1037,8 +1037,8 @@
     "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Whisky_Chancelier.jpg"
+    "imagen": "img/products/Whisky_Chancelier.jpg",
+    "disponible": true
   },
   {
     "nombre": "Caja de refresco Limón",
@@ -1073,12 +1073,12 @@
   {
     "nombre": "Caja de Cervezas Bucanero",
     "categoria": "alcohol",
-    "precio": 23.95,
+    "precio": 23.952,
     "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Caja_Cerveza_Bucanero.jpg",
-    "disponible": true
+    "disponible": false,
+    "imagen": "img/products/Caja_Cerveza_Bucanero.jpg"
   },
   {
     "nombre": "Cervezas Bucanero (355ml)",
