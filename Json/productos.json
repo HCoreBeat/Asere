@@ -315,12 +315,12 @@
   {
     "nombre": "Comino Molido (198.5g)",
     "categoria": "aderezos",
-    "precio": 8.905,
+    "precio": 8.9,
     "descuento": 10,
     "oferta": false,
     "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/Comino_Molido.jpg"
+    "imagen": "img/products/Comino_Molido.jpg",
+    "disponible": false
   },
   {
     "nombre": "Ketchup (320g)",
@@ -695,16 +695,16 @@
   {
     "nombre": "Croqueta Jamón (500g)",
     "categoria": "despensa",
-    "precio": 2.666,
+    "precio": 2.667,
     "descuento": 10,
-    "oferta": false,
+    "oferta": true,
     "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/croqueta_jamon_vima.jpg",
-    "disponible": false,
+    "descripcion": "Las croquetas de jamón Vima Foods son la opción ideal para disfrutar de un sabor auténtico y delicioso en cada bocado. Con un peso neto de 500 g (17.6 oz.), estas croquetas están elaboradas siguiendo una receta tradicional española que garantiza calidad y frescura. Perfectas para freír directamente desde el estado congelado, son ideales como aperitivo, acompañamiento o incluso plato principal. Disfruta de la tradición y el sabor de las croquetas de jamón Vima Foods en tu mesa.",
     "imagenesAdicionales": [
       "img/products/croqueta_jamon_vima_2.jpg"
-    ],
-    "descripcion": "Las croquetas de jamón Vima Foods son la opción ideal para disfrutar de un sabor auténtico y delicioso en cada bocado. Con un peso neto de 500 g (17.6 oz.), estas croquetas están elaboradas siguiendo una receta tradicional española que garantiza calidad y frescura. Perfectas para freír directamente desde el estado congelado, son ideales como aperitivo, acompañamiento o incluso plato principal. Disfruta de la tradición y el sabor de las croquetas de jamón Vima Foods en tu mesa."
+    ]
   },
   {
     "nombre": "Frijoles Negros (1Kg)",
