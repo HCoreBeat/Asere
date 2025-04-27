@@ -1083,12 +1083,12 @@
   {
     "nombre": "Cervezas Bucanero (355ml)",
     "categoria": "alcohol",
-    "precio": 1.048,
+    "precio": 1.05,
     "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Cerveza_Bucanero.jpg"
+    "imagen": "img/products/Cerveza_Bucanero.jpg",
+    "disponible": true
   },
   {
     "nombre": "Caja de refresco Cola",
@@ -1123,12 +1123,12 @@
   {
     "nombre": "Cervezas Cristal (355ml)",
     "categoria": "alcohol",
-    "precio": 1.05,
+    "precio": 1.048,
     "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Cerveza_Cristal.jpg",
-    "disponible": true
+    "disponible": false,
+    "imagen": "img/products/Cerveza_Cristal.jpg"
   },
   {
     "nombre": "Caja de Cervezas Cristal",
