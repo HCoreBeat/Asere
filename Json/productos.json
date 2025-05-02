@@ -23,22 +23,22 @@
   {
     "nombre": "Pollo Golden Phoenix (2Kg)",
     "categoria": "carnes",
-    "precio": 9.524,
-    "descuento": 25,
+    "precio": 9.52,
+    "descuento": 25.4,
     "oferta": true,
     "mas_vendido": true,
-    "disponible": false,
-    "imagen": "img/products/Pollo_Golden.jpg"
+    "imagen": "img/products/Pollo_Golden.jpg",
+    "disponible": true
   },
   {
     "nombre": "Pollo Country Pride",
     "categoria": "carnes",
     "precio": 13.238,
-    "descuento": 13.6,
+    "descuento": 13,
     "oferta": false,
     "mas_vendido": true,
-    "imagen": "img/products/Pollo_Country.jpg",
-    "disponible": true
+    "disponible": false,
+    "imagen": "img/products/Pollo_Country.jpg"
   },
   {
     "nombre": "Pollo Entero 3 Libras",
