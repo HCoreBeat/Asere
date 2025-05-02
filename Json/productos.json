@@ -493,12 +493,12 @@
   {
     "nombre": "Cartón de Huevos",
     "categoria": "despensa",
-    "precio": 12.05,
-    "descuento": 23.08,
-    "oferta": true,
-    "mas_vendido": true,
-    "imagen": "img/products/Carton_de_Huevo.jpeg",
-    "disponible": true
+    "precio": 12.048,
+    "descuento": 23,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": false,
+    "imagen": "img/products/Carton_de_Huevo.jpeg"
   },
   {
     "nombre": "Espaguetis (500g)",
