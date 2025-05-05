@@ -6,8 +6,8 @@
     "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Refresco_Instantaneo.jpg",
-    "disponible": true
+    "disponible": true,
+    "imagen": "img/products/Refresco_Instantaneo.jpg"
   },
   {
     "nombre": "Pechuga de Pollo (1Kg)",
