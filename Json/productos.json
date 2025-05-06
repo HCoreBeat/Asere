@@ -37,7 +37,7 @@
     "descuento": 13,
     "oferta": false,
     "mas_vendido": true,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/Pollo_Country.jpg"
   },
   {
