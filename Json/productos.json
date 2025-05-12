@@ -27,7 +27,7 @@
     "descuento": 25,
     "oferta": true,
     "mas_vendido": true,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/Pollo_Golden.jpg"
   },
   {
@@ -548,8 +548,8 @@
     "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": false,
     "imagen": "img/products/arroz_grano_largo_vima.jpg",
-    "disponible": true,
     "descripcion": "El arroz de grano largo Vima Foods, con un contenido neto de 1 kg (2.2 lb), es ideal para preparar tus comidas favoritas. Este producto 100% natural, vegano y libre de organismos modificados genéticamente (GMO), garantiza una excelente calidad en cada grano. Perfecto para acompañar guisos, ensaladas y recetas internacionales, el arroz de grano largo Vima Foods es la elección inteligente para una alimentación saludable y deliciosa."
   },
   {
