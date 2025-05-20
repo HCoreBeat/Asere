@@ -497,7 +497,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/Carton_de_Huevo.jpeg"
   },
   {
