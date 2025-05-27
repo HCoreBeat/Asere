@@ -1631,5 +1631,16 @@
       "img/products/cable_c_2.jpg",
       "img/products/cable_c_3.jpg"
     ]
+  },
+  {
+    "nombre": "Jamón bravo   rápido",
+    "categoria": "carnes",
+    "precio": 21.505,
+    "descuento": 5,
+    "oferta": true,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/jamn_bravo_rpido.jpg",
+    "descripcion": "Barras 2kg \n\nEl Jamón Bravo Rápido es un embutido de calidad, con una textura jugosa y un sabor intenso, ideal para sándwiches, tapas y recetas variadas. Se presenta en barras de 2 kg una opción perfecta para negocios y hogares."
   }
 ]
