@@ -10,6 +10,16 @@
         "imagen": "img/combos/combo_febrero.jpg",
         "disponible": false
     },{
+    "nombre": "Pack Dulce",
+    "categoria": "combos",
+    "productos": [
+      "x1 Cake 3 leches", 
+      "x1 Caja de helado (4lts)", 
+      "x12  Maltas"],
+    "precio": 33.333,
+    "imagen": "img/combos/pack_new.jpg",
+    "disponible": true
+  },{
     "nombre": "Pack Especial",
     "categoria": "combos",
     "productos": [
