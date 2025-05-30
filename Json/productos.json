@@ -27,7 +27,7 @@
     "descuento": 25,
     "oferta": true,
     "mas_vendido": true,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/Pollo_Golden.jpg"
   },
   {
