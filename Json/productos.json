@@ -1642,5 +1642,16 @@
     "disponible": true,
     "imagen": "img/products/jamn_bravo_rpido.jpg",
     "descripcion": "Barras 2kg \n\nEl Jamón Bravo Rápido es un embutido de calidad, con una textura jugosa y un sabor intenso, ideal para sándwiches, tapas y recetas variadas. Se presenta en barras de 2 kg una opción perfecta para negocios y hogares."
+  },
+  {
+    "nombre": "Saco de arroz americano importado 50lb",
+    "categoria": "agro",
+    "precio": 50,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/saco_de_arroz_americano_importado_50lb.jpg",
+    "descripcion": "Arroz importado.\nViene limpio y cocina bien"
   }
 ]
