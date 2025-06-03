@@ -567,11 +567,11 @@
     "nombre": "Queso Gouda Premium (3Kg)",
     "categoria": "lacteos",
     "precio": 40,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": false,
     "imagen": "img/products/queso_gouda premium.jpg",
-    "disponible": true,
     "descripcion": "Disfruta del auténtico sabor del queso Gouda de Vima Foods, elaborado con ingredientes 100% naturales que garantizan una calidad inigualable. Su textura suave y cremosa es perfecta para realzar tus recetas favoritas, desde sándwiches y ensaladas hasta platos gourmet. Además, viene empacado para preservar su frescura y sabor, convirtiéndolo en una elección ideal tanto para bocadillos sencillos como para ocasiones especiales.",
     "imagenesAdicionales": [
       "img/products/queso_gouda_premium_2.jpg"
