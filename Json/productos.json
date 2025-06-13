@@ -1650,7 +1650,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/saco_de_arroz_americano_importado_50lb.jpg",
     "descripcion": "Arroz importado.\nViene limpio y cocina bien"
   }
