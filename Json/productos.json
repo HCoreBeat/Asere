@@ -699,7 +699,7 @@
     "descuento": 10,
     "oferta": true,
     "mas_vendido": true,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/croqueta_jamon_vima.jpg",
     "descripcion": "Las croquetas de jamón Vima Foods son la opción ideal para disfrutar de un sabor auténtico y delicioso en cada bocado. Con un peso neto de 500 g (17.6 oz.), estas croquetas están elaboradas siguiendo una receta tradicional española que garantiza calidad y frescura. Perfectas para freír directamente desde el estado congelado, son ideales como aperitivo, acompañamiento o incluso plato principal. Disfruta de la tradición y el sabor de las croquetas de jamón Vima Foods en tu mesa.",
     "imagenesAdicionales": [
