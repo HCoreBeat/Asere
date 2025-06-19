@@ -1225,10 +1225,10 @@
     "nombre": "Pelly de Queso",
     "categoria": "confituras",
     "precio": 2.838,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/pelly_queso.jpg",
     "descripcion": "Pelly Bolitas de Queso - Snack de Maíz Crujiente Haz de cada momento una celebración con Pelly Bolitas de Queso, un snack irresistible hecho de maíz con un sabor intenso a queso. Este producto se presenta en un empaque vibrante de color naranja con detalles alegres que capturan la esencia divertida del snack. Con la frase destacada ¡Poca sal, más maíz!, estas bolitas de queso son la opción perfecta para aquellos que buscan un balance entre sabor y frescura. Cada bolsa contiene 120 gramos de felicidad crujiente, ideal para compartir o disfrutar en cualquier ocasión. El diseño incluye un personaje sonriente que refuerza el carácter amigable y llamativo del producto. ¡Atrévete a probarlas y llena tu día de color y sabor!"
   },
