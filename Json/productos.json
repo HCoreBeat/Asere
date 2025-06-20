@@ -1654,5 +1654,16 @@
     "disponible": true,
     "imagen": "img/products/saco_de_arroz_americano_importado_50lb.jpg",
     "descripcion": "Arroz importado.\nViene limpio y cocina bien"
+  },
+  {
+    "nombre": "Helado Nestle",
+    "categoria": "lacteos",
+    "precio": 20,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/helado_nestle.jpg",
+    "descripcion": "Sabor, según disponibilidad del momento.\n\nCalidad suprema"
   }
 ]
