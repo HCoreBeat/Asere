@@ -296,11 +296,11 @@
     "nombre": "Salsa Brava (320g)",
     "categoria": "aderezos",
     "precio": 3,
-    "descuento": 0,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Salsa_Brava.jpg"
+    "imagen": "img/products/Salsa_Brava.jpg",
+    "disponible": true
   },
   {
     "nombre": "Sazón Mixto (250g)",
@@ -592,11 +592,11 @@
     "nombre": "Salsa Cocktail Vima (225ml)",
     "categoria": "aderezos",
     "precio": 2.533,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": false,
     "imagen": "img/products/salsa_cocktail_225ml_vima.jpg",
-    "disponible": true,
     "descripcion": "La salsa cocktail de Vima Foods es el complemento perfecto para tus platos de pescados, mariscos y ensaladas. Con un contenido neto de 225 ml, esta salsa destaca por su sabor delicioso y su versatilidad en la cocina. Presentada en un frasco con tapa verde y diseño elegante, garantiza frescura y calidad en cada cucharada. Dale un toque especial a tus comidas con la salsa cocktail de Vima Foods, ideal para realzar sabores y sorprender a tus invitados."
   },
   {
