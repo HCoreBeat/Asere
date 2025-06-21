@@ -1662,7 +1662,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/helado_nestle.jpg",
     "descripcion": "Sabor, según disponibilidad del momento.\n\nCalidad suprema"
   }
