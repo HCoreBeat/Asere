@@ -296,11 +296,11 @@
     "nombre": "Salsa Brava (320g)",
     "categoria": "aderezos",
     "precio": 3,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Salsa_Brava.jpg",
-    "disponible": true
+    "disponible": false,
+    "imagen": "img/products/Salsa_Brava.jpg"
   },
   {
     "nombre": "Sazón Mixto (250g)",
