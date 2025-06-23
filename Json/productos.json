@@ -1560,12 +1560,12 @@
   {
     "nombre": "Pescado de mar (Corvina) 4lb",
     "categoria": "carnes",
-    "precio": 5.11,
-    "descuento": 10,
+    "precio": 5.114,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Pescado_corvina.jpg",
-    "disponible": true
+    "disponible": false,
+    "imagen": "img/products/Pescado_corvina.jpg"
   },
   {
     "nombre": "Spam",
