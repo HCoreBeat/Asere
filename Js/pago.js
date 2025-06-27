@@ -142,7 +142,7 @@ function getCubanDateTime() {
 }
 
 // Función para enviar estadísticas al realizar una compra
-async function enviarEstadisticaCompra(fullName, email, phone, cartItems, total, affiliate) {
+async function enviarEstadisticaCompra(fullName, email, phone, address, cartItems, total, affiliate) {
     try {
       // Obtener información adicional (IP, país, etc.)
       const ipInfo = await fetch('https://ipapi.co/json/').then(res => res.json());
@@ -168,6 +168,7 @@ async function enviarEstadisticaCompra(fullName, email, phone, cartItems, total,
         nombre_comprador: fullName,
         telefono_comprador: phone,
         correo_comprador: email,
+        direccion_envio: address,
         compras: cartItems.map(item => ({
             producto: item.nombre,
             cantidad: item.cantidad,
@@ -187,22 +188,20 @@ async function enviarEstadisticaCompra(fullName, email, phone, cartItems, total,
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(estadisticaCompra)
         }),
-        fetch("https://servidor-estadisticas-production.up.railway.app/guardar-estadistica", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(estadisticaCompra)
-        })
       ]);
 
-        responseEndpoints.forEach((resultado, index) => {
-            const servicio = index === 0 ? "Render" : "Railway";
-            if (resultado.status === "fulfilled") {
-                if (resultado.value.ok) console.log(`${servicio}: Registro exitoso`);
-                else console.error(`${servicio}: Error HTTP ${resultado.value.status}`);
+        responseEndpoints.forEach((resultado) => {
+        const servicio = "Render";
+        if (resultado.status === "fulfilled") {
+            if (resultado.value.ok) {
+                console.log(`${servicio}: Registro exitoso`);
             } else {
-                console.error(`${servicio}: Error de conexión`, resultado.reason.message);
+                console.error(`${servicio}: Error HTTP ${resultado.value.status}`);
             }
-        });
+        } else {
+            console.error(`${servicio}: Error de conexión`, resultado.reason.message);
+        }
+    });
     } catch (error) {
         console.error("Error al enviar la estadística de compra:", error);
     }
@@ -271,7 +270,7 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
     const affiliate = getAffiliate();
 
     // Enviar estadísticas de compra
-    await enviarEstadisticaCompra(fullName, email, phone, cartItems, total, affiliate);
+    await enviarEstadisticaCompra(fullName, email, phone, address, cartItems, total, affiliate);
 
     // Crear mensaje de pedido
     const message = `
@@ -435,22 +434,16 @@ async function registrarVisita() {
         },
         5000
       ),
-      fetchWithTimeout(
-        "https://servidor-estadisticas-production.up.railway.app/guardar-estadistica",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(estadistica)
-        },
-        5000
-      )
     ]);
 
-    resultados.forEach((resultado, index) => {
-      const servicio = index === 0 ? "Render" : "Railway";
+    resultados.forEach((resultado) => {
+      const servicio = "Render";
       if (resultado.status === "fulfilled") {
-        if (resultado.value.ok) console.log(`${servicio}: Registro exitoso`);
-        else console.error(`${servicio}: Error HTTP ${resultado.value.status}`);
+        if (resultado.value.ok) {
+          console.log(`${servicio}: Registro exitoso`);
+        } else {
+          console.error(`${servicio}: Error HTTP ${resultado.value.status}`);
+        }
       } else {
         console.error(`${servicio}: Error de conexión`, resultado.reason.message);
       }
@@ -485,20 +478,6 @@ window.addEventListener("beforeunload", async () => {
 
     if (response.ok) console.log("Duración de la sesión actualizada correctamente en render.");
     else console.error("Error al actualizar la duración de la sesión:", await response.text());
-
-    // Enviar la duración al backend de railway.com
-    const response2 = await fetch("https://servidor-estadisticas-production.up.railway.app/guardar-estadistica", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        ip,
-        duracion_sesion_segundos: duracionSesionSegundos,
-        tiempo_promedio_pagina: duracionSesionSegundos
-      })
-    });
-
-    if (response2.ok) console.log("Duración de la sesión actualizada correctamente en railway.");
-    else console.error("Error al actualizar la duración de la sesión:", await response2.text());
   } catch (error) {
     console.error("Error al enviar la duración de la sesión:", error);
   }
