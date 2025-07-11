@@ -880,16 +880,6 @@
     "numeroInt": 79
   },
   {
-    "id": "ObHc7c",
-    "nombre": "Yamila iglesia",
-    "fecha": "2025-04-27T17:36:51.797Z",
-    "numero": "80",
-    "telefono": "No especificado",
-    "link": "https://www.asereshops.com/?ref=ObHc7c",
-    "searchText": "yamila iglesia obhc7c 80 no especificado",
-    "numeroInt": 80
-  },
-  {
     "id": "Bx3uc5",
     "nombre": "Amatiz guianza endulzarte",
     "fecha": "2025-05-26T17:31:36.107Z",
@@ -924,6 +914,21 @@
     "nombre": "Ariel (Ale)",
     "fecha": "2025-06-22T03:30:53.595Z",
     "numero": "84",
-    "telefono": "+5352466342"
+    "telefono": "+5352466342",
+    "link": "https://www.asereshops.com/?ref=YzDwyd",
+    "searchText": "ariel (ale) yzdwyd 84 +5352466342",
+    "numeroInt": 84
+  },
+  {
+    "id": "5x8LTk",
+    "nombre": "Liena",
+    "fecha": "2025-07-11T14:22:31.389Z",
+    "numero": "85"
+  },
+  {
+    "id": "5x8LTk",
+    "nombre": "Liena",
+    "fecha": "2025-07-11T14:23:08.326Z",
+    "numero": "NaN"
   }
 ]
