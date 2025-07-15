@@ -1214,10 +1214,10 @@
     "nombre": "Pelly de Ajo",
     "categoria": "confituras",
     "precio": 2.838,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/pelly_ajo.jpg",
     "descripcion": "Pelly Chicoticos de Ajo - 120g Experimenta el irresistible sabor de los Chicoticos de Ajo de la marca Pelly, perfectos para aquellos que buscan un snack único y delicioso. Con su audaz sabor a ajo, estos chicoticos garantizan un crujido inigualable en cada bocado. Presentados en un empaque llamativo de color azul con detalles vibrantes, el diseño incluye una imagen de ajos frescos que refuerzan la calidad del producto. ¡Ideales para compartir con amigos o disfrutar en cualquier momento del día!"
   },
