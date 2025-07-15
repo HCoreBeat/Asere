@@ -1665,5 +1665,19 @@
     "disponible": false,
     "imagen": "img/products/helado_nestle.jpg",
     "descripcion": "Sabor, según disponibilidad del momento.\n\nCalidad suprema"
+  },
+  {
+    "nombre": "Lomo de cerdo deshuesado",
+    "categoria": "carnes",
+    "precio": 2.905,
+    "descuento": 0,
+    "oferta": true,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/lomo_de_cerdo_deshuesado.jpg",
+    "descripcion": "Sin hueso y sin gordo masa pura .",
+    "imagenesAdicionales": [
+      "img/products/lomo_de_cerdo_deshuesado_1.jpg"
+    ]
   }
 ]
