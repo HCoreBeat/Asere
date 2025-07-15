@@ -1686,5 +1686,16 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/pollo_ahumado_x_lb.jpg"
+  },
+  {
+    "nombre": "Masa de cerdo Ahumada x Lb",
+    "categoria": "carnes",
+    "precio": 4.762,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/masa_de_cerdo_ahumada_x_lb.jpg",
+    "descripcion": "Masa Ahumada de cerdo , calidad suprema"
   }
 ]
