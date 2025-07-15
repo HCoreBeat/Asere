@@ -163,12 +163,12 @@
   {
     "nombre": "Masa deshuesada de cerdo x Kg",
     "categoria": "carnes",
-    "precio": 10.95,
-    "descuento": 10,
+    "precio": 10.952,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Masa_deshuesada_de_Cerdo.jpg",
-    "disponible": true
+    "disponible": false,
+    "imagen": "img/products/Masa_deshuesada_de_Cerdo.jpg"
   },
   {
     "nombre": "Pernil de Cerdo asado (15 libras)",
