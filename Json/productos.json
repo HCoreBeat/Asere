@@ -581,11 +581,11 @@
     "nombre": "Kg de Queso Gouda Premium",
     "categoria": "lacteos",
     "precio": 17.4,
-    "descuento": 0,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
     "imagen": "img/products/queso_gouda_Kg.jpg",
+    "disponible": true,
     "descripcion": "Descubre el exquisito sabor del queso Gouda Premium, ahora disponible por kilogramos para adaptarse a tus necesidades. Este queso premium, elaborado con ingredientes 100% naturales, ofrece una textura suave y un sabor intenso que lo convierte en la elección ideal para tus recetas gourmet o para disfrutar en bocadillos frescos. Perfecto para amantes de la calidad y la frescura, cada kilogramo está cuidadosamente empacado para garantizar que llegue a ti en óptimas condiciones. Lleva la excelencia del queso Gouda Premium a tu cocina y deleita tu paladar con cada porción."
   },
   {
@@ -613,12 +613,13 @@
   {
     "nombre": "Azúcar (1Kg)",
     "categoria": "despensa",
-    "precio": 4.476,
-    "descuento": 10,
+    "precio": 2.286,
+    "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
+    "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/Azucar.jpeg",
-    "disponible": false
+    "descripcion": "Azucar blanca refina"
   },
   {
     "nombre": "Frijol Rojo x Lb",
