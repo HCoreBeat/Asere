@@ -473,12 +473,12 @@
   {
     "nombre": "Café La Llave",
     "categoria": "cafe",
-    "precio": 7,
-    "descuento": 10,
+    "precio": 7.524,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Cafe_la_Llave.jpeg",
-    "disponible": false
+    "disponible": true,
+    "imagen": "img/products/Cafe_la_Llave.jpeg"
   },
   {
     "nombre": "Café Espresso",
