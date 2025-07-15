@@ -1667,17 +1667,14 @@
     "descripcion": "Sabor, según disponibilidad del momento.\n\nCalidad suprema"
   },
   {
-    "nombre": "Lomo de cerdo deshuesado",
+    "nombre": "Masa Ahumada",
     "categoria": "carnes",
-    "precio": 2.905,
+    "precio": 5,
     "descuento": 0,
     "oferta": true,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/lomo_de_cerdo_deshuesado.jpg",
-    "descripcion": "Sin hueso y sin gordo masa pura .",
-    "imagenesAdicionales": [
-      "img/products/lomo_de_cerdo_deshuesado_1.jpg"
-    ]
+    "imagen": "img/products/masa_ahumada.jpg",
+    "descripcion": "Carne Ahumada de la mejor calidad"
   }
 ]
