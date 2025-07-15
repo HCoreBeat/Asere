@@ -16,7 +16,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/pechuga_pollo.jpg",
     "descripcion": "Este producto es pechuga de pollo sin hueso y sin piel de la marca Sadia. Es un paquete de 1 kg de pechugas de pollo congeladas, ideales para preparar diversas recetas. Constituye una excelente fuente de proteínas, con bajo contenido de grasas, lo que lo convierte en una opción saludable y versátil en la cocina. Es imprescindible mantenerlo congelado a -18°C para conservar su frescura y calidad."
   },
@@ -163,12 +163,12 @@
   {
     "nombre": "Masa deshuesada de cerdo x Kg",
     "categoria": "carnes",
-    "precio": 10.952,
-    "descuento": 0,
+    "precio": 10.95,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Masa_deshuesada_de_Cerdo.jpg"
+    "imagen": "img/products/Masa_deshuesada_de_Cerdo.jpg",
+    "disponible": true
   },
   {
     "nombre": "Pernil de Cerdo asado (15 libras)",
