@@ -1191,14 +1191,14 @@
     "disponible": false
   },
   {
-    "nombre": "Lomo de cerdo deshuesado Premium x Kg",
+    "nombre": "Lomo de cerdo deshuesado x Lb",
     "categoria": "carnes",
-    "precio": 3.4,
-    "descuento": 10,
+    "precio": 2.952,
+    "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Lomo_de_Cerdo_Deshuesado.jpg",
-    "disponible": false
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/lomo_de_cerdo_deshuesado_premium_x_kg.jpg"
   },
   {
     "nombre": "Caja de Jurel (20Libras)",
