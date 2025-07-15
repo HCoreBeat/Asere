@@ -1667,7 +1667,7 @@
     "descripcion": "Sabor, según disponibilidad del momento.\n\nCalidad suprema"
   },
   {
-    "nombre": "Rollito Carne de Cerdo",
+    "nombre": "Rollito Carne de Cerdo x Lb",
     "categoria": "carnes",
     "precio": 5,
     "descuento": 0,
@@ -1676,15 +1676,5 @@
     "disponible": true,
     "imagen": "img/products/rollito_carne_de_cerdo.jpg",
     "descripcion": "Rollitos de carne Ahumada"
-  },
-  {
-    "nombre": "Pollo Ahumado x Lb",
-    "categoria": "carnes",
-    "precio": 2.857,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/pollo_ahumado_x_lb.jpg"
   }
 ]
