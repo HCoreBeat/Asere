@@ -1667,14 +1667,14 @@
     "descripcion": "Sabor, según disponibilidad del momento.\n\nCalidad suprema"
   },
   {
-    "nombre": "Masa Ahumada",
+    "nombre": "Rollito Carne de Cerdo",
     "categoria": "carnes",
     "precio": 5,
     "descuento": 0,
-    "oferta": true,
+    "oferta": false,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/masa_ahumada.jpg",
-    "descripcion": "Carne Ahumada de la mejor calidad"
+    "imagen": "img/products/rollito_carne_de_cerdo.jpg",
+    "descripcion": "Rollitos de carne Ahumada"
   }
 ]
