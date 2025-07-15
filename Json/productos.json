@@ -613,23 +613,22 @@
   {
     "nombre": "Azúcar (1Kg)",
     "categoria": "despensa",
-    "precio": 2.286,
-    "descuento": 0,
+    "precio": 4.476,
+    "descuento": 10,
     "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
+    "mas_vendido": false,
     "imagen": "img/products/Azucar.jpeg",
-    "descripcion": "Azucar blanca refina"
+    "disponible": false
   },
   {
     "nombre": "Frijol Rojo x Lb",
     "categoria": "pastas-y-granos",
-    "precio": 3,
-    "descuento": 10,
+    "precio": 2.762,
+    "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Frijol_Rojo.jpeg",
-    "disponible": true
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/Frijol_Rojo.jpeg"
   },
   {
     "nombre": "Mantequilla (250g)",
