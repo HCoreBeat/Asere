@@ -1671,7 +1671,7 @@
     "categoria": "carnes",
     "precio": 5,
     "descuento": 0,
-    "oferta": false,
+    "oferta": true,
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/rollito_carne_de_cerdo.jpg",
