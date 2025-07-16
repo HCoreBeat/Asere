@@ -1696,5 +1696,16 @@
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/masa_de_cerdo_ahumada_x_lb.jpg"
+  },
+  {
+    "nombre": "Motos eléctricas",
+    "categoria": "electrodomesticos",
+    "precio": 2380.952,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/motos_elctricas.jpg",
+    "descripcion": "Marca: TOP MAQ  Raptor.\n1 mes de garantía \nCaracterísticas: \nMotor de 3000w\nBatería de 72v/45HA\nAutonomía de 100-120km\n3 velocidades y retroceso\nReproductor MP3 (Bluetooth)\nAlarma y 2 juegos de llaves\n1 mes de garantía"
   }
 ]
