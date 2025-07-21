@@ -33,7 +33,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/categoria.css">
   <link rel="stylesheet" href="css/styleProducto.css">
+  <link rel="stylesheet" href="css/pago.css">
+  <link rel="stylesheet" href="css/styles_res.css">
+  <link rel="stylesheet" href="css/detalle-pack-content.css">
   <title>Asere Shops</title>
 </head>
 <body>
@@ -88,22 +93,7 @@
       </nav>
     </div>
     <div class="categorias">
-      <ul>
-        <li><a href="#" data-categoria="all" id="cat-all"><i class="fas fa-bars"></i> <span>Todos</span></a></li>
-        <li><a href="#" data-categoria="frutas" id="cat-fruits"><i class="fas fa-apple-alt"></i> <span>Frutas</span></a></li>
-        <li><a href="#" data-categoria="cafe" id="cat-coffee"><i class="fas fa-coffee"></i> <span>Café</span></a></li>
-        <li><a href="#" data-categoria="carnes" id="cat-meats"><i class="fas fa-drumstick-bite"></i> <span>Cárnicos</span></a></li>
-        <li><a href="#" data-categoria="enlatados" id="cat-canned"><i class="fas fa-box-open"></i> <span>Enlatados</span></a></li>
-        <li><a href="#" data-categoria="aderezos" id="cat-dressings"><i class="fas fa-utensils"></i> <span>Aderezos</span></a></li>
-        <li><a href="#" data-categoria="agro" id="cat-agro"><i class="fas fa-box"></i> <span>Agro</span></a></li>
-        <li><a href="#" data-categoria="pastas-y-granos" id="cat-pasta_grains"><i class="fas fa-boxes"></i> <span>Pastas & Granos</span></a></li>
-        <li><a href="#" data-categoria="lacteos" id="cat-dairy"><i class="fas fa-cheese"></i> <span>Lácteos</span></a></li>
-        <li><a href="#" data-categoria="despensa" id="cat-pantry"><i class="fa-solid fa-mug-hot"></i> <span>Despensa</span></a></li>
-        <li><a href="#" data-categoria="bebidas" id="cat-drinks"><i class="fas fa-coffee"></i> <span>Bebidas</span></a></li>
-        <li><a href="#" data-categoria="alcohol" id="cat-alcohol"><i class="fas fa-wine-bottle"></i> <span>Bebidas Alcohólicas</span></a></li>
-        <li><a href="#" data-categoria="cakes" id="cat-cakes"><i class="fas fa-birthday-cake"></i> <span>Cakes</span></a></li>
-        <li><a href="#" data-categoria="confituras" id="cat-confituras"><i class="fas fa-birthday-cake"></i> <span>Confituras</span></a></li>
-        <li><a href="#" data-categoria="otros" id="cat-others"><i class="fas fa-ellipsis-h"></i> <span>Otros</span></a></li>
+      <ul id="categorias-list">
       </ul>
     </div>
     <!-- Contenedor responsivo para la ubicación (mostrado solo en responsive) -->
@@ -116,12 +106,14 @@
   <main>
     <!-- Sección de Detalle del Producto -->
     <section id="detalle-producto" style="display: none;">
-      <button id="volver-productos" class="btn-volver">⬅ Volver a Productos</button>
       <div id="detalle-contenido">
         <!-- Contenedor de imagen -->
         <div id="detalle-imagen-container">
           <div id="imagen-principal-container">
             <img id="detalle-imagen" src="" alt="Imagen del producto">
+            <button id="btn-compartir-producto" class="btn-compartir-float" type="button" title="Compartir">
+              <i class="fas fa-share-alt"></i>
+            </button>
             <!-- Puntos indicadores para las fotos -->
             <div id="puntos-indicadores"></div>
           </div>
@@ -132,21 +124,24 @@
         <!-- Información y extras del producto -->
         <div class="detalle-info">
           <h2 id="detalle-nombre"></h2>
+          <div class="detail-badges">
+            <p id="detalle-mas-vendido" class="mas-vendido-badge">
+              <span class="detail-badge mas-vendido"><i class="fas fa-trophy"></i> Más Vendido</span>
+            </p>
+          </div>
           <div class="precio-container">
             <!-- Valor oculto del precio -->
+             <div class="descuento-pvpr-container">
+              <p id="detalle-pvpr"></p>
+              <p id="detalle-descuento"></p>
+            </div>
             <p id="valor-precio-total" style="display: none;"></p>
             <p id="detalle-precio">
               <span class="entero"></span>
               <span class="decimales"></span>
             </p>
-            <div class="descuento-pvpr-container">
-              <p id="detalle-pvpr"></p>
-              <p id="detalle-descuento"></p>
-            </div>
           </div>
           <div id="detalle-extra">
-            <p id="detalle-mas-vendido" class="mas-vendido-badge">Más Vendido</p>
-            <p id="detalle-disponibilidad"></p>
             <p id="detalle-envio">Envío gratuito</p>
           </div>
           <div class="cantidad">
@@ -156,7 +151,13 @@
             <button class="btn-cantidad" id="btn-sumar">+</button>
           </div>
           <button id="detalle-agregar-carrito" class="btn-carrito">Añadir al Carrito</button>
-          <p id="detalle-descripcion"></p>
+          <div class="product-description">
+            <h4 class="description-title"><i class="fas fa-align-left"></i> Descripción</h4>
+            <div class="description-content" id="detalle-descripcion"></div>
+          </div>
+          <div class="panel-btn-volver">
+            <button id="volver-productos" class="btn-volver" type="button">Volver</button>  
+          </div>
         </div>
       </div>
       <!-- Galería de imágenes adicionales -->
@@ -173,15 +174,16 @@
 
     <!-- Panel de Electrodomésticos -->
     <section id="panel-electrodomesticos" style="display: none;">
-      <button id="cerrar-electrodomesticos" class="btn-volver">⬅ Volver a Productos</button>
       <h2 class="panel-title">Electrodomésticos</h2>
       <div id="lista-electrodomesticos">
         <!-- Electrodomésticos dinámicos -->
       </div>
+      <button id="cerrar-electrodomesticos" class="btn-volver" type="button">Volver</button>
     </section>
 
     <!-- Slider de Promociones -->
     <div class="slider">
+      <button class="slider-arrow prev" aria-label="Anterior">&#10094;</button>
       <div class="slides">
         <div class="slide">
           <img id="img-promocion-1-pc" class="img-pc" src="img/Promocion_1_PC.jpg" alt="Promoción 1 para PC">
@@ -196,6 +198,8 @@
           <img id="img-promocion-3-mobile" class="img-mobile" src="img/Promocion_3.jpg" alt="Promoción 3 para Móvil" style="display:none;">
         </div>
       </div>
+      <button class="slider-arrow next" aria-label="Siguiente">&#10095;</button>
+      <div class="slider-dots"></div>
     </div>
 
     <!-- Mensaje de producto no disponible -->
@@ -218,7 +222,7 @@
     <!-- Sección del Carrito -->
     <section id="carrito" style="display: none;">
       <h2 id="cart-title">Tu Carrito de Compras</h2>
-      <button id="regresar" onclick="ocultarCarrito()">Regresar</button>
+      <button id="regresar" type="button" onclick="if(window.history.length>1){window.history.back();}else{window.location.hash='#productos';}">Regresar</button>
       <div id="carrito-container">
       </div>
       <div id="carrito-vacio">
@@ -257,7 +261,7 @@
           </div>
         </div>
         <div class="actions">
-          <button id="continue-shopping" class="btn primary">
+          <button id="continue-shopping" class="btn primary" type="button">
             <i class="fas fa-chevron-left"></i> Seguir Comprando
           </button>
           <a href="https://wa.me/+18032399264" target="_blank" class="btn whatsapp">
@@ -363,7 +367,7 @@
         <h2 id="footer-quick-links">Enlaces Rápidos</h2>
         <ul>
           <li><a href="#productos" id="footer-products">Productos</a></li>
-          <li><a href="#carrito" onclick="mostrarCarrito()" id="footer-cart">Carrito</a></li>
+          <li><a href="#carrito" id="footer-cart">Carrito</a></li>
           <li><a href="politica.html" id="footer-privacy-policy">Política de Privacidad</a></li>
           <li><a href="condiciones.html" id="footer-terms-conditions">Condiciones de Uso</a></li>
         </ul>
@@ -389,7 +393,14 @@
     </div>
   </footer>
 
-  <script src="Js/script.js" defer></script> <!-- Script principal -->
-  <script src="Js/pago.js" defer></script>   <!-- Script de la planilla de pago -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="Js/descargarImagenProducto.js"></script>
+  <script src="Js/ip-block.js"></script>
+  <script src="Js/productos.js"></script>
+  <script src="Js/carrito.js"></script>
+  <script src="Js/afiliados.js"></script>
+  <script src="Js/ui.js"></script>
+  <script src="Js/main.js"></script>
+  <script src="Js/pago.js" defer></script>   <!-- Script de la planilla de pago --> 
 </body>
 </html
