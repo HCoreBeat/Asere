@@ -1,0 +1,55 @@
+/* Estilos para el detalle del contenido del pack en el modal de detalles */
+.detalle-pack-content {
+  background: #f8fafc;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  margin: 18px 0 10px 0;
+  padding: 16px 18px 10px 18px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+  max-width: 420px;
+}
+
+.detalle-pack-content .pack-content-title {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #2d7a3e;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.detalle-pack-content .pack-content-title i {
+  color: #00967d;
+  font-size: 1.2em;
+}
+
+.detalle-pack-content .pack-content-list {
+  list-style: none;
+  padding: 0 0 0 10px;
+  margin: 0;
+}
+
+.detalle-pack-content .pack-content-list li {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 4px;
+  padding-left: 0.5em;
+  position: relative;
+}
+
+.detalle-pack-content .pack-content-list li:before {
+  content: '\f00c';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: #2d7a3e;
+  margin-right: 7px;
+  font-size: 0.95em;
+}
+
+.detalle-pack-content .pack-content-list .remaining-items {
+  color: #888;
+  font-style: italic;
+  font-size: 0.98em;
+  margin-top: 2px;
+}
