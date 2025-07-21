@@ -481,16 +481,6 @@
     "disponible": false
   },
   {
-    "nombre": "Café Espresso",
-    "categoria": "cafe",
-    "precio": 6.666,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Cafe_Expreso.jpeg",
-    "disponible": false
-  },
-  {
     "nombre": "Cartón de Huevos",
     "categoria": "despensa",
     "precio": 9.524,
@@ -1642,7 +1632,7 @@
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/jamn_bravo_rpido.jpg",
-    "descripcion": "Barras 2kg \n\nEl Jamón Bravo Rápido es un embutido de calidad, con una textura jugosa y un sabor intenso, ideal para sándwiches, tapas y recetas variadas. Se presenta en barras de 2 kg una opción perfecta para negocios y hogares."
+    "descripcion": "Barras 2kg .El Jamón Bravo Rápido es un embutido de calidad, con una textura jugosa y un sabor intenso, ideal para sándwiches, tapas y recetas variadas. Se presenta en barras de 2 kg una opción perfecta para negocios y hogares."
   },
   {
     "nombre": "Saco de arroz americano importado 50lb",
@@ -1653,7 +1643,7 @@
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/saco_de_arroz_americano_importado_50lb.jpg",
-    "descripcion": "Arroz importado.\nViene limpio y cocina bien"
+    "descripcion": "Arroz importado. Viene limpio y cocina bien"
   },
   {
     "nombre": "Helado Nestle",
@@ -1664,7 +1654,7 @@
     "mas_vendido": true,
     "disponible": false,
     "imagen": "img/products/helado_nestle.jpg",
-    "descripcion": "Sabor, según disponibilidad del momento.\n\nCalidad suprema"
+    "descripcion": "Sabor, según disponibilidad del momento. Calidad suprema"
   },
   {
     "nombre": "Rollito Carne de Cerdo x Lb",
@@ -1699,13 +1689,13 @@
   },
   {
     "nombre": "Motos eléctricas",
-    "categoria": "electrodomesticos",
+    "categoria": "veiculos",
     "precio": 2380.952,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/motos_elctricas.jpg",
-    "descripcion": "Marca: TOP MAQ  Raptor.\n1 mes de garantía \nCaracterísticas: \nMotor de 3000w\nBatería de 72v/45HA\nAutonomía de 100-120km\n3 velocidades y retroceso\nReproductor MP3 (Bluetooth)\nAlarma y 2 juegos de llaves\n1 mes de garantía"
+    "descripcion": "Marca: TOP MAQ  Raptor. 1 mes de garantía. Motor de 3000w .Batería de 72v/45HA. Autonomía de 100-120km. 3 velocidades y retroceso. Reproductor MP3 (Bluetooth). Alarma y 2 juegos de llaves. 1 mes de garantía."
   }
 ]
