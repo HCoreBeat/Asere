@@ -1680,14 +1680,14 @@
     "descripcion": "Sueños comodos"
   },
   {
-    "nombre": "Esponjas para fregar",
+    "nombre": "Pasta dental",
     "categoria": "otros",
-    "precio": 0.457,
+    "precio": 2.848,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": true,
+    "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/producto.jpg",
-    "descripcion": "Saca brillo hasta de donde no hay."
+    "descripcion": "Trae cepillo incluido"
   }
 ]
