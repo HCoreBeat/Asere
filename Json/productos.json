@@ -793,12 +793,12 @@
   {
     "nombre": "Limón x Lb",
     "categoria": "agro",
-    "precio": 1.895,
-    "descuento": 0,
+    "precio": 2.2,
+    "descuento": 10,
     "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/Limon.jpg"
+    "mas_vendido": false,
+    "imagen": "img/products/Limon.jpg",
+    "disponible": true
   },
   {
     "nombre": "Plátano macho x unidad",
@@ -844,11 +844,11 @@
     "nombre": "Agua Purificada Niagara (500ml)",
     "categoria": "bebidas",
     "precio": 0.714,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Agua_Purificada.jpg",
-    "disponible": true
+    "disponible": false,
+    "imagen": "img/products/Agua_Purificada.jpg"
   },
   {
     "nombre": "Caja de Bebida energética 5 Shot (250ml x 24)",
