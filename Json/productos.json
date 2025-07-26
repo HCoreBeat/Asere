@@ -1678,5 +1678,16 @@
     "disponible": true,
     "imagen": "img/products/producto.jpg",
     "descripcion": "Sueños comodos"
+  },
+  {
+    "nombre": "Intimas Diarias",
+    "categoria": "otros",
+    "precio": 3.8,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/producto.jpg",
+    "descripcion": "Paquete de 40 unidades."
   }
 ]
