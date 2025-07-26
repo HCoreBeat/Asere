@@ -399,12 +399,12 @@
   {
     "nombre": "Aceite Fritura 900ml",
     "categoria": "despensa",
-    "precio": 2.848,
-    "descuento": 0,
+    "precio": 4,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/Aceite_Fritura.jpeg"
+    "imagen": "img/products/Aceite_Fritura.jpeg",
+    "disponible": true
   },
   {
     "nombre": "Aceite refinado de girasol 1L",
@@ -483,7 +483,7 @@
   {
     "nombre": "Cartón de Huevos",
     "categoria": "despensa",
-    "precio": 9.524,
+    "precio": 9.4,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
