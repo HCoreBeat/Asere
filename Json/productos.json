@@ -1196,12 +1196,12 @@
     "nombre": "Batata Lisa",
     "categoria": "confituras",
     "precio": 1.714,
-    "descuento": 0,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
     "imagen": "img/products/batata_lisa.jpg",
-    "descripcion": "Batata Lisa Natural - Friteli Descubre el auténtico sabor de las papas fritas Friteli Batata Lisa Natural, hechas con 100% batata de verdad para brindarte una experiencia genuina y crujiente. Cada bolsa de 100 gramos contiene papas cuidadosamente seleccionadas y preparadas para mantener su frescura y calidad excepcional. Este snack combina tradición y sabor natural, ideal para disfrutar en cualquier momento. El empaque llamativo incluye un diseño moderno en color negro, destacando la autenticidad del producto con frases como Papas Seleccionadas y el sello de calidad de la marca Friteli. Ten en cuenta que el empaque también indica los niveles de grasas, mostrando transparencia hacia los consumidores."
+    "descripcion": "Batata Lisa Natural - Friteli Descubre el auténtico sabor de las papas fritas Friteli Batata Lisa Natural, hechas con 100% batata de verdad para brindarte una experiencia genuina y crujiente. Cada bolsa de 100 gramos contiene papas cuidadosamente seleccionadas y preparadas para mantener su frescura y calidad excepcional. Este snack combina tradición y sabor natural, ideal para disfrutar en cualquier momento. El empaque llamativo incluye un diseño moderno en color negro, destacando la autenticidad del producto con frases como Papas Seleccionadas y el sello de calidad de la marca Friteli. Ten en cuenta que el empaque también indica los niveles de grasas, mostrando transparencia hacia los consumidores.",
+    "disponible": true
   },
   {
     "nombre": "Papas Crunchy",
@@ -1278,13 +1278,13 @@
   {
     "nombre": "Leche entera en polvo (1kg)",
     "categoria": "lacteos",
-    "precio": 11.4,
-    "descuento": 10,
+    "precio": 9.429,
+    "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
+    "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/leche_entera_en_polvo.jpg",
-    "descripcion": "Descubre la leche entera en polvo Macro Food, perfecta para preparar deliciosas bebidas y recetas. Con un 26% de grasa láctea y un rendimiento aproximado de 8.5 litros por cada kilogramo, este producto combina calidad y conveniencia. Ideal para quienes buscan una alternativa práctica y duradera al consumo de leche fresca. Su presentación incluye un diseño funcional y moderno, reflejando el compromiso con la frescura y el sabor natural. ¡Una opción esencial para tu despensa y cocina!",
-    "disponible": true
+    "descripcion": "Descubre la leche entera en polvo Macro Food, perfecta para preparar deliciosas bebidas y recetas. Con un 26% de grasa láctea y un rendimiento aproximado de 8.5 litros por cada kilogramo, este producto combina calidad y conveniencia. Ideal para quienes buscan una alternativa práctica y duradera al consumo de leche fresca. Su presentación incluye un diseño funcional y moderno, reflejando el compromiso con la frescura y el sabor natural. ¡Una opción esencial para tu despensa y cocina!"
   },
   {
     "nombre": "Cebollitas en Vinagre (290g)",
