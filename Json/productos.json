@@ -1299,12 +1299,12 @@
   {
     "nombre": "Café Espresso «El Ricote»",
     "categoria": "cafe",
-    "precio": 6.54,
-    "descuento": 10,
+    "precio": 6.543,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Cafe_Expresso.jpg",
-    "disponible": true
+    "disponible": false,
+    "imagen": "img/products/Cafe_Expresso.jpg"
   },
   {
     "nombre": "Chocolate en Polvo «Rico» (500g)",
