@@ -1701,9 +1701,9 @@
     "imagen": "img/products/producto.jpg"
   },
   {
-    "nombre": "Maestros aceitunas",
-    "categoria": "aderezos",
-    "precio": 3.8,
+    "nombre": "Chicharo verde",
+    "categoria": "pastas-y-granos",
+    "precio": 2.667,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
