@@ -325,12 +325,12 @@
   {
     "nombre": "Ketchup (320g)",
     "categoria": "aderezos",
-    "precio": 2.95,
-    "descuento": 10,
+    "precio": 2.952,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Ketchup.jpg",
-    "disponible": true
+    "disponible": false,
+    "imagen": "img/products/Ketchup.jpg"
   },
   {
     "nombre": "Queso Crema (200g)",
