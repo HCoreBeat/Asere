@@ -151,14 +151,14 @@
     "disponible": false
   },
   {
-    "nombre": "Masa deshuesada de cerdo x Kg",
+    "nombre": "Jamón Bravo Rápido (2kg)",
     "categoria": "carnes",
-    "precio": 10.952,
-    "descuento": 0,
+    "precio": 28,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Masa_deshuesada_de_Cerdo.jpg"
+    "imagen": "img/products/Jamon_Bravo_Rapido.jpg",
+    "disponible": false
   },
   {
     "nombre": "Pernil de Cerdo asado (15 libras)",
