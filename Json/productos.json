@@ -1798,7 +1798,7 @@
     "descripcion": "Poco dulce al estilo maria"
   },
   {
-    "nombre": "Comino molido",
+    "nombre": "Sazón completo",
     "categoria": "despensa",
     "precio": 6.857,
     "descuento": 0,
@@ -1806,6 +1806,6 @@
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/producto.jpg",
-    "descripcion": "56.7 gramos"
+    "descripcion": "340.2 gramos"
   }
 ]
