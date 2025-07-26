@@ -1689,5 +1689,15 @@
     "disponible": true,
     "imagen": "img/products/producto.jpg",
     "descripcion": "Trae cepillo incluido"
+  },
+  {
+    "nombre": "Café español de alta calidad",
+    "categoria": "cafe",
+    "precio": 5.686,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/producto.jpg"
   }
 ]
