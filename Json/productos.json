@@ -1349,12 +1349,12 @@
   {
     "nombre": "Fresas en almibar (425g)",
     "categoria": "enlatados",
-    "precio": 2,
-    "descuento": 0,
+    "precio": 2.65,
+    "descuento": 10,
     "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/Fresas_en_Almibar.jpg"
+    "mas_vendido": false,
+    "imagen": "img/products/Fresas_en_Almibar.jpg",
+    "disponible": false
   },
   {
     "nombre": "Maicena Nezka (500g)",
@@ -1511,11 +1511,11 @@
     "nombre": "Caja de Cerveza UNLAGUER",
     "categoria": "alcohol",
     "precio": 18,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Caja_cerveza_unlaguer.jpg",
-    "disponible": false
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/Caja_cerveza_unlaguer.jpg"
   },
   {
     "nombre": "Pescado de mar (Corvina) 4lb",
