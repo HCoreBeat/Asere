@@ -1733,7 +1733,7 @@
     "descripcion": "Producto importado.\nPaquete sellado.\nViene limpio \n500 gramos"
   },
   {
-    "nombre": "Pera en almibar",
+    "nombre": "Cocktail de frutas en almibar",
     "categoria": "enlatados",
     "precio": 2.848,
     "descuento": 0,
@@ -1741,6 +1741,6 @@
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/producto.jpg",
-    "descripcion": "Producto importado.\n425gramos"
+    "descripcion": "Producto importado.\n425 gramos"
   }
 ]
