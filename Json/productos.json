@@ -1798,14 +1798,13 @@
     "descripcion": "Poco dulce al estilo maria"
   },
   {
-    "nombre": "Fideos ada",
-    "categoria": "pastas-y-granos",
-    "precio": 1.333,
+    "nombre": "Nutella con avellana",
+    "categoria": "confituras",
+    "precio": 4.571,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/producto.jpg",
-    "descripcion": "Producto importado \n500 gramos"
+    "imagen": "img/products/producto.jpg"
   }
 ]
