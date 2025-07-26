@@ -1753,5 +1753,16 @@
     "disponible": true,
     "imagen": "img/products/producto.jpg",
     "descripcion": "Producto importado.\n500 ml"
+  },
+  {
+    "nombre": "Guisantes dulces",
+    "categoria": "enlatados",
+    "precio": 2.848,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/producto.jpg",
+    "descripcion": "Producto importado.\n \n255 gramos"
   }
 ]
