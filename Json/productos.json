@@ -739,17 +739,6 @@
     "disponible": true
   },
   {
-    "nombre": "Maíz molido tierno x Lb",
-    "categoria": "agro",
-    "precio": 0.933,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/maiz_tierno.jpg",
-    "descripcion": "Maíz super fresco se muele al pedido. El maíz molido tierno es un ingrediente de alta calidad y frescura, perfecto para quienes buscan productos auténticos en su cocina. Su textura fina y color amarillo vibrante lo hacen ideal para elaborar recetas tradicionales como tamales, arepas o empanadas. Su sabor dulce y natural aporta un toque especial a cada preparación, convirtiéndolo en un aliado indispensable para realzar tus platillos favoritos. Este maíz es una opción versátil y nutritiva que garantiza excelencia en cada receta."
-  },
-  {
     "nombre": "Mazo de cebolla blanca",
     "categoria": "agro",
     "precio": 1.428,
