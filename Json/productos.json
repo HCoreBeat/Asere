@@ -1733,14 +1733,14 @@
     "descripcion": "Producto importado.\nPaquete sellado.\nViene limpio \n500 gramos"
   },
   {
-    "nombre": "Cocktail de frutas en almibar",
-    "categoria": "enlatados",
+    "nombre": "Jugo tropical",
+    "categoria": "bebidas",
     "precio": 2.848,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": true,
+    "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/producto.jpg",
-    "descripcion": "Producto importado.\n425 gramos"
+    "descripcion": "Producto importado.\n1 litro\nSabor : piña,naranja,\nPlatanito"
   }
 ]
