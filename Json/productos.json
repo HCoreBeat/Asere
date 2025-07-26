@@ -1669,14 +1669,14 @@
     "descripcion": "Marca: TOP MAQ  Raptor. 1 mes de garantía. Motor de 3000w .Batería de 72v/45HA. Autonomía de 100-120km. 3 velocidades y retroceso. Reproductor MP3 (Bluetooth). Alarma y 2 juegos de llaves. 1 mes de garantía."
   },
   {
-    "nombre": "Rollito relleno de leche",
-    "categoria": "confituras",
-    "precio": 0.838,
+    "nombre": "Almohadillas sanitarias",
+    "categoria": "otros",
+    "precio": 2.476,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": true,
+    "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/producto.jpg",
-    "descripcion": "Super deliciosos"
+    "descripcion": "Sueños comodos"
   }
 ]
