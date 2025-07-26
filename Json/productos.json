@@ -1806,5 +1806,16 @@
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/producto.jpg"
+  },
+  {
+    "nombre": "Chocolate en polvo",
+    "categoria": "despensa",
+    "precio": 3.8,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/producto.jpg",
+    "descripcion": "350 gramos"
   }
 ]
