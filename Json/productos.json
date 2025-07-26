@@ -739,16 +739,6 @@
     "disponible": true
   },
   {
-    "nombre": "Paquete de cucharas plásticas (100/u)",
-    "categoria": "otros",
-    "precio": 8.46,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Cucharas_Plasticas.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Maíz molido tierno x Lb",
     "categoria": "agro",
     "precio": 0.93,
