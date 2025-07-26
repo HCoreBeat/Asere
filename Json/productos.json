@@ -1785,5 +1785,16 @@
     "disponible": true,
     "imagen": "img/products/producto.jpg",
     "descripcion": "Paquete grande \nContiene 18 paquete de galletitas"
+  },
+  {
+    "nombre": "Galleta renata",
+    "categoria": "confituras",
+    "precio": 1.067,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/galletas_brinky.jpg",
+    "descripcion": "Poco dulce al estilo maria"
   }
 ]
