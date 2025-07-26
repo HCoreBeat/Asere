@@ -1731,5 +1731,16 @@
     "disponible": true,
     "imagen": "img/products/producto.jpg",
     "descripcion": "Producto importado.\nPaquete sellado.\nViene limpio \n500 gramos"
+  },
+  {
+    "nombre": "Melocotón en almibar",
+    "categoria": "enlatados",
+    "precio": 2.848,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/producto.jpg",
+    "descripcion": "Producto importado.\n425 gramos"
   }
 ]
