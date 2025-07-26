@@ -1701,24 +1701,13 @@
     "imagen": "img/products/producto.jpg"
   },
   {
-    "nombre": "Chicharo verde",
+    "nombre": "Chicharo seco",
     "categoria": "pastas-y-granos",
     "precio": 2.667,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/producto.jpg"
-  },
-  {
-    "nombre": "Judías blancas",
-    "categoria": "pastas-y-granos",
-    "precio": 3.048,
-    "descuento": 0,
-    "oferta": false,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/producto.jpg",
-    "descripcion": "500 gramos"
+    "imagen": "img/products/producto.jpg"
   }
 ]
