@@ -1798,14 +1798,14 @@
     "descripcion": "Poco dulce al estilo maria"
   },
   {
-    "nombre": "Sazón completo",
-    "categoria": "despensa",
-    "precio": 6.857,
+    "nombre": "Fideos ada",
+    "categoria": "pastas-y-granos",
+    "precio": 1.333,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/producto.jpg",
-    "descripcion": "340.2 gramos"
+    "descripcion": "Producto importado \n500 gramos"
   }
 ]
