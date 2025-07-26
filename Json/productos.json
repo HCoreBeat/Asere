@@ -1744,14 +1744,14 @@
     "descripcion": "Producto importado.\n1 litro\nSabor : piña,naranja,\nPlatanito"
   },
   {
-    "nombre": "Pasta de bocadito",
+    "nombre": "Mayonesa celorrio",
     "categoria": "aderezos",
-    "precio": 6.857,
+    "precio": 6.095,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/producto.jpg",
-    "descripcion": "Sencillamente deliciosa"
+    "descripcion": "Producto importado.\n500 ml"
   }
 ]
