@@ -851,16 +851,6 @@
     "disponible": true
   },
   {
-    "nombre": "Ron Habana Club Añejo Reserva",
-    "categoria": "alcohol",
-    "precio": 17.05,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Ron_Habana_Club_Añejo_Reserva.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Caja de malta Morena (24x237ml)",
     "categoria": "bebidas",
     "precio": 17.99,
