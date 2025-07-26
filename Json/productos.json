@@ -772,12 +772,12 @@
   {
     "nombre": "Tomate x Lb",
     "categoria": "agro",
-    "precio": 0.885,
-    "descuento": 10,
+    "precio": 0.886,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Tomate.jpg",
-    "disponible": true
+    "disponible": false,
+    "imagen": "img/products/Tomate.jpg"
   },
   {
     "nombre": "Limón x Lb",
