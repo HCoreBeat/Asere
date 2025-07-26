@@ -1744,14 +1744,14 @@
     "descripcion": "Producto importado.\n1 litro\nSabor : piña,naranja,\nPlatanito"
   },
   {
-    "nombre": "Jugo de piña",
-    "categoria": "bebidas",
-    "precio": 2.848,
+    "nombre": "Pasta de bocadito",
+    "categoria": "aderezos",
+    "precio": 6.857,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
+    "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/producto.jpg",
-    "descripcion": "Producto importado.\n1 litro"
+    "descripcion": "Sencillamente deliciosa"
   }
 ]
