@@ -263,6 +263,16 @@
     "disponible": false
   },
   {
+    "nombre": "Leche Evaporada «Delite» (260g)",
+    "categoria": "lacteos",
+    "precio": 1.8,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Leche_Evaporada_Delite.jpg",
+    "disponible": false
+  },
+  {
     "nombre": "Pack de 4 yogurts de Macedonia Vima",
     "categoria": "lacteos",
     "precio": 2.9,
@@ -286,11 +296,11 @@
     "nombre": "Salsa Brava (320g)",
     "categoria": "aderezos",
     "precio": 3,
-    "descuento": 0,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Salsa_Brava.jpg"
+    "imagen": "img/products/Salsa_Brava.jpg",
+    "disponible": true
   },
   {
     "nombre": "Sazón Mixto (250g)",
@@ -305,12 +315,12 @@
   {
     "nombre": "Comino Molido (198.5g)",
     "categoria": "aderezos",
-    "precio": 8.9,
-    "descuento": 10,
+    "precio": 7.105,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
-    "imagen": "img/products/Comino_Molido.jpg",
-    "disponible": false
+    "disponible": true,
+    "imagen": "img/products/Comino_Molido.jpg"
   },
   {
     "nombre": "Ketchup (320g)",
