@@ -1699,5 +1699,15 @@
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/producto.jpg"
+  },
+  {
+    "nombre": "Energizante Tigon",
+    "categoria": "bebidas",
+    "precio": 1.143,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/producto.jpg"
   }
 ]
