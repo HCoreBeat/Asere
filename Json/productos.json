@@ -1765,13 +1765,14 @@
     "imagen": "img/products/producto.jpg"
   },
   {
-    "nombre": "Pack de 3 galletas lora",
+    "nombre": "Galletas golozetas",
     "categoria": "confituras",
-    "precio": 4,
+    "precio": 2.971,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
+    "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/galletitas_escolares.jpg"
+    "imagen": "img/products/producto.jpg",
+    "descripcion": "Paquete grande, trae 12 paquetitos de galletas. \nCada paquetito pequeño trae 4 unidades de galletas."
   }
 ]
