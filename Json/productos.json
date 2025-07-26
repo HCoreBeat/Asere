@@ -1701,9 +1701,9 @@
     "imagen": "img/products/producto.jpg"
   },
   {
-    "nombre": "Energizante Tigon",
-    "categoria": "bebidas",
-    "precio": 1.143,
+    "nombre": "Albóndigas de pollo",
+    "categoria": "enlatados",
+    "precio": 3.048,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
