@@ -1720,5 +1720,16 @@
     "disponible": true,
     "imagen": "img/products/producto.jpg",
     "descripcion": "Paquete sellado 500 gramos.\nViene limpio"
+  },
+  {
+    "nombre": "Frijol Rojo",
+    "categoria": "pastas-y-granos",
+    "precio": 3.048,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/producto.jpg",
+    "descripcion": "Paquete sellado \nViene limpio \n500 gramos"
   }
 ]
