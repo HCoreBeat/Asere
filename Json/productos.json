@@ -844,21 +844,11 @@
     "nombre": "Agua Purificada Niagara (500ml)",
     "categoria": "bebidas",
     "precio": 0.714,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Agua_Purificada.jpg"
-  },
-  {
-    "nombre": "Caja de Bebida energética 5 Shot (250ml x 24)",
-    "categoria": "bebidas",
-    "precio": 21.15,
     "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Caja_Bebida_Energetica.jpg",
-    "disponible": false
+    "imagen": "img/products/Agua_Purificada.jpg",
+    "disponible": true
   },
   {
     "nombre": "Ron Habana Club Añejo Reserva",
