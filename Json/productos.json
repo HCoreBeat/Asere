@@ -325,12 +325,12 @@
   {
     "nombre": "Ketchup (320g)",
     "categoria": "aderezos",
-    "precio": 2.952,
-    "descuento": 0,
+    "precio": 2.95,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Ketchup.jpg"
+    "imagen": "img/products/Ketchup.jpg",
+    "disponible": true
   },
   {
     "nombre": "Queso Crema (200g)",
@@ -346,11 +346,11 @@
     "nombre": "Sazón Goya",
     "categoria": "aderezos",
     "precio": 0.6,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Sazon_Goya.jpg",
-    "disponible": true
+    "disponible": true,
+    "imagen": "img/products/Sazon_Goya.jpg"
   },
   {
     "nombre": "Papas Prefritas Vima 1Kg",
