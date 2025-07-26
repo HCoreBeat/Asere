@@ -1339,22 +1339,22 @@
   {
     "nombre": "Melocotón en almibar (425g)",
     "categoria": "enlatados",
+    "precio": 2.65,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Melocoton_en_Almibar_Vima.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Fresas en almibar (425g)",
+    "categoria": "enlatados",
     "precio": 2,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/Melocoton_en_Almibar_Vima.jpg"
-  },
-  {
-    "nombre": "Fresas en almibar (425g)",
-    "categoria": "enlatados",
-    "precio": 2.65,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Fresas_en_Almibar.jpg",
-    "disponible": false
+    "imagen": "img/products/Fresas_en_Almibar.jpg"
   },
   {
     "nombre": "Maicena Nezka (500g)",
