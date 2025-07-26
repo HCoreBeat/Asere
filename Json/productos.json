@@ -1774,5 +1774,16 @@
     "disponible": true,
     "imagen": "img/products/producto.jpg",
     "descripcion": "Paquete grande, trae 12 paquetitos de galletas. \nCada paquetito pequeño trae 4 unidades de galletas."
+  },
+  {
+    "nombre": "Dele chitas",
+    "categoria": "confituras",
+    "precio": 4.114,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/producto.jpg",
+    "descripcion": "Paquete grande \nContiene 18 paquete de galletitas"
   }
 ]
