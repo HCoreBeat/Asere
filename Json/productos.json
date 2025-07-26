@@ -1701,12 +1701,12 @@
     "imagen": "img/products/producto.jpg"
   },
   {
-    "nombre": "Aceitunas verdes con hueso",
+    "nombre": "Maestros aceitunas",
     "categoria": "aderezos",
-    "precio": 3.781,
+    "precio": 3.8,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": true,
+    "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/producto.jpg"
   }
