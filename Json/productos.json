@@ -1680,14 +1680,14 @@
     "descripcion": "Sueños comodos"
   },
   {
-    "nombre": "Intimas Diarias",
+    "nombre": "Esponjas para fregar",
     "categoria": "otros",
-    "precio": 3.8,
+    "precio": 0.457,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/producto.jpg",
-    "descripcion": "Paquete de 40 unidades."
+    "descripcion": "Saca brillo hasta de donde no hay."
   }
 ]
