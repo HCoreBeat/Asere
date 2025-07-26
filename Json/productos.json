@@ -1501,21 +1501,21 @@
     "nombre": "Cerveza UNLAGUER",
     "categoria": "alcohol",
     "precio": 0.8,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Cerveza_Unlaguer.jpg",
-    "disponible": false
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/Cerveza_Unlaguer.jpg"
   },
   {
     "nombre": "Caja de Cerveza UNLAGUER",
     "categoria": "alcohol",
     "precio": 18,
-    "descuento": 0,
+    "descuento": 10,
     "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/Caja_cerveza_unlaguer.jpg"
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_cerveza_unlaguer.jpg",
+    "disponible": false
   },
   {
     "nombre": "Pescado de mar (Corvina) 4lb",
