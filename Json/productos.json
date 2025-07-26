@@ -1742,5 +1742,16 @@
     "disponible": true,
     "imagen": "img/products/producto.jpg",
     "descripcion": "Producto importado.\n1 litro\nSabor : piña,naranja,\nPlatanito"
+  },
+  {
+    "nombre": "Jugo de manga",
+    "categoria": "bebidas",
+    "precio": 2.848,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/producto.jpg",
+    "descripcion": "Producto importado.\n1 Litro"
   }
 ]
