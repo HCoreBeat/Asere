@@ -123,12 +123,12 @@
   {
     "nombre": "Paquete de salchichas 7u (350g)",
     "categoria": "carnes",
-    "precio": 1.971,
-    "descuento": 0,
+    "precio": 1.97,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/Paquete_de_Salchichas.jpg"
+    "imagen": "img/products/Paquete_de_Salchichas.jpg",
+    "disponible": false
   },
   {
     "nombre": "Pack de 4 Hamburguesas de pollo",
@@ -148,16 +148,6 @@
     "oferta": false,
     "mas_vendido": false,
     "imagen": "img/products/Higado_de_Cerdo.jpg",
-    "disponible": false
-  },
-  {
-    "nombre": "Jamón Bravo Rápido (2kg)",
-    "categoria": "carnes",
-    "precio": 28,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Jamon_Bravo_Rapido.jpg",
     "disponible": false
   },
   {
