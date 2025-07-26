@@ -1763,5 +1763,15 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/producto.jpg"
+  },
+  {
+    "nombre": "Pack de 3 galletas lora",
+    "categoria": "confituras",
+    "precio": 4,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/galletitas_escolares.jpg"
   }
 ]
