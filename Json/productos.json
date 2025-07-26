@@ -1501,11 +1501,11 @@
     "nombre": "Cerveza UNLAGUER",
     "categoria": "alcohol",
     "precio": 0.8,
-    "descuento": 0,
+    "descuento": 10,
     "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/Cerveza_Unlaguer.jpg"
+    "mas_vendido": false,
+    "imagen": "img/products/Cerveza_Unlaguer.jpg",
+    "disponible": false
   },
   {
     "nombre": "Caja de Cerveza UNLAGUER",
@@ -1531,11 +1531,11 @@
     "nombre": "Spam",
     "categoria": "enlatados",
     "precio": 2.79,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Spam.jpg",
-    "disponible": false
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/Spam.jpg"
   },
   {
     "nombre": "Picadillo de pollo (1Kg)",
