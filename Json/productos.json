@@ -483,7 +483,7 @@
   {
     "nombre": "Cartón de Huevos",
     "categoria": "despensa",
-    "precio": 9.4,
+    "precio": 9.524,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -493,12 +493,12 @@
   {
     "nombre": "Espaguetis (500g)",
     "categoria": "pastas-y-granos",
-    "precio": 1.8,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Espaguetis.jpeg",
-    "disponible": true
+    "precio": 1.333,
+    "descuento": 0,
+    "oferta": true,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/Espaguetis.jpeg"
   },
   {
     "nombre": "Leche Condensada azucarada (390g)",
