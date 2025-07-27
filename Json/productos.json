@@ -1819,13 +1819,14 @@
     "descripcion": "350 gramos"
   },
   {
-    "nombre": "Pelly queso chedar",
+    "nombre": "Lorena Peter",
     "categoria": "confituras",
-    "precio": 0.952,
+    "precio": 0.762,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/producto.jpg"
+    "imagen": "img/products/producto.jpg",
+    "descripcion": "Peter chocolate blanco"
   }
 ]
