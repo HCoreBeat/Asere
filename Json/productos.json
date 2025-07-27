@@ -1817,5 +1817,16 @@
     "disponible": true,
     "imagen": "img/products/producto.jpg",
     "descripcion": "350 gramos"
+  },
+  {
+    "nombre": "Emoji de chocolate",
+    "categoria": "confituras",
+    "precio": 16.381,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/producto.jpg",
+    "descripcion": "Trae más de 70 chocolates"
   }
 ]
