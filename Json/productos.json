@@ -315,12 +315,12 @@
   {
     "nombre": "Comino Molido (198.5g)",
     "categoria": "aderezos",
-    "precio": 7.105,
-    "descuento": 0,
+    "precio": 8.9,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/Comino_Molido.jpg"
+    "imagen": "img/products/Comino_Molido.jpg",
+    "disponible": false
   },
   {
     "nombre": "Ketchup (320g)",
@@ -571,11 +571,11 @@
     "nombre": "Kg de Queso Gouda Premium",
     "categoria": "lacteos",
     "precio": 17.4,
-    "descuento": 0,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
     "imagen": "img/products/queso_gouda_Kg.jpg",
+    "disponible": true,
     "descripcion": "Descubre el exquisito sabor del queso Gouda Premium, ahora disponible por kilogramos para adaptarse a tus necesidades. Este queso premium, elaborado con ingredientes 100% naturales, ofrece una textura suave y un sabor intenso que lo convierte en la elección ideal para tus recetas gourmet o para disfrutar en bocadillos frescos. Perfecto para amantes de la calidad y la frescura, cada kilogramo está cuidadosamente empacado para garantizar que llegue a ti en óptimas condiciones. Lleva la excelencia del queso Gouda Premium a tu cocina y deleita tu paladar con cada porción."
   },
   {
@@ -739,15 +739,45 @@
     "disponible": true
   },
   {
-    "nombre": "Maíz molido tierno x Lb",
-    "categoria": "agro",
-    "precio": 0.933,
-    "descuento": 0,
+    "nombre": "Vasos Reutilizables (100/u)",
+    "categoria": "otros",
+    "precio": 3.9,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "imagen": "img/products/Vasos_Reutilizables.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Paquete de tenedores plásticos (25/u)",
+    "categoria": "otros",
+    "precio": 1.9,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Tenedores_Plasticos.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Paquete de cucharas plásticas (100/u)",
+    "categoria": "otros",
+    "precio": 8.46,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Cucharas_Plasticas.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Maíz molido tierno x Lb",
+    "categoria": "agro",
+    "precio": 0.93,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
     "imagen": "img/products/maiz_tierno.jpg",
-    "descripcion": "Maíz super fresco se muele al pedido. El maíz molido tierno es un ingrediente de alta calidad y frescura, perfecto para quienes buscan productos auténticos en su cocina. Su textura fina y color amarillo vibrante lo hacen ideal para elaborar recetas tradicionales como tamales, arepas o empanadas. Su sabor dulce y natural aporta un toque especial a cada preparación, convirtiéndolo en un aliado indispensable para realzar tus platillos favoritos. Este maíz es una opción versátil y nutritiva que garantiza excelencia en cada receta."
+    "descripcion": "Maíz super fresco se muele al pedido. El maíz molido tierno es un ingrediente de alta calidad y frescura, perfecto para quienes buscan productos auténticos en su cocina. Su textura fina y color amarillo vibrante lo hacen ideal para elaborar recetas tradicionales como tamales, arepas o empanadas. Su sabor dulce y natural aporta un toque especial a cada preparación, convirtiéndolo en un aliado indispensable para realzar tus platillos favoritos. Este maíz es una opción versátil y nutritiva que garantiza excelencia en cada receta.",
+    "disponible": true
   },
   {
     "nombre": "Mazo de cebolla blanca",
@@ -1278,13 +1308,13 @@
   {
     "nombre": "Leche entera en polvo (1kg)",
     "categoria": "lacteos",
-    "precio": 9.429,
-    "descuento": 0,
+    "precio": 11.4,
+    "descuento": 10,
     "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
+    "mas_vendido": false,
     "imagen": "img/products/leche_entera_en_polvo.jpg",
-    "descripcion": "Descubre la leche entera en polvo Macro Food, perfecta para preparar deliciosas bebidas y recetas. Con un 26% de grasa láctea y un rendimiento aproximado de 8.5 litros por cada kilogramo, este producto combina calidad y conveniencia. Ideal para quienes buscan una alternativa práctica y duradera al consumo de leche fresca. Su presentación incluye un diseño funcional y moderno, reflejando el compromiso con la frescura y el sabor natural. ¡Una opción esencial para tu despensa y cocina!"
+    "descripcion": "Descubre la leche entera en polvo Macro Food, perfecta para preparar deliciosas bebidas y recetas. Con un 26% de grasa láctea y un rendimiento aproximado de 8.5 litros por cada kilogramo, este producto combina calidad y conveniencia. Ideal para quienes buscan una alternativa práctica y duradera al consumo de leche fresca. Su presentación incluye un diseño funcional y moderno, reflejando el compromiso con la frescura y el sabor natural. ¡Una opción esencial para tu despensa y cocina!",
+    "disponible": true
   },
   {
     "nombre": "Cebollitas en Vinagre (290g)",
@@ -1299,12 +1329,12 @@
   {
     "nombre": "Café Espresso «El Ricote»",
     "categoria": "cafe",
-    "precio": 6.543,
-    "descuento": 0,
+    "precio": 6.54,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Cafe_Expresso.jpg"
+    "imagen": "img/products/Cafe_Expresso.jpg",
+    "disponible": true
   },
   {
     "nombre": "Chocolate en Polvo «Rico» (500g)",
@@ -1531,11 +1561,11 @@
     "nombre": "Spam",
     "categoria": "enlatados",
     "precio": 2.79,
-    "descuento": 0,
+    "descuento": 10,
     "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/Spam.jpg"
+    "mas_vendido": false,
+    "imagen": "img/products/Spam.jpg",
+    "disponible": false
   },
   {
     "nombre": "Picadillo de pollo (1Kg)",
@@ -1667,166 +1697,5 @@
     "disponible": true,
     "imagen": "img/products/motos_elctricas.jpg",
     "descripcion": "Marca: TOP MAQ  Raptor. 1 mes de garantía. Motor de 3000w .Batería de 72v/45HA. Autonomía de 100-120km. 3 velocidades y retroceso. Reproductor MP3 (Bluetooth). Alarma y 2 juegos de llaves. 1 mes de garantía."
-  },
-  {
-    "nombre": "Almohadillas sanitarias",
-    "categoria": "otros",
-    "precio": 2.476,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/producto.jpg",
-    "descripcion": "Sueños comodos"
-  },
-  {
-    "nombre": "Pasta dental",
-    "categoria": "otros",
-    "precio": 2.848,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/producto.jpg",
-    "descripcion": "Trae cepillo incluido"
-  },
-  {
-    "nombre": "Café español de alta calidad",
-    "categoria": "cafe",
-    "precio": 5.686,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/producto.jpg"
-  },
-  {
-    "nombre": "Chicharo verde",
-    "categoria": "pastas-y-granos",
-    "precio": 2.667,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/producto.jpg"
-  },
-  {
-    "nombre": "Frijol negro",
-    "categoria": "pastas-y-granos",
-    "precio": 3.048,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/producto.jpg",
-    "descripcion": "Paquete sellado 500 gramos.\nViene limpio"
-  },
-  {
-    "nombre": "Garbanzo",
-    "categoria": "pastas-y-granos",
-    "precio": 3.048,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/producto.jpg",
-    "descripcion": "Producto importado.\nPaquete sellado.\nViene limpio \n500 gramos"
-  },
-  {
-    "nombre": "Jugo tropical",
-    "categoria": "bebidas",
-    "precio": 2.848,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/producto.jpg",
-    "descripcion": "Producto importado.\n1 litro\nSabor : piña,naranja,\nPlatanito"
-  },
-  {
-    "nombre": "Mayonesa celorrio",
-    "categoria": "aderezos",
-    "precio": 6.095,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/producto.jpg",
-    "descripcion": "Producto importado.\n500 ml"
-  },
-  {
-    "nombre": "Galletas dulce , L amore",
-    "categoria": "confituras",
-    "precio": 1.333,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/producto.jpg"
-  },
-  {
-    "nombre": "Galletas golozetas",
-    "categoria": "confituras",
-    "precio": 2.971,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/producto.jpg",
-    "descripcion": "Paquete grande, trae 12 paquetitos de galletas. \nCada paquetito pequeño trae 4 unidades de galletas."
-  },
-  {
-    "nombre": "Dele chitas",
-    "categoria": "confituras",
-    "precio": 4.114,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/producto.jpg",
-    "descripcion": "Paquete grande \nContiene 18 paquete de galletitas"
-  },
-  {
-    "nombre": "Galleta renata",
-    "categoria": "confituras",
-    "precio": 1.067,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/galletas_brinky.jpg",
-    "descripcion": "Poco dulce al estilo maria"
-  },
-  {
-    "nombre": "Nutella con avellana",
-    "categoria": "confituras",
-    "precio": 4.571,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/producto.jpg"
-  },
-  {
-    "nombre": "Chocolate en polvo",
-    "categoria": "despensa",
-    "precio": 3.8,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/producto.jpg",
-    "descripcion": "350 gramos"
-  },
-  {
-    "nombre": "Lorena Peter",
-    "categoria": "confituras",
-    "precio": 0.762,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/producto.jpg",
-    "descripcion": "Peter chocolate blanco"
   }
 ]
