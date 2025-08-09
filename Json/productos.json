@@ -1698,7 +1698,9 @@
     "imagen": "img/products/motos_elctricas.jpg",
     "descripcion": "Marca: TOP MAQ  Raptor. 1 mes de garantía. Motor de 3000w .Batería de 72v/45HA. Autonomía de 100-120km. 3 velocidades y retroceso. Reproductor MP3 (Bluetooth). Alarma y 2 juegos de llaves. 1 mes de garantía."
   },
-  {
+
+
+    {
     "nombre": "Arroz Importado 1kg",
     "categoria": "pastas-y-granos",
     "precio": 2.762,
@@ -1708,7 +1710,8 @@
     "disponible": true,
     "imagen": "img/products/arroz_importado.jpg",
     "descripcion": "Disfruta de la calidad y el sabor del Arroz Ricas del Campo. Este arroz gourmet de 1000g es perfecto para crear platos exquisitos. Naturalmente libre de colesterol y grasas trans, es una opción saludable para toda la familia. Su grano blanco y brillante, de alta calidad, asegura una cocción uniforme y resultados deliciosos en cada receta. Ideal para risottos, paellas o como acompañamiento perfecto, este arroz es un básico imprescindible en tu cocina.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Mascarilla capilar 2 en 1 (Potão do Amor)",
@@ -1720,7 +1723,8 @@
     "disponible": true,
     "imagen": "img/products/tratamiento_en_crema.jpg",
     "descripcion": "Potão do Amor de Skala Expert es un tratamiento en crema multifuncional diseñado para cabellos dañados. Con sus 18 elementos nutritivos, este producto 2 en 1 actúa como crema para peinar y crema hidratante. Libre de parabenos, sulfatos, siliconas y petrolatos, es ideal para quienes buscan una rutina de cuidado capilar más natural. Su fórmula liberada y vegana repara y revitaliza los cabellos, devolviéndoles suavidad, brillo y vitalidad. Este envase de 1000g ofrece un tratamiento completo y duradero para un cabello sano y radiante.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Mascarilla capilar 2 en 1 (Divina Dama)",
@@ -1732,7 +1736,8 @@
     "disponible": true,
     "imagen": "img/products/tratamiento_en_crema_2.jpg",
     "descripcion": "Divina Dama de Skala Expert es un tratamiento en crema multifuncional 2 en 1, perfecto para cabellos con química o teñidos. Esta fórmula enriquecida con Proteínas de Arroz, Vitamina E, Aminoácidos, Aceite de Linaza y Aceite de Coco, ofrece una intensa reparación y un brillo deslumbrante. Su composición 100% vegana y libre de ingredientes de origen animal, junto a su fórmula liberada, garantiza un cuidado delicado y efectivo. Se puede utilizar como crema para peinar o como crema hidratante, revitalizando y protegiendo el color de tu cabello en un envase de 1000g.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Mascarilla capilar 2 en 1 (Mais Cachos)",
@@ -1744,7 +1749,8 @@
     "disponible": true,
     "imagen": "img/products/tratamiento_en_crema_3.jpg",
     "descripcion": "Mais Cachos de Skala Brasil es una crema de tratamiento 2 en 1 ideal para cabellos rizados y crespos. Su fórmula, enriquecida con una mezcla de Aceites de Argán, Coco, Patauá y Extracto de Amaranto, proporciona fuerza, hidratación y un desenredo perfecto. Este producto 100% vegano y liberado de parabenos, petrolatos, siliconas y aceite mineral, es un aliado para definir rizos y mantener la salud capilar. Utilizable como crema de tratamiento o como crema para peinar, este envase de 1000g ofrece un cuidado especializado y nutritivo para tu cabello.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "La vida de vivi",
@@ -1756,7 +1762,8 @@
     "disponible": true,
     "imagen": "img/products/perfume_la_vida_de_vivi.jpg",
     "descripcion": "La Vida de Vivi es un Eau de Parfum para mujer, una fragancia que captura la esencia de la feminidad moderna. Presentado en un elegante frasco de 100 ml con un delicado lazo rosa, este perfume evoca una sensación de alegría y sofisticación. Su aroma, vaporisateur natural spray, ofrece una estela duradera y memorable, perfecta para el uso diario o para ocasiones especiales. Es el complemento ideal para la mujer que vive intensamente cada momento, dejando una huella inolvidable a su paso.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Aquarino",
@@ -1768,7 +1775,8 @@
     "disponible": true,
     "imagen": "img/products/perfume_aquarino.jpg",
     "descripcion": "Aquarino Pour Homme es un perfume diseñado para el hombre moderno que busca frescura y elegancia. Su frasco esmerilado y minimalista refleja la pureza y la claridad de su fragancia, ideal para el uso diario. Con una esencia que evoca la brisa marina y la vitalidad, este perfume se convierte en un accesorio indispensable para cualquier ocasión, dejando una impresión sutil pero duradera. Aquarino es la elección perfecta para aquellos que prefieren aromas limpios y sofisticados.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Pack Caramelos de leche",
@@ -1780,7 +1788,8 @@
     "disponible": true,
     "imagen": "img/products/caramelo_de_leche.jpg",
     "descripcion": "Sumérgete en la dulzura tradicional de los caramelos de leche de Diana. Esta bolsa de 154g contiene deliciosos caramelos blandos con sabor a leche y mantequilla, una golosina clásica que deleita a grandes y pequeños. Con 60 calorías por porción, estos caramelos son perfectos para un pequeño capricho en cualquier momento del día. Su textura suave y su sabor cremoso los convierten en una tentación irresistible. Ideal para compartir o disfrutar en solitario, este clásico caramelo es un básico en tu despensa.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Crema Corporal (Vainilla)",
@@ -1792,7 +1801,8 @@
     "disponible": true,
     "imagen": "img/products/crema_corporal_amarilla.jpg",
     "descripcion": "Experimenta una piel suave y seductora con la crema corporal ultra-rica XtraCare de Vainilla Sugar. Esta crema, en un práctico envase de 7oz (198g), está formulada para hidratar y suavizar la piel profundamente, dejando una sensación de lujo y un aroma irresistible. Su fragancia a vainilla y azúcar te envuelve en una experiencia dulce y reconfortante. Perfecta para el cuidado diario, esta crema se absorbe rápidamente sin dejar sensación grasosa, ofreciendo una hidratación duradera para una piel radiante y saludable.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Crema Corporal (Lavanda y Manzanilla)",
@@ -1804,7 +1814,8 @@
     "disponible": true,
     "imagen": "img/products/crema_corporal_morada.jpg",
     "descripcion": "Consiéntete con la crema corporal ultra-rica XtraCare de Lavanda y Manzanilla. Esta fórmula, presentada en un envase de 7oz (198g), está diseñada para hidratar y suavizar la piel intensamente. Su relajante aroma a lavanda y manzanilla te envuelve en una experiencia calmante, ideal para un momento de autocuidado. La crema se absorbe rápidamente, proporcionando una hidratación profunda y duradera que deja la piel increíblemente suave y con un aroma delicado. Es el complemento perfecto para tu rutina diaria de cuidado corporal, ayudando a relajar la mente y nutrir la piel al mismo tiempo.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Crema Corporal (Coco y Lima)",
@@ -1816,7 +1827,8 @@
     "disponible": true,
     "imagen": "img/products/crema_corporal_verde.jpg",
     "descripcion": "Sumérgete en una experiencia tropical con la crema corporal ultra-rica XtraCare Signature de Coco y Lima. Esta crema, en un envase de 7oz (198g), está formulada para hidratar y suavizar la piel, dejándola con un aroma fresco y revitalizante. La combinación de coco cremoso y la acidez de la lima evoca la sensación de un paraíso exótico, perfecta para quienes buscan un toque de frescura en su rutina diaria. Su fórmula se absorbe rápidamente, proporcionando una hidratación duradera sin dejar residuos grasos. Es ideal para el cuidado diario, dejando la piel radiante y delicadamente perfumada.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Crema Corporal (Cherry Blossom)",
@@ -1828,7 +1840,8 @@
     "disponible": true,
     "imagen": "img/products/crema_corporal_rosa.jpg",
     "descripcion": "Sumérgete en la delicadeza floral con la crema corporal ultra-rica XtraCare Signature de Cherry Blossom. Presentada en un envase de 7oz (198g), esta crema hidrata y suaviza la piel intensamente, dejándola con un aroma dulce y femenino a flor de cerezo. Su fórmula ligera se absorbe rápidamente sin dejar sensación grasosa, proporcionando una hidratación profunda y duradera. Ideal para el uso diario, esta crema no solo nutre tu piel, sino que también te envuelve en una fragancia sutil y encantadora, perfecta para complementar tu rutina de belleza.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Cesto para ropa",
@@ -1840,7 +1853,8 @@
     "disponible": true,
     "imagen": "img/products/cesto_de_ropa.jpg",
     "descripcion": "Organiza tu ropa sucia con el práctico cesto de ropa Florida. Este cesto de color azul, con un diseño calado tanto en el cuerpo como en la tapa, permite una excelente ventilación, evitando la acumulación de malos olores. Su estructura de plástico resistente y duradero es ideal para el uso diario en el baño, lavadero o dormitorio. Con un diseño moderno y funcional, este cesto es una solución sencilla y elegante para mantener el orden en tu hogar.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Refresco Fresko",
@@ -1852,7 +1866,8 @@
     "disponible": true,
     "imagen": "img/products/refresco_fresko.jpg",
     "descripcion": "Sabor según disponibilidad del momento. Disfruta de una explosión de sabor con la gama de refrescos Fresko. Esta colección incluye cuatro deliciosas y vibrantes opciones: Naranja, Limón-Lima, Cola y Tutti Frutti. Cada botella de 600 ml te ofrece una bebida refrescante y llena de burbujas, perfecta para calmar la sed en cualquier momento del día. Con sus colores llamativos y sabores intensos, los refrescos Fresko son ideales para acompañar tus comidas, para una reunión con amigos o simplemente para darte un gusto.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Kremato",
@@ -1864,7 +1879,8 @@
     "disponible": true,
     "imagen": "img/products/kremato.jpg",
     "descripcion": "Refresca tu paladar con la inconfundible mezcla de sabores de Kermato. Esta bebida, presentada en una práctica lata, es una fusión única que combina el frescor del tomate con un toque picante y notas de especias. Con advertencias de exceso de calorías y azúcares, esta bebida es ideal para quienes buscan un sabor intenso y diferente. Perfecta para acompañar tus comidas, como base para cócteles o simplemente para disfrutarla sola, Kermato es una experiencia de sabor audaz y refrescante.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Agua Natural Ciego Montero 500ml",
@@ -1876,7 +1892,8 @@
     "disponible": true,
     "imagen": "img/products/agua_natural.jpg",
     "descripcion": "Mantén la hidratación con el paquete de agua natural, una opción saludable y conveniente para el día a día. Este pack contiene varias botellas de agua purificada, ideales para llevar contigo al trabajo, al gimnasio o en tus viajes. Con su sabor limpio y fresco, esta agua es perfecta para rehidratar el cuerpo en cualquier momento. El diseño práctico de las botellas facilita su transporte, asegurando que siempre tengas a mano la mejor fuente de hidratación para ti y tu familia.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Limpiador Multiuso Royal Cleaner",
@@ -1888,7 +1905,8 @@
     "disponible": true,
     "imagen": "img/products/limpiador_multiuso.jpg",
     "descripcion": "Mantén tu hogar impecable con el Limpiador Multiuso Royal Cleaner. Este potente limpiador antibacteriano, en un generoso envase de 900 ml, es ideal para desinfectar y limpiar todo tipo de superficies, eliminando suciedad y gérmenes de manera efectiva. Su fórmula concentrada ofrece un poder desinfectante superior, dejando un aroma fresco y una limpieza duradera. Es el aliado perfecto para la higiene de tu cocina, baño y otras áreas de la casa, garantizando un ambiente limpio y seguro para toda la familia.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Limpiador Multiuso Royal Cleaner Aroma a Limón",
@@ -1900,7 +1918,8 @@
     "disponible": true,
     "imagen": "img/products/limpiador_multiuso_2.jpg",
     "descripcion": "Dale un toque de frescura y limpieza a tu hogar con el Limpiador Multiuso Royal Cleaner Aroma a Limón. Este limpiador, en un práctico envase, ofrece un poder desinfectante y antibacteriano, ideal para mantener tus superficies libres de gérmenes y suciedad. Su fragancia a limón deja un aroma fresco y revitalizante que perdura en el ambiente, creando una sensación de limpieza profunda. Es perfecto para usar en múltiples superficies de la casa, garantizando un hogar impecable y agradablemente perfumado.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Toallas Sanitarias Princesa (10u)",
@@ -1912,7 +1931,8 @@
     "disponible": true,
     "imagen": "img/products/almohadillas_sanitarias.jpg",
     "descripcion": "Las Toallas Sanitarias Princesa de Algodón ofrecen una protección cómoda y confiable para uso diurno y nocturno. Con su diseño con alas, aseguran un ajuste seguro y evitan fugas, brindando máxima absorción y tranquilidad durante todo el día. Este paquete contiene 10 toallas, cada una diseñada para ofrecerte la suavidad y el cuidado que necesitas. Su capa superior de algodón minimiza la irritación y proporciona una sensación de frescura, ideal para una protección completa y discreta.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Jabones de baño Harmony",
@@ -1924,7 +1944,8 @@
     "disponible": true,
     "imagen": "img/products/jabones_harmony.jpg",
     "descripcion": "Mima tu piel con la variedad de jabones de baño Harmony. Este surtido incluye cinco jabones, cada uno con un delicioso aroma a frutas: Manzana, Naranja, Limón, Fresa y Uva. Enriquecidos con extra humectación, estos jabones no solo limpian eficazmente, sino que también dejan tu piel suave, hidratada y delicadamente perfumada. Con su espuma cremosa y su fórmula nutritiva, cada ducha se convierte en una experiencia sensorial y refrescante.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Marshmallows Recubiertos de chocolate",
@@ -1936,7 +1957,8 @@
     "disponible": true,
     "imagen": "img/products/mashmallows.jpg",
     "descripcion": "Disfruta de la suave y deliciosa combinación de los marshmallows Manchas de Guandy. Cada paquete contiene malvaviscos cubiertos de una capa de rico chocolate, creando una experiencia dulce y reconfortante. Con un peso neto de 26g (0.9oz), son el tamaño perfecto para un capricho rápido o un snack dulce. La textura esponjosa de los malvaviscos se complementa a la perfección con el sabor intenso del chocolate, haciendo de este dulce una opción irresistible.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Línea capilar Brazilian de HT (Coco y Fresa)",
@@ -1948,7 +1970,8 @@
     "disponible": true,
     "imagen": "img/products/linea_shampo_acondicionador.jpg",
     "descripcion": "La línea capilar Brazilian de HT, con su irresistible aroma a Coco y Fresa, es el dúo perfecto para el cuidado de tu cabello. Este set incluye un champú y un acondicionador de 500 ml cada uno, formulados sin sal y sin parabenos. Enriquecidos con Aceite de Coco y Fresa, estos productos ofrecen fuerza, resistencia y protección para todo tipo de cabello. El champú limpia suavemente mientras que el acondicionador hidrata y suaviza, dejando el cabello sedoso, brillante y con un delicioso aroma. Es la combinación ideal para una rutina de cuidado capilar completa y nutritiva.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Champú y Acondicionador Brazilian de HT (Aceite de Coco)",
@@ -1960,7 +1983,8 @@
     "disponible": true,
     "imagen": "img/products/linea_shampo_acondicionador_2.jpg",
     "descripcion": "Revitaliza tu cabello con el set de champú y acondicionador Brazilian de HT, ahora en su presentación de 1 litro. Con una fórmula a base de Aceite de Coco, esta línea ofrece fuerza, resistencia y protección para todo tipo de cabello. El champú limpia suavemente, mientras que el acondicionador hidrata y nutre en profundidad, dejando el cabello suave, brillante y con un aroma tropical. Estos productos son ideales para quienes buscan un cuidado capilar completo y duradero, proporcionando una experiencia de limpieza y suavidad que transforma tu rutina de belleza.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Toallas sanitarias Sueños Cómodos (30u)",
@@ -1972,7 +1996,8 @@
     "disponible": true,
     "imagen": "img/products/almohadillas_sanitarias_2.jpg",
     "descripcion": "Proporciona una sensación de frescura y seguridad con las toallas sanitarias Sueños Cómodos. Su diseño anatómico está pensado para ofrecer una protección discreta y un ajuste perfecto, ideal para el uso diario. Estas toallas brindan una excelente absorción para mantenerte seca y cómoda durante todo el día. Con una superficie suave que cuida tu piel, son una opción confiable para sentirte segura y protegida en cualquier momento.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Palito Relleno de Leche",
@@ -1984,7 +2009,8 @@
     "disponible": true,
     "imagen": "img/products/plitos_de_leche.jpg",
     "descripcion": "Disfruta de un delicioso snack con el Palito Relleno de Leche. Este dulce, en un práctico empaque de 77g, se caracteriza por su fuerte y cremoso sabor a leche. La combinación de una crujiente capa exterior con un suave y dulce relleno de leche lo convierte en una golosina irresistible para cualquier momento del día. Perfecto para compartir, para una pausa dulce en el trabajo o para el recreo de los niños.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Almohadillas Sanitarias TB Care (40u)",
@@ -1996,7 +2022,8 @@
     "disponible": true,
     "imagen": "img/products/almohadillas_sanitarias_3.jpg",
     "descripcion": "Experimenta una sensación de frescura y limpieza con los protectores diarios TB Care. Este paquete contiene 40 liners regulares diseñados para ofrecer una protección discreta y cómoda en el uso diario. Su suave material y su forma anatómica se adaptan perfectamente, brindando una sensación de seguridad y confort. Son ideales para mantener la higiene y frescura durante todo el día, dándote la confianza que necesitas.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Esponjas para fregar",
@@ -2008,7 +2035,8 @@
     "disponible": true,
     "imagen": "img/products/esponjas.jpg",
     "descripcion": "Limpia tus platos y superficies con facilidad con este set de esponjas de cocina. Cada esponja combina una suave capa amarilla de celulosa para la limpieza general con una superficie verde abrasiva, ideal para fregar y eliminar manchas difíciles sin rayar. Su diseño ergonómico y su tamaño versátil las hacen perfectas para cualquier tarea de limpieza en la cocina, desde sartenes hasta cristalería. Son duraderas y eficientes, un básico indispensable para mantener tu hogar impecable.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Kit de cuidado oral Bendfresh",
@@ -2020,7 +2048,8 @@
     "disponible": true,
     "imagen": "img/products/pasta.jpg",
     "descripcion": "Descubre una protección bucal completa con el kit de cuidado oral Bendfresh. Este conjunto incluye una pasta de dientes de 100g con un refrescante sabor a menta y un cepillo de dientes de diseño ergonómico. La pasta dental está formulada para ofrecer tres tipos de eficacia, proporcionando dientes más blancos, un aliento fresco y un fortalecimiento de los dientes. Ideal para la higiene bucal diaria, este kit es una solución completa para mantener tu sonrisa sana y brillante.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Tigon",
@@ -2032,7 +2061,8 @@
     "disponible": true,
     "imagen": "img/products/tigon.jpg",
     "descripcion": "Potencia tu día con la bebida energética Tigon. Esta lata de 250ml está diseñada para darte un impulso de energía cuando más lo necesitas. Enriquecida con cafeína y taurina, esta bebida es la opción perfecta para mejorar tu rendimiento, concentración y vitalidad. Su diseño en lata, llamativo y de color rojo, es práctico y fácil de llevar contigo. Ideal para esos momentos en los que necesitas un extra de energía para el trabajo, el estudio o el deporte.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Café Bryderk",
@@ -2044,7 +2074,8 @@
     "disponible": true,
     "imagen": "img/products/cafe_bryderk.jpg",
     "descripcion": "Disfruta del auténtico sabor del Café Bryderk, un café español de alta calidad, diseñado especialmente para el gusto latino. Este café molido 100% tueste natural te ofrece un aroma intenso y un sabor profundo en cada taza. Su formato compacto es perfecto para conservar la frescura y el aroma por más tiempo. Ideal para los amantes del buen café, Bryderk es la opción perfecta para comenzar el día con energía o disfrutar de una pausa reconfortante.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Albóndigas en Salsa de Conservas Benimar",
@@ -2056,7 +2087,8 @@
     "disponible": true,
     "imagen": "img/products/albondigas_benimar.jpg",
     "descripcion": "Disfruta de una comida rápida y deliciosa con las Albóndigas en Salsa de Conservas Benimar. Este producto enlatado te ofrece albóndigas tiernas y sabrosas, sumergidas en una deliciosa salsa casera. Listas para calentar y servir, son la opción perfecta para esos días en los que necesitas una solución rápida sin sacrificar el sabor. Ideal como plato principal o como acompañamiento, las Albóndigas Benimar son una opción práctica y reconfortante para toda la familia.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Aceitunas Verdes con Hueso",
@@ -2068,7 +2100,8 @@
     "disponible": true,
     "imagen": "img/products/aceitunas.jpg",
     "descripcion": "Dale un toque mediterráneo a tus comidas con las Aceitunas Verdes con Hueso de Vima Foods. Este tarro de 290g (peso escurrido de 160g) contiene aceitunas de alta calidad, seleccionadas cuidadosamente para ofrecer un sabor auténtico y delicioso. Perfectas para aperitivos, ensaladas, pizzas o como acompañamiento en tus platos favoritos, estas aceitunas son un ingrediente versátil y lleno de sabor. Su textura firme y su sabor ligeramente salado las convierten en un indispensable en tu cocina.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Maestros aceituneros Coctel en vinagre",
@@ -2080,6 +2113,319 @@
     "disponible": true,
     "imagen": "img/products/maestro_aceitunero.jpg",
     "descripcion": "Degusta la mezcla perfecta de sabores clásicos con el cóctel de aceitunas y encurtidos de Maestros Aceituneros. Este tarro contiene una deliciosa combinación de aceitunas y otros vegetales en vinagre, ideal para aperitivos o para complementar tus comidas. Con una tradición desde 1960, Maestros Aceituneros te garantiza un producto de calidad con un sabor auténtico y lleno de matices. Es la opción perfecta para sorprender a tus invitados o simplemente para disfrutar de un snack sabroso y saludable en cualquier momento.",
-    "imagenesAdicionales": []
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Chicharo Seco",
+    "categoria": "pastas-y-granos",
+    "precio": 2.667,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/chicharo_seco.jpg",
+    "descripcion": "Las Lentejas Verdes de La Merced son un producto versátil y nutritivo, ideal para incluir en tu dieta diaria. Presentadas en un paquete de 1000g, estas lentejas secas son perfectas para preparar sopas, guisos, ensaladas o cremas, aportando un sabor delicioso y una gran cantidad de proteínas, fibras y minerales. Son un ingrediente esencial en la cocina para aquellos que buscan opciones saludables y de calidad.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Habichuelas blancas 500g",
+    "categoria": "pastas-y-granos",
+    "precio": 3.048,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/habichuelas_blancas.jpg",
+    "descripcion": "Las habichuelas blancas La Cata son legumbres de alta calidad, ideales para preparar una gran variedad de platos. Este paquete te ofrece frijoles blancos seleccionados, perfectos para sopas, guisos o ensaladas. Con su textura suave y su sabor delicado, son un ingrediente fundamental en la cocina tradicional y una excelente fuente de proteína vegetal, fibra y nutrientes esenciales.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Frijoles negros 500g",
+    "categoria": "pastas-y-granos",
+    "precio": 3.048,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/frijoles_negros.jpg",
+    "descripcion": "Los frijoles negros La Cata son una opción deliciosa y nutritiva para tus comidas. Este paquete de legumbres de 500g contiene frijoles negros seleccionados, ideales para preparar platos tradicionales y saludables. Ricos en fibra y proteínas, son el ingrediente perfecto para guisos, sopas, ensaladas y muchos más. Su sabor intenso y su textura suave los convierten en un indispensable en tu cocina, aportando un toque auténtico y familiar a tus recetas.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Frijol Rojo 500g",
+    "categoria": "pastas-y-granos",
+    "precio": 3.048,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/frijoles_rojos_2.jpg",
+    "descripcion": "Los frijoles rojos La Cata son legumbres de alta calidad, ideales para enriquecer tus comidas. Este paquete de 500g contiene frijoles rojos seleccionados, conocidos por su sabor robusto y su capacidad para absorber los sabores de las especias. Son perfectos para preparar guisos, sopas, chilis y ensaladas, aportando una gran cantidad de fibra, proteínas y otros nutrientes esenciales. Añade el \"sabor familiar\" de La Cata a tus recetas con estos deliciosos y nutritivos frijoles rojos.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Garbanzo 500g",
+    "categoria": "pastas-y-granos",
+    "precio": 3.048,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/garbanzo.jpg",
+    "descripcion": "Los garbanzos La Cata son legumbres de calidad, ideales para preparar una gran variedad de platos saludables y deliciosos. Este paquete de 500g contiene garbanzos seleccionados, perfectos para guisos, ensaladas, hummus o sopas. Con su textura firme y su sabor característico, son una excelente fuente de proteínas y fibra. Su versatilidad en la cocina y su alto valor nutricional los convierten en un ingrediente esencial para una dieta equilibrada.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Melocotones en almíbar",
+    "categoria": "enlatados",
+    "precio": 2.857,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/meocoton_almibar.jpg",
+    "descripcion": "Disfruta del dulce y refrescante sabor de los melocotones en almíbar de Vima Foods. Este producto enlatado te ofrece melocotones en mitades, sumergidos en un delicioso almíbar ligero. Con un peso neto de 425g y un peso escurrido de 230g, son perfectos para postres, ensaladas de frutas o como un snack rápido y dulce. Su sabor dulce y su textura suave los convierten en un manjar delicioso que puedes disfrutar en cualquier momento.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Peras en almíbar",
+    "categoria": "enlatados",
+    "precio": 2.857,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pera_almibar.jpg",
+    "descripcion": "Saborea la dulzura de las peras en almíbar de Vima Foods. Este producto enlatado te ofrece peras en mitades, conservadas en un ligero y delicioso almíbar. Con un peso neto de 425g (15oz) y un peso escurrido de 240g (8.5oz), son perfectas para disfrutar como postre, en ensaladas de frutas o para decorar tus pasteles. Su textura suave y jugosa, combinada con su sabor dulce, las convierte en un manjar delicioso y conveniente para tener siempre a mano.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Cóctel de frutas en almíbar",
+    "categoria": "enlatados",
+    "precio": 2.857,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/coctel_almibar.jpg",
+    "descripcion": "Sumérgete en una explosión de sabores con el cóctel de frutas en almíbar de Vima Foods. Esta lata de 425g (con un peso escurrido de 230g) contiene una deliciosa mezcla de frutas, ideal para postres, ensaladas de frutas o para decorar tus creaciones de repostería. Las frutas están sumergidas en un ligero almíbar que resalta su dulzura natural y las mantiene frescas y jugosas. Es la opción perfecta para añadir un toque de color y sabor a tus comidas, de forma rápida y conveniente.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Jugo Tropical",
+    "categoria": "bebidas",
+    "precio": 2.857,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/jugo_tropical.jpg",
+    "descripcion": "Satisface tu sed con el refrescante y delicioso néctar de frutas Tropical Goliath. Este jugo, en un práctico envase de 946 ml (32 fl oz), es una explosión de sabor tropical, enriquecido con vitamina C. La combinación de piña, naranja y banana te transporta a un paraíso exótico con cada sorbo. Perfecto para acompañar tus desayunos, para un snack en la tarde o simplemente para disfrutar de una bebida llena de sabor y vitaminas.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Jugo de Mango",
+    "categoria": "bebidas",
+    "precio": 2.857,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/jugo_mango.jpg",
+    "descripcion": "Descubre el vibrante y delicioso Néctar Tropical Goliath, una bebida refrescante que te transporta a un paraíso de sabores exóticos. Este envase de cartón de 946 ml presenta una mezcla irresistible de frutas tropicales, con imágenes destacadas de piña, naranja y plátano, sumergidas en un chorro de jugo refrescante. El diseño del empaque es atractivo, con un fondo de cielo azul y nubes que evocan frescura. En la parte inferior, se indica que es \"Hecho en Estados Unidos\", garantizando su procedencia. Además, el producto está enriquecido con vitamina C, ideal para un impulso de energía y bienestar en cualquier momento del día. Perfecto para disfrutar solo, con las comidas, o para preparar cócteles y batidos.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Jugo de Piña",
+    "categoria": "bebidas",
+    "precio": 2.857,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/jugo_pina.jpg",
+    "descripcion": "Sumérgete en la dulzura y el sabor tropical del Néctar de Piña Goliath, una bebida refrescante que captura la esencia de la fruta fresca. Este néctar se presenta en un práctico envase de cartón de 946 ml, con un diseño que evoca la frescura de una piña recién cortada, con rodajas flotando en un chorro de jugo dorado sobre un fondo de cielo azul. Es ideal para aquellos que buscan un sabor natural y un impulso de energía, ya que está fortificado con vitamina C, esencial para fortalecer el sistema inmunológico. El producto es Hecho en Estados Unidos, garantizando su calidad y origen. Disfruta de este néctar helado en cualquier momento del día, perfecto para acompañar tus comidas, o como base para cocteles y batidos veraniegos.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Pasta de Bocadito",
+    "categoria": "aderezos",
+    "precio": 6.857,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pasta_de_bocadito.jpg",
+    "descripcion": "La pasta para bocaditos de Aldaketa es el complemento perfecto para tus reuniones y aperitivos. Este producto se presenta en un práctico frasco de vidrio con tapa metálica, que permite conservar su frescura y sabor. La etiqueta, con su llamativo diseño en tonos de verde y rojo, destaca el nombre de la marca y la función principal del producto. La pasta, de un color rosado claro y textura cremosa, es ideal para untar en galletas saladas, pan tostado o para rellenar canapés. Su versatilidad la convierte en un ingrediente indispensable para sorprender a tus invitados con bocadillos rápidos y deliciosos. La imagen del bocadito en la etiqueta te da una pista de lo que puedes preparar, invitándote a explorar diferentes combinaciones de sabores.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Mayonesa Celorrio",
+    "categoria": "aderezos",
+    "precio": 6.095,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/mayonesa_celorrio.jpg",
+    "descripcion": "Descubre la cremosa y deliciosa Mayonesa Celorrio, un complemento esencial para tus platillos favoritos. Presentada en un práctico frasco de vidrio de 500 ml, esta mayonesa tiene una textura suave y un sabor equilibrado que la hace perfecta para ensaladas, sándwiches, papas fritas y mucho más. El envase destaca por su etiqueta en tonos azules y blancos, que proyecta frescura y calidad, con una imagen apetitosa de la mayonesa en un tazón. La tapa azul complementa el diseño y asegura un cierre hermético. Con Celorrio, puedes elevar el sabor de tus comidas cotidianas de manera sencilla y deliciosa.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "L'amore",
+    "categoria": "confituras",
+    "precio": 1.333,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/l_amore.jpg",
+    "descripcion": "Permítete un momento de placer con las galletas tipo sándwich L'amore. Este práctico empaque, en forma de tubo alargado, es ideal para compartir o para llevar contigo a donde vayas. La envoltura, con su diseño moderno en tonos plateados y negros, destaca el nombre de la marca en una tipografía elegante, mientras que una imagen clara de las galletas en su interior te tienta a dar el primer bocado. Cada galleta consiste en dos capas crujientes de chocolate oscuro que envuelven un delicioso relleno cremoso de cacao. Su sabor intenso y su textura perfecta las convierten en la opción ideal para acompañar tu café o té, o para darte un capricho dulce en cualquier momento del día.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Galletas Lora",
+    "categoria": "confituras",
+    "precio": 1.333,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/galletas_lora.jpg",
+    "descripcion": "Las galletas tipo sándwich Lora son una opción deliciosa y versátil para satisfacer tus antojos de dulce. El paquete, que se presenta en un práctico formato cilíndrico, es ideal para compartir o para llevar. La imagen muestra tres variedades de galletas, cada una con un sabor distintivo: una de chocolate en un envoltorio marrón, otra de fresa en un envoltorio rosa y una de vainilla, representada por el empaque verde. Cada galleta se compone de dos tapas crujientes y doradas que contienen un generoso relleno cremoso en el centro. El diseño de los paquetes es atractivo, con el nombre de la marca en letras grandes y curvadas. Estas galletas son el acompañante perfecto para un vaso de leche, café o té, y son una excelente opción para el postre o la merienda de los más pequeños.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Pack Golozetas (12u de paquetes)",
+    "categoria": "confituras",
+    "precio": 2.971,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/golozetas.jpg",
+    "descripcion": "Deléitate con las galletas tipo sándwich Goolozetas, la opción ideal para grandes y pequeños. Este producto se presenta en dos opciones de sabor: una en un vibrante empaque naranja con galletas de chocolate y relleno de vainilla, y otra en un fresco empaque verde con galletas de vainilla y relleno de limón. Cada paquete contiene 12 paquetes individuales, con un contenido neto de 417.6 gramos, perfectos para llevar a la escuela o la oficina. En la etiqueta, el nombre de la marca resalta con un diseño divertido y tipografía colorida, acompañada de ilustraciones de juegos y deportes que evocan un ambiente alegre y dinámico. La imagen de las galletas en la envoltura te muestra su relleno cremoso y delicioso. Estas galletas son la merienda perfecta o un delicioso postre para cualquier momento.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Pack galletas Delechitas (18u de paquetes)",
+    "categoria": "confituras",
+    "precio": 2.743,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/galletas_delechitas.jpg",
+    "descripcion": "Las galletas Delechitas son una deliciosa y nutritiva opción para la merienda de los más pequeños. Presentadas en un práctico empaque que contiene 18 paquetes individuales, estas galletas son ideales para llevar en la lonchera o para disfrutar en cualquier momento del día. El diseño del empaque es atractivo y amigable, con un fondo blanco y detalles azules que evocan la leche. En la etiqueta, dos tiernos personajes de vaquitas animadas, junto a la frase \"nutrición que te alimenta\", refuerzan su carácter nutritivo. Cada galleta tiene la forma de un caracol, un detalle que las hace más divertidas para los niños. Hechas con leche, estas galletas no solo son sabrosas, sino que también aportan la energía necesaria para las actividades diarias. El contenido neto total es de 276 gramos.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Galletas Renata",
+    "categoria": "confituras",
+    "precio": 1.333,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/galletas_renata.jpg",
+    "descripcion": "Disfruta de la simplicidad y el sabor clásico de las galletas de maicena Renata. Este paquete, con un peso neto de 200 gramos, presenta un diseño atractivo y funcional, en tonos de azul y naranja, que destaca el nombre de la marca. Las galletas, con su textura delicada y un toque dulce, son ideales para acompañar tu café o té por la mañana, o para disfrutar como una merienda ligera en cualquier momento. En la etiqueta se puede apreciar una imagen de las galletas y una taza de café, sugiriendo la combinación perfecta. El empaque también destaca que el producto contiene maíz, un ingrediente clave que le da su sabor y textura distintivos. Las galletas Renata Maizena son un deleite que te transportará a los sabores de la infancia.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Comino Molido",
+    "categoria": "despensa",
+    "precio": 6.857,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/comino.jpg",
+    "descripcion": "El comino molido de Badia es un condimento imprescindible para darle un toque de sabor a tus platillos. Este producto se presenta en un práctico envase de plástico transparente con tapa de color negro, que facilita su uso y dosificación. El frasco, de 2 onzas (56.7 gramos), te permite ver la calidad del comino molido. La etiqueta, con un fondo blanco, destaca el nombre de la marca BADIA en letras rojas, y Ground Cumin / Comino Molido en letras negras, asegurando que sepas exactamente lo que estás comprando. Además, se destaca con claridad que es un producto libre de gluten. Su sabor intenso y terroso es perfecto para sazonar carnes, sopas, guisos, y una gran variedad de platillos de la cocina internacional, especialmente la latinoamericana y la de Oriente Medio.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Sazón Completa ",
+    "categoria": "despensa",
+    "precio": 6.857,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/sazon_completo.jpg",
+    "descripcion": "El Sazón Completa Original de Badia es la mezcla de especias ideal para realzar el sabor de tus comidas de una manera sencilla y efectiva. Este producto se presenta en un envase de plástico transparente de 12 onzas (340.2 gramos), con una tapa de color verde oscuro, que conserva la frescura de los ingredientes. La etiqueta resalta con el nombre de la marca en un fondo verde y blanco, acompañada de ilustraciones de especias frescas como ajo, pimienta negra y hojas de albahaca, que sugieren los sabores principales de la mezcla. Además, se destaca que es un producto libre de gluten. Es una opción versátil y práctica para sazonar carnes, aves, pescados, vegetales y sopas. Con Badia Complete Seasoning, no necesitas múltiples condimentos, ya que tienes todo el sabor en un solo frasco.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Fideos de Ada",
+    "categoria": "pastas-y-granos",
+    "precio": 1.333,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/fideos_ada.jpg",
+    "descripcion": "Presentamos la pasta tipo fideos Macarrones de la selección gourmet de la marca Ada, un producto de alta calidad ideal para enriquecer tus sopas, guisos y platillos orientales. En este práctico empaque de 500 gramos, puedes apreciar la finura de los fideos, garantizando una cocción rápida y uniforme. El diseño del empaque es elegante y llamativo, con un fondo transparente que deja ver el producto, y una franja dorada en la parte inferior que evoca sofisticación. En la etiqueta se aprecia el nombre de la marca y la descripción del producto en varios idiomas, indicando que se trata de Macarrones / Premium Pasta. Con Ada, disfrutarás de una pasta que se mantendrá firme y deliciosa, convirtiendo cada comida en una experiencia culinaria excepcional.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Nutella con crema de avellana  Rayan",
+    "categoria": "confituras",
+    "precio": 4.571,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/nutela_con_crema.jpg",
+    "descripcion": "Experimenta una explosión de sabor con la crema untable Rayan de chocolate y avellana, una deliciosa mezcla que combina dos cremas en un mismo frasco. Este producto se presenta en un envase de plástico transparente con tapa blanca, lo que te permite apreciar la atractiva espiral de crema de chocolate y crema blanca, que evocan la mezcla perfecta de sabores. En la etiqueta se destaca el nombre de la marca RAYAN en letras rojas y grandes. Además, se aprecia una imagen de un panecillo untado con la crema, rodeado de avellanas y chocolate, que invitan a disfrutar de este producto en cualquier momento del día. Ideal para untar en pan, galletas o para usar en postres, esta crema es un capricho que no puede faltar en tu despensa.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Caja Emoji Chocolate (trae más de 50u)",
+    "categoria": "confituras",
+    "precio": 16.381,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/caja_de_emojis.jpg",
+    "descripcion": "Permítete un momento de felicidad con esta caja de bombones de chocolate con leche de la marca Elit. Este divertido y atractivo producto se presenta en un empaque de dos partes: una caja de cartón roja en la parte superior y un compartimento de plástico transparente en la parte inferior, que te permite ver los deliciosos bombones con forma de emojis sonrientes. El diseño de la caja es muy llamativo, con ilustraciones de emojis de colores amarillos que proyectan alegría y diversión. Cada bombón está envuelto individualmente en papel amarillo, con la imagen de un emoji, lo que lo hace perfecto para compartir en fiestas o como un regalo divertido. Con un peso neto de 200 gramos, esta caja de Elit es la opción ideal para deleitar a grandes y pequeños con un toque de dulzura.",
+    "imagenesAdicionales": [],
+    "nuevo": true
+  },
+  {
+    "nombre": "Chocolate en Polvo",
+    "categoria": "despensa",
+    "precio": 3.79,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/chocolate_polvo.jpg",
+    "descripcion": "Polvo para preparar una deliciosa bebida con sabor a chocolate, Valle Azul instantáneo es la opción perfecta para disfrutar en cualquier momento del día. Su empaque individual de 70g lo hace ideal para una porción, garantizando frescura y sabor en cada taza. Fácil de preparar, este polvo se disuelve rápidamente en leche fría o caliente, creando una bebida cremosa y con un rico aroma a chocolate. Es una excelente opción para el desayuno o la merienda de los niños, o como un postre indulgente para los adultos. Disfruta de un momento dulce y reconfortante con esta bebida.",
+    "imagenesAdicionales": [],
+    "nuevo": true
   }
 ]
