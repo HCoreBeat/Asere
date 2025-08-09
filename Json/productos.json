@@ -1183,7 +1183,7 @@
   {
     "nombre": "Lomo de cerdo deshuesado x Lb",
     "categoria": "carnes",
-    "precio": 2.81,
+    "precio": 3.333,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -1698,9 +1698,7 @@
     "imagen": "img/products/motos_elctricas.jpg",
     "descripcion": "Marca: TOP MAQ  Raptor. 1 mes de garantía. Motor de 3000w .Batería de 72v/45HA. Autonomía de 100-120km. 3 velocidades y retroceso. Reproductor MP3 (Bluetooth). Alarma y 2 juegos de llaves. 1 mes de garantía."
   },
-
-
-    {
+  {
     "nombre": "Arroz Importado 1kg",
     "categoria": "pastas-y-granos",
     "precio": 2.762,
