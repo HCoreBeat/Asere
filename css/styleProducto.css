@@ -239,11 +239,30 @@
     border-radius: 8px;
 }
 
+#imagen-principal-container::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 65px;
+    height: 65px;
+    background-image: url('../img/Slogan.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    mix-blend-mode: multiply;
+    filter: contrast(1.2) brightness(0.9);
+    opacity: 0.85;
+}
+
 #detalle-imagen {
     width: 100%;
     height: 100%;
     object-fit: contain;
     transition: opacity 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
 
 /* Miniaturas laterales (SOLO PC) */
@@ -899,6 +918,8 @@
 
 .mas-vendidos-container .producto .producto-contenedor{
     margin-top: 35px;
+    position: relative;
+    overflow: visible;
 }
 
 /* Efecto hover sobre cada producto */
@@ -934,7 +955,7 @@
     width: 100%;
     height: auto;
     box-sizing: border-box;
-    overflow: hidden;
+    position: relative;
 }
 
 .producto:hover {
@@ -947,6 +968,24 @@
     margin: 15px 10px;
     height: 160px;
     overflow: hidden;
+    position: relative;
+}
+
+.producto-img::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 45px;
+    height: 45px;
+    background-image: url('../img/Slogan.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    mix-blend-mode: multiply;
+    filter: contrast(1.2) brightness(0.9);
+    opacity: 0.85;
 }
 
 .producto-img img {
@@ -955,6 +994,8 @@
     object-fit: cover;
     border-radius: 8px;
     padding-top: 5px;
+    position: relative;
+    z-index: 1;
 }
 
 /* Disponibilidad */
@@ -1010,6 +1051,7 @@
 .etiqueta-segmento{
     display: block;
     position: absolute;
+    z-index: 100;
 }
 
 /* Información del producto */
@@ -1152,4 +1194,89 @@
 .panel-btn-volver{
     display: flex;
     justify-content: center;
+}
+
+/* Badge for new products */
+.badge.nuevo {
+    background: url('../img/badge_new.png') no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 15px;
+    left: 65px;
+    transform: translate(100%, -30%);
+    z-index: 10;
+    padding: 0;
+    border-radius: 0;
+    font-size: 0;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+}
+
+.badge.nuevo:hover {
+    transform: translate(25%, -25%) scale(1.1);
+}
+
+.badge.nuevo:hover {
+    transform: scale(1.1);
+}
+
+/* Indicator for categories with new products */
+.nuevo-indicator {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    background: linear-gradient(135deg, #2A9D8F, #31c8c8);
+    border-radius: 50%;
+    margin-left: 10px;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(42, 157, 143, 0.25);
+}
+
+.nuevo-indicator::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: pulseNew 1.5s ease-out infinite;
+}
+
+@keyframes shine {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+@keyframes pulseNew {
+    0% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(33, 150, 243, 0.4);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(33, 150, 243, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(33, 150, 243, 0);
+    }
 }
