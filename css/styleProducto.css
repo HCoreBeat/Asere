@@ -896,30 +896,50 @@
 .mas-vendidos-container .producto {
     flex: 0 0 auto;
     width: 180px;
-    height: 275px;
+    min-height: 220px;
     scroll-snap-align: start;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 1px;
-}
-.mas-vendidos-container .producto .disponibilidad{
-    display: none;
-}
-.mas-vendidos-container .producto .cantidad-carrito-contenedor{
-    display: none;
-}
-.mas-vendidos-container .producto .descuento{
-    display: none;
-}
-
-.mas-vendidos-container .producto .nombre{
-    position: absolute;
-    top: 0;
-}
-
-.mas-vendidos-container .producto .producto-contenedor{
-    margin-top: 35px;
+    border-radius: 8px;
+    padding: 10px;
     position: relative;
-    overflow: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+.mas-vendidos-container .producto .producto-contenedor {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.mas-vendidos-container .producto .nombre {
+    font-size: 0.9em;
+    line-height: 1.2;
+    margin: 0 0 8px 0;
+    max-height: 2.4em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    order: 1;
+}
+
+.mas-vendidos-container .producto .etiqueta-segmento {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    max-width: calc(100% - 10px);
+}
+
+.mas-vendidos-container .producto .disponibilidad,
+.mas-vendidos-container .producto .cantidad-carrito-contenedor,
+.mas-vendidos-container .producto .descuento {
+    display: none;
 }
 
 /* Efecto hover sobre cada producto */
