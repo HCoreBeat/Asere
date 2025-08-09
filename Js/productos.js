@@ -122,8 +122,10 @@ window.renderProductos = function() {
 
         const etiquetaOferta = producto.oferta ? `<span class="etiqueta oferta producto-oferta">Oferta</span>` : '';
         const etiquetaMasVendido = producto.mas_vendido ? `<div class="badge mas-vendido producto-masvendido">Más Vendido</div>` : '';
+        const etiquetaNuevo = producto.nuevo ? `<div class="badge nuevo">Nuevo</div>` : '';
 
         productoDiv.innerHTML = `
+            ${etiquetaNuevo}
             <div class="producto-contenedor">
             <p class="nombre">${producto.nombre}</p>
                 <div class="etiqueta-segmento">
@@ -153,7 +155,9 @@ window.renderProductos = function() {
         // Ocultar botones y cantidad cuando el producto no está disponible
         const botonesCantidad = productoDiv.querySelector('.cantidad-carrito-contenedor');
         if (!producto.disponible) {
-            botonesCantidad.style.display = "none"; // Ocultar los botones de cantidad y el botón "Agregar al carrito"
+            if (botonesCantidad) {
+                botonesCantidad.style.display = "none"; // Ocultar los botones de cantidad y el botón "Agregar al carrito"
+            }
         }
 
         masVendidosContainer.appendChild(productoDiv);
@@ -203,21 +207,30 @@ window.renderProductos = function() {
             "frutas": "fa-apple-alt",
             "cafe": "fa-coffee",
             "carnes": "fa-drumstick-bite",
-            "enlatados": "fa-box-open",
-            "aderezos": "fa-utensils",
-            "agro": "fa-box",
-            "pastas-y-granos": "fa-boxes",
+            "enlatados": "fa-box-archive",
+            "aderezos": "fa-pepper-hot",
+            "agro": "fa-seedling",
+            "pastas-y-granos": "fa-wheat-awn",
             "lacteos": "fa-cheese",
-            "despensa": "fa-mug-hot",
-            "bebidas": "fa-coffee",
+            "despensa": "fa-kitchen-set",
+            "bebidas": "fa-glass-water",
             "alcohol": "fa-wine-bottle",
-            "cakes": "fa-birthday-cake",
-            "confituras": "fa-birthday-cake",
+            "cakes": "fa-cake-candles",
+            "confituras": "fa-candy-cane",
             "otros": "fa-ellipsis-h",
-            "all": "fa-bars"
+            "all": "fa-bars",
+            "vehículos": "fa-motorcycle",
+            "electrodomesticos": "fa-plug",
+            "aseo": "fa-spray-can-sparkles",
+            "fragancias": "fa-spray-can",
+            "perfumes": "fa-spray-can"
         };
         // Determinar el ícono
         const iconClass = iconosCategorias[categoria] || "fa-tag";
+        
+        // Check for new products in the category
+        const hayNuevos = productosDisponibles.some(p => p.categoria === categoria && p.nuevo);
+
         // Crear el título de la categoría con ícono
         const categoriaTitle = document.createElement("h2");
         categoriaTitle.className = "categoria-titulo-visual";
@@ -225,6 +238,7 @@ window.renderProductos = function() {
             <span class="categoria-titulo-bg">
                 <i class="fas ${iconClass}"></i>
                 <span class="categoria-titulo-nombre">${categoria.charAt(0).toUpperCase() + categoria.slice(1).replace(/-/g, ' ')}</span>
+                ${hayNuevos ? '<span class="nuevo-indicator"></span>' : ''}
             </span>
         `;
         categoriaDiv.appendChild(categoriaTitle);
@@ -259,12 +273,14 @@ window.renderProductos = function() {
 
             const etiquetaOferta = producto.oferta ? `<span class="etiqueta oferta producto-oferta">Oferta</span>` : '';
             const etiquetaMasVendido = producto.mas_vendido ? `<div class="badge mas-vendido producto-masvendido">Más Vendido</div>` : '';
+            const etiquetaNuevo = producto.nuevo ? `<div class="badge nuevo">Nuevo</div>` : '';
 
             productoDiv.innerHTML = `
                 <div class="producto-contenedor">
                     <div class="etiqueta-segmento">
                         ${etiquetaMasVendido}
                         ${etiquetaOferta}
+                        ${etiquetaNuevo}
                     </div>
                     <div class="producto-img">
                         <img src="${producto.imagen}" alt="${producto.nombre}">
@@ -296,7 +312,9 @@ window.renderProductos = function() {
             // Ocultar botones y cantidad cuando el producto no está disponible
             const botonesCantidad = productoDiv.querySelector('.cantidad-carrito-contenedor');
             if (!producto.disponible) {
-                botonesCantidad.style.display = "none"; // Ocultar los botones de cantidad y el botón "Agregar al carrito"
+                if (botonesCantidad) {
+                    botonesCantidad.style.display = "none"; // Ocultar los botones de cantidad y el botón "Agregar al carrito"
+                }
             }
 
             categoriaProductosContainer.appendChild(productoDiv);
@@ -418,7 +436,7 @@ window.renderProductos = function() {
         if (combo.ahorro) {
             const savings = document.createElement("div");
             savings.className = "pack-savings";
-            savings.textContent = `Ahorras $${combo.ahorro.toFixed(2)}`;
+            savings.textContent = `Ahorras ${combo.ahorro.toFixed(2)}`;
             packCard.appendChild(savings);
         }
 
