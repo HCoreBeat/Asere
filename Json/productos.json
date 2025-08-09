@@ -399,12 +399,12 @@
   {
     "nombre": "Aceite Fritura 900ml",
     "categoria": "despensa",
-    "precio": 4,
-    "descuento": 10,
+    "precio": 2.762,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Aceite_Fritura.jpeg",
-    "disponible": true
+    "disponible": true,
+    "imagen": "img/products/Aceite_Fritura.jpeg"
   },
   {
     "nombre": "Aceite refinado de girasol 1L",
