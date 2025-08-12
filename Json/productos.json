@@ -83,12 +83,12 @@
   {
     "nombre": "Picadillo Especial 400g",
     "categoria": "carnes",
-    "precio": 1.905,
-    "descuento": 0,
+    "precio": 1.876,
+    "descuento": 24.37,
     "oferta": true,
     "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/Picadillo_Especial.jpg"
+    "imagen": "img/products/Picadillo_Especial.jpg",
+    "disponible": false
   },
   {
     "nombre": "Jamón de Primera x Lb",
@@ -400,12 +400,12 @@
   {
     "nombre": "Aceite Fritura 900ml",
     "categoria": "despensa",
-    "precio": 4,
-    "descuento": 10,
+    "precio": 2.762,
+    "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Aceite_Fritura.jpeg",
-    "disponible": true
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/Aceite_Fritura.jpeg"
   },
   {
     "nombre": "Aceite refinado de girasol 1L",
