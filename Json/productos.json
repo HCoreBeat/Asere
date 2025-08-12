@@ -131,14 +131,15 @@
     "disponible": false
   },
   {
-    "nombre": "Pack de 4 Hamburguesas de pollo",
+    "nombre": "Pack de 4 Hamburguesas de cerdo",
     "categoria": "carnes",
-    "precio": 1.8,
-    "descuento": 10,
+    "precio": 3.714,
+    "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
+    "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/Pack_de_4_Hamburguesas_de_Pollo.jpg",
-    "disponible": true
+    "descripcion": "100% de carnes nada de invento.\nCalidad garantizada.\nSin harina agregada..\n\nSolo pura carne ."
   },
   {
     "nombre": "Hígado de cerdo x Lb",
