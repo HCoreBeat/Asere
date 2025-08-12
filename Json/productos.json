@@ -721,12 +721,12 @@
   {
     "nombre": "Garbanzos (500g)",
     "categoria": "pastas-y-granos",
-    "precio": 3.048,
-    "descuento": 0,
+    "precio": 3.047,
+    "descuento": 10,
     "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
+    "mas_vendido": false,
     "imagen": "img/products/garbanzos.jpg",
+    "disponible": false,
     "descripcion": "Los garbanzos secos de Huerto San Genaro, presentados en un paquete de diseño verde con detalles de espirales y una ventana transparente, garantizan calidad y autenticidad en cada grano. Este producto, elaborado en España, destaca por su empaque práctico que incluye información multilingüe, ideal para satisfacer las necesidades de los amantes de la cocina tradicional y saludable. Perfectos para preparar recetas nutritivas y versátiles, los garbanzos secos Huerto San Genaro son la opción ideal para llevar sabor y calidad a tu mesa."
   },
   {
@@ -2122,11 +2122,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/chicharo_seco.jpg",
-    "descripcion": "Las Lentejas Verdes de La Merced son un producto versátil y nutritivo, ideal para incluir en tu dieta diaria. Presentadas en un paquete de 1000g, estas lentejas secas son perfectas para preparar sopas, guisos, ensaladas o cremas, aportando un sabor delicioso y una gran cantidad de proteínas, fibras y minerales. Son un ingrediente esencial en la cocina para aquellos que buscan opciones saludables y de calidad.",
-    "imagenesAdicionales": [],
-    "nuevo": true
+    "descripcion": "Las Lentejas Verdes de La Merced son un producto versátil y nutritivo, ideal para incluir en tu dieta diaria. Presentadas en un paquete de 1000g, estas lentejas secas son perfectas para preparar sopas, guisos, ensaladas o cremas, aportando un sabor delicioso y una gran cantidad de proteínas, fibras y minerales. Son un ingrediente esencial en la cocina para aquellos que buscan opciones saludables y de calidad."
   },
   {
     "nombre": "Habichuelas blancas 500g",
