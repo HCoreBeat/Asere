@@ -83,12 +83,12 @@
   {
     "nombre": "Picadillo Especial 400g",
     "categoria": "carnes",
-    "precio": 1.905,
-    "descuento": 0,
+    "precio": 1.876,
+    "descuento": 24.37,
     "oferta": true,
     "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/Picadillo_Especial.jpg"
+    "imagen": "img/products/Picadillo_Especial.jpg",
+    "disponible": false
   },
   {
     "nombre": "Jamón de Primera x Lb",
@@ -123,12 +123,12 @@
   {
     "nombre": "Paquete de salchichas 7u (350g)",
     "categoria": "carnes",
-    "precio": 1.97,
-    "descuento": 10,
+    "precio": 1.971,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Paquete_de_Salchichas.jpg",
-    "disponible": false
+    "disponible": true,
+    "imagen": "img/products/Paquete_de_Salchichas.jpg"
   },
   {
     "nombre": "Pack de 4 Hamburguesas de cerdo",
