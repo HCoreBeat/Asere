@@ -83,12 +83,12 @@
   {
     "nombre": "Picadillo Especial 400g",
     "categoria": "carnes",
-    "precio": 1.876,
-    "descuento": 24.37,
+    "precio": 1.905,
+    "descuento": 0,
     "oferta": true,
     "mas_vendido": true,
-    "imagen": "img/products/Picadillo_Especial.jpg",
-    "disponible": false
+    "disponible": true,
+    "imagen": "img/products/Picadillo_Especial.jpg"
   },
   {
     "nombre": "Jamón de Primera x Lb",
@@ -1184,13 +1184,12 @@
   {
     "nombre": "Lomo de cerdo deshuesado x Lb",
     "categoria": "carnes",
-    "precio": 3.333,
+    "precio": 2.81,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/lomo_de_cerdo_deshuesado_x_lb.jpg",
-    "descripcion": "Pura masa sin huesos ni gordo"
+    "imagen": "img/products/lomo_de_cerdo_deshuesado_x_lb.jpg"
   },
   {
     "nombre": "Caja de Jurel (20Libras)",
