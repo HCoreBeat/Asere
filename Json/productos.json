@@ -153,16 +153,6 @@
     "disponible": false
   },
   {
-    "nombre": "Jamón Bravo Rápido (2kg)",
-    "categoria": "carnes",
-    "precio": 28,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Jamon_Bravo_Rapido.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Masa deshuesada de cerdo x Kg",
     "categoria": "carnes",
     "precio": 10.952,
