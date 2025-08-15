@@ -3,11 +3,12 @@
     "nombre": "Refresco Instantáneo (2Lt)",
     "categoria": "bebidas",
     "precio": 0.4,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/Refresco_Instantaneo.jpg"
+    "imagen": "img/products/Refresco_Instantaneo.jpg",
+    "nuevo": false
   },
   {
     "nombre": "Pechuga de Pollo (1Kg)",
