@@ -17,9 +17,10 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/pechuga_pollo.jpg",
-    "descripcion": "Este producto es pechuga de pollo sin hueso y sin piel de la marca Sadia. Es un paquete de 1 kg de pechugas de pollo congeladas, ideales para preparar diversas recetas. Constituye una excelente fuente de proteínas, con bajo contenido de grasas, lo que lo convierte en una opción saludable y versátil en la cocina. Es imprescindible mantenerlo congelado a -18°C para conservar su frescura y calidad."
+    "descripcion": "Este producto es pechuga de pollo sin hueso y sin piel de la marca Sadia. Es un paquete de 1 kg de pechugas de pollo congeladas, ideales para preparar diversas recetas. Constituye una excelente fuente de proteínas, con bajo contenido de grasas, lo que lo convierte en una opción saludable y versátil en la cocina. Es imprescindible mantenerlo congelado a -18°C para conservar su frescura y calidad.",
+    "nuevo": false
   },
   {
     "nombre": "Pollo Golden Phoenix (2Kg)",
