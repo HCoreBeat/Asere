@@ -1619,13 +1619,14 @@
   {
     "nombre": "Saco de arroz americano importado 50lb",
     "categoria": "agro",
-    "precio": 44.762,
+    "precio": 38.095,
     "descuento": 0,
-    "oferta": false,
+    "oferta": true,
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/saco_de_arroz_americano_importado_50lb.jpg",
-    "descripcion": "Arroz importado. Viene limpio y cocina bien"
+    "descripcion": "Arroz importado. Viene limpio y cocina bien",
+    "nuevo": false
   },
   {
     "nombre": "Helado Nestle",
