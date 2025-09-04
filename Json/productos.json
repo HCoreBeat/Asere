@@ -44,16 +44,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Pollo Entero 3 Libras",
-    "categoria": "carnes",
-    "precio": 5,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Pollo_Entero.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Paquete de muslos de pollo 5.5lbs",
     "categoria": "carnes",
     "precio": 10,
