@@ -13,7 +13,7 @@
   {
     "nombre": "Pechuga de Pollo (1Kg)",
     "categoria": "carnes",
-    "precio": 6.667,
+    "precio": 11.333,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -35,12 +35,13 @@
   {
     "nombre": "Pollo Country Pride",
     "categoria": "carnes",
-    "precio": 14,
+    "precio": 10.952,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/Pollo_Country.jpg"
+    "imagen": "img/products/Pollo_Country.jpg",
+    "nuevo": false
   },
   {
     "nombre": "Pollo Entero 3 Libras",
