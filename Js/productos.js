@@ -877,3 +877,6 @@ window.renderProductosEnContenedor = function(productos, contenedorId) {
         contenedor.appendChild(productoDiv);
     });
 }
+
+
+,
