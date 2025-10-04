@@ -598,12 +598,13 @@
   {
     "nombre": "Mantequilla (250g)",
     "categoria": "despensa",
-    "precio": 2.3,
-    "descuento": 10,
+    "precio": 2.305,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": false,
     "imagen": "img/products/Mantequilla.jpeg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Sal x Lb",
