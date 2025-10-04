@@ -13,14 +13,14 @@
   {
     "nombre": "Pechuga de Pollo (1Kg)",
     "categoria": "carnes",
-    "precio": 11.333,
+    "precio": 7.619,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/pechuga_pollo.jpg",
     "descripcion": "Este producto es pechuga de pollo sin hueso y sin piel de la marca Sadia. Es un paquete de 1 kg de pechugas de pollo congeladas, ideales para preparar diversas recetas. Constituye una excelente fuente de proteínas, con bajo contenido de grasas, lo que lo convierte en una opción saludable y versátil en la cocina. Es imprescindible mantenerlo congelado a -18°C para conservar su frescura y calidad.",
-    "nuevo": false
+    "nuevo": true
   },
   {
     "nombre": "Pollo Golden Phoenix (2Kg)",
@@ -1316,12 +1316,11 @@
     "nombre": "Chocolate en Polvo «Rico» (500g)",
     "categoria": "despensa",
     "precio": 4,
-    "descuento": 0,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
     "imagen": "img/products/Chocolate_en_Polvo_Riko.jpg",
-    "nuevo": false
+    "disponible": true
   },
   {
     "nombre": "Pasta de tomate 400g",
