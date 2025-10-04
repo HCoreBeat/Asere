@@ -598,13 +598,12 @@
   {
     "nombre": "Mantequilla (250g)",
     "categoria": "despensa",
-    "precio": 2.305,
-    "descuento": 0,
+    "precio": 2.3,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
     "imagen": "img/products/Mantequilla.jpeg",
-    "nuevo": false
+    "disponible": true
   },
   {
     "nombre": "Sal x Lb",
@@ -2396,10 +2395,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/chocolate_polvo.jpg",
     "descripcion": "Polvo para preparar una deliciosa bebida con sabor a chocolate, Valle Azul instantáneo es la opción perfecta para disfrutar en cualquier momento del día. Su empaque individual de 70g lo hace ideal para una porción, garantizando frescura y sabor en cada taza. Fácil de preparar, este polvo se disuelve rápidamente en leche fría o caliente, creando una bebida cremosa y con un rico aroma a chocolate. Es una excelente opción para el desayuno o la merienda de los niños, o como un postre indulgente para los adultos. Disfruta de un momento dulce y reconfortante con esta bebida.",
-    "imagenesAdicionales": [],
     "nuevo": true
   },
   {
