@@ -1316,11 +1316,12 @@
     "nombre": "Chocolate en Polvo «Rico» (500g)",
     "categoria": "despensa",
     "precio": 4,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": false,
     "imagen": "img/products/Chocolate_en_Polvo_Riko.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Pasta de tomate 400g",
@@ -2238,10 +2239,11 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/pasta_de_bocadito.jpg",
     "descripcion": "La pasta para bocaditos de Aldaketa es el complemento perfecto para tus reuniones y aperitivos. Este producto se presenta en un práctico frasco de vidrio con tapa metálica, que permite conservar su frescura y sabor. La etiqueta, con su llamativo diseño en tonos de verde y rojo, destaca el nombre de la marca y la función principal del producto. La pasta, de un color rosado claro y textura cremosa, es ideal para untar en galletas saladas, pan tostado o para rellenar canapés. Su versatilidad la convierte en un ingrediente indispensable para sorprender a tus invitados con bocadillos rápidos y deliciosos. La imagen del bocadito en la etiqueta te da una pista de lo que puedes preparar, invitándote a explorar diferentes combinaciones de sabores.",
-    "nuevo": false
+    "imagenesAdicionales": [],
+    "nuevo": true
   },
   {
     "nombre": "Mayonesa Celorrio",
