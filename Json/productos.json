@@ -309,12 +309,13 @@
   {
     "nombre": "Queso Crema (200g)",
     "categoria": "aderezos",
-    "precio": 2.9,
-    "descuento": 10,
+    "precio": 2.895,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": false,
     "imagen": "img/products/Queso_Crema.jpg",
-    "disponible": false
+    "nuevo": false
   },
   {
     "nombre": "Sazón Goya",
