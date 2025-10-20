@@ -2,7 +2,7 @@
   {
     "nombre": "Refresco Instantáneo (2Lt)",
     "categoria": "bebidas",
-    "precio": 0.238,
+    "precio": 0.4,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -86,12 +86,13 @@
   {
     "nombre": "Jamón de Primera x Lb",
     "categoria": "carnes",
-    "precio": 4.8,
+    "precio": 3.619,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/Jamon_de_Pierna.jpg"
+    "imagen": "img/products/Jamon_de_Pierna.jpg",
+    "nuevo": false
   },
   {
     "nombre": "Chuletas de cerdo x Lb",
