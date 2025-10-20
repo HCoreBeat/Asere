@@ -854,12 +854,11 @@
     "nombre": "Agua Purificada Niagara (500ml)",
     "categoria": "bebidas",
     "precio": 0.714,
-    "descuento": 0,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
     "imagen": "img/products/Agua_Purificada.jpg",
-    "nuevo": false
+    "disponible": true
   },
   {
     "nombre": "Caja de Bebida energética 5 Shot (250ml x 24)",
@@ -1044,12 +1043,13 @@
   {
     "nombre": "Caja de Cervezas Bucanero",
     "categoria": "alcohol",
-    "precio": 23.95,
-    "descuento": 10,
+    "precio": 23.952,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": false,
     "imagen": "img/products/Caja_Cerveza_Bucanero.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Cervezas Bucanero (355ml)",
