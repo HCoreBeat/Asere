@@ -478,12 +478,13 @@
   {
     "nombre": "Leche Condensada azucarada (390g)",
     "categoria": "despensa",
-    "precio": 2.75,
-    "descuento": 10,
+    "precio": 1.81,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": true,
     "imagen": "img/products/Leche_Condensada_Azucarada.jpeg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Sopa instantánea sabor Pollo (85g)",
