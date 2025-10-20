@@ -1219,13 +1219,12 @@
     "nombre": "Papas Crunchy",
     "categoria": "confituras",
     "precio": 1.714,
-    "descuento": 0,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
     "imagen": "img/products/papas_crunchy.jpg",
     "descripcion": "CRUNCHY - Papas Fritas Sabor Salt & Vinegar Déjate llevar por la explosión de sabores con estas papas fritas CRUNCHY, una deliciosa combinación de sal y vinagre que te hará agua la boca. Presentadas en una bolsa vibrante de color morado, estas papas ofrecen un crujido irresistible y el equilibrio perfecto entre lo salado y lo ácido. Con un diseño llamativo, incluyen la imagen de una botella de vinagre, un salero y papas fritas que evocan frescura y calidad. Ideales para disfrutar en cualquier momento, estas papas vienen con 240 calorías por porción y son perfectas para compartir o darte un gusto. ¡Un sabor clásico reinventado para los amantes del buen snack!",
-    "nuevo": false
+    "disponible": true
   },
   {
     "nombre": "Galletas de Soda con Mantequilla Doricas",
@@ -1291,13 +1290,14 @@
   {
     "nombre": "Leche entera en polvo (1kg)",
     "categoria": "lacteos",
-    "precio": 11.4,
-    "descuento": 10,
+    "precio": 8.476,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": true,
     "imagen": "img/products/leche_entera_en_polvo.jpg",
     "descripcion": "Descubre la leche entera en polvo Macro Food, perfecta para preparar deliciosas bebidas y recetas. Con un 26% de grasa láctea y un rendimiento aproximado de 8.5 litros por cada kilogramo, este producto combina calidad y conveniencia. Ideal para quienes buscan una alternativa práctica y duradera al consumo de leche fresca. Su presentación incluye un diseño funcional y moderno, reflejando el compromiso con la frescura y el sabor natural. ¡Una opción esencial para tu despensa y cocina!",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Cebollitas en Vinagre (290g)",
