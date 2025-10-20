@@ -106,23 +106,23 @@
   {
     "nombre": "Paquete de picadillo de pollo 1kg",
     "categoria": "carnes",
-    "precio": 2.829,
-    "descuento": 0,
+    "precio": 2.828,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": true,
-    "disponible": true,
     "imagen": "img/products/Paquete_de_Picadillo_Pollo.jpg",
-    "nuevo": false
+    "disponible": false
   },
   {
     "nombre": "Paquete de salchichas 7u (350g)",
     "categoria": "carnes",
-    "precio": 1.971,
+    "precio": 1.81,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/Paquete_de_Salchichas.jpg"
+    "imagen": "img/products/Paquete_de_Salchichas.jpg",
+    "nuevo": false
   },
   {
     "nombre": "Pack de 4 Hamburguesas de cerdo",
