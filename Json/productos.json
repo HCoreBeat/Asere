@@ -451,12 +451,11 @@
     "nombre": "Café La Llave",
     "categoria": "cafe",
     "precio": 7,
-    "descuento": 0,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
     "imagen": "img/products/Cafe_la_Llave.jpeg",
-    "nuevo": false
+    "disponible": false
   },
   {
     "nombre": "Cartón de Huevos",
@@ -524,13 +523,14 @@
   {
     "nombre": "Arroz Rainha Brasil (1Kg)",
     "categoria": "despensa",
-    "precio": 2.828,
-    "descuento": 10,
+    "precio": 2.381,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/arroz_rainha.jpg",
     "disponible": true,
-    "descripcion": "Este arroz blanco tipo 1 de la marca Rainha Brasil está compuesto por granos largos finos, pulidos y libres de grumos, lo que garantiza una textura uniforme y suave al cocinar. Es una opción nutritiva, ideal para acompañar diversos platos y adaptarse a recetas tradicionales como arroz con frijoles, risottos o guarniciones ligeras y saludables."
+    "imagen": "img/products/arroz_rainha.jpg",
+    "descripcion": "Este arroz blanco tipo 1 de la marca Rainha Brasil está compuesto por granos largos finos, pulidos y libres de grumos, lo que garantiza una textura uniforme y suave al cocinar. Es una opción nutritiva, ideal para acompañar diversos platos y adaptarse a recetas tradicionales como arroz con frijoles, risottos o guarniciones ligeras y saludables.",
+    "nuevo": false
   },
   {
     "nombre": "Queso Gouda Premium (3Kg)",
