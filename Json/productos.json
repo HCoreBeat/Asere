@@ -365,14 +365,13 @@
   {
     "nombre": "Nutela",
     "categoria": "despensa",
-    "precio": 3.619,
-    "descuento": 0,
+    "precio": 4.476,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
     "imagen": "img/products/nutela_365.jpg",
-    "descripcion": "Crema de Avellanas con Cacao 365 Cacao Hazelnut Cream Eviza Nezka 400 g combina chocolate y avellanas en una fórmula única con textura suave y cremosa. Versátil y deliciosa, es perfecta para untar en panes, galletas, crepas o para agregar un toque especial a tus postres y recetas de repostería. Elaborada con ingredientes seleccionados, garantiza calidad premium y un sabor inigualable. Su práctico envase ergonómico facilita el uso y almacenamiento, asegurando frescura en cada porción. Ideal para desayunos, meriendas y momentos especiales que se convierten en dulces experiencias diarias. Disponible con pedido fácil y envío rápido para disfrutar sin complicaciones.",
-    "nuevo": false
+    "disponible": true,
+    "descripcion": "Crema de Avellanas con Cacao 365 Cacao Hazelnut Cream Eviza Nezka 400 g combina chocolate y avellanas en una fórmula única con textura suave y cremosa. Versátil y deliciosa, es perfecta para untar en panes, galletas, crepas o para agregar un toque especial a tus postres y recetas de repostería. Elaborada con ingredientes seleccionados, garantiza calidad premium y un sabor inigualable. Su práctico envase ergonómico facilita el uso y almacenamiento, asegurando frescura en cada porción. Ideal para desayunos, meriendas y momentos especiales que se convierten en dulces experiencias diarias. Disponible con pedido fácil y envío rápido para disfrutar sin complicaciones."
   },
   {
     "nombre": "Aceite Fritura 900ml",
@@ -452,11 +451,12 @@
     "nombre": "Café La Llave",
     "categoria": "cafe",
     "precio": 7,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": true,
     "imagen": "img/products/Cafe_la_Llave.jpeg",
-    "disponible": false
+    "nuevo": false
   },
   {
     "nombre": "Cartón de Huevos",
