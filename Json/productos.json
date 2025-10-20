@@ -169,13 +169,12 @@
   {
     "nombre": "Salchicha de pollo y cerdo 10u (340g)",
     "categoria": "carnes",
-    "precio": 1.81,
-    "descuento": 0,
+    "precio": 1.809,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
     "imagen": "img/products/Salchicha_Pollo_Cerdo.jpg",
-    "nuevo": false
+    "disponible": true
   },
   {
     "nombre": "Picadillo Especial 800g",
@@ -221,12 +220,13 @@
   {
     "nombre": "Helado 4Lts",
     "categoria": "lacteos",
-    "precio": 9.95,
-    "descuento": 10,
+    "precio": 9.333,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": true,
     "imagen": "img/products/Helado.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Leche Evaporada 400g",
