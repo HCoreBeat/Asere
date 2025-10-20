@@ -2,7 +2,7 @@
   {
     "nombre": "Refresco Instantáneo (2Lt)",
     "categoria": "bebidas",
-    "precio": 0.4,
+    "precio": 0.238,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1287,14 +1287,13 @@
   {
     "nombre": "Leche entera en polvo (1kg)",
     "categoria": "lacteos",
-    "precio": 8.524,
-    "descuento": 0,
+    "precio": 11.4,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
     "imagen": "img/products/leche_entera_en_polvo.jpg",
     "descripcion": "Descubre la leche entera en polvo Macro Food, perfecta para preparar deliciosas bebidas y recetas. Con un 26% de grasa láctea y un rendimiento aproximado de 8.5 litros por cada kilogramo, este producto combina calidad y conveniencia. Ideal para quienes buscan una alternativa práctica y duradera al consumo de leche fresca. Su presentación incluye un diseño funcional y moderno, reflejando el compromiso con la frescura y el sabor natural. ¡Una opción esencial para tu despensa y cocina!",
-    "nuevo": false
+    "disponible": true
   },
   {
     "nombre": "Cebollitas en Vinagre (290g)",
