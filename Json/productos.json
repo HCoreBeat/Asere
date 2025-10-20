@@ -116,13 +116,12 @@
   {
     "nombre": "Paquete de salchichas 7u (350g)",
     "categoria": "carnes",
-    "precio": 1.81,
+    "precio": 1.971,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/Paquete_de_Salchichas.jpg",
-    "nuevo": false
+    "imagen": "img/products/Paquete_de_Salchichas.jpg"
   },
   {
     "nombre": "Pack de 4 Hamburguesas de cerdo",
@@ -148,12 +147,13 @@
   {
     "nombre": "Pernil de Cerdo asado (15 libras)",
     "categoria": "carnes",
-    "precio": 49.52,
-    "descuento": 10,
+    "precio": 47.619,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/Pernil_de_Cerdo.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Maíz Dulce en Grano Vima (425g)",
