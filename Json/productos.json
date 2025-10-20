@@ -86,13 +86,12 @@
   {
     "nombre": "Jamón de Primera x Lb",
     "categoria": "carnes",
-    "precio": 3.619,
+    "precio": 4.8,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/Jamon_de_Pierna.jpg",
-    "nuevo": false
+    "imagen": "img/products/Jamon_de_Pierna.jpg"
   },
   {
     "nombre": "Chuletas de cerdo x Lb",
@@ -107,12 +106,13 @@
   {
     "nombre": "Paquete de picadillo de pollo 1kg",
     "categoria": "carnes",
-    "precio": 2.828,
-    "descuento": 10,
+    "precio": 2.829,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/Paquete_de_Picadillo_Pollo.jpg",
-    "disponible": false
+    "nuevo": false
   },
   {
     "nombre": "Paquete de salchichas 7u (350g)",
