@@ -1576,22 +1576,6 @@
     ]
   },
   {
-    "nombre": "Ventilador solar portátil",
-    "categoria": "electrodomesticos",
-    "precio": 71.428,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": true,
-    "imagen": "img/products/ventilador_solar_portatil.jpg",
-    "disponible": true,
-    "descripcion": "1- Ventilador solar portátil: el ventilador solar para exteriores es pequeño, fácil de transportar, no ocupa espacio en la mochila, no hay necesidad de preocuparse por la batería y la escasez de iluminación al acampar al aire libre, vida útil ultralarga. 2- Ventilador con altavoz Bluetooth: El ventilador viene con función Bluetooth y debe estar conectado a su teléfono móvil para reproducir música, llévelo con usted en sus viajes de campamento al aire libre y le brindará el sonido de canciones animadas en la naturaleza silenciosa, lo que contribuirá a la atmósfera agradable de su viaje. 3- Aspa del ventilador de hélice: ventilador de cinco aspas con poco ruido, que corta el flujo de aire de manera uniforme y densa, haciendo que el viento esté mejor concentrado, un flujo de aire suave y un viento más fuerte, ventilador eléctrico multifuncional de cinco aspas. 4- Ventilador con iluminación: Nuestro ventilador viene con una función de iluminación, una exquisita lámpara de mesa pequeña, ¡el corte de energía se niega a tocar la oscuridad, enfría e ilumina tanto en la noche de verano! 5 Con función de temporizador: apagado inteligente del temporizador, puede configurar el apagado del temporizador en 30 minutos, no es necesario levantarse en medio de la noche para apagar el ventilador, no hay necesidad de preocuparse por resfriarse después de quedarse dormido !",
-    "imagenesAdicionales": [
-      "img/products/ventilador_solar_portatil_2.jpg",
-      "img/products/ventilador_solar_portatil_3.jpg",
-      "img/products/ventilador_solar_portatil_4.jpg"
-    ]
-  },
-  {
     "nombre": "Cable C",
     "categoria": "electrodomesticos",
     "precio": 2.38,
