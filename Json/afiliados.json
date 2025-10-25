@@ -913,18 +913,36 @@
     "id": "5x8LTk",
     "nombre": "Liena",
     "fecha": "2025-07-11T14:22:31.389Z",
-    "numero": "85"
+    "numero": "85",
+    "telefono": "No especificado",
+    "link": "https://www.asereshops.com/?ref=5x8LTk",
+    "searchText": "liena 5x8ltk 85 no especificado",
+    "numeroInt": 85
   },
   {
     "id": "5x8LTk",
     "nombre": "Liena",
     "fecha": "2025-07-11T14:23:08.326Z",
-    "numero": "NaN"
+    "numero": "NaN",
+    "telefono": "No especificado",
+    "link": "https://www.asereshops.com/?ref=5x8LTk",
+    "searchText": "liena 5x8ltk nan no especificado",
+    "numeroInt": 0
   },
   {
     "id": "5x8LTk",
     "nombre": "Liena lps",
     "fecha": "2025-07-11T14:23:55.926Z",
-    "numero": "NaN"
+    "numero": "NaN",
+    "telefono": "No especificado",
+    "link": "https://www.asereshops.com/?ref=5x8LTk",
+    "searchText": "liena lps 5x8ltk nan no especificado",
+    "numeroInt": 0
+  },
+  {
+    "id": "qbcbBK",
+    "nombre": "Javier nakama",
+    "fecha": "2025-10-25T21:40:31.207Z",
+    "numero": "86"
   }
 ]
