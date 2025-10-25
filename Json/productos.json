@@ -718,16 +718,6 @@
     "disponible": true
   },
   {
-    "nombre": "Vasos Reutilizables (100/u)",
-    "categoria": "otros",
-    "precio": 3.9,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Vasos_Reutilizables.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Paquete de tenedores plásticos (25/u)",
     "categoria": "otros",
     "precio": 1.9,
