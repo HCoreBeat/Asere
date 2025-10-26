@@ -264,6 +264,10 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
     const recipientName = document.getElementById('recipient-name').value.trim();
     const recipientPhone = document.getElementById('recipient-phone').value.trim();
 
+    // Obtener información de la IP
+    const ipInfoData = await fetch('https://ipapi.co/json/').then(res => res.json());
+
+
     // Obtener datos del carrito
     const cartItems = getCartItems();
     const total = calculateTotal(cartItems);
@@ -276,6 +280,7 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
     const message = `
     Nombre completo: ${fullName}
     Correo electrónico: ${email}
+    País: ${ipInfoData.country_name || 'Desconocido'}
     Teléfono del comprador: ${phone}
 
     Datos del destinatario:

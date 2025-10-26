@@ -38,7 +38,7 @@
 } 
 .cart a { 
     text-decoration: none; 
-    color: #333333; /* Verde oscuro */
+    color: #F8F9FA; /* Verde oscuro */
     font-weight: 700;
     font-size: 16px;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
@@ -59,7 +59,6 @@
 
 #nav-cart { 
     border-radius: 8px;
-    width: 85%;
     max-width: 1200px;
     margin: 5px auto;
     margin-left: 20px;

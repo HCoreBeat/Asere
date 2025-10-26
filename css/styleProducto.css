@@ -700,10 +700,9 @@
     }
 }
 
-/* Estilos para el panel cuadrado de categoría */
 /* Estilos para el panel-categoria */
 .panel-categoria {
-    width: 300px; /* Tamaño más grande */
+    width: auto; /* Tamaño más grande */
     height: 300px;
     background-color: #ffffff;
     border: 1px solid #e0e0e0; /* Borde más suave */

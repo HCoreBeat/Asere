@@ -182,6 +182,96 @@ header {
     padding: 0 15px;
 }
 
+/* Decoración de Halloween: murciélago (izquierda) y calabaza (derecha)
+   Usamos pseudo-elementos del header para no alterar el DOM ni los colores
+   del header. Las imágenes son decorativas: pointer-events:none para
+   que no interfieran con la interacción. Se colocan atrás (z-index:0)
+   y el contenido del header (.header-container) está por encima (z-index:1001).
+*/
+header {
+    overflow: visible; /* Permite que los pseudo-elementos se muestren fuera */
+}
+
+header.halloween-active::before,
+header.halloween-active::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.95;
+    pointer-events: none;
+    z-index: 0; /* detrás del contenido */
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.18));
+}
+
+header.halloween-active::before {
+    left: 14px;
+    background-image: url('../img/bat.png');
+    transform-origin: left top;
+}
+
+header.halloween-active::after {
+    right: 14px;
+    background-image: url('../img/calabaza.png');
+    transform-origin: right top;
+}
+
+/* Asegurar que el contenido del header esté por encima de las imágenes */
+.header-container {
+    position: relative;
+    z-index: 1001;
+}
+
+/* Responsive: ajustar tamaño/posición en pantallas más pequeñas */
+@media (max-width: 992px) {
+    /* Tablet / small desktop: reducir ligeramente las decoraciones */
+    header.halloween-active::before, header.halloween-active::after {
+        width: 56px;
+        height: 56px;
+        top: 6px;
+        opacity: 0.95;
+        background-size: contain;
+    }
+    header::before { left: 10px; }
+    header.halloween-active::before { left: 10px; }
+    header.halloween-active::after { right: 10px; }
+}
+
+@media (max-width: 480px) {
+    /* Móviles: mostrar las imágenes más pequeñas y posicionadas para no tapar controles */
+    header.halloween-active::before, header.halloween-active::after {
+        display: block;
+        width: 60px;
+        height: 60px;
+        top: 8px; /* alinearlas con el contenido del header */
+        opacity: 1;
+        background-size: contain;
+        transform: none;
+    }
+    header.halloween-active::before {
+        left: 8px;
+        transform: translateY(0) translateX(0) rotate(-6deg);
+    }
+    header.halloween-active::after {
+        right: 8px;
+        transform: translateY(0) translateX(0) rotate(6deg);
+    }
+}
+
+@media (max-width: 360px) {
+    /* Teléfonos muy pequeños: reducir un poco más y subir levemente */
+    header.halloween-active::before, header.halloween-active::after {
+        width: 40px;
+        height: 40px;
+        top: 6px;
+    }
+    header.halloween-active::before { left: 6px; }
+    header.halloween-active::after { right: 6px; }
+}
+
 .slogan {
     text-align:start; 
     flex: 1;
@@ -191,7 +281,8 @@ header {
     align-items: center;
     justify-content: space-between; /* Separación elegante */
     gap: 20px; /* Espacio entre elementos */
-    padding-right: 10px;
+    align-content: space-around;
+    flex-wrap: wrap;
 }
 .gif-slogan{
     width: 140px;
@@ -217,7 +308,7 @@ nav ul.active {
 
 nav ul li a {
     text-decoration: none;
-    color: #333333;
+    color: #F8F9FA;
     font-weight: 700;
     font-size: 16px;
     padding: 10px;
@@ -251,7 +342,7 @@ nav ul li a:hover i {
 }
 
 .menu-toggle span {
-    background: rgb(24, 24, 24);
+    background: #F8F9FA;
     height: 5px;
     width: 30px;
     border-radius: 3px;
@@ -1111,7 +1202,7 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 12px;
-    background: linear-gradient(330deg, #8BC34A, #009688);
+    background: linear-gradient(330deg, #9b9b9b, #009688);
     background-size: 200% 200%;
     border-radius: 16px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
@@ -1351,7 +1442,7 @@ footer {
     scroll-snap-align: center;
     background: var(--blanco);
     border-radius: 12px;
-    border: 2px solid var(--dorado);
+    border: 2px solid #007730;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     display: flex;
@@ -1472,7 +1563,7 @@ footer {
     border-radius: 8px;
     border: 1px solid rgba(212, 175, 55, 0.2);
     flex-grow: 1;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(250, 245, 235, 0.9));
+    background: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(236, 250, 235, 0.9));
 }
 .pack-contents-title {
     font-size: 0.95rem;
@@ -1500,7 +1591,6 @@ footer {
     align-items: center;
     position: relative;
     padding-left: 1.2rem;
-    line-height: 1.3;
 }
 .pack-contents-list li:before {
     content: "•";
@@ -1620,7 +1710,7 @@ footer {
         max-width: 80%;
     }
     .pack-contents {
-        padding: 10px;
+        padding: 5px;
     }
     .add-pack-to-cart {
         padding: 0.7rem 1rem;
@@ -1710,7 +1800,7 @@ footer {
   position: absolute;
   top: 18px;
   left: 18px;
-  background: #2E7D32;
+  background: #ff2c2c;
   color: #fff;
   font-size: 0.95rem;
   font-weight: 700;
@@ -1861,7 +1951,7 @@ footer {
   text-align: center;
 }
 .add-pack-to-cart {
-  background: #25D366;
+  background: #04a942;
   color: #fff;
   border: none;
   border-radius: 18px;

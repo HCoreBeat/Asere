@@ -84,3 +84,31 @@ document.addEventListener('DOMContentLoaded', function() {
         mostrarPanel('productos');
     });
 });
+
+// Activar/desactivar decoraciones de Halloween en header según fecha anual
+// Período activo: 15 octubre (inclusive) hasta 1 noviembre (inclusive), cada año
+function toggleHalloweenDecorByDate() {
+    try {
+        const header = document.querySelector('header');
+        if (!header) return;
+
+        const now = new Date();
+        const month = now.getMonth() + 1; // getMonth: 0-11
+        const day = now.getDate();
+
+        // Activar si (octubre && día >= 15) OR (noviembre && día <= 1)
+        const isHalloweenRange = (month === 10 && day >= 15) || (month === 11 && day <= 1);
+
+        if (isHalloweenRange) {
+            header.classList.add('halloween-active');
+        } else {
+            header.classList.remove('halloween-active');
+        }
+    } catch (e) {
+        console.error('toggleHalloweenDecorByDate error:', e);
+    }
+}
+
+// Ejecutar al cargar y también en focus (por si la página queda abierta a medianoche)
+document.addEventListener('DOMContentLoaded', toggleHalloweenDecorByDate);
+window.addEventListener('focus', toggleHalloweenDecorByDate);
