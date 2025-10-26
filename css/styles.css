@@ -219,6 +219,38 @@ header.halloween-active::after {
     transform-origin: right top;
 }
 
+/* Animaciones de flotación ligera para las decoraciones */
+@keyframes float-left {
+    0% { transform: translateY(0) rotate(-2deg); }
+    50% { transform: translateY(-6px) rotate(-4deg); }
+    100% { transform: translateY(0) rotate(-2deg); }
+}
+@keyframes float-right {
+    0% { transform: translateY(0) rotate(2deg); }
+    50% { transform: translateY(-6px) rotate(4deg); }
+    100% { transform: translateY(0) rotate(2deg); }
+}
+
+header.halloween-active::before {
+    will-change: transform;
+    animation: float-left 6s ease-in-out infinite;
+    animation-delay: 0s;
+}
+header.halloween-active::after {
+    will-change: transform;
+    animation: float-right 6.5s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+
+/* Respetar prefer-reduced-motion: desactivar animaciones si el usuario lo solicita */
+@media (prefers-reduced-motion: reduce) {
+    header.halloween-active::before,
+    header.halloween-active::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
 /* Asegurar que el contenido del header esté por encima de las imágenes */
 .header-container {
     position: relative;

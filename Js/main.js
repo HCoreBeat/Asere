@@ -96,8 +96,8 @@ function toggleHalloweenDecorByDate() {
         const month = now.getMonth() + 1; // getMonth: 0-11
         const day = now.getDate();
 
-        // Activar si (octubre && día >= 15) OR (noviembre && día <= 1)
-        const isHalloweenRange = (month === 10 && day >= 15) || (month === 11 && day <= 1);
+        // Activar si (octubre && día >= 15) OR (noviembre && día <= 5)
+        const isHalloweenRange = (month === 10 && day >= 15) || (month === 11 && day <= 5);
 
         if (isHalloweenRange) {
             header.classList.add('halloween-active');
