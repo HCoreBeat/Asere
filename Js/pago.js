@@ -1,3 +1,44 @@
+let checkoutToken = null;
+
+// Función para generar token aleatorio
+function generateToken() {
+    return Math.random().toString(36).substring(2) + Date.now().toString(36);
+}
+
+// Función para validar acceso a planilla
+function validateCheckoutAccess() {
+    const token = sessionStorage.getItem('checkoutToken');
+    const cartItems = getCartItems();
+    const total = calculateTotal(cartItems);
+    
+    return token === checkoutToken && 
+           cartItems && 
+           cartItems.length > 0 && 
+           parseFloat(total) > 0;
+}
+
+// Observer para detectar cambios en la visibilidad de la planilla
+const planillaObserver = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+        if (mutation.target.id === 'planilla-pago') {
+            const isHidden = mutation.target.classList.contains('hidden');
+            if (!isHidden && !validateCheckoutAccess()) {
+                mutation.target.classList.add('hidden');
+                console.warn('Intento de acceso no autorizado a la planilla de pago');
+            }
+        }
+    });
+});
+
+// Iniciar observación de la planilla
+const planillaPago = document.getElementById('planilla-pago');
+if (planillaPago) {
+    planillaObserver.observe(planillaPago, {
+        attributes: true,
+        attributeFilter: ['class']
+    });
+}
+
 let isProcessing = false;
 const submitButton = document.getElementById('submit-button');
 const buttonText = submitButton.querySelector('.button-text');
@@ -84,14 +125,42 @@ document.getElementById('checkout-button').addEventListener('click', () => {
     if (isProcessing) return;
     
     const warningMessage = document.getElementById('warning-message');
+    const cartItems = getCartItems();
+    const total = calculateTotal(cartItems);
+    
+    // Validaciones robustas
+    if (!cartItems || cartItems.length === 0) {
+        alert('Tu carrito está vacío. Añade productos antes de proceder al pago.');
+        return;
+    }
+    
+    if (parseFloat(total) <= 0) {
+        alert('El total de tu compra debe ser mayor a 0.');
+        return;
+    }
+    
     if (isTotalAboveMinimum()) {
+        // Generar y guardar token de sesión
+        checkoutToken = generateToken();
+        sessionStorage.setItem('checkoutToken', checkoutToken);
+        
         document.getElementById('carrito').style.display = 'none';
         document.getElementById('planilla-pago').classList.remove('hidden');
         fillPaymentForm();
+        
+        // Iniciar check periódico del estado
+        const checkInterval = setInterval(() => {
+            if (!validateCheckoutAccess()) {
+                document.getElementById('planilla-pago').classList.add('hidden');
+                document.getElementById('carrito').style.display = 'block';
+                clearInterval(checkInterval);
+                console.warn('Sesión de pago invalidada');
+            }
+        }, 1000);
     } else {
         warningMessage.style.display = 'block';
         setTimeout(() => warningMessage.style.display = 'none', 5000);
-    }
+      }
 });
 
 // Función para obtener la fuente de tráfico
@@ -236,6 +305,14 @@ function validatePaymentForm() {
 document.getElementById('payment-form').addEventListener('submit', async (event) => {
   event.preventDefault();
 
+  // Validar acceso antes de procesar
+  if (!validateCheckoutAccess()) {
+    alert('Sesión de pago inválida. Por favor, intenta nuevamente desde el carrito.');
+    document.getElementById('planilla-pago').classList.add('hidden');
+    document.getElementById('carrito').style.display = 'block';
+    return;
+  }
+
   // Validar el formulario
   const validation = validatePaymentForm();
   if (!validation.valid) {
@@ -272,6 +349,14 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
     const cartItems = getCartItems();
     const total = calculateTotal(cartItems);
     const affiliate = getAffiliate();
+
+    // Prevención: no permitir procesar un pago si el carrito está vacío o el total es 0
+    // (protege contra accesos directos a la planilla y envíos fraudulentos desde la UI)
+    if (!cartItems || cartItems.length === 0 || parseFloat(total) <= 0) {
+      alert('Tu carrito está vacío. Añade productos antes de proceder al pago.');
+      // Lanzamos una excepción controlada para saltar al finally y restaurar la UI
+      throw new Error('Carrito vacío - cancelando envío');
+    }
 
     // Enviar estadísticas de compra
     await enviarEstadisticaCompra(fullName, email, phone, address, cartItems, total, affiliate);
