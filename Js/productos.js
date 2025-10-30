@@ -592,94 +592,20 @@ window.renderProductos = function() {
     // Mostrar/ocultar separadores según la categoría seleccionada
     document.querySelectorAll(".categorias ul li a").forEach(link => {
         link.addEventListener("click", (e) => {
-            e.preventDefault();
             const category = link.getAttribute("data-categoria");
 
-            // Ocultar el panel de electrodomésticos
-            const panelElectrodomesticos = document.getElementById("panel-electrodomesticos");
-            if (panelElectrodomesticos) {
-                panelElectrodomesticos.style.display = "none";
-            }
-
-            // Ocultar el panel-categoria
+            // Ocultar UI transitoria
             const panelCategoria = document.querySelector(".panel-categoria");
-            if (panelCategoria) {
-                panelCategoria.style.display = "none";
-            }
-            
+            if (panelCategoria) panelCategoria.style.display = "none";
+            const panelElectrodomesticos = document.getElementById("panel-electrodomesticos");
+            if (panelElectrodomesticos) panelElectrodomesticos.style.display = "none";
 
-            //mostrar o ocultar los separadores
-            const separadorContainers = document.querySelectorAll(".separador-container, .separador-container-extra");
-            separadorContainers.forEach(separador => {
-                separador.style.display = category === "all" ? "block" : "none";
-            });
-
-            // Filtrar productos por categoría
-            // Ocultar el detalle del producto cuando se selecciona una categoría
-            document.getElementById("detalle-producto").style.display = "none";
-
-            // Limpiar la barra de búsqueda
-            const searchInput = document.getElementById("search-input");
-            searchInput.value = ""; // Vaciar el campo de búsqueda
-
-            // Ocultar el mensaje de "No se encontraron resultados"
-            const noResultMessage = document.getElementById("no-result-message");
-            if (noResultMessage) noResultMessage.style.display = "none";
-
-            // Opcional: si tienes secciones como "más vendidos", puedes asegurarte de que también se muestren.
-            const masVendidosContainer = document.querySelector(".mas-vendidos-container");
-            if (masVendidosContainer) masVendidosContainer.style.display = "flex";
-
-            document.querySelectorAll(".producto, .combos-container").forEach(producto => {
-                if ((category === "ofertas" && producto.dataset.categoria !== "ofertas" && !producto.querySelector('.etiqueta.oferta')) ||
-                    (producto.getAttribute("data-categoria") !== category && category !== "all" && producto.getAttribute("data-categoria") === "combos")) {
-                    producto.style.display = "none";
-                } else if (producto.getAttribute("data-categoria") === category || category === "all" || (category === "ofertas" && producto.querySelector('.etiqueta.oferta'))) {
-                    producto.style.display = "block";
-                } else {
-                    producto.style.display = "none";
-                }
-            });
-
-            // Ocultar categorías vacías
-            document.querySelectorAll(".categoria").forEach(categoriaDiv => {
-                const productosCategoria = categoriaDiv.querySelectorAll(".producto");
-                const categoriaVisible = Array.from(productosCategoria).some(producto => producto.style.display !== "none");
-
-                if (categoriaVisible) {
-                    categoriaDiv.style.display = "block";
-                } else {
-                    categoriaDiv.style.display = "none";
-                }
-            });
-
-            // Ocultar el carrito al seleccionar una categoría
+            // Ocultar elementos que no deben permanecer abiertos
             ocultarCarrito();
+            const planilla = document.getElementById('planilla-pago'); if (planilla) planilla.classList.add('hidden');
 
-            // Mostrar u ocultar los botones "Cargar más" según la categoría seleccionada
-            if (category === "all") {
-                document.querySelectorAll(".categoria").forEach(categoriaDiv => {
-                    const productosCategoria = categoriaDiv.querySelectorAll(".producto");
-                    productosCategoria.forEach((producto, productoIndex) => {
-                        if (productoIndex >= 4) {
-                            producto.style.display = "none";
-                        } else {
-                            producto.style.display = "block";
-                        }
-                    });
-                });
-
-                // mostrar el panel de categoria cuando se presiona la categoria all
-                panelCategoria.style.display = "flex";
-
-                document.querySelectorAll(".btn-cargar-mas").forEach(btn => {
-                    btn.style.display = "block";
-                });
-            } else {
-                document.querySelectorAll(".btn-cargar-mas").forEach(btn => {
-                    btn.style.display = "none";
-                });
-            }
+            // Forzar el hash semántico; esto disparará handleRouteChange en main.js
+            window.location.hash = `#categoria-${category}`;
         });
     });
     
@@ -828,6 +754,56 @@ window.renderProductos = function() {
         // Mostrar el contenedor de combos cuando se muestran todos los productos
         combosContainer.style.display = "block";
     }
+};
+
+// Renderizar productos filtrados por categoría (slug). Usa renderProductos() y aplica un filtro sobre el DOM.
+window.renderProductosPorCategoria = function(slug) {
+    // Normalizar slug
+    const category = (slug || 'all').toString().toLowerCase();
+
+    // Renderizar todos los productos primero (DOM completo)
+    if (typeof window.renderProductos === 'function') window.renderProductos();
+
+    // Si no hay filtro, terminar mostrando todo
+    if (!category || category === 'all') {
+        // Asegurar que todos los botones 'cargar más' estén visibles por defecto
+        document.querySelectorAll('.btn-cargar-mas').forEach(btn => btn.style.display = 'block');
+        return;
+    }
+
+    // Ocultar separadores y panel de categoría cuando filtramos por una categoría específica
+    document.querySelectorAll('.separador-container, .separador-container-extra').forEach(sep => sep.style.display = 'none');
+    const panelCategoria = document.querySelector('.panel-categoria'); if (panelCategoria) panelCategoria.style.display = 'none';
+
+    // Aplicar filtro por categoria
+    document.querySelectorAll('.producto, .combo').forEach(item => {
+        const itemCat = (item.dataset.categoria || '').toLowerCase();
+        if (category === 'ofertas') {
+            // Mostrar solo productos con etiqueta de oferta
+            const tieneOferta = !!item.querySelector('.etiqueta.oferta');
+            item.style.display = tieneOferta ? 'block' : 'none';
+        } else if (itemCat === category) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+
+    // Ocultar contenedor de combos si no corresponde
+    const combosContainer = document.querySelector('.combos-container');
+    if (combosContainer) {
+        combosContainer.style.display = Array.from(combosContainer.querySelectorAll('.combo')).some(c => c.style.display !== 'none') ? 'block' : 'none';
+    }
+
+    // Ocultar categorías vacías
+    document.querySelectorAll('.categoria').forEach(categoriaDiv => {
+        const productosCategoria = categoriaDiv.querySelectorAll('.producto');
+        const categoriaVisible = Array.from(productosCategoria).some(producto => producto.style.display !== 'none');
+        categoriaDiv.style.display = categoriaVisible ? 'block' : 'none';
+    });
+
+    // Ocultar los botones de "Cargar más" cuando filtramos por categoría
+    document.querySelectorAll('.btn-cargar-mas').forEach(btn => btn.style.display = 'none');
 };
 
 window.renderProductosEnContenedor = function(productos, contenedorId) {

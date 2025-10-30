@@ -293,6 +293,7 @@
     <section id="planilla-pago" class="hidden">
       <div class="payment-container">
         <h2><i class="fas fa-file-invoice-dollar"></i> Planilla de Pedido</h2>
+
         <form id="payment-form">
           <div class="form-group">
             <label for="full-name"><i class="fas fa-user"></i> Su Nombre Completo:</label>
@@ -318,6 +319,21 @@
             <label for="address"><i class="fas fa-map-marker-alt"></i> Dirección de Envío:</label>
             <textarea id="address" name="address" required></textarea>
           </div>
+
+          <!-- Mensaje importante sobre el proceso de pago -->
+        <div id="payment-notice" class="payment-notice" role="status" aria-live="polite">
+          <div class="notice-icon" aria-hidden="true"><i class="fas fa-info-circle"></i></div>
+          <div class="notice-content">
+            <p class="notice-title">Gracias por tu interés en nuestros productos.</p>
+            <p class="notice-text">Importante: Esta página no cuenta con plataforma de pago integrada. Una vez que completes tu pedido, nos pondremos en contacto contigo directamente por <strong>WhatsApp</strong> para coordinar el pago y el envío de forma personalizada y segura.</p>
+            <p class="notice-text">Asegúrate de ingresar correctamente tu número de WhatsApp. Nuestro equipo te escribirá en breve para finalizar tu compra.</p>
+            <div class="pago-entrega-aviso">
+              <i class="fas fa-truck"></i>
+              <span><strong>Pago contra entrega:</strong> Coordinamos por <b>WhatsApp</b> y pagas al recibir tu pedido.</span>
+            </div>
+          </div>
+        </div>
+        
           <!-- Mensaje de tiempo de entrega -->
           <div id="delivery-time-message" class="delivery-time-message">
             <p><i class="fas fa-shipping-fast"></i> Nuestro envío es gratuito. El pedido se entregará en 24-48 horas.</p>

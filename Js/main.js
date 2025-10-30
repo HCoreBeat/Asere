@@ -30,6 +30,69 @@ function mostrarPanel(panel) {
 
 function handleRouteChange() {
     const hash = window.location.hash;
+    // Manejar rutas semánticas de categoría: #categoria-<slug>
+    if (hash.startsWith('#categoria-')) {
+        const slug = decodeURIComponent(hash.replace('#categoria-', ''));
+        // Mostrar panel de productos
+        mostrarPanel('productos');
+        // Actualizar clase 'selected' en el listado de categorías
+        document.querySelectorAll('.categorias ul li a').forEach(link => {
+            if (link.getAttribute('data-categoria') === slug) link.classList.add('selected');
+            else link.classList.remove('selected');
+        });
+
+        // Si la categoría es 'all' restaurar la vista por defecto con separadores y botones
+        if (slug === 'all') {
+            if (typeof window.renderProductos === 'function') window.renderProductos();
+
+            // Mostrar separadores
+            document.querySelectorAll('.separador-container, .separador-container-extra').forEach(sep => {
+                sep.style.display = 'block';
+            });
+
+            // Mostrar panel-categoria
+            const panelCategoria = document.querySelector('.panel-categoria');
+            if (panelCategoria) panelCategoria.style.display = 'flex';
+
+            // Mostrar botones Cargar más y limitar la vista por categoría (solo 4 visibles por categoria)
+            document.querySelectorAll('.categoria').forEach(categoriaDiv => {
+                const productosCategoria = categoriaDiv.querySelectorAll('.producto');
+                productosCategoria.forEach((producto, idx) => {
+                    producto.style.display = idx >= 4 ? 'none' : 'block';
+                });
+            });
+            document.querySelectorAll('.btn-cargar-mas').forEach(btn => btn.style.display = 'block');
+
+            return;
+        }
+
+        // Para una categoría específica
+        // Ocultar separadores
+        document.querySelectorAll('.separador-container, .separador-container-extra').forEach(sep => {
+            sep.style.display = 'none';
+        });
+
+        // Ocultar panel-categoria
+        const panelCategoria = document.querySelector('.panel-categoria');
+        if (panelCategoria) panelCategoria.style.display = 'none';
+
+        // Llamar al renderizador por categoría si existe
+        if (typeof window.renderProductosPorCategoria === 'function') {
+            window.renderProductosPorCategoria(slug);
+        } else if (typeof window.renderProductos === 'function') {
+            // fallback
+            window.renderProductos();
+        }
+
+        // Forzar ocultamiento de separadores y panel-categoria después del render
+        document.querySelectorAll('.separador-container, .separador-container-extra').forEach(sep => sep.style.display = 'none');
+        const panelCat = document.querySelector('.panel-categoria'); if (panelCat) panelCat.style.display = 'none';
+
+        // Ocultar botones de cargar más
+        document.querySelectorAll('.btn-cargar-mas').forEach(btn => btn.style.display = 'none');
+
+        return;
+    }
     if (hash.startsWith('#producto-')) {
         const nombreProductoAmigable = hash.replace('#producto-', '');
         const nombreDecodificado = decodeURIComponent(nombreProductoAmigable);

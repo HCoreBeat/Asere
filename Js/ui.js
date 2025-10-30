@@ -86,14 +86,14 @@ function generarCategoriasHeader() {
         return;
       }
       ulCategorias.innerHTML = '';
-      // Insertar 'Todos' como primer elemento
-      ulCategorias.innerHTML += `<li><a href="#" data-categoria="all" id="cat-all"><i class="fas fa-bars"></i> <span>Todos</span></a></li>`;
+            // Insertar 'Todos' como primer elemento (usa hash semántico)
+            ulCategorias.innerHTML += `<li><a href="#categoria-all" data-categoria="all" id="cat-all"><i class="fas fa-bars"></i> <span>Todos</span></a></li>`;
       // Insertar el resto de categorías
       categorias.forEach(cat => {
         let icon = iconosCategorias[cat.toLowerCase()] || 'fas fa-tag';
         let dataCat = cat.toLowerCase().replace(/\s|&/g, '-').replace(/[^a-z0-9\-]/gi, '');
         let idCat = 'cat-' + dataCat.replace(/[^a-z0-9_\-]/gi, '');
-        ulCategorias.innerHTML += `<li><a href="#" data-categoria="${dataCat}" id="${idCat}"><i class="${icon}"></i> <span>${cat.charAt(0).toUpperCase() + cat.slice(1)}</span></a></li>`;
+                ulCategorias.innerHTML += `<li><a href="#categoria-${dataCat}" data-categoria="${dataCat}" id="${idCat}"><i class="${icon}"></i> <span>${cat.charAt(0).toUpperCase() + cat.slice(1)}</span></a></li>`;
       });
     })
     .catch(err => {
