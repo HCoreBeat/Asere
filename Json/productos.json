@@ -116,12 +116,13 @@
   {
     "nombre": "Paquete de salchichas 7u (350g)",
     "categoria": "carnes",
-    "precio": 1.971,
+    "precio": 1.19,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/Paquete_de_Salchichas.jpg"
+    "imagen": "img/products/Paquete_de_Salchichas.jpg",
+    "nuevo": false
   },
   {
     "nombre": "Pack de 4 Hamburguesas de cerdo",
@@ -167,15 +168,14 @@
     "descripcion": "El maíz dulce en grano de Vima Foods, disponible en una lata de 15 oz (425 g), es ideal para añadir sabor y calidad a tus recetas favoritas. Con un drenado neto de 8.1 oz (230 g), este producto vegano y de calidad premium ofrece granos frescos y tiernos que son perfectos para ensaladas, guisos, sopas y más. Disfruta de la versatilidad del maíz dulce en grano Vima Foods, diseñado para satisfacer a los paladares más exigentes."
   },
   {
-    "nombre": "Salchicha de pollo 10u (340g)",
+    "nombre": "Salchicha de pollo y cerdo 10u (340g)",
     "categoria": "carnes",
-    "precio": 1.81,
-    "descuento": 0,
+    "precio": 1.809,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
     "imagen": "img/products/Salchicha_Pollo_Cerdo.jpg",
-    "nuevo": false
+    "disponible": true
   },
   {
     "nombre": "Picadillo Especial 800g",
