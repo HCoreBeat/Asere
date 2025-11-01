@@ -169,12 +169,13 @@
   {
     "nombre": "Salchicha de pollo y cerdo 10u (340g)",
     "categoria": "carnes",
-    "precio": 1.809,
-    "descuento": 10,
+    "precio": 1.238,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": true,
     "imagen": "img/products/Salchicha_Pollo_Cerdo.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Picadillo Especial 800g",
@@ -502,14 +503,13 @@
   {
     "nombre": "Pasta de tomate Vima (400g)",
     "categoria": "enlatados",
-    "precio": 1.714,
-    "descuento": 0,
+    "precio": 1.885,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
     "imagen": "img/products/Pasta_de_Tomate_Vima.jpeg",
-    "descripcion": "El puré de tomate Vima Foods es el aliado perfecto para realzar el sabor de tus platillos favoritos. Con un contenido neto de 400 g (14 oz.), este puré de alta calidad cuenta con una textura suave y un sabor concentrado que lo hace ideal para salsas, guisos y más. Presentado en una lata con abre fácil, garantiza practicidad y frescura en cada uso. Transforma tus recetas con el auténtico toque del puré de tomate Vima Foods, diseñado para satisfacer a los paladares más exigentes.",
-    "nuevo": false
+    "disponible": true,
+    "descripcion": "El puré de tomate Vima Foods es el aliado perfecto para realzar el sabor de tus platillos favoritos. Con un contenido neto de 400 g (14 oz.), este puré de alta calidad cuenta con una textura suave y un sabor concentrado que lo hace ideal para salsas, guisos y más. Presentado en una lata con abre fácil, garantiza practicidad y frescura en cada uso. Transforma tus recetas con el auténtico toque del puré de tomate Vima Foods, diseñado para satisfacer a los paladares más exigentes."
   },
   {
     "nombre": "Arroz grano largo Vima (1Kg)",
