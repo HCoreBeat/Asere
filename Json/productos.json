@@ -1970,9 +1970,10 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/plitos_de_leche.jpg",
     "descripcion": "Disfruta de un delicioso snack con el Palito Relleno de Leche. Este dulce, en un práctico empaque de 77g, se caracteriza por su fuerte y cremoso sabor a leche. La combinación de una crujiente capa exterior con un suave y dulce relleno de leche lo convierte en una golosina irresistible para cualquier momento del día. Perfecto para compartir, para una pausa dulce en el trabajo o para el recreo de los niños.",
+    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
@@ -2021,10 +2022,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/tigon.jpg",
     "descripcion": "Potencia tu día con la bebida energética Tigon. Esta lata de 250ml está diseñada para darte un impulso de energía cuando más lo necesitas. Enriquecida con cafeína y taurina, esta bebida es la opción perfecta para mejorar tu rendimiento, concentración y vitalidad. Su diseño en lata, llamativo y de color rojo, es práctico y fácil de llevar contigo. Ideal para esos momentos en los que necesitas un extra de energía para el trabajo, el estudio o el deporte.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
