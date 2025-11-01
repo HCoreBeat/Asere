@@ -1164,7 +1164,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/lomo_de_cerdo_deshuesado_x_lb.jpg",
     "nuevo": false
   },
@@ -2121,12 +2121,12 @@
     "nombre": "Frijol Rojo 500g",
     "categoria": "pastas-y-granos",
     "precio": 3.048,
-    "descuento": 10.9,
-    "oferta": true,
+    "descuento": 0,
+    "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/frijoles_rojos_2.jpg",
-    "descripcion": "Frijoles importados.\nLos frijoles rojos La Cata son legumbres de alta calidad, ideales para enriquecer tus comidas. Este paquete de 500g contiene frijoles rojos seleccionados, conocidos por su sabor robusto y su capacidad para absorber los sabores de las especias. Son perfectos para preparar guisos, sopas, chilis y ensaladas, aportando una gran cantidad de fibra, proteínas y otros nutrientes esenciales. Añade el \"sabor familiar\" de La Cata a tus recetas con estos deliciosos y nutritivos frijoles rojos.",
+    "descripcion": "Los frijoles rojos La Cata son legumbres de alta calidad, ideales para enriquecer tus comidas. Este paquete de 500g contiene frijoles rojos seleccionados, conocidos por su sabor robusto y su capacidad para absorber los sabores de las especias. Son perfectos para preparar guisos, sopas, chilis y ensaladas, aportando una gran cantidad de fibra, proteínas y otros nutrientes esenciales. Añade el \"sabor familiar\" de La Cata a tus recetas con estos deliciosos y nutritivos frijoles rojos.",
     "nuevo": false
   },
   {
