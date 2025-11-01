@@ -1671,9 +1671,10 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/arroz_importado.jpg",
     "descripcion": "Disfruta de la calidad y el sabor del Arroz Ricas del Campo. Este arroz gourmet de 1000g es perfecto para crear platos exquisitos. Naturalmente libre de colesterol y grasas trans, es una opción saludable para toda la familia. Su grano blanco y brillante, de alta calidad, asegura una cocción uniforme y resultados deliciosos en cada receta. Ideal para risottos, paellas o como acompañamiento perfecto, este arroz es un básico imprescindible en tu cocina.",
+    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
@@ -2073,10 +2074,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/maestro_aceitunero.jpg",
     "descripcion": "Degusta la mezcla perfecta de sabores clásicos con el cóctel de aceitunas y encurtidos de Maestros Aceituneros. Este tarro contiene una deliciosa combinación de aceitunas y otros vegetales en vinagre, ideal para aperitivos o para complementar tus comidas. Con una tradición desde 1960, Maestros Aceituneros te garantiza un producto de calidad con un sabor auténtico y lleno de matices. Es la opción perfecta para sorprender a tus invitados o simplemente para disfrutar de un snack sabroso y saludable en cualquier momento.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
