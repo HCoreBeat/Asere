@@ -222,10 +222,10 @@
   {
     "nombre": "Helado 4Lts",
     "categoria": "lacteos",
-    "precio": 7.143,
+    "precio": 9.333,
     "descuento": 0,
-    "oferta": true,
-    "mas_vendido": true,
+    "oferta": false,
+    "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Helado.jpg",
     "nuevo": false
@@ -324,12 +324,13 @@
   {
     "nombre": "Sazón Goya",
     "categoria": "aderezos",
-    "precio": 0.6,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
+    "precio": 0.286,
+    "descuento": 0,
+    "oferta": true,
+    "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/Sazon_Goya.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Papas Prefritas Vima 1Kg",
