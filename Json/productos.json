@@ -1710,9 +1710,10 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/tratamiento_en_crema_3.jpg",
     "descripcion": "Mais Cachos de Skala Brasil es una crema de tratamiento 2 en 1 ideal para cabellos rizados y crespos. Su fórmula, enriquecida con una mezcla de Aceites de Argán, Coco, Patauá y Extracto de Amaranto, proporciona fuerza, hidratación y un desenredo perfecto. Este producto 100% vegano y liberado de parabenos, petrolatos, siliconas y aceite mineral, es un aliado para definir rizos y mantener la salud capilar. Utilizable como crema de tratamiento o como crema para peinar, este envase de 1000g ofrece un cuidado especializado y nutritivo para tu cabello.",
+    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
@@ -1969,10 +1970,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/plitos_de_leche.jpg",
     "descripcion": "Disfruta de un delicioso snack con el Palito Relleno de Leche. Este dulce, en un práctico empaque de 77g, se caracteriza por su fuerte y cremoso sabor a leche. La combinación de una crujiente capa exterior con un suave y dulce relleno de leche lo convierte en una golosina irresistible para cualquier momento del día. Perfecto para compartir, para una pausa dulce en el trabajo o para el recreo de los niños.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
