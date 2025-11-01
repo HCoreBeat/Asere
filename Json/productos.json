@@ -1595,10 +1595,9 @@
     "descuento": 5,
     "oferta": true,
     "mas_vendido": true,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/jamn_bravo_rpido.jpg",
-    "descripcion": "Barras 2kg .El Jamón Bravo Rápido es un embutido de calidad, con una textura jugosa y un sabor intenso, ideal para sándwiches, tapas y recetas variadas. Se presenta en barras de 2 kg una opción perfecta para negocios y hogares.",
-    "nuevo": false
+    "descripcion": "Barras 2kg .El Jamón Bravo Rápido es un embutido de calidad, con una textura jugosa y un sabor intenso, ideal para sándwiches, tapas y recetas variadas. Se presenta en barras de 2 kg una opción perfecta para negocios y hogares."
   },
   {
     "nombre": "Saco de arroz americano importado 50lb",
@@ -1630,9 +1629,10 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/rollito_carne_de_cerdo_x_lb.jpg",
-    "descripcion": "Rollitos de carne Ahumada"
+    "descripcion": "Rollitos de carne Ahumada",
+    "nuevo": false
   },
   {
     "nombre": "Pollo Ahumado x Lb",
