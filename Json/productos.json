@@ -2699,10 +2699,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/perfume_impacto.jpg",
     "descripcion": "Añade un toque de seducción a tu día con el perfume Impacto Woman de S&C. Esta fragancia, presentada en una elegante botella de vidrio transparente con un tono rosado, es la elección perfecta para la mujer moderna y segura de sí misma. Su tapa negra y la tipografía en blanco y rojo, resaltan la feminidad y el carácter del perfume. La caja, con su diseño en tonos rojizos y negros, evoca la energía y la pasión de la mujer actual. Con un aroma que equilibra notas florales y frutales, Impacto Woman es ideal para usar tanto de día como de noche. Su práctico tamaño de 100 ml la convierte en el compañero perfecto para tu bolso. S&C Impacto Woman es más que un perfume, es una declaración de estilo.",
-    "imagenesAdicionales": [],
     "nuevo": false
   }
 ]
