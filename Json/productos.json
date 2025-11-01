@@ -2387,10 +2387,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/pelly_queso_2.jpg",
     "descripcion": "Saborea la deliciosa experiencia de Piraditos, el snack perfecto para cualquier momento del día. Con su irresistible sabor a extra queso cheddar, estos pequeños y crujientes bocados de maíz te deleitarán en cada mordisco. Cada bolsa, con un diseño amarillo vibrante y una simpática mazorca de maíz como mascota, es sinónimo de diversión y sabor. Ideales para compartir con amigos y familia, o para disfrutar solo mientras ves tu serie favorita. La textura ligera y el intenso sabor a queso cheddar de Piraditos te harán querer más y más. Añade este pack de tres bolsas a tu carrito y prepárate para una explosión de sabor que no te dejará indiferente. ¡Descubre por qué Piraditos es el snack salado que todos prefieren!",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
@@ -2647,9 +2646,10 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/perfume_la_vie_est_belle.jpg",
     "descripcion": "Adquiere el icónico perfume La Vie Est Belle de Lancôme, una fragancia que celebra la belleza de la vida. Este eau de parfum, presentado en una elegante y sofisticada botella de 100 ml con un lazo gris, se distingue por su tono rosado y su diseño que evoca una sonrisa, simbolizando la felicidad. Su caja, en un delicado color rosa pálido, resalta el nombre del perfume en una tipografía elegante, lo que lo convierte en un regalo perfecto. La Vie Est Belle es una fragancia con notas de iris, jazmín y flor de azahar, con un fondo de pachulí y vainilla, creando un aroma dulce, floral y gourmand, ideal para la mujer moderna y elegante. Es un perfume que te acompañará en tus momentos más especiales, dejando una estela inolvidable. Eleva tus sentidos y vive una vida más bella con Lancôme.",
+    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
