@@ -2647,10 +2647,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/perfume_la_vie_est_belle.jpg",
     "descripcion": "Adquiere el icónico perfume La Vie Est Belle de Lancôme, una fragancia que celebra la belleza de la vida. Este eau de parfum, presentado en una elegante y sofisticada botella de 100 ml con un lazo gris, se distingue por su tono rosado y su diseño que evoca una sonrisa, simbolizando la felicidad. Su caja, en un delicado color rosa pálido, resalta el nombre del perfume en una tipografía elegante, lo que lo convierte en un regalo perfecto. La Vie Est Belle es una fragancia con notas de iris, jazmín y flor de azahar, con un fondo de pachulí y vainilla, creando un aroma dulce, floral y gourmand, ideal para la mujer moderna y elegante. Es un perfume que te acompañará en tus momentos más especiales, dejando una estela inolvidable. Eleva tus sentidos y vive una vida más bella con Lancôme.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
@@ -2699,9 +2698,10 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/perfume_impacto.jpg",
     "descripcion": "Añade un toque de seducción a tu día con el perfume Impacto Woman de S&C. Esta fragancia, presentada en una elegante botella de vidrio transparente con un tono rosado, es la elección perfecta para la mujer moderna y segura de sí misma. Su tapa negra y la tipografía en blanco y rojo, resaltan la feminidad y el carácter del perfume. La caja, con su diseño en tonos rojizos y negros, evoca la energía y la pasión de la mujer actual. Con un aroma que equilibra notas florales y frutales, Impacto Woman es ideal para usar tanto de día como de noche. Su práctico tamaño de 100 ml la convierte en el compañero perfecto para tu bolso. S&C Impacto Woman es más que un perfume, es una declaración de estilo.",
+    "imagenesAdicionales": [],
     "nuevo": false
   }
 ]
