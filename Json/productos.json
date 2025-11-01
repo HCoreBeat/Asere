@@ -1164,7 +1164,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/lomo_de_cerdo_deshuesado_x_lb.jpg",
     "nuevo": false
   },
@@ -1680,14 +1680,13 @@
   {
     "nombre": "Mascarilla capilar 2 en 1 (Potão do Amor)",
     "categoria": "aseo",
-    "precio": 19.05,
+    "precio": 19.048,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/tratamiento_en_crema.jpg",
     "descripcion": "Potão do Amor de Skala Expert es un tratamiento en crema multifuncional diseñado para cabellos dañados. Con sus 18 elementos nutritivos, este producto 2 en 1 actúa como crema para peinar y crema hidratante. Libre de parabenos, sulfatos, siliconas y petrolatos, es ideal para quienes buscan una rutina de cuidado capilar más natural. Su fórmula liberada y vegana repara y revitaliza los cabellos, devolviéndoles suavidad, brillo y vitalidad. Este envase de 1000g ofrece un tratamiento completo y duradero para un cabello sano y radiante.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
