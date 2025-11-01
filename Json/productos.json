@@ -222,10 +222,10 @@
   {
     "nombre": "Helado 4Lts",
     "categoria": "lacteos",
-    "precio": 9.333,
+    "precio": 7.143,
     "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
+    "oferta": true,
+    "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/Helado.jpg",
     "nuevo": false
