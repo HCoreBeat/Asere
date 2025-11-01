@@ -1595,9 +1595,10 @@
     "descuento": 5,
     "oferta": true,
     "mas_vendido": true,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/jamn_bravo_rpido.jpg",
-    "descripcion": "Barras 2kg .El Jamón Bravo Rápido es un embutido de calidad, con una textura jugosa y un sabor intenso, ideal para sándwiches, tapas y recetas variadas. Se presenta en barras de 2 kg una opción perfecta para negocios y hogares."
+    "descripcion": "Barras 2kg .El Jamón Bravo Rápido es un embutido de calidad, con una textura jugosa y un sabor intenso, ideal para sándwiches, tapas y recetas variadas. Se presenta en barras de 2 kg una opción perfecta para negocios y hogares.",
+    "nuevo": false
   },
   {
     "nombre": "Saco de arroz americano importado 50lb",
@@ -1944,9 +1945,10 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/linea_shampo_acondicionador_2.jpg",
     "descripcion": "Revitaliza tu cabello con el set de champú y acondicionador Brazilian de HT, ahora en su presentación de 1 litro. Con una fórmula a base de Aceite de Coco, esta línea ofrece fuerza, resistencia y protección para todo tipo de cabello. El champú limpia suavemente, mientras que el acondicionador hidrata y nutre en profundidad, dejando el cabello suave, brillante y con un aroma tropical. Estos productos son ideales para quienes buscan un cuidado capilar completo y duradero, proporcionando una experiencia de limpieza y suavidad que transforma tu rutina de belleza.",
+    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
