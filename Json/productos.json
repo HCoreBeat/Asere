@@ -1472,11 +1472,12 @@
     "nombre": "Jabón de Baño (100g)",
     "categoria": "otros",
     "precio": 1,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
+    "descuento": 19,
+    "oferta": true,
+    "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/Jabon_de_Baño.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Paquete de Papel Sanitario",
