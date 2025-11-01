@@ -324,13 +324,12 @@
   {
     "nombre": "Sazón Goya",
     "categoria": "aderezos",
-    "precio": 0.286,
-    "descuento": 0,
-    "oferta": true,
-    "mas_vendido": true,
-    "disponible": true,
+    "precio": 0.6,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
     "imagen": "img/products/Sazon_Goya.jpg",
-    "nuevo": false
+    "disponible": true
   },
   {
     "nombre": "Papas Prefritas Vima 1Kg",
@@ -413,12 +412,13 @@
   {
     "nombre": "Frijol Negro x Lb",
     "categoria": "pastas-y-granos",
-    "precio": 2.5,
-    "descuento": 10,
+    "precio": 1.81,
+    "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
+    "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/Frijol_Negro.jpeg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Paquete de pan de bola 10u",
