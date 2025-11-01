@@ -1697,9 +1697,10 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/tratamiento_en_crema_2.jpg",
     "descripcion": "Divina Dama de Skala Expert es un tratamiento en crema multifuncional 2 en 1, perfecto para cabellos con química o teñidos. Esta fórmula enriquecida con Proteínas de Arroz, Vitamina E, Aminoácidos, Aceite de Linaza y Aceite de Coco, ofrece una intensa reparación y un brillo deslumbrante. Su composición 100% vegana y libre de ingredientes de origen animal, junto a su fórmula liberada, garantiza un cuidado delicado y efectivo. Se puede utilizar como crema para peinar o como crema hidratante, revitalizando y protegiendo el color de tu cabello en un envase de 1000g.",
+    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
@@ -1709,10 +1710,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/tratamiento_en_crema_3.jpg",
     "descripcion": "Mais Cachos de Skala Brasil es una crema de tratamiento 2 en 1 ideal para cabellos rizados y crespos. Su fórmula, enriquecida con una mezcla de Aceites de Argán, Coco, Patauá y Extracto de Amaranto, proporciona fuerza, hidratación y un desenredo perfecto. Este producto 100% vegano y liberado de parabenos, petrolatos, siliconas y aceite mineral, es un aliado para definir rizos y mantener la salud capilar. Utilizable como crema de tratamiento o como crema para peinar, este envase de 1000g ofrece un cuidado especializado y nutritivo para tu cabello.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
