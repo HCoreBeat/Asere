@@ -170,12 +170,13 @@
   {
     "nombre": "Salchicha de pollo y cerdo 10u (340g)",
     "categoria": "carnes",
-    "precio": 1.809,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
+    "precio": 1.81,
+    "descuento": 28.9,
+    "oferta": true,
+    "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/Salchicha_Pollo_Cerdo.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Picadillo Especial 800g",
