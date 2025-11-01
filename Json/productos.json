@@ -2,7 +2,7 @@
   {
     "nombre": "Refresco Instantáneo (2Lt)",
     "categoria": "bebidas",
-    "precio": 0.238,
+    "precio": 0.4,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -170,12 +170,13 @@
   {
     "nombre": "Salchicha de pollo y cerdo 10u (340g)",
     "categoria": "carnes",
-    "precio": 1.809,
-    "descuento": 10,
-    "oferta": false,
+    "precio": 1.238,
+    "descuento": 0,
+    "oferta": true,
     "mas_vendido": false,
+    "disponible": true,
     "imagen": "img/products/Salchicha_Pollo_Cerdo.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Picadillo Especial 800g",
