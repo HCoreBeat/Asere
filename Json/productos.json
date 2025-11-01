@@ -66,12 +66,14 @@
   {
     "nombre": "Carne de Ovejo x Lb",
     "categoria": "carnes",
-    "precio": 2.25,
-    "descuento": 10,
-    "oferta": false,
+    "precio": 2.248,
+    "descuento": 16.1,
+    "oferta": true,
     "mas_vendido": false,
+    "disponible": true,
     "imagen": "img/products/Carne_de_Ovejo.jpg",
-    "disponible": true
+    "descripcion": "Carne fresca al momento del pedido",
+    "nuevo": false
   },
   {
     "nombre": "Picadillo Especial 400g",
