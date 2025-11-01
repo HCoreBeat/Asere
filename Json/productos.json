@@ -170,13 +170,12 @@
   {
     "nombre": "Salchicha de pollo y cerdo 10u (340g)",
     "categoria": "carnes",
-    "precio": 1.238,
-    "descuento": 0,
-    "oferta": true,
+    "precio": 1.809,
+    "descuento": 10,
+    "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
     "imagen": "img/products/Salchicha_Pollo_Cerdo.jpg",
-    "nuevo": false
+    "disponible": true
   },
   {
     "nombre": "Picadillo Especial 800g",
@@ -191,13 +190,14 @@
   {
     "nombre": "Queso criollo x Lb",
     "categoria": "lacteos",
-    "precio": 2.285,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
+    "precio": 1.81,
+    "descuento": 0,
+    "oferta": true,
+    "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/queso_criollo.jpg",
     "descripcion": "Queso Criollo Fresco, Disfruta del auténtico sabor del queso criollo, un clásico en la cocina tradicional. Este queso fresco tiene una textura firme y ligeramente quebradiza, ideal para rallar, cortar en cubos o simplemente disfrutarlo como está. Su color blanco puro y su aroma suave evocan frescura y calidad artesanal. Perfecto para acompañar tus platos favoritos, ya sea como ingrediente en ensaladas, arepas o junto a frutas y miel. Este queso es una opción deliciosa y versátil para los amantes de los sabores auténticos.",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Leche en polvo (900g)",
