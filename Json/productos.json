@@ -3,9 +3,9 @@
     "nombre": "Refresco Instantáneo (2Lt)",
     "categoria": "bebidas",
     "precio": 0.4,
-    "descuento": 40.5,
-    "oferta": true,
-    "mas_vendido": true,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Refresco_Instantaneo.jpg",
     "nuevo": false
@@ -325,11 +325,12 @@
     "nombre": "Sazón Goya",
     "categoria": "aderezos",
     "precio": 0.6,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
+    "descuento": 52.4,
+    "oferta": true,
+    "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/Sazon_Goya.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Papas Prefritas Vima 1Kg",
