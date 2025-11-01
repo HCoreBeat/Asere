@@ -412,12 +412,13 @@
   {
     "nombre": "Frijol Negro x Lb",
     "categoria": "pastas-y-granos",
-    "precio": 1.81,
+    "precio": 1.857,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": true,
+    "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Frijol_Negro.jpeg",
+    "descripcion": "Frijol producción nacional.\nViene semi limpio",
     "nuevo": false
   },
   {
