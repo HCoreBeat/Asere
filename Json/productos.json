@@ -597,13 +597,11 @@
     "nombre": "Frijol Rojo x Lb",
     "categoria": "pastas-y-granos",
     "precio": 2.762,
-    "descuento": 27.6,
-    "oferta": true,
+    "descuento": 0,
+    "oferta": false,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/Frijol_Rojo.jpeg",
-    "descripcion": "Frijol producción nacional\nViene semi-limpio",
-    "nuevo": false
+    "imagen": "img/products/Frijol_Rojo.jpeg"
   },
   {
     "nombre": "Mantequilla (250g)",
@@ -801,11 +799,12 @@
     "nombre": "Limón x Lb",
     "categoria": "agro",
     "precio": 2.2,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
+    "descuento": 17.7,
+    "oferta": true,
+    "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/Limon.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Plátano macho x unidad",
