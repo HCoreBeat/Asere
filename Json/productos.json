@@ -470,12 +470,13 @@
   {
     "nombre": "Espaguetis (500g)",
     "categoria": "pastas-y-granos",
-    "precio": 1.8,
-    "descuento": 10,
+    "precio": 1.238,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": true,
     "imagen": "img/products/Espaguetis.jpeg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Leche Condensada azucarada (390g)",
