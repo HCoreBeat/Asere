@@ -2133,13 +2133,12 @@
     "nombre": "Garbanzo 500g",
     "categoria": "pastas-y-granos",
     "precio": 3.048,
-    "descuento": 0,
-    "oferta": false,
+    "descuento": 21.9,
+    "oferta": true,
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/garbanzo.jpg",
     "descripcion": "Los garbanzos La Cata son legumbres de calidad, ideales para preparar una gran variedad de platos saludables y deliciosos. Este paquete de 500g contiene garbanzos seleccionados, perfectos para guisos, ensaladas, hummus o sopas. Con su textura firme y su sabor característico, son una excelente fuente de proteínas y fibra. Su versatilidad en la cocina y su alto valor nutricional los convierten en un ingrediente esencial para una dieta equilibrada.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
@@ -2394,9 +2393,10 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/pelly_queso_2.jpg",
     "descripcion": "Saborea la deliciosa experiencia de Piraditos, el snack perfecto para cualquier momento del día. Con su irresistible sabor a extra queso cheddar, estos pequeños y crujientes bocados de maíz te deleitarán en cada mordisco. Cada bolsa, con un diseño amarillo vibrante y una simpática mazorca de maíz como mascota, es sinónimo de diversión y sabor. Ideales para compartir con amigos y familia, o para disfrutar solo mientras ves tu serie favorita. La textura ligera y el intenso sabor a queso cheddar de Piraditos te harán querer más y más. Añade este pack de tres bolsas a tu carrito y prepárate para una explosión de sabor que no te dejará indiferente. ¡Descubre por qué Piraditos es el snack salado que todos prefieren!",
+    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
