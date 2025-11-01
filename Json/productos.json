@@ -1039,13 +1039,12 @@
   {
     "nombre": "Caja de Cervezas Bucanero",
     "categoria": "alcohol",
-    "precio": 23.952,
-    "descuento": 0,
+    "precio": 23.95,
+    "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
     "imagen": "img/products/Caja_Cerveza_Bucanero.jpg",
-    "nuevo": false
+    "disponible": true
   },
   {
     "nombre": "Cervezas Bucanero (355ml)",
@@ -1165,7 +1164,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/lomo_de_cerdo_deshuesado_x_lb.jpg",
     "nuevo": false
   },
