@@ -2,10 +2,10 @@
   {
     "nombre": "Refresco Instantáneo (2Lt)",
     "categoria": "bebidas",
-    "precio": 0.4,
+    "precio": 0.238,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
+    "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/Refresco_Instantaneo.jpg",
     "nuevo": false
