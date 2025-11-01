@@ -2,10 +2,10 @@
   {
     "nombre": "Refresco Instantáneo (2Lt)",
     "categoria": "bebidas",
-    "precio": 0.238,
+    "precio": 0.4,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": true,
+    "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Refresco_Instantaneo.jpg",
     "nuevo": false
@@ -223,9 +223,9 @@
     "nombre": "Helado 4Lts",
     "categoria": "lacteos",
     "precio": 9.333,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
+    "descuento": 23.5,
+    "oferta": true,
+    "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/Helado.jpg",
     "nuevo": false
