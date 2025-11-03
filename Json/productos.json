@@ -1562,21 +1562,6 @@
     "disponible": true
   },
   {
-    "nombre": "Table fill light",
-    "categoria": "electrodomesticos",
-    "precio": 17.143,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Table_fill_light.jpg",
-    "descripcion": "Lámpara de Relleno de Mesa PD-56 con Tonos de Luz Ajustables. Añade el toque perfecto de iluminación a tu espacio con la lámpara de relleno modelo PD-56. Con un diseño moderno y una altura de 55 cm, esta lámpara cuenta con cuatro bombillas verticales integradas en una estructura blanca. Ofrece tres opciones de tonalidades de luz para adaptarse a cualquier ambiente: cálida, neutra y fría. Además, incluye un práctico cable USB para una alimentación cómoda y segura. Ideal para oficinas, escritorios o cualquier rincón de tu hogar que necesite una iluminación versátil y elegante. ¡Optimiza tu espacio con estilo!",
-    "imagenesAdicionales": [
-      "img/products/Table_fill_light_2.jpg",
-      "img/products/Table_fill_light_3.jpg"
-    ]
-  },
-  {
     "nombre": "Cable C",
     "categoria": "electrodomesticos",
     "precio": 2.38,
