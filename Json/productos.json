@@ -35,7 +35,7 @@
   {
     "nombre": "Pollo Country Pride",
     "categoria": "carnes",
-    "precio": 13.333,
+    "precio": 11.429,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -67,7 +67,7 @@
     "nombre": "Carne de Ovejo x Lb",
     "categoria": "carnes",
     "precio": 2.248,
-    "descuento": 16.1,
+    "descuento": 4.7,
     "oferta": true,
     "mas_vendido": false,
     "disponible": true,
