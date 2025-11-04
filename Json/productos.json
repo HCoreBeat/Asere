@@ -3,7 +3,7 @@
     "nombre": "Refresco Instantáneo (2Lt)",
     "categoria": "bebidas",
     "precio": 0.4,
-    "descuento": 33.3,
+    "descuento": 40.5,
     "oferta": true,
     "mas_vendido": true,
     "disponible": true,
@@ -13,7 +13,7 @@
   {
     "nombre": "Pechuga de Pollo (1Kg)",
     "categoria": "carnes",
-    "precio": 7.619,
+    "precio": 9.524,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
