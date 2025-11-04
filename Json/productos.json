@@ -13,7 +13,7 @@
   {
     "nombre": "Pechuga de Pollo (1Kg)",
     "categoria": "carnes",
-    "precio": 9.524,
+    "precio": 7.619,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -35,7 +35,7 @@
   {
     "nombre": "Pollo Country Pride",
     "categoria": "carnes",
-    "precio": 11.429,
+    "precio": 13.333,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
