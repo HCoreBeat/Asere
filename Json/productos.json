@@ -2086,10 +2086,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/habichuelas_blancas.jpg",
     "descripcion": "Las habichuelas blancas La Cata son legumbres de alta calidad, ideales para preparar una gran variedad de platos. Este paquete te ofrece frijoles blancos seleccionados, perfectos para sopas, guisos o ensaladas. Con su textura suave y su sabor delicado, son un ingrediente fundamental en la cocina tradicional y una excelente fuente de proteína vegetal, fibra y nutrientes esenciales.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
