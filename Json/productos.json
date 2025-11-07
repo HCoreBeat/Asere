@@ -2123,7 +2123,7 @@
     "descuento": 21.9,
     "oferta": true,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/garbanzo.jpg",
     "descripcion": "Los garbanzos La Cata son legumbres de calidad, ideales para preparar una gran variedad de platos saludables y deliciosos. Este paquete de 500g contiene garbanzos seleccionados, perfectos para guisos, ensaladas, hummus o sopas. Con su textura firme y su sabor característico, son una excelente fuente de proteínas y fibra. Su versatilidad en la cocina y su alto valor nutricional los convierten en un ingrediente esencial para una dieta equilibrada.",
     "nuevo": false
