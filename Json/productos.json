@@ -345,12 +345,14 @@
   {
     "nombre": "Frijol Negro x Lb",
     "categoria": "pastas-y-granos",
-    "precio": 2.5,
-    "descuento": 10,
-    "oferta": false,
+    "precio": 2.505,
+    "descuento": 31.6,
+    "oferta": true,
     "mas_vendido": false,
+    "disponible": true,
     "imagen": "img/products/Frijol_Negro.jpeg",
-    "disponible": true
+    "descripcion": "Frijol producción nacional no viene limpio",
+    "nuevo": false
   },
   {
     "nombre": "Paquete de pan de bola 10u",
