@@ -505,16 +505,6 @@
     "descripcion": "Descubre la mayonesa Vima Foods de 450 ml, elaborada con ingredientes de alta calidad para garantizar un sabor auténtico y delicioso. Perfecta para acompañar sándwiches, ensaladas y tus recetas favoritas, esta mayonesa destaca por su textura cremosa y su frescura incomparable. Su presentación en un frasco práctico con tapa verde asegura la conservación del sabor y la comodidad en cada uso. Haz de Vima Foods tu elección de confianza para realzar cada bocado."
   },
   {
-    "nombre": "Azúcar (1Kg)",
-    "categoria": "despensa",
-    "precio": 4.476,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Azucar.jpeg",
-    "disponible": false
-  },
-  {
     "nombre": "Frijol Rojo x Lb",
     "categoria": "pastas-y-granos",
     "precio": 2.762,
