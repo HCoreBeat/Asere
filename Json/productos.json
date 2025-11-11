@@ -1370,19 +1370,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Crema Corporal (Lavanda y Manzanilla)",
-    "categoria": "aseo",
-    "precio": 5.714,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/crema_corporal_morada.jpg",
-    "descripcion": "Consiéntete con la crema corporal ultra-rica XtraCare de Lavanda y Manzanilla. Esta fórmula, presentada en un envase de 7oz (198g), está diseñada para hidratar y suavizar la piel intensamente. Su relajante aroma a lavanda y manzanilla te envuelve en una experiencia calmante, ideal para un momento de autocuidado. La crema se absorbe rápidamente, proporcionando una hidratación profunda y duradera que deja la piel increíblemente suave y con un aroma delicado. Es el complemento perfecto para tu rutina diaria de cuidado corporal, ayudando a relajar la mente y nutrir la piel al mismo tiempo.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
     "nombre": "Crema Corporal (Coco y Lima)",
     "categoria": "aseo",
     "precio": 5.714,
