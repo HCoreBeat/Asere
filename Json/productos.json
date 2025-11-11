@@ -708,16 +708,6 @@
     "disponible": true
   },
   {
-    "nombre": "Caja de Bebida energética 5 Shot (250ml x 24)",
-    "categoria": "bebidas",
-    "precio": 21.15,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Caja_Bebida_Energetica.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Ron Habana Club Añejo Reserva",
     "categoria": "alcohol",
     "precio": 17.05,
