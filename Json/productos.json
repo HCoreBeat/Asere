@@ -828,16 +828,6 @@
     "disponible": true
   },
   {
-    "nombre": "Refresco Piña (330ml)",
-    "categoria": "bebidas",
-    "precio": 0.9,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Refresco_Piña_Brio.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Rollitos de Primavera (200g)",
     "categoria": "carnes",
     "precio": 1.93,
