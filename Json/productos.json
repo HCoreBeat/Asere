@@ -1370,19 +1370,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Crema Corporal (Coco y Lima)",
-    "categoria": "aseo",
-    "precio": 5.714,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/crema_corporal_verde.jpg",
-    "descripcion": "Sumérgete en una experiencia tropical con la crema corporal ultra-rica XtraCare Signature de Coco y Lima. Esta crema, en un envase de 7oz (198g), está formulada para hidratar y suavizar la piel, dejándola con un aroma fresco y revitalizante. La combinación de coco cremoso y la acidez de la lima evoca la sensación de un paraíso exótico, perfecta para quienes buscan un toque de frescura en su rutina diaria. Su fórmula se absorbe rápidamente, proporcionando una hidratación duradera sin dejar residuos grasos. Es ideal para el cuidado diario, dejando la piel radiante y delicadamente perfumada.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
     "nombre": "Crema Corporal (Cherry Blossom)",
     "categoria": "aseo",
     "precio": 5.714,
