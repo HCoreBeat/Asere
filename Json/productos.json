@@ -708,16 +708,6 @@
     "disponible": true
   },
   {
-    "nombre": "Jugo Santa Juice de Uva (200ml)",
-    "categoria": "bebidas",
-    "precio": 0.72,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Caja_de_Jugos_Santa_Juice_Uva.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Caja de refresco Piña",
     "categoria": "bebidas",
     "precio": 19.35,
