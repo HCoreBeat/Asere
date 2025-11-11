@@ -708,16 +708,6 @@
     "disponible": true
   },
   {
-    "nombre": "Malta Morena (237ml)",
-    "categoria": "bebidas",
-    "precio": 1.09,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Malta_Morena.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Caja de jugos Santa Juice Uva (24 x 200ml)",
     "categoria": "bebidas",
     "precio": 15.88,
