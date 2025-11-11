@@ -389,7 +389,7 @@
     "precio": 7,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
+    "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/Cafe_la_Llave.jpeg",
     "nuevo": false
