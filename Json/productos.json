@@ -23,6 +23,16 @@
     "nuevo": false
   },
   {
+    "nombre": "Pollo Golden Phoenix (2Kg)",
+    "categoria": "carnes",
+    "precio": 9.524,
+    "descuento": 25,
+    "oferta": true,
+    "mas_vendido": true,
+    "disponible": false,
+    "imagen": "img/products/Pollo_Golden.jpg"
+  },
+  {
     "nombre": "Pollo Country Pride",
     "categoria": "carnes",
     "precio": 11.429,
@@ -32,6 +42,16 @@
     "disponible": true,
     "imagen": "img/products/Pollo_Country.jpg",
     "nuevo": false
+  },
+  {
+    "nombre": "Paquete de muslos de pollo 5.5lbs",
+    "categoria": "carnes",
+    "precio": 10,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Paquete_de_muslos_de_Pollo.jpg",
+    "disponible": false
   },
   {
     "nombre": "Carne de cerdo x Lb",
@@ -69,13 +89,11 @@
     "nombre": "Jamón de Primera x Lb",
     "categoria": "carnes",
     "precio": 4.8,
-    "descuento": 6.3,
-    "oferta": true,
-    "mas_vendido": false,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/Jamon_de_Pierna.jpg",
-    "descripcion": "Jamón del clásico del bueno, pura carne 🍖",
-    "nuevo": false
+    "imagen": "img/products/Jamon_de_Pierna.jpg"
   },
   {
     "nombre": "Chuletas de cerdo x Lb",
@@ -86,16 +104,6 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Chuletas_de_Cerdo.jpg"
-  },
-  {
-    "nombre": "Paquete de picadillo de pollo 1kg",
-    "categoria": "carnes",
-    "precio": 2.828,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": true,
-    "imagen": "img/products/Paquete_de_Picadillo_Pollo.jpg",
-    "disponible": false
   },
   {
     "nombre": "Paquete de salchichas 7u (350g)",
