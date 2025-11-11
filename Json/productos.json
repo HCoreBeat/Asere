@@ -44,16 +44,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Paquete de muslos de pollo 5.5lbs",
-    "categoria": "carnes",
-    "precio": 10,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Paquete_de_muslos_de_Pollo.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Carne de cerdo x Lb",
     "categoria": "carnes",
     "precio": 3.047,
