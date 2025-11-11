@@ -1396,19 +1396,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Kremato",
-    "categoria": "bebidas",
-    "precio": 2.095,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/kremato.jpg",
-    "descripcion": "Refresca tu paladar con la inconfundible mezcla de sabores de Kermato. Esta bebida, presentada en una práctica lata, es una fusión única que combina el frescor del tomate con un toque picante y notas de especias. Con advertencias de exceso de calorías y azúcares, esta bebida es ideal para quienes buscan un sabor intenso y diferente. Perfecta para acompañar tus comidas, como base para cócteles o simplemente para disfrutarla sola, Kermato es una experiencia de sabor audaz y refrescante.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
     "nombre": "Agua Natural Ciego Montero 500ml",
     "categoria": "bebidas",
     "precio": 0.667,
