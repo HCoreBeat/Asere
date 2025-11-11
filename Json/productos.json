@@ -515,17 +515,6 @@
     "imagen": "img/products/Frijol_Rojo.jpeg"
   },
   {
-    "nombre": "Mantequilla (250g)",
-    "categoria": "despensa",
-    "precio": 2.305,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Mantequilla.jpeg",
-    "nuevo": false
-  },
-  {
     "nombre": "Sal x Lb",
     "categoria": "despensa",
     "precio": 0.333,
