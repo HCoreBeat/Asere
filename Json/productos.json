@@ -345,14 +345,12 @@
   {
     "nombre": "Frijol Negro x Lb",
     "categoria": "pastas-y-granos",
-    "precio": 2.505,
-    "descuento": 31.6,
-    "oferta": true,
+    "precio": 2.5,
+    "descuento": 10,
+    "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
     "imagen": "img/products/Frijol_Negro.jpeg",
-    "descripcion": "Frijol producción nacional no viene limpio",
-    "nuevo": false
+    "disponible": true
   },
   {
     "nombre": "Paquete de pan de bola 10u",
@@ -389,11 +387,12 @@
     "nombre": "Café La Llave",
     "categoria": "cafe",
     "precio": 7,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
+    "descuento": 0,
+    "oferta": true,
+    "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/Cafe_la_Llave.jpeg",
-    "disponible": false
+    "nuevo": false
   },
   {
     "nombre": "Cartón de Huevos",
