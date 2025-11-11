@@ -860,16 +860,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Caja de Jurel (20Libras)",
-    "categoria": "carnes",
-    "precio": 35.98,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Caja_de_Jurel.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Pelly de Ajo",
     "categoria": "confituras",
     "precio": 2.838,
