@@ -1721,10 +1721,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/jugo_mango.jpg",
     "descripcion": "Descubre el vibrante y delicioso Néctar Tropical Goliath, una bebida refrescante que te transporta a un paraíso de sabores exóticos. Este envase de cartón de 946 ml presenta una mezcla irresistible de frutas tropicales, con imágenes destacadas de piña, naranja y plátano, sumergidas en un chorro de jugo refrescante. El diseño del empaque es atractivo, con un fondo de cielo azul y nubes que evocan frescura. En la parte inferior, se indica que es \"Hecho en Estados Unidos\", garantizando su procedencia. Además, el producto está enriquecido con vitamina C, ideal para un impulso de energía y bienestar en cualquier momento del día. Perfecto para disfrutar solo, con las comidas, o para preparar cócteles y batidos.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
