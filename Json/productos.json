@@ -758,17 +758,6 @@
     "disponible": true
   },
   {
-    "nombre": "Cervezas Bucanero (355ml)",
-    "categoria": "alcohol",
-    "precio": 1.048,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Cerveza_Bucanero.jpg",
-    "nuevo": false
-  },
-  {
     "nombre": "Caja de refresco Cola",
     "categoria": "bebidas",
     "precio": 19.35,
