@@ -192,16 +192,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Leche en polvo (900g)",
-    "categoria": "lacteos",
-    "precio": 13,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Leche_en_Polvo.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Leche Entera",
     "categoria": "lacteos",
     "precio": 10.86,
