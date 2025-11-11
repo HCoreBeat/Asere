@@ -679,11 +679,13 @@
     "nombre": "Limón x Lb",
     "categoria": "agro",
     "precio": 2.2,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
+    "descuento": 35.1,
+    "oferta": true,
+    "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/Limon.jpg",
-    "disponible": true
+    "descripcion": "Limón jugoso natural",
+    "nuevo": false
   },
   {
     "nombre": "Plátano macho x unidad",
