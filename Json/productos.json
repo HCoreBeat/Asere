@@ -893,16 +893,39 @@
     "descripcion": "Pelly Bolitas de Queso - Snack de Maíz Crujiente Haz de cada momento una celebración con Pelly Bolitas de Queso, un snack irresistible hecho de maíz con un sabor intenso a queso. Este producto se presenta en un empaque vibrante de color naranja con detalles alegres que capturan la esencia divertida del snack. Con la frase destacada ¡Poca sal, más maíz!, estas bolitas de queso son la opción perfecta para aquellos que buscan un balance entre sabor y frescura. Cada bolsa contiene 120 gramos de felicidad crujiente, ideal para compartir o disfrutar en cualquier ocasión. El diseño incluye un personaje sonriente que refuerza el carácter amigable y llamativo del producto. ¡Atrévete a probarlas y llena tu día de color y sabor!"
   },
   {
-    "nombre": "Galletas de Soda con Mantequilla Doricas",
+    "nombre": "Batata Lisa",
     "categoria": "confituras",
-    "precio": 5,
+    "precio": 1.714,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": false,
+    "imagen": "img/products/batata_lisa.jpg",
+    "descripcion": "Batata Lisa Natural - Friteli Descubre el auténtico sabor de las papas fritas Friteli Batata Lisa Natural, hechas con 100% batata de verdad para brindarte una experiencia genuina y crujiente. Cada bolsa de 100 gramos contiene papas cuidadosamente seleccionadas y preparadas para mantener su frescura y calidad excepcional. Este snack combina tradición y sabor natural, ideal para disfrutar en cualquier momento. El empaque llamativo incluye un diseño moderno en color negro, destacando la autenticidad del producto con frases como Papas Seleccionadas y el sello de calidad de la marca Friteli. Ten en cuenta que el empaque también indica los niveles de grasas, mostrando transparencia hacia los consumidores.",
+    "nuevo": false
+  },
+  {
+    "nombre": "Papas Crunchy",
+    "categoria": "confituras",
+    "precio": 1.714,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": false,
+    "imagen": "img/products/papas_crunchy.jpg",
+    "descripcion": "CRUNCHY - Papas Fritas Sabor Salt & Vinegar Déjate llevar por la explosión de sabores con estas papas fritas CRUNCHY, una deliciosa combinación de sal y vinagre que te hará agua la boca. Presentadas en una bolsa vibrante de color morado, estas papas ofrecen un crujido irresistible y el equilibrio perfecto entre lo salado y lo ácido. Con un diseño llamativo, incluyen la imagen de una botella de vinagre, un salero y papas fritas que evocan frescura y calidad. Ideales para disfrutar en cualquier momento, estas papas vienen con 240 calorías por porción y son perfectas para compartir o darte un gusto. ¡Un sabor clásico reinventado para los amantes del buen snack!",
+    "nuevo": false
+  },
+  {
+    "nombre": "Galletas de Soda con Mantequilla Doricas",
+    "categoria": "confituras",
+    "precio": 5,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
     "imagen": "img/products/Galleta_de_Soda_Con_Mantequilla.jpg",
     "descripcion": "Extra grandes y deliciosas, las galletas semidulces DoRicas son perfectas para cualquier ocasión, ofreciendo un sabor único que encanta a todos. Este paquete de 525 g es ideal para compartir en reuniones familiares, eventos o simplemente para disfrutar durante varios días. Presentadas en un empaque azul oscuro, estas galletas no solo son sabrosas, sino también visualmente atractivas gracias a su diseño profesional. En la parte frontal del paquete destaca una imagen tentadora de las galletas acompañadas de una espiga de trigo, que resalta la calidad de sus ingredientes seleccionados. Cada paquete incluye cinco tacos, asegurando una experiencia prolongada de disfrute. Son perfectas para acompañar con café, té o como un snack ligero en cualquier momento del día.",
-    "nuevo": false
+    "disponible": true
   },
   {
     "nombre": "Galletas de soda Salricas",
@@ -2297,19 +2320,6 @@
     "disponible": true,
     "imagen": "img/products/almohadillas_sanitarias_5.jpg",
     "descripcion": "Asegura una protección nocturna y una comodidad inigualable con las almohadillas sanitarias Angélica Night. Este paquete de 24 unidades está diseñado para brindarte una seguridad extra durante la noche, permitiéndote descansar sin preocupaciones. Las almohadillas, con su forma anatómica y alas, se ajustan perfectamente a tu cuerpo, proporcionando una cobertura suave y fresca que se moldea para una mayor comodidad. Con su alta capacidad de absorción, son ideales para flujo abundante, permitiéndote dormir con la tranquilidad que mereces. El empaque, con su diseño en tonos naranjas y amarillos, es práctico y fácil de transportar. Angélica Night te ofrece la protección que buscas con la comodidad que mereces, convirtiéndose en el aliado perfecto para tu higiene íntima diaria.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
-    "nombre": "La vie est belle",
-    "categoria": "fragancias",
-    "precio": 11.429,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/perfume_la_vie_est_belle.jpg",
-    "descripcion": "Adquiere el icónico perfume La Vie Est Belle de Lancôme, una fragancia que celebra la belleza de la vida. Este eau de parfum, presentado en una elegante y sofisticada botella de 100 ml con un lazo gris, se distingue por su tono rosado y su diseño que evoca una sonrisa, simbolizando la felicidad. Su caja, en un delicado color rosa pálido, resalta el nombre del perfume en una tipografía elegante, lo que lo convierte en un regalo perfecto. La Vie Est Belle es una fragancia con notas de iris, jazmín y flor de azahar, con un fondo de pachulí y vainilla, creando un aroma dulce, floral y gourmand, ideal para la mujer moderna y elegante. Es un perfume que te acompañará en tus momentos más especiales, dejando una estela inolvidable. Eleva tus sentidos y vive una vida más bella con Lancôme.",
     "imagenesAdicionales": [],
     "nuevo": false
   },
