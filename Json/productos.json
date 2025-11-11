@@ -1500,19 +1500,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Palito Relleno de Leche",
-    "categoria": "confituras",
-    "precio": 0.914,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/plitos_de_leche.jpg",
-    "descripcion": "Disfruta de un delicioso snack con el Palito Relleno de Leche. Este dulce, en un práctico empaque de 77g, se caracteriza por su fuerte y cremoso sabor a leche. La combinación de una crujiente capa exterior con un suave y dulce relleno de leche lo convierte en una golosina irresistible para cualquier momento del día. Perfecto para compartir, para una pausa dulce en el trabajo o para el recreo de los niños.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
     "nombre": "Almohadillas Sanitarias TB Care (40u)",
     "categoria": "otros",
     "precio": 3.81,
