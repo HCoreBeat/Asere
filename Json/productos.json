@@ -708,16 +708,6 @@
     "disponible": true
   },
   {
-    "nombre": "Caja de refresco Piña",
-    "categoria": "bebidas",
-    "precio": 19.35,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Caja_de_Refresco_Piña.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Sidra «La Aldeana» (sin alcohol)",
     "categoria": "bebidas",
     "precio": 4.19,
