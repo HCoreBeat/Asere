@@ -2233,19 +2233,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Whisky Milner",
-    "categoria": "alcohol",
-    "precio": 5.714,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/whisky_milner.jpg",
-    "descripcion": "Descubre el sabor distintivo del whisky Milner Black Label, un destilado de \"calidad premium\" que te invita a disfrutar de una experiencia única. Presentado en una botella de 375 ml con un diseño clásico y elegante, este whisky destaca por su color ámbar y su etiqueta que resalta la maduración en barricas de roble. La etiqueta, con su diseño en blanco y negro, subraya el nombre de la marca, \"Milner\", y su categoría, \"Black Label\", indicando su calidad superior. Con un 40% de volumen de alcohol, este whisky es perfecto para ser disfrutado solo, en las rocas o como ingrediente clave en tus cócteles favoritos. Su práctico formato de botella lo hace ideal para probarlo o para llevarlo contigo a una reunión. Elige Milner Black Label y sumérgete en un mundo de sabor y tradición en cada sorbo.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
     "nombre": "Havana Club 7 años",
     "categoria": "alcohol",
     "precio": 24.762,
