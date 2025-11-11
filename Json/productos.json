@@ -850,12 +850,13 @@
   {
     "nombre": "Lomo de cerdo deshuesado x Lb",
     "categoria": "carnes",
-    "precio": 3.333,
+    "precio": 3.667,
     "descuento": 0,
-    "oferta": false,
+    "oferta": true,
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/lomo_de_cerdo_deshuesado_x_lb.jpg",
+    "descripcion": "Pura masa, nada de gordo ni hueso , listo pa bisteces",
     "nuevo": false
   },
   {
