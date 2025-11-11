@@ -1890,10 +1890,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/jugo_pina.jpg",
     "descripcion": "Sumérgete en la dulzura y el sabor tropical del Néctar de Piña Goliath, una bebida refrescante que captura la esencia de la fruta fresca. Este néctar se presenta en un práctico envase de cartón de 946 ml, con un diseño que evoca la frescura de una piña recién cortada, con rodajas flotando en un chorro de jugo dorado sobre un fondo de cielo azul. Es ideal para aquellos que buscan un sabor natural y un impulso de energía, ya que está fortificado con vitamina C, esencial para fortalecer el sistema inmunológico. El producto es Hecho en Estados Unidos, garantizando su calidad y origen. Disfruta de este néctar helado en cualquier momento del día, perfecto para acompañar tus comidas, o como base para cocteles y batidos veraniegos.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
