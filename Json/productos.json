@@ -1357,19 +1357,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Aquarino",
-    "categoria": "fragancias",
-    "precio": 11.429,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/perfume_aquarino.jpg",
-    "descripcion": "Aquarino Pour Homme es un perfume diseñado para el hombre moderno que busca frescura y elegancia. Su frasco esmerilado y minimalista refleja la pureza y la claridad de su fragancia, ideal para el uso diario. Con una esencia que evoca la brisa marina y la vitalidad, este perfume se convierte en un accesorio indispensable para cualquier ocasión, dejando una impresión sutil pero duradera. Aquarino es la elección perfecta para aquellos que prefieren aromas limpios y sofisticados.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
     "nombre": "Pack Caramelos de leche",
     "categoria": "confituras",
     "precio": 3.81,
