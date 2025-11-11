@@ -1487,19 +1487,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Champú y Acondicionador Brazilian de HT (Aceite de Coco)",
-    "categoria": "aseo",
-    "precio": 13.333,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/linea_shampo_acondicionador_2.jpg",
-    "descripcion": "Revitaliza tu cabello con el set de champú y acondicionador Brazilian de HT, ahora en su presentación de 1 litro. Con una fórmula a base de Aceite de Coco, esta línea ofrece fuerza, resistencia y protección para todo tipo de cabello. El champú limpia suavemente, mientras que el acondicionador hidrata y nutre en profundidad, dejando el cabello suave, brillante y con un aroma tropical. Estos productos son ideales para quienes buscan un cuidado capilar completo y duradero, proporcionando una experiencia de limpieza y suavidad que transforma tu rutina de belleza.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
     "nombre": "Toallas sanitarias Sueños Cómodos (30u)",
     "categoria": "otros",
     "precio": 2.48,
