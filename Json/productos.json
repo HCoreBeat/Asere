@@ -1702,18 +1702,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Jugo Tropical",
-    "categoria": "bebidas",
-    "precio": 2.857,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/jugo_tropical.jpg",
-    "descripcion": "Satisface tu sed con el refrescante y delicioso néctar de frutas Tropical Goliath. Este jugo, en un práctico envase de 946 ml (32 fl oz), es una explosión de sabor tropical, enriquecido con vitamina C. La combinación de piña, naranja y banana te transporta a un paraíso exótico con cada sorbo. Perfecto para acompañar tus desayunos, para un snack en la tarde o simplemente para disfrutar de una bebida llena de sabor y vitaminas.",
-    "nuevo": false
-  },
-  {
     "nombre": "Jugo de Mango",
     "categoria": "bebidas",
     "precio": 2.857,
