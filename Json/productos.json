@@ -1370,19 +1370,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Mascarilla capilar 2 en 1 (Divina Dama)",
-    "categoria": "aseo",
-    "precio": 19.048,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/tratamiento_en_crema_2.jpg",
-    "descripcion": "Divina Dama de Skala Expert es un tratamiento en crema multifuncional 2 en 1, perfecto para cabellos con química o teñidos. Esta fórmula enriquecida con Proteínas de Arroz, Vitamina E, Aminoácidos, Aceite de Linaza y Aceite de Coco, ofrece una intensa reparación y un brillo deslumbrante. Su composición 100% vegana y libre de ingredientes de origen animal, junto a su fórmula liberada, garantiza un cuidado delicado y efectivo. Se puede utilizar como crema para peinar o como crema hidratante, revitalizando y protegiendo el color de tu cabello en un envase de 1000g.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
     "nombre": "La vida de vivi",
     "categoria": "fragancias",
     "precio": 11.429,
