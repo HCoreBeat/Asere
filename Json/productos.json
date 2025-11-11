@@ -1112,16 +1112,6 @@
     "descripcion": "Viene limpio, especial para cocinar al instante y sin demora. Cocina bien, para el disfrute de toda la familia"
   },
   {
-    "nombre": "Servilletas «Bingo» (40u)",
-    "categoria": "otros",
-    "precio": 0.9,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Servilletas.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Pasta Dental Coigore (100g)",
     "categoria": "otros",
     "precio": 3.27,
