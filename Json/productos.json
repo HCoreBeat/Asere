@@ -708,16 +708,6 @@
     "disponible": true
   },
   {
-    "nombre": "Caja de malta Morena (24x237ml)",
-    "categoria": "bebidas",
-    "precio": 17.99,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Caja_de_Malta_Morena.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Malta Morena (237ml)",
     "categoria": "bebidas",
     "precio": 1.09,
