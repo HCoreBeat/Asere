@@ -708,16 +708,6 @@
     "disponible": true
   },
   {
-    "nombre": "Ron Habana Club Añejo Especial",
-    "categoria": "alcohol",
-    "precio": 13.1,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Ron_Habana_Club_Añejo_Especial.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Bebida energética 5 Shot (250ml)",
     "categoria": "bebidas",
     "precio": 0.95,
