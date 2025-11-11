@@ -708,16 +708,6 @@
     "disponible": true
   },
   {
-    "nombre": "Bebida energética 5 Shot (250ml)",
-    "categoria": "bebidas",
-    "precio": 0.95,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Bebida_Energetica_5_Shot.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Pack de 6 maltas Morena (6x237ml)",
     "categoria": "bebidas",
     "precio": 4.81,
