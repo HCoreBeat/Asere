@@ -213,16 +213,6 @@
     "disponible": false
   },
   {
-    "nombre": "Leche Evaporada «Delite» (260g)",
-    "categoria": "lacteos",
-    "precio": 1.8,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Leche_Evaporada_Delite.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Pack de 4 yogurts de Macedonia Vima",
     "categoria": "lacteos",
     "precio": 2.9,
