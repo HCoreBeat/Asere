@@ -213,16 +213,6 @@
     "disponible": false
   },
   {
-    "nombre": "Pack de 4 yogurts de Macedonia Vima",
-    "categoria": "lacteos",
-    "precio": 2.9,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Pack_de_4_Yogurts_Macedonia.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Salsa Brava (320g)",
     "categoria": "aderezos",
     "precio": 3,
