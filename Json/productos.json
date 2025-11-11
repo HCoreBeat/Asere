@@ -718,16 +718,6 @@
     "disponible": false
   },
   {
-    "nombre": "Coca Cola",
-    "categoria": "bebidas",
-    "precio": 2.48,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Coca_Cola.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Caja de refresco Naranja",
     "categoria": "bebidas",
     "precio": 19.35,
