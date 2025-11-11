@@ -708,16 +708,6 @@
     "disponible": true
   },
   {
-    "nombre": "Caja de jugos Santa Juice Uva (24 x 200ml)",
-    "categoria": "bebidas",
-    "precio": 15.88,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Caja_de_Jugos_Santa_Juice_Uva.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Blister Agua Purificada Niagara (24 x 500ml)",
     "categoria": "bebidas",
     "precio": 11.95,
