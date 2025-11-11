@@ -1959,19 +1959,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Triple Sec Licor de Naranja",
-    "categoria": "alcohol",
-    "precio": 17.143,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/triple_sec_licor.jpg",
-    "descripcion": "Disfruta del exquisito sabor del licor Orangeau Triple Sec, una bebida versátil y esencial para la creación de tus cócteles favoritos. Presentado en una elegante botella de 1 litro, este licor se distingue por su color transparente y cristalino, lo que indica su pureza y calidad. La etiqueta, con su diseño clásico en tonos anaranjados y blancos, resalta el nombre de la marca y el tipo de licor, facilitando su identificación. Con un volumen de alcohol de 15%, Orangeau Triple Sec ofrece el equilibrio perfecto entre dulzura y la intensidad de la naranja, convirtiéndolo en el ingrediente ideal para preparar margaritas, cosmos y muchas otras creaciones de coctelería. Su tapón negro con la palabra \"LIGHT\" añade un toque moderno y práctico. Añade esta botella a tu bar y eleva tus habilidades de mixología al siguiente nivel con Orangeau Triple Sec.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
     "nombre": "Refresco Gaseado",
     "categoria": "bebidas",
     "precio": 2.81,
