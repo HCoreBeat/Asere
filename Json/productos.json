@@ -708,6 +708,37 @@
     "disponible": true
   },
   {
+    "nombre": "Caja de Cerveza «3 Horses»",
+    "categoria": "alcohol",
+    "precio": 22.1,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_Cerveza_3_Hourses.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Agua Purificada Niagara (500ml)",
+    "categoria": "bebidas",
+    "precio": 0.714,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": false,
+    "imagen": "img/products/Agua_Purificada.jpg",
+    "nuevo": false
+  },
+  {
+    "nombre": "Caja de Bebida energética 5 Shot (250ml x 24)",
+    "categoria": "bebidas",
+    "precio": 21.15,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "imagen": "img/products/Caja_Bebida_Energetica.jpg",
+    "disponible": false
+  },
+  {
     "nombre": "Ron Habana Club Añejo Reserva",
     "categoria": "alcohol",
     "precio": 17.05,
