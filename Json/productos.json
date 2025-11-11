@@ -1370,19 +1370,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Crema Corporal (Vainilla)",
-    "categoria": "aseo",
-    "precio": 5.714,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/crema_corporal_amarilla.jpg",
-    "descripcion": "Experimenta una piel suave y seductora con la crema corporal ultra-rica XtraCare de Vainilla Sugar. Esta crema, en un práctico envase de 7oz (198g), está formulada para hidratar y suavizar la piel profundamente, dejando una sensación de lujo y un aroma irresistible. Su fragancia a vainilla y azúcar te envuelve en una experiencia dulce y reconfortante. Perfecta para el cuidado diario, esta crema se absorbe rápidamente sin dejar sensación grasosa, ofreciendo una hidratación duradera para una piel radiante y saludable.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
     "nombre": "Crema Corporal (Lavanda y Manzanilla)",
     "categoria": "aseo",
     "precio": 5.714,
