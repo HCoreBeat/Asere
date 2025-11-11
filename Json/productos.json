@@ -387,11 +387,12 @@
     "nombre": "Café La Llave",
     "categoria": "cafe",
     "precio": 7,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": true,
     "imagen": "img/products/Cafe_la_Llave.jpeg",
-    "disponible": false
+    "nuevo": false
   },
   {
     "nombre": "Cartón de Huevos",
@@ -447,16 +448,26 @@
     "descripcion": "El puré de tomate Vima Foods es el aliado perfecto para realzar el sabor de tus platillos favoritos. Con un contenido neto de 400 g (14 oz.), este puré de alta calidad cuenta con una textura suave y un sabor concentrado que lo hace ideal para salsas, guisos y más. Presentado en una lata con abre fácil, garantiza practicidad y frescura en cada uso. Transforma tus recetas con el auténtico toque del puré de tomate Vima Foods, diseñado para satisfacer a los paladares más exigentes."
   },
   {
+    "nombre": "Arroz grano largo Vima (1Kg)",
+    "categoria": "despensa",
+    "precio": 2.857,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": false,
+    "imagen": "img/products/arroz_grano_largo_vima.jpg",
+    "descripcion": "El arroz de grano largo Vima Foods, con un contenido neto de 1 kg (2.2 lb), es ideal para preparar tus comidas favoritas. Este producto 100% natural, vegano y libre de organismos modificados genéticamente (GMO), garantiza una excelente calidad en cada grano. Perfecto para acompañar guisos, ensaladas y recetas internacionales, el arroz de grano largo Vima Foods es la elección inteligente para una alimentación saludable y deliciosa."
+  },
+  {
     "nombre": "Arroz Rainha Brasil (1Kg)",
     "categoria": "despensa",
-    "precio": 2.829,
-    "descuento": 36,
-    "oferta": true,
+    "precio": 2.828,
+    "descuento": 10,
+    "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
     "imagen": "img/products/arroz_rainha.jpg",
-    "descripcion": "Este arroz blanco tipo 1 de la marca Rainha Brasil está compuesto por granos largos finos, pulidos y libres de grumos, lo que garantiza una textura uniforme y suave al cocinar. Es una opción nutritiva, ideal para acompañar diversos platos y adaptarse a recetas tradicionales como arroz con frijoles, risottos o guarniciones ligeras y saludables.",
-    "nuevo": false
+    "disponible": true,
+    "descripcion": "Este arroz blanco tipo 1 de la marca Rainha Brasil está compuesto por granos largos finos, pulidos y libres de grumos, lo que garantiza una textura uniforme y suave al cocinar. Es una opción nutritiva, ideal para acompañar diversos platos y adaptarse a recetas tradicionales como arroz con frijoles, risottos o guarniciones ligeras y saludables."
   },
   {
     "nombre": "Queso Gouda Premium (3Kg)",
