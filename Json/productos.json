@@ -708,16 +708,6 @@
     "disponible": true
   },
   {
-    "nombre": "Cerveza «3 Horses» (330ml)",
-    "categoria": "alcohol",
-    "precio": 0.95,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Cerveza_3_Hourses.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Caja de Cerveza «3 Horses»",
     "categoria": "alcohol",
     "precio": 22.1,
