@@ -1370,19 +1370,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Crema Corporal (Cherry Blossom)",
-    "categoria": "aseo",
-    "precio": 5.714,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/crema_corporal_rosa.jpg",
-    "descripcion": "Sumérgete en la delicadeza floral con la crema corporal ultra-rica XtraCare Signature de Cherry Blossom. Presentada en un envase de 7oz (198g), esta crema hidrata y suaviza la piel intensamente, dejándola con un aroma dulce y femenino a flor de cerezo. Su fórmula ligera se absorbe rápidamente sin dejar sensación grasosa, proporcionando una hidratación profunda y duradera. Ideal para el uso diario, esta crema no solo nutre tu piel, sino que también te envuelve en una fragancia sutil y encantadora, perfecta para complementar tu rutina de belleza.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
     "nombre": "Cesto para ropa",
     "categoria": "otros",
     "precio": 9.524,
