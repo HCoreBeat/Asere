@@ -2220,19 +2220,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Whisky Ballantines",
-    "categoria": "alcohol",
-    "precio": 24.762,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/whisky_ballantines.jpg",
-    "descripcion": "Sumérgete en la rica tradición del whisky escocés con Ballantine's Finest Blended Scotch Whisky. Esta icónica botella de 70 cl se distingue por su forma rectangular y su color ámbar dorado, reflejo de la calidad y el añejamiento de sus destilados. Su etiqueta, en tonos blancos y rojos, exhibe con orgullo el escudo de armas de la marca y la leyenda \"Blended Scotch Whisky\", garantizando la autenticidad de un producto elaborado y embotellado en Escocia. Con un 40% de volumen de alcohol, Ballantine's Finest ofrece un perfil de sabor equilibrado, suave y con notas de chocolate, manzana roja y vainilla. Su tapa de rosca blanca y el sello rojo con la letra 'B' en relieve en la parte inferior de la etiqueta añaden un toque distintivo. Ideal para disfrutarlo solo, con hielo o en tus cócteles preferidos. Ballantine's Finest es la elección perfecta para quienes buscan un whisky de calidad, con una tradición que data de 1827.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
     "nombre": "Havana Club 7 años",
     "categoria": "alcohol",
     "precio": 24.762,
