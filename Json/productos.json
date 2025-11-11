@@ -69,11 +69,13 @@
     "nombre": "Jamón de Primera x Lb",
     "categoria": "carnes",
     "precio": 4.8,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
+    "descuento": 6.3,
+    "oferta": true,
+    "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/Jamon_de_Pierna.jpg"
+    "imagen": "img/products/Jamon_de_Pierna.jpg",
+    "descripcion": "Jamón del clásico del bueno, pura carne 🍖",
+    "nuevo": false
   },
   {
     "nombre": "Chuletas de cerdo x Lb",
