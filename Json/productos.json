@@ -387,12 +387,11 @@
     "nombre": "Café La Llave",
     "categoria": "cafe",
     "precio": 7,
-    "descuento": 0,
+    "descuento": 10,
     "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
+    "mas_vendido": false,
     "imagen": "img/products/Cafe_la_Llave.jpeg",
-    "nuevo": false
+    "disponible": false
   },
   {
     "nombre": "Cartón de Huevos",
@@ -530,11 +529,13 @@
     "nombre": "Frijol Rojo x Lb",
     "categoria": "pastas-y-granos",
     "precio": 2.762,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
+    "descuento": 32.8,
+    "oferta": true,
+    "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/Frijol_Rojo.jpeg"
+    "imagen": "img/products/Frijol_Rojo.jpeg",
+    "descripcion": "Producción nacional, no viene limpio",
+    "nuevo": false
   },
   {
     "nombre": "Mantequilla (250g)",
