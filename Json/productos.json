@@ -1629,12 +1629,13 @@
     "nombre": "Frijoles negros 500g",
     "categoria": "pastas-y-granos",
     "precio": 3.048,
-    "descuento": 29.7,
-    "oferta": true,
+    "descuento": 0,
+    "oferta": false,
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/frijoles_negros.jpg",
     "descripcion": "Los frijoles negros La Cata son una opción deliciosa y nutritiva para tus comidas. Este paquete de legumbres de 500g contiene frijoles negros seleccionados, ideales para preparar platos tradicionales y saludables. Ricos en fibra y proteínas, son el ingrediente perfecto para guisos, sopas, ensaladas y muchos más. Su sabor intenso y su textura suave los convierten en un indispensable en tu cocina, aportando un toque auténtico y familiar a tus recetas.",
+    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
@@ -2006,19 +2007,6 @@
     "disponible": true,
     "imagen": "img/products/whisky_hameson.jpg",
     "descripcion": "Descubre el inconfundible sabor del whisky irlandés Jameson, un clásico destilado triple que deleitará a los paladares más exigentes. Presentado en su icónica botella de 1 litro, con su característico color ámbar claro, este whisky es sinónimo de suavidad y tradición. Su etiqueta, en tonos crema y verde oscuro, resalta el año de su fundación, 1780, y el nombre de su creador, John Jameson, garantizando su autenticidad. El sello JJS en la parte superior y su tapa de color rojo oscuro añaden un toque de distinción. Con un perfil de sabor excepcionalmente suave, equilibrado y con notas de frutos secos, jerez y madera, es perfecto para disfrutarlo solo, con hielo o como base para un sinfín de cócteles. Jameson es más que una bebida, es una experiencia de sabor que no puedes dejar de probar.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
-    "nombre": "Whisky Royal Blue",
-    "categoria": "alcohol",
-    "precio": 5.714,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/whisky_royal_blue.jpg",
-    "descripcion": "Presentamos el whisky Royal Blue, un aperitivo de malta y whisky que te invita a disfrutar de momentos únicos y elegantes. Esta bebida, con una graduación alcohólica de 35% vol., viene en una botella de 1 litro con un diseño sofisticado en tonos azules y dorados, que evoca lujo y exclusividad. La etiqueta resalta el nombre de la marca y la información clave del producto. Su líquido de color ámbar dorado se complementa a la perfección con el diseño de la botella, creando una estética visualmente atractiva. Ideal para servir solo con hielo, como se muestra junto a un vaso roquero lleno, o para mezclar en cócteles refinados. Royal Blue es la elección perfecta para aquellos que buscan una bebida con carácter y distinción. Añade este aperitivo de malta a tu colección y eleva tus celebraciones a otro nivel.",
     "imagenesAdicionales": [],
     "nuevo": false
   },
