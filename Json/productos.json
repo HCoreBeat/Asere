@@ -708,16 +708,6 @@
     "disponible": true
   },
   {
-    "nombre": "Caja de Cerveza «3 Horses»",
-    "categoria": "alcohol",
-    "precio": 22.1,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Caja_Cerveza_3_Hourses.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Agua Purificada Niagara (500ml)",
     "categoria": "bebidas",
     "precio": 0.714,
