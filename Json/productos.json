@@ -387,12 +387,11 @@
     "nombre": "Café La Llave",
     "categoria": "cafe",
     "precio": 7,
-    "descuento": 0,
-    "oferta": true,
-    "mas_vendido": true,
-    "disponible": true,
+    "descuento": 10,
+    "oferta": false,
+    "mas_vendido": false,
     "imagen": "img/products/Cafe_la_Llave.jpeg",
-    "nuevo": false
+    "disponible": false
   },
   {
     "nombre": "Cartón de Huevos",
@@ -446,17 +445,6 @@
     "imagen": "img/products/Pasta_de_Tomate_Vima.jpeg",
     "disponible": true,
     "descripcion": "El puré de tomate Vima Foods es el aliado perfecto para realzar el sabor de tus platillos favoritos. Con un contenido neto de 400 g (14 oz.), este puré de alta calidad cuenta con una textura suave y un sabor concentrado que lo hace ideal para salsas, guisos y más. Presentado en una lata con abre fácil, garantiza practicidad y frescura en cada uso. Transforma tus recetas con el auténtico toque del puré de tomate Vima Foods, diseñado para satisfacer a los paladares más exigentes."
-  },
-  {
-    "nombre": "Arroz grano largo Vima (1Kg)",
-    "categoria": "despensa",
-    "precio": 2.857,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/arroz_grano_largo_vima.jpg",
-    "descripcion": "El arroz de grano largo Vima Foods, con un contenido neto de 1 kg (2.2 lb), es ideal para preparar tus comidas favoritas. Este producto 100% natural, vegano y libre de organismos modificados genéticamente (GMO), garantiza una excelente calidad en cada grano. Perfecto para acompañar guisos, ensaladas y recetas internacionales, el arroz de grano largo Vima Foods es la elección inteligente para una alimentación saludable y deliciosa."
   },
   {
     "nombre": "Arroz Rainha Brasil (1Kg)",
