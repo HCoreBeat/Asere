@@ -1832,16 +1832,15 @@
     "nuevo": false
   },
   {
-    "nombre": "Sazón Completa ",
+    "nombre": "Sazón Completa",
     "categoria": "despensa",
     "precio": 6.857,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/sazon_completo.jpg",
     "descripcion": "El Sazón Completa Original de Badia es la mezcla de especias ideal para realzar el sabor de tus comidas de una manera sencilla y efectiva. Este producto se presenta en un envase de plástico transparente de 12 onzas (340.2 gramos), con una tapa de color verde oscuro, que conserva la frescura de los ingredientes. La etiqueta resalta con el nombre de la marca en un fondo verde y blanco, acompañada de ilustraciones de especias frescas como ajo, pimienta negra y hojas de albahaca, que sugieren los sabores principales de la mezcla. Además, se destaca que es un producto libre de gluten. Es una opción versátil y práctica para sazonar carnes, aves, pescados, vegetales y sopas. Con Badia Complete Seasoning, no necesitas múltiples condimentos, ya que tienes todo el sabor en un solo frasco.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
@@ -1939,12 +1938,13 @@
     "nombre": "Salsa Mayonesa (4l)",
     "categoria": "despensa",
     "precio": 19,
-    "descuento": 30.6,
-    "oferta": true,
+    "descuento": 0,
+    "oferta": false,
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/salsa_mayonesa.jpg",
     "descripcion": "Ofrecemos la mayonesa Findy, una salsa cremosa y deliciosa para acompañar tus comidas favoritas, presentada en un práctico balde de 4 kg. Este envase es ideal para el uso en restaurantes, comedores o para familias numerosas, garantizando que siempre tendrás a mano este condimento esencial. La etiqueta, con su diseño vibrante y colorido, destaca el nombre de la marca y la descripción del producto, \"Salsa Mayonesa\", junto a la indicación de ser un \"Producto de Cuba\". La consistencia suave y el sabor equilibrado de esta mayonesa la hacen perfecta para ensaladas, sándwiches, hamburguesas y como base para otras salsas. Su gran formato asegura un suministro duradero, convirtiéndola en una opción económica y conveniente sin sacrificar la calidad. Añade el balde de salsa mayonesa Findy a tu cocina y eleva el sabor de todos tus platos.",
+    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
