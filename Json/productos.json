@@ -386,8 +386,8 @@
   {
     "nombre": "Café La Llave (284g)",
     "categoria": "cafe",
-    "precio": 6.429,
-    "descuento": 0,
+    "precio": 9.381,
+    "descuento": 31.5,
     "oferta": true,
     "mas_vendido": true,
     "disponible": true,
