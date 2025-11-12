@@ -1,6 +1,6 @@
 [
   {
-    "nombre": "Refresco Instantáneo (2Lt)",
+    "nombre": "Refresco Instantáneo (3Lt)",
     "categoria": "bebidas",
     "precio": 0.4,
     "descuento": 40.5,
@@ -386,8 +386,8 @@
   {
     "nombre": "Café La Llave (284g)",
     "categoria": "cafe",
-    "precio": 9.524,
-    "descuento": 31.5,
+    "precio": 6.429,
+    "descuento": 0,
     "oferta": true,
     "mas_vendido": true,
     "disponible": true,
