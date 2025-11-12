@@ -510,11 +510,12 @@
     "nombre": "Frijol Rojo x Lb",
     "categoria": "pastas-y-granos",
     "precio": 2.762,
-    "descuento": 0,
-    "oferta": false,
+    "descuento": 37.9,
+    "oferta": true,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/Frijol_Rojo.jpeg"
+    "imagen": "img/products/Frijol_Rojo.jpeg",
+    "nuevo": false
   },
   {
     "nombre": "Sal x Lb",
