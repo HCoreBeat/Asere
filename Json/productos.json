@@ -386,8 +386,8 @@
   {
     "nombre": "Café La Llave (284g)",
     "categoria": "cafe",
-    "precio": 9.381,
-    "descuento": 31.5,
+    "precio": 6.429,
+    "descuento": 0,
     "oferta": true,
     "mas_vendido": true,
     "disponible": true,
@@ -921,12 +921,13 @@
     "nombre": "Galletas de Soda con Mantequilla Doricas",
     "categoria": "confituras",
     "precio": 5,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": false,
     "imagen": "img/products/Galleta_de_Soda_Con_Mantequilla.jpg",
     "descripcion": "Extra grandes y deliciosas, las galletas semidulces DoRicas son perfectas para cualquier ocasión, ofreciendo un sabor único que encanta a todos. Este paquete de 525 g es ideal para compartir en reuniones familiares, eventos o simplemente para disfrutar durante varios días. Presentadas en un empaque azul oscuro, estas galletas no solo son sabrosas, sino también visualmente atractivas gracias a su diseño profesional. En la parte frontal del paquete destaca una imagen tentadora de las galletas acompañadas de una espiga de trigo, que resalta la calidad de sus ingredientes seleccionados. Cada paquete incluye cinco tacos, asegurando una experiencia prolongada de disfrute. Son perfectas para acompañar con café, té o como un snack ligero en cualquier momento del día.",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Galletas de soda Salricas",
@@ -1630,13 +1631,12 @@
     "nombre": "Frijoles negros 500g",
     "categoria": "pastas-y-granos",
     "precio": 3.048,
-    "descuento": 0,
-    "oferta": false,
+    "descuento": 41.6,
+    "oferta": true,
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/frijoles_negros.jpg",
     "descripcion": "Los frijoles negros La Cata son una opción deliciosa y nutritiva para tus comidas. Este paquete de legumbres de 500g contiene frijoles negros seleccionados, ideales para preparar platos tradicionales y saludables. Ricos en fibra y proteínas, son el ingrediente perfecto para guisos, sopas, ensaladas y muchos más. Su sabor intenso y su textura suave los convierten en un indispensable en tu cocina, aportando un toque auténtico y familiar a tus recetas.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
