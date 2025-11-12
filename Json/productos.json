@@ -1,6 +1,6 @@
 [
   {
-    "nombre": "Refresco Instantáneo (3Lt)",
+    "nombre": "Refresco Instantáneo (2Lt)",
     "categoria": "bebidas",
     "precio": 0.4,
     "descuento": 40.5,
@@ -345,12 +345,13 @@
   {
     "nombre": "Frijol Negro x Lb",
     "categoria": "pastas-y-granos",
-    "precio": 2.5,
-    "descuento": 10,
-    "oferta": false,
+    "precio": 2.505,
+    "descuento": 33.5,
+    "oferta": true,
     "mas_vendido": false,
+    "disponible": true,
     "imagen": "img/products/Frijol_Negro.jpeg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Paquete de pan de bola 10u",
