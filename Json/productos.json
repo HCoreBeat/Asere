@@ -1632,13 +1632,12 @@
     "nombre": "Frijoles negros 500g",
     "categoria": "pastas-y-granos",
     "precio": 3.048,
-    "descuento": 0,
-    "oferta": false,
+    "descuento": 41.6,
+    "oferta": true,
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/frijoles_negros.jpg",
     "descripcion": "Los frijoles negros La Cata son una opción deliciosa y nutritiva para tus comidas. Este paquete de legumbres de 500g contiene frijoles negros seleccionados, ideales para preparar platos tradicionales y saludables. Ricos en fibra y proteínas, son el ingrediente perfecto para guisos, sopas, ensaladas y muchos más. Su sabor intenso y su textura suave los convierten en un indispensable en tu cocina, aportando un toque auténtico y familiar a tus recetas.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
