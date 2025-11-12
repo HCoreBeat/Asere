@@ -1825,22 +1825,22 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/comino.jpg",
     "descripcion": "El comino molido de Badia es un condimento imprescindible para darle un toque de sabor a tus platillos. Este producto se presenta en un práctico envase de plástico transparente con tapa de color negro, que facilita su uso y dosificación. El frasco, de 2 onzas (56.7 gramos), te permite ver la calidad del comino molido. La etiqueta, con un fondo blanco, destaca el nombre de la marca BADIA en letras rojas, y Ground Cumin / Comino Molido en letras negras, asegurando que sepas exactamente lo que estás comprando. Además, se destaca con claridad que es un producto libre de gluten. Su sabor intenso y terroso es perfecto para sazonar carnes, sopas, guisos, y una gran variedad de platillos de la cocina internacional, especialmente la latinoamericana y la de Oriente Medio.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
-    "nombre": "Sazón Completa",
+    "nombre": "Sazón Completa ",
     "categoria": "despensa",
     "precio": 6.857,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/sazon_completo.jpg",
     "descripcion": "El Sazón Completa Original de Badia es la mezcla de especias ideal para realzar el sabor de tus comidas de una manera sencilla y efectiva. Este producto se presenta en un envase de plástico transparente de 12 onzas (340.2 gramos), con una tapa de color verde oscuro, que conserva la frescura de los ingredientes. La etiqueta resalta con el nombre de la marca en un fondo verde y blanco, acompañada de ilustraciones de especias frescas como ajo, pimienta negra y hojas de albahaca, que sugieren los sabores principales de la mezcla. Además, se destaca que es un producto libre de gluten. Es una opción versátil y práctica para sazonar carnes, aves, pescados, vegetales y sopas. Con Badia Complete Seasoning, no necesitas múltiples condimentos, ya que tienes todo el sabor en un solo frasco.",
+    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
