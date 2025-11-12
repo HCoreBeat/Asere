@@ -1939,13 +1939,12 @@
     "nombre": "Salsa Mayonesa (4l)",
     "categoria": "despensa",
     "precio": 19,
-    "descuento": 0,
-    "oferta": false,
+    "descuento": 30.6,
+    "oferta": true,
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/salsa_mayonesa.jpg",
     "descripcion": "Ofrecemos la mayonesa Findy, una salsa cremosa y deliciosa para acompañar tus comidas favoritas, presentada en un práctico balde de 4 kg. Este envase es ideal para el uso en restaurantes, comedores o para familias numerosas, garantizando que siempre tendrás a mano este condimento esencial. La etiqueta, con su diseño vibrante y colorido, destaca el nombre de la marca y la descripción del producto, \"Salsa Mayonesa\", junto a la indicación de ser un \"Producto de Cuba\". La consistencia suave y el sabor equilibrado de esta mayonesa la hacen perfecta para ensaladas, sándwiches, hamburguesas y como base para otras salsas. Su gran formato asegura un suministro duradero, convirtiéndola en una opción económica y conveniente sin sacrificar la calidad. Añade el balde de salsa mayonesa Findy a tu cocina y eleva el sabor de todos tus platos.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
