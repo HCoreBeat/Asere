@@ -2191,5 +2191,17 @@
     "imagen": "img/products/gordo_de_cerdo_para_empella_x_lb.jpg",
     "descripcion": "El mejor gordo para empella para darle gusto a tu paladar",
     "nuevo": true
+  },
+  {
+    "nombre": "Pata de cerdo x Lb",
+    "categoria": "carnes",
+    "precio": 1.429,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pata_de_cerdo_x_lb.jpg",
+    "descripcion": "Pata de Cerdo para tu cocina",
+    "nuevo": true
   }
 ]
