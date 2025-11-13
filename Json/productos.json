@@ -169,7 +169,7 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Salchicha_Pollo_Cerdo.jpg",
-    "nuevo": true
+    "nuevo": false
   },
   {
     "nombre": "Picadillo Especial 800g",
