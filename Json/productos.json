@@ -2107,5 +2107,17 @@
     "imagen": "img/products/caf_dulfito_250g.jpg",
     "descripcion": "Prepárate para un impulso de energía con el Café Dufiltro Extra Forte. Directamente de la tradición cafetera de Brasil, este café tostado y molido ha sido cuidadosamente seleccionado para ofrecer una experiencia de sabor intensamente robusta y con cuerpo. Si buscas un café que realmente te despierte por las mañanas, su característica \"Extra Forte\" te garantiza la potencia y el aroma profundo que necesitas. Ideal para preparar en filtros tradicionales, cada bolsa de 250g trae la calidad y el espíritu de la Indústria Brasileira directamente a tu taza. Disfruta de la riqueza y la fuerza de un verdadero café brasileño.",
     "nuevo": true
+  },
+  {
+    "nombre": "Café Paraná (250g)",
+    "categoria": "cafe",
+    "precio": 4.619,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/caf_parana.png",
+    "descripcion": "Experimenta la fuerza y el cuerpo de un auténtico café brasileño con Café Paraná Extra Forte. Este café tostado y molido es la elección ideal para quienes buscan una taza potente, aromática y con carácter. Proveniente de la Indústria Brasileira, cada grano ha sido seleccionado para ofrecer una infusión de alta calidad. Lo mejor de todo es su envase sellado al Alto Vácuo (Alto Vacío), una tecnología que garantiza que el café conserve su frescura, su intenso aroma y sus propiedades de sabor intactas hasta el momento de abrirlo. Disfruta de la máxima potencia y de la frescura que solo un café de 250 g envasado al vacío puede ofrecer.",
+    "nuevo": true
   }
 ]
