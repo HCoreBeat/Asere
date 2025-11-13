@@ -185,16 +185,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Leche Evaporada 400g",
-    "categoria": "lacteos",
-    "precio": 2.93,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Leche_Evaporada.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Sazón Mixto (250g)",
     "categoria": "aderezos",
     "precio": 5.3,
@@ -301,20 +291,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Aceite refinado de girasol 1L",
-    "categoria": "despensa",
-    "precio": 4,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/aceite_girasol.jpg",
-    "descripcion": "El aceite refinado de girasol de 1 litro es una opción extra grande ideal para cocinar, freír, asar o preparar aderezos. Su calidad refinada garantiza un sabor neutro que realza los platillos sin dominarlos, siendo una elección práctica y confiable para cualquier cocina. Perfecto tanto para chefs como para cocineros caseros que buscan resultados excelentes.",
-    "imagenesAdicionales": [
-      "img/products/aceite_girasol_2.jpg"
-    ],
-    "disponible": false
-  },
-  {
     "nombre": "Azúcar blanca x lb",
     "categoria": "despensa",
     "precio": 1.171,
@@ -381,13 +357,11 @@
     "nombre": "Cartón de Huevos",
     "categoria": "despensa",
     "precio": 9.524,
-    "descuento": 10.5,
-    "oferta": true,
-    "mas_vendido": true,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/Carton_de_Huevo.jpeg",
-    "descripcion": "Huevos frescos orgánicos",
-    "nuevo": false
+    "imagen": "img/products/Carton_de_Huevo.jpeg"
   },
   {
     "nombre": "Espaguetis (500g)",
