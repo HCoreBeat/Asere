@@ -2219,5 +2219,17 @@
     "imagen": "img/products/garbanzos_extra_500g.jpg",
     "descripcion": "Añade nutrición y versatilidad a tu dieta con el Garbanzo Extra de Dino Food. Estos garbanzos han sido seleccionados por su calidad extra para garantizar que tus platos queden siempre perfectos. Los garbanzos son una fuente natural e increíblemente versátil de fibra y proteínas, lo que los convierte en un ingrediente esencial para una alimentación saludable, ya sea que prepares un clásico humus, un potente cocido, o los incorpores en ensaladas frescas. La bolsa de 500 g te proporciona una legumbre de primera calidad, fácil de preparar y lista para convertirse en el ingrediente estrella de tus comidas diarias.",
     "nuevo": true
+  },
+  {
+    "nombre": "Frijol Negro Alubia (500g)",
+    "categoria": "despensa",
+    "precio": 1.781,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/frijol_negro_alubia_500g.jpg",
+    "descripcion": "Lleva a tu mesa la base de la cocina tradicional con el Frijol Negro (Alubia) de IFA Eliges. Reconocido por su profundo sabor, su textura suave y su versatilidad, este frijol es un ingrediente esencial para preparar platos emblemáticos como la feijoada, el arroz congrí, o cualquier guiso y potaje. Además de su excelente sabor, el Frijol Negro de IFA es una Fuente de Fibra, contribuyendo a una dieta equilibrada y nutritiva. Cada paquete de 500 g garantiza granos de alta calidad, listos para ser remojados y cocinados hasta alcanzar la perfección. ¡Elige IFA para asegurar el auténtico sabor en tus platos más queridos!",
+    "nuevo": true
   }
 ]
