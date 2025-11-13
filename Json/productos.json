@@ -2179,5 +2179,16 @@
     "imagen": "img/products/lomo_de_cerdo_x_lb.jpg",
     "descripcion": "Corte de carne fresca. Se corta al pedido",
     "nuevo": true
+  },
+  {
+    "nombre": "Gordo de cerdo para empella x Lb",
+    "categoria": "carnes",
+    "precio": 2.048,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/gordo_de_cerdo_para_empella_x_lb.jpg",
+    "nuevo": true
   }
 ]
