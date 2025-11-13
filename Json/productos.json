@@ -2108,5 +2108,17 @@
     "imagen": "img/products/higado_de_pollo_sadia_1kg.jpg",
     "descripcion": "Añade un toque de sabor y alta nutrición a tus comidas con el Hígado de Pollo Congelado Sadia. Este producto te ofrece hígados de pollo seleccionados y congelados individualmente para preservar su frescura y calidad. Es un ingrediente increíblemente versátil, perfecto para crear deliciosos patés, enriquecer guisos o preparar un salteado rápido lleno de hierro y vitaminas. Confía en la calidad de Sadia para llevar lo mejor a tu mesa.",
     "nuevo": true
+  },
+  {
+    "nombre": "Café Pilón (283g)",
+    "categoria": "cafe",
+    "precio": 6.933,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/caf_piln_283g.jpg",
+    "descripcion": "Descubre el verdadero sabor del café cubano con Pilon Espresso Coffee. Este café molido de tueste oscuro y cuerpo completo es la elección perfecta para quienes buscan una experiencia intensa y aromática. Elaborado con 100% café puro, Pilon ofrece una taza robusta con ese toque de sabor tradicional que ha sido apreciado por generaciones. Su molienda fina es ideal para preparar un auténtico espresso, un potente cafecito cubano, o para utilizar en cualquier cafetera tradicional. Cada caja de 10 OZ (283g) garantiza la frescura y la calidad que necesitas para comenzar tu día con energía o disfrutar de un delicioso descanso. ¡Lleva a casa el rico aroma y el sabor inconfundible que solo Pilon puede ofrecer!",
+    "nuevo": true
   }
 ]
