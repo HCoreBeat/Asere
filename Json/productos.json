@@ -2203,5 +2203,17 @@
     "imagen": "img/products/pata_de_cerdo_x_lb.jpg",
     "descripcion": "Pata de Cerdo para tu cocina",
     "nuevo": true
+  },
+  {
+    "nombre": "Paleta de cerdo x Lb",
+    "categoria": "carnes",
+    "precio": 2.762,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/paleta_de_cerdo_x_lb.jpg",
+    "descripcion": "Carne fresca para degustar tu paladar",
+    "nuevo": true
   }
 ]
