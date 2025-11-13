@@ -36,13 +36,12 @@
   {
     "nombre": "Carne de cerdo x Lb",
     "categoria": "carnes",
-    "precio": 3.048,
+    "precio": 3.047,
     "descuento": 9.4,
     "oferta": true,
     "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/carne_de_cerdo_x_lb.jpg",
-    "nuevo": false
+    "imagen": "img/products/Carne_de_Cerdo.jpg",
+    "disponible": true
   },
   {
     "nombre": "Carne de Ovejo x Lb",
@@ -300,20 +299,6 @@
     "disponible": true,
     "imagen": "img/products/Aceite_Fritura.jpeg",
     "nuevo": false
-  },
-  {
-    "nombre": "Aceite refinado de girasol 1L",
-    "categoria": "despensa",
-    "precio": 4,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/aceite_girasol.jpg",
-    "descripcion": "El aceite refinado de girasol de 1 litro es una opción extra grande ideal para cocinar, freír, asar o preparar aderezos. Su calidad refinada garantiza un sabor neutro que realza los platillos sin dominarlos, siendo una elección práctica y confiable para cualquier cocina. Perfecto tanto para chefs como para cocineros caseros que buscan resultados excelentes.",
-    "imagenesAdicionales": [
-      "img/products/aceite_girasol_2.jpg"
-    ],
-    "disponible": false
   },
   {
     "nombre": "Azúcar blanca x lb",
