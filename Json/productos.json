@@ -2143,5 +2143,17 @@
     "imagen": "img/products/caf_purasangre_250g.jpg",
     "descripcion": "Descubre la nobleza en cada taza con el Café Purasangre Molido. Este café ha sido cuidadosamente mezclado para lograr un equilibrio de sabor y potencia inigualable, combinando un 70% de granos Robusta para cuerpo y crema, con un 30% de granos Arábica para un aroma fino y delicado. Su Tueste Natural garantiza que disfrutes del sabor puro del café sin aditivos, resaltando las mejores cualidades de esta blend única. Ideal para los verdaderos amantes del café que buscan una experiencia intensa pero armónica. Cada paquete de 250 g promete llevar a tu hogar la fuerza y el carácter que definen a un café de pura casta.",
     "nuevo": true
+  },
+  {
+    "nombre": "Pasta de tomate Safa (850g)",
+    "categoria": "despensa",
+    "precio": 2.238,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pasta_de_tomate_safa_850g.jpg",
+    "descripcion": "Eleva el sabor de tus guisos y salsas con la Pasta de Tomate Safa. Este concentrado de tomate de alta calidad es un ingrediente esencial para aportar profundidad, color y un intenso sabor a tomate a tus platos favoritos. Ideal para la base de salsas de pasta, estofados, sopas y cualquier receta que requiera un toque potente de tomate. El formato enlatado asegura la máxima frescura y durabilidad. Con un Peso Neto de 850g, esta lata robusta te proporciona la cantidad perfecta para múltiples preparaciones, garantizando que siempre tengas a mano ese sabor concentrado y rico que necesitan tus mejores recetas.",
+    "nuevo": true
   }
 ]
