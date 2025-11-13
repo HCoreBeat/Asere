@@ -2085,5 +2085,17 @@
     "descripcion": "Añade un toque de seducción a tu día con el perfume Impacto Woman de S&C. Esta fragancia, presentada en una elegante botella de vidrio transparente con un tono rosado, es la elección perfecta para la mujer moderna y segura de sí misma. Su tapa negra y la tipografía en blanco y rojo, resaltan la feminidad y el carácter del perfume. La caja, con su diseño en tonos rojizos y negros, evoca la energía y la pasión de la mujer actual. Con un aroma que equilibra notas florales y frutales, Impacto Woman es ideal para usar tanto de día como de noche. Su práctico tamaño de 100 ml la convierte en el compañero perfecto para tu bolso. S&C Impacto Woman es más que un perfume, es una declaración de estilo.",
     "imagenesAdicionales": [],
     "nuevo": false
+  },
+  {
+    "nombre": "Gelatina Boom 40g",
+    "categoria": "confituras",
+    "precio": 1.524,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/gelatina_boom_40g.jpg",
+    "descripcion": "Disfruta del vibrante e intenso sabor de la Gelatina Boom de Frutos Rojos, el postre perfecto y refrescante para cualquier ocasión. Esta mezcla en polvo es muy fácil de preparar y rinde 5 porciones, ideal para compartir con toda la familia. Además, viene enriquecida con Vitamina C y contiene pulpa de fruta, ofreciendo una deliciosa experiencia en cada bocado. ¡Añádela a tu carrito y dale un toque dulce y divertido a tus días!",
+    "nuevo": true
   }
 ]
