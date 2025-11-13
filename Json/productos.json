@@ -2119,5 +2119,17 @@
     "imagen": "img/products/caf_parana.png",
     "descripcion": "Experimenta la fuerza y el cuerpo de un auténtico café brasileño con Café Paraná Extra Forte. Este café tostado y molido es la elección ideal para quienes buscan una taza potente, aromática y con carácter. Proveniente de la Indústria Brasileira, cada grano ha sido seleccionado para ofrecer una infusión de alta calidad. Lo mejor de todo es su envase sellado al Alto Vácuo (Alto Vacío), una tecnología que garantiza que el café conserve su frescura, su intenso aroma y sus propiedades de sabor intactas hasta el momento de abrirlo. Disfruta de la máxima potencia y de la frescura que solo un café de 250 g envasado al vacío puede ofrecer.",
     "nuevo": true
+  },
+  {
+    "nombre": "Azúcar Extra Fina 1Kg (Mirante)",
+    "categoria": "despensa",
+    "precio": 1.838,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/azcar_extra_fina_1kg_mirante.jpg",
+    "descripcion": "Endulza tus momentos especiales con la calidad superior del Azúcar Mirante Extra Fino. Con una tradición que se remonta a 1978, Mirante te ofrece un azúcar de textura excepcionalmente fina, lo que lo hace el ingrediente perfecto y esencial para la repostería. Su molienda extra fina garantiza una disolución rápida y homogénea, ideal para que tus \"Bolas, Doces e Tortas\" (pasteles, dulces y tartas) alcancen una suavidad y consistencia inigualables. Siguiendo su lema \"A vida merece ser doce\" (La vida merece ser dulce), este paquete de 1 kg de azúcar de alta calidad es tu mejor aliado para llevar el toque perfecto de dulzura a todas tus creaciones culinarias.",
+    "nuevo": true
   }
 ]
