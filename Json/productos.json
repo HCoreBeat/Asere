@@ -367,11 +367,13 @@
     "nombre": "Cartón de Huevos",
     "categoria": "despensa",
     "precio": 9.524,
-    "descuento": 0,
-    "oferta": false,
+    "descuento": 11,
+    "oferta": true,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/Carton_de_Huevo.jpeg"
+    "imagen": "img/products/Carton_de_Huevo.jpeg",
+    "descripcion": "Disfruta del sabor inigualable de los verdaderos huevos de campo. Nuestros huevos provienen de gallinas criadas en libertad, al aire libre, donde pueden picotear pastos naturales, moverse sin restricciones y llevar una vida libre de estrés. Esta alimentación variada y su bienestar se traducen directamente en un producto superior: yemas de color intenso, cremosas y consistentes, y un sabor auténtico que transformará tus desayunos y recetas. Al elegir nuestros huevos frescos, no solo estás comprando un alimento rico en proteínas y nutrientes, sino que también apoyas las prácticas de bienestar animal y la agricultura sostenible. ¡Lleva a tu mesa la frescura y la calidad que solo los huevos de gallinas felices pueden ofrecer!",
+    "nuevo": false
   },
   {
     "nombre": "Espaguetis (500g)",
