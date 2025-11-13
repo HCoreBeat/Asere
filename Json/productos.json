@@ -1249,12 +1249,13 @@
   {
     "nombre": "Picadillo de pollo (1Kg)",
     "categoria": "carnes",
-    "precio": 2.828,
-    "descuento": 10,
-    "oferta": false,
+    "precio": 2.829,
+    "descuento": 27.6,
+    "oferta": true,
     "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/Picadillo_de_Pollo.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Cable C",
