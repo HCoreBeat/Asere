@@ -1512,7 +1512,7 @@
     "nuevo": false
   },
   {
-    "nombre": "Café Bryderk",
+    "nombre": "Café Bryderk (250g)",
     "categoria": "cafe",
     "precio": 5.714,
     "descuento": 0,
@@ -1521,7 +1521,6 @@
     "disponible": true,
     "imagen": "img/products/cafe_bryderk.jpg",
     "descripcion": "Disfruta del auténtico sabor del Café Bryderk, un café español de alta calidad, diseñado especialmente para el gusto latino. Este café molido 100% tueste natural te ofrece un aroma intenso y un sabor profundo en cada taza. Su formato compacto es perfecto para conservar la frescura y el aroma por más tiempo. Ideal para los amantes del buen café, Bryderk es la opción perfecta para comenzar el día con energía o disfrutar de una pausa reconfortante.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
