@@ -1,6 +1,6 @@
 [
   {
-    "nombre": "Refresco Instantáneo (2Lt)",
+    "nombre": "Refresco Instantáneo (3Lt)",
     "categoria": "bebidas",
     "precio": 0.4,
     "descuento": 40.5,
@@ -2107,18 +2107,6 @@
     "disponible": true,
     "imagen": "img/products/higado_de_pollo_sadia_1kg.jpg",
     "descripcion": "Añade un toque de sabor y alta nutrición a tus comidas con el Hígado de Pollo Congelado Sadia. Este producto te ofrece hígados de pollo seleccionados y congelados individualmente para preservar su frescura y calidad. Es un ingrediente increíblemente versátil, perfecto para crear deliciosos patés, enriquecer guisos o preparar un salteado rápido lleno de hierro y vitaminas. Confía en la calidad de Sadia para llevar lo mejor a tu mesa.",
-    "nuevo": true
-  },
-  {
-    "nombre": "Café Pilon (283g)",
-    "categoria": "cafe",
-    "precio": 8.095,
-    "descuento": 14.4,
-    "oferta": true,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/caf_pilon_283g.jpg",
-    "descripcion": "Café molido\n100% Café puro",
     "nuevo": true
   }
 ]
