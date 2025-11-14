@@ -1261,11 +1261,10 @@
     "precio": 4.714,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
+    "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/rollito_carne_de_cerdo_x_lb.jpg",
-    "descripcion": "Rollitos de carne Ahumada",
-    "nuevo": false
+    "descripcion": "Rollitos de carne Ahumada"
   },
   {
     "nombre": "Pollo Ahumado x Lb",
@@ -1283,9 +1282,10 @@
     "precio": 4.667,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/masa_de_cerdo_ahumada_x_lb.jpg"
+    "mas_vendido": false,
+    "disponible": false,
+    "imagen": "img/products/masa_de_cerdo_ahumada_x_lb.jpg",
+    "nuevo": false
   },
   {
     "nombre": "Motos eléctricas",
