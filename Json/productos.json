@@ -1261,10 +1261,11 @@
     "precio": 4.714,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
+    "mas_vendido": false,
+    "disponible": false,
     "imagen": "img/products/rollito_carne_de_cerdo_x_lb.jpg",
-    "descripcion": "Rollitos de carne Ahumada"
+    "descripcion": "Rollitos de carne Ahumada",
+    "nuevo": false
   },
   {
     "nombre": "Pollo Ahumado x Lb",
