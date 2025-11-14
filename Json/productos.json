@@ -388,11 +388,11 @@
   },
   {
     "nombre": "Leche Condensada azucarada (390g)",
-    "categoria": "despensa",
-    "precio": 1.81,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
+    "categoria": "enlatados",
+    "precio": 2.343,
+    "descuento": 22.8,
+    "oferta": true,
+    "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/Leche_Condensada_Azucarada.jpeg",
     "nuevo": false
