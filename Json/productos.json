@@ -2210,7 +2210,7 @@
   },
   {
     "nombre": "Garbanzos Extra (500g)",
-    "categoria": "pastas-y-granos",
+    "categoria": "despensa",
     "precio": 1.781,
     "descuento": 0,
     "oferta": false,
@@ -2222,7 +2222,7 @@
   },
   {
     "nombre": "Frijol Negro Alubia (500g)",
-    "categoria": "despensa",
+    "categoria": "pastas-y-granos",
     "precio": 1.781,
     "descuento": 0,
     "oferta": false,
