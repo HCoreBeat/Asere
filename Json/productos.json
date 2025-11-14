@@ -420,7 +420,7 @@
   },
   {
     "nombre": "Arroz Rainha Brasil (1Kg)",
-    "categoria": "pastas-y-granos",
+    "categoria": "despensa",
     "precio": 2.829,
     "descuento": 36.4,
     "oferta": true,
@@ -2209,11 +2209,11 @@
   },
   {
     "nombre": "Garbanzos Extra (500g)",
-    "categoria": "despensa",
+    "categoria": "pastas-y-granos",
     "precio": 1.781,
     "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
+    "oferta": true,
+    "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/garbanzos_extra_500g.jpg",
     "descripcion": "Añade nutrición y versatilidad a tu dieta con el Garbanzo Extra de Dino Food. Estos garbanzos han sido seleccionados por su calidad extra para garantizar que tus platos queden siempre perfectos. Los garbanzos son una fuente natural e increíblemente versátil de fibra y proteínas, lo que los convierte en un ingrediente esencial para una alimentación saludable, ya sea que prepares un clásico humus, un potente cocido, o los incorpores en ensaladas frescas. La bolsa de 500 g te proporciona una legumbre de primera calidad, fácil de preparar y lista para convertirse en el ingrediente estrella de tus comidas diarias.",
