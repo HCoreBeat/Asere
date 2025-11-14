@@ -388,11 +388,11 @@
   },
   {
     "nombre": "Leche Condensada azucarada (390g)",
-    "categoria": "enlatados",
-    "precio": 2.343,
-    "descuento": 22.8,
-    "oferta": true,
-    "mas_vendido": true,
+    "categoria": "despensa",
+    "precio": 1.81,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Leche_Condensada_Azucarada.jpeg",
     "nuevo": false
@@ -420,7 +420,7 @@
   },
   {
     "nombre": "Arroz Rainha Brasil (1Kg)",
-    "categoria": "despensa",
+    "categoria": "pastas-y-granos",
     "precio": 2.829,
     "descuento": 36.4,
     "oferta": true,
