@@ -2161,9 +2161,9 @@
   {
     "nombre": "Pata de cerdo x Lb",
     "categoria": "carnes",
-    "precio": 1.429,
-    "descuento": 0,
-    "oferta": false,
+    "precio": 2.667,
+    "descuento": 46.4,
+    "oferta": true,
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/pata_de_cerdo_x_lb.jpg",
