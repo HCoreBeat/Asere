@@ -25,7 +25,7 @@
   {
     "nombre": "Pollo Country Pride",
     "categoria": "carnes",
-    "precio": 11.429,
+    "precio": 13.333,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -79,12 +79,13 @@
   {
     "nombre": "Chuletas de cerdo x Lb",
     "categoria": "carnes",
-    "precio": 2.762,
+    "precio": 3.333,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/Chuletas_de_Cerdo.jpg"
+    "imagen": "img/products/Chuletas_de_Cerdo.jpg",
+    "nuevo": false
   },
   {
     "nombre": "Paquete de salchichas 7u (350g)",
