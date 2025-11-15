@@ -2125,9 +2125,9 @@
   {
     "nombre": "Costillas de Cerdo x Lb",
     "categoria": "carnes",
-    "precio": 2.762,
-    "descuento": 0,
-    "oferta": false,
+    "precio": 3.333,
+    "descuento": 17.1,
+    "oferta": true,
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/costillas_de_cerdo_x_lb.jpg",
