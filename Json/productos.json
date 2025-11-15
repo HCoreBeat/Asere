@@ -46,8 +46,8 @@
   {
     "nombre": "Carne de Ovejo x Lb",
     "categoria": "carnes",
-    "precio": 2.248,
-    "descuento": 16.1,
+    "precio": 2.714,
+    "descuento": 30.5,
     "oferta": true,
     "mas_vendido": false,
     "disponible": true,
