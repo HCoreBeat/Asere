@@ -2149,9 +2149,9 @@
   {
     "nombre": "Gordo de cerdo para empella x Lb",
     "categoria": "carnes",
-    "precio": 2.048,
-    "descuento": 0,
-    "oferta": false,
+    "precio": 2.848,
+    "descuento": 28.1,
+    "oferta": true,
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/gordo_de_cerdo_para_empella_x_lb.jpg",
