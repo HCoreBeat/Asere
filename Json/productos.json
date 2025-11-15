@@ -2137,9 +2137,9 @@
   {
     "nombre": "Lomo de cerdo x Lb",
     "categoria": "carnes",
-    "precio": 2.81,
-    "descuento": 0,
-    "oferta": false,
+    "precio": 3.333,
+    "descuento": 15.7,
+    "oferta": true,
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/lomo_de_cerdo_x_lb.jpg",
