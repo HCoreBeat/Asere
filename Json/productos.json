@@ -1107,13 +1107,14 @@
   },
   {
     "nombre": "Desodorante Keewell",
-    "categoria": "otros",
-    "precio": 2.87,
-    "descuento": 10,
+    "categoria": "aseo",
+    "precio": 2.867,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": true,
     "imagen": "img/products/Desodorante_Keewell.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Toallitas Húmedas (80u)",
