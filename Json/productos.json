@@ -1923,19 +1923,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Havana Club 7 años",
-    "categoria": "alcohol",
-    "precio": 24.762,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/habana_club_7_anos.jpg",
-    "descripcion": "Adquiere la esencia de la tradición cubana con el ron Havana Club 7 Años, un ron añejo que encarna el espíritu de la isla. Presentado en su botella icónica de 70 cl, este ron se distingue por su color ámbar oscuro y profundo, reflejo de su largo proceso de maduración de siete años en barricas de roble. Su etiqueta, con un diseño elegante en tonos negros, rojos y dorados, destaca la marca \"Havana Club\" y el logo del dios Baco, simbolizando la riqueza y el sabor de la bebida. En la parte inferior, se indica con orgullo \"7 Años\", certificando la calidad y el añejamiento de este destilado. Con un perfil de sabor complejo y equilibrado, ofrece notas de cacao, vainilla, caña de azúcar, castaña y frutas tropicales. Havana Club 7 Años es el ron ideal para degustar solo, en las rocas o como base para cócteles de alta coctelería.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
     "nombre": "Havana Club reserva",
     "categoria": "alcohol",
     "precio": 13.905,
