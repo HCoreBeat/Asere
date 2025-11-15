@@ -598,15 +598,16 @@
     "disponible": true
   },
   {
-    "nombre": "Mazo de cebolla blanca",
+    "nombre": "Cebolla blanca xlb",
     "categoria": "agro",
-    "precio": 1.428,
-    "descuento": 10,
+    "precio": 2.19,
+    "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
+    "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/cebolla_blanca.jpg",
     "descripcion": "La cebolla blanca es un ingrediente esencial, reconocida por su frescura y calidad. Su forma redonda y su brillante color blanco la hacen atractiva, mientras que su sabor suave pero distintivo es ideal para una amplia variedad de recetas. Desde sofritos aromáticos hasta ensaladas crujientes, esta cebolla agrega un toque especial a cualquier platillo. Perfecta para quienes valoran productos naturales y versátiles en su cocina, garantizando satisfacción en cada preparación.",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Mano de plátano burro",
