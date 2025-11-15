@@ -36,12 +36,13 @@
   {
     "nombre": "Carne de cerdo x Lb",
     "categoria": "carnes",
-    "precio": 3.047,
-    "descuento": 9.4,
+    "precio": 3.333,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
+    "disponible": true,
     "imagen": "img/products/Carne_de_Cerdo.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Carne de Ovejo x Lb",
@@ -982,11 +983,12 @@
     "nombre": "Chocolate en Polvo «Rico» (500g)",
     "categoria": "despensa",
     "precio": 4,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": true,
     "imagen": "img/products/Chocolate_en_Polvo_Riko.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Pasta de tomate 400g",
@@ -1251,9 +1253,10 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/rollito_carne_de_cerdo_x_lb.jpg",
-    "descripcion": "Rollitos de carne Ahumada"
+    "descripcion": "Rollitos de carne Ahumada",
+    "nuevo": false
   },
   {
     "nombre": "Pollo Ahumado x Lb",
@@ -2204,6 +2207,30 @@
     "disponible": true,
     "imagen": "img/products/alubia_pinta_extra_500g.jpg",
     "descripcion": "Dale vida a tus platos con la Alubia Pinta Extra de Dino Food. Seleccionada por su calidad extra y su hermoso moteado en tonos rosados y marrones, esta legumbre no solo añade un gran valor nutricional, sino que también enriquece visualmente cualquier receta. La Alubia Pinta es conocida por su textura cremosa que se mantiene firme durante la cocción, lo que la hace ideal para potajes, chili y guisos donde se busca un caldo espeso y un bocado satisfactorio. La bolsa de 500 g te asegura granos de calibre uniforme y la máxima calidad, listos para ser la base de tus comidas reconfortantes.",
+    "nuevo": true
+  },
+  {
+    "nombre": "Leche entera en polvo Malibú (1Kg)",
+    "categoria": "lacteos",
+    "precio": 9.429,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/leche_entera_en_polvo_malib.jpg",
+    "descripcion": "Es de la amarillita de la buena",
+    "nuevo": true
+  },
+  {
+    "nombre": "Queso Gouda Alemán",
+    "categoria": "lacteos",
+    "precio": 38.095,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/queso_gouda_alemn.png",
+    "descripcion": "Peso: 3.08 kg",
     "nuevo": true
   }
 ]
