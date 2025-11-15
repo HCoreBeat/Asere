@@ -1923,19 +1923,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Havana Club reserva",
-    "categoria": "alcohol",
-    "precio": 13.905,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/habana_club_reserva.jpg",
-    "descripcion": "Experimenta la suavidad y el sabor excepcional del ron Havana Club Reserva, una bebida que rinde homenaje a la tradición ronera cubana. Presentado en su elegante botella de 70 cl, este ron se distingue por su tono ámbar rojizo, un reflejo de su cuidadoso proceso de añejamiento. La etiqueta, con un diseño en tonos dorados y rojos, resalta el nombre de la marca \"Havana Club\" y la palabra \"Reserva\", indicando su calidad superior y su carácter añejo. La tapa de color marrón rojizo se complementa perfectamente con el diseño de la botella, creando una estética visualmente atractiva. Con un perfil de sabor rico y complejo, Havana Club Reserva ofrece notas de caramelo, vainilla y roble, con un final largo y suave. Es el ron perfecto para disfrutar solo, con hielo, o como el ingrediente secreto en tus cócteles clásicos. Añade Havana Club Reserva a tu colección y descubre el verdadero sabor de Cuba.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
     "nombre": "Agua Natural Ciego Montero(1.5l)",
     "categoria": "bebidas",
     "precio": 1.429,
