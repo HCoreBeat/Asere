@@ -577,13 +577,14 @@
   },
   {
     "nombre": "Frazada de Piso",
-    "categoria": "otros",
-    "precio": 1.9,
-    "descuento": 10,
+    "categoria": "aseo",
+    "precio": 1.895,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": true,
     "imagen": "img/products/Frazada_de_Piso.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Maíz molido tierno x Lb",
