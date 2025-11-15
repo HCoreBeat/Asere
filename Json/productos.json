@@ -2057,7 +2057,7 @@
   {
     "nombre": "Café Pilón (283g)",
     "categoria": "cafe",
-    "precio": 6.933,
+    "precio": 8.171,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -2069,7 +2069,7 @@
   {
     "nombre": "Café Dulfito (250g)",
     "categoria": "cafe",
-    "precio": 3.571,
+    "precio": 4.81,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -2081,7 +2081,7 @@
   {
     "nombre": "Café Paraná (250g)",
     "categoria": "cafe",
-    "precio": 4.619,
+    "precio": 5.857,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -2105,7 +2105,7 @@
   {
     "nombre": "Café Purasangre (250g)",
     "categoria": "cafe",
-    "precio": 4.524,
+    "precio": 5.762,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
