@@ -910,12 +910,13 @@
   {
     "nombre": "Galletas Porleo (45g)",
     "categoria": "confituras",
-    "precio": 0.87,
-    "descuento": 10,
+    "precio": 0.867,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": false,
     "imagen": "img/products/Galletas_Porleo.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Orégano (14.2g)",
@@ -1413,10 +1414,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/mashmallows.jpg",
     "descripcion": "Disfruta de la suave y deliciosa combinación de los marshmallows Manchas de Guandy. Cada paquete contiene malvaviscos cubiertos de una capa de rico chocolate, creando una experiencia dulce y reconfortante. Con un peso neto de 26g (0.9oz), son el tamaño perfecto para un capricho rápido o un snack dulce. La textura esponjosa de los malvaviscos se complementa a la perfección con el sabor intenso del chocolate, haciendo de este dulce una opción irresistible.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
