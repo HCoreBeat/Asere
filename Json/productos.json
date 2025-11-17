@@ -890,12 +890,13 @@
     "nombre": "Galletas de Soda con Mantequilla Doricas",
     "categoria": "confituras",
     "precio": 5,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": false,
     "imagen": "img/products/Galleta_de_Soda_Con_Mantequilla.jpg",
     "descripcion": "Extra grandes y deliciosas, las galletas semidulces DoRicas son perfectas para cualquier ocasión, ofreciendo un sabor único que encanta a todos. Este paquete de 525 g es ideal para compartir en reuniones familiares, eventos o simplemente para disfrutar durante varios días. Presentadas en un empaque azul oscuro, estas galletas no solo son sabrosas, sino también visualmente atractivas gracias a su diseño profesional. En la parte frontal del paquete destaca una imagen tentadora de las galletas acompañadas de una espiga de trigo, que resalta la calidad de sus ingredientes seleccionados. Cada paquete incluye cinco tacos, asegurando una experiencia prolongada de disfrute. Son perfectas para acompañar con café, té o como un snack ligero en cualquier momento del día.",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Galletas de soda Salricas",
@@ -1714,10 +1715,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/galletas_lora.jpg",
     "descripcion": "Las galletas tipo sándwich Lora son una opción deliciosa y versátil para satisfacer tus antojos de dulce. El paquete, que se presenta en un práctico formato cilíndrico, es ideal para compartir o para llevar. La imagen muestra tres variedades de galletas, cada una con un sabor distintivo: una de chocolate en un envoltorio marrón, otra de fresa en un envoltorio rosa y una de vainilla, representada por el empaque verde. Cada galleta se compone de dos tapas crujientes y doradas que contienen un generoso relleno cremoso en el centro. El diseño de los paquetes es atractivo, con el nombre de la marca en letras grandes y curvadas. Estas galletas son el acompañante perfecto para un vaso de leche, café o té, y son una excelente opción para el postre o la merienda de los más pequeños.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
@@ -1753,10 +1753,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/galletas_renata.jpg",
     "descripcion": "Disfruta de la simplicidad y el sabor clásico de las galletas de maicena Renata. Este paquete, con un peso neto de 200 gramos, presenta un diseño atractivo y funcional, en tonos de azul y naranja, que destaca el nombre de la marca. Las galletas, con su textura delicada y un toque dulce, son ideales para acompañar tu café o té por la mañana, o para disfrutar como una merienda ligera en cualquier momento. En la etiqueta se puede apreciar una imagen de las galletas y una taza de café, sugiriendo la combinación perfecta. El empaque también destaca que el producto contiene maíz, un ingrediente clave que le da su sabor y textura distintivos. Las galletas Renata Maizena son un deleite que te transportará a los sabores de la infancia.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
