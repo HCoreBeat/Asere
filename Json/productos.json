@@ -2231,5 +2231,16 @@
     "imagen": "img/products/queso_gouda_alemn.png",
     "descripcion": "Peso: 3.08 kg",
     "nuevo": true
+  },
+  {
+    "nombre": "Queso gouda alemán 3.08kg",
+    "categoria": "lacteos",
+    "precio": 33.333,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/queso_gouda_alemn_3.08kg.jpg",
+    "nuevo": true
   }
 ]
