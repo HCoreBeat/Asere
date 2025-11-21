@@ -1790,10 +1790,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/fideos_ada.jpg",
     "descripcion": "Presentamos la pasta tipo fideos Macarrones de la selección gourmet de la marca Ada, un producto de alta calidad ideal para enriquecer tus sopas, guisos y platillos orientales. En este práctico empaque de 500 gramos, puedes apreciar la finura de los fideos, garantizando una cocción rápida y uniforme. El diseño del empaque es elegante y llamativo, con un fondo transparente que deja ver el producto, y una franja dorada en la parte inferior que evoca sofisticación. En la etiqueta se aprecia el nombre de la marca y la descripción del producto en varios idiomas, indicando que se trata de Macarrones / Premium Pasta. Con Ada, disfrutarás de una pasta que se mantendrá firme y deliciosa, convirtiendo cada comida en una experiencia culinaria excepcional.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
