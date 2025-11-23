@@ -187,26 +187,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Leche Evaporada 400g",
-    "categoria": "lacteos",
-    "precio": 2.93,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Leche_Evaporada.jpg",
-    "disponible": false
-  },
-  {
-    "nombre": "Sazón Mixto (250g)",
-    "categoria": "aderezos",
-    "precio": 5.3,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Sazon_Mixto.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Comino Molido (198.5g)",
     "categoria": "aderezos",
     "precio": 8.9,
@@ -227,16 +207,6 @@
     "disponible": true
   },
   {
-    "nombre": "Queso Crema (200g)",
-    "categoria": "aderezos",
-    "precio": 2.9,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Queso_Crema.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Sazón Goya",
     "categoria": "despensa",
     "precio": 0.6,
@@ -246,17 +216,6 @@
     "disponible": true,
     "imagen": "img/products/Sazon_Goya.jpg",
     "nuevo": false
-  },
-  {
-    "nombre": "Papas Prefritas Vima 1Kg",
-    "categoria": "despensa",
-    "precio": 5.143,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/papas_prefritas_vima.jpg",
-    "descripcion": "La patata frita Vima se presenta cortada en bastones de grosor 10x10mm (3/8 de pulgada). Está elaborada con las deliciosas variedades Bintje y Fontane, provenientes del centro de Europa (principalmente Bélgica). La patata Vima está prefrita, por eso se fríe directamente congelada y en menos de 5 minutos está lista. Como tiene un porcentaje de humedad muy bajo absorbe poco aceite y se mantiene crujiente más tiempo. No contiene sal y así se puede preparar al gusto."
   },
   {
     "nombre": "Manzana",
@@ -457,17 +416,6 @@
     "disponible": false,
     "imagen": "img/products/queso_gouda_Kg.jpg",
     "descripcion": "Descubre el exquisito sabor del queso Gouda Premium, ahora disponible por kilogramos para adaptarse a tus necesidades. Este queso premium, elaborado con ingredientes 100% naturales, ofrece una textura suave y un sabor intenso que lo convierte en la elección ideal para tus recetas gourmet o para disfrutar en bocadillos frescos. Perfecto para amantes de la calidad y la frescura, cada kilogramo está cuidadosamente empacado para garantizar que llegue a ti en óptimas condiciones. Lleva la excelencia del queso Gouda Premium a tu cocina y deleita tu paladar con cada porción."
-  },
-  {
-    "nombre": "Salsa Cocktail Vima (225ml)",
-    "categoria": "aderezos",
-    "precio": 2.533,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/salsa_cocktail_225ml_vima.jpg",
-    "descripcion": "La salsa cocktail de Vima Foods es el complemento perfecto para tus platos de pescados, mariscos y ensaladas. Con un contenido neto de 225 ml, esta salsa destaca por su sabor delicioso y su versatilidad en la cocina. Presentada en un frasco con tapa verde y diseño elegante, garantiza frescura y calidad en cada cucharada. Dale un toque especial a tus comidas con la salsa cocktail de Vima Foods, ideal para realzar sabores y sorprender a tus invitados."
   },
   {
     "nombre": "Mayonesa Vima (450ml)",
@@ -830,16 +778,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Caja de Jurel (20Libras)",
-    "categoria": "carnes",
-    "precio": 35.98,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Caja_de_Jurel.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Pelly de Ajo",
     "categoria": "confituras",
     "precio": 2.838,
@@ -861,30 +799,6 @@
     "disponible": false,
     "imagen": "img/products/pelly_queso.jpg",
     "descripcion": "Pelly Bolitas de Queso - Snack de Maíz Crujiente Haz de cada momento una celebración con Pelly Bolitas de Queso, un snack irresistible hecho de maíz con un sabor intenso a queso. Este producto se presenta en un empaque vibrante de color naranja con detalles alegres que capturan la esencia divertida del snack. Con la frase destacada ¡Poca sal, más maíz!, estas bolitas de queso son la opción perfecta para aquellos que buscan un balance entre sabor y frescura. Cada bolsa contiene 120 gramos de felicidad crujiente, ideal para compartir o disfrutar en cualquier ocasión. El diseño incluye un personaje sonriente que refuerza el carácter amigable y llamativo del producto. ¡Atrévete a probarlas y llena tu día de color y sabor!"
-  },
-  {
-    "nombre": "Batata Lisa",
-    "categoria": "confituras",
-    "precio": 1.714,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/batata_lisa.jpg",
-    "descripcion": "Batata Lisa Natural - Friteli Descubre el auténtico sabor de las papas fritas Friteli Batata Lisa Natural, hechas con 100% batata de verdad para brindarte una experiencia genuina y crujiente. Cada bolsa de 100 gramos contiene papas cuidadosamente seleccionadas y preparadas para mantener su frescura y calidad excepcional. Este snack combina tradición y sabor natural, ideal para disfrutar en cualquier momento. El empaque llamativo incluye un diseño moderno en color negro, destacando la autenticidad del producto con frases como Papas Seleccionadas y el sello de calidad de la marca Friteli. Ten en cuenta que el empaque también indica los niveles de grasas, mostrando transparencia hacia los consumidores.",
-    "nuevo": false
-  },
-  {
-    "nombre": "Papas Crunchy",
-    "categoria": "confituras",
-    "precio": 1.714,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/papas_crunchy.jpg",
-    "descripcion": "CRUNCHY - Papas Fritas Sabor Salt & Vinegar Déjate llevar por la explosión de sabores con estas papas fritas CRUNCHY, una deliciosa combinación de sal y vinagre que te hará agua la boca. Presentadas en una bolsa vibrante de color morado, estas papas ofrecen un crujido irresistible y el equilibrio perfecto entre lo salado y lo ácido. Con un diseño llamativo, incluyen la imagen de una botella de vinagre, un salero y papas fritas que evocan frescura y calidad. Ideales para disfrutar en cualquier momento, estas papas vienen con 240 calorías por porción y son perfectas para compartir o darte un gusto. ¡Un sabor clásico reinventado para los amantes del buen snack!",
-    "nuevo": false
   },
   {
     "nombre": "Galletas de Soda con Mantequilla Doricas",
@@ -1081,16 +995,6 @@
     "oferta": false,
     "mas_vendido": false,
     "imagen": "img/products/Aceite_Saude.jpg",
-    "disponible": false
-  },
-  {
-    "nombre": "Servilletas «Bingo» (40u)",
-    "categoria": "otros",
-    "precio": 0.9,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Servilletas.jpg",
     "disponible": false
   },
   {
