@@ -689,11 +689,12 @@
     "nombre": "Caja de Malta Bucanero",
     "categoria": "bebidas",
     "precio": 23.81,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": false,
     "imagen": "img/products/Caja_de_Malta_Bucanero.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Refresco Limón (330ml)",
@@ -729,11 +730,12 @@
     "nombre": "Malta Bucanero",
     "categoria": "bebidas",
     "precio": 1.095,
-    "descuento": 10,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": false,
     "imagen": "img/products/Malta_Bucanero.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Refresco Naranja (330ml)",
