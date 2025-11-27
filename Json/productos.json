@@ -1269,10 +1269,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/limpiador_multiuso.jpg",
     "descripcion": "Mantén tu hogar impecable con el Limpiador Multiuso Royal Cleaner. Este potente limpiador antibacteriano, en un generoso envase de 900 ml, es ideal para desinfectar y limpiar todo tipo de superficies, eliminando suciedad y gérmenes de manera efectiva. Su fórmula concentrada ofrece un poder desinfectante superior, dejando un aroma fresco y una limpieza duradera. Es el aliado perfecto para la higiene de tu cocina, baño y otras áreas de la casa, garantizando un ambiente limpio y seguro para toda la familia.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
@@ -1282,10 +1281,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/limpiador_multiuso_2.jpg",
     "descripcion": "Dale un toque de frescura y limpieza a tu hogar con el Limpiador Multiuso Royal Cleaner Aroma a Limón. Este limpiador, en un práctico envase, ofrece un poder desinfectante y antibacteriano, ideal para mantener tus superficies libres de gérmenes y suciedad. Su fragancia a limón deja un aroma fresco y revitalizante que perdura en el ambiente, creando una sensación de limpieza profunda. Es perfecto para usar en múltiples superficies de la casa, garantizando un hogar impecable y agradablemente perfumado.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
