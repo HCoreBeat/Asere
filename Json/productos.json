@@ -2,12 +2,12 @@
   {
     "nombre": "Pollo Country Pride",
     "categoria": "carnes",
-    "precio": 13.333,
+    "precio": 11.429,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/Pollo_Country.jpg",
+    "imagen": "img/products/pollo_country_pride.jpg",
     "nuevo": false
   },
   {
@@ -36,12 +36,13 @@
   {
     "nombre": "Picadillo Especial 400g",
     "categoria": "carnes",
-    "precio": 1.876,
-    "descuento": 24.37,
+    "precio": 1.429,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
-    "imagen": "img/products/Picadillo_Especial.jpg",
-    "disponible": false
+    "disponible": true,
+    "imagen": "img/products/picadillo_especial_400g.jpg",
+    "nuevo": false
   },
   {
     "nombre": "Jamón de Primera x Lb",
