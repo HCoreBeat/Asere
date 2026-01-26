@@ -13,7 +13,7 @@
   {
     "nombre": "Carne de cerdo x Lb",
     "categoria": "carnes",
-    "precio": 3.333,
+    "precio": 2.762,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -24,8 +24,8 @@
   {
     "nombre": "Carne de Ovejo x Lb",
     "categoria": "carnes",
-    "precio": 2.714,
-    "descuento": 30.5,
+    "precio": 2.048,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
