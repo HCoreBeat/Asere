@@ -67,36 +67,21 @@
     "nuevo": false
   },
   {
-    "nombre": "Paquete de salchichas 7u (350g)",
+    "nombre": "Paquete de salchicha 10u (340g)",
     "categoria": "cárnicos",
-    "precio": 1.81,
-    "descuento": 26.3,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/Paquete_de_Salchichas.jpg",
-    "nuevo": false
-  },
-  {
-    "nombre": "Pack de 4 Hamburguesas de cerdo",
-    "categoria": "cárnicos",
-    "precio": 3.714,
+    "precio": 1.114,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/Pack_de_4_Hamburguesas_de_Pollo.jpg",
-    "descripcion": "100% de cárnicos nada de invento.\nCalidad garantizada.\nSin harina agregada..\n\nSolo pura carne ."
-  },
-  {
-    "nombre": "Hígado de cerdo x Lb",
-    "categoria": "cárnicos",
-    "precio": 2.87,
-    "descuento": 10,
-    "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Higado_de_Cerdo.jpg",
-    "disponible": false
+    "disponible": true,
+    "imagen": "img/products/paquete_de_salchichas_7u_350g.webp",
+    "imagenesAdicionales": [
+      "img/products/paquete_de_salchichas_7u_350g_1.jpg",
+      "img/products/paquete_de_salchichas_7u_350g_3.jpg",
+      "img/products/paquete_de_salchichas_7u_350g_1.jpg",
+      "img/products/paquete_de_salchichas_7u_350g_1.jpg"
+    ],
+    "nuevo": false
   },
   {
     "nombre": "Pernil de Cerdo asado (15 libras)",
@@ -106,7 +91,7 @@
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/Pernil_de_Cerdo.jpg",
+    "imagen": "img/products/pernil_de_cerdo_asado_15_libras.jpg",
     "nuevo": false
   },
   {
