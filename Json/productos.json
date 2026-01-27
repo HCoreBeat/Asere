@@ -95,41 +95,9 @@
     "nuevo": false
   },
   {
-    "nombre": "Maíz Dulce en Grano Vima (425g)",
-    "categoria": "enlatados",
-    "precio": 1.809,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/maiz_en_grano_dulce_vima_425gm.jpg",
-    "disponible": true,
-    "descripcion": "El maíz dulce en grano de Vima Foods, disponible en una lata de 15 oz (425 g), es ideal para añadir sabor y calidad a tus recetas favoritas. Con un drenado neto de 8.1 oz (230 g), este producto vegano y de calidad premium ofrece granos frescos y tiernos que son perfectos para ensaladas, guisos, sopas y más. Disfruta de la versatilidad del maíz dulce en grano Vima Foods, diseñado para satisfacer a los paladares más exigentes."
-  },
-  {
-    "nombre": "Salchicha de pollo y cerdo 10u (340g)",
-    "categoria": "cárnicos",
-    "precio": 1.81,
-    "descuento": 28.9,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/Salchicha_Pollo_Cerdo.jpg",
-    "nuevo": false
-  },
-  {
-    "nombre": "Picadillo Especial 800g",
-    "categoria": "cárnicos",
-    "precio": 3.657,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Picadillo_Especial_2.jpg",
-    "disponible": false
-  },
-  {
     "nombre": "Queso criollo x Lb",
     "categoria": "lacteos",
-    "precio": 2.238,
+    "precio": 2.257,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -139,7 +107,7 @@
     "nuevo": false
   },
   {
-    "nombre": "Helado 4Lts",
+    "nombre": "Helado 4Lts de 2da",
     "categoria": "lacteos",
     "precio": 9.333,
     "descuento": 0,
@@ -150,62 +118,33 @@
     "nuevo": false
   },
   {
-    "nombre": "Comino Molido (198.5g)",
-    "categoria": "aderezos",
-    "precio": 8.9,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": true,
-    "imagen": "img/products/Comino_Molido.jpg",
-    "disponible": false
-  },
-  {
-    "nombre": "Ketchup (320g)",
-    "categoria": "aderezos",
-    "precio": 2.95,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Ketchup.jpg",
-    "disponible": true
-  },
-  {
-    "nombre": "Sazón Goya",
+    "nombre": "Manzana",
     "categoria": "despensa",
-    "precio": 0.6,
+    "precio": 1.114,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/Sazon_Goya.jpg",
-    "nuevo": false
-  },
-  {
-    "nombre": "Manzana",
-    "categoria": "despensa",
-    "precio": 1.619,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": true,
     "imagen": "img/products/manzana.jpg",
-    "disponible": true,
-    "descripcion": "Descubre la frescura y el sabor de una manzana premium, cuidadosamente seleccionada para ofrecerte la mejor calidad. Perfecta como snack saludable, para añadir a tus recetas favoritas o para disfrutar en cualquier momento del día. Con una textura crujiente, un color vibrante y una dulzura natural irresistible, esta manzana es una fuente excelente de vitaminas y antioxidantes 🍎"
+    "descripcion": "Descubre la frescura y el sabor de una manzana premium, cuidadosamente seleccionada para ofrecerte la mejor calidad. Perfecta como snack saludable, para añadir a tus recetas favoritas o para disfrutar en cualquier momento del día. Con una textura crujiente, un color vibrante y una dulzura natural irresistible, esta manzana es una fuente excelente de vitaminas y antioxidantes 🍎",
+    "nuevo": false
   },
   {
     "nombre": "Manzanas Pack x6",
     "categoria": "despensa",
-    "precio": 8.571,
-    "descuento": 10,
+    "precio": 6.638,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
-    "imagen": "img/products/manzana_cantidad.jpg",
     "disponible": true,
-    "descripcion": "Disfruta de la frescura y el sabor natural de nuestras manzanas cuidadosamente seleccionadas. Este paquete incluye 6 manzanas premium, perfectas para tus meriendas saludables, recetas favoritas o para llevar un delicioso bocado en cualquier momento del día. Con su textura crujiente y dulzura irresistible, nuestras manzanas son una excelente fuente de vitaminas y antioxidantes. Llena tu cocina con lo mejor de la naturaleza 🍎"
+    "imagen": "img/products/manzana_cantidad.jpg",
+    "descripcion": "Disfruta de la frescura y el sabor natural de nuestras manzanas cuidadosamente seleccionadas. Este paquete incluye 6 manzanas premium, perfectas para tus meriendas saludables, recetas favoritas o para llevar un delicioso bocado en cualquier momento del día. Con su textura crujiente y dulzura irresistible, nuestras manzanas son una excelente fuente de vitaminas y antioxidantes. Llena tu cocina con lo mejor de la naturaleza 🍎",
+    "nuevo": false
   },
   {
     "nombre": "Nutela",
     "categoria": "confituras",
-    "precio": 4.476,
+    "precio": 2.448,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -217,12 +156,12 @@
   {
     "nombre": "Aceite Fritura 900ml",
     "categoria": "despensa",
-    "precio": 3,
+    "precio": 2.829,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/Aceite_Fritura.jpeg",
+    "imagen": "img/products/aceite_fritura_900ml.jpg",
     "nuevo": false
   },
   {
@@ -238,8 +177,8 @@
   {
     "nombre": "Frijol Negro x Lb",
     "categoria": "pastas-y-granos",
-    "precio": 2.505,
-    "descuento": 33.5,
+    "precio": 1.781,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
@@ -247,14 +186,15 @@
     "nuevo": false
   },
   {
-    "nombre": "Paquete de pan de bola 10u",
+    "nombre": "Paquete de pan de bola 8u/10u",
     "categoria": "despensa",
-    "precio": 1.809,
-    "descuento": 10,
+    "precio": 1.714,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": true,
     "imagen": "img/products/Pan.jpeg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Pastilla de Pollo",
@@ -268,31 +208,21 @@
     "nuevo": false
   },
   {
-    "nombre": "Azúcar Parda x lb",
-    "categoria": "despensa",
-    "precio": 2,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Azucar_Parda.jpeg",
-    "disponible": false
-  },
-  {
     "nombre": "Café La Llave (284g)",
     "categoria": "café",
-    "precio": 9.429,
-    "descuento": 30.8,
+    "precio": 7.619,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/café_la_Llave.jpeg",
+    "imagen": "img/products/caf_la_llave_284g.jpg",
     "nuevo": true
   },
   {
     "nombre": "Cartón de Huevos",
     "categoria": "despensa",
-    "precio": 9.524,
-    "descuento": 11,
+    "precio": 8.571,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
@@ -303,50 +233,40 @@
   {
     "nombre": "Espaguetis (500g)",
     "categoria": "pastas-y-granos",
-    "precio": 1.238,
+    "precio": 0.829,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/Espaguetis.jpeg",
+    "imagen": "img/products/espaguetis_500g.jpeg",
     "nuevo": false
   },
   {
     "nombre": "Leche Condensada azucarada (390g)",
     "categoria": "enlatados",
-    "precio": 1.81,
+    "precio": 1.59,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/Leche_Condensada_Azucarada.jpeg",
+    "imagen": "img/products/leche_condensada_azucarada_390g.jpg",
     "nuevo": false
   },
   {
     "nombre": "Sopa instantánea sabor Pollo (85g)",
     "categoria": "despensa",
-    "precio": 0.9,
-    "descuento": 10,
+    "precio": 0.562,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Sopa_Instantanea_sabor_Pollo.jpeg",
-    "disponible": true
-  },
-  {
-    "nombre": "Pasta de tomate Vima (400g)",
-    "categoria": "enlatados",
-    "precio": 1.885,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Pasta_de_Tomate_Vima.jpeg",
     "disponible": true,
-    "descripcion": "El puré de tomate Vima Foods es el aliado perfecto para realzar el sabor de tus platillos favoritos. Con un contenido neto de 400 g (14 oz.), este puré de alta calidad cuenta con una textura suave y un sabor concentrado que lo hace ideal para salsas, guisos y más. Presentado en una lata con abre fácil, garantiza practicidad y frescura en cada uso. Transforma tus recetas con el auténtico toque del puré de tomate Vima Foods, diseñado para satisfacer a los paladares más exigentes."
+    "imagen": "img/products/sopa_instantnea_sabor_pollo_85g.jpeg",
+    "nuevo": false
   },
   {
     "nombre": "Arroz Rainha Brasil (1Kg)",
     "categoria": "pastas-y-granos",
-    "precio": 2.829,
+    "precio": 1.781,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -358,59 +278,49 @@
   {
     "nombre": "Queso Gouda Premium (3Kg)",
     "categoria": "lacteos",
-    "precio": 40,
+    "precio": 34.019,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": false,
-    "imagen": "img/products/queso_gouda premium.jpg",
+    "imagen": "img/products/queso_gouda_premium_3kg.jpg",
     "descripcion": "Disfruta del auténtico sabor del queso Gouda de Vima Foods, elaborado con ingredientes 100% naturales que garantizan una calidad inigualable. Su textura suave y cremosa es perfecta para realzar tus recetas favoritas, desde sándwiches y ensaladas hasta platos gourmet. Además, viene empacado para preservar su frescura y sabor, convirtiéndolo en una elección ideal tanto para bocadillos sencillos como para ocasiones especiales.",
-    "imagenesAdicionales": [
-      "img/products/queso_gouda_premium_2.jpg"
-    ]
+    "nuevo": false
   },
   {
     "nombre": "Kg de Queso Gouda Premium",
     "categoria": "lacteos",
-    "precio": 17.4,
+    "precio": 13.333,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/queso_gouda_Kg.jpg",
-    "descripcion": "Descubre el exquisito sabor del queso Gouda Premium, ahora disponible por kilogramos para adaptarse a tus necesidades. Este queso premium, elaborado con ingredientes 100% naturales, ofrece una textura suave y un sabor intenso que lo convierte en la elección ideal para tus recetas gourmet o para disfrutar en bocadillos frescos. Perfecto para amantes de la calidad y la frescura, cada kilogramo está cuidadosamente empacado para garantizar que llegue a ti en óptimas condiciones. Lleva la excelencia del queso Gouda Premium a tu cocina y deleita tu paladar con cada porción."
-  },
-  {
-    "nombre": "Mayonesa Vima (450ml)",
-    "categoria": "aderezos",
-    "precio": 3.971,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Mayonesa_Vima.jpg",
-    "descripcion": "Descubre la mayonesa Vima Foods de 450 ml, elaborada con ingredientes de alta calidad para garantizar un sabor auténtico y delicioso. Perfecta para acompañar sándwiches, ensaladas y tus recetas favoritas, esta mayonesa destaca por su textura cremosa y su frescura incomparable. Su presentación en un frasco práctico con tapa verde asegura la conservación del sabor y la comodidad en cada uso. Haz de Vima Foods tu elección de confianza para realzar cada bocado."
-  },
-  {
-    "nombre": "Frijol Rojo x Lb",
-    "categoria": "pastas-y-granos",
-    "precio": 2.762,
-    "descuento": 37.9,
-    "oferta": false,
-    "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/Frijol_Rojo.jpeg",
+    "imagen": "img/products/queso_gouda_Kg.jpg",
+    "descripcion": "Descubre el exquisito sabor del queso Gouda Premium, ahora disponible por kilogramos para adaptarse a tus necesidades. Este queso premium, elaborado con ingredientes 100% naturales, ofrece una textura suave y un sabor intenso que lo convierte en la elección ideal para tus recetas gourmet o para disfrutar en bocadillos frescos. Perfecto para amantes de la calidad y la frescura, cada kilogramo está cuidadosamente empacado para garantizar que llegue a ti en óptimas condiciones. Lleva la excelencia del queso Gouda Premium a tu cocina y deleita tu paladar con cada porción.",
+    "nuevo": false
+  },
+  {
+    "nombre": "Mayonesa Victoria (250ml)",
+    "categoria": "aderezos",
+    "precio": 2.067,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": false,
+    "imagen": "img/products/mayonesa_vima_450ml.jpg",
+    "descripcion": "Descubre la mayonesa Victoria de 250 ml, elaborada con ingredientes de alta calidad para garantizar un sabor auténtico y delicioso. Perfecta para acompañar sándwiches, ensaladas y tus recetas favoritas, esta mayonesa destaca por su textura cremosa y su frescura incomparable. Su presentación en un frasco práctico con tapa verde asegura la conservación del sabor y la comodidad en cada uso. Haz de Mayonesa Victoria tu elección de confianza para realzar cada bocado",
     "nuevo": false
   },
   {
     "nombre": "Sal x Lb",
     "categoria": "despensa",
-    "precio": 0.333,
-    "descuento": 10,
+    "precio": 0.924,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Sal.jpeg",
-    "disponible": true
+    "disponible": true,
+    "imagen": "img/products/sal_x_lb.jpg",
+    "nuevo": false
   },
   {
     "nombre": "Gelatina Gely de Melocotón (125ml)",
