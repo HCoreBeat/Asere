@@ -459,32 +459,24 @@
   {
     "nombre": "Plátano macho x unidad",
     "categoria": "agro",
-    "precio": 0.25,
-    "descuento": 10,
+    "precio": 0.295,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": true,
     "imagen": "img/products/Platano_Macho.jpg",
-    "disponible": true
+    "nuevo": false
   },
   {
     "nombre": "Boniato x Lb",
     "categoria": "agro",
-    "precio": 0.4,
-    "descuento": 10,
+    "precio": 0.505,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": true,
     "imagen": "img/products/Boniato.jpg",
-    "disponible": true
-  },
-  {
-    "nombre": "Sidra «La Aldeana» (sin alcohol)",
-    "categoria": "bebidas",
-    "precio": 4.19,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Sidra_La_Aldeana.jpg",
-    "disponible": false
+    "nuevo": false
   },
   {
     "nombre": "Caja de refresco Naranja",
@@ -498,54 +490,13 @@
     "nuevo": false
   },
   {
-    "nombre": "Whisky Chancelier",
-    "categoria": "alcohol",
-    "precio": 7.619,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Whisky_Chancelier.jpg",
-    "disponible": true
-  },
-  {
-    "nombre": "Caja de refresco Limón",
-    "categoria": "bebidas",
-    "precio": 19.35,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Caja_de_Refresco_Limon.jpg",
-    "disponible": true
-  },
-  {
-    "nombre": "Refresco Cola (330ml)",
-    "categoria": "bebidas",
-    "precio": 0.9,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Refresco_Cola.jpg",
-    "disponible": true
-  },
-  {
-    "nombre": "Caja de refresco Cola",
-    "categoria": "bebidas",
-    "precio": 19.352,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/Caja_de_Refresco_Brio_Cola.jpg",
-    "nuevo": false
-  },
-  {
     "nombre": "Caja de Malta Bucanero",
     "categoria": "bebidas",
     "precio": 23.81,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/Caja_de_Malta_Bucanero.jpg",
     "nuevo": false
   },
