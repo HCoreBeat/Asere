@@ -542,7 +542,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/Malta_Bucanero.jpg",
     "nuevo": false
   },
@@ -553,7 +553,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/refresco_naranja_330ml.webp",
     "nuevo": false
   },
@@ -591,49 +591,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Leche entera en polvo (1kg)",
-    "categoria": "lacteos",
-    "precio": 8.476,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/leche_entera_en_polvo.jpg",
-    "descripcion": "Descubre la leche entera en polvo Macro Food, perfecta para preparar deliciosas bebidas y recetas. Con un 26% de grasa láctea y un rendimiento aproximado de 8.5 litros por cada kilogramo, este producto combina calidad y conveniencia. Ideal para quienes buscan una alternativa práctica y duradera al consumo de leche fresca. Su presentación incluye un diseño funcional y moderno, reflejando el compromiso con la frescura y el sabor natural. ¡Una opción esencial para tu despensa y cocina!",
-    "nuevo": false
-  },
-  {
-    "nombre": "Cebollitas en Vinagre (290g)",
-    "categoria": "despensa",
-    "precio": 2.17,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Cebollitas_En_Vinagre.jpg",
-    "disponible": false
-  },
-  {
-    "nombre": "Café Espresso «El Ricote»",
-    "categoria": "café",
-    "precio": 6.543,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/café_Expresso.jpg"
-  },
-  {
-    "nombre": "Chocolate en Polvo «Rico» (500g)",
-    "categoria": "despensa",
-    "precio": 4,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/Chocolate_en_Polvo_Riko.jpg",
-    "nuevo": false
-  },
-  {
     "nombre": "Pasta de tomate 400g",
     "categoria": "enlatados",
     "precio": 2.4,
@@ -643,56 +600,6 @@
     "disponible": true,
     "imagen": "img/products/Pasta_de_Tomate.jpg",
     "nuevo": false
-  },
-  {
-    "nombre": "Menthoplus",
-    "categoria": "despensa",
-    "precio": 0.6,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Menthoplus.jpg",
-    "disponible": true
-  },
-  {
-    "nombre": "Melocotón en almibar (425g)",
-    "categoria": "enlatados",
-    "precio": 2.65,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Melocoton_en_Almibar_Vima.jpg",
-    "disponible": false
-  },
-  {
-    "nombre": "Fresas en almibar (425g)",
-    "categoria": "enlatados",
-    "precio": 2.65,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Fresas_en_Almibar.jpg",
-    "disponible": false
-  },
-  {
-    "nombre": "Maicena Nezka (500g)",
-    "categoria": "despensa",
-    "precio": 5.99,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Maicena_Nezka.jpg",
-    "disponible": false
-  },
-  {
-    "nombre": "Lata de Frijoles Rojos (410g)",
-    "categoria": "enlatados",
-    "precio": 1.8,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Lata_de_Frijol_Rojo.jpg",
-    "disponible": false
   },
   {
     "nombre": "Pasta de tomate OZER 400g",
@@ -705,24 +612,15 @@
     "disponible": false
   },
   {
-    "nombre": "Codito Badelli (350g)",
-    "categoria": "pastas-y-granos",
-    "precio": 1.8,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Codito_Badelli.jpg",
-    "disponible": true
-  },
-  {
-    "nombre": "Aceite Saude 900ml",
+    "nombre": "Aceite de Girasol 5lts",
     "categoria": "despensa",
-    "precio": 3.619,
-    "descuento": 10,
+    "precio": 17.457,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Aceite_Saude.jpg",
-    "disponible": false
+    "disponible": true,
+    "imagen": "img/products/aceite_saude_900ml.jpg",
+    "nuevo": false
   },
   {
     "nombre": "Pasta Dental Coigore (100g)",
@@ -1789,6 +1687,17 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/almohadilla_sanitaria_24u.jpg",
+    "nuevo": false
+  },
+  {
+    "nombre": "Aceite de Girasol 5lts",
+    "categoria": "despensa",
+    "precio": 17.457,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/aceite_saude_900ml.jpg",
     "nuevo": false
   }
 ]
