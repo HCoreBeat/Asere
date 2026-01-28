@@ -1550,14 +1550,13 @@
   {
     "nombre": "Tohallitas Húmedas sin alcohol (120u)",
     "categoria": "aseo",
-    "precio": 5.619,
+    "precio": 2.733,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/tohallitas_humedas.jpg",
     "descripcion": "Descubre la suavidad y la eficacia de las toallitas húmedas TB Kids Premium Plus, diseñadas para el cuidado delicado de la piel de tu bebé. Este paquete de 120 unidades es la solución perfecta para mantener a tu pequeño limpio y fresco en cualquier momento y lugar. El empaque, en un vibrante color azul con un simpático diseño de un pato y nubes, resulta atractivo y funcional. Su práctica tapa de plástico rígido garantiza que las toallitas se mantengan húmedas y frescas hasta la última, facilitando su extracción con una sola mano. Las toallitas TB Kids Premium Plus están formuladas para ser suaves y seguras, sin fragancias fuertes, y son ideales para cambiar pañales, limpiar manos y caras. Elige la calidad y la comodidad de TB Kids para el cuidado diario de tu bebé.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
@@ -1574,16 +1573,14 @@
     "nuevo": false
   },
   {
-    "nombre": "Almohadilla Sanitaria (24u)",
+    "nombre": "Paquete de íntimas 8u",
     "categoria": "aseo",
-    "precio": 4.571,
+    "precio": 1.114,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/almohadillas_sanitarias_5.jpg",
-    "descripcion": "Asegura una protección nocturna y una comodidad inigualable con las almohadillas sanitarias Angélica Night. Este paquete de 24 unidades está diseñado para brindarte una seguridad extra durante la noche, permitiéndote descansar sin preocupaciones. Las almohadillas, con su forma anatómica y alas, se ajustan perfectamente a tu cuerpo, proporcionando una cobertura suave y fresca que se moldea para una mayor comodidad. Con su alta capacidad de absorción, son ideales para flujo abundante, permitiéndote dormir con la tranquilidad que mereces. El empaque, con su diseño en tonos naranjas y amarillos, es práctico y fácil de transportar. Angélica Night te ofrece la protección que buscas con la comodidad que mereces, convirtiéndose en el aliado perfecto para tu higiene íntima diaria.",
-    "imagenesAdicionales": [],
+    "imagen": "img/products/almohadilla_sanitaria_24u.jpg",
     "nuevo": false
   },
   {
@@ -1639,21 +1636,9 @@
     "nuevo": false
   },
   {
-    "nombre": "Gelatina Boom 40g",
-    "categoria": "confituras",
-    "precio": 1.524,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/gelatina_boom_40g.jpg",
-    "descripcion": "Disfruta del vibrante e intenso sabor de la Gelatina Boom de Frutos Rojos, el postre perfecto y refrescante para cualquier ocasión. Esta mezcla en polvo es muy fácil de preparar y rinde 5 porciones, ideal para compartir con toda la familia. Además, viene enriquecida con Vitamina C y contiene pulpa de fruta, ofreciendo una deliciosa experiencia en cada bocado. ¡Añádela a tu carrito y dale un toque dulce y divertido a tus días!",
-    "nuevo": true
-  },
-  {
     "nombre": "Higado de Pollo Sadia 1KG",
     "categoria": "cárnicos",
-    "precio": 2.333,
+    "precio": 2.181,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1663,75 +1648,26 @@
     "nuevo": true
   },
   {
-    "nombre": "Café Pilón (283g)",
-    "categoria": "café",
-    "precio": 8.171,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/caf_piln_283g.jpg",
-    "descripcion": "Descubre el verdadero sabor del café cubano con Pilon Espresso Coffee. Este café molido de tueste oscuro y cuerpo completo es la elección perfecta para quienes buscan una experiencia intensa y aromática. Elaborado con 100% café puro, Pilon ofrece una taza robusta con ese toque de sabor tradicional que ha sido apreciado por generaciones. Su molienda fina es ideal para preparar un auténtico espresso, un potente cafécito cubano, o para utilizar en cualquier cafétera tradicional. Cada caja de 10 OZ (283g) garantiza la frescura y la calidad que necesitas para comenzar tu día con energía o disfrutar de un delicioso descanso. ¡Lleva a casa el rico aroma y el sabor inconfundible que solo Pilon puede ofrecer!",
-    "nuevo": true
-  },
-  {
-    "nombre": "Café Dulfito (250g)",
-    "categoria": "café",
-    "precio": 4.81,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/caf_dulfito_250g.jpg",
-    "descripcion": "Prepárate para un impulso de energía con el Café Dufiltro Extra Forte. Directamente de la tradición cafétera de Brasil, este café tostado y molido ha sido cuidadosamente seleccionado para ofrecer una experiencia de sabor intensamente robusta y con cuerpo. Si buscas un café que realmente te despierte por las mañanas, su característica \"Extra Forte\" te garantiza la potencia y el aroma profundo que necesitas. Ideal para preparar en filtros tradicionales, cada bolsa de 250g trae la calidad y el espíritu de la Indústria Brasileira directamente a tu taza. Disfruta de la riqueza y la fuerza de un verdadero café brasileño.",
-    "nuevo": true
-  },
-  {
-    "nombre": "Café Paraná (250g)",
-    "categoria": "café",
-    "precio": 5.857,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/caf_parana.png",
-    "descripcion": "Experimenta la fuerza y el cuerpo de un auténtico café brasileño con Café Paraná Extra Forte. Este café tostado y molido es la elección ideal para quienes buscan una taza potente, aromática y con carácter. Proveniente de la Indústria Brasileira, cada grano ha sido seleccionado para ofrecer una infusión de alta calidad. Lo mejor de todo es su envase sellado al Alto Vácuo (Alto Vacío), una tecnología que garantiza que el café conserve su frescura, su intenso aroma y sus propiedades de sabor intactas hasta el momento de abrirlo. Disfruta de la máxima potencia y de la frescura que solo un café de 250 g envasado al vacío puede ofrecer.",
-    "nuevo": true
-  },
-  {
-    "nombre": "Azúcar Extra Fina 1Kg (Mirante)",
+    "nombre": "Paquete de Azúcar Extra Fina 1Kg",
     "categoria": "despensa",
-    "precio": 1.838,
+    "precio": 1.686,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/azcar_extra_fina_1kg_mirante.jpg",
-    "descripcion": "Endulza tus momentos especiales con la calidad superior del Azúcar Mirante Extra Fino. Con una tradición que se remonta a 1978, Mirante te ofrece un azúcar de textura excepcionalmente fina, lo que lo hace el ingrediente perfecto y esencial para la repostería. Su molienda extra fina garantiza una disolución rápida y homogénea, ideal para que tus \"Bolas, Doces e Tortas\" (pasteles, dulces y tartas) alcancen una suavidad y consistencia inigualables. Siguiendo su lema \"A vida merece ser doce\" (La vida merece ser dulce), este paquete de 1 kg de azúcar de alta calidad es tu mejor aliado para llevar el toque perfecto de dulzura a todas tus creaciones culinarias.",
     "nuevo": true
   },
   {
     "nombre": "Café Purasangre (250g)",
     "categoria": "café",
-    "precio": 5.762,
+    "precio": 4.924,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/caf_purasangre_250g.jpg",
     "descripcion": "Descubre la nobleza en cada taza con el Café Purasangre Molido. Este café ha sido cuidadosamente mezclado para lograr un equilibrio de sabor y potencia inigualable, combinando un 70% de granos Robusta para cuerpo y crema, con un 30% de granos Arábica para un aroma fino y delicado. Su Tueste Natural garantiza que disfrutes del sabor puro del café sin aditivos, resaltando las mejores cualidades de esta blend única. Ideal para los verdaderos amantes del café que buscan una experiencia intensa pero armónica. Cada paquete de 250 g promete llevar a tu hogar la fuerza y el carácter que definen a un café de pura casta.",
-    "nuevo": true
-  },
-  {
-    "nombre": "Pasta de tomate Safa (850g)",
-    "categoria": "enlatados",
-    "precio": 2.81,
-    "descuento": 20.3,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/pasta_de_tomate_safa_850g.jpg",
-    "descripcion": "Eleva el sabor de tus guisos y salsas con la Pasta de Tomate Safa. Este concentrado de tomate de alta calidad es un ingrediente esencial para aportar profundidad, color y un intenso sabor a tomate a tus platos favoritos. Ideal para la base de salsas de pasta, estofados, sopas y cualquier receta que requiera un toque potente de tomate. El formato enlatado asegura la máxima frescura y durabilidad. Con un Peso Neto de 850g, esta lata robusta te proporciona la cantidad perfecta para múltiples preparaciones, garantizando que siempre tengas a mano ese sabor concentrado y rico que necesitan tus mejores recetas.",
     "nuevo": true
   },
   {
@@ -1759,18 +1695,6 @@
     "nuevo": true
   },
   {
-    "nombre": "Gordo de cerdo para empella x Lb",
-    "categoria": "cárnicos",
-    "precio": 2.848,
-    "descuento": 28.1,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/gordo_de_cerdo_para_empella_x_lb.jpg",
-    "descripcion": "El mejor gordo para empella para darle gusto a tu paladar",
-    "nuevo": true
-  },
-  {
     "nombre": "Pata de cerdo x Lb",
     "categoria": "cárnicos",
     "precio": 2.667,
@@ -1780,18 +1704,6 @@
     "disponible": true,
     "imagen": "img/products/pata_de_cerdo_x_lb.jpg",
     "descripcion": "Pata de Cerdo para tu cocina",
-    "nuevo": true
-  },
-  {
-    "nombre": "Paleta de cerdo x Lb",
-    "categoria": "cárnicos",
-    "precio": 3.333,
-    "descuento": 17.1,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/paleta_de_cerdo_x_lb.jpg",
-    "descripcion": "Carne fresca para degustar tu paladar",
     "nuevo": true
   },
   {
@@ -1862,6 +1774,17 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/leche_entera_en_polvo_vima_1kg.jpg",
+    "nuevo": false
+  },
+  {
+    "nombre": "Paquete de íntimas 8u",
+    "categoria": "aseo",
+    "precio": 1.114,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/almohadilla_sanitaria_24u.jpg",
     "nuevo": false
   }
 ]
