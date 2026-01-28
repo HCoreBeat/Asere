@@ -685,13 +685,13 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/jamn_bravo_rpido.jpg",
     "descripcion": "Barras 2kg .El Jamón Bravo Rápido es un embutido de calidad, con una textura jugosa y un sabor intenso, ideal para sándwiches, tapas y recetas variadas. Se presenta en barras de 2 kg una opción perfecta para negocios y hogares.",
     "nuevo": false
   },
   {
-    "nombre": "Saco de arroz americano importado 50lb",
+    "nombre": "Saco de arroz americano importado 25kgs",
     "categoria": "agro",
     "precio": 38.095,
     "descuento": 0,
@@ -703,122 +703,27 @@
     "nuevo": false
   },
   {
-    "nombre": "Helado Nestle",
+    "nombre": "Helado Nestle sabor Guanábana 4.5lts",
     "categoria": "lacteos",
-    "precio": 20,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": false,
-    "imagen": "img/products/helado_nestle.jpg",
-    "descripcion": "Sabor, según disponibilidad del momento. Calidad suprema"
-  },
-  {
-    "nombre": "Rollito Carne de Cerdo x Lb",
-    "categoria": "cárnicos",
-    "precio": 4.714,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": false,
-    "imagen": "img/products/rollito_carne_de_cerdo_x_lb.jpg",
-    "descripcion": "Rollitos de carne Ahumada",
-    "nuevo": false
-  },
-  {
-    "nombre": "Pollo Ahumado x Lb",
-    "categoria": "cárnicos",
-    "precio": 2.762,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/pollo_ahumado_x_lb.jpg"
-  },
-  {
-    "nombre": "Masa de cerdo Ahumada x Lb",
-    "categoria": "cárnicos",
-    "precio": 4.667,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/masa_de_cerdo_ahumada_x_lb.jpg",
-    "nuevo": false
-  },
-  {
-    "nombre": "Motos eléctricas",
-    "categoria": "vehículos",
-    "precio": 2380.952,
+    "precio": 19.048,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/motos_elctricas.jpg",
-    "descripcion": "Marca: TOP MAQ  Raptor. 1 mes de garantía. Motor de 3000w .Batería de 72v/45HA. Autonomía de 100-120km. 3 velocidades y retroceso. Reproductor MP3 (Bluetooth). Alarma y 2 juegos de llaves. 1 mes de garantía."
-  },
-  {
-    "nombre": "Arroz Importado 1kg",
-    "categoria": "pastas-y-granos",
-    "precio": 2.762,
-    "descuento": 34.8,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/arroz_importado.jpg",
-    "descripcion": "Disfruta de la calidad y el sabor del Arroz Ricas del Campo. Este arroz gourmet de 1000g es perfecto para crear platos exquisitos. Naturalmente libre de colesterol y grasas trans, es una opción saludable para toda la familia. Su grano blanco y brillante, de alta calidad, asegura una cocción uniforme y resultados deliciosos en cada receta. Ideal para risottos, paellas o como acompañamiento perfecto, este arroz es un básico imprescindible en tu cocina.",
+    "imagen": "img/products/helado_nestle_sabor_guanbana_4.5lts.jpg",
+    "descripcion": "Sabor, según disponibilidad del momento. Calidad suprema",
     "nuevo": false
   },
   {
-    "nombre": "Pack Caramelos de leche",
-    "categoria": "confituras",
-    "precio": 3.81,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/caramelo_de_leche.jpg",
-    "descripcion": "Sumérgete en la dulzura tradicional de los caramelos de leche de Diana. Esta bolsa de 154g contiene deliciosos caramelos blandos con sabor a leche y mantequilla, una golosina clásica que deleita a grandes y pequeños. Con 60 calorías por porción, estos caramelos son perfectos para un pequeño capricho en cualquier momento del día. Su textura suave y su sabor cremoso los convierten en una tentación irresistible. Ideal para compartir o disfrutar en solitario, este clásico caramelo es un básico en tu despensa.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
-    "nombre": "Cesto para ropa",
-    "categoria": "otros",
-    "precio": 9.524,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/cesto_de_ropa.jpg",
-    "descripcion": "Organiza tu ropa sucia con el práctico cesto de ropa Florida. Este cesto de color azul, con un diseño calado tanto en el cuerpo como en la tapa, permite una excelente ventilación, evitando la acumulación de malos olores. Su estructura de plástico resistente y duradero es ideal para el uso diario en el baño, lavadero o dormitorio. Con un diseño moderno y funcional, este cesto es una solución sencilla y elegante para mantener el orden en tu hogar.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
-    "nombre": "Refresco Fresko",
+    "nombre": "Blister de 12 pomos Ciego Montero 500ml",
     "categoria": "bebidas",
-    "precio": 0.857,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/refresco_fresko.jpg",
-    "descripcion": "Sabor según disponibilidad del momento. Disfruta de una explosión de sabor con la gama de refrescos Fresko. Esta colección incluye cuatro deliciosas y vibrantes opciones: Naranja, Limón-Lima, Cola y Tutti Frutti. Cada botella de 600 ml te ofrece una bebida refrescante y llena de burbujas, perfecta para calmar la sed en cualquier momento del día. Con sus colores llamativos y sabores intensos, los refrescos Fresko son ideales para acompañar tus comidas, para una reunión con amigos o simplemente para darte un gusto.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
-    "nombre": "Agua Natural Ciego Montero 500ml",
-    "categoria": "bebidas",
-    "precio": 0.667,
+    "precio": 8.571,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/agua_natural.jpg",
     "descripcion": "Mantén la hidratación con el paquete de agua natural, una opción saludable y conveniente para el día a día. Este pack contiene varias botellas de agua purificada, ideales para llevar contigo al trabajo, al gimnasio o en tus viajes. Con su sabor limpio y fresco, esta agua es perfecta para rehidratar el cuerpo en cualquier momento. El diseño práctico de las botellas facilita su transporte, asegurando que siempre tengas a mano la mejor fuente de hidratación para ti y tu familia.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
@@ -1232,14 +1137,13 @@
   {
     "nombre": "Agua Natural Ciego Montero(1.5l)",
     "categoria": "bebidas",
-    "precio": 1.429,
+    "precio": 0.952,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/agua_natural_pomo.jpg",
     "descripcion": "Rehidrátate y refresca tu cuerpo con la pureza y el sabor natural del agua Ciego Montero. Esta agua mineral, presentada en una botella de plástico de gran capacidad con tapa de rosca blanca, es la opción ideal para mantenerte hidratado durante todo el día. Su etiqueta, con un diseño en tonos azules y verdes que evocan la naturaleza y la frescura, destaca el logo de la marca Ciego Montero y la leyenda de \"Agua mineral natural\", garantizando la calidad y la pureza de la bebida. Perfecta para llevar al trabajo, al gimnasio o para tener en casa, esta botella te ofrece la hidratación que necesitas de forma conveniente y deliciosa. Elige Ciego Montero, el agua mineral natural que te cuida y te acompaña en cada momento, brindándote la frescura y el bienestar que solo un producto de su calidad puede ofrecer.",
-    "imagenesAdicionales": [],
     "nuevo": false
   },
   {
@@ -1465,6 +1369,18 @@
     "disponible": false,
     "imagen": "img/products/jamn_bravo_rpido.jpg",
     "descripcion": "Barras 2kg .El Jamón Bravo Rápido es un embutido de calidad, con una textura jugosa y un sabor intenso, ideal para sándwiches, tapas y recetas variadas. Se presenta en barras de 2 kg una opción perfecta para negocios y hogares.",
+    "nuevo": false
+  },
+  {
+    "nombre": "Blister de 12 pomos Ciego Montero 500ml",
+    "categoria": "bebidas",
+    "precio": 8.571,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/agua_natural.jpg",
+    "descripcion": "Mantén la hidratación con el paquete de agua natural, una opción saludable y conveniente para el día a día. Este pack contiene varias botellas de agua purificada, ideales para llevar contigo al trabajo, al gimnasio o en tus viajes. Con su sabor limpio y fresco, esta agua es perfecta para rehidratar el cuerpo en cualquier momento. El diseño práctico de las botellas facilita su transporte, asegurando que siempre tengas a mano la mejor fuente de hidratación para ti y tu familia.",
     "nuevo": false
   }
 ]
