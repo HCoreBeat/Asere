@@ -1892,25 +1892,13 @@
   {
     "nombre": "Frijol Negro Alubia (500g)",
     "categoria": "pastas-y-granos",
-    "precio": 1.781,
+    "precio": 1.648,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/frijol_negro_alubia_500g.jpg",
     "descripcion": "Lleva a tu mesa la base de la cocina tradicional con el Frijol Negro (Alubia) de IFA Eliges. Reconocido por su profundo sabor, su textura suave y su versatilidad, este frijol es un ingrediente esencial para preparar platos emblemáticos como la feijoada, el arroz congrí, o cualquier guiso y potaje. Además de su excelente sabor, el Frijol Negro de IFA es una Fuente de Fibra, contribuyendo a una dieta equilibrada y nutritiva. Cada paquete de 500 g garantiza granos de alta calidad, listos para ser remojados y cocinados hasta alcanzar la perfección. ¡Elige IFA para asegurar el auténtico sabor en tus platos más queridos!",
-    "nuevo": true
-  },
-  {
-    "nombre": "Alubia Pinta Extra (500g)",
-    "categoria": "pastas-y-granos",
-    "precio": 1.781,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/alubia_pinta_extra_500g.jpg",
-    "descripcion": "Dale vida a tus platos con la Alubia Pinta Extra de Dino Food. Seleccionada por su calidad extra y su hermoso moteado en tonos rosados y marrones, esta legumbre no solo añade un gran valor nutricional, sino que también enriquece visualmente cualquier receta. La Alubia Pinta es conocida por su textura cremosa que se mantiene firme durante la cocción, lo que la hace ideal para potajes, chili y guisos donde se busca un caldo espeso y un bocado satisfactorio. La bolsa de 500 g te asegura granos de calibre uniforme y la máxima calidad, listos para ser la base de tus comidas reconfortantes.",
     "nuevo": true
   },
   {
@@ -1923,29 +1911,6 @@
     "disponible": true,
     "imagen": "img/products/leche_entera_en_polvo_malib_1kg.jpg",
     "descripcion": "Es de la amarillita de la buena",
-    "nuevo": true
-  },
-  {
-    "nombre": "Queso Gouda Alemán",
-    "categoria": "lacteos",
-    "precio": 38.095,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/queso_gouda_alemn.png",
-    "descripcion": "Peso: 3.08 kg",
-    "nuevo": true
-  },
-  {
-    "nombre": "Queso gouda alemán 3.08kg",
-    "categoria": "lacteos",
-    "precio": 33.333,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/queso_gouda_alemn_3.08kg.jpg",
     "nuevo": true
   },
   {
