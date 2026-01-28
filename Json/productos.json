@@ -199,7 +199,7 @@
   {
     "nombre": "Pastilla de Pollo",
     "categoria": "despensa",
-    "precio": 0.19,
+    "precio": 0.114,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -294,7 +294,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/queso_gouda_Kg.jpg",
     "descripcion": "Descubre el exquisito sabor del queso Gouda Premium, ahora disponible por kilogramos para adaptarse a tus necesidades. Este queso premium, elaborado con ingredientes 100% naturales, ofrece una textura suave y un sabor intenso que lo convierte en la elección ideal para tus recetas gourmet o para disfrutar en bocadillos frescos. Perfecto para amantes de la calidad y la frescura, cada kilogramo está cuidadosamente empacado para garantizar que llegue a ti en óptimas condiciones. Lleva la excelencia del queso Gouda Premium a tu cocina y deleita tu paladar con cada porción.",
     "nuevo": false
@@ -306,13 +306,13 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/mayonesa_vima_450ml.jpg",
     "descripcion": "Descubre la mayonesa Victoria de 250 ml, elaborada con ingredientes de alta calidad para garantizar un sabor auténtico y delicioso. Perfecta para acompañar sándwiches, ensaladas y tus recetas favoritas, esta mayonesa destaca por su textura cremosa y su frescura incomparable. Su presentación en un frasco práctico con tapa verde asegura la conservación del sabor y la comodidad en cada uso. Haz de Mayonesa Victoria tu elección de confianza para realzar cada bocado",
     "nuevo": false
   },
   {
-    "nombre": "Sal x Lb",
+    "nombre": "Paquete de sal 1kg",
     "categoria": "despensa",
     "precio": 0.924,
     "descuento": 0,
@@ -323,25 +323,26 @@
     "nuevo": false
   },
   {
-    "nombre": "Gelatina Gely de Melocotón (125ml)",
+    "nombre": "Gelatina sabor Fresa (35g)",
     "categoria": "despensa",
-    "precio": 1.9,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Gelatina_Gely_Melocoton.jpeg",
-    "disponible": false
-  },
-  {
-    "nombre": "Gelatina Gely de Fresa (125ml)",
-    "categoria": "despensa",
-    "precio": 1.895,
+    "precio": 1.229,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": false,
-    "imagen": "img/products/gelatina_gely_fresa.jpg",
-    "descripcion": "Este producto es una gelatina de la marca Coracan con sabor a fresa, que proporciona una opción deliciosa y refrescante para disfrutar en cualquier ocasión. Contiene vitamina C, lo que la convierte en una alternativa que no solo satisface el antojo, sino que también aporta un beneficio adicional a la dieta. Con un contenido neto de 170 gramos, es ideal para preparar hasta 8 porciones de 125 ml cada una, ofreciendo practicidad y buen rendimiento para compartir o disfrutar en familia."
+    "imagen": "img/products/gelatina_gely_de_melocotn_125ml.webp",
+    "nuevo": false
+  },
+  {
+    "nombre": "Gelatina sabor Piña (35g)",
+    "categoria": "despensa",
+    "precio": 1.229,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/gelatina_gely_de_fresa_125ml.jpg",
+    "nuevo": false
   },
   {
     "nombre": "Paquete de harina (1kg)",
