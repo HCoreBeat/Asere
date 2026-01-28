@@ -199,7 +199,7 @@
   {
     "nombre": "Pastilla de Pollo",
     "categoria": "despensa",
-    "precio": 0.19,
+    "precio": 0.114,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -312,7 +312,7 @@
     "nuevo": false
   },
   {
-    "nombre": "Sal x Lb",
+    "nombre": "Paquete de sal de 1kg",
     "categoria": "despensa",
     "precio": 0.924,
     "descuento": 0,
@@ -323,60 +323,30 @@
     "nuevo": false
   },
   {
-    "nombre": "Gelatina Gely de Melocotón (125ml)",
+    "nombre": "Gelatina sabor piña y sabor fresa (35g)",
     "categoria": "despensa",
-    "precio": 1.9,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Gelatina_Gely_Melocoton.jpeg",
-    "disponible": false
-  },
-  {
-    "nombre": "Gelatina Gely de Fresa (125ml)",
-    "categoria": "despensa",
-    "precio": 1.895,
+    "precio": 1.229,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": false,
-    "imagen": "img/products/gelatina_gely_fresa.jpg",
-    "descripcion": "Este producto es una gelatina de la marca Coracan con sabor a fresa, que proporciona una opción deliciosa y refrescante para disfrutar en cualquier ocasión. Contiene vitamina C, lo que la convierte en una alternativa que no solo satisface el antojo, sino que también aporta un beneficio adicional a la dieta. Con un contenido neto de 170 gramos, es ideal para preparar hasta 8 porciones de 125 ml cada una, ofreciendo practicidad y buen rendimiento para compartir o disfrutar en familia."
+    "imagen": "img/products/gelatina_gely_de_melocotn_125ml.jpg",
+    "imagenesAdicionales": [
+      "img/products/gelatina_gely_de_melocotn_125ml_1.jpg",
+      "img/products/gelatina_gely_de_melocotn_125ml_1.jpg"
+    ],
+    "nuevo": false
   },
   {
     "nombre": "Paquete de harina (1kg)",
     "categoria": "despensa",
-    "precio": 2.8,
-    "descuento": 10,
+    "precio": 1.781,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Paquete_Harina.jpg",
-    "disponible": false
-  },
-  {
-    "nombre": "Ajo Pelado (1kg)",
-    "categoria": "despensa",
-    "precio": 6.857,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": true,
-    "imagen": "img/products/ajo_pelado_1_Kg_Vima.jpg",
-    "disponible": true,
-    "descripcion": "Los dientes de ajo pelados de Vima Foods, con un peso neto de 1 kg (35.2 oz.), son ideales para facilitar la preparación de tus recetas. Este producto 100% natural garantiza frescura y calidad, ofreciendo comodidad y ahorro de tiempo en la cocina. Perfectos para realzar el sabor de tus platos, los dientes de ajo pelados de Vima Foods se presentan en un envase práctico que conserva su textura y aroma característico. Simplifica tu cocina sin renunciar a la calidad."
-  },
-  {
-    "nombre": "Croqueta Jamón (500g)",
-    "categoria": "despensa",
-    "precio": 2.667,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": true,
     "disponible": false,
-    "imagen": "img/products/croqueta_jamon_vima.jpg",
-    "descripcion": "Las croquetas de jamón Vima Foods son la opción ideal para disfrutar de un sabor auténtico y delicioso en cada bocado. Con un peso neto de 500 g (17.6 oz.), estas croquetas están elaboradas siguiendo una receta tradicional española que garantiza calidad y frescura. Perfectas para freír directamente desde el estado congelado, son ideales como aperitivo, acompañamiento o incluso plato principal. Disfruta de la tradición y el sabor de las croquetas de jamón Vima Foods en tu mesa.",
-    "imagenesAdicionales": [
-      "img/products/croqueta_jamon_vima_2.jpg"
-    ]
+    "imagen": "img/products/paquete_de_harina_1kg.png",
+    "nuevo": false
   },
   {
     "nombre": "Frijoles Negros (1Kg)",
@@ -2015,6 +1985,17 @@
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/queso_gouda_alemn_3.08kg.jpg",
+    "nuevo": true
+  },
+  {
+    "nombre": "Azúcar parda × lb",
+    "categoria": "despensa",
+    "precio": 1.267,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/azcar_parda_lb.jpg",
     "nuevo": true
   }
 ]
