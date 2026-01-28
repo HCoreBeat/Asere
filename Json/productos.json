@@ -591,25 +591,15 @@
     "nuevo": false
   },
   {
-    "nombre": "Pasta de tomate 400g",
+    "nombre": "Pasta de tomate Oderich 350g",
     "categoria": "enlatados",
-    "precio": 2.4,
-    "descuento": 25.8,
+    "precio": 1.114,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/Pasta_de_Tomate.jpg",
+    "imagen": "img/products/pasta_de_tomate_400g.webp",
     "nuevo": false
-  },
-  {
-    "nombre": "Pasta de tomate OZER 400g",
-    "categoria": "enlatados",
-    "precio": 3.6,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Pasta_de_Tomate_Ozer.jpg",
-    "disponible": false
   },
   {
     "nombre": "Aceite de Girasol 5lts",
@@ -623,20 +613,9 @@
     "nuevo": false
   },
   {
-    "nombre": "Pasta Dental Coigore (100g)",
-    "categoria": "aseo",
-    "precio": 3.267,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Pasta_dental.jpg",
-    "nuevo": false
-  },
-  {
     "nombre": "Desodorante Keewell",
     "categoria": "aseo",
-    "precio": 2.867,
+    "precio": 1.4,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -645,40 +624,31 @@
     "nuevo": false
   },
   {
-    "nombre": "Toallitas Húmedas (80u)",
+    "nombre": "Paquete de Papel Sanitario 4 rollos",
     "categoria": "otros",
-    "precio": 6,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Toallitas_Humedas.jpg",
-    "disponible": false
-  },
-  {
-    "nombre": "Paquete de Papel Sanitario",
-    "categoria": "otros",
-    "precio": 1.99,
+    "precio": 1.905,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/Paquete_de_Papel_Sanitario.jpg",
+    "imagen": "img/products/paquete_de_papel_sanitario.jpg",
     "nuevo": false
   },
   {
-    "nombre": "Detergente «STB» (1Kg)",
+    "nombre": "Detergente en polvo 500g",
     "categoria": "otros",
-    "precio": 3.2,
-    "descuento": 10,
+    "precio": 1.229,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Detergente.jpg",
-    "disponible": false
+    "disponible": true,
+    "imagen": "img/products/detergente_en_polvo_500g.jpg",
+    "nuevo": false
   },
   {
     "nombre": "Colonia Bonabel de Violetas",
     "categoria": "aseo",
-    "precio": 5,
+    "precio": 3.305,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -687,34 +657,15 @@
     "nuevo": false
   },
   {
-    "nombre": "Cerveza UNLAGUER",
-    "categoria": "alcohol",
-    "precio": 0.8,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Cerveza_Unlaguer.jpg",
-    "disponible": false
-  },
-  {
-    "nombre": "Caja de Cerveza UNLAGUER",
-    "categoria": "alcohol",
-    "precio": 18,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Caja_cerveza_unlaguer.jpg",
-    "disponible": false
-  },
-  {
-    "nombre": "Spam",
+    "nombre": "Spam de cerdo 340g",
     "categoria": "enlatados",
-    "precio": 2.79,
-    "descuento": 10,
+    "precio": 2.067,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Spam.jpg",
-    "disponible": false
+    "disponible": true,
+    "imagen": "img/products/spam.webp",
+    "nuevo": false
   },
   {
     "nombre": "Picadillo de pollo (1Kg)",
@@ -728,25 +679,10 @@
     "nuevo": false
   },
   {
-    "nombre": "Cable C",
-    "categoria": "electrodomésticos",
-    "precio": 2.38,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": true,
-    "imagen": "img/products/cable_c.jpg",
-    "disponible": false,
-    "descripcion": "Este resistente cable USB Tipo C combina funcionalidad y diseño, ideal para carga rápida y transferencia de datos eficiente. Su textura trenzada en colores rojo y negro garantiza durabilidad y evita enredos, haciéndolo perfecto para el uso diario. Equipado con conectores sólidos y confiables, el Supercarga Cable asegura máxima calidad y rendimiento para tus dispositivos compatibles. Este accesorio se convierte en la opción ideal para quienes buscan un cable versátil, resistente y estilizado.",
-    "imagenesAdicionales": [
-      "img/products/cable_c_2.jpg",
-      "img/products/cable_c_3.jpg"
-    ]
-  },
-  {
-    "nombre": "Jamón bravo   rápido",
+    "nombre": "Jamón Bravo 2kgs",
     "categoria": "cárnicos",
-    "precio": 21.505,
-    "descuento": 5,
+    "precio": 21.429,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": false,
@@ -1248,29 +1184,14 @@
     "nuevo": false
   },
   {
-    "nombre": "Pack Golozetas (12u de paquetes)",
+    "nombre": "Paquete de galletats Lamore",
     "categoria": "confituras",
-    "precio": 2.971,
+    "precio": 92.381,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/golozetas.jpg",
-    "descripcion": "Deléitate con las galletas tipo sándwich Goolozetas, la opción ideal para grandes y pequeños. Este producto se presenta en dos opciones de sabor: una en un vibrante empaque naranja con galletas de chocolate y relleno de vainilla, y otra en un fresco empaque verde con galletas de vainilla y relleno de limón. Cada paquete contiene 12 paquetes individuales, con un contenido neto de 417.6 gramos, perfectos para llevar a la escuela o la oficina. En la etiqueta, el nombre de la marca resalta con un diseño divertido y tipografía colorida, acompañada de ilustraciones de juegos y deportes que evocan un ambiente alegre y dinámico. La imagen de las galletas en la envoltura te muestra su relleno cremoso y delicioso. Estas galletas son la merienda perfecta o un delicioso postre para cualquier momento.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
-    "nombre": "Pack galletas Delechitas (18u de paquetes)",
-    "categoria": "confituras",
-    "precio": 2.743,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/galletas_delechitas.jpg",
-    "descripcion": "Las galletas Delechitas son una deliciosa y nutritiva opción para la merienda de los más pequeños. Presentadas en un práctico empaque que contiene 18 paquetes individuales, estas galletas son ideales para llevar en la lonchera o para disfrutar en cualquier momento del día. El diseño del empaque es atractivo y amigable, con un fondo blanco y detalles azules que evocan la leche. En la etiqueta, dos tiernos personajes de vaquitas animadas, junto a la frase \"nutrición que te alimenta\", refuerzan su carácter nutritivo. Cada galleta tiene la forma de un caracol, un detalle que las hace más divertidas para los niños. Hechas con leche, estas galletas no solo son sabrosas, sino que también aportan la energía necesaria para las actividades diarias. El contenido neto total es de 276 gramos.",
-    "imagenesAdicionales": [],
+    "imagen": "img/products/pack_golozetas_12u_de_paquetes.webp",
     "nuevo": false
   },
   {
@@ -1532,6 +1453,18 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/malta_guajira_x_unidad_330ml.png",
+    "nuevo": false
+  },
+  {
+    "nombre": "Jamón Bravo 2kgs",
+    "categoria": "cárnicos",
+    "precio": 21.429,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": true,
+    "disponible": false,
+    "imagen": "img/products/jamn_bravo_rpido.jpg",
+    "descripcion": "Barras 2kg .El Jamón Bravo Rápido es un embutido de calidad, con una textura jugosa y un sabor intenso, ideal para sándwiches, tapas y recetas variadas. Se presenta en barras de 2 kg una opción perfecta para negocios y hogares.",
     "nuevo": false
   }
 ]
