@@ -523,12 +523,13 @@
   {
     "nombre": "Caja de Cervezas Cristal",
     "categoria": "alcohol",
-    "precio": 23.952,
+    "precio": 22.381,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/Caja_Cerveza_Cristal.jpg"
+    "imagen": "img/products/Caja_Cerveza_Cristal.jpg",
+    "nuevo": false
   },
   {
     "nombre": "Malta Bucanero",
@@ -544,130 +545,46 @@
   {
     "nombre": "Refresco Naranja (330ml)",
     "categoria": "bebidas",
-    "precio": 0.9,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Refresco_Naranja.jpg",
-    "disponible": false
-  },
-  {
-    "nombre": "Rollitos de Primavera (200g)",
-    "categoria": "cárnicos",
-    "precio": 1.93,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Rollitos_de_Primavera.jpg",
-    "disponible": false
-  },
-  {
-    "nombre": "Nuggets de pollo x Kg",
-    "categoria": "despensa",
-    "precio": 7.2,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Nuggets_de_Pollo.jpg",
-    "disponible": false
-  },
-  {
-    "nombre": "Lomo de cerdo deshuesado x Lb",
-    "categoria": "cárnicos",
-    "precio": 3.667,
+    "precio": 0.905,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": true,
+    "mas_vendido": false,
+    "disponible": false,
+    "imagen": "img/products/refresco_naranja_330ml.webp",
+    "nuevo": false
+  },
+  {
+    "nombre": "Galletas de soda Salricas 3 tacos",
+    "categoria": "confituras",
+    "precio": 1.724,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/lomo_de_cerdo_deshuesado_x_lb.jpg",
-    "descripcion": "Pura masa, nada de gordo ni hueso , listo pa bisteces",
-    "nuevo": false
-  },
-  {
-    "nombre": "Pelly de Ajo",
-    "categoria": "confituras",
-    "precio": 2.838,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": false,
-    "imagen": "img/products/pelly_ajo.jpg",
-    "descripcion": "Pelly Chicoticos de Ajo - 120g Experimenta el irresistible sabor de los Chicoticos de Ajo de la marca Pelly, perfectos para aquellos que buscan un snack único y delicioso. Con su audaz sabor a ajo, estos chicoticos garantizan un crujido inigualable en cada bocado. Presentados en un empaque llamativo de color azul con detalles vibrantes, el diseño incluye una imagen de ajos frescos que refuerzan la calidad del producto. ¡Ideales para compartir con amigos o disfrutar en cualquier momento del día!",
-    "nuevo": false
-  },
-  {
-    "nombre": "Pelly de Queso",
-    "categoria": "confituras",
-    "precio": 2.838,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": false,
-    "imagen": "img/products/pelly_queso.jpg",
-    "descripcion": "Pelly Bolitas de Queso - Snack de Maíz Crujiente Haz de cada momento una celebración con Pelly Bolitas de Queso, un snack irresistible hecho de maíz con un sabor intenso a queso. Este producto se presenta en un empaque vibrante de color naranja con detalles alegres que capturan la esencia divertida del snack. Con la frase destacada ¡Poca sal, más maíz!, estas bolitas de queso son la opción perfecta para aquellos que buscan un balance entre sabor y frescura. Cada bolsa contiene 120 gramos de felicidad crujiente, ideal para compartir o disfrutar en cualquier ocasión. El diseño incluye un personaje sonriente que refuerza el carácter amigable y llamativo del producto. ¡Atrévete a probarlas y llena tu día de color y sabor!"
-  },
-  {
-    "nombre": "Galletas de Soda con Mantequilla Doricas",
-    "categoria": "confituras",
-    "precio": 5,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Galleta_de_Soda_Con_Mantequilla.jpg",
-    "descripcion": "Extra grandes y deliciosas, las galletas semidulces DoRicas son perfectas para cualquier ocasión, ofreciendo un sabor único que encanta a todos. Este paquete de 525 g es ideal para compartir en reuniones familiares, eventos o simplemente para disfrutar durante varios días. Presentadas en un empaque azul oscuro, estas galletas no solo son sabrosas, sino también visualmente atractivas gracias a su diseño profesional. En la parte frontal del paquete destaca una imagen tentadora de las galletas acompañadas de una espiga de trigo, que resalta la calidad de sus ingredientes seleccionados. Cada paquete incluye cinco tacos, asegurando una experiencia prolongada de disfrute. Son perfectas para acompañar con café, té o como un snack ligero en cualquier momento del día.",
-    "nuevo": false
-  },
-  {
-    "nombre": "Galletas de soda Salricas",
-    "categoria": "confituras",
-    "precio": 2.9,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
     "imagen": "img/products/Galleta_de_Soda_Salricas.jpg",
-    "disponible": false
-  },
-  {
-    "nombre": "Galletas Porleo (45g)",
-    "categoria": "confituras",
-    "precio": 0.867,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Galletas_Porleo.jpg",
     "nuevo": false
   },
   {
-    "nombre": "Orégano (14.2g)",
+    "nombre": "Vinagre de vino tinto (500ml)",
     "categoria": "despensa",
-    "precio": 1.87,
-    "descuento": 10,
+    "precio": 2.181,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Oregano.jpg",
-    "disponible": false
+    "disponible": true,
+    "imagen": "img/products/vinagre_1litro.jpeg",
+    "nuevo": false
   },
   {
-    "nombre": "Vinagre (1Litro)",
-    "categoria": "despensa",
-    "precio": 2.9,
-    "descuento": 10,
-    "oferta": false,
-    "mas_vendido": false,
-    "imagen": "img/products/Vinagre.jpg",
-    "disponible": false
-  },
-  {
-    "nombre": "Leche entera en polvo «Vima» (1kg)",
+    "nombre": "Leche entera en polvo Macrofood(1kg)",
     "categoria": "lacteos",
-    "precio": 13,
-    "descuento": 10,
+    "precio": 7.619,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Leche_Entera_En_Polvo_Vima.jpg",
-    "disponible": false
+    "disponible": true,
+    "imagen": "img/products/leche_entera_en_polvo_vima_1kg.jpg",
+    "nuevo": false
   },
   {
     "nombre": "Leche entera en polvo (1kg)",
@@ -1923,6 +1840,28 @@
     "disponible": true,
     "imagen": "img/products/mazo_de_cebolla_blanca.jpg",
     "descripcion": "La cebolla blanca es un ingrediente esencial, reconocida por su frescura y calidad. Su forma redonda y su brillante color blanco la hacen atractiva, mientras que su sabor suave pero distintivo es ideal para una amplia variedad de recetas. Desde sofritos aromáticos hasta ensaladas crujientes, esta cebolla agrega un toque especial a cualquier platillo. Perfecta para quienes valoran productos naturales y versátiles en su cocina, garantizando satisfacción en cada preparación.",
+    "nuevo": false
+  },
+  {
+    "nombre": "Vinagre de vino tinto (500ml)",
+    "categoria": "despensa",
+    "precio": 2.181,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/vinagre_1litro.jpeg",
+    "nuevo": false
+  },
+  {
+    "nombre": "Leche entera en polvo Macrofood(1kg)",
+    "categoria": "lacteos",
+    "precio": 7.619,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/leche_entera_en_polvo_vima_1kg.jpg",
     "nuevo": false
   }
 ]
