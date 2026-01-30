@@ -1067,5 +1067,16 @@
     "disponible": true,
     "imagen": "img/products/jabones_de_bao_harmony.jpg",
     "nuevo": false
+  },
+  {
+    "nombre": "Jabones de baño Florona",
+    "categoria": "aseo",
+    "precio": 0.352,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/jabones_de_bao_harmony.jpg",
+    "nuevo": false
   }
 ]
