@@ -1078,5 +1078,49 @@
     "disponible": true,
     "imagen": "img/products/jabones_de_bao_harmony.jpg",
     "nuevo": false
+  },
+  {
+    "nombre": "Pack de 12 latas de néctar de pera",
+    "categoria": "bebidas",
+    "precio": 13.076,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pack_de_12_latas_de_nctar_de_pera.jpg",
+    "nuevo": true
+  },
+  {
+    "nombre": "Pack de 12 latas de néctar de piña",
+    "categoria": "bebidas",
+    "precio": 13.076,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pack_de_12_latas_de_nctar_de_pia.webp",
+    "nuevo": true
+  },
+  {
+    "nombre": "Leche en polvo Lecherita 1kg",
+    "categoria": "lacteos",
+    "precio": 7.59,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/producto.jpg",
+    "nuevo": true
+  },
+  {
+    "nombre": "Carne de res enlatada 400g",
+    "categoria": "enlatados",
+    "precio": 2.067,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/carne_de_res_enlatada_400g.jpg",
+    "nuevo": true
   }
 ]
