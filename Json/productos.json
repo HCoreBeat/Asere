@@ -1122,5 +1122,27 @@
     "disponible": true,
     "imagen": "img/products/carne_de_res_enlatada_400g.jpg",
     "nuevo": true
+  },
+  {
+    "nombre": "Caja de cerveza Bucanero 24u",
+    "categoria": "alcohol",
+    "precio": 22.857,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/producto.jpg",
+    "nuevo": true
+  },
+  {
+    "nombre": "Cerveza Bucanero x und.",
+    "categoria": "alcohol",
+    "precio": 1.048,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/producto.jpg",
+    "nuevo": true
   }
 ]
