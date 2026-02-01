@@ -1177,5 +1177,38 @@
     "disponible": true,
     "imagen": "img/products/desodorante_keewell_24h.jpg",
     "nuevo": true
+  },
+  {
+    "nombre": "Refresco instantáneo 2lts",
+    "categoria": "bebidas",
+    "precio": 0.162,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/producto.jpg",
+    "nuevo": true
+  },
+  {
+    "nombre": "Paquete de hígados de pollo 1kg",
+    "categoria": "cárnicos",
+    "precio": 2.181,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/paquete_de_hgados_de_pollo_1kg.jpg",
+    "nuevo": true
+  },
+  {
+    "nombre": "Pollo asado",
+    "categoria": "cárnicos",
+    "precio": 7.619,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pollo_asado.jpg",
+    "nuevo": true
   }
 ]
