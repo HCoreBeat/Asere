@@ -1153,7 +1153,7 @@
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "",
+    "imagen": "img/products/caja_de_cuartos_de_pollo_40lbs.webp",
     "nuevo": true
   },
   {
@@ -1164,7 +1164,18 @@
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "",
+    "imagen": "img/products/paquete_de_coditos_500g.jpg",
+    "nuevo": true
+  },
+  {
+    "nombre": "Desodorante Keewell 24h",
+    "categoria": "aseo",
+    "precio": 1.4,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/desodorante_keewell_24h.jpg",
     "nuevo": true
   }
 ]
