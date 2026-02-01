@@ -1144,5 +1144,27 @@
     "disponible": true,
     "imagen": "img/products/producto.jpg",
     "nuevo": true
+  },
+  {
+    "nombre": "Caja de cuartos de pollo 40lbs",
+    "categoria": "cárnicos",
+    "precio": 42.857,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "",
+    "nuevo": true
+  },
+  {
+    "nombre": "Paquete de coditos 500g",
+    "categoria": "despensa",
+    "precio": 0.886,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "",
+    "nuevo": true
   }
 ]
