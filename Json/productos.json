@@ -1210,5 +1210,38 @@
     "disponible": true,
     "imagen": "img/products/pollo_asado.jpg",
     "nuevo": true
+  },
+  {
+    "nombre": "Frijoles pintos x lb",
+    "categoria": "pastas-y-granos",
+    "precio": 1.4,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/frijoles_pintos_x_lb-.jpg",
+    "nuevo": true
+  },
+  {
+    "nombre": "Frijoles colorados x lb",
+    "categoria": "pastas-y-granos",
+    "precio": 2.448,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/producto.jpg",
+    "nuevo": true
+  },
+  {
+    "nombre": "Frijoles negros x lb",
+    "categoria": "pastas-y-granos",
+    "precio": 1.362,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/frijoles_negros_x_lb.jpg",
+    "nuevo": true
   }
 ]
