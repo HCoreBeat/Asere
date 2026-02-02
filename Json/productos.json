@@ -1243,5 +1243,22 @@
     "disponible": true,
     "imagen": "img/products/frijoles_negros_x_lb.jpg",
     "nuevo": true
+  },
+  {
+    "nombre": "Refresco gaseado 1.5lts",
+    "categoria": "bebidas",
+    "precio": 2.257,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/refresco_gaseado_1.5lts.jpg",
+    "imagenesAdicionales": [
+      "img/products/refresco_gaseado_1.5lts_1.jpg",
+      "img/products/refresco_gaseado_1.5lts_2.jpg",
+      "img/products/refresco_gaseado_1.5lts_1.jpg",
+      "img/products/refresco_gaseado_1.5lts_2.jpg"
+    ],
+    "nuevo": true
   }
 ]
