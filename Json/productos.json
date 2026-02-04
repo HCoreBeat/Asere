@@ -19,6 +19,7 @@
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/Carne_de_Cerdo.jpg",
+    "descripcion": "Carne fresca, se hace el corte al momento del pedido",
     "nuevo": false
   },
   {
