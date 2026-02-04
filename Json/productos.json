@@ -97,7 +97,7 @@
   {
     "nombre": "Queso criollo x Lb",
     "categoria": "lacteos",
-    "precio": 2.257,
+    "precio": 2.771,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -655,15 +655,16 @@
     "nuevo": false
   },
   {
-    "nombre": "Helado Nestle",
+    "nombre": "Helado Nestle sabor vainilla 4.5lts",
     "categoria": "lacteos",
-    "precio": 20,
+    "precio": 19.048,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": false,
     "imagen": "img/products/helado_nestle.jpg",
-    "descripcion": "Sabor, según disponibilidad del momento. Calidad suprema"
+    "descripcion": "Sabor, según disponibilidad del momento. Calidad suprema",
+    "nuevo": false
   },
   {
     "nombre": "Pack Caramelos de leche",
@@ -1259,6 +1260,28 @@
       "img/products/refresco_gaseado_1.5lts_1.jpg",
       "img/products/refresco_gaseado_1.5lts_2.jpg"
     ],
+    "nuevo": true
+  },
+  {
+    "nombre": "Helado nestle sabor chocolate 4.5lts",
+    "categoria": "lacteos",
+    "precio": 19.048,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/helado_nestle_sabor_chocolate_4.5lts.jpg",
+    "nuevo": true
+  },
+  {
+    "nombre": "Pack de 1kg de jamón bravo y 1kg de queso gouda",
+    "categoria": "cárnicos",
+    "precio": 21.905,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pack_de_1kg_de_jamn_bravo_y_1kg_de_queso_gouda.jpg",
     "nuevo": true
   }
 ]
