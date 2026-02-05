@@ -2,13 +2,13 @@
   {
     "nombre": "Pollo Country Pride",
     "categoria": "cárnicos",
-    "precio": 10.905,
+    "precio": 11.429,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/pollo_country_pride.jpg",
-    "descripcion": "Paquetes de pollo de 10Lb",
+    "descripcion": "Paquetes de  cuartos pollo de 10Lb",
     "nuevo": false
   },
   {
