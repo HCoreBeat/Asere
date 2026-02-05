@@ -1286,5 +1286,17 @@
     "disponible": true,
     "imagen": "img/products/pack_de_1kg_de_jamn_bravo_y_1kg_de_queso_gouda.jpg",
     "nuevo": true
+  },
+  {
+    "nombre": "Galletas Marias",
+    "categoria": "confituras",
+    "precio": 1.076,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/galletas_marias.jpg",
+    "descripcion": "Galletas marías, ideales para toda la familia",
+    "nuevo": true
   }
 ]
