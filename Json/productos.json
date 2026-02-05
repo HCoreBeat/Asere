@@ -2,7 +2,7 @@
   {
     "nombre": "Pollo Country Pride",
     "categoria": "cárnicos",
-    "precio": 11.429,
+    "precio": 10.905,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -14,7 +14,7 @@
   {
     "nombre": "Carne de cerdo x Lb",
     "categoria": "cárnicos",
-    "precio": 2.762,
+    "precio": 2.524,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
