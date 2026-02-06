@@ -66,6 +66,16 @@ function handleRouteChange() {
             return;
         }
 
+        // Manejo especial: si la categoría es electrodomésticos mostrar el panel dedicado
+        if (slug === 'electrodomesticos') {
+            if (typeof window.mostrarPanelElectrodomesticos === 'function') {
+                window.mostrarPanelElectrodomesticos();
+            } else {
+                mostrarPanel('electrodomesticos');
+            }
+            return;
+        }
+
         // Para una categoría específica
         // Ocultar separadores
         document.querySelectorAll('.separador-container, .separador-container-extra').forEach(sep => {
@@ -115,7 +125,7 @@ function handleRouteChange() {
         mostrarPanel('electrodomesticos');
         // Renderizar electrodomésticos al recargar
         if (window.productos && typeof window.renderProductosEnContenedor === 'function') {
-            const electrodomesticos = window.productos.filter(producto => producto.categoria === "electrodomesticos" && producto.disponible);
+            const electrodomesticos = window.productos.filter(producto => (window.slugify ? window.slugify(producto.categoria) : String(producto.categoria).toLowerCase()) === "electrodomesticos" && producto.disponible);
             window.renderProductosEnContenedor(electrodomesticos, "lista-electrodomesticos");
         }
     } else {

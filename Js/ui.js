@@ -33,6 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 // Genera las categorías dinámicamente en el header
+// Normaliza cadenas: elimina diacríticos y genera slugs
+window.slugify = window.slugify || function(s){
+    return String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-').replace(/[^a-z0-9\-]/g, '').replace(/-+/g, '-').replace(/^-+|-+$/g, '');
+};
+
 function generarCategoriasHeader() {
   // Relación nombre de categoría -> ícono FontAwesome
   const iconosCategorias = {
@@ -794,9 +799,9 @@ window.mostrarPanelElectrodomesticos = function() {
     const panelElectrodomesticos = document.getElementById("panel-electrodomesticos");
     panelElectrodomesticos.style.display = "block";
 
-    // Filtrar solo los electrodomésticos disponibles
+    // Filtrar solo los electrodomésticos disponibles (normalizando la categoría)
     const electrodomesticos = productos.filter(producto => 
-        producto.categoria === "electrodomesticos" && producto.disponible
+        (window.slugify ? window.slugify(producto.categoria) : String(producto.categoria).toLowerCase()) === "electrodomesticos" && producto.disponible
     );
 
     // Renderizar solo los electrodomésticos en el panel
