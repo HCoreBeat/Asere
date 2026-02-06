@@ -20,7 +20,7 @@
       "x1 Paquete de detergente Multiuso de 500g",
       "x1 Pomo de aceite 900ml"
     ],
-    "precio": 94.285,
+    "precio": 98.999,
     "imagen": "img/combos/pack_new_1.jpg",
     "disponible": true
   },
@@ -51,7 +51,7 @@
       "x1 paquete de papel sanitario (4 rollos)",
       "x1 jabón"
     ],
-    "precio": 160.952,
+    "precio": 169.0,
     "imagen": "img/combos/pack_new_2.jpg",
     "disponible": true
   },
@@ -73,7 +73,7 @@
       "x1 kg de arroz brasileño",
       "x1 tina de helado (4 lt)"
     ],
-    "precio": 80.952,
+    "precio": 85.0,
     "imagen": "img/combos/pack_new_3.jpg",
     "disponible": true
   },
@@ -86,7 +86,7 @@
       "x2 lt de aceite",
       "x1 fil de huevo"
     ],
-    "precio": 41.90,
+    "precio": 43.995,
     "imagen": "img/combos/pack_new_4.jpg",
     "disponible": true
   },
@@ -102,7 +102,7 @@
       "x1 paquete de café (250 g)",
       "x1 lata de Puré de tomate"
     ],
-    "precio": 51.428,
+    "precio": 53.999,
     "imagen": "img/combos/pack_new_5.jpg",
     "disponible": true
   },
@@ -115,7 +115,7 @@
       "x1 Tina de helado 4lt",
       "x1 Pizza familiar (jamón, napolitana o mixta)"
     ],
-    "precio": 53.333,
+    "precio": 56.0,
     "imagen": "img/combos/pack_new_6.jpg",
     "disponible": true
   },
@@ -131,7 +131,7 @@
       "x1 Pizza familiar (napolitana, jamón o mixta)",
       "x2 lb Jamón"
     ],
-    "precio": 80,
+    "precio": 84.0,
     "imagen": "img/combos/pack_new_7.jpg",
     "disponible": true
   },
@@ -161,7 +161,7 @@
       "x1 Paquete de detergente Multiuso de 500g",
       "x1 Pomo de aceite 900ml"
     ],
-    "precio": 112.38,
+    "precio": 117.999,
     "imagen": "img/combos/pack_new_8.jpg",
     "disponible": true
   },
@@ -176,7 +176,7 @@
       "x1 lb de queso",
       "x2 goyas"
     ],
-    "precio": 10.476,
+    "precio": 11.0,
     "imagen": "img/combos/pack_new_9.jpg",
     "disponible": true
   },
@@ -190,7 +190,7 @@
       "x2 goyas",
       "x1 pomo aceite (900 ml)"
     ],
-    "precio": 15.238,
+    "precio": 16.0,
     "imagen": "img/combos/pack_new_10.jpg",
     "disponible": true
   },
@@ -204,7 +204,7 @@
       "x1 lb de jamón",
       "x1 bolsa de pan"
     ],
-    "precio": 22.857,
+    "precio": 24.0,
     "imagen": "img/combos/pack_new_11.jpg",
     "disponible": true
   },
@@ -222,7 +222,7 @@
       "x2 pastillitas de pollo",
       "x1 botella de vinagre"
     ],
-    "precio": 34.285,
+    "precio": 35.999,
     "imagen": "img/combos/pack_new_12.jpg",
     "disponible": true
   },
@@ -239,7 +239,7 @@
       "x1 leche en polvo",
       "x1 kg de azucar"
     ],
-    "precio": 47.619,
+    "precio": 50.0,
     "imagen": "img/combos/pack_new_13.jpg",
     "disponible": true
   },
@@ -257,7 +257,7 @@
       "x1 lata Puré",
       "x1 detergente (500 g)"
     ],
-    "precio": 56.19,
+    "precio": 59.0,
     "imagen": "img/combos/pack_new_14.jpg",
     "disponible": true
   },
@@ -276,107 +276,117 @@
       "x2 goyas",
       "x2 Jabones"
     ],
-    "precio": 68.027,
+    "precio": 71.428,
     "imagen": "img/combos/pack_new_15.jpg",
     "disponible": true
-  },  
-  
-
-
-
-  
-  
+  },
   {
-        "nombre": "14 de Febrero",
-        "categoria": "febrero",
-        "productos": [
-          "Delicioso Cake Tres Leches", 
-          "Romántico Ramo de Rosas", 
-          "Dulce Cajita de Confituras"],
-        "precio": 61.90,
-        "imagen": "img/combos/combo_febrero.jpg",
-        "disponible": false
-    },{
+    "nombre": "14 de Febrero",
+    "categoria": "febrero",
+    "productos": [
+      "Delicioso Cake Tres Leches",
+      "Romántico Ramo de Rosas",
+      "Dulce Cajita de Confituras"
+    ],
+    "precio": 64.995,
+    "imagen": "img/combos/combo_febrero.jpg",
+    "disponible": false
+  },
+  {
     "nombre": "Pack Dulce",
     "categoria": "combos",
     "productos": [
-      "x1 Cake 3 leches", 
-      "x1 Caja de helado (4lts)", 
-      "x12  Maltas"],
-    "precio": 33.333,
+      "x1 Cake 3 leches",
+      "x1 Caja de helado (4lts)",
+      "x12  Maltas"
+    ],
+    "precio": 35.0,
     "imagen": "img/combos/pack_new.jpg",
     "disponible": true
-  },{
+  },
+  {
     "nombre": "Pack Especial",
     "categoria": "combos",
     "productos": [
-      "x1 Spaguettis", 
-      "x1 Paquete de Salchicha", 
+      "x1 Spaguettis",
+      "x1 Paquete de Salchicha",
       "x1 Pasta de Tomate",
       "x1 Zason Goya",
       "x5 Paquetes de Refresco",
-      "x1 Ketchup"],
-    "precio": 11.3333,
+      "x1 Ketchup"
+    ],
+    "precio": 11.9,
     "imagen": "img/combos/pack_1.jpg",
     "disponible": true
-  },{
+  },
+  {
     "nombre": "Pack del Momento",
     "categoria": "combos",
     "productos": [
-      "x1 Bolsa de Pan", 
-      "x1 Mantequilla Mesa", 
+      "x1 Bolsa de Pan",
+      "x1 Mantequilla Mesa",
       "x1 Chocolate en Polvo",
-      "x4 Hamburguesas"],
-    "precio": 10.18,
+      "x4 Hamburguesas"
+    ],
+    "precio": 10.689,
     "imagen": "img/combos/pack_3.jpg",
     "disponible": true
-  },{
+  },
+  {
     "nombre": "Pack Estilizado",
     "categoria": "combos",
     "productos": [
-      "x1 Pomo de aceite", 
-      "x1 Paquete de pollo 10lb", 
+      "x1 Pomo de aceite",
+      "x1 Paquete de pollo 10lb",
       "1Kg Arroz",
-      "x1 Picadillo Especial (400g)"],
-    "precio": 20.00,
+      "x1 Picadillo Especial (400g)"
+    ],
+    "precio": 21.0,
     "imagen": "img/combos/pack_4.jpg",
     "disponible": true
-  },{
+  },
+  {
     "nombre": "Pack Familiar",
     "categoria": "combos",
     "productos": [
-      "1Kg Picadillo Pollo", 
-      "x1 Pomo de Aceite", 
+      "1Kg Picadillo Pollo",
+      "x1 Pomo de Aceite",
       "1Kg Arroz",
       "x2 Pastillas de Pollo",
-      "x3 Sopa Instantanea"],
-    "precio": 12.38,
+      "x3 Sopa Instantanea"
+    ],
+    "precio": 12.999,
     "imagen": "img/combos/pack_5.jpg",
     "disponible": true
-  },{
+  },
+  {
     "nombre": "Pack Ligero",
     "categoria": "combos",
     "productos": [
-      "x1 Paquete de Cafe", 
-      "5Lb Azucar", 
-      "x2 Bolsa de Pan"],
-    "precio": 15.238,
+      "x1 Paquete de Cafe",
+      "5Lb Azucar",
+      "x2 Bolsa de Pan"
+    ],
+    "precio": 16.0,
     "imagen": "img/combos/pack_6.jpg",
     "disponible": true
-  },{
+  },
+  {
     "nombre": "Pack Confituras",
     "categoria": "combos",
     "productos": [
-      "x27 Confituras Varias"],
-    "precio": 14.285,
+      "x27 Confituras Varias"
+    ],
+    "precio": 14.999,
     "imagen": "img/combos/Pack_Confituras.jpg",
     "disponible": true
-  },{
+  },
+  {
     "nombre": "Pack Pa La Isla",
     "categoria": "combos",
     "productos": [
-      "10lb Cerdo", 
-      "5lb Ovejo", 
+      "10lb Cerdo",
+      "5lb Ovejo",
       "x1 Paquete de Pollo",
       "x1 Fill de Huevo",
       "x2 Paquete de Salchicha",
@@ -387,8 +397,9 @@
       "x2 Spaguettis",
       "x4 Sopas Instantaneas",
       "x5 Refrescos de Polvo",
-      "x1 Pomo de Aceite"],
-    "precio": 85.71,
+      "x1 Pomo de Aceite"
+    ],
+    "precio": 89.996,
     "imagen": "img/combos/combo1.jpg",
     "disponible": true
   }

@@ -1,7 +1,7 @@
 /* Ajustes específicos para móviles */
 @media (max-width: 720px) {
     .slider {
-        top: -5px;
+        top: 20px;
     }
 
     .img-pc {

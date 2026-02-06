@@ -134,8 +134,8 @@ document.addEventListener('DOMContentLoaded', function() {
         fetch('Json/combos.json').then(response => response.json())
     ])
     .then(([productosData, combosData]) => {
-        productos = actualizarPrecios(productosData);
-        combos = actualizarPrecios(combosData);
+        productos = productosData;
+        combos = combosData;
         window.productos = productos;
         window.combos = combos;
         renderProductos();

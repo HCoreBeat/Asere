@@ -97,15 +97,17 @@ function fillPaymentForm() {
     row.innerHTML = `
         <td>${item.nombre}</td>
         <td>${item.cantidad}</td>
-        <td>$${item.precio.toFixed(2)}</td>
-        <td>$${(item.cantidad * item.precio).toFixed(2)}</td>
+        <td>${ (window.getCurrentCurrency && window.getCurrentCurrency()? ({ USD: 'US$', EUR: '€', UYU: 'U$' }[window.getCurrentCurrency()]) : 'US$') }${item.precio.toFixed(2)}</td>
+        <td>${ (window.getCurrentCurrency && window.getCurrentCurrency()? ({ USD: 'US$', EUR: '€', UYU: 'U$' }[window.getCurrentCurrency()]) : 'US$') }${(item.cantidad * item.precio).toFixed(2)}</td>
         `;
         summaryItemsContainer.appendChild(row);
     });
 
     // Mostrar el total de la compra solo con productos disponibles
     const totalDisponible = calculateTotal(productosDisponibles);
-    summaryTotal.textContent = `Total a pagar: $${totalDisponible}`;
+    const _cur = (window.getCurrentCurrency && window.getCurrentCurrency()) ? window.getCurrentCurrency() : 'USD';
+    const _symbol = { USD: 'US$', EUR: '€', UYU: 'UYU$' }[_cur] || 'US$';
+    summaryTotal.textContent = `Total a pagar: ${_symbol}${totalDisponible}`;
     
     // Advertencia si hay productos no disponibles
     if (productosDisponibles.length < cartItems.length) {
@@ -376,9 +378,11 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
     Afiliado: ${affiliate}
 
     Detalles del pedido:
-    ${cartItems.map(item => `- ${item.nombre} (x${item.cantidad}): $${(item.precio * item.cantidad).toFixed(2)}`).join('\n')}
+    ${cartItems.map(item => `- ${item.nombre} (x${item.cantidad}): ${ (window.getCurrentCurrency && window.getCurrentCurrency()? ({ USD: 'US$', EUR: '€', UYU: 'UYU$' }[window.getCurrentCurrency()]) : 'US$') }${(item.precio * item.cantidad).toFixed(2)}`).join('\n')}
 
-    Total: $${total}
+    const curTot = (window.getCurrentCurrency && window.getCurrentCurrency()) ? window.getCurrentCurrency() : 'USD';
+    const symTot = { USD: 'US$', EUR: '€', UYU: 'UYU$' }[curTot] || 'US$';
+    Total: ${symTot}${total}
     `;
 
     const serviceID = 'default_service';
@@ -422,7 +426,9 @@ function mostrarPanelAgradecimiento() {
     const cartItems = getCartItems();
     const total = calculateTotal(cartItems);
     
-    document.getElementById('order-total-amount').textContent = `$${total}`;
+    const cur = (window.getCurrentCurrency && window.getCurrentCurrency()) ? window.getCurrentCurrency() : 'USD';
+    const symbol = { USD: 'US$', EUR: '€', UYU: 'UYU$' }[cur] || 'US$';
+    document.getElementById('order-total-amount').textContent = `${symbol}${total}`;
     
     panel.style.display = 'flex';
     setTimeout(() => {

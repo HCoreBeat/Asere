@@ -383,7 +383,7 @@ window.mostrarProductosSugeridos = function(producto) {
         productoDiv.innerHTML = `
             <img src="${sugerido.imagen}" alt="${sugerido.nombre}" class="sugerido-imagen">
             <p class="nombre">${sugerido.nombre}</p>
-            <p class="precio">$${sugerido.precio.toFixed(2)}</p>
+            <p class="precio" data-base-price="${sugerido.precio}"><span class="currency">US$</span>${sugerido.precio.toFixed(2)}</p>
             ${sugerido.oferta ? `<p class="oferta-badge">¡En oferta!</p>` : ''}
             ${sugerido.mas_vendido ? `<p class="mas-vendido-badge">Más Vendido</p>` : ''}
         `;
@@ -484,14 +484,22 @@ window.mostrarDetallesProducto = function(producto) {
     `;
 
     // define el valor oculto del precio del producto para el carrito
-    document.getElementById("valor-precio-total").textContent = `Precio: $${precio.toFixed(2)}`;
+    const curC = (window.getCurrentCurrency && window.getCurrentCurrency()) ? window.getCurrentCurrency() : 'USD';
+    const symC = { USD: 'US$', EUR: '€', UYU: 'UYU$' }[curC] || 'US$';
+    const valorTotalEl = document.getElementById("valor-precio-total");
+    if(valorTotalEl){
+        valorTotalEl.dataset.basePrice = Number(precio).toFixed(2);
+        valorTotalEl.textContent = `Precio: ${symC}${precio.toFixed(2)}`;
+    }
     
     // Mostrar PVPR y descuento
     if (producto.oferta) {
-        document.getElementById("detalle-pvpr").textContent = `PVPR: $${pvpr.toFixed(2)}`;
+        const curPV = (window.getCurrentCurrency && window.getCurrentCurrency()) ? window.getCurrentCurrency() : 'USD';
+        const symPV = { USD: 'US$', EUR: '€', UYU: 'UYU$' }[curPV] || 'US$';
+        document.getElementById("detalle-pvpr").innerHTML = `PVPR: <span class="pvpr-value" data-base-price="${pvpr.toFixed(2)}">${symPV}${pvpr.toFixed(2)}</span>`;
         document.getElementById("detalle-descuento").textContent = `-${producto.descuento.toFixed()}%`;
     } else {
-        document.getElementById("detalle-pvpr").textContent = "";
+        document.getElementById("detalle-pvpr").innerHTML = "";
         document.getElementById("detalle-descuento").textContent = "";
     }
 

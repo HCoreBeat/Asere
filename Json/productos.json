@@ -2,7 +2,7 @@
   {
     "nombre": "Pollo Country Pride",
     "categoria": "cárnicos",
-    "precio": 11.429,
+    "precio": 12.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -14,7 +14,7 @@
   {
     "nombre": "Carne de cerdo x Lb",
     "categoria": "cárnicos",
-    "precio": 2.524,
+    "precio": 2.65,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -26,7 +26,7 @@
   {
     "nombre": "Carne de Ovejo x Lb",
     "categoria": "cárnicos",
-    "precio": 2.048,
+    "precio": 2.15,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -38,7 +38,7 @@
   {
     "nombre": "Picadillo Especial 400g",
     "categoria": "cárnicos",
-    "precio": 1.429,
+    "precio": 1.5,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -49,7 +49,7 @@
   {
     "nombre": "Jamón de Primera x Lb",
     "categoria": "cárnicos",
-    "precio": 4.8,
+    "precio": 5.04,
     "descuento": 15.3,
     "oferta": false,
     "mas_vendido": true,
@@ -60,7 +60,7 @@
   {
     "nombre": "Chuletas de cerdo x Lb",
     "categoria": "cárnicos",
-    "precio": 3.333,
+    "precio": 3.5,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -72,7 +72,7 @@
   {
     "nombre": "Paquete de salchicha 10u (340g)",
     "categoria": "cárnicos",
-    "precio": 1.114,
+    "precio": 1.17,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -89,7 +89,7 @@
   {
     "nombre": "Pernil de Cerdo asado (15 libras)",
     "categoria": "cárnicos",
-    "precio": 47.619,
+    "precio": 50.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -100,7 +100,7 @@
   {
     "nombre": "Queso criollo x Lb",
     "categoria": "lacteos",
-    "precio": 2.771,
+    "precio": 2.91,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -112,7 +112,7 @@
   {
     "nombre": "Helado 4Lts de 2da",
     "categoria": "lacteos",
-    "precio": 9.333,
+    "precio": 9.8,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -124,7 +124,7 @@
   {
     "nombre": "Manzana",
     "categoria": "despensa",
-    "precio": 1.114,
+    "precio": 1.17,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -136,7 +136,7 @@
   {
     "nombre": "Manzanas Pack x6",
     "categoria": "despensa",
-    "precio": 6.638,
+    "precio": 6.97,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -148,7 +148,7 @@
   {
     "nombre": "Nutela",
     "categoria": "confituras",
-    "precio": 2.448,
+    "precio": 2.57,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -160,7 +160,7 @@
   {
     "nombre": "Aceite Fritura 900ml",
     "categoria": "despensa",
-    "precio": 2.829,
+    "precio": 2.97,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -171,7 +171,7 @@
   {
     "nombre": "Azúcar blanca x lb",
     "categoria": "despensa",
-    "precio": 1.171,
+    "precio": 1.23,
     "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
@@ -181,7 +181,7 @@
   {
     "nombre": "Frijol Negro x Lb",
     "categoria": "pastas-y-granos",
-    "precio": 1.781,
+    "precio": 1.87,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -192,7 +192,7 @@
   {
     "nombre": "Paquete de pan de bola 8u/10u",
     "categoria": "despensa",
-    "precio": 1.714,
+    "precio": 1.8,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -203,7 +203,7 @@
   {
     "nombre": "Pastilla de Pollo",
     "categoria": "despensa",
-    "precio": 0.19,
+    "precio": 0.2,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -214,7 +214,7 @@
   {
     "nombre": "Café La Llave (284g)",
     "categoria": "café",
-    "precio": 7.619,
+    "precio": 8.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -225,7 +225,7 @@
   {
     "nombre": "Cartón de Huevos",
     "categoria": "despensa",
-    "precio": 8.571,
+    "precio": 9.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -237,7 +237,7 @@
   {
     "nombre": "Espaguetis (500g)",
     "categoria": "pastas-y-granos",
-    "precio": 0.829,
+    "precio": 0.87,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -248,7 +248,7 @@
   {
     "nombre": "Leche Condensada azucarada (390g)",
     "categoria": "enlatados",
-    "precio": 1.59,
+    "precio": 1.67,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -259,7 +259,7 @@
   {
     "nombre": "Sopa instantánea sabor Pollo (85g)",
     "categoria": "despensa",
-    "precio": 0.562,
+    "precio": 0.59,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -270,7 +270,7 @@
   {
     "nombre": "Arroz Rainha Brasil (1Kg)",
     "categoria": "pastas-y-granos",
-    "precio": 1.781,
+    "precio": 1.87,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -282,7 +282,7 @@
   {
     "nombre": "Queso Gouda Premium (3Kg)",
     "categoria": "lacteos",
-    "precio": 34.019,
+    "precio": 35.72,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -294,7 +294,7 @@
   {
     "nombre": "Kg de Queso Gouda Premium",
     "categoria": "lacteos",
-    "precio": 13.333,
+    "precio": 14.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -306,7 +306,7 @@
   {
     "nombre": "Mayonesa Victoria (250ml)",
     "categoria": "aderezos",
-    "precio": 2.067,
+    "precio": 2.17,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -318,7 +318,7 @@
   {
     "nombre": "Sal x Lb",
     "categoria": "despensa",
-    "precio": 0.924,
+    "precio": 0.97,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -329,7 +329,7 @@
   {
     "nombre": "Paquete de harina (1kg)",
     "categoria": "despensa",
-    "precio": 1.781,
+    "precio": 1.87,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -340,7 +340,7 @@
   {
     "nombre": "Frijoles Negros (1Kg)",
     "categoria": "pastas-y-granos",
-    "precio": 2.448,
+    "precio": 2.57,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -351,7 +351,7 @@
   {
     "nombre": "Frazada de Piso",
     "categoria": "aseo",
-    "precio": 0.695,
+    "precio": 0.73,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -362,7 +362,7 @@
   {
     "nombre": "Cebolla blanca × lb",
     "categoria": "agro",
-    "precio": 3.21,
+    "precio": 3.371,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -374,7 +374,7 @@
   {
     "nombre": "Mano de plátano burro",
     "categoria": "agro",
-    "precio": 0.924,
+    "precio": 0.97,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -385,7 +385,7 @@
   {
     "nombre": "Pepino x Lb",
     "categoria": "agro",
-    "precio": 0.55,
+    "precio": 0.578,
     "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
@@ -395,7 +395,7 @@
   {
     "nombre": "Tomate x Lb",
     "categoria": "agro",
-    "precio": 2.543,
+    "precio": 2.67,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -406,7 +406,7 @@
   {
     "nombre": "Limón x Lb",
     "categoria": "agro",
-    "precio": 2.2,
+    "precio": 2.31,
     "descuento": 35.1,
     "oferta": false,
     "mas_vendido": true,
@@ -418,7 +418,7 @@
   {
     "nombre": "Plátano macho x unidad",
     "categoria": "agro",
-    "precio": 0.295,
+    "precio": 0.31,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -429,7 +429,7 @@
   {
     "nombre": "Boniato x Lb",
     "categoria": "agro",
-    "precio": 0.505,
+    "precio": 0.53,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -440,7 +440,7 @@
   {
     "nombre": "Caja de refresco Naranja",
     "categoria": "bebidas",
-    "precio": 17.114,
+    "precio": 17.97,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -451,7 +451,7 @@
   {
     "nombre": "Caja de Malta Bucanero",
     "categoria": "bebidas",
-    "precio": 23.81,
+    "precio": 25.001,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -462,7 +462,7 @@
   {
     "nombre": "Refresco Limón (330ml)",
     "categoria": "bebidas",
-    "precio": 0.905,
+    "precio": 0.95,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -473,7 +473,7 @@
   {
     "nombre": "Cervezas Cristal (355ml)",
     "categoria": "alcohol",
-    "precio": 1.05,
+    "precio": 1.103,
     "descuento": 10,
     "oferta": false,
     "mas_vendido": false,
@@ -483,7 +483,7 @@
   {
     "nombre": "Caja de Cervezas Cristal",
     "categoria": "alcohol",
-    "precio": 22.381,
+    "precio": 23.5,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -494,7 +494,7 @@
   {
     "nombre": "Malta Bucanero",
     "categoria": "bebidas",
-    "precio": 1.095,
+    "precio": 1.15,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -505,7 +505,7 @@
   {
     "nombre": "Refresco Naranja (330ml)",
     "categoria": "bebidas",
-    "precio": 0.905,
+    "precio": 0.95,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -516,7 +516,7 @@
   {
     "nombre": "Galletas de soda Salricas 3 tacos",
     "categoria": "confituras",
-    "precio": 1.724,
+    "precio": 1.81,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -527,7 +527,7 @@
   {
     "nombre": "Vinagre de vino tinto (500ml)",
     "categoria": "despensa",
-    "precio": 2.181,
+    "precio": 2.29,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -538,7 +538,7 @@
   {
     "nombre": "Leche entera en polvo Macrofood(1kg)",
     "categoria": "lacteos",
-    "precio": 7.619,
+    "precio": 8.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -550,7 +550,7 @@
   {
     "nombre": "Pasta de tomate Oderich 350g",
     "categoria": "enlatados",
-    "precio": 1.114,
+    "precio": 1.17,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -561,7 +561,7 @@
   {
     "nombre": "Aceite de Girasol 5lts",
     "categoria": "despensa",
-    "precio": 17.457,
+    "precio": 18.33,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -572,7 +572,7 @@
   {
     "nombre": "Desodorante Keewell",
     "categoria": "aseo",
-    "precio": 1.4,
+    "precio": 1.47,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -583,7 +583,7 @@
   {
     "nombre": "Paquete de Papel Sanitario 4 rollos",
     "categoria": "otros",
-    "precio": 1.905,
+    "precio": 2.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -594,7 +594,7 @@
   {
     "nombre": "Detergente en polvo 500g",
     "categoria": "otros",
-    "precio": 1.229,
+    "precio": 1.29,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -605,7 +605,7 @@
   {
     "nombre": "Colonia Bonabel de Violetas",
     "categoria": "aseo",
-    "precio": 3.305,
+    "precio": 3.47,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -616,7 +616,7 @@
   {
     "nombre": "Spam de cerdo 340g",
     "categoria": "enlatados",
-    "precio": 2.067,
+    "precio": 2.17,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -627,7 +627,7 @@
   {
     "nombre": "Picadillo de pollo (1Kg)",
     "categoria": "cárnicos",
-    "precio": 2.829,
+    "precio": 2.97,
     "descuento": 27.6,
     "oferta": false,
     "mas_vendido": true,
@@ -638,7 +638,7 @@
   {
     "nombre": "Jamón Bravo 2kgs",
     "categoria": "cárnicos",
-    "precio": 21.429,
+    "precio": 22.5,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -650,7 +650,7 @@
   {
     "nombre": "Saco de arroz americano importado 25kgs",
     "categoria": "agro",
-    "precio": 33.333,
+    "precio": 35.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -662,7 +662,7 @@
   {
     "nombre": "Helado Nestle sabor vainilla 4.5lts",
     "categoria": "lacteos",
-    "precio": 19.048,
+    "precio": 20.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -674,7 +674,7 @@
   {
     "nombre": "Pack Caramelos de leche",
     "categoria": "confituras",
-    "precio": 3.81,
+    "precio": 4.001,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -686,7 +686,7 @@
   {
     "nombre": "Cesto para ropa",
     "categoria": "otros",
-    "precio": 9.524,
+    "precio": 10.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -698,7 +698,7 @@
   {
     "nombre": "Refresco Fresko",
     "categoria": "bebidas",
-    "precio": 0.857,
+    "precio": 0.9,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -711,7 +711,7 @@
   {
     "nombre": "Agua Natural Ciego Montero 500ml",
     "categoria": "bebidas",
-    "precio": 0.667,
+    "precio": 0.7,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -724,7 +724,7 @@
   {
     "nombre": "Toallas Sanitarias Princesa (10u)",
     "categoria": "otros",
-    "precio": 1.086,
+    "precio": 1.14,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -736,7 +736,7 @@
   {
     "nombre": "Jabones de baño Florona",
     "categoria": "aseo",
-    "precio": 0.352,
+    "precio": 0.37,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -747,7 +747,7 @@
   {
     "nombre": "Salsa rosa Rayan 440g",
     "categoria": "aderezos",
-    "precio": 2.829,
+    "precio": 2.97,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -758,7 +758,7 @@
   {
     "nombre": "Paquete de galletats Lamore",
     "categoria": "confituras",
-    "precio": 0.924,
+    "precio": 0.97,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -769,7 +769,7 @@
   {
     "nombre": "Galletas Renata",
     "categoria": "confituras",
-    "precio": 0.905,
+    "precio": 0.95,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -781,7 +781,7 @@
   {
     "nombre": "Malta Unlaguer x unidad 330ml",
     "categoria": "bebidas",
-    "precio": 1.048,
+    "precio": 1.1,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -792,7 +792,7 @@
   {
     "nombre": "Refresco Gaseado",
     "categoria": "bebidas",
-    "precio": 2.371,
+    "precio": 2.49,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -804,7 +804,7 @@
   {
     "nombre": "Agua Natural Ciego Montero(1.5l)",
     "categoria": "bebidas",
-    "precio": 0.943,
+    "precio": 0.99,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -816,7 +816,7 @@
   {
     "nombre": "Paquete de íntimas 8u",
     "categoria": "aseo",
-    "precio": 1.114,
+    "precio": 1.17,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -827,7 +827,7 @@
   {
     "nombre": "S&C",
     "categoria": "fragancias",
-    "precio": 15.238,
+    "precio": 16.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -840,7 +840,7 @@
   {
     "nombre": "Elements",
     "categoria": "fragancias",
-    "precio": 13.333,
+    "precio": 14.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -853,7 +853,7 @@
   {
     "nombre": "Nao For man",
     "categoria": "fragancias",
-    "precio": 15.238,
+    "precio": 16.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -866,7 +866,7 @@
   {
     "nombre": "Impacto For woman",
     "categoria": "fragancias",
-    "precio": 15.238,
+    "precio": 16.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -879,7 +879,7 @@
   {
     "nombre": "Higado de Pollo Sadia 1KG",
     "categoria": "cárnicos",
-    "precio": 2.181,
+    "precio": 2.29,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -891,7 +891,7 @@
   {
     "nombre": "Paquete de Azúcar Extra Fina 1Kg",
     "categoria": "despensa",
-    "precio": 1.686,
+    "precio": 1.77,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -902,7 +902,7 @@
   {
     "nombre": "Café Purasangre (250g)",
     "categoria": "café",
-    "precio": 4.924,
+    "precio": 5.17,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -914,7 +914,7 @@
   {
     "nombre": "Costillas de Cerdo x Lb",
     "categoria": "cárnicos",
-    "precio": 3.333,
+    "precio": 3.5,
     "descuento": 17.1,
     "oferta": false,
     "mas_vendido": false,
@@ -926,7 +926,7 @@
   {
     "nombre": "Lomo de cerdo x Lb",
     "categoria": "cárnicos",
-    "precio": 3.333,
+    "precio": 3.5,
     "descuento": 15.7,
     "oferta": false,
     "mas_vendido": false,
@@ -938,7 +938,7 @@
   {
     "nombre": "Pata de cerdo x Lb",
     "categoria": "cárnicos",
-    "precio": 2.667,
+    "precio": 2.8,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -950,7 +950,7 @@
   {
     "nombre": "Frijol Negro Alubia (500g)",
     "categoria": "pastas-y-granos",
-    "precio": 1.648,
+    "precio": 1.73,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -962,7 +962,7 @@
   {
     "nombre": "Cebolla blanca × lb",
     "categoria": "agro",
-    "precio": 3.21,
+    "precio": 3.371,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -974,7 +974,7 @@
   {
     "nombre": "Vinagre de vino tinto (500ml)",
     "categoria": "despensa",
-    "precio": 2.181,
+    "precio": 2.29,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -985,7 +985,7 @@
   {
     "nombre": "Leche entera en polvo Macrofood(1kg)",
     "categoria": "lacteos",
-    "precio": 7.619,
+    "precio": 8.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -996,7 +996,7 @@
   {
     "nombre": "Paquete de íntimas 8u",
     "categoria": "aseo",
-    "precio": 1.114,
+    "precio": 1.17,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1007,7 +1007,7 @@
   {
     "nombre": "Aceite de Girasol 5lts",
     "categoria": "despensa",
-    "precio": 17.457,
+    "precio": 18.33,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1018,7 +1018,7 @@
   {
     "nombre": "Malta Unlaguer x unidad 330ml",
     "categoria": "bebidas",
-    "precio": 1.048,
+    "precio": 1.1,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1029,7 +1029,7 @@
   {
     "nombre": "Jamón Bravo 2kgs",
     "categoria": "cárnicos",
-    "precio": 21.429,
+    "precio": 22.5,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -1041,7 +1041,7 @@
   {
     "nombre": "Salsa rosa Rayan 440g",
     "categoria": "aderezos",
-    "precio": 2.829,
+    "precio": 2.97,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1050,21 +1050,9 @@
     "nuevo": false
   },
   {
-    "nombre": "Saco de arroz americano importado 25kgs",
-    "categoria": "agro",
-    "precio": 33.333,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/saco_de_arroz_americano_importado_50lb.jpg",
-    "descripcion": "Arroz importado. Viene limpio y cocina bien",
-    "nuevo": false
-  },
-  {
     "nombre": "Jabones de baño Florona",
     "categoria": "aseo",
-    "precio": 0.352,
+    "precio": 0.37,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1075,7 +1063,7 @@
   {
     "nombre": "Jabones de baño Florona",
     "categoria": "aseo",
-    "precio": 0.352,
+    "precio": 0.37,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1086,7 +1074,7 @@
   {
     "nombre": "Pack de 12 latas de néctar de pera",
     "categoria": "bebidas",
-    "precio": 13.076,
+    "precio": 13.73,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1097,7 +1085,7 @@
   {
     "nombre": "Pack de 12 latas de néctar de piña",
     "categoria": "bebidas",
-    "precio": 13.076,
+    "precio": 13.73,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1108,7 +1096,7 @@
   {
     "nombre": "Leche en polvo Lecherita 1kg",
     "categoria": "lacteos",
-    "precio": 7.59,
+    "precio": 7.97,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1119,7 +1107,7 @@
   {
     "nombre": "Carne de res enlatada 400g",
     "categoria": "enlatados",
-    "precio": 2.067,
+    "precio": 2.17,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1130,7 +1118,7 @@
   {
     "nombre": "Caja de cerveza Bucanero 24u",
     "categoria": "alcohol",
-    "precio": 22.857,
+    "precio": 24.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1141,7 +1129,7 @@
   {
     "nombre": "Cerveza Bucanero x und.",
     "categoria": "alcohol",
-    "precio": 1.048,
+    "precio": 1.1,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1152,7 +1140,7 @@
   {
     "nombre": "Caja de cuartos de pollo 40lbs",
     "categoria": "cárnicos",
-    "precio": 42.857,
+    "precio": 45.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1163,7 +1151,7 @@
   {
     "nombre": "Paquete de coditos 500g",
     "categoria": "despensa",
-    "precio": 0.886,
+    "precio": 0.93,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1174,7 +1162,7 @@
   {
     "nombre": "Desodorante Keewell 24h",
     "categoria": "aseo",
-    "precio": 1.4,
+    "precio": 1.47,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1185,7 +1173,7 @@
   {
     "nombre": "Refresco instantáneo 2lts",
     "categoria": "bebidas",
-    "precio": 0.162,
+    "precio": 0.17,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1196,7 +1184,7 @@
   {
     "nombre": "Paquete de hígados de pollo 1kg",
     "categoria": "cárnicos",
-    "precio": 2.181,
+    "precio": 2.29,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1207,7 +1195,7 @@
   {
     "nombre": "Pollo asado",
     "categoria": "cárnicos",
-    "precio": 7.619,
+    "precio": 8.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1218,7 +1206,7 @@
   {
     "nombre": "Frijoles pintos x lb",
     "categoria": "pastas-y-granos",
-    "precio": 1.4,
+    "precio": 1.47,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1229,7 +1217,7 @@
   {
     "nombre": "Frijoles colorados x lb",
     "categoria": "pastas-y-granos",
-    "precio": 2.448,
+    "precio": 2.57,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1240,7 +1228,7 @@
   {
     "nombre": "Frijoles negros x lb",
     "categoria": "pastas-y-granos",
-    "precio": 1.362,
+    "precio": 1.43,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1251,7 +1239,7 @@
   {
     "nombre": "Refresco gaseado 1.5lts",
     "categoria": "bebidas",
-    "precio": 2.257,
+    "precio": 2.37,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1268,7 +1256,7 @@
   {
     "nombre": "Helado nestle sabor chocolate 4.5lts",
     "categoria": "lacteos",
-    "precio": 19.048,
+    "precio": 20.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1279,7 +1267,7 @@
   {
     "nombre": "Pack de 1kg de jamón bravo y 1kg de queso gouda",
     "categoria": "cárnicos",
-    "precio": 21.905,
+    "precio": 23.0,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1290,7 +1278,7 @@
   {
     "nombre": "Galletas Marias",
     "categoria": "confituras",
-    "precio": 1.076,
+    "precio": 1.13,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,

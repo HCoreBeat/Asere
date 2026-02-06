@@ -95,7 +95,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Obtener datos del producto actual
     const nombre = document.getElementById('detalle-nombre')?.textContent || '';
     const precio = document.getElementById('detalle-precio')?.textContent || '';
-    const pvpr = document.getElementById('detalle-pvpr')?.textContent || '';
+    const pvprEl = document.querySelector('#detalle-pvpr .pvpr-value') || document.getElementById('detalle-pvpr');
+    const pvpr = pvprEl ? (pvprEl.dataset && pvprEl.dataset.basePrice ? pvprEl.dataset.basePrice : pvprEl.textContent) : '';
     const descuento = document.getElementById('detalle-descuento')?.textContent || '';
     const imagen = document.getElementById('detalle-imagen')?.src || '';
     const link = window.location.origin.replace(/\/$/, '') + '/producto.html?id=' + (window.productoActualId || '');
@@ -106,8 +107,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Poblar campos para el layout minimalista tipo pasta
     document.getElementById('captura-badge').textContent = categoria || 'FEATURED ITEM';
     document.getElementById('captura-nombre').textContent = nombre;
-    document.getElementById('captura-precio').textContent = precio.match(/\$[0-9.,]+/)?.[0] || precio;
-    document.getElementById('captura-pvpr').textContent = pvpr.match(/\$[0-9.,]+/)?.[0] || '';
+    // Detectar número independientemente del símbolo y anteponer el símbolo actual
+    const priceMatch = precio.match(/([0-9]+(?:[.,][0-9]{1,2})?)/)?.[0];
+    const pvprMatch = pvpr.match(/([0-9]+(?:[.,][0-9]{1,2})?)/)?.[0];
+    const currentCurrency = (window.getCurrentCurrency && window.getCurrentCurrency()) ? window.getCurrentCurrency() : 'USD';
+    const symbolMap = { USD: 'US$', EUR: '€', UYU: 'UYU$' };
+    const curSymbol = symbolMap[currentCurrency] || 'US$';
+    document.getElementById('captura-precio').textContent = priceMatch ? `${curSymbol}${priceMatch}` : precio;
+    document.getElementById('captura-pvpr').textContent = pvprMatch ? `${curSymbol}${pvprMatch}` : '';
     document.getElementById('captura-descuento').textContent = descuento ? descuento : '';
     document.getElementById('captura-imagen').src = imagen;
     document.getElementById('captura-link').textContent = link.replace('https://','').replace('http://','');
