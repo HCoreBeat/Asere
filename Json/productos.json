@@ -1405,5 +1405,41 @@
     "imagen": "img/products/lavadora_milexus_7kg.jpg",
     "descripcion": "La Lavadora Milexus de 7Kg es una opción práctica y eficiente para el hogar, diseñada para ofrecer un lavado confiable en un formato compacto. Cuenta con un panel superior de tres perillas que permite seleccionar fácilmente los ciclos y funciones, además de un sistema Air Dry que mejora el secado de la ropa. Su capacidad de 7 kilogramos la hace ideal para familias pequeñas o para quienes buscan una solución económica y funcional. Con un diseño moderno y resistente, es perfecta para espacios reducidos y uso diario. Incluye 1 mes de garantía, brindando seguridad y respaldo al comprador.",
     "nuevo": true
+  },
+  {
+    "nombre": "Garbanzos (1lb)",
+    "categoria": "pastas-y-granos",
+    "precio": 2.29,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/garbanzos_1lb.jpg",
+    "descripcion": "Los mejores garbanzos para disfrutar con la familia",
+    "nuevo": true
+  },
+  {
+    "nombre": "Sal 1Kg",
+    "categoria": "despensa",
+    "precio": 1.43,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/sal_1kg.jpg",
+    "descripcion": "La mejor sal y la más fina para tu cocina",
+    "nuevo": true
+  },
+  {
+    "nombre": "Lomito de atún 110g",
+    "categoria": "enlatados",
+    "precio": 2.13,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/lomito_de_atn_110g.jpg",
+    "descripcion": "El mejor atún que podrás encontrar de este lado del Misisipi",
+    "nuevo": true
   }
 ]
