@@ -210,7 +210,6 @@
     wrapper.className = 'currency-switcher';
     wrapper.style.display = 'flex';
     wrapper.style.alignItems = 'center';
-    wrapper.style.marginLeft = '5px';
 
     const select = document.createElement('select');
     select.id = 'currency-select';
@@ -227,7 +226,6 @@
     const searchBar = headerContainer.querySelector('.search-bar');
     if (searchBar) {
       // Append inside the search bar so the switcher stays next to the input in responsive layouts
-      wrapper.style.marginLeft = '8px';
       wrapper.style.marginTop = '0';
       searchBar.appendChild(wrapper);
     } else {

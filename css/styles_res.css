@@ -549,17 +549,14 @@
 
     .search-bar {
         order: 3;
-        width: 80%;
         height: 35px;
         display: flex;
         border-radius: 5px;
-        justify-content: space-between;
         padding: 5px 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         flex-grow: 1;
         transition: box-shadow 0.3s ease-in-out;
         margin: 0px 10px;
-        max-width: none;
+        gap: 5px;
     }
 
     .search-bar input {
