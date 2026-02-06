@@ -672,43 +672,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Pack Caramelos de leche",
-    "categoria": "confituras",
-    "precio": 4.001,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/caramelo_de_leche.jpg",
-    "descripcion": "Sumérgete en la dulzura tradicional de los caramelos de leche de Diana. Esta bolsa de 154g contiene deliciosos caramelos blandos con sabor a leche y mantequilla, una golosina clásica que deleita a grandes y pequeños. Con 60 calorías por porción, estos caramelos son perfectos para un pequeño capricho en cualquier momento del día. Su textura suave y su sabor cremoso los convierten en una tentación irresistible. Ideal para compartir o disfrutar en solitario, este clásico caramelo es un básico en tu despensa.",
-    "nuevo": false
-  },
-  {
-    "nombre": "Cesto para ropa",
-    "categoria": "otros",
-    "precio": 10,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/cesto_de_ropa.jpg",
-    "descripcion": "Organiza tu ropa sucia con el práctico cesto de ropa Florida. Este cesto de color azul, con un diseño calado tanto en el cuerpo como en la tapa, permite una excelente ventilación, evitando la acumulación de malos olores. Su estructura de plástico resistente y duradero es ideal para el uso diario en el baño, lavadero o dormitorio. Con un diseño moderno y funcional, este cesto es una solución sencilla y elegante para mantener el orden en tu hogar.",
-    "nuevo": false
-  },
-  {
-    "nombre": "Refresco Fresko",
-    "categoria": "bebidas",
-    "precio": 0.9,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/refresco_fresko.jpg",
-    "descripcion": "Sabor según disponibilidad del momento. Disfruta de una explosión de sabor con la gama de refrescos Fresko. Esta colección incluye cuatro deliciosas y vibrantes opciones: Naranja, Limón-Lima, Cola y Tutti Frutti. Cada botella de 600 ml te ofrece una bebida refrescante y llena de burbujas, perfecta para calmar la sed en cualquier momento del día. Con sus colores llamativos y sabores intensos, los refrescos Fresko son ideales para acompañar tus comidas, para una reunión con amigos o simplemente para darte un gusto.",
-    "imagenesAdicionales": [],
-    "nuevo": false
-  },
-  {
     "nombre": "Agua Natural Ciego Montero 500ml",
     "categoria": "bebidas",
     "precio": 0.7,
