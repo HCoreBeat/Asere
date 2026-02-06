@@ -549,7 +549,7 @@
 
     .search-bar {
         order: 3;
-        width: 100%;
+        width: 90%;
         height: 35px;
         display: flex;
         border-radius: 5px;

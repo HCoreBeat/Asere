@@ -398,7 +398,6 @@ nav ul li a:hover i {
 .search-bar {
     display: flex;
     align-items: center;
-    gap: 5px;
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -588,7 +587,7 @@ OJO MUY IMPORTANTE PARA LA VISUALIZACION*/
         height: 8px;
     }
     .slider-dots{
-        bottom: 35%;
+        bottom: 45%;
     }
 }
 
