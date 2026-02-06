@@ -1,13 +1,13 @@
 [
   {
-    "nombre": "Pollo Country Pride",
+    "nombre": "George's piernas de pollo",
     "categoria": "cárnicos",
-    "precio": 12.0,
+    "precio": 12,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/pollo_country_pride.jpg",
+    "imagen": "img/products/georges_piernas_de_pollo.jpg",
     "descripcion": "Paquetes de  cuartos pollo de 10Lb",
     "nuevo": false
   },
@@ -89,7 +89,7 @@
   {
     "nombre": "Pernil de Cerdo asado (15 libras)",
     "categoria": "cárnicos",
-    "precio": 50.0,
+    "precio": 50,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -214,7 +214,7 @@
   {
     "nombre": "Café La Llave (284g)",
     "categoria": "café",
-    "precio": 8.0,
+    "precio": 8,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -225,7 +225,7 @@
   {
     "nombre": "Cartón de Huevos",
     "categoria": "despensa",
-    "precio": 9.0,
+    "precio": 9,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -294,7 +294,7 @@
   {
     "nombre": "Kg de Queso Gouda Premium",
     "categoria": "lacteos",
-    "precio": 14.0,
+    "precio": 14,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -538,7 +538,7 @@
   {
     "nombre": "Leche entera en polvo Macrofood(1kg)",
     "categoria": "lacteos",
-    "precio": 8.0,
+    "precio": 8,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -583,7 +583,7 @@
   {
     "nombre": "Paquete de Papel Sanitario 4 rollos",
     "categoria": "otros",
-    "precio": 2.0,
+    "precio": 2,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -650,7 +650,7 @@
   {
     "nombre": "Saco de arroz americano importado 25kgs",
     "categoria": "agro",
-    "precio": 35.0,
+    "precio": 35,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -662,7 +662,7 @@
   {
     "nombre": "Helado Nestle sabor vainilla 4.5lts",
     "categoria": "lacteos",
-    "precio": 20.0,
+    "precio": 20,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -686,7 +686,7 @@
   {
     "nombre": "Cesto para ropa",
     "categoria": "otros",
-    "precio": 10.0,
+    "precio": 10,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -827,7 +827,7 @@
   {
     "nombre": "S&C",
     "categoria": "fragancias",
-    "precio": 16.0,
+    "precio": 16,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -840,7 +840,7 @@
   {
     "nombre": "Elements",
     "categoria": "fragancias",
-    "precio": 14.0,
+    "precio": 14,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -853,7 +853,7 @@
   {
     "nombre": "Nao For man",
     "categoria": "fragancias",
-    "precio": 16.0,
+    "precio": 16,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -866,7 +866,7 @@
   {
     "nombre": "Impacto For woman",
     "categoria": "fragancias",
-    "precio": 16.0,
+    "precio": 16,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -985,7 +985,7 @@
   {
     "nombre": "Leche entera en polvo Macrofood(1kg)",
     "categoria": "lacteos",
-    "precio": 8.0,
+    "precio": 8,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1118,7 +1118,7 @@
   {
     "nombre": "Caja de cerveza Bucanero 24u",
     "categoria": "alcohol",
-    "precio": 24.0,
+    "precio": 24,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1140,7 +1140,7 @@
   {
     "nombre": "Caja de cuartos de pollo 40lbs",
     "categoria": "cárnicos",
-    "precio": 45.0,
+    "precio": 45,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1195,7 +1195,7 @@
   {
     "nombre": "Pollo asado",
     "categoria": "cárnicos",
-    "precio": 8.0,
+    "precio": 8,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1256,7 +1256,7 @@
   {
     "nombre": "Helado nestle sabor chocolate 4.5lts",
     "categoria": "lacteos",
-    "precio": 20.0,
+    "precio": 20,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1267,7 +1267,7 @@
   {
     "nombre": "Pack de 1kg de jamón bravo y 1kg de queso gouda",
     "categoria": "cárnicos",
-    "precio": 23.0,
+    "precio": 23,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1286,5 +1286,17 @@
     "imagen": "img/products/galletas_marias.jpg",
     "descripcion": "Galletas marías, ideales para toda la familia",
     "nuevo": true
+  },
+  {
+    "nombre": "George's piernas de pollo",
+    "categoria": "cárnicos",
+    "precio": 12,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "img/products/georges_piernas_de_pollo.jpg",
+    "descripcion": "Paquetes de  cuartos pollo de 10Lb",
+    "nuevo": false
   }
 ]
