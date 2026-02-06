@@ -552,7 +552,8 @@
         height: 35px;
         display: flex;
         border-radius: 5px;
-        padding: 5px 5px;
+        padding-left: 8px;
+        padding-right: 8px;
         flex-grow: 1;
         transition: box-shadow 0.3s ease-in-out;
         margin: 0px 10px;
