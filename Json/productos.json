@@ -1298,5 +1298,17 @@
     "imagen": "img/products/georges_piernas_de_pollo.jpg",
     "descripcion": "Paquetes de  cuartos pollo de 10Lb",
     "nuevo": false
+  },
+  {
+    "nombre": "Caja de George's muslos de pollo (4 pqts)",
+    "categoria": "cárnicos",
+    "precio": 45,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/caja_de_georges_muslos_de_pollo_4_pqts.jpg",
+    "descripcion": "Caja que contiene 4 paquetes de muslos de pollo George's.\n40 libras de pura carne para la familia entera.",
+    "nuevo": true
   }
 ]
