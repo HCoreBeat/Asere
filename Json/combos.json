@@ -379,7 +379,7 @@
     ],
     "precio": 14.999,
     "imagen": "img/combos/Pack_Confituras.jpg",
-    "disponible": true
+    "disponible": false
   },
   {
     "nombre": "Pack Pa La Isla",
