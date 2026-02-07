@@ -1453,5 +1453,29 @@
     "imagen": "",
     "descripcion": "1kg",
     "nuevo": true
+  },
+  {
+    "nombre": "Saco de Arroz 25kg",
+    "categoria": "pastas-y-granos",
+    "precio": 45,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/saco_de_arroz_25kg.jpg",
+    "descripcion": "Saco de Arroz de muy buena calidad de 25kg . aproximadamente entre las 54 - 55 libras",
+    "nuevo": true
+  },
+  {
+    "nombre": "Saco de Azúcar 110lb",
+    "categoria": "pastas-y-granos",
+    "precio": 100,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/saco_de_azcar_110lb.jpg",
+    "descripcion": "Azúcar Don Isidro refino, de muy buena calidad",
+    "nuevo": true
   }
 ]
