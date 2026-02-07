@@ -1189,17 +1189,6 @@
     "nuevo": true
   },
   {
-    "nombre": "Frijoles negros x lb",
-    "categoria": "pastas-y-granos",
-    "precio": 1.43,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/frijoles_negros_x_lb.jpg",
-    "nuevo": true
-  },
-  {
     "nombre": "Refresco gaseado 1.5lts",
     "categoria": "bebidas",
     "precio": 2.37,
@@ -1450,7 +1439,7 @@
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "",
+    "imagen": "img/products/paquete_salchicha_1kg.jpg",
     "descripcion": "1kg",
     "nuevo": true
   },
