@@ -76,7 +76,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/paquete_de_salchichas_7u_350g.webp",
     "imagenesAdicionales": [
       "img/products/paquete_de_salchichas_7u_350g_1.jpg",
@@ -160,10 +160,10 @@
   {
     "nombre": "Aceite Fritura 900ml",
     "categoria": "despensa",
-    "precio": 2.97,
+    "precio": 3.97,
     "descuento": 0,
     "oferta": false,
-    "mas_vendido": false,
+    "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/aceite_fritura_900ml.jpg",
     "nuevo": false
@@ -1440,6 +1440,18 @@
     "disponible": true,
     "imagen": "img/products/lomito_de_atn_110g.jpg",
     "descripcion": "El mejor atún que podrás encontrar de este lado del Misisipi",
+    "nuevo": true
+  },
+  {
+    "nombre": "Paquete Salchicha 1kg",
+    "categoria": "cárnicos",
+    "precio": 3.17,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": true,
+    "disponible": true,
+    "imagen": "",
+    "descripcion": "1kg",
     "nuevo": true
   }
 ]
