@@ -364,6 +364,9 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
     await enviarEstadisticaCompra(fullName, email, phone, address, cartItems, total, affiliate);
 
     // Crear mensaje de pedido
+    const curTot = (window.getCurrentCurrency && window.getCurrentCurrency()) ? window.getCurrentCurrency() : 'USD';
+    const symTot = { USD: 'US$', EUR: '€', UYU: 'UYU$' }[curTot] || 'US$';
+    const totalFormatted = (parseFloat(total) || 0).toFixed(2);
     const message = `
     Nombre completo: ${fullName}
     Correo electrónico: ${email}
@@ -380,9 +383,7 @@ document.getElementById('payment-form').addEventListener('submit', async (event)
     Detalles del pedido:
     ${cartItems.map(item => `- ${item.nombre} (x${item.cantidad}): ${ (window.getCurrentCurrency && window.getCurrentCurrency()? ({ USD: 'US$', EUR: '€', UYU: 'UYU$' }[window.getCurrentCurrency()]) : 'US$') }${(item.precio * item.cantidad).toFixed(2)}`).join('\n')}
 
-    const curTot = (window.getCurrentCurrency && window.getCurrentCurrency()) ? window.getCurrentCurrency() : 'USD';
-    const symTot = { USD: 'US$', EUR: '€', UYU: 'UYU$' }[curTot] || 'US$';
-    Total: ${symTot}${total}
+    Total: ${symTot}${totalFormatted}
     `;
 
     const serviceID = 'default_service';
