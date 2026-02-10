@@ -158,17 +158,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Aceite Fritura 900ml",
-    "categoria": "despensa",
-    "precio": 3.97,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/aceite_fritura_900ml.jpg",
-    "nuevo": false
-  },
-  {
     "nombre": "Azúcar blanca x lb",
     "categoria": "despensa",
     "precio": 1.23,
@@ -548,17 +537,6 @@
     "nuevo": false
   },
   {
-    "nombre": "Aceite de Girasol 5lts",
-    "categoria": "despensa",
-    "precio": 18.33,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/aceite_saude_900ml.jpg",
-    "nuevo": false
-  },
-  {
     "nombre": "Desodorante Keewell",
     "categoria": "aseo",
     "precio": 1.47,
@@ -920,17 +898,6 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/almohadilla_sanitaria_24u.jpg",
-    "nuevo": false
-  },
-  {
-    "nombre": "Aceite de Girasol 5lts",
-    "categoria": "despensa",
-    "precio": 18.33,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/aceite_saude_900ml.jpg",
     "nuevo": false
   },
   {
