@@ -670,19 +670,6 @@
     "id": "mlgzank3-1ehfvlm"
   },
   {
-    "nombre": "Helado Nestle sabor vainilla 4.5lts",
-    "categoria": "lacteos",
-    "precio": 20,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": false,
-    "imagen": "img/products/helado_nestle.jpg",
-    "descripcion": "Sabor, según disponibilidad del momento. Calidad suprema",
-    "nuevo": false,
-    "id": "mlgzank3-yjpxser"
-  },
-  {
     "nombre": "Agua Natural Ciego Montero 500ml",
     "categoria": "bebidas",
     "precio": 0.7,
@@ -904,19 +891,6 @@
     "id": "mlgzank3-n58gw1u"
   },
   {
-    "nombre": "Pata de cerdo x Lb",
-    "categoria": "cárnicos",
-    "precio": 2.8,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/pata_de_cerdo_x_lb.jpg",
-    "descripcion": "Pata de Cerdo para tu cocina",
-    "nuevo": false,
-    "id": "mlgzank3-1o3k0ys"
-  },
-  {
     "nombre": "Frijol Negro Alubia (500g)",
     "categoria": "pastas-y-granos",
     "precio": 1.73,
@@ -991,19 +965,6 @@
     "id": "mlgzank3-fe92v6h"
   },
   {
-    "nombre": "Jamón Bravo 2kgs",
-    "categoria": "cárnicos",
-    "precio": 22.5,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": false,
-    "imagen": "img/products/jamn_bravo_rpido.jpg",
-    "descripcion": "Barras 2kg .El Jamón Bravo Rápido es un embutido de calidad, con una textura jugosa y un sabor intenso, ideal para sándwiches, tapas y recetas variadas. Se presenta en barras de 2 kg una opción perfecta para negocios y hogares.",
-    "nuevo": false,
-    "id": "mlgzank3-1iqksr5"
-  },
-  {
     "nombre": "Salsa rosa Rayan 440g",
     "categoria": "aderezos",
     "precio": 2.97,
@@ -1038,18 +999,6 @@
     "imagen": "img/products/pack_de_12_latas_de_nctar_de_pia.webp",
     "nuevo": true,
     "id": "mlgzank4-182v9d0"
-  },
-  {
-    "nombre": "Leche en polvo Lecherita 1kg",
-    "categoria": "lacteos",
-    "precio": 7.97,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/producto.jpg",
-    "nuevo": true,
-    "id": "mlgzank4-1yrs8n8"
   },
   {
     "nombre": "Carne de res enlatada 400g",
@@ -1122,18 +1071,6 @@
     "imagen": "img/products/desodorante_keewell_24h.jpg",
     "nuevo": true,
     "id": "mlgzank4-dez8evc"
-  },
-  {
-    "nombre": "Refresco instantáneo 2lts",
-    "categoria": "bebidas",
-    "precio": 0.17,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/producto.jpg",
-    "nuevo": true,
-    "id": "mlgzank4-1aaubmt"
   },
   {
     "nombre": "Paquete de hígados de pollo 1kg",
