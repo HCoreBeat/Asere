@@ -9,7 +9,8 @@
     "disponible": true,
     "imagen": "img/products/georges_piernas_de_pollo.jpg",
     "descripcion": "Paquetes de  cuartos pollo de 10Lb",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank1-1s3ntwb"
   },
   {
     "nombre": "Carne de cerdo x Lb",
@@ -21,7 +22,8 @@
     "disponible": true,
     "imagen": "img/products/Carne_de_Cerdo.jpg",
     "descripcion": "Carne fresca, se hace el corte al momento del pedido",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank1-sikt6w1"
   },
   {
     "nombre": "Carne de Ovejo x Lb",
@@ -33,7 +35,8 @@
     "disponible": true,
     "imagen": "img/products/Carne_de_Ovejo.jpg",
     "descripcion": "Carne fresca al momento del pedido",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank1-1s4o3vq"
   },
   {
     "nombre": "Picadillo Especial 400g",
@@ -44,7 +47,8 @@
     "mas_vendido": true,
     "disponible": false,
     "imagen": "img/products/picadillo_especial_400g.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank1-xsknso1"
   },
   {
     "nombre": "Jamón de Primera x Lb",
@@ -55,7 +59,8 @@
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/Jamon_de_Pierna.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank1-yn8fz97"
   },
   {
     "nombre": "Chuletas de cerdo x Lb",
@@ -67,7 +72,8 @@
     "disponible": true,
     "imagen": "img/products/Chuletas_de_Cerdo.jpg",
     "descripcion": "Corte fresco se realiza al momento del pedido",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank1-1ukdukm"
   },
   {
     "nombre": "Paquete de salchicha 10u (340g)",
@@ -84,7 +90,8 @@
       "img/products/paquete_de_salchichas_7u_350g_1.jpg",
       "img/products/paquete_de_salchichas_7u_350g_1.jpg"
     ],
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank1-mhrwj81"
   },
   {
     "nombre": "Pernil de Cerdo asado (15 libras)",
@@ -95,7 +102,8 @@
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/pernil_de_cerdo_asado_15_libras.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank1-1eo49xr"
   },
   {
     "nombre": "Queso criollo x Lb",
@@ -107,7 +115,8 @@
     "disponible": true,
     "imagen": "img/products/queso_criollo.jpg",
     "descripcion": "Queso Criollo Fresco, Disfruta del auténtico sabor del queso criollo, un clásico en la cocina tradicional. Este queso fresco tiene una textura firme y ligeramente quebradiza, ideal para rallar, cortar en cubos o simplemente disfrutarlo como está. Su color blanco puro y su aroma suave evocan frescura y calidad artesanal. Perfecto para acompañar tus platos favoritos, ya sea como ingrediente en ensaladas, arepas o junto a frutas y miel. Este queso es una opción deliciosa y versátil para los amantes de los sabores auténticos.",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank1-16w7pq2"
   },
   {
     "nombre": "Helado 4Lts de 2da",
@@ -119,7 +128,8 @@
     "disponible": true,
     "imagen": "img/products/Helado.jpg",
     "descripcion": "Calidad estándar ideal para cumplir antojos",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank1-nbhgac8"
   },
   {
     "nombre": "Manzana",
@@ -131,7 +141,8 @@
     "disponible": true,
     "imagen": "img/products/manzana.jpg",
     "descripcion": "Descubre la frescura y el sabor de una manzana premium, cuidadosamente seleccionada para ofrecerte la mejor calidad. Perfecta como snack saludable, para añadir a tus recetas favoritas o para disfrutar en cualquier momento del día. Con una textura crujiente, un color vibrante y una dulzura natural irresistible, esta manzana es una fuente excelente de vitaminas y antioxidantes 🍎",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank1-dfulus1"
   },
   {
     "nombre": "Manzanas Pack x6",
@@ -143,7 +154,8 @@
     "disponible": true,
     "imagen": "img/products/manzana_cantidad.jpg",
     "descripcion": "Disfruta de la frescura y el sabor natural de nuestras manzanas cuidadosamente seleccionadas. Este paquete incluye 6 manzanas premium, perfectas para tus meriendas saludables, recetas favoritas o para llevar un delicioso bocado en cualquier momento del día. Con su textura crujiente y dulzura irresistible, nuestras manzanas son una excelente fuente de vitaminas y antioxidantes. Llena tu cocina con lo mejor de la naturaleza 🍎",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank1-qrq1qtb"
   },
   {
     "nombre": "Nutela",
@@ -155,7 +167,8 @@
     "disponible": true,
     "imagen": "img/products/nutela_365.jpg",
     "descripcion": "Crema de Avellanas con Cacao 365 Cacao Hazelnut Cream Eviza Nezka 400 g combina chocolate y avellanas en una fórmula única con textura suave y cremosa. Versátil y deliciosa, es perfecta para untar en panes, galletas, crepas o para agregar un toque especial a tus postres y recetas de repostería. Elaborada con ingredientes seleccionados, garantiza calidad premium y un sabor inigualable. Su práctico envase ergonómico facilita el uso y almacenamiento, asegurando frescura en cada porción. Ideal para desayunos, meriendas y momentos especiales que se convierten en dulces experiencias diarias. Disponible con pedido fácil y envío rápido para disfrutar sin complicaciones.",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank1-14h56hk"
   },
   {
     "nombre": "Azúcar blanca x lb",
@@ -165,7 +178,8 @@
     "oferta": false,
     "mas_vendido": false,
     "imagen": "img/products/Azucar_Blanca.jpeg",
-    "disponible": true
+    "disponible": true,
+    "id": "mlgzank1-12y2y72"
   },
   {
     "nombre": "Frijol Negro x Lb",
@@ -176,7 +190,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Frijol_Negro.jpeg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-1gog4gl"
   },
   {
     "nombre": "Paquete de pan de bola 8u/10u",
@@ -187,7 +202,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Pan.jpeg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-c6lmvk1"
   },
   {
     "nombre": "Pastilla de Pollo",
@@ -198,7 +214,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Pastilla_de_Pollo.jpeg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-1cy7vbf"
   },
   {
     "nombre": "Cartón de Huevos",
@@ -210,7 +227,8 @@
     "disponible": true,
     "imagen": "img/products/Carton_de_Huevo.jpeg",
     "descripcion": "Disfruta del sabor inigualable de los verdaderos huevos de campo. Nuestros huevos provienen de gallinas criadas en libertad, al aire libre, donde pueden picotear pastos naturales, moverse sin restricciones y llevar una vida libre de estrés. Esta alimentación variada y su bienestar se traducen directamente en un producto superior: yemas de color intenso, cremosas y consistentes, y un sabor auténtico que transformará tus desayunos y recetas. Al elegir nuestros huevos frescos, no solo estás comprando un alimento rico en proteínas y nutrientes, sino que también apoyas las prácticas de bienestar animal y la agricultura sostenible. ¡Lleva a tu mesa la frescura y la calidad que solo los huevos de gallinas felices pueden ofrecer!",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-1pwcv2o"
   },
   {
     "nombre": "Espaguetis (500g)",
@@ -221,7 +239,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/espaguetis_500g.jpeg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-abqwioi"
   },
   {
     "nombre": "Leche Condensada azucarada (390g)",
@@ -232,7 +251,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/leche_condensada_azucarada_390g.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-33xzoiy"
   },
   {
     "nombre": "Sopa instantánea sabor Pollo (85g)",
@@ -243,7 +263,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/sopa_instantnea_sabor_pollo_85g.jpeg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-airi759"
   },
   {
     "nombre": "Arroz Rainha Brasil (1Kg)",
@@ -255,7 +276,8 @@
     "disponible": true,
     "imagen": "img/products/arroz_rainha.jpg",
     "descripcion": "Este arroz blanco tipo 1 de la marca Rainha Brasil está compuesto por granos largos finos, pulidos y libres de grumos, lo que garantiza una textura uniforme y suave al cocinar. Es una opción nutritiva, ideal para acompañar diversos platos y adaptarse a recetas tradicionales como arroz con frijoles, risottos o guarniciones ligeras y saludables.",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-psrcao1"
   },
   {
     "nombre": "Queso Gouda Premium (3Kg)",
@@ -267,7 +289,8 @@
     "disponible": false,
     "imagen": "img/products/queso_gouda_premium_3kg.jpg",
     "descripcion": "Disfruta del auténtico sabor del queso Gouda de Vima Foods, elaborado con ingredientes 100% naturales que garantizan una calidad inigualable. Su textura suave y cremosa es perfecta para realzar tus recetas favoritas, desde sándwiches y ensaladas hasta platos gourmet. Además, viene empacado para preservar su frescura y sabor, convirtiéndolo en una elección ideal tanto para bocadillos sencillos como para ocasiones especiales.",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-if448gk"
   },
   {
     "nombre": "Kg de Queso Gouda Premium",
@@ -279,7 +302,8 @@
     "disponible": false,
     "imagen": "img/products/queso_gouda_Kg.jpg",
     "descripcion": "Descubre el exquisito sabor del queso Gouda Premium, ahora disponible por kilogramos para adaptarse a tus necesidades. Este queso premium, elaborado con ingredientes 100% naturales, ofrece una textura suave y un sabor intenso que lo convierte en la elección ideal para tus recetas gourmet o para disfrutar en bocadillos frescos. Perfecto para amantes de la calidad y la frescura, cada kilogramo está cuidadosamente empacado para garantizar que llegue a ti en óptimas condiciones. Lleva la excelencia del queso Gouda Premium a tu cocina y deleita tu paladar con cada porción.",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-t1hx7o7"
   },
   {
     "nombre": "Mayonesa Victoria (250ml)",
@@ -291,7 +315,8 @@
     "disponible": true,
     "imagen": "img/products/mayonesa_vima_450ml.jpg",
     "descripcion": "Descubre la mayonesa Victoria de 250 ml, elaborada con ingredientes de alta calidad para garantizar un sabor auténtico y delicioso. Perfecta para acompañar sándwiches, ensaladas y tus recetas favoritas, esta mayonesa destaca por su textura cremosa y su frescura incomparable. Su presentación en un frasco práctico con tapa verde asegura la conservación del sabor y la comodidad en cada uso. Haz de Mayonesa Victoria tu elección de confianza para realzar cada bocado",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-g6p9901"
   },
   {
     "nombre": "Sal x Lb",
@@ -302,7 +327,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/sal_x_lb.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-147xys0"
   },
   {
     "nombre": "Paquete de harina (1kg)",
@@ -313,7 +339,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/paquete_de_harina_1kg.png",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-1nnvd1p"
   },
   {
     "nombre": "Frijoles Negros (1Kg)",
@@ -324,7 +351,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/frijoles_negros_1kg.webp",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-1o8tjjr"
   },
   {
     "nombre": "Frazada de Piso",
@@ -335,7 +363,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Frazada_de_Piso.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-q8ffff1"
   },
   {
     "nombre": "Cebolla blanca × lb",
@@ -347,7 +376,8 @@
     "disponible": true,
     "imagen": "img/products/mazo_de_cebolla_blanca.jpg",
     "descripcion": "La cebolla blanca es un ingrediente esencial, reconocida por su frescura y calidad. Su forma redonda y su brillante color blanco la hacen atractiva, mientras que su sabor suave pero distintivo es ideal para una amplia variedad de recetas. Desde sofritos aromáticos hasta ensaladas crujientes, esta cebolla agrega un toque especial a cualquier platillo. Perfecta para quienes valoran productos naturales y versátiles en su cocina, garantizando satisfacción en cada preparación.",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-1d1yfql"
   },
   {
     "nombre": "Mano de plátano burro",
@@ -358,7 +388,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Platano_Burro.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-104syot"
   },
   {
     "nombre": "Pepino x Lb",
@@ -368,7 +399,8 @@
     "oferta": false,
     "mas_vendido": false,
     "imagen": "img/products/Pepino.jpg",
-    "disponible": true
+    "disponible": true,
+    "id": "mlgzank2-rixdtgx"
   },
   {
     "nombre": "Tomate x Lb",
@@ -379,7 +411,8 @@
     "mas_vendido": false,
     "disponible": false,
     "imagen": "img/products/Tomate.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-184lqmt"
   },
   {
     "nombre": "Limón x Lb",
@@ -391,7 +424,8 @@
     "disponible": true,
     "imagen": "img/products/Limon.jpg",
     "descripcion": "Limón jugoso natural",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-8bw1f7k"
   },
   {
     "nombre": "Plátano macho x unidad",
@@ -402,7 +436,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Platano_Macho.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-7rrnc41"
   },
   {
     "nombre": "Boniato x Lb",
@@ -413,7 +448,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Boniato.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-6p9wgln"
   },
   {
     "nombre": "Caja de refresco Naranja",
@@ -424,7 +460,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/caja_de_refresco_naranja.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-7lrzeme"
   },
   {
     "nombre": "Caja de Malta Bucanero",
@@ -435,7 +472,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Caja_de_Malta_Bucanero.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-1yo4pwi"
   },
   {
     "nombre": "Refresco Limón (330ml)",
@@ -446,7 +484,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/refresco_limn_330ml.webp",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-3q88ipu"
   },
   {
     "nombre": "Cervezas Cristal (355ml)",
@@ -456,7 +495,8 @@
     "oferta": false,
     "mas_vendido": false,
     "imagen": "img/products/Cerveza_Cristal.jpg",
-    "disponible": true
+    "disponible": true,
+    "id": "mlgzank2-58oemeg"
   },
   {
     "nombre": "Caja de Cervezas Cristal",
@@ -467,7 +507,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Caja_Cerveza_Cristal.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-13eusc4"
   },
   {
     "nombre": "Malta Bucanero",
@@ -478,7 +519,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Malta_Bucanero.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-xjt0jl1"
   },
   {
     "nombre": "Refresco Naranja (330ml)",
@@ -489,7 +531,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/refresco_naranja_330ml.webp",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-10xda28"
   },
   {
     "nombre": "Galletas de soda Salricas 3 tacos",
@@ -500,7 +543,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Galleta_de_Soda_Salricas.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-1476a5b"
   },
   {
     "nombre": "Vinagre de vino tinto (500ml)",
@@ -511,7 +555,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/vinagre_1litro.jpeg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-153zx0s"
   },
   {
     "nombre": "Leche entera en polvo Macrofood(1kg)",
@@ -523,7 +568,8 @@
     "disponible": true,
     "imagen": "img/products/leche_entera_en_polvo_vima_1kg.jpg",
     "descripcion": "Leche entera \n\nNo vitaminada",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-1xwu0qe"
   },
   {
     "nombre": "Pasta de tomate Oderich 350g",
@@ -534,7 +580,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/pasta_de_tomate_400g.webp",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-1wjn711"
   },
   {
     "nombre": "Desodorante Keewell",
@@ -545,7 +592,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Desodorante_Keewell.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-15j5pds"
   },
   {
     "nombre": "Paquete de Papel Sanitario 4 rollos",
@@ -556,7 +604,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/paquete_de_papel_sanitario.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-1lffzlq"
   },
   {
     "nombre": "Colonia Bonabel de Violetas",
@@ -567,7 +616,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/Colobnia_Bonabel_de_Violetas.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank2-1lafy52"
   },
   {
     "nombre": "Spam de cerdo 340g",
@@ -578,7 +628,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/spam.webp",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-1yyr2pc"
   },
   {
     "nombre": "Picadillo de pollo (1Kg)",
@@ -589,7 +640,8 @@
     "mas_vendido": true,
     "disponible": true,
     "imagen": "img/products/Picadillo_de_Pollo.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-vqyyagj"
   },
   {
     "nombre": "Jamón Bravo 2kgs",
@@ -601,7 +653,8 @@
     "disponible": true,
     "imagen": "img/products/jamn_bravo_rpido.jpg",
     "descripcion": "Barras 2kg .El Jamón Bravo Rápido es un embutido de calidad, con una textura jugosa y un sabor intenso, ideal para sándwiches, tapas y recetas variadas. Se presenta en barras de 2 kg una opción perfecta para negocios y hogares.",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-1g428z1"
   },
   {
     "nombre": "Saco de arroz americano importado 25kgs",
@@ -613,7 +666,8 @@
     "disponible": false,
     "imagen": "img/products/saco_de_arroz_americano_importado_50lb.jpg",
     "descripcion": "Arroz importado. Viene limpio y cocina bien",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-1ehfvlm"
   },
   {
     "nombre": "Helado Nestle sabor vainilla 4.5lts",
@@ -625,7 +679,8 @@
     "disponible": false,
     "imagen": "img/products/helado_nestle.jpg",
     "descripcion": "Sabor, según disponibilidad del momento. Calidad suprema",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-yjpxser"
   },
   {
     "nombre": "Agua Natural Ciego Montero 500ml",
@@ -638,7 +693,8 @@
     "imagen": "img/products/agua_natural.jpg",
     "descripcion": "Mantén la hidratación con el paquete de agua natural, una opción saludable y conveniente para el día a día. Este pack contiene varias botellas de agua purificada, ideales para llevar contigo al trabajo, al gimnasio o en tus viajes. Con su sabor limpio y fresco, esta agua es perfecta para rehidratar el cuerpo en cualquier momento. El diseño práctico de las botellas facilita su transporte, asegurando que siempre tengas a mano la mejor fuente de hidratación para ti y tu familia.",
     "imagenesAdicionales": [],
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-28o1rh1"
   },
   {
     "nombre": "Toallas Sanitarias Princesa (10u)",
@@ -650,7 +706,8 @@
     "disponible": true,
     "imagen": "img/products/almohadillas_sanitarias.jpg",
     "descripcion": "Las Toallas Sanitarias Princesa de Algodón ofrecen una protección cómoda y confiable para uso diurno y nocturno. Con su diseño con alas, aseguran un ajuste seguro y evitan fugas, brindando máxima absorción y tranquilidad durante todo el día. Este paquete contiene 10 toallas, cada una diseñada para ofrecerte la suavidad y el cuidado que necesitas. Su capa superior de algodón minimiza la irritación y proporciona una sensación de frescura, ideal para una protección completa y discreta.",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-1f1x18n"
   },
   {
     "nombre": "Salsa rosa Rayan 440g",
@@ -661,7 +718,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/pasta_de_bocadito.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-1g0rdoq"
   },
   {
     "nombre": "Paquete de galletats Lamore",
@@ -672,7 +730,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/pack_golozetas_12u_de_paquetes.webp",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-1lp3kzf"
   },
   {
     "nombre": "Galletas Renata",
@@ -684,7 +743,8 @@
     "disponible": true,
     "imagen": "img/products/galletas_renata.jpg",
     "descripcion": "Disfruta de la simplicidad y el sabor clásico de las galletas de maicena Renata. Este paquete, con un peso neto de 200 gramos, presenta un diseño atractivo y funcional, en tonos de azul y naranja, que destaca el nombre de la marca. Las galletas, con su textura delicada y un toque dulce, son ideales para acompañar tu café o té por la mañana, o para disfrutar como una merienda ligera en cualquier momento. En la etiqueta se puede apreciar una imagen de las galletas y una taza de café, sugiriendo la combinación perfecta. El empaque también destaca que el producto contiene maíz, un ingrediente clave que le da su sabor y textura distintivos. Las galletas Renata Maizena son un deleite que te transportará a los sabores de la infancia.",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-sl98cib"
   },
   {
     "nombre": "Malta Unlaguer x unidad 330ml",
@@ -695,7 +755,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/malta_guajira_x_unidad_330ml.png",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-1c0r3fg"
   },
   {
     "nombre": "Refresco Gaseado",
@@ -707,7 +768,8 @@
     "disponible": true,
     "imagen": "img/products/refresco_gaseado.jpg",
     "descripcion": "Sabor según disponibilidad del momento. Disfruta del refrescante y vibrante surtido de bebidas de Ciego Montero, una línea de refrescos con sabor tradicional que no puede faltar en tu hogar. Este pack incluye tres de sus sabores más populares, presentados en convenientes botellas de plástico, perfectas para cualquier ocasión. Encontrarás la clásica Tukola, con su inconfundible sabor a cola; una refrescante gaseosa, ideal para quienes prefieren un sabor más neutro y burbujeante; y la deliciosa Naranja, una explosión de sabor cítrico que te encantará. Cada botella está claramente identificada con su etiqueta y color característico, facilitando la elección. Ideales para acompañar tus comidas, animar tus fiestas o simplemente para saciar tu sed en cualquier momento del día. Elige el pack de refrescos Ciego Montero y disfruta de la variedad y el sabor que te ofrecen.",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-1qurynp"
   },
   {
     "nombre": "Agua Natural Ciego Montero(1.5l)",
@@ -719,7 +781,8 @@
     "disponible": true,
     "imagen": "img/products/agua_natural_pomo.jpg",
     "descripcion": "Rehidrátate y refresca tu cuerpo con la pureza y el sabor natural del agua Ciego Montero. Esta agua mineral, presentada en una botella de plástico de gran capacidad con tapa de rosca blanca, es la opción ideal para mantenerte hidratado durante todo el día. Su etiqueta, con un diseño en tonos azules y verdes que evocan la naturaleza y la frescura, destaca el logo de la marca Ciego Montero y la leyenda de \"Agua mineral natural\", garantizando la calidad y la pureza de la bebida. Perfecta para llevar al trabajo, al gimnasio o para tener en casa, esta botella te ofrece la hidratación que necesitas de forma conveniente y deliciosa. Elige Ciego Montero, el agua mineral natural que te cuida y te acompaña en cada momento, brindándote la frescura y el bienestar que solo un producto de su calidad puede ofrecer.",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-11bhewr"
   },
   {
     "nombre": "Paquete de íntimas 8u",
@@ -730,7 +793,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/almohadilla_sanitaria_24u.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-426dh21"
   },
   {
     "nombre": "S&C",
@@ -743,7 +807,8 @@
     "imagen": "img/products/perfume_s_y_c.jpg",
     "descripcion": "Te ofrecemos el perfume S&C Men, un eau de toilette diseñado para el hombre moderno y sofisticado. Presentado en un elegante frasco de vidrio transparente, este perfume revela un líquido de tono amarillo claro. Su tapa de diseño metálico y la tipografía en blanco y negro, resaltan la sofisticación del producto. El nombre S&C Men se encuentra grabado en la botella, creando un aspecto de alta gama. El perfume viene en una caja a juego, lo que lo convierte en una excelente opción para regalar. Este perfume de larga duración, es ideal para usar tanto de día como de noche, en la oficina o en eventos sociales. Con una fragancia fresca y masculina, S&C Men te hará sentir confiado y seguro en todo momento.\n\n",
     "imagenesAdicionales": [],
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-2hr9b01"
   },
   {
     "nombre": "Elements",
@@ -756,7 +821,8 @@
     "imagen": "img/products/perfume_elements.jpg",
     "descripcion": "Adquiere la fragancia Elements de S&C Men, un eau de toilette fresco y vibrante que te conecta con la naturaleza. Presentado en una elegante botella de vidrio transparente de 100 ml con una tapa metálica brillante, este perfume revela un líquido de tono amarillo claro. Su caja, con un diseño texturizado en un vibrante color verde agua y una banda azul claro, evoca la frescura y la vitalidad de la naturaleza. La botella, con el nombre \"Elements\" grabado, añade un toque de distinción y modernidad. Este perfume es ideal para el hombre que busca una fragancia ligera, refrescante y duradera, perfecta para el uso diario o para ocasiones especiales. S&C Men Elements te invita a redescubrir tu conexión con la naturaleza a través de su cautivadora esencia.",
     "imagenesAdicionales": [],
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-1akz3mi"
   },
   {
     "nombre": "Nao For man",
@@ -769,7 +835,8 @@
     "imagen": "img/products/perfume_nao.jpg",
     "descripcion": "Disfruta de la fragancia Nao de S&C Men, una colonia diseñada para el hombre que busca un aroma distintivo y refrescante. Presentada en un elegante frasco de 100 ml con una forma ovalada y una tapa de color dorado, esta colonia destaca por su sofisticación y diseño único. Su caja, en un sobrio color verde oscuro con la tipografía en blanco, resalta el nombre del perfume y el logo de la marca. Con un aroma que evoca frescura y masculinidad, Nao es la elección perfecta para el uso diario, ya sea para el trabajo o para una salida casual. Su práctico formato la hace ideal para llevar contigo a donde vayas. Elige S&C Men Nao y deja una impresión duradera con su cautivadora esencia.",
     "imagenesAdicionales": [],
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-qrmcnw1"
   },
   {
     "nombre": "Impacto For woman",
@@ -782,7 +849,8 @@
     "imagen": "img/products/perfume_impacto.jpg",
     "descripcion": "Añade un toque de seducción a tu día con el perfume Impacto Woman de S&C. Esta fragancia, presentada en una elegante botella de vidrio transparente con un tono rosado, es la elección perfecta para la mujer moderna y segura de sí misma. Su tapa negra y la tipografía en blanco y rojo, resaltan la feminidad y el carácter del perfume. La caja, con su diseño en tonos rojizos y negros, evoca la energía y la pasión de la mujer actual. Con un aroma que equilibra notas florales y frutales, Impacto Woman es ideal para usar tanto de día como de noche. Su práctico tamaño de 100 ml la convierte en el compañero perfecto para tu bolso. S&C Impacto Woman es más que un perfume, es una declaración de estilo.",
     "imagenesAdicionales": [],
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-lup37m4"
   },
   {
     "nombre": "Paquete de Azúcar Extra Fina 1Kg",
@@ -793,7 +861,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/azcar_extra_fina_1kg_mirante.jpg",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank3-14obyzx"
   },
   {
     "nombre": "Café Purasangre (250g)",
@@ -805,7 +874,8 @@
     "disponible": true,
     "imagen": "img/products/caf_purasangre_250g.jpg",
     "descripcion": "Descubre la nobleza en cada taza con el Café Purasangre Molido. Este café ha sido cuidadosamente mezclado para lograr un equilibrio de sabor y potencia inigualable, combinando un 70% de granos Robusta para cuerpo y crema, con un 30% de granos Arábica para un aroma fino y delicado. Su Tueste Natural garantiza que disfrutes del sabor puro del café sin aditivos, resaltando las mejores cualidades de esta blend única. Ideal para los verdaderos amantes del café que buscan una experiencia intensa pero armónica. Cada paquete de 250 g promete llevar a tu hogar la fuerza y el carácter que definen a un café de pura casta.",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank3-1hqf420"
   },
   {
     "nombre": "Costillas de Cerdo x Lb",
@@ -817,7 +887,8 @@
     "disponible": true,
     "imagen": "img/products/costillas_de_cerdo_x_lb.jpg",
     "descripcion": "Corte de carne fresca. Se corta al pedido. Ideal para tu cocina y tus comidas",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank3-12z5u5d"
   },
   {
     "nombre": "Lomo de cerdo x Lb",
@@ -829,7 +900,8 @@
     "disponible": true,
     "imagen": "img/products/lomo_de_cerdo_x_lb.jpg",
     "descripcion": "Corte de carne fresca. Se corta al pedido",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank3-n58gw1u"
   },
   {
     "nombre": "Pata de cerdo x Lb",
@@ -841,7 +913,8 @@
     "disponible": false,
     "imagen": "img/products/pata_de_cerdo_x_lb.jpg",
     "descripcion": "Pata de Cerdo para tu cocina",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-1o3k0ys"
   },
   {
     "nombre": "Frijol Negro Alubia (500g)",
@@ -853,7 +926,8 @@
     "disponible": true,
     "imagen": "img/products/frijol_negro_alubia_500g.jpg",
     "descripcion": "Lleva a tu mesa la base de la cocina tradicional con el Frijol Negro (Alubia) de IFA Eliges. Reconocido por su profundo sabor, su textura suave y su versatilidad, este frijol es un ingrediente esencial para preparar platos emblemáticos como la feijoada, el arroz congrí, o cualquier guiso y potaje. Además de su excelente sabor, el Frijol Negro de IFA es una Fuente de Fibra, contribuyendo a una dieta equilibrada y nutritiva. Cada paquete de 500 g garantiza granos de alta calidad, listos para ser remojados y cocinados hasta alcanzar la perfección. ¡Elige IFA para asegurar el auténtico sabor en tus platos más queridos!",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank3-1qm9qmp"
   },
   {
     "nombre": "Cebolla blanca × lb",
@@ -865,7 +939,8 @@
     "disponible": true,
     "imagen": "img/products/mazo_de_cebolla_blanca.jpg",
     "descripcion": "La cebolla blanca es un ingrediente esencial, reconocida por su frescura y calidad. Su forma redonda y su brillante color blanco la hacen atractiva, mientras que su sabor suave pero distintivo es ideal para una amplia variedad de recetas. Desde sofritos aromáticos hasta ensaladas crujientes, esta cebolla agrega un toque especial a cualquier platillo. Perfecta para quienes valoran productos naturales y versátiles en su cocina, garantizando satisfacción en cada preparación.",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-uh8jflq"
   },
   {
     "nombre": "Vinagre de vino tinto (500ml)",
@@ -876,7 +951,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/vinagre_1litro.jpeg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-5dymm24"
   },
   {
     "nombre": "Leche entera en polvo Macrofood(1kg)",
@@ -887,7 +963,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/leche_entera_en_polvo_vima_1kg.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-1pzccww"
   },
   {
     "nombre": "Paquete de íntimas 8u",
@@ -898,7 +975,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/almohadilla_sanitaria_24u.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-d7a8dnp"
   },
   {
     "nombre": "Malta Unlaguer x unidad 330ml",
@@ -909,7 +987,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/malta_guajira_x_unidad_330ml.png",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-fe92v6h"
   },
   {
     "nombre": "Jamón Bravo 2kgs",
@@ -921,7 +1000,8 @@
     "disponible": false,
     "imagen": "img/products/jamn_bravo_rpido.jpg",
     "descripcion": "Barras 2kg .El Jamón Bravo Rápido es un embutido de calidad, con una textura jugosa y un sabor intenso, ideal para sándwiches, tapas y recetas variadas. Se presenta en barras de 2 kg una opción perfecta para negocios y hogares.",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-1iqksr5"
   },
   {
     "nombre": "Salsa rosa Rayan 440g",
@@ -932,7 +1012,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/pasta_de_bocadito.jpg",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank3-w0yr57a"
   },
   {
     "nombre": "Pack de 12 latas de néctar de pera",
@@ -943,7 +1024,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/pack_de_12_latas_de_nctar_de_pera.jpg",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank3-18immgh"
   },
   {
     "nombre": "Pack de 12 latas de néctar de piña",
@@ -954,7 +1036,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/pack_de_12_latas_de_nctar_de_pia.webp",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-182v9d0"
   },
   {
     "nombre": "Leche en polvo Lecherita 1kg",
@@ -965,7 +1048,8 @@
     "mas_vendido": false,
     "disponible": false,
     "imagen": "img/products/producto.jpg",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-1yrs8n8"
   },
   {
     "nombre": "Carne de res enlatada 400g",
@@ -976,7 +1060,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/carne_de_res_enlatada_400g.jpg",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-1hd119m"
   },
   {
     "nombre": "Caja de cerveza Bucanero 24u",
@@ -987,7 +1072,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/caja_de_cerveza_bucanero_24u.jpg",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-1gsjq05"
   },
   {
     "nombre": "Cerveza Bucanero x und.",
@@ -998,7 +1084,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/cerveza_bucanero_x_und..jpg",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-492ui61"
   },
   {
     "nombre": "Caja de cuartos de pollo 40lbs",
@@ -1009,7 +1096,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/caja_de_cuartos_de_pollo_40lbs.webp",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-1py2nat"
   },
   {
     "nombre": "Paquete de coditos 500g",
@@ -1020,7 +1108,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/paquete_de_coditos_500g.jpg",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-1mscjxf"
   },
   {
     "nombre": "Desodorante Keewell 24h",
@@ -1031,7 +1120,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/desodorante_keewell_24h.jpg",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-dez8evc"
   },
   {
     "nombre": "Refresco instantáneo 2lts",
@@ -1042,7 +1132,8 @@
     "mas_vendido": false,
     "disponible": false,
     "imagen": "img/products/producto.jpg",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-1aaubmt"
   },
   {
     "nombre": "Paquete de hígados de pollo 1kg",
@@ -1053,7 +1144,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/paquete_de_hgados_de_pollo_1kg.jpg",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-1minyju"
   },
   {
     "nombre": "Pollo asado",
@@ -1064,7 +1156,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/pollo_asado.jpg",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-1e6t11s"
   },
   {
     "nombre": "Frijoles pintos x lb",
@@ -1075,7 +1168,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/frijoles_pintos_x_lb-.jpg",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-4veaetc"
   },
   {
     "nombre": "Frijoles colorados x lb",
@@ -1086,7 +1180,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/producto.jpg",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-1oad65v"
   },
   {
     "nombre": "Refresco gaseado 1.5lts",
@@ -1103,7 +1198,8 @@
       "img/products/refresco_gaseado_1.5lts_1.jpg",
       "img/products/refresco_gaseado_1.5lts_2.jpg"
     ],
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-1a8sirs"
   },
   {
     "nombre": "Helado nestle sabor chocolate 4.5lts",
@@ -1114,7 +1210,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/helado_nestle_sabor_chocolate_4.5lts.jpg",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-jlsho8g"
   },
   {
     "nombre": "Pack de 1kg de jamón bravo y 1kg de queso gouda",
@@ -1125,7 +1222,8 @@
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/pack_de_1kg_de_jamn_bravo_y_1kg_de_queso_gouda.jpg",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-gbgcf0r"
   },
   {
     "nombre": "Galletas Marias",
@@ -1137,7 +1235,8 @@
     "disponible": true,
     "imagen": "img/products/galletas_marias.jpg",
     "descripcion": "Galletas marías, ideales para toda la familia",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-14kue04"
   },
   {
     "nombre": "Georges piernas de pollo",
@@ -1149,7 +1248,8 @@
     "disponible": true,
     "imagen": "img/products/georges_piernas_de_pollo.jpg",
     "descripcion": "Paquetes de  cuartos pollo de 10Lb",
-    "nuevo": false
+    "nuevo": false,
+    "id": "mlgzank4-lbeu42h"
   },
   {
     "nombre": "Caja de George's muslos de pollo (4 pqts)",
@@ -1161,7 +1261,8 @@
     "disponible": true,
     "imagen": "img/products/caja_de_georges_muslos_de_pollo_4_pqts.jpg",
     "descripcion": "Caja que contiene 4 paquetes de muslos de pollo George's.\n40 libras de pura carne para la familia entera.",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-1igm97o"
   },
   {
     "nombre": "Lavadora Mystic (11Kg)",
@@ -1173,7 +1274,8 @@
     "disponible": true,
     "imagen": "img/products/lavadora_mystic_11kg.jpg",
     "descripcion": "La Lavadora Mystic de 11Kg ofrece una mayor capacidad para quienes necesitan lavar cargas más grandes con comodidad y eficiencia. Su diseño robusto y su panel superior intuitivo permiten un uso sencillo y confiable en el día a día. Con 11 kilogramos de capacidad, es perfecta para familias medianas o para quienes buscan un equipo más amplio sin sacrificar practicidad. Su construcción resistente y su garantía de 1 mes la convierten en una opción segura y accesible para el hogar.",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-w4px7vl"
   },
   {
     "nombre": "Bicicleta Eléctrica Bucatti (48V – 1000W)",
@@ -1185,7 +1287,8 @@
     "disponible": true,
     "imagen": "img/products/bicicleta_elctrica_bucatti_48v_1000w.jpg",
     "descripcion": "La Bicicleta Eléctrica Bucatti es un modelo robusto y moderno diseñado para ofrecer potencia, autonomía y comodidad en cada recorrido. Equipada con un motor de 1000 watts, funciona con un sistema eléctrico de 48V y una batería de 22,5Ah. ideal para desplazamientos urbanos y trayectos más largos sin esfuerzo. Sus gomas #16 proporcionan estabilidad y agarre, mientras que su diseño compacto y deportivo la hace perfecta para uso diario. Disponible en colores negro y rojo, es una opción confiable para quienes buscan movilidad eficiente y un estilo llamativo. Incluye garantía de 1 mes.",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-c4n3r81"
   },
   {
     "nombre": "Bici Moto VEDCA (48V – 30Ah)",
@@ -1197,7 +1300,8 @@
     "disponible": true,
     "imagen": "img/products/bici_moto_vedca_48v_30ah.jpg",
     "descripcion": "La Bici Moto VEDCA es una opción compacta, moderna y eficiente para quienes buscan movilidad eléctrica confiable. Funciona con un sistema de 48V y una batería de 30Ah, ofreciendo una excelente autonomía para recorridos urbanos. Sus gomas #10 brindan estabilidad y maniobrabilidad, mientras que su diseño tipo scooter la hace cómoda y fácil de conducir. Disponible en colores rojo, azul y negro, combina estilo con funcionalidad. Incluye garantía de 1 mes, convirtiéndola en una alternativa ideal para el transporte diario con bajo consumo y cero emisiones.",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-1wq8bgu"
   },
   {
     "nombre": "Bicicleta Eléctrica VEDCA",
@@ -1209,7 +1313,8 @@
     "disponible": true,
     "imagen": "img/products/bicicleta_elctrica_vedca.jpg",
     "descripcion": "La Bicicleta Eléctrica VEDCA es una opción ligera, eficiente y práctica para quienes buscan movilidad urbana sin complicaciones. Equipada con una batería Litium Lipo4, ofrece un sistema eléctrico de 48V y 12Ah, ideal para recorridos diarios con un consumo mínimo. Sus gomas #10 garantizan estabilidad y maniobrabilidad, mientras que su autonomía de 35 a 40 km permite desplazamientos cómodos sin necesidad de recargas frecuentes. Su diseño compacto con cesta frontal la hace perfecta para compras, mandados o transporte personal. Incluye garantía de un mes, convirtiéndola en una alternativa confiable y accesible para el día a día.",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-409alq8"
   },
   {
     "nombre": "Bici Moto TOP MAQ Evolution 2025",
@@ -1221,7 +1326,8 @@
     "disponible": true,
     "imagen": "img/products/bici_moto_top_maq_evolution_2025.jpg",
     "descripcion": "La Bici Moto TOP MAQ Evolution 2025 es un modelo de alto rendimiento diseñado para quienes buscan potencia, autonomía y estilo en un solo vehículo eléctrico. Equipada con un sistema de 48V y una batería de 45Ah, ofrece una excelente duración por carga, ideal para recorridos largos. Su motor de 3000 watts proporciona una aceleración fuerte y estable, mientras que sus gomas #14 garantizan agarre y seguridad en diferentes superficies. Con un diseño moderno y deportivo, disponible en colores rojo, azul, blanco y negro, esta versión 2025 combina estética y funcionalidad. Incluye garantía de 1 mes, convirtiéndose en una opción premium dentro de la movilidad eléctrica.",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-1gxic6r"
   },
   {
     "nombre": "Bici Power Bucatty 2025 (48V – 45Ah – 3000W)",
@@ -1233,7 +1339,8 @@
     "disponible": true,
     "imagen": "img/products/bici_power_bucatty_2025_48v_45ah_3000w.jpg",
     "descripcion": "La Bici Power Bucatty 2025 es un modelo eléctrico de alto rendimiento diseñado para quienes buscan potencia, autonomía y estilo en un solo vehículo. Su sistema de 48V combinado con una batería de 45Ah ofrece una excelente duración por carga, ideal para recorridos largos y uso intensivo. El motor de 3000 watts proporciona una aceleración fuerte y estable, mientras que sus gomas #14 garantizan agarre y seguridad en diferentes superficies. Con un diseño moderno y robusto, disponible en color rojo, esta versión 2025 destaca por su presencia y fiabilidad. Incluye garantía de 1 mes, convirtiéndose en una opción premium dentro de la movilidad eléctrica.",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-g7v4ro8"
   },
   {
     "nombre": "Bici Moto VEDCA Lipo4 (60V – 30Ah – 1000W)",
@@ -1245,7 +1352,8 @@
     "disponible": true,
     "imagen": "img/products/bici_moto_vedca_lipo4_60v_30ah_1000w.jpg",
     "descripcion": "La Bici Moto VEDCA Lipo4 es una opción potente y moderna dentro de la movilidad eléctrica, equipada con una batería Lipo4 de 60V y 30Ah que ofrece una excelente autonomía y rendimiento. Su motor de 1000W proporciona una aceleración estable y suficiente para desplazamientos urbanos y trayectos más largos. Las gomas #10 garantizan un buen agarre y maniobrabilidad, mientras que su diseño compacto y estilizado la convierte en una alternativa práctica y atractiva para el uso diario. Disponible en colores rojo, azul y morado, incluye garantía de 1 mes, ofreciendo seguridad y confianza al comprador.",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-unisua4"
   },
   {
     "nombre": "Motorina TOP MAQ Raptor (72V – 45Ah – 3000W)",
@@ -1257,7 +1365,8 @@
     "disponible": true,
     "imagen": "img/products/motorina_top_maq_raptor_72v_45ah_3000w.jpg",
     "descripcion": "La Motorina TOP MAQ Raptor es un modelo eléctrico de alto rendimiento diseñado para quienes buscan potencia, autonomía y una conducción sólida. Equipada con un sistema de 72V y una batería de 45Ah, ofrece una excelente duración por carga, ideal para recorridos largos y uso intensivo. Su motor de 3000 watts proporciona una aceleración fuerte y estable, mientras que sus gomas #13 garantizan agarre y seguridad en diferentes superficies. Incluye además caja Votol M50, un controlador avanzado que mejora la respuesta y eficiencia del motor. Disponible en color rojo, este modelo combina diseño moderno, robustez y fiabilidad. Incluye garantía de 1 mes.",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-rvl9qi1"
   },
   {
     "nombre": "Motorina TOP MAQ FF (72V – 45Ah – 3000W)",
@@ -1269,7 +1378,8 @@
     "disponible": true,
     "imagen": "img/products/motorina_top_maq_ff_72v_45ah_3000w.jpg",
     "descripcion": "La Motorina TOP MAQ FF es un modelo eléctrico de alto rendimiento diseñado para quienes buscan potencia, autonomía y un estilo moderno. Funciona con un sistema de 72V y una batería de 45Ah, ofreciendo una excelente duración por carga ideal para recorridos largos y uso intensivo. Su motor de 3000 watts proporciona una aceleración fuerte y estable, mientras que sus gomas #13 garantizan agarre y seguridad en diferentes superficies. Incorpora además caja Votol M50, un controlador avanzado que optimiza la respuesta del motor y mejora la eficiencia general. Disponible en colores rojo y negro, este modelo combina diseño robusto, tecnología y fiabilidad. Incluye garantía de 1 mes.",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-16i28ko"
   },
   {
     "nombre": "Lavadora Mystic Super Wash (7Kg)",
@@ -1281,7 +1391,8 @@
     "disponible": true,
     "imagen": "img/products/lavadora_mystic_super_wash_7kg.jpg",
     "descripcion": "La Lavadora Mystic Super Wash de 7Kg es una opción práctica y eficiente para el hogar, diseñada para ofrecer un lavado confiable en un formato compacto. Su estructura resistente y su panel de control superior facilitan el uso diario, permitiendo ciclos de lavado rápidos y efectivos. Con capacidad para 7 kilogramos, es ideal para familias pequeñas o para quienes buscan una solución económica y funcional. Su diseño moderno en tonos blanco y negro combina con cualquier espacio, y cuenta con 1 mes de garantía, brindando seguridad y respaldo al comprador.",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-vmo15hq"
   },
   {
     "nombre": "Lavadora Milexus (7Kg)",
@@ -1293,7 +1404,8 @@
     "disponible": true,
     "imagen": "img/products/lavadora_milexus_7kg.jpg",
     "descripcion": "La Lavadora Milexus de 7Kg es una opción práctica y eficiente para el hogar, diseñada para ofrecer un lavado confiable en un formato compacto. Cuenta con un panel superior de tres perillas que permite seleccionar fácilmente los ciclos y funciones, además de un sistema Air Dry que mejora el secado de la ropa. Su capacidad de 7 kilogramos la hace ideal para familias pequeñas o para quienes buscan una solución económica y funcional. Con un diseño moderno y resistente, es perfecta para espacios reducidos y uso diario. Incluye 1 mes de garantía, brindando seguridad y respaldo al comprador.",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-1wkh6v7"
   },
   {
     "nombre": "Garbanzos (1lb)",
@@ -1305,7 +1417,8 @@
     "disponible": true,
     "imagen": "img/products/garbanzos_1lb.jpg",
     "descripcion": "Los mejores garbanzos para disfrutar con la familia",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-ptptjb1"
   },
   {
     "nombre": "Sal 1Kg",
@@ -1317,7 +1430,8 @@
     "disponible": true,
     "imagen": "img/products/sal_1kg.jpg",
     "descripcion": "La mejor sal y la más fina para tu cocina",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-1lfsbn9"
   },
   {
     "nombre": "Lomito de atún 110g",
@@ -1329,7 +1443,8 @@
     "disponible": true,
     "imagen": "img/products/lomito_de_atn_110g.jpg",
     "descripcion": "El mejor atún que podrás encontrar de este lado del Misisipi",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank4-1uenll5"
   },
   {
     "nombre": "Paquete Salchicha 1kg",
@@ -1341,7 +1456,8 @@
     "disponible": true,
     "imagen": "img/products/paquete_salchicha_1kg.jpg",
     "descripcion": "1kg",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank5-qghlhg1"
   },
   {
     "nombre": "Saco de Arroz 25kg",
@@ -1353,7 +1469,8 @@
     "disponible": false,
     "imagen": "img/products/saco_de_arroz_25kg.jpg",
     "descripcion": "Saco de Arroz de muy buena calidad de 25kg . aproximadamente entre las 54 - 55 libras",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank5-958qdtj"
   },
   {
     "nombre": "Saco de Azúcar 110lb",
@@ -1365,7 +1482,8 @@
     "disponible": true,
     "imagen": "img/products/saco_de_azcar_110lb.jpg",
     "descripcion": "Azúcar Don Isidro refino, de muy buena calidad",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank5-fsnsjq1"
   },
   {
     "nombre": "Arroz Grano Dorado 50lb",
@@ -1377,7 +1495,8 @@
     "disponible": true,
     "imagen": "img/products/arroz_grano_dorado_50lb.jpg",
     "descripcion": "El mjor arroz de este lado del misisipi",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank5-1ulx2vb"
   },
   {
     "nombre": "Picadillo de pollo Guibon",
@@ -1389,6 +1508,19 @@
     "disponible": true,
     "imagen": "img/products/picadillo_de_pollo_guibon.jpg",
     "descripcion": "El mejor picadillo de este lado del Mississippi. Ideal para toda la familia. Calidad en cada porción",
-    "nuevo": true
+    "nuevo": true,
+    "id": "mlgzank5-12209k3"
+  },
+  {
+    "nombre": "test",
+    "categoria": "frutas",
+    "precio": 1,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": false,
+    "imagen": "img/products/test.png",
+    "nuevo": true,
+    "id": "mlgzd7u8-14ngqfc"
   }
 ]
