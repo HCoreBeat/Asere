@@ -39,18 +39,6 @@
     "id": "mlgzank1-1s4o3vq"
   },
   {
-    "nombre": "Picadillo Especial 400g",
-    "categoria": "cárnicos",
-    "precio": 1.5,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": false,
-    "imagen": "img/products/picadillo_especial_400g.jpg",
-    "nuevo": false,
-    "id": "mlgzank1-xsknso1"
-  },
-  {
     "nombre": "Jamón de Primera x Lb",
     "categoria": "cárnicos",
     "precio": 5.04,
@@ -74,24 +62,6 @@
     "descripcion": "Corte fresco se realiza al momento del pedido",
     "nuevo": false,
     "id": "mlgzank1-1ukdukm"
-  },
-  {
-    "nombre": "Paquete de salchicha 10u (340g)",
-    "categoria": "cárnicos",
-    "precio": 1.17,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/paquete_de_salchichas_7u_350g.webp",
-    "imagenesAdicionales": [
-      "img/products/paquete_de_salchichas_7u_350g_1.jpg",
-      "img/products/paquete_de_salchichas_7u_350g_3.jpg",
-      "img/products/paquete_de_salchichas_7u_350g_1.jpg",
-      "img/products/paquete_de_salchichas_7u_350g_1.jpg"
-    ],
-    "nuevo": false,
-    "id": "mlgzank1-mhrwj81"
   },
   {
     "nombre": "Pernil de Cerdo asado (15 libras)",
@@ -280,32 +250,6 @@
     "id": "mlgzank2-psrcao1"
   },
   {
-    "nombre": "Queso Gouda Premium (3Kg)",
-    "categoria": "lacteos",
-    "precio": 35.72,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/queso_gouda_premium_3kg.jpg",
-    "descripcion": "Disfruta del auténtico sabor del queso Gouda de Vima Foods, elaborado con ingredientes 100% naturales que garantizan una calidad inigualable. Su textura suave y cremosa es perfecta para realzar tus recetas favoritas, desde sándwiches y ensaladas hasta platos gourmet. Además, viene empacado para preservar su frescura y sabor, convirtiéndolo en una elección ideal tanto para bocadillos sencillos como para ocasiones especiales.",
-    "nuevo": false,
-    "id": "mlgzank2-if448gk"
-  },
-  {
-    "nombre": "Kg de Queso Gouda Premium",
-    "categoria": "lacteos",
-    "precio": 14,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/queso_gouda_Kg.jpg",
-    "descripcion": "Descubre el exquisito sabor del queso Gouda Premium, ahora disponible por kilogramos para adaptarse a tus necesidades. Este queso premium, elaborado con ingredientes 100% naturales, ofrece una textura suave y un sabor intenso que lo convierte en la elección ideal para tus recetas gourmet o para disfrutar en bocadillos frescos. Perfecto para amantes de la calidad y la frescura, cada kilogramo está cuidadosamente empacado para garantizar que llegue a ti en óptimas condiciones. Lleva la excelencia del queso Gouda Premium a tu cocina y deleita tu paladar con cada porción.",
-    "nuevo": false,
-    "id": "mlgzank2-t1hx7o7"
-  },
-  {
     "nombre": "Mayonesa Victoria (250ml)",
     "categoria": "aderezos",
     "precio": 2.17,
@@ -401,18 +345,6 @@
     "imagen": "img/products/Pepino.jpg",
     "disponible": true,
     "id": "mlgzank2-rixdtgx"
-  },
-  {
-    "nombre": "Tomate x Lb",
-    "categoria": "agro",
-    "precio": 2.67,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Tomate.jpg",
-    "nuevo": false,
-    "id": "mlgzank2-184lqmt"
   },
   {
     "nombre": "Limón x Lb",
@@ -644,45 +576,6 @@
     "id": "mlgzank3-vqyyagj"
   },
   {
-    "nombre": "Jamón Bravo 2kgs",
-    "categoria": "cárnicos",
-    "precio": 22.5,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/jamn_bravo_rpido.jpg",
-    "descripcion": "Barras 2kg .El Jamón Bravo Rápido es un embutido de calidad, con una textura jugosa y un sabor intenso, ideal para sándwiches, tapas y recetas variadas. Se presenta en barras de 2 kg una opción perfecta para negocios y hogares.",
-    "nuevo": false,
-    "id": "mlgzank3-1g428z1"
-  },
-  {
-    "nombre": "Saco de arroz americano importado 25kgs",
-    "categoria": "agro",
-    "precio": 35,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": false,
-    "imagen": "img/products/saco_de_arroz_americano_importado_50lb.jpg",
-    "descripcion": "Arroz importado. Viene limpio y cocina bien",
-    "nuevo": false,
-    "id": "mlgzank3-1ehfvlm"
-  },
-  {
-    "nombre": "Helado Nestle sabor vainilla 4.5lts",
-    "categoria": "lacteos",
-    "precio": 20,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": false,
-    "imagen": "img/products/helado_nestle.jpg",
-    "descripcion": "Sabor, según disponibilidad del momento. Calidad suprema",
-    "nuevo": false,
-    "id": "mlgzank3-yjpxser"
-  },
-  {
     "nombre": "Agua Natural Ciego Montero 500ml",
     "categoria": "bebidas",
     "precio": 0.7,
@@ -904,19 +797,6 @@
     "id": "mlgzank3-n58gw1u"
   },
   {
-    "nombre": "Pata de cerdo x Lb",
-    "categoria": "cárnicos",
-    "precio": 2.8,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/pata_de_cerdo_x_lb.jpg",
-    "descripcion": "Pata de Cerdo para tu cocina",
-    "nuevo": false,
-    "id": "mlgzank3-1o3k0ys"
-  },
-  {
     "nombre": "Frijol Negro Alubia (500g)",
     "categoria": "pastas-y-granos",
     "precio": 1.73,
@@ -991,19 +871,6 @@
     "id": "mlgzank3-fe92v6h"
   },
   {
-    "nombre": "Jamón Bravo 2kgs",
-    "categoria": "cárnicos",
-    "precio": 22.5,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": false,
-    "imagen": "img/products/jamn_bravo_rpido.jpg",
-    "descripcion": "Barras 2kg .El Jamón Bravo Rápido es un embutido de calidad, con una textura jugosa y un sabor intenso, ideal para sándwiches, tapas y recetas variadas. Se presenta en barras de 2 kg una opción perfecta para negocios y hogares.",
-    "nuevo": false,
-    "id": "mlgzank3-1iqksr5"
-  },
-  {
     "nombre": "Salsa rosa Rayan 440g",
     "categoria": "aderezos",
     "precio": 2.97,
@@ -1038,18 +905,6 @@
     "imagen": "img/products/pack_de_12_latas_de_nctar_de_pia.webp",
     "nuevo": true,
     "id": "mlgzank4-182v9d0"
-  },
-  {
-    "nombre": "Leche en polvo Lecherita 1kg",
-    "categoria": "lacteos",
-    "precio": 7.97,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/producto.jpg",
-    "nuevo": true,
-    "id": "mlgzank4-1yrs8n8"
   },
   {
     "nombre": "Carne de res enlatada 400g",
@@ -1122,18 +977,6 @@
     "imagen": "img/products/desodorante_keewell_24h.jpg",
     "nuevo": true,
     "id": "mlgzank4-dez8evc"
-  },
-  {
-    "nombre": "Refresco instantáneo 2lts",
-    "categoria": "bebidas",
-    "precio": 0.17,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/producto.jpg",
-    "nuevo": true,
-    "id": "mlgzank4-1aaubmt"
   },
   {
     "nombre": "Paquete de hígados de pollo 1kg",
