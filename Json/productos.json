@@ -1510,5 +1510,17 @@
     "descripcion": "El mejor picadillo de este lado del Mississippi. Ideal para toda la familia. Calidad en cada porción",
     "nuevo": true,
     "id": "mlgzank5-12209k3"
+  },
+  {
+    "nombre": "Azúcar Parda x lb",
+    "categoria": "despensa",
+    "precio": 1.33,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/azcar_parda_x_lb.jpg",
+    "nuevo": true,
+    "id": "mlh17sjk-1ltd9c1"
   }
 ]
