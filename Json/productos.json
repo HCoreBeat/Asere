@@ -1411,5 +1411,17 @@
     "imagen": "img/products/arroz_grano_dorado_50lb.jpg",
     "descripcion": "El mjor arroz de este lado del misisipi",
     "nuevo": true
+  },
+  {
+    "nombre": "Picadillo de pollo Guibon",
+    "categoria": "cárnicos",
+    "precio": 1.47,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/picadillo_de_pollo_guibon.jpg",
+    "descripcion": "El mejor picadillo de este lado del Mississippi. Ideal para toda la familia. Calidad en cada porción",
+    "nuevo": true
   }
 ]
