@@ -1,0 +1,210 @@
+/* Mejora visual para el nombre de la categoría en categorias-container */
+.categoria-titulo-visual {
+    margin-bottom: 18px;
+    text-align: left;
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    background: none;
+    border-radius: 10px;
+    padding: 0;
+    box-shadow: none;
+}
+
+.categoria-titulo-bg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(90deg, #e3fcec 60%, #f7fafc 100%);
+    border-radius: 8px;
+    padding: 8px 16px 8px 10px;
+    box-shadow: 0 1px 6px rgba(0,121,107,0.08);
+    transition: box-shadow 0.3s, background 0.3s;
+    max-width: 340px;
+    min-width: 180px;
+    width: fit-content;
+}
+.categoria-titulo-bg:hover {
+    box-shadow: 0 4px 16px rgba(0,121,107,0.18);
+    background: linear-gradient(90deg, #c8e6c9 80%, #f7fafc 100%);
+}
+.categoria-titulo-bg i {
+    color: #43a047;
+    font-size: 1.7rem;
+    margin-right: 6px;
+    filter: drop-shadow(0 1px 2px rgba(67,160,71,0.10));
+    transition: color 0.3s;
+}
+.categoria-titulo-nombre {
+    font-size: 1.08em;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #388e3c;
+    text-shadow: 0 1px 2px rgba(67,160,71,0.07);
+}
+/*------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------*/
+/*Categorias*/
+.categorias {
+    position:absolute; /* Posicionar de manera absoluta respecto al header */ 
+    top: 99.5%; /* Mover las categorías justo debajo del header */ 
+    left: 0; /* Alinear al borde izquierdo del header */ 
+    right: 0; /* Alinear al borde derecho del header */ 
+    display: flex; 
+    justify-content: start; 
+    align-items: center; 
+    background-color: #00796B; 
+    padding: 3px 0; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    overflow-x: auto; /* Permite desplazamiento horizontal */ 
+    white-space: nowrap; /* Evita que las categorías se rompan en múltiples líneas */ 
+    scrollbar-width: thin; /* Para navegadores Firefox */ 
+    scrollbar-color: #00796B #f4f4f9; /* Para navegadores Firefox */
+}
+
+
+.categorias::-webkit-scrollbar {
+    height: 6px; /* Altura de la barra de desplazamiento horizontal */
+}
+
+.categorias::-webkit-scrollbar-track {
+    background: #f4f4f9; /* Fondo de la pista de desplazamiento */
+}
+
+.categorias::-webkit-scrollbar-thumb {
+    background-color: #00796B; /* Color de la barra de desplazamiento */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 3px solid #f4f4f9; /* Fondo de la pista visible al deslizar */
+}
+
+.categorias ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap; /* Para que se mantengan en una sola línea */
+}
+
+.categorias ul li {
+    display: inline-block; /* Asegura que los elementos sean en línea */
+}
+
+.categorias ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex; /* Para alinear el icono con el texto */
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.categorias ul li a i {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+    font-size: 15px; /* Tamaño del icono */
+}
+
+.categorias ul li a:hover {
+    background-color: #005f50;
+    color: #f4f4f9;
+}
+
+/* Especifica el color del icono de la categoría "Ofertas" */ 
+.categorias ul li a[data-categoria="ofertas"] i { 
+    color: #FFD700; /* Color dorado para el icono */ 
+}
+
+.categoria[data-categoria="carnes"] {
+    background-color: #fff; /* Cambia el color según tu preferencia */
+    margin: 0px;
+    padding: 30px 25px;
+}
+
+.categorias-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.categoria {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.categoria h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00796B;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(90deg, #e0f7fa 60%, #fff 100%);
+    border-radius: 8px;
+    padding: 10px 18px 10px 12px;
+    box-shadow: 0 2px 8px rgba(0,121,107,0.08);
+    position: relative;
+}
+
+.categoria h2 i {
+    color: #00796B;
+    font-size: 2.1rem;
+    margin-right: 8px;
+    filter: drop-shadow(0 2px 2px rgba(0,121,107,0.12));
+    transition: color 0.3s;
+}
+.categoria h2 span {
+    font-size: 1.1em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #00796B;
+}
+
+@media (max-width: 900px) {
+    .categoria h2 {
+        font-size: 1.3rem;
+        padding: 8px 10px;
+        gap: 8px;
+    }
+    .categoria h2 i {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .categoria h2 {
+        font-size: 1.1rem;
+        padding: 6px 6px;
+        gap: 6px;
+    }
+    .categoria h2 i {
+        font-size: 1.1rem;
+    }
+}
+
+.categorias ul {
+    gap: 5px;
+}
+
+.categorias ul li a {
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.productos-categoria-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 0 5px;
+}

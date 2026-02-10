@@ -1,0 +1,79 @@
+/* Aviso de pago contra entrega */
+.pago-entrega-aviso {
+    display: flex;
+    align-items: center;
+    background: #e8f5e9;
+    color: #1b5e20;
+    border-left: 5px solid #43a047;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 18px 0 0 0;
+    font-size: 1.08em;
+    box-shadow: 0 2px 8px rgba(67,160,71,0.07);
+    gap: 10px;
+}
+.pago-entrega-aviso i {
+    font-size: 1.4em;
+    margin-right: 8px;
+    color: #388e3c;
+}
+/* Protecciones adicionales para la planilla de pago */
+#planilla-pago {
+    /* Asegurar que hidden funcione siempre */
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    clip-path: inset(50%) !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+    pointer-events: none;
+}
+
+#planilla-pago:not(.hidden) {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    clip: auto !important;
+    clip-path: none !important;
+    height: auto !important;
+    overflow: visible !important;
+    position: relative !important;
+    white-space: normal !important;
+    pointer-events: auto;
+}
+
+/* Deshabilitar campos cuando no hay acceso válido */
+#planilla-pago.hidden form {
+    pointer-events: none !important;
+    user-select: none !important;
+}
+
+#planilla-pago.hidden input,
+#planilla-pago.hidden textarea,
+#planilla-pago.hidden button {
+    opacity: 0.5 !important;
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+}
+
+/* Animación suave al mostrar (solo si el usuario no prefiere movimiento reducido) */
+@media (prefers-reduced-motion: no-preference) {
+    #planilla-pago:not(.hidden) {
+        animation: fadeIn 0.3s ease-out;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

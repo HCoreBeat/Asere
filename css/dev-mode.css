@@ -1,0 +1,58 @@
+.dev-mode-active {
+    /* Estilos específicos para modo desarrollador */
+    outline: 2px dashed #ff0000 !important;
+    position: relative;
+}
+
+.dev-mode-active::before {
+    content: '🛠️';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background: #ff0000;
+    color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+/* Indicador de modo desarrollador */
+body.dev-mode::after {
+    content: 'DEV MODE';
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 9999;
+}
+
+/* Resaltar elementos en modo desarrollador */
+.dev-mode .planilla-pago,
+.dev-mode .cart-items,
+.dev-mode .payment-form {
+    border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+/* Panel de desarrollo */
+#dev-panel {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: #00ff00;
+    padding: 10px;
+    font-family: monospace;
+    z-index: 10000;
+    max-width: 300px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.dev-mode #dev-panel {
+    display: block;
+}

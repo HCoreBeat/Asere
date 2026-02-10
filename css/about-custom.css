@@ -1,0 +1,125 @@
+/* Estilos específicos para la página Quiénes Somos */
+.about-us-container {
+    padding: 0;
+    margin-top: -20px;
+}
+
+.about-intro {
+    background: linear-gradient(45deg, #3FEE61, #00796B, #00b39e);
+    padding: 40px 20px;
+    margin: -40px -20px 30px;
+    border-radius: 12px 12px 0 0;
+    color: #fff;
+    text-align: center;
+}
+
+.about-intro h2 {
+    color: #fff;
+    border: none;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.about-image {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+.about-details {
+    padding: 20px;
+}
+
+.about-details h3 {
+    color: var(--secondary-color);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-details p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.values-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.value-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.value-item i {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.value-item h4 {
+    color: var(--secondary-color);
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-image {
+        margin: 0 -20px;
+        border-radius: 0;
+    }
+    
+    .about-intro {
+        margin: -20px -20px 20px;
+        padding: 30px 20px;
+    }
+    
+    .about-intro h2 {
+        font-size: 28px;
+    }
+    
+    .values-list {
+        grid-template-columns: 1fr;
+    }
+}

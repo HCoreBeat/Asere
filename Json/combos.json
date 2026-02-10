@@ -1,0 +1,406 @@
+[
+  {
+    "nombre": "El Banquete Familiar",
+    "categoria": "combos",
+    "productos": [
+      "x17 Libras de carne de cerdo",
+      "x6 Libras de ovejo",
+      "x2 Libras de jamón",
+      "x3 Libras de pollo",
+      "x1 Libra de Picadillo de pollo",
+      "x2 Kg de arroz importado",
+      "x2 Libras de frijoles colorado",
+      "x1 Paquete de Spaghetti de 500g",
+      "x1 Paquete de Codito de 500g",
+      "x2 Pastillas de Res 120g",
+      "x2 Sazón Goya 5g",
+      "x1 Lata de leche condensada",
+      "x4 Paquetes de refresco Frutti 2L c/u",
+      "x1 Jabón de baño 90g",
+      "x1 Paquete de detergente Multiuso de 500g",
+      "x1 Pomo de aceite 900ml"
+    ],
+    "precio": 98.999,
+    "imagen": "img/combos/pack_new_1.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "El Súper Abastecimiento",
+    "categoria": "combos",
+    "productos": [
+      "x20 lb de carne de cerdo",
+      "x6 lb de ovejo",
+      "x10 lb de pollo",
+      "x1 file de huevo",
+      "x4 paquetes de salchichas",
+      "x3 lb de jamón",
+      "x1 lb Picadillo de pollo",
+      "x3 pomos de aceite (900 ml)",
+      "x1 café broderk",
+      "x1 Vinagre (botella sellada)",
+      "x1 Paquete de Codito (500 g)",
+      "x2 Espagueti (500 g)",
+      "x3 latas de pasta de tomate",
+      "x2 kg de arroz (importado)",
+      "x2 lb de frijoles colorados",
+      "x1 lata de leche condensada",
+      "x5 refresco Frutti (1.5 lt)",
+      "x2 Goya",
+      "x5 pastillitas de pollo",
+      "x1 Paquete de detergente (500 g)",
+      "x1 paquete de papel sanitario (4 rollos)",
+      "x1 jabón"
+    ],
+    "precio": 169.0,
+    "imagen": "img/combos/pack_new_2.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "La Despensa Completa",
+    "categoria": "combos",
+    "productos": [
+      "x10 lb de pollo (paquete)",
+      "x2 pomos aceite (900 ml)",
+      "x1 file de huevo",
+      "x4 paquetes de salchichas",
+      "x1 kg de leche en polvo",
+      "x1 lb de Ahumados",
+      "x1 kg de azúcar",
+      "x1 café bryderk",
+      "x1 lb de frijoles negros",
+      "x1 lb de frijoles colorados",
+      "x2 lb de jamón",
+      "x1 kg de arroz brasileño",
+      "x1 tina de helado (4 lt)"
+    ],
+    "precio": 85.0,
+    "imagen": "img/combos/pack_new_3.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Esenciales del Hogar",
+    "categoria": "combos",
+    "productos": [
+      "x1 Paquete de pollo 10 lb",
+      "x4 paquetes de salchichas",
+      "x2 lt de aceite",
+      "x1 fil de huevo"
+    ],
+    "precio": 43.995,
+    "imagen": "img/combos/pack_new_4.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Básico Plus",
+    "categoria": "combos",
+    "productos": [
+      "x1 paquete de pollo 10 lb",
+      "x4 paquetes de salchichas",
+      "x2 lt de aceite",
+      "x1 file de huevo",
+      "x1 paquete de espagueti (500g)",
+      "x1 paquete de café (250 g)",
+      "x1 lata de Puré de tomate"
+    ],
+    "precio": 53.999,
+    "imagen": "img/combos/pack_new_5.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Celebración Dulce",
+    "categoria": "combos",
+    "productos": [
+      "x1 Kake redondo cubierto con leche condensada hervida",
+      "x1 Caja de refresco (usted escoge el sabor)",
+      "x1 Tina de helado 4lt",
+      "x1 Pizza familiar (jamón, napolitana o mixta)"
+    ],
+    "precio": 56.0,
+    "imagen": "img/combos/pack_new_6.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Fiesta Grande",
+    "categoria": "combos",
+    "productos": [
+      "x1 Cake cuadrado con relleno de leche condensada",
+      "x1 Tina de helado 4lt",
+      "x12 maltas",
+      "x12 refresco (usted escoge el sabor)",
+      "x1 Ensalada fría (4lt)",
+      "x1 Pizza familiar (napolitana, jamón o mixta)",
+      "x2 lb Jamón"
+    ],
+    "precio": 84.0,
+    "imagen": "img/combos/pack_new_7.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "El Clásico del Hogar",
+    "categoria": "combos",
+    "productos": [
+      "x20 Libras de carne de cerdo",
+      "x6 Libras de ovejo",
+      "x3 Libras de jamón",
+      "x3 Libras de pollo",
+      "x1 Libra de Picadillo de pollo",
+      "x2 Kg de arroz importado",
+      "x2 Libras de frijoles colorado",
+      "x1 Paquete de Spaghetti de 500g",
+      "x1 Paquete de codito de 500g",
+      "x1 Lata de Pasta de Tomate",
+      "x1 Lt de Vinagre original sellado",
+      "x3 Pastillas de Res 120g",
+      "x2 Pastillas de pollo",
+      "x2 Sazón Goya 5g",
+      "x1 Lata de leche condensada",
+      "x5 Paquetes de refresco Frutti 2L",
+      "x2 Latas de Malta",
+      "x1 Jabón de baño 90g",
+      "x1 Paquete de Papel Sanitario",
+      "x1 Paquete de detergente Multiuso de 500g",
+      "x1 Pomo de aceite 900ml"
+    ],
+    "precio": 117.999,
+    "imagen": "img/combos/pack_new_8.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Rápido y Delicioso",
+    "categoria": "combos",
+    "productos": [
+      "x2 Spaghetti",
+      "x1 Pasta de Tomate",
+      "x1 lb de jamón",
+      "x4 refresco 2lt",
+      "x1 lb de queso",
+      "x2 goyas"
+    ],
+    "precio": 11.0,
+    "imagen": "img/combos/pack_new_9.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Cocina Express",
+    "categoria": "combos",
+    "productos": [
+      "x4.4 lb de pollo",
+      "x1 Lata de pasta de tomate",
+      "x1 kg de arroz (importado)",
+      "x2 goyas",
+      "x1 pomo aceite (900 ml)"
+    ],
+    "precio": 16.0,
+    "imagen": "img/combos/pack_new_10.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Desayuno Al Instante",
+    "categoria": "combos",
+    "productos": [
+      "x1 Bolsa leche 1kg",
+      "x1 Paquete de café",
+      "x1 kg de azúcar",
+      "x1 lb de jamón",
+      "x1 bolsa de pan"
+    ],
+    "precio": 24.0,
+    "imagen": "img/combos/pack_new_11.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Sabores del Día",
+    "categoria": "combos",
+    "productos": [
+      "x5 lb de cerdo",
+      "x3 de pollo",
+      "x1 kg de arroz",
+      "x1 lb frijol",
+      "x1 aceite",
+      "x1 Lata Puré",
+      "x2 goyas",
+      "x2 pastillitas de pollo",
+      "x1 botella de vinagre"
+    ],
+    "precio": 35.999,
+    "imagen": "img/combos/pack_new_12.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Mix Cárnico Express",
+    "categoria": "combos",
+    "productos": [
+      "x4 lb cerdo",
+      "x2 lb de ovejo",
+      "x2 lb de pollo",
+      "x1 fil de huevo",
+      "x1 Pomo aceite",
+      "x1 lb Picadillo",
+      "x1 leche en polvo",
+      "x1 kg de azucar"
+    ],
+    "precio": 50.0,
+    "imagen": "img/combos/pack_new_13.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Cena y Limpieza",
+    "categoria": "combos",
+    "productos": [
+      "x10 lb cerdo",
+      "x3 de ovejo",
+      "x1 lb de jamón",
+      "x2 kg de arroz",
+      "x1 lb frijol",
+      "x1 Spaghetti",
+      "x1 aceite",
+      "x1 lata Puré",
+      "x1 detergente (500 g)"
+    ],
+    "precio": 59.0,
+    "imagen": "img/combos/pack_new_14.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "El Esencial Completo",
+    "categoria": "combos",
+    "productos": [
+      "x7 lb de cerdo",
+      "x3 lb de ovejo",
+      "x2 lb de pollo",
+      "x1 Paquete de leche polvo",
+      "x1 Fil de huevo",
+      "x2 cafés",
+      "x1 aceite (900 ml)",
+      "x2 kg de arroz",
+      "x2 goyas",
+      "x2 Jabones"
+    ],
+    "precio": 71.428,
+    "imagen": "img/combos/pack_new_15.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "14 de Febrero",
+    "categoria": "febrero",
+    "productos": [
+      "Delicioso Cake Tres Leches",
+      "Romántico Ramo de Rosas",
+      "Dulce Cajita de Confituras"
+    ],
+    "precio": 64.995,
+    "imagen": "img/combos/combo_febrero.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Pack Dulce",
+    "categoria": "combos",
+    "productos": [
+      "x1 Cake 3 leches",
+      "x1 Caja de helado (4lts)",
+      "x12  Maltas"
+    ],
+    "precio": 35.0,
+    "imagen": "img/combos/pack_new.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Pack Especial",
+    "categoria": "combos",
+    "productos": [
+      "x1 Spaguettis",
+      "x1 Paquete de Salchicha",
+      "x1 Pasta de Tomate",
+      "x1 Zason Goya",
+      "x5 Paquetes de Refresco",
+      "x1 Ketchup"
+    ],
+    "precio": 11.9,
+    "imagen": "img/combos/pack_1.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Pack del Momento",
+    "categoria": "combos",
+    "productos": [
+      "x1 Bolsa de Pan",
+      "x1 Mantequilla Mesa",
+      "x1 Chocolate en Polvo",
+      "x4 Hamburguesas"
+    ],
+    "precio": 10.689,
+    "imagen": "img/combos/pack_3.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Pack Estilizado",
+    "categoria": "combos",
+    "productos": [
+      "x1 Pomo de aceite",
+      "x1 Paquete de pollo 10lb",
+      "1Kg Arroz",
+      "x1 Picadillo Especial (400g)"
+    ],
+    "precio": 21.0,
+    "imagen": "img/combos/pack_4.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Pack Familiar",
+    "categoria": "combos",
+    "productos": [
+      "1Kg Picadillo Pollo",
+      "x1 Pomo de Aceite",
+      "1Kg Arroz",
+      "x2 Pastillas de Pollo",
+      "x3 Sopa Instantanea"
+    ],
+    "precio": 12.999,
+    "imagen": "img/combos/pack_5.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Pack Ligero",
+    "categoria": "combos",
+    "productos": [
+      "x1 Paquete de Cafe",
+      "5Lb Azucar",
+      "x2 Bolsa de Pan"
+    ],
+    "precio": 16.0,
+    "imagen": "img/combos/pack_6.jpg",
+    "disponible": true
+  },
+  {
+    "nombre": "Pack Confituras",
+    "categoria": "combos",
+    "productos": [
+      "x27 Confituras Varias"
+    ],
+    "precio": 14.999,
+    "imagen": "img/combos/Pack_Confituras.jpg",
+    "disponible": false
+  },
+  {
+    "nombre": "Pack Pa La Isla",
+    "categoria": "combos",
+    "productos": [
+      "10lb Cerdo",
+      "5lb Ovejo",
+      "x1 Paquete de Pollo",
+      "x1 Fill de Huevo",
+      "x2 Paquete de Salchicha",
+      "1Kg Picadillo de Pollo",
+      "x2 Lata de Spam",
+      "x12 Hamburguesas",
+      "2Kg Arroz",
+      "x2 Spaguettis",
+      "x4 Sopas Instantaneas",
+      "x5 Refrescos de Polvo",
+      "x1 Pomo de Aceite"
+    ],
+    "precio": 89.996,
+    "imagen": "img/combos/combo1.jpg",
+    "disponible": true
+  }
+]

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Asere Shops, la mejor tienda en línea para productos cubanos. Encuentra productos de calidad a precios accesibles.">
+  <meta name="robots" content="index, follow">
+  <!-- Meta para Control de Cache -->
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+  <!-- Meta Palabras Clave -->
+  <meta name="keywords" content="Asere, Online Shop, Las Tunas, Cuba, Productos, Calidad, Conectar, Familias">
+  <!-- Meta Autor -->
+  <meta name="author" content="Asere Shops">
+  <!-- Favicon -->
+  <link rel="icon" href="img/LogoVerde.jpg" type="image/x-icon">
+  <!-- Meta para Redes Sociales (Open Graph) -->
+  <meta property="og:title" content="Asere Shops - Tienda Online">
+  <meta property="og:description" content="Descubre los mejores productos en Asere Shops">
+  <meta property="og:image" content="https://www.asereshops.com/img/LogoVerde.jpg">
+  <meta property="og:url" content="https://www.asereshops.com">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Asere Shops">
+  <meta property="product:price:amount" content="">
+  <meta property="product:price:currency" content="USD/EUR">
+  <meta property="product:brand" content="Asere Shops">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('UE5xZtzvJ3W5lClZS');
+  </script>
+
+  <!-- Scripts de protección - DEBEN cargarse antes que otros scripts -->
+  <script src="Js/dev-mode.js"></script>
+  <script src="Js/security.js"></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/categoria.css">
+  <link rel="stylesheet" href="css/styleProducto.css">
+  <link rel="stylesheet" href="css/pago.css">
+  <link rel="stylesheet" href="css/styles_res.css">
+  <link rel="stylesheet" href="css/detalle-pack-content.css">
+  <link rel="stylesheet" href="css/credit.css">
+  <link rel="stylesheet" href="css/planilla-protections.css">
+  <link rel="stylesheet" href="css/dev-mode.css">
+  <title>Asere Shops</title>
+</head>
+<body>
+  <div id="progress-bar-container">
+    <div id="progress-bar"></div>
+  </div>
+  
+  <header>
+    <div class="header-container">
+      <div id="snowflakes-container">
+        <!-- Los copos de nieve se generarán aquí -->
+      </div>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="slogan">
+        <div class="gif-slogan">
+          <img src="img/Slogan.png" alt="Slogan" id="gif-slogan" class="gif-slogan">
+        </div>
+        <div class="ubicacion-entrega">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Las Tunas</span>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Buscar Asere...">
+        <button id="search-button" aria-label="Buscar">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <li class="cart">
+        <a href="#carrito" onclick="mostrarCarrito()" id="nav-cart">
+          <i class="fas fa-shopping-cart"></i>
+          Carrito
+        </a>
+        <div id="cart-count" class="cart-count">0</div>
+      </li>  
+      <div class="overlay"></div>
+      <nav>
+        <ul>
+          <li class="header">
+            <div class="subtitle">Explora</div>
+            Asere
+          </li> 
+          <li><a href="#inicio" class="home-button" id="nav-home"><i class="fas fa-home"></i> Inicio de Asere</a></li>
+          <hr>
+          <li><a href="#productos" id="nav-products">Productos</a></li>
+          <li><a href="about.html" id="nav-contact">Contacto</a></li>                  
+        </ul>
+      </nav>
+    </div>
+    <div class="categorias">
+      <ul id="categorias-list">
+      </ul>
+    </div>
+    <!-- Contenedor responsivo para la ubicación (mostrado solo en responsive) -->
+    <div class="ubicacion-entrega-responsive">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>Entregamos en Las Tunas, Cuba</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sección de Detalle del Producto -->
+    <section id="detalle-producto" style="display: none;">
+      <div id="detalle-contenido">
+        <!-- Contenedor de imagen -->
+        <div id="detalle-imagen-container">
+          <div id="imagen-principal-container">
+            <img id="detalle-imagen" src="" alt="Imagen del producto">
+            <button id="btn-compartir-producto" class="btn-compartir-float" type="button" title="Compartir">
+              <i class="fas fa-share-alt"></i>
+            </button>
+            <!-- Puntos indicadores para las fotos -->
+            <div id="puntos-indicadores"></div>
+          </div>
+          <div id="imagenes-adicionales">
+            <!-- Aquí se agregarán las miniaturas de las imágenes adicionales -->
+          </div>
+        </div>
+        <!-- Información y extras del producto -->
+        <div class="detalle-info">
+          <h2 id="detalle-nombre"></h2>
+          <div class="detail-badges">
+            <p id="detalle-mas-vendido" class="mas-vendido-badge">
+              <span class="detail-badge mas-vendido"><i class="fas fa-trophy"></i> Más Vendido</span>
+            </p>
+          </div>
+          <div class="precio-container">
+            <!-- Valor oculto del precio -->
+             <div class="descuento-pvpr-container">
+              <p id="detalle-pvpr"></p>
+              <p id="detalle-descuento"></p>
+            </div>
+            <p id="valor-precio-total" style="display: none;"></p>
+            <p id="detalle-precio">
+              <span class="entero"></span>
+              <span class="decimales"></span>
+            </p>
+          </div>
+          <div id="detalle-extra">
+            <p id="detalle-envio">Envío gratuito</p>
+          </div>
+          <div class="cantidad">
+            <div id="cantidad-text">Cantidad:</div>
+            <button class="btn-cantidad" id="btn-restar">-</button>
+            <span id="detalle-cantidad">1</span>
+            <button class="btn-cantidad" id="btn-sumar">+</button>
+          </div>
+          <button id="detalle-agregar-carrito" class="btn-carrito">Añadir al Carrito</button>
+          <div class="product-description">
+            <h4 class="description-title"><i class="fas fa-align-left"></i> Descripción</h4>
+            <div class="description-content" id="detalle-descripcion"></div>
+          </div>
+          <div class="panel-btn-volver">
+            <button id="volver-productos" class="btn-volver" type="button">Volver</button>  
+          </div>
+        </div>
+      </div>
+      <!-- Galería de imágenes adicionales -->
+      <div id="galeria-imagenes" class="galeria-imagenes">
+        <h3>Galería de imágenes</h3>
+        <div class="galeria-contenedor"></div>
+      </div>
+      <!-- Sección de sugerencias -->
+      <div id="productos-sugeridos">
+        <h3>Clientes que compraron este artículo también compraron</h3>
+        <div class="sugeridos-contenedor"></div>
+      </div>
+    </section>
+
+    <!-- Panel de Electrodomésticos -->
+    <section id="panel-electrodomesticos" style="display: none;">
+      <h2 class="panel-title">Electrodomésticos</h2>
+      <div id="lista-electrodomesticos">
+        <!-- Electrodomésticos dinámicos -->
+      </div>
+      <button id="cerrar-electrodomesticos" class="btn-volver" type="button">Volver</button>
+    </section>
+
+    <!-- Slider de Promociones -->
+    <div class="slider">
+      <button class="slider-arrow prev" aria-label="Anterior">&#10094;</button>
+      <div class="slides">
+        <div class="slide">
+          <img id="img-promocion-1-pc" class="img-pc" src="img/Promocion_1_PC.jpg" alt="Promoción 1 para PC">
+          <img id="img-promocion-1-mobile" class="img-mobile" src="img/Promocion_1.jpg" alt="Promoción 1 para Móvil" style="display:none;">
+        </div>
+        <div class="slide">
+          <img id="img-promocion-2-pc" class="img-pc" src="img/Promocion_2_PC.jpg" alt="Promoción 2 para PC">
+          <img id="img-promocion-2-mobile" class="img-mobile" src="img/Promocion_2.jpg" alt="Promoción 2 para Móvil" style="display:none;">
+        </div>
+        <div class="slide">
+          <img id="img-promocion-3-pc" class="img-pc" src="img/Promocion_3_PC.jpg" alt="Promoción 3 para PC">
+          <img id="img-promocion-3-mobile" class="img-mobile" src="img/Promocion_3.jpg" alt="Promoción 3 para Móvil" style="display:none;">
+        </div>
+      </div>
+      <button class="slider-arrow next" aria-label="Siguiente">&#10095;</button>
+      <div class="slider-dots"></div>
+    </div>
+
+    <!-- Mensaje de producto no disponible -->
+    <div id="producto-no-disponible" class="hidden">
+      <span class="icon">⚠️</span>
+      <p>El producto que buscas no está disponible.</p>
+    </div>
+
+    <!-- Sección de Productos -->
+    <section id="productos">
+      <div id="no-result-message" class="hidden" style="display: none;">
+        <span class="icon">⚠️</span>
+        <p>No se encontraron resultados</p>
+      </div>
+      <div id="productos-container">
+        <!-- Productos dinámicos -->
+      </div>
+    </section>
+
+    <!-- Sección del Carrito -->
+    <section id="carrito" style="display: none;">
+      <h2 id="cart-title">Tu Carrito de Compras</h2>
+      <button id="regresar" type="button" onclick="if(window.history.length>1){window.history.back();}else{window.location.hash='#productos';}">Regresar</button>
+      <div id="carrito-container">
+      </div>
+      <div id="carrito-vacio">
+        <img src="gif/Empty-cart-Animation.gif" alt="Carrito vacío">
+        <p id="cart-empty-text">Tu carrito de Asere no tiene nada aún.</p>
+      </div>
+      <div class="carrito_total">
+        <p id="total">Total: </p>
+        <span id="cart-total">0</span>
+      </div>
+      <!-- Mensaje de advertencia -->
+      <div id="warning-message" class="warning-message" style="display: none;">
+        <p><strong>Atención:</strong> El total del carrito debe ser de al menos $10 para proceder al pedido.</p>
+      </div>
+      <button id="checkout-button" class="checkout-button">Proceder al Pedido</button>
+    </section>
+
+    <!-- Panel de Agradecimiento -->
+    <div id="thank-you-panel" class="thank-you-panel hidden" style="display: none;">
+      <div class="thank-you-container">
+        <div class="check-wrapper">
+          <svg class="check-svg" viewBox="0 0 100 100">
+            <circle class="check-circle" cx="50" cy="50" r="45"/>
+            <path class="check-mark" d="M25,52 l14,14 l28,-28"/>
+          </svg>
+        </div>
+        <div class="content">
+          <h1 class="title">¡Pedido Confirmado!</h1>
+          <p class="main-message">Gracias por confiar en Asere Shops</p>
+          <p class="contact-message">Nos pondremos en contacto contigo para coordinar la entrega</p>
+          <div class="total-container" style="display: none;">
+            <div class="total-content">
+              <span class="total-label">Total de tu pedido</span>
+              <span id="order-total-amount" class="total-amount"></span>
+            </div>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="continue-shopping" class="btn primary" type="button">
+            <i class="fas fa-chevron-left"></i> Seguir Comprando
+          </button>
+          <a href="https://wa.me/+5363001537" target="_blank" class="btn whatsapp">
+            <i class="fab fa-whatsapp"></i> Contactar Ahora
+          </a>
+        </div>
+        <div class="brand-footer">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/share/15uMv3FLZr/" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/asereonlineshops?igsh=MXB5dHlhNGZ0NXZzbg==" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de Planilla de Pago -->
+    <section id="planilla-pago" class="hidden">
+      <div class="payment-container">
+        <h2><i class="fas fa-file-invoice-dollar"></i> Planilla de Pedido</h2>
+
+        <form id="payment-form">
+          <div class="form-group">
+            <label for="full-name"><i class="fas fa-user"></i> Su Nombre Completo:</label>
+            <input type="text" id="full-name" name="full-name" required>
+          </div>
+          <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i> Su Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone"><i class="fas fa-mobile-alt"></i> Su Número de Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="recipient-name"><i class="fas fa-user-tag"></i> Nombre del Destinatario:</label>
+            <input type="text" id="recipient-name" name="recipient-name" required>
+          </div>
+          <div class="form-group">
+            <label for="recipient-phone"><i class="fas fa-phone-alt"></i> Teléfono del Destinatario:</label>
+            <input type="tel" id="recipient-phone" name="recipient-phone" required>
+          </div>
+          <div class="form-group">
+            <label for="address"><i class="fas fa-map-marker-alt"></i> Dirección de Envío:</label>
+            <textarea id="address" name="address" required></textarea>
+          </div>
+
+          <!-- Mensaje importante sobre el proceso de pago -->
+        <div id="payment-notice" class="payment-notice" role="status" aria-live="polite">
+          <div class="notice-icon" aria-hidden="true"><i class="fas fa-info-circle"></i></div>
+          <div class="notice-content">
+            <p class="notice-title">Gracias por tu interés en nuestros productos.</p>
+            <p class="notice-text">Importante: Esta página no cuenta con plataforma de pago integrada. Una vez que completes tu pedido, nos pondremos en contacto contigo directamente por <strong>WhatsApp</strong> para coordinar el pago y el envío de forma personalizada y segura.</p>
+            <p class="notice-text">Asegúrate de ingresar correctamente tu número de WhatsApp. Nuestro equipo te escribirá en breve para finalizar tu compra.</p>
+            <div class="pago-entrega-aviso">
+              <i class="fas fa-truck"></i>
+              <span><strong>Pago contra entrega:</strong> Coordinamos por <b>WhatsApp</b> y pagas al recibir tu pedido.</span>
+            </div>
+          </div>
+        </div>
+        
+          <!-- Mensaje de tiempo de entrega -->
+          <div id="delivery-time-message" class="delivery-time-message">
+            <p><i class="fas fa-shipping-fast"></i> Nuestro envío es gratuito. El pedido se entregará en 24-48 horas.</p>
+          </div>
+          <h3><i class="fas fa-shopping-cart"></i> Resumen del Pedido</h3>
+          <table>
+            <thead>
+              <tr>
+                <th><i class="fas fa-box-open"></i> Producto</th>
+                <th><i class="fas fa-hashtag"></i> Cantidad</th>
+                <th><i class="fas fa-tag"></i> Precio Unitario</th>
+                <th><i class="fas fa-calculator"></i> Total</th>
+              </tr>
+            </thead>
+            <tbody id="summary-items">
+              <!-- Productos se llenan dinámicamente -->
+            </tbody>
+          </table>
+          <p id="summary-total"><i class="fas fa-receipt"></i> Total a pagar: <span id="total-compra">$0.00</span></p>
+          <div class="form-group terms">
+            <label>
+              <input type="checkbox" id="terms" name="terms" required>
+              <i class="fas fa-check-circle"></i> Acepto los <a href="politica.html" target="_blank" class="link">Términos y Condiciones</a> y la <a href="condiciones.html" target="_blank" class="link">Política de Privacidad</a>.
+            </label>
+          </div>
+          <div class="button-group">
+            <button type="submit" class="btn-submit" id="submit-button">
+              <span class="button-text"><i class="fas fa-paper-plane"></i> Aceptar y Realizar Pedido</span>
+              <div class="spinner hidden"></div>
+            </button>
+            <button type="button" class="btn-cancel" onclick="cancelPayment()">
+              <i class="fas fa-times-circle"></i> Cancelar Pedido
+            </button>
+          </div>
+          <!-- Elemento para mensaje de procesamiento (se muestra si la operación tarda) -->
+          <p id="processing-message" style="display: none; text-align: center; margin-top: 10px; color: #555;">Estamos procesando su pedido, por favor espere...</p>
+        </form>
+      </div>
+    </section>
+
+    <div id="whatsapp-button">
+      <a href="https://wa.me/+18032399264?text=¡Hola!%20Me%20gustaría%20saber%20más%20sobre%20sus%20productos." target="_blank" aria-label="Contáctanos en WhatsApp">
+        <img src="img/whatsapp.svg" alt="WhatsApp">
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h2 id="footer-about-us">Sobre Nosotros</h2>
+        <p id="footer-about-text">Somos el puente que une a cada cubano en el mundo con sus seres queridos en la isla. Nos dedicamos a ofrecer los mejores productos y servicios a nuestros clientes, con un compromiso inquebrantable hacia su satisfacción.</p>
+      </div>
+      <div class="footer-section links">
+        <h2 id="footer-quick-links">Enlaces Rápidos</h2>
+        <ul>
+          <li><a href="#productos" id="footer-products">Productos</a></li>
+          <li><a href="#carrito" id="footer-cart">Carrito</a></li>
+          <li><a href="politica.html" id="footer-privacy-policy">Política de Privacidad</a></li>
+          <li><a href="condiciones.html" id="footer-terms-conditions">Condiciones de Uso</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h2 id="footer_contact">Contacto</h2>
+        <ul>
+          <li>Email: <a href="mailto:soporte.asere@gmail.com">soporte.asere@gmail.com</a></li>
+          <li>Teléfono: +53 63001537</li>
+        </ul>
+      </div>
+      <div class="footer-section social">
+        <h2 id="footer-follow-us">Síguenos</h2>
+        <ul>
+          <li><a href="https://www.facebook.com/share/15uMv3FLZr/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="https://www.instagram.com/asereonlineshops?igsh=MXB5dHlhNGZ0NXZzbg==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-section developer">
+        <h2>Desarrollado Por</h2>
+        <div class="developer-info">
+          <a href="" target="_blank" rel="noopener noreferrer" class="developer-link">
+            <img src="img/hlab.jpg" alt="HLab Logo" class="developer-logo">
+            <div class="developer-details">
+              <span class="developer-name">HLab</span>
+              <span class="developer-role">Software Development</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p id="affiliate-message"></p>
+      &copy; 2024-2026 Asere Shops. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="Js/descargarImagenProducto.js"></script>
+  <script src="Js/ip-block.js"></script>
+  <script src="Js/productos.js"></script>
+  <script src="Js/carrito.js"></script>
+  <script src="Js/currency.js"></script>
+  <script src="Js/afiliados.js"></script>
+  <script src="Js/ui.js"></script>
+  <script src="Js/main.js"></script>
+  <script src="Js/pago.js" defer></script>   <!-- Script de la planilla de pago --> 
+</body>
+</html>
