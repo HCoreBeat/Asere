@@ -491,19 +491,6 @@
     "id": "mlgzank2-153zx0s"
   },
   {
-    "nombre": "Leche entera en polvo Macrofood(1kg)",
-    "categoria": "lacteos",
-    "precio": 8,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/leche_entera_en_polvo_vima_1kg.jpg",
-    "descripcion": "Leche entera \n\nNo vitaminada",
-    "nuevo": false,
-    "id": "mlgzank2-1xwu0qe"
-  },
-  {
     "nombre": "Pasta de tomate Oderich 350g",
     "categoria": "enlatados",
     "precio": 1.17,
@@ -1080,19 +1067,6 @@
     "descripcion": "Galletas marías, ideales para toda la familia",
     "nuevo": true,
     "id": "mlgzank4-14kue04"
-  },
-  {
-    "nombre": "Georges piernas de pollo",
-    "categoria": "cárnicos",
-    "precio": 12,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/georges_piernas_de_pollo.jpg",
-    "descripcion": "Paquetes de  cuartos pollo de 10Lb",
-    "nuevo": false,
-    "id": "mlgzank4-lbeu42h"
   },
   {
     "nombre": "Caja de George's muslos de pollo (4 pqts)",
