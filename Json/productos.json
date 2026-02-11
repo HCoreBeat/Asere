@@ -917,18 +917,6 @@
     "id": "mlgzank4-492ui61"
   },
   {
-    "nombre": "Caja de cuartos de pollo 40lbs",
-    "categoria": "cárnicos",
-    "precio": 45,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/caja_de_cuartos_de_pollo_40lbs.webp",
-    "nuevo": true,
-    "id": "mlgzank4-1py2nat"
-  },
-  {
     "nombre": "Paquete de coditos 500g",
     "categoria": "despensa",
     "precio": 0.93,
@@ -1054,19 +1042,6 @@
     "descripcion": "Galletas marías, ideales para toda la familia",
     "nuevo": true,
     "id": "mlgzank4-14kue04"
-  },
-  {
-    "nombre": "Caja de George's muslos de pollo (4 pqts)",
-    "categoria": "cárnicos",
-    "precio": 45,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/caja_de_georges_muslos_de_pollo_4_pqts.jpg",
-    "descripcion": "Caja que contiene 4 paquetes de muslos de pollo George's.\n40 libras de pura carne para la familia entera.",
-    "nuevo": true,
-    "id": "mlgzank4-1igm97o"
   },
   {
     "nombre": "Lavadora Mystic (11Kg)",
@@ -1313,5 +1288,17 @@
     "imagen": "img/products/azcar_parda_x_lb.jpg",
     "nuevo": true,
     "id": "mlh17sjk-1ltd9c1"
+  },
+  {
+    "nombre": "Paquete de Cuartos de Pollo 10lb",
+    "categoria": "cárnicos",
+    "precio": 14,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/paquete_de_cuartos_de_pollo_10lb.jpg",
+    "nuevo": true,
+    "id": "mli1qt1h-m8mjr31"
   }
 ]
