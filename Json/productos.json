@@ -1300,5 +1300,17 @@
     "imagen": "img/products/paquete_de_cuartos_de_pollo_10lb.jpg",
     "nuevo": true,
     "id": "mli1qt1h-m8mjr31"
+  },
+  {
+    "nombre": "Aceite 1Lt",
+    "categoria": "despensa",
+    "precio": 4.77,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/aceite_1lt.jpg",
+    "nuevo": true,
+    "id": "mli2ve9o-a60fi91"
   }
 ]
