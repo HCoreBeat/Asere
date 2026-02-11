@@ -1270,7 +1270,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/saco_de_arroz_25kg.jpg",
     "descripcion": "Saco de Arroz de muy buena calidad de 25kg . aproximadamente entre las 54 - 55 libras",
     "nuevo": true,
@@ -1288,19 +1288,6 @@
     "descripcion": "Azúcar Don Isidro refino, de muy buena calidad",
     "nuevo": true,
     "id": "mlgzank5-fsnsjq1"
-  },
-  {
-    "nombre": "Arroz Grano Dorado 50lb",
-    "categoria": "pastas-y-granos",
-    "precio": 45,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/arroz_grano_dorado_50lb.jpg",
-    "descripcion": "El mjor arroz de este lado del misisipi",
-    "nuevo": true,
-    "id": "mlgzank5-1ulx2vb"
   },
   {
     "nombre": "Picadillo de pollo Guibon",
