@@ -1,18 +1,5 @@
 [
   {
-    "nombre": "Georges piernas de pollo",
-    "categoria": "cárnicos",
-    "precio": 12,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/georges_piernas_de_pollo.jpg",
-    "descripcion": "Paquetes de  cuartos pollo de 10Lb",
-    "nuevo": false,
-    "id": "mlgzank1-1s3ntwb"
-  },
-  {
     "nombre": "Carne de cerdo x Lb",
     "categoria": "cárnicos",
     "precio": 2.65,
