@@ -887,7 +887,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/carne_de_res_enlatada_400g.jpg",
     "nuevo": true,
     "id": "mlgzank4-1hd119m"
