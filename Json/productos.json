@@ -182,7 +182,7 @@
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/Carton_de_Huevo.jpeg",
+    "imagen": "img/products/cartn_de_huevos.jpg",
     "descripcion": "Disfruta del sabor inigualable de los verdaderos huevos de campo. Nuestros huevos provienen de gallinas criadas en libertad, al aire libre, donde pueden picotear pastos naturales, moverse sin restricciones y llevar una vida libre de estrés. Esta alimentación variada y su bienestar se traducen directamente en un producto superior: yemas de color intenso, cremosas y consistentes, y un sabor auténtico que transformará tus desayunos y recetas. Al elegir nuestros huevos frescos, no solo estás comprando un alimento rico en proteínas y nutrientes, sino que también apoyas las prácticas de bienestar animal y la agricultura sostenible. ¡Lleva a tu mesa la frescura y la calidad que solo los huevos de gallinas felices pueden ofrecer!",
     "nuevo": false,
     "id": "mlgzank2-1pwcv2o"
@@ -224,16 +224,16 @@
     "id": "mlgzank2-airi759"
   },
   {
-    "nombre": "Arroz Rainha Brasil (1Kg)",
+    "nombre": "Arroz Blanco (1Kg)",
     "categoria": "pastas-y-granos",
     "precio": 1.87,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/arroz_rainha.jpg",
+    "imagen": "img/products/arroz_blanco_1kg.jpg",
     "descripcion": "Este arroz blanco tipo 1 de la marca Rainha Brasil está compuesto por granos largos finos, pulidos y libres de grumos, lo que garantiza una textura uniforme y suave al cocinar. Es una opción nutritiva, ideal para acompañar diversos platos y adaptarse a recetas tradicionales como arroz con frijoles, risottos o guarniciones ligeras y saludables.",
-    "nuevo": false,
+    "nuevo": true,
     "id": "mlgzank2-psrcao1"
   },
   {
@@ -809,15 +809,15 @@
     "id": "mlgzank3-5dymm24"
   },
   {
-    "nombre": "Leche entera en polvo Macrofood(1kg)",
+    "nombre": "Leche entera en polvo (1kg)",
     "categoria": "lacteos",
-    "precio": 8,
+    "precio": 9.13,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/leche_entera_en_polvo_vima_1kg.jpg",
-    "nuevo": false,
+    "imagen": "img/products/leche_entera_en_polvo_1kg.jpg",
+    "nuevo": true,
     "id": "mlgzank3-1pzccww"
   },
   {
@@ -941,14 +941,14 @@
     "id": "mlgzank4-dez8evc"
   },
   {
-    "nombre": "Paquete de hígados de pollo 1kg",
+    "nombre": "Paquete de hígados de pollo",
     "categoria": "cárnicos",
-    "precio": 2.29,
+    "precio": 3.17,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/paquete_de_hgados_de_pollo_1kg.jpg",
+    "imagen": "img/products/paquete_de_hgados_de_pollo.jpg",
     "nuevo": true,
     "id": "mlgzank4-1minyju"
   },
@@ -984,7 +984,7 @@
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/producto.jpg",
+    "imagen": "img/products/frijoles_colorados_x_lb.jpg",
     "nuevo": true,
     "id": "mlgzank4-1oad65v"
   },
@@ -1312,5 +1312,77 @@
     "imagen": "img/products/aceite_1lt.jpg",
     "nuevo": true,
     "id": "mli2ve9o-a60fi91"
+  },
+  {
+    "nombre": "Leche Evaporada",
+    "categoria": "lacteos",
+    "precio": 2.87,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/leche_evaporada.jpg",
+    "nuevo": true,
+    "id": "mlipxcrm-1ev233g"
+  },
+  {
+    "nombre": "Mortadella especial 3Kg",
+    "categoria": "cárnicos",
+    "precio": 7.27,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/mortadella_especial_3kg.jpg",
+    "nuevo": true,
+    "id": "mliq32iu-1vrvppm"
+  },
+  {
+    "nombre": "Coffee mate 311.8g",
+    "categoria": "café",
+    "precio": 5.67,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/coffe_mate_311.8g.jpg",
+    "nuevo": true,
+    "id": "mliq4l5b-tfq39wu"
+  },
+  {
+    "nombre": "Pack de Comino y Sazón",
+    "categoria": "despensa",
+    "precio": 0.87,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pack_de_comino_y_sazn.jpg",
+    "nuevo": true,
+    "id": "mliq66lf-8t6dfj1"
+  },
+  {
+    "nombre": "Chocolate en Polvo",
+    "categoria": "despensa",
+    "precio": 5,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/chocolate_en_polvo.jpg",
+    "nuevo": true,
+    "id": "mliq9chn-qrtck39"
+  },
+  {
+    "nombre": "Lata de Galletas",
+    "categoria": "confituras",
+    "precio": 4,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/lata_de_galletas.jpg",
+    "nuevo": true,
+    "id": "mliqd0um-1vgejpa"
   }
 ]
