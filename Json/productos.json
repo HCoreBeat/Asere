@@ -1204,7 +1204,7 @@
   {
     "nombre": "Saco de Azúcar 110lb",
     "categoria": "pastas-y-granos",
-    "precio": 100,
+    "precio": 80,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1334,5 +1334,29 @@
     "imagen": "img/products/lata_de_galletas.jpg",
     "nuevo": true,
     "id": "mliqd0um-1vgejpa"
+  },
+  {
+    "nombre": "Carne de Res enlatada",
+    "categoria": "cárnicos",
+    "precio": 2.57,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/carne_de_res_enlatada.webp",
+    "nuevo": true,
+    "id": "mll8udld-nu91en1"
+  },
+  {
+    "nombre": "Caja de Malta Bucanero",
+    "categoria": "bebidas",
+    "precio": 25,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/caja_de_malta_bucanero.webp",
+    "nuevo": true,
+    "id": "mll8va5a-rodndwa"
   }
 ]
