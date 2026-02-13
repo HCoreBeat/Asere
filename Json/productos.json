@@ -726,7 +726,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/caf_purasangre_250g.jpg",
     "descripcion": "Descubre la nobleza en cada taza con el Café Purasangre Molido. Este café ha sido cuidadosamente mezclado para lograr un equilibrio de sabor y potencia inigualable, combinando un 70% de granos Robusta para cuerpo y crema, con un 30% de granos Arábica para un aroma fino y delicado. Su Tueste Natural garantiza que disfrutes del sabor puro del café sin aditivos, resaltando las mejores cualidades de esta blend única. Ideal para los verdaderos amantes del café que buscan una experiencia intensa pero armónica. Cada paquete de 250 g promete llevar a tu hogar la fuerza y el carácter que definen a un café de pura casta.",
     "nuevo": true,
