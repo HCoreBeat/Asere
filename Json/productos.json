@@ -383,18 +383,6 @@
     "id": "mlgzank2-7lrzeme"
   },
   {
-    "nombre": "Caja de Malta Bucanero",
-    "categoria": "bebidas",
-    "precio": 25.001,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/Caja_de_Malta_Bucanero.jpg",
-    "nuevo": false,
-    "id": "mlgzank2-1yo4pwi"
-  },
-  {
     "nombre": "Refresco Limón (330ml)",
     "categoria": "bebidas",
     "precio": 0.95,
@@ -881,18 +869,6 @@
     "id": "mlgzank4-182v9d0"
   },
   {
-    "nombre": "Carne de res enlatada 400g",
-    "categoria": "enlatados",
-    "precio": 2.17,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/carne_de_res_enlatada_400g.jpg",
-    "nuevo": true,
-    "id": "mlgzank4-1hd119m"
-  },
-  {
     "nombre": "Caja de cerveza Bucanero 24u",
     "categoria": "alcohol",
     "precio": 24,
@@ -1187,19 +1163,6 @@
     "id": "mlgzank4-1wkh6v7"
   },
   {
-    "nombre": "Garbanzos (1lb)",
-    "categoria": "pastas-y-granos",
-    "precio": 2.29,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/garbanzos_1lb.jpg",
-    "descripcion": "Los mejores garbanzos para disfrutar con la familia",
-    "nuevo": true,
-    "id": "mlgzank4-ptptjb1"
-  },
-  {
     "nombre": "Sal 1Kg",
     "categoria": "despensa",
     "precio": 1.43,
@@ -1224,19 +1187,6 @@
     "descripcion": "El mejor atún que podrás encontrar de este lado del Misisipi",
     "nuevo": true,
     "id": "mlgzank4-1uenll5"
-  },
-  {
-    "nombre": "Paquete Salchicha 1kg",
-    "categoria": "cárnicos",
-    "precio": 3.17,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/paquete_salchicha_1kg.jpg",
-    "descripcion": "1kg",
-    "nuevo": true,
-    "id": "mlgzank5-qghlhg1"
   },
   {
     "nombre": "Saco de Arroz 25kg",
