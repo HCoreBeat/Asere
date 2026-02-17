@@ -1610,5 +1610,17 @@
     "imagen": "img/products/pasta_de_tomate_vima.jpeg",
     "nuevo": true,
     "id": "mlq7aq58-1jmj44p"
+  },
+  {
+    "nombre": "Saco de Carbón",
+    "categoria": "otros",
+    "precio": 6,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/saco_de_carbn.jpg",
+    "nuevo": true,
+    "id": "mlqxb74h-15nfelz"
   }
 ]
