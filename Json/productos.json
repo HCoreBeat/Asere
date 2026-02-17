@@ -785,18 +785,6 @@
     "id": "mlgzank3-uh8jflq"
   },
   {
-    "nombre": "Vinagre de vino tinto (500ml)",
-    "categoria": "despensa",
-    "precio": 2.29,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/vinagre_1litro.jpeg",
-    "nuevo": false,
-    "id": "mlgzank3-5dymm24"
-  },
-  {
     "nombre": "Leche entera en polvo (1kg)",
     "categoria": "lacteos",
     "precio": 9.13,
