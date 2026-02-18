@@ -366,7 +366,7 @@
 }
 
 /* Ajustes para pantallas hasta 600px */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     header {
         padding: 0px 0px;
         height: auto;
