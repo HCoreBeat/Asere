@@ -1622,5 +1622,17 @@
     "imagen": "img/products/saco_de_carbn.jpg",
     "nuevo": true,
     "id": "mlqxb74h-15nfelz"
+  },
+  {
+    "nombre": "Café la Llave",
+    "categoria": "café",
+    "precio": 10,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/caf_la_llave.jpg",
+    "nuevo": true,
+    "id": "mlyhvi5g-qcrnmmf"
   }
 ]
