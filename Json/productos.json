@@ -1234,7 +1234,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/paquete_de_cuartos_de_pollo_10lb.jpg",
     "nuevo": true,
     "id": "mli1qt1h-m8mjr31"
