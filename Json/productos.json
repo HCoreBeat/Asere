@@ -1634,5 +1634,21 @@
     "imagen": "img/products/caf_la_llave.jpg",
     "nuevo": true,
     "id": "mlyhvi5g-qcrnmmf"
+  },
+  {
+    "nombre": "Paquete de salchichas (340g)",
+    "categoria": "cárnicos",
+    "precio": 1.57,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/paquete_de_salchichas_340g.webp",
+    "imagenesAdicionales": [
+      "img/products/paquete_de_salchichas_340g_1.jpg",
+      "img/products/paquete_de_salchichas_340g_1.jpg"
+    ],
+    "nuevo": true,
+    "id": "mm0wf97i-1hvmh7i"
   }
 ]
