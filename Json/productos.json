@@ -1645,9 +1645,34 @@
     "disponible": true,
     "imagen": "img/products/paquete_de_salchichas_340g.webp",
     "imagenesAdicionales": [
+      "img/products/paquete_de_salchichas_340g_1.jpg",
       "img/products/paquete_de_salchichas_340g_1.jpg"
     ],
     "nuevo": true,
     "id": "mm0wf97i-1hvmh7i"
+  },
+  {
+    "nombre": "Pechuga de pollo (2Kg)",
+    "categoria": "cárnicos",
+    "precio": 15.73,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pechuga_de_pollo_2kg.webp",
+    "nuevo": true,
+    "id": "mm0wy3wx-1jvjivz"
+  },
+  {
+    "nombre": "Pollo entero congelado",
+    "categoria": "cárnicos",
+    "precio": 7.17,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pollo_entero_congelado.jpg",
+    "nuevo": true,
+    "id": "mm0wz21h-u01m57b"
   }
 ]
