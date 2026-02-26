@@ -528,13 +528,13 @@
   {
     "nombre": "Picadillo de pollo (1Kg)",
     "categoria": "cárnicos",
-    "precio": 2.97,
-    "descuento": 27.6,
+    "precio": 2.37,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
     "disponible": true,
-    "imagen": "img/products/Picadillo_de_Pollo.jpg",
-    "nuevo": false,
+    "imagen": "img/products/picadillo_de_pollo_1kg.jpg",
+    "nuevo": true,
     "id": "mlgzank3-vqyyagj"
   },
   {
@@ -791,7 +791,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/leche_entera_en_polvo_1kg.jpg",
     "nuevo": true,
     "id": "mlgzank3-1pzccww"
@@ -1674,5 +1674,29 @@
     "imagen": "img/products/pollo_entero_congelado.jpg",
     "nuevo": true,
     "id": "mm0wz21h-u01m57b"
+  },
+  {
+    "nombre": "Caja de Picadillo 15kg",
+    "categoria": "cárnicos",
+    "precio": 33,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/caja_de_picadillo_15kg.jpg",
+    "nuevo": true,
+    "id": "mm2t6w2b-89775xx"
+  },
+  {
+    "nombre": "Cubeta de Galletas de Soda",
+    "categoria": "confituras",
+    "precio": 11.47,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/cubeta_de_galletas_de_soda.jpg",
+    "nuevo": true,
+    "id": "mm2t9y8h-6vc1uoo"
   }
 ]
