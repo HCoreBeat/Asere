@@ -1222,7 +1222,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/azcar_parda_x_lb.jpg",
     "nuevo": true,
     "id": "mlh17sjk-1ltd9c1"
