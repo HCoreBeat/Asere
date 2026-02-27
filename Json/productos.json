@@ -1698,5 +1698,29 @@
     "imagen": "img/products/cubeta_de_galletas_de_soda.jpg",
     "nuevo": true,
     "id": "mm2t9y8h-6vc1uoo"
+  },
+  {
+    "nombre": "Helado La Finquita 4lts",
+    "categoria": "lacteos",
+    "precio": 14.97,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/helado_la_finquita_4lts.jpg",
+    "nuevo": true,
+    "id": "mm46pr96-1n1aj6c"
+  },
+  {
+    "nombre": "Fideos 500g",
+    "categoria": "despensa",
+    "precio": 1.47,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/fideos_500g.jpg",
+    "nuevo": true,
+    "id": "mm46rkpk-1nsu79h"
   }
 ]
