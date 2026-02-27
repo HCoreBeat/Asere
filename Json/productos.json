@@ -520,7 +520,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/spam.webp",
     "nuevo": false,
     "id": "mlgzank3-1yyr2pc"
