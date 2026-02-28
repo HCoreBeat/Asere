@@ -1014,10 +1014,10 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/lavadora_mystic_11kg.jpg",
     "descripcion": "La Lavadora Mystic de 11Kg ofrece una mayor capacidad para quienes necesitan lavar cargas más grandes con comodidad y eficiencia. Su diseño robusto y su panel superior intuitivo permiten un uso sencillo y confiable en el día a día. Con 11 kilogramos de capacidad, es perfecta para familias medianas o para quienes buscan un equipo más amplio sin sacrificar practicidad. Su construcción resistente y su garantía de 1 mes la convierten en una opción segura y accesible para el hogar.",
-    "nuevo": true,
+    "nuevo": false,
     "id": "mlgzank4-w4px7vl"
   },
   {
