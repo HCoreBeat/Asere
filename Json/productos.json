@@ -157,7 +157,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/Pan.jpeg",
     "nuevo": false,
     "id": "mlgzank2-c6lmvk1"
@@ -1594,7 +1594,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/melocotn_en_almbar.jpeg",
     "nuevo": true,
     "id": "mlq79e7y-1h3e8up"
