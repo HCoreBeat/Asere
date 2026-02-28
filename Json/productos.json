@@ -1722,5 +1722,29 @@
     "imagen": "img/products/fideos_500g.jpg",
     "nuevo": true,
     "id": "mm46rkpk-1nsu79h"
+  },
+  {
+    "nombre": "Helado de fresa Nestle",
+    "categoria": "lacteos",
+    "precio": 4.97,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/helado_de_fresa_nestle.jpg",
+    "nuevo": true,
+    "id": "mm6myzyr-gp8h861"
+  },
+  {
+    "nombre": "Helado de Vainilla Nestle",
+    "categoria": "lacteos",
+    "precio": 4.97,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/helado_de_vainilla_nestle.jpg",
+    "nuevo": true,
+    "id": "mm6mzrl2-1g22l2j"
   }
 ]
