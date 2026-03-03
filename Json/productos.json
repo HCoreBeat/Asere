@@ -1746,5 +1746,53 @@
     "imagen": "img/products/helado_de_vainilla_nestle.jpg",
     "nuevo": true,
     "id": "mm6mzrl2-1g22l2j"
+  },
+  {
+    "nombre": "Aceitunas",
+    "categoria": "aderezos",
+    "precio": 2.17,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/aceitunas.jpg",
+    "nuevo": true,
+    "id": "mmazzije-1bccd11"
+  },
+  {
+    "nombre": "Croquetas de pollo",
+    "categoria": "cárnicos",
+    "precio": 9.97,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/croquetas_de_pollo.jpg",
+    "nuevo": true,
+    "id": "mmazpvvv-10w3z76"
+  },
+  {
+    "nombre": "Paquete de Pollo 2 Kg",
+    "categoria": "cárnicos",
+    "precio": 7.27,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/paquete_de_pollo_2_kg.jpg",
+    "nuevo": true,
+    "id": "mmazm8vj-1b3c7jt"
+  },
+  {
+    "nombre": "Caja de pollo 12kg (6pqts)",
+    "categoria": "cárnicos",
+    "precio": 42.84,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/caja_de_pollo_12kg_6pqts.jpg",
+    "nuevo": true,
+    "id": "mmazne5w-dcfnu17"
   }
 ]
