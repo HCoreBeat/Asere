@@ -75,6 +75,13 @@ function handleRouteChange() {
             }
             return;
         }
+        // Manejo especial: si la categoría es combos mostrar el panel completo de combos
+        if (slug === 'combos') {
+            if (typeof window.mostrarPanelCombos === 'function') {
+                window.mostrarPanelCombos();
+            }
+            return;
+        }
 
         // Para una categoría específica
         // Ocultar separadores
@@ -101,6 +108,12 @@ function handleRouteChange() {
         // Ocultar botones de cargar más
         document.querySelectorAll('.btn-cargar-mas').forEach(btn => btn.style.display = 'none');
 
+        return;
+    }
+    if (hash === '#combos') {
+        if (typeof window.mostrarPanelCombos === 'function') {
+            window.mostrarPanelCombos();
+        }
         return;
     }
     if (hash.startsWith('#producto-')) {
@@ -146,8 +159,37 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(([productosData, combosData]) => {
         productos = productosData;
         combos = combosData;
+        
+        // Inicializar el Sistema Dinámico de Frescura Visual
+        // Este paso es CRÍTICO: enriquece datos y calcula scores antes de cualquier renderizado
+        if (typeof window.initializeDynamicSystem === 'function') {
+            const dynamicInit = window.initializeDynamicSystem(productos);
+            if (dynamicInit && dynamicInit.products) {
+                productos = dynamicInit.products;
+            }
+            
+            const dynamicInitCombos = window.initializeDynamicSystem(combos);
+            if (dynamicInitCombos && dynamicInitCombos.products) {
+                combos = dynamicInitCombos.products;
+            }
+        }
+        
+        // Backup: si initializeDynamicSystem no existe, al menos enriquecer los datos
+        if (typeof window.enrichProductsWithDynamicData === 'function') {
+            productos = window.enrichProductsWithDynamicData(productos);
+            combos = window.enrichProductsWithDynamicData(combos);
+        }
+        
         window.productos = productos;
         window.combos = combos;
+        
+        // Log de confirmación
+        console.log('[Init] Datos cargados y enriquecidos con sistema dinámico:', {
+            productosCount: productos.length,
+            combosCount: combos.length,
+            timestamp: new Date().toISOString()
+        });
+        
         renderProductos();
         cargarCarrito();
         handleRouteChange(); // Mostrar el panel correcto al cargar

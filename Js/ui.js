@@ -1,34 +1,22 @@
-// Botón para compartir el producto desde el panel de detalles
+// Botón para descargar la imagen del producto desde el panel de detalles
+// Nota: Ahora descarga la imagen en lugar de compartir el enlace (descargarImagenProducto.js maneja la descarga)
 
-// Botón compartir flotante sobre la imagen principal
 document.addEventListener('DOMContentLoaded', function() {
   const compartirBtn = document.getElementById('btn-compartir-producto');
   if (compartirBtn) {
-    compartirBtn.setAttribute('data-tooltip', 'Compartir enlace');
+    compartirBtn.setAttribute('data-tooltip', 'Descargar imagen');
+    // La funcionalidad de descarga está vinculada en descargarImagenProducto.js
+    // Mostramos retroalimentación al usuario
     compartirBtn.addEventListener('click', function() {
-      const nombre = document.getElementById('detalle-nombre')?.textContent?.trim();
-      let url = window.location.origin + window.location.pathname;
-      if (nombre) {
-        const hash = '#producto-' + nombre.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-        url += hash;
-      }
-      if (navigator.share) {
-        navigator.share({
-          title: nombre || 'Producto Asere',
-          url
-        });
-      } else {
-        navigator.clipboard.writeText(url).then(() => {
-          compartirBtn.classList.add('copiado');
-          compartirBtn.setAttribute('data-tooltip', '¡Enlace copiado!');
-          compartirBtn.querySelector('i').className = 'fas fa-check';
-          setTimeout(() => {
-            compartirBtn.classList.remove('copiado');
-            compartirBtn.setAttribute('data-tooltip', 'Compartir enlace');
-            compartirBtn.querySelector('i').className = 'fas fa-share-alt';
-          }, 1600);
-        });
-      }
+      // Agregar efecto visual de feedback
+      compartirBtn.classList.add('descargando');
+      compartirBtn.setAttribute('data-tooltip', '⏳ Generando imagen...');
+      
+      // Remover feedback después de 2 segundos
+      setTimeout(() => {
+        compartirBtn.classList.remove('descargando');
+        compartirBtn.setAttribute('data-tooltip', 'Descargar imagen');
+      }, 2000);
     });
   }
 });

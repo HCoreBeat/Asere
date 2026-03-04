@@ -149,9 +149,13 @@ function eliminarDelCarrito(id) {
 }
 
 function agregarAlCarrito(nombre, precio, cantidadId, imagen, boton, productosCombo = []) {
-    const cantidadElemento = document.getElementById(cantidadId);
-    if (!cantidadElemento) return;
-    const cantidad = parseInt(cantidadElemento.textContent);
+    // si no se suministra un ID o no existe el elemento, asumimos 1 unidad
+    let cantidad = 1;
+    if (cantidadId) {
+        const cantidadElemento = document.getElementById(cantidadId);
+        if (!cantidadElemento) return; // si se dio ID pero no existe, abortar
+        cantidad = parseInt(cantidadElemento.textContent) || 1;
+    }
     const productoExistente = carrito.find(producto => producto.nombre === nombre);
     const productoEnDB = productos.find(p => p.nombre === nombre) || combos.find(c => c.nombre === nombre);
     const imagenPrincipal = productoEnDB ? productoEnDB.imagen : imagen;

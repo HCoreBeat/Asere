@@ -876,10 +876,9 @@
 .mas-vendidos-container {
     display: flex; /* Usamos flexbox para el desplazamiento horizontal */
     overflow-x: auto; /* Permite el desplazamiento horizontal */
-    gap: 15px;
+    gap: 5px;
     padding: 10px 5px; /* Agrega un poco de padding para el contenido */
     scroll-snap-type: x mandatory; /* Alineación de los productos al hacer scroll */
-    -webkit-overflow-scrolling: touch; /* Mejora el rendimiento en dispositivos móviles */
     border-radius: 10px; /* Bordes redondeados */
     background: #ffffff; /* Fondo blanco para resaltar los productos */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
@@ -895,7 +894,7 @@
 .mas-vendidos-container .producto {
     flex: 0 0 auto;
     width: 180px;
-    min-height: 220px;
+    min-height: 200px;
     scroll-snap-align: start;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 8px;
@@ -913,13 +912,14 @@
 }
 
 .mas-vendidos-container .producto .nombre {
-    font-size: 0.9em;
+    font-size: 0.8em;
     line-height: 1.2;
     margin: 0 0 8px 0;
     max-height: 2.4em;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     order: 1;
 }
@@ -984,7 +984,7 @@
 
 .producto-img {
     text-align: center;
-    margin: 15px 10px;
+    margin: 5px 10px;
     height: 160px;
     overflow: hidden;
     position: relative;
@@ -1057,14 +1057,28 @@
 }
 
 .badge.mas-vendido {
-    font-size: 12px;
-    width: 85px;
-    height: 19px;
-    background-color: #00796B;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: #222;
     color: #fff;
-    padding: 0px 3px;
-    border-radius: 3px;
-    clip-path: polygon(0 0, 100% 0, 99% 60%, 75% 100%, 0 100%);
+}
+.badge.mas-vendido.producto-masvendido{
+    background: #ff4040;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 5;
 }
 
 .etiqueta-segmento{
@@ -1217,28 +1231,23 @@
 
 /* Badge for new products */
 .badge.nuevo {
-    background: url('../img/badge_new.png') no-repeat;
-    background-size: contain;
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    top: 15px;
-    left: 65px;
-    transform: translate(100%, -30%);
-    z-index: 10;
-    padding: 0;
-    border-radius: 0;
-    font-size: 0;
-    transition: transform 0.3s ease;
-    pointer-events: none;
+    background: #007185;
+    color: white;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .badge.nuevo:hover {
-    transform: translate(25%, -25%) scale(1.1);
-}
-
-.badge.nuevo:hover {
-    transform: scale(1.1);
+    background: #005a70;
+    transform: scale(1.05);
 }
 
 /* Indicator for categories with new products */
@@ -1298,4 +1307,344 @@
         transform: scale(1);
         box-shadow: 0 0 0 0 rgba(33, 150, 243, 0);
     }
+}
+
+/* Combos preview grid */
+.combos-grid-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    margin-bottom: 10px;
+}
+.combo-preview img {
+    width: 100%;
+    max-width: 160px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+.combo-preview img:hover {
+    transform: scale(1.03);
+}
+
+/* Botón ver más para combos */
+.btn-ver-mas-combos {
+    display: block;
+    margin: 5px auto 20px auto;
+    padding: 8px 16px;
+    background: #f3f3f3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    color: #007185;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    width: fit-content;
+} 
+.btn-ver-mas-combos:hover {
+    background: #005a70;
+}
+/* ===== ESTRUCTURA PANEL DE COMBOS (Grid) ===== */
+
+/* Panel principal contenedor */
+.combos-card-panel {
+    margin-top: 18rem;
+    width: 100%;
+    background: var(--blanco, #ffffff);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del panel */
+.packs-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 1.5rem 0 1rem;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+/* Cuerpo del panel (contiene el grid) */
+.category-card-body {
+    padding: 1.5rem;
+}
+
+/* Grid de packs - ESTILO AMAZON */
+.packs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Cards de packs - ESTILO AMAZON PROFESIONAL */
+.pack-card {
+    background: var(--blanco);
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.pack-card:hover {
+    border-color: #999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+/* Badges en la tarjeta */
+.pack-badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 8px;
+    min-height: 20px;
+}
+
+.pack-badge {
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background: #00796b;
+    color: white;
+}
+
+.pack-badge.oferta {
+    background: #C00;
+    color: white;
+}
+
+.pack-badge.nuevo {
+    background: #007185;
+    color: white;
+}
+
+/* Imagen del pack */
+.pack-image-container {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    background: #f7f8f8;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.pack-image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.pack-card:hover .pack-image {
+    transform: scale(1.05);
+}
+
+/* Ahorros/Savings badge */
+.pack-savings {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #B12704;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    z-index: 2;
+}
+
+/* Nombre del pack */
+.pack-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+    height: auto;
+    min-height: 38px;
+    overflow: visible;
+    margin: 0 0 6px 0;
+    color: #007185;
+    display: block;
+}
+
+.pack-title:hover {
+    color: #C45500;
+}
+
+/* Descripción breve dentro del pack */
+.pack-description {
+    font-size: 13px;
+    color: #333;
+    margin: 4px 0 8px 0;
+    line-height: 1.4;
+}
+
+/* Info del pack */
+.pack-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 0.75rem;
+}
+
+/* Contenido/características */
+.pack-contents {
+    background: #f7f8f8;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #e8e8e8;
+    flex-grow: 1;
+}
+
+.pack-contents-title {
+    font-size: 10px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.pack-contents-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 11px;
+}
+
+.pack-contents-list li {
+    display: flex;
+    gap: 6px;
+    padding: 2px 0;
+    color: #1a1a1a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pack-contents-list li::before {
+    content: "•";
+    color: #C00;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.pack-contents-list .remaining-items {
+    font-weight: 600;
+    color: #007185;
+}
+
+/* Contenedor de precio */
+.pack-price-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px solid #e8e8e8;
+}
+
+.pack-original-price {
+    font-size: 12px;
+    color: #666;
+    text-decoration: line-through;
+}
+
+.pack-original-price .currency {
+    font-size: 10px;
+}
+
+.pack-current-price {
+    font-size: 20px;
+    color: #B12704;
+    font-weight: 700;
+}
+
+.pack-current-price .currency {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.pack-discount-percent {
+    background: #B12704;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+/* Footer del pack (cantidad + botón) */
+.pack-footer {
+    margin-top: auto;
+    border-top: 1px solid #e8e8e8;
+}
+
+/* Botón Añadir al carrito */
+.add-pack-to-cart {
+    background: #ffd814;
+    border: 1px solid #ffd814;
+    border-radius: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.2s ease;
+    color: #000;
+    width: 100%;
+    margin-top: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-pack-to-cart:hover {
+    background: #F7CA00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.add-pack-to-cart i {
+    margin-right: 4px;
+}
+
+/* Footer del panel de combos */
+.category-card-footer {
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 1px solid #e8e8e8;
+    background: #fafafa;
+}
+
+.btn-volver {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: 1px solid #e8e8e8;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #007185;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-volver:hover {
+    border-color: #007185;
+    background: #f7f8f8;
 }

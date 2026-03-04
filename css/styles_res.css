@@ -217,6 +217,15 @@
         justify-content: center;
         align-items: center;
     }
+    /* ajustes combos preview en móviles: forzamos dos columnas para que queden al menos 2 filas visibles */
+    .combos-grid-preview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .btn-ver-mas-combos {
+        display: block;
+        width: 90%;
+        text-align: center;
+    }
     .slogan {
         flex-direction: column;
         text-align: center;
@@ -242,8 +251,8 @@
     }
 
     .nombre {
-        font-size: 12px;
-        max-height: 30px;
+        font-size: 15px;
+        max-height: 50px;
     }
 
     .precio {
@@ -267,7 +276,7 @@
 
     .mas-vendidos-container .producto {
         flex: 0 0 auto;
-        width: 155px;
+        width: 125px;
         height: 200px;
         scroll-snap-align: start;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -276,7 +285,7 @@
 
     .mas-vendidos-container .producto .producto-img {
         height: 100px;
-        width: 120px;
+        width: 100px;
     }
 
     #detalle-contenido {
@@ -605,13 +614,11 @@
     gap: 18px;
     }
     .pack-card {
-        min-width: 260px;
+        min-width: 150px;
         max-width: 270px;
-        flex: 0 0 180px;
         padding-bottom: 10px;
     }
     .pack-info {
-        padding: 10px 8px 0 8px;
         gap: 6px;
     }
     .pack-title {
@@ -725,7 +732,7 @@
     }
 
     .productos-categoria-container {
-        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
     }
 
     .producto {
@@ -742,8 +749,8 @@
     }
 
     .nombre {
-        font-size: 12px;
-        max-height: 30px;
+        font-size: 15px;
+        max-height: 50px;
     }
 
     .precio {
@@ -761,8 +768,126 @@
     }
 
     .btn-carrito {
-        font-size: 9px;
+        font-size: 15px;
         padding: 3px 6px;
+    }
+
+    /* ===== RESPONSIVE: PACKS GRID - MOBILE ===== */
+    .packs-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+        padding: 0 0.8rem;
+        margin: 0;
+    }
+
+    .pack-card {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .pack-image-container {
+        height: 130px;
+        margin-bottom: 8px;
+    }
+
+    .pack-title {
+        font-size: 13px;
+        height: auto;
+        min-height: 32px;
+        /* limitar a dos líneas en móvil */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+    .pack-description {
+        font-size: 11px;
+        margin: 3px 0 6px 0;
+        /* también restringimos descripción a dos líneas */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+
+
+    .pack-badge {
+        font-size: 9px;
+        padding: 2px 5px;
+    }
+
+    .pack-contents {
+        display: block;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .pack-contents-title {
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+
+    .pack-contents-list li {
+        font-size: 10px;
+        padding: 2px 0;
+    }
+
+    .pack-price-container {
+        padding-top: 6px;
+    }
+
+    .pack-current-price {
+        font-size: 15px;
+    }
+
+    .pack-original-price {
+        font-size: 10px;
+    }
+
+    .pack-discount-percent {
+        font-size: 9px;
+        padding: 1px 4px;
+    }
+
+    .add-pack-to-cart {
+        padding: 6px 10px;
+        font-size: 11px;
+        border-radius: 16px;
+    }
+
+    .packs-title {
+        font-size: 1.3rem;
+        margin: 0.8rem 0 0.6rem;
+        padding: 0 0.8rem;
+    }
+
+    .category-card-body {
+        padding: 0.8rem;
+    }
+
+    .category-card-footer {
+        padding: 0.8rem;
+    }
+
+    .btn-volver {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .category-card-body {
+        padding: 0.5rem;
+    }
+
+    .category-card-footer {
+        padding: 0.8rem;
+    }
+
+    .btn-volver {
+        padding: 6px 12px;
+        font-size: 12px;
+        gap: 6px;
     }
 }
 
@@ -777,8 +902,8 @@
     }
 }
 
-/* Ajustes para pantallas hasta 1024px */
-@media (max-width: 1024px) {
+/* Ajustes para pantallas entre 481px y 1024px (excluye móviles muy pequeños) */
+@media (max-width: 1024px) and (min-width: 481px) {
     .mas-vendidos-container {
         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
         gap: 12px;
@@ -814,5 +939,92 @@
     .btn-carrito {
         font-size: 12px;
         padding: 8px 10px;
+    }
+
+    /* ===== RESPONSIVE: PACKS GRID TABLET ===== (applies only >480px)
+       los móviles pequeños tienen su regla específica más abajo */
+    .packs-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .pack-card {
+        padding: 10px;
+    }
+
+    .pack-image-container {
+        height: 140px;
+        margin-bottom: 8px;
+    }
+
+    .pack-title {
+        font-size: 13px;
+        height: auto;
+        min-height: 34px;
+    }
+    .pack-description {
+        font-size: 11px;
+        margin: 3px 0 6px 0;
+    }
+
+    .pack-badge {
+        font-size: 9px;
+        padding: 2px 5px;
+    }
+
+    .pack-contents {
+        padding: 8px;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .pack-contents-title {
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+
+    .pack-contents-list li {
+        font-size: 10px;
+        padding: 2px 0;
+    }
+
+    .pack-price-container {
+        padding-top: 8px;
+    }
+
+    .pack-current-price {
+        font-size: 17px;
+    }
+
+    .add-pack-to-cart {
+        padding: 6px 10px;
+        font-size: 12px;
+        border-radius: 16px;
+    }
+
+    .packs-title {
+        font-size: 1.4rem;
+        margin: 1rem 0 0.75rem;
+    }
+
+    .category-card-body {
+        padding: 1rem;
+    }
+
+    .category-card-footer {
+        padding: 1rem;
+    }
+
+    .btn-volver {
+        padding: 7px 14px;
+        font-size: 13px;
+    }
+}
+
+/* refuerzo final: columna doble en móviles pequeños */
+@media (max-width: 480px) {
+    .packs-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 }
