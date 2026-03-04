@@ -571,9 +571,7 @@
 
     .search-bar input {
         flex-grow: 1;
-        height: 30px;
         border-radius: 5px;
-        font-size: 16px;
         margin-right: 5px;
         margin-left: 0;
     }

@@ -418,11 +418,9 @@ nav ul li a:hover i {
 /* Estilo base de la barra de búsqueda */
 .search-bar input {
     flex-grow: 1;
-    height: 35px;
     border-radius: 5px;
     margin-left: 0px;
     margin-right: 5px;
-    font-size: 16px;
     border: 2px solid #fff;
     background-color: #fff;
     transition: all 0.4s ease; /* Transición suave para varios efectos */
