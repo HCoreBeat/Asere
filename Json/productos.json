@@ -1828,5 +1828,29 @@
     "imagen": "img/products/caja_de_refresco_pia.jpeg",
     "nuevo": true,
     "id": "mmbwnuab-ynp33f2"
+  },
+  {
+    "nombre": "Mantequilla",
+    "categoria": "lacteos",
+    "precio": 0.77,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/mantequilla.webp",
+    "nuevo": true,
+    "id": "mmdrgbwy-op6gwh3"
+  },
+  {
+    "nombre": "Crema de Abellanas y Cacao 350g",
+    "categoria": "confituras",
+    "precio": 3.47,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/crema_de_abellanas_y_cacao_350g.jpg",
+    "nuevo": true,
+    "id": "mmdrj30h-18g5y53"
   }
 ]
