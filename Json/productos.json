@@ -1864,5 +1864,17 @@
     "imagen": "img/products/macarrones_con_queso_206g.jpeg",
     "nuevo": true,
     "id": "mmgbueo7-1j6ebwv"
+  },
+  {
+    "nombre": "Pasta para bocaditos 465ml",
+    "categoria": "aderezos",
+    "precio": 7.17,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pasta_para_bocaditos_465ml.jpg",
+    "nuevo": true,
+    "id": "mmgryv82-jd94v21"
   }
 ]
