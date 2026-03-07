@@ -1298,14 +1298,14 @@
     "id": "mliq66lf-8t6dfj1"
   },
   {
-    "nombre": "Chocolate en Polvo",
+    "nombre": "Chocolate en Polvo 400g",
     "categoria": "despensa",
     "precio": 5,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/chocolate_en_polvo.jpg",
+    "imagen": "img/products/chocolate_en_polvo_400g.jpeg",
     "nuevo": true,
     "id": "mliq9chn-qrtck39"
   },
@@ -1400,7 +1400,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/caf_molido_natural.jpeg",
     "nuevo": true,
     "id": "mlq5jmsg-5sd57k1"
@@ -1852,5 +1852,17 @@
     "imagen": "img/products/crema_de_abellanas_y_cacao_350g.jpg",
     "nuevo": true,
     "id": "mmdrj30h-18g5y53"
+  },
+  {
+    "nombre": "Macarrones con Queso 206g",
+    "categoria": "despensa",
+    "precio": 1,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/macarrones_con_queso_206g.jpeg",
+    "nuevo": true,
+    "id": "mmgbueo7-1j6ebwv"
   }
 ]
