@@ -1268,7 +1268,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/mortadella_especial_3kg.jpg",
     "nuevo": true,
     "id": "mliq32iu-1vrvppm"
