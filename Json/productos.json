@@ -909,7 +909,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/paquete_de_hgados_de_pollo.jpg",
     "nuevo": true,
     "id": "mlgzank4-1minyju"
