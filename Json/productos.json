@@ -1472,7 +1472,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/caja_de_nectar_de_mango.jpeg",
     "nuevo": true,
     "id": "mlq6kesv-91b3n41"
@@ -1692,7 +1692,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/cubeta_de_galletas_de_soda.jpg",
     "nuevo": true,
     "id": "mm2t9y8h-6vc1uoo"
