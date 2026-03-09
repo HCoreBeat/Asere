@@ -1496,7 +1496,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/pack_de_4_yogurts_de_fresa_vima.webp",
     "nuevo": true,
     "id": "mlq6qth7-16rlvzs"
