@@ -1400,7 +1400,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/caja_de_nectar_de_manzana.jpeg",
     "nuevo": true,
     "id": "mlq5zw0f-1dg1iuw"
