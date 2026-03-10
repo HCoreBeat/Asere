@@ -423,7 +423,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/Malta_Bucanero.jpg",
     "nuevo": false,
     "id": "mlgzank2-xjt0jl1"
@@ -970,11 +970,11 @@
   {
     "nombre": "Pack de 1kg de jamón bravo y 1kg de queso gouda",
     "categoria": "cárnicos",
-    "precio": 23,
+    "precio": 23.97,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/pack_de_1kg_de_jamn_bravo_y_1kg_de_queso_gouda.jpg",
     "nuevo": true,
     "id": "mlgzank4-gbgcf0r"
@@ -1315,7 +1315,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/caja_de_malta_bucanero.webp",
     "nuevo": true,
     "id": "mll8va5a-rodndwa"
