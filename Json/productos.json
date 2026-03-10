@@ -423,7 +423,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/Malta_Bucanero.jpg",
     "nuevo": false,
     "id": "mlgzank2-xjt0jl1"
@@ -1328,7 +1328,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/caja_de_malta_bucanero.webp",
     "nuevo": true,
     "id": "mll8va5a-rodndwa"
@@ -1864,5 +1864,29 @@
     "imagen": "img/products/pasta_para_bocaditos_465ml.jpg",
     "nuevo": true,
     "id": "mmgryv82-jd94v21"
+  },
+  {
+    "nombre": "Caja de Néctar Nezka (Mango)",
+    "categoria": "bebidas",
+    "precio": 27,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/caja_de_nctar_nezka_mango.jpg",
+    "nuevo": true,
+    "id": "mmkpdgy1-8tf5q11"
+  },
+  {
+    "nombre": "Caja de Néctar Nezka (Guayaba)",
+    "categoria": "bebidas",
+    "precio": 27,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/caja_de_nctar_nezka_guayaba.webp",
+    "nuevo": true,
+    "id": "mmkpeoz8-uidafd1"
   }
 ]
