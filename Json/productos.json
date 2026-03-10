@@ -744,19 +744,6 @@
     "id": "mlgzank3-12z5u5d"
   },
   {
-    "nombre": "Lomo de cerdo x Lb",
-    "categoria": "cárnicos",
-    "precio": 3.5,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/lomo_de_cerdo_x_lb.jpg",
-    "descripcion": "Corte de carne fresca. Se corta al pedido",
-    "nuevo": false,
-    "id": "mlgzank3-n58gw1u"
-  },
-  {
     "nombre": "Frijol Negro Alubia (500g)",
     "categoria": "pastas-y-granos",
     "precio": 1.73,
@@ -1352,7 +1339,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/vinagre_vima.webp",
     "nuevo": true,
     "id": "mlq7ldgn-16r63aq"
@@ -1888,5 +1875,41 @@
     "imagen": "img/products/caja_de_nctar_nezka_guayaba.webp",
     "nuevo": true,
     "id": "mmkpeoz8-uidafd1"
+  },
+  {
+    "nombre": "Queso Gouda Vima 3Kg",
+    "categoria": "lacteos",
+    "precio": 39.97,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/queso_gouda_vima_3kg.jpg",
+    "nuevo": true,
+    "id": "mml2tcre-1yodt0e"
+  },
+  {
+    "nombre": "Lomo de cerdo deshuesado x Kg",
+    "categoria": "cárnicos",
+    "precio": 7.97,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/lomo_de_cerdo_deshuesado_x_kg.jpg",
+    "nuevo": true,
+    "id": "mml2uism-1ue4vr5"
+  },
+  {
+    "nombre": "Azucar parda x Lb",
+    "categoria": "despensa",
+    "precio": 1.33,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/azucar_parda_x_lb.jpg",
+    "nuevo": true,
+    "id": "mml2p6ce-1sgn6mx"
   }
 ]
