@@ -1310,18 +1310,6 @@
     "id": "mliq9chn-qrtck39"
   },
   {
-    "nombre": "Lata de Galletas",
-    "categoria": "confituras",
-    "precio": 4,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/lata_de_galletas.jpg",
-    "nuevo": true,
-    "id": "mliqd0um-1vgejpa"
-  },
-  {
     "nombre": "Carne de Res enlatada",
     "categoria": "cárnicos",
     "precio": 2.57,
