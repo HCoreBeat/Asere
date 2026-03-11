@@ -261,14 +261,14 @@
     "id": "mlgzank2-147xys0"
   },
   {
-    "nombre": "Paquete de harina Vima",
+    "nombre": "Paquete de harina de trigo",
     "categoria": "despensa",
-    "precio": 2.17,
+    "precio": 2.29,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/paquete_de_harina_vima.jpeg",
+    "imagen": "img/products/paquete_de_harina_de_trigo.jpg",
     "nuevo": false,
     "id": "mlgzank2-1nnvd1p"
   },
@@ -1769,14 +1769,14 @@
     "id": "mmazne5w-dcfnu17"
   },
   {
-    "nombre": "Galletas de Soda Saltitacos",
+    "nombre": "Galletas de Soda Crocantinas",
     "categoria": "confituras",
     "precio": 3.47,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/galletas_de_soda_saltitacos.jpeg",
+    "imagen": "img/products/galletas_de_soda_crocantinas.jpg",
     "nuevo": true,
     "id": "mmbwriwb-evymk8m"
   },
@@ -1911,5 +1911,65 @@
     "imagen": "img/products/azucar_parda_x_lb.jpg",
     "nuevo": true,
     "id": "mml2p6ce-1sgn6mx"
+  },
+  {
+    "nombre": "Galletas Crema Cracker",
+    "categoria": "confituras",
+    "precio": 1.87,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/galletas_crema_cracker.jpg",
+    "nuevo": true,
+    "id": "mmm5vm4n-b5jpvx1"
+  },
+  {
+    "nombre": "Crema de Abellanas con Cacao",
+    "categoria": "confituras",
+    "precio": 2.87,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/crema_de_abellanas_con_cacao.jpg",
+    "nuevo": true,
+    "id": "mmm59z91-ngv7s6m"
+  },
+  {
+    "nombre": "Sorbeto Renata vainilla",
+    "categoria": "confituras",
+    "precio": 0.97,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/sorbeto_renata_vainilla.jpg",
+    "nuevo": true,
+    "id": "mmm5o0m5-1nz4r64"
+  },
+  {
+    "nombre": "Sorbeto Renata Fresa",
+    "categoria": "confituras",
+    "precio": 0.97,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/sorbeto_renata_fresa.jpg",
+    "nuevo": true,
+    "id": "mmm5owjm-1d1jm2v"
+  },
+  {
+    "nombre": "Galletas de Maisena",
+    "categoria": "confituras",
+    "precio": 1.87,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/galletas_de_maisena.jpg",
+    "nuevo": true,
+    "id": "mmm5s6g5-11xrbi7"
   }
 ]
