@@ -1971,5 +1971,17 @@
     "imagen": "img/products/galletas_de_maisena.jpg",
     "nuevo": true,
     "id": "mmm5s6g5-11xrbi7"
+  },
+  {
+    "nombre": "Hamburguesa de pollo (4u)",
+    "categoria": "cárnicos",
+    "precio": 1.29,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/hamburguesa_de_pollo_4u.jpg",
+    "nuevo": true,
+    "id": "mmnnilty-luzn711"
   }
 ]
