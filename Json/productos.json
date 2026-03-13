@@ -836,7 +836,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/pack_de_12_latas_de_nctar_de_pia.webp",
     "nuevo": true,
     "id": "mlgzank4-182v9d0"
@@ -1603,7 +1603,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/caf_la_llave.jpg",
     "nuevo": true,
     "id": "mlyhvi5g-qcrnmmf"
