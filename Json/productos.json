@@ -974,7 +974,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/pack_de_1kg_de_jamn_bravo_y_1kg_de_queso_gouda.jpg",
     "nuevo": true,
     "id": "mlgzank4-gbgcf0r"
@@ -1883,7 +1883,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/queso_gouda_vima_3kg.jpg",
     "nuevo": true,
     "id": "mml2tcre-1yodt0e"
