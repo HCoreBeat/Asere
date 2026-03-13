@@ -1727,7 +1727,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/aceitunas.jpg",
     "nuevo": true,
     "id": "mmazzije-1bccd11"
