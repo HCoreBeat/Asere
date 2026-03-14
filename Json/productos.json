@@ -82,7 +82,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/Helado.jpg",
     "descripcion": "Calidad estándar ideal para cumplir antojos",
     "nuevo": false,
