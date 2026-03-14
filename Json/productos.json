@@ -2,7 +2,7 @@
   {
     "nombre": "Carne de cerdo x Lb",
     "categoria": "cárnicos",
-    "precio": 2.65,
+    "precio": 2.9,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": true,
@@ -63,7 +63,7 @@
     "id": "mlgzank1-1eo49xr"
   },
   {
-    "nombre": "Queso criollo x Lb",
+    "nombre": "Queso blanco x Lb",
     "categoria": "lacteos",
     "precio": 2.91,
     "descuento": 0,
@@ -205,7 +205,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/leche_condensada_azucarada_390g.jpg",
     "nuevo": false,
     "id": "mlgzank2-33xzoiy"
@@ -287,7 +287,7 @@
   {
     "nombre": "Frazada de Piso",
     "categoria": "aseo",
-    "precio": 0.73,
+    "precio": 1,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -396,12 +396,13 @@
   {
     "nombre": "Cervezas Cristal (355ml)",
     "categoria": "alcohol",
-    "precio": 1.103,
-    "descuento": 10,
+    "precio": 1.15,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "imagen": "img/products/Cerveza_Cristal.jpg",
     "disponible": true,
+    "imagen": "img/products/Cerveza_Cristal.jpg",
+    "nuevo": false,
     "id": "mlgzank2-58oemeg"
   },
   {
@@ -419,7 +420,7 @@
   {
     "nombre": "Malta Bucanero",
     "categoria": "bebidas",
-    "precio": 1.15,
+    "precio": 1.19,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -519,7 +520,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/spam.webp",
     "nuevo": false,
     "id": "mlgzank3-1yyr2pc"
@@ -712,7 +713,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/azcar_extra_fina_1kg_mirante.jpg",
     "nuevo": true,
     "id": "mlgzank3-14obyzx"
@@ -744,7 +745,7 @@
     "id": "mlgzank3-12z5u5d"
   },
   {
-    "nombre": "Frijol Negro Alubia (500g)",
+    "nombre": "Frijol Negro (500g)",
     "categoria": "pastas-y-granos",
     "precio": 1.73,
     "descuento": 0,
@@ -856,7 +857,7 @@
   {
     "nombre": "Cerveza Bucanero x und.",
     "categoria": "alcohol",
-    "precio": 1.1,
+    "precio": 1.15,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -987,7 +988,7 @@
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/galletas_marias.jpg",
+    "imagen": "img/products/galletas_marias.webp",
     "descripcion": "Galletas marías, ideales para toda la familia",
     "nuevo": true,
     "id": "mlgzank4-14kue04"
@@ -1149,14 +1150,14 @@
     "id": "mlgzank4-1lfsbn9"
   },
   {
-    "nombre": "Lomito de atún 110g",
+    "nombre": "Atún en Aceite Vegetal (140g)",
     "categoria": "enlatados",
-    "precio": 2.13,
+    "precio": 1.77,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
-    "imagen": "img/products/lomito_de_atn_110g.jpg",
+    "imagen": "img/products/atn_en_aceite_vegetal_140g.webp",
     "descripcion": "El mejor atún que podrás encontrar de este lado del Misisipi",
     "nuevo": true,
     "id": "mlgzank4-1uenll5"
@@ -1207,9 +1208,9 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/azcar_parda_x_lb.jpg",
-    "nuevo": true,
+    "nuevo": false,
     "id": "mlh17sjk-1ltd9c1"
   },
   {
@@ -1219,8 +1220,8 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/paquete_de_cuartos_de_pollo_10lb.jpg",
+    "disponible": true,
+    "imagen": "img/products/paquete_de_cuartos_de_pollo_10lb.webp",
     "nuevo": true,
     "id": "mli1qt1h-m8mjr31"
   },
@@ -1455,7 +1456,7 @@
   {
     "nombre": "Jabón de Baño",
     "categoria": "aseo",
-    "precio": 0.57,
+    "precio": 0.75,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1763,7 +1764,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/caja_de_pollo_12kg_6pqts.jpg",
     "nuevo": true,
     "id": "mmazne5w-dcfnu17"
@@ -1901,18 +1902,6 @@
     "id": "mml2uism-1ue4vr5"
   },
   {
-    "nombre": "Azucar parda x Lb",
-    "categoria": "despensa",
-    "precio": 1.33,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/azucar_parda_x_lb.jpg",
-    "nuevo": true,
-    "id": "mml2p6ce-1sgn6mx"
-  },
-  {
     "nombre": "Galletas Crema Cracker",
     "categoria": "confituras",
     "precio": 1.87,
@@ -1983,5 +1972,113 @@
     "imagen": "img/products/hamburguesa_de_pollo_4u.jpg",
     "nuevo": true,
     "id": "mmnnilty-luzn711"
+  },
+  {
+    "nombre": "Café Sello Rojo",
+    "categoria": "café",
+    "precio": 9,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/caf_sello_rojo.webp",
+    "nuevo": true,
+    "id": "mmq2wkzx-c7qedfj"
+  },
+  {
+    "nombre": "Azúcar Blanca (1Kg)",
+    "categoria": "despensa",
+    "precio": 1.97,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/azcar_blanca_1kg.webp",
+    "nuevo": true,
+    "id": "mmq2bugb-i6nwxh1"
+  },
+  {
+    "nombre": "Papa x Lb",
+    "categoria": "agro",
+    "precio": 1.97,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/papa_x_lb.webp",
+    "nuevo": true,
+    "id": "mmq2d45l-1yp3xfb"
+  },
+  {
+    "nombre": "Tocino Natural de Cerdo (gordo) x Lb",
+    "categoria": "cárnicos",
+    "precio": 3.33,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/tocino_natural_de_cerdo_gordo_x_lb.webp",
+    "nuevo": true,
+    "id": "mmq2g1kv-165qg82"
+  },
+  {
+    "nombre": "Caja de cuartos de pollo 40lbs",
+    "categoria": "cárnicos",
+    "precio": 54,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/caja_de_cuartos_de_pollo_40lbs.webp",
+    "nuevo": true,
+    "id": "mmq2ifm4-1y1ya3h"
+  },
+  {
+    "nombre": "Spam de Pollo (340g)",
+    "categoria": "cárnicos",
+    "precio": 2.27,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/spam_de_pollo_340g.webp",
+    "nuevo": true,
+    "id": "mmq2k4l6-13hwunp"
+  },
+  {
+    "nombre": "Pack x 6 maltas Guajira (6x330ml)",
+    "categoria": "bebidas",
+    "precio": 5.49,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pack_x_6_maltas_guajira_6x330ml.webp",
+    "nuevo": true,
+    "id": "mmq2m3z4-16dcmut"
+  },
+  {
+    "nombre": "Spam de Res (340g)",
+    "categoria": "cárnicos",
+    "precio": 2.27,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/spam_de_res_340g.webp",
+    "nuevo": true,
+    "id": "mmq2uffm-1x68l4f"
+  },
+  {
+    "nombre": "Pack x 12 Néctar de Manzana (12x330ml)",
+    "categoria": "bebidas",
+    "precio": 13.73,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pack_x_12_nctar_de_manzana_12x330ml.webp",
+    "nuevo": true,
+    "id": "mmq2vpro-1bckqxm"
   }
 ]
