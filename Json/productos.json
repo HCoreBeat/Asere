@@ -619,7 +619,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/refresco_gaseado.jpg",
     "descripcion": "Sabor según disponibilidad del momento. Disfruta del refrescante y vibrante surtido de bebidas de Ciego Montero, una línea de refrescos con sabor tradicional que no puede faltar en tu hogar. Este pack incluye tres de sus sabores más populares, presentados en convenientes botellas de plástico, perfectas para cualquier ocasión. Encontrarás la clásica Tukola, con su inconfundible sabor a cola; una refrescante gaseosa, ideal para quienes prefieren un sabor más neutro y burbujeante; y la deliciosa Naranja, una explosión de sabor cítrico que te encantará. Cada botella está claramente identificada con su etiqueta y color característico, facilitando la elección. Ideales para acompañar tus comidas, animar tus fiestas o simplemente para saciar tu sed en cualquier momento del día. Elige el pack de refrescos Ciego Montero y disfruta de la variedad y el sabor que te ofrecen.",
     "nuevo": false,
@@ -889,7 +889,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/refresco_gaseado_1.5lts.jpg",
     "imagenesAdicionales": [
       "img/products/refresco_gaseado_1.5lts_1.jpg",
@@ -1684,7 +1684,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/paquete_de_pollo_2_kg.jpg",
     "nuevo": true,
     "id": "mmazm8vj-1b3c7jt"
