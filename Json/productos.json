@@ -1416,7 +1416,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/pack_de_4_yogurts_de_fresa_vima.webp",
     "nuevo": true,
     "id": "mlq6qth7-16rlvzs"
@@ -1636,7 +1636,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/helado_de_fresa_nestle.jpg",
     "nuevo": true,
     "id": "mm6myzyr-gp8h861"
@@ -1648,7 +1648,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/helado_de_vainilla_nestle.jpg",
     "nuevo": true,
     "id": "mm6mzrl2-1g22l2j"
@@ -2012,5 +2012,77 @@
     "imagen": "img/products/pack_x_12_nctar_de_manzana_12x330ml.webp",
     "nuevo": true,
     "id": "mmq2vpro-1bckqxm"
+  },
+  {
+    "nombre": "Paquete de fresa",
+    "categoria": "despensa",
+    "precio": 3.89,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/paquete_de_fresa.jpg",
+    "nuevo": true,
+    "id": "mmxpk027-1n53odk"
+  },
+  {
+    "nombre": "Paquete de filetes de Panga",
+    "categoria": "cárnicos",
+    "precio": 3.99,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/paquete_de_filetes_de_panga.jpg",
+    "nuevo": true,
+    "id": "mmxplkci-cg7fgw9"
+  },
+  {
+    "nombre": "Paquete de anillas de Calamar",
+    "categoria": "cárnicos",
+    "precio": 8.69,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/paquete_de_anillas_de_calamar.jpg",
+    "nuevo": true,
+    "id": "mmxpp1m7-mr2qt01"
+  },
+  {
+    "nombre": "Paquete de Croquetas de Pollo",
+    "categoria": "despensa",
+    "precio": 4.39,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/paquete_de_croquetas_de_pollo.jpg",
+    "nuevo": true,
+    "id": "mmxpqsyk-14xfg8m"
+  },
+  {
+    "nombre": "Paquete de Croquetas de Bacalao",
+    "categoria": "despensa",
+    "precio": 4.39,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/paquete_de_croquetas_de_bacalao.jpg",
+    "nuevo": true,
+    "id": "mmxprxqc-wllozy1"
+  },
+  {
+    "nombre": "Paquete de papas prefritas",
+    "categoria": "despensa",
+    "precio": 4.79,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/paquete_de_papas_prefritas.jpg",
+    "nuevo": true,
+    "id": "mmxptnd5-7a8q8vx"
   }
 ]
