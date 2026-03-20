@@ -1812,11 +1812,11 @@
   {
     "nombre": "Queso Gouda Vima 3Kg",
     "categoria": "lacteos",
-    "precio": 39.97,
+    "precio": 36.99,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/queso_gouda_vima_3kg.jpg",
     "nuevo": true,
     "id": "mml2tcre-1yodt0e"
