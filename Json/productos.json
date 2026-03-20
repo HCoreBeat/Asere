@@ -721,7 +721,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/leche_entera_en_polvo_1kg.jpg",
     "nuevo": true,
     "id": "mlgzank3-1pzccww"
