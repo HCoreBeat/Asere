@@ -121,7 +121,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/nutela.jpeg",
     "nuevo": false,
     "id": "mlgzank1-14h56hk"
