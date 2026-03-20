@@ -889,13 +889,11 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/refresco_gaseado_1.5lts.jpg",
     "imagenesAdicionales": [
       "img/products/refresco_gaseado_1.5lts_1.jpg",
-      "img/products/refresco_gaseado_1.5lts_2.jpg",
-      "img/products/refresco_gaseado_1.5lts_1.jpg",
-      "img/products/refresco_gaseado_1.5lts_2.jpg"
+      "img/products/refresco_gaseado_1.5lts_1.jpg"
     ],
     "nuevo": true,
     "id": "mlgzank4-1a8sirs"
