@@ -889,7 +889,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/refresco_gaseado_1.5lts.jpg",
     "imagenesAdicionales": [
       "img/products/refresco_gaseado_1.5lts_1.jpg",
