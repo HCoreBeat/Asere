@@ -2082,5 +2082,17 @@
     "imagen": "img/products/paquete_de_papas_prefritas.jpg",
     "nuevo": true,
     "id": "mmxptnd5-7a8q8vx"
+  },
+  {
+    "nombre": "Porron de Aceite 17.5lt",
+    "categoria": "despensa",
+    "precio": 64.97,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/porron_de_aceite_17.5lt.jpg",
+    "nuevo": true,
+    "id": "mn3aj1rj-1i9d6mq"
   }
 ]
