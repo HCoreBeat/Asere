@@ -1982,7 +1982,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/pack_x_6_maltas_guajira_6x330ml.webp",
     "nuevo": true,
     "id": "mmq2m3z4-16dcmut"
