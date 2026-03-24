@@ -901,11 +901,11 @@
   {
     "nombre": "Helado nestle sabor chocolate 4.5lts",
     "categoria": "lacteos",
-    "precio": 20,
+    "precio": 22,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/helado_nestle_sabor_chocolate_4.5lts.jpg",
     "nuevo": true,
     "id": "mlgzank4-jlsho8g"
@@ -1234,7 +1234,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/chocolate_en_polvo_400g.jpeg",
     "nuevo": true,
     "id": "mliq9chn-qrtck39"
@@ -2094,5 +2094,41 @@
     "imagen": "img/products/porron_de_aceite_17.5lt.jpg",
     "nuevo": true,
     "id": "mn3aj1rj-1i9d6mq"
+  },
+  {
+    "nombre": "Cacao en Polvo 800g",
+    "categoria": "despensa",
+    "precio": 12.99,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/cacao_en_polvo_800g.webp",
+    "nuevo": true,
+    "id": "mn4ikino-19m47n4"
+  },
+  {
+    "nombre": "Maíz Dulce Vima 1Kg",
+    "categoria": "despensa",
+    "precio": 5.89,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/maz_dulce_vima_1kg.webp",
+    "nuevo": true,
+    "id": "mn4imhrd-xpal1gu"
+  },
+  {
+    "nombre": "Chocolate en polvo 350g",
+    "categoria": "despensa",
+    "precio": 7,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/chocolate_en_polvo_350g.webp",
+    "nuevo": true,
+    "id": "mn4ip333-hlfw334"
   }
 ]
