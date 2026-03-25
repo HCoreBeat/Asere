@@ -2018,7 +2018,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/paquete_de_fresa.jpg",
     "nuevo": true,
     "id": "mmxpk027-1n53odk"
