@@ -538,19 +538,6 @@
     "id": "mlgzank3-vqyyagj"
   },
   {
-    "nombre": "Agua Natural Ciego Montero 500ml",
-    "categoria": "bebidas",
-    "precio": 0.7,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/agua_natural.jpg",
-    "descripcion": "Mantén la hidratación con el paquete de agua natural, una opción saludable y conveniente para el día a día. Este pack contiene varias botellas de agua purificada, ideales para llevar contigo al trabajo, al gimnasio o en tus viajes. Con su sabor limpio y fresco, esta agua es perfecta para rehidratar el cuerpo en cualquier momento. El diseño práctico de las botellas facilita su transporte, asegurando que siempre tengas a mano la mejor fuente de hidratación para ti y tu familia.",
-    "nuevo": false,
-    "id": "mlgzank3-28o1rh1"
-  },
-  {
     "nombre": "Toallas Sanitarias Princesa (10u)",
     "categoria": "otros",
     "precio": 1.14,
@@ -624,19 +611,6 @@
     "descripcion": "Sabor según disponibilidad del momento. Disfruta del refrescante y vibrante surtido de bebidas de Ciego Montero, una línea de refrescos con sabor tradicional que no puede faltar en tu hogar. Este pack incluye tres de sus sabores más populares, presentados en convenientes botellas de plástico, perfectas para cualquier ocasión. Encontrarás la clásica Tukola, con su inconfundible sabor a cola; una refrescante gaseosa, ideal para quienes prefieren un sabor más neutro y burbujeante; y la deliciosa Naranja, una explosión de sabor cítrico que te encantará. Cada botella está claramente identificada con su etiqueta y color característico, facilitando la elección. Ideales para acompañar tus comidas, animar tus fiestas o simplemente para saciar tu sed en cualquier momento del día. Elige el pack de refrescos Ciego Montero y disfruta de la variedad y el sabor que te ofrecen.",
     "nuevo": false,
     "id": "mlgzank3-1qurynp"
-  },
-  {
-    "nombre": "Agua Natural Ciego Montero(1.5l)",
-    "categoria": "bebidas",
-    "precio": 0.99,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/agua_natural_pomo.jpg",
-    "descripcion": "Rehidrátate y refresca tu cuerpo con la pureza y el sabor natural del agua Ciego Montero. Esta agua mineral, presentada en una botella de plástico de gran capacidad con tapa de rosca blanca, es la opción ideal para mantenerte hidratado durante todo el día. Su etiqueta, con un diseño en tonos azules y verdes que evocan la naturaleza y la frescura, destaca el logo de la marca Ciego Montero y la leyenda de \"Agua mineral natural\", garantizando la calidad y la pureza de la bebida. Perfecta para llevar al trabajo, al gimnasio o para tener en casa, esta botella te ofrece la hidratación que necesitas de forma conveniente y deliciosa. Elige Ciego Montero, el agua mineral natural que te cuida y te acompaña en cada momento, brindándote la frescura y el bienestar que solo un producto de su calidad puede ofrecer.",
-    "nuevo": false,
-    "id": "mlgzank3-11bhewr"
   },
   {
     "nombre": "Paquete de íntimas 8u",
@@ -2130,5 +2104,44 @@
     "imagen": "img/products/chocolate_en_polvo_350g.webp",
     "nuevo": true,
     "id": "mn4ip333-hlfw334"
+  },
+  {
+    "nombre": "Saco de Arroz Premium 100Lb",
+    "categoria": "despensa",
+    "precio": 75,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/saco_de_arroz_premium_100lb.jpeg",
+    "nuevo": true,
+    "id": "mn7880z5-4w3o9x1"
+  },
+  {
+    "nombre": "Arroz Criolllo x Libra",
+    "categoria": "despensa",
+    "precio": 1.17,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/arroz_criolllo_x_libra.webp",
+    "nuevo": true,
+    "id": "mn77q2ru-fyc0glj"
+  },
+  {
+    "nombre": "Pack de 12 Botellas de Agua Purificada",
+    "categoria": "bebidas",
+    "precio": 10.19,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pack_de_12_botellas_de_agua_purificada.webp",
+    "imagenesAdicionales": [
+      "img/products/pack_de_12_botellas_de_agua_purificada_1.jpg"
+    ],
+    "nuevo": true,
+    "id": "mn77xr5d-xyulx13"
   }
 ]
