@@ -1288,11 +1288,11 @@
   {
     "nombre": "Café Molido Natural Vima",
     "categoria": "café",
-    "precio": 8,
+    "precio": 7.97,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/caf_molido_natural.jpeg",
     "nuevo": true,
     "id": "mlq5jmsg-5sd57k1"
@@ -1408,7 +1408,7 @@
   {
     "nombre": "Salsa Cocktail Vima",
     "categoria": "aderezos",
-    "precio": 2.67,
+    "precio": 3.37,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -2143,5 +2143,53 @@
     ],
     "nuevo": true,
     "id": "mn77xr5d-xyulx13"
+  },
+  {
+    "nombre": "Caramelos de Leche 50u",
+    "categoria": "confituras",
+    "precio": 4.37,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/caramelos_de_leche_50u.jpg",
+    "nuevo": true,
+    "id": "mn7mmrfk-19rl3s5"
+  },
+  {
+    "nombre": "Pasta dental 100g",
+    "categoria": "aseo",
+    "precio": 1.29,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pasta_dental_100g.jpg",
+    "nuevo": true,
+    "id": "mn7mnt65-6h0qe9w"
+  },
+  {
+    "nombre": "Mayonesa Vima 450ml",
+    "categoria": "aderezos",
+    "precio": 4.57,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/mayonesa_vima_450ml.jpg",
+    "nuevo": true,
+    "id": "mn7miy5q-1yskdi7"
+  },
+  {
+    "nombre": "Harina Vima 1Kg",
+    "categoria": "despensa",
+    "precio": 2.57,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/harina_vima_1kg.jpg",
+    "nuevo": true,
+    "id": "mn7mkh9e-mt5qc61"
   }
 ]
