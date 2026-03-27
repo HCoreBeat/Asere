@@ -575,19 +575,6 @@
     "id": "mlgzank3-1lp3kzf"
   },
   {
-    "nombre": "Galletas Renata",
-    "categoria": "confituras",
-    "precio": 0.95,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/galletas_renata.jpg",
-    "descripcion": "Disfruta de la simplicidad y el sabor clásico de las galletas de maicena Renata. Este paquete, con un peso neto de 200 gramos, presenta un diseño atractivo y funcional, en tonos de azul y naranja, que destaca el nombre de la marca. Las galletas, con su textura delicada y un toque dulce, son ideales para acompañar tu café o té por la mañana, o para disfrutar como una merienda ligera en cualquier momento. En la etiqueta se puede apreciar una imagen de las galletas y una taza de café, sugiriendo la combinación perfecta. El empaque también destaca que el producto contiene maíz, un ingrediente clave que le da su sabor y textura distintivos. Las galletas Renata Maizena son un deleite que te transportará a los sabores de la infancia.",
-    "nuevo": false,
-    "id": "mlgzank3-sl98cib"
-  },
-  {
     "nombre": "Malta Unlaguer x unidad 330ml",
     "categoria": "bebidas",
     "precio": 1.1,
@@ -1828,30 +1815,6 @@
     "imagen": "img/products/crema_de_abellanas_con_cacao.jpg",
     "nuevo": true,
     "id": "mmm59z91-ngv7s6m"
-  },
-  {
-    "nombre": "Sorbeto Renata vainilla",
-    "categoria": "confituras",
-    "precio": 0.97,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/sorbeto_renata_vainilla.jpg",
-    "nuevo": true,
-    "id": "mmm5o0m5-1nz4r64"
-  },
-  {
-    "nombre": "Sorbeto Renata Fresa",
-    "categoria": "confituras",
-    "precio": 0.97,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/sorbeto_renata_fresa.jpg",
-    "nuevo": true,
-    "id": "mmm5owjm-1d1jm2v"
   },
   {
     "nombre": "Galletas de Maisena",
