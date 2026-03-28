@@ -26,18 +26,6 @@
     "id": "mlgzank1-1s4o3vq"
   },
   {
-    "nombre": "Jamón de Primera x Lb",
-    "categoria": "cárnicos",
-    "precio": 5.04,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": false,
-    "imagen": "img/products/Jamon_de_Pierna.jpg",
-    "nuevo": false,
-    "id": "mlgzank1-yn8fz97"
-  },
-  {
     "nombre": "Chuletas de cerdo x Lb",
     "categoria": "cárnicos",
     "precio": 3.5,
@@ -74,19 +62,6 @@
     "descripcion": "Queso Criollo Fresco, Disfruta del auténtico sabor del queso criollo, un clásico en la cocina tradicional. Este queso fresco tiene una textura firme y ligeramente quebradiza, ideal para rallar, cortar en cubos o simplemente disfrutarlo como está. Su color blanco puro y su aroma suave evocan frescura y calidad artesanal. Perfecto para acompañar tus platos favoritos, ya sea como ingrediente en ensaladas, arepas o junto a frutas y miel. Este queso es una opción deliciosa y versátil para los amantes de los sabores auténticos.",
     "nuevo": false,
     "id": "mlgzank1-16w7pq2"
-  },
-  {
-    "nombre": "Helado 4Lts de 2da",
-    "categoria": "lacteos",
-    "precio": 9.8,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/Helado.jpg",
-    "descripcion": "Calidad estándar ideal para cumplir antojos",
-    "nuevo": false,
-    "id": "mlgzank1-nbhgac8"
   },
   {
     "nombre": "Manzana",
@@ -180,7 +155,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/cartn_de_huevos.jpg",
     "descripcion": "Disfruta del sabor inigualable de los verdaderos huevos de campo. Nuestros huevos provienen de gallinas criadas en libertad, al aire libre, donde pueden picotear pastos naturales, moverse sin restricciones y llevar una vida libre de estrés. Esta alimentación variada y su bienestar se traducen directamente en un producto superior: yemas de color intenso, cremosas y consistentes, y un sabor auténtico que transformará tus desayunos y recetas. Al elegir nuestros huevos frescos, no solo estás comprando un alimento rico en proteínas y nutrientes, sino que también apoyas las prácticas de bienestar animal y la agricultura sostenible. ¡Lleva a tu mesa la frescura y la calidad que solo los huevos de gallinas felices pueden ofrecer!",
     "nuevo": false,
@@ -209,18 +184,6 @@
     "imagen": "img/products/leche_condensada_azucarada_390g.jpg",
     "nuevo": false,
     "id": "mlgzank2-33xzoiy"
-  },
-  {
-    "nombre": "Sopa instantánea sabor Pollo (85g)",
-    "categoria": "despensa",
-    "precio": 0.59,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/sopa_instantnea_sabor_pollo_85g.jpeg",
-    "nuevo": false,
-    "id": "mlgzank2-airi759"
   },
   {
     "nombre": "Arroz Blanco (1Kg)",
