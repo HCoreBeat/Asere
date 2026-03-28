@@ -2154,5 +2154,53 @@
     "imagen": "img/products/harina_vima_1kg.jpg",
     "nuevo": true,
     "id": "mn7mkh9e-mt5qc61"
+  },
+  {
+    "nombre": "Refresco Instantáneo Piña colada 20lts",
+    "categoria": "bebidas",
+    "precio": 7.27,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/refresco_instantneo_pia_colada_20lts.jpg",
+    "nuevo": true,
+    "id": "mna633yq-1akkie7"
+  },
+  {
+    "nombre": "Refresco Instantáneo Piña 20lts",
+    "categoria": "bebidas",
+    "precio": 7.27,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/refresco_instantneo_pia_20lts.jpg",
+    "nuevo": true,
+    "id": "mna63lqq-1mnrmod"
+  },
+  {
+    "nombre": "Paquete de Mollejas de pollo 1kg",
+    "categoria": "cárnicos",
+    "precio": 4.97,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/paquete_de_mollejas_de_pollo_1kg.jpg",
+    "nuevo": true,
+    "id": "mna64u78-aliv17k"
+  },
+  {
+    "nombre": "Helado Nestlé Sabor fresa 4.5lts",
+    "categoria": "lacteos",
+    "precio": 22,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/helado_nestl_sabor_fresa_4.5lts.jpg",
+    "nuevo": true,
+    "id": "mna5knx0-b76b8k1"
   }
 ]
