@@ -333,19 +333,6 @@
     "id": "mlgzank2-rixdtgx"
   },
   {
-    "nombre": "Limón x Lb",
-    "categoria": "agro",
-    "precio": 2.31,
-    "descuento": 35.1,
-    "oferta": false,
-    "mas_vendido": true,
-    "disponible": true,
-    "imagen": "img/products/Limon.jpg",
-    "descripcion": "Limón jugoso natural",
-    "nuevo": false,
-    "id": "mlgzank2-8bw1f7k"
-  },
-  {
     "nombre": "Plátano macho x unidad",
     "categoria": "agro",
     "precio": 0.31,
@@ -808,18 +795,6 @@
     "id": "mlgzank4-1minyju"
   },
   {
-    "nombre": "Pollo asado",
-    "categoria": "cárnicos",
-    "precio": 8,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/pollo_asado.jpg",
-    "nuevo": true,
-    "id": "mlgzank4-1e6t11s"
-  },
-  {
     "nombre": "Frijoles pintos x lb",
     "categoria": "pastas-y-granos",
     "precio": 1.47,
@@ -1040,19 +1015,6 @@
     "id": "mlgzank4-1wkh6v7"
   },
   {
-    "nombre": "Sal 1Kg",
-    "categoria": "despensa",
-    "precio": 1.43,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/sal_1kg.jpg",
-    "descripcion": "La mejor sal y la más fina para tu cocina",
-    "nuevo": true,
-    "id": "mlgzank4-1lfsbn9"
-  },
-  {
     "nombre": "Atún en Aceite Vegetal (140g)",
     "categoria": "enlatados",
     "precio": 1.77,
@@ -1183,7 +1145,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/pack_de_comino_y_sazn.jpg",
     "nuevo": true,
     "id": "mliq66lf-8t6dfj1"
@@ -1255,7 +1217,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/troncho_de_pescado_en_tomate.jpeg",
     "nuevo": true,
     "id": "mlq5gm49-sqhi7b1"
@@ -1459,7 +1421,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/salsa_brava.jpeg",
     "nuevo": true,
     "id": "mlq73223-1ukra32"
@@ -1583,7 +1545,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/fideos_500g.jpg",
     "nuevo": true,
     "id": "mm46rkpk-1nsu79h"
@@ -1715,7 +1677,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/crema_de_abellanas_y_cacao_350g.jpg",
     "nuevo": true,
     "id": "mmdrj30h-18g5y53"
@@ -1811,7 +1773,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/crema_de_abellanas_con_cacao.jpg",
     "nuevo": true,
     "id": "mmm59z91-ngv7s6m"
