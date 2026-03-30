@@ -1676,7 +1676,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/caja_de_nctar_nezka_mango.jpg",
     "nuevo": true,
     "id": "mmkpdgy1-8tf5q11"
@@ -1688,7 +1688,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/caja_de_nctar_nezka_guayaba.webp",
     "nuevo": true,
     "id": "mmkpeoz8-uidafd1"
