@@ -2090,5 +2090,29 @@
     "imagen": "img/products/paquete_de_galletas_maras_12u_336g.webp",
     "nuevo": true,
     "id": "mnge3p1j-66tiyy1"
+  },
+  {
+    "nombre": "Galleta Choice Naranja (20g)",
+    "categoria": "confituras",
+    "precio": 0.3,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/galleta_choice_naranja_20g.webp",
+    "nuevo": true,
+    "id": "mngfu1cn-13goymj"
+  },
+  {
+    "nombre": "Galletas Saltinas 207g",
+    "categoria": "confituras",
+    "precio": 3.29,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/galletas_saltinas_207g.webp",
+    "nuevo": true,
+    "id": "mngfuky9-18lyhlo"
   }
 ]
