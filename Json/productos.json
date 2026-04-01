@@ -2151,5 +2151,17 @@
     "imagen": "img/products/leche_en_polvo_do_bon_1kg.jpg",
     "nuevo": true,
     "id": "mng1kh9h-fvr83w7"
+  },
+  {
+    "nombre": "Caja de Jugo Mixto",
+    "categoria": "bebidas",
+    "precio": 27,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/caja_de_jugo_mixto.jpg",
+    "nuevo": true,
+    "id": "mng8pk26-1w0fg2r"
   }
 ]
