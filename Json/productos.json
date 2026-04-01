@@ -997,7 +997,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/saco_de_arroz_25kg.jpg",
     "descripcion": "Saco de Arroz de muy buena calidad de 25kg . aproximadamente entre las 54 - 55 libras",
     "nuevo": true,
