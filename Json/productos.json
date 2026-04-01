@@ -2127,5 +2127,29 @@
     "imagen": "img/products/helado_nestl_sabor_fresa_4.5lts.jpg",
     "nuevo": true,
     "id": "mna5knx0-b76b8k1"
+  },
+  {
+    "nombre": "Jamón Bravo 2Kg",
+    "categoria": "cárnicos",
+    "precio": 22.5,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/jamn_bravo_2kg.webp",
+    "nuevo": true,
+    "id": "mng1iq5n-x7v07w1"
+  },
+  {
+    "nombre": "Leche en polvo Do Bon 1Kg",
+    "categoria": "lacteos",
+    "precio": 10,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/leche_en_polvo_do_bon_1kg.jpg",
+    "nuevo": true,
+    "id": "mng1kh9h-fvr83w7"
   }
 ]
