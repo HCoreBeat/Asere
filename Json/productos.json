@@ -392,18 +392,6 @@
     "id": "mlgzank2-10xda28"
   },
   {
-    "nombre": "Galletas de soda Salricas 3 tacos",
-    "categoria": "confituras",
-    "precio": 1.81,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/Galleta_de_Soda_Salricas.jpg",
-    "nuevo": false,
-    "id": "mlgzank2-1476a5b"
-  },
-  {
     "nombre": "Vinagre de vino tinto (500ml)",
     "categoria": "despensa",
     "precio": 2.29,
@@ -511,18 +499,6 @@
     "imagen": "img/products/pasta_de_bocadito.jpg",
     "nuevo": false,
     "id": "mlgzank3-1g0rdoq"
-  },
-  {
-    "nombre": "Paquete de galletats Lamore",
-    "categoria": "confituras",
-    "precio": 0.97,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/pack_golozetas_12u_de_paquetes.webp",
-    "nuevo": false,
-    "id": "mlgzank3-1lp3kzf"
   },
   {
     "nombre": "Malta Unlaguer x unidad 330ml",
@@ -820,19 +796,6 @@
     "imagen": "img/products/pack_de_1kg_de_jamn_bravo_y_1kg_de_queso_gouda.jpg",
     "nuevo": true,
     "id": "mlgzank4-gbgcf0r"
-  },
-  {
-    "nombre": "Galletas Marias",
-    "categoria": "confituras",
-    "precio": 1.13,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/galletas_marias.webp",
-    "descripcion": "Galletas marías, ideales para toda la familia",
-    "nuevo": true,
-    "id": "mlgzank4-14kue04"
   },
   {
     "nombre": "Lavadora Mystic (11Kg)",
@@ -1490,18 +1453,6 @@
     "id": "mm2t6w2b-89775xx"
   },
   {
-    "nombre": "Cubeta de Galletas de Soda",
-    "categoria": "confituras",
-    "precio": 11.47,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/cubeta_de_galletas_de_soda.jpg",
-    "nuevo": true,
-    "id": "mm2t9y8h-6vc1uoo"
-  },
-  {
     "nombre": "Fideos 500g",
     "categoria": "despensa",
     "precio": 1.47,
@@ -1584,18 +1535,6 @@
     "imagen": "img/products/caja_de_pollo_12kg_6pqts.jpg",
     "nuevo": true,
     "id": "mmazne5w-dcfnu17"
-  },
-  {
-    "nombre": "Galletas de Soda Crocantinas",
-    "categoria": "confituras",
-    "precio": 3.47,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/galletas_de_soda_crocantinas.jpg",
-    "nuevo": true,
-    "id": "mmbwriwb-evymk8m"
   },
   {
     "nombre": "Caja de refresco Limon",
@@ -1718,18 +1657,6 @@
     "id": "mml2uism-1ue4vr5"
   },
   {
-    "nombre": "Galletas Crema Cracker",
-    "categoria": "confituras",
-    "precio": 1.87,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/galletas_crema_cracker.jpg",
-    "nuevo": true,
-    "id": "mmm5vm4n-b5jpvx1"
-  },
-  {
     "nombre": "Crema de Abellanas con Cacao",
     "categoria": "confituras",
     "precio": 2.87,
@@ -1740,18 +1667,6 @@
     "imagen": "img/products/crema_de_abellanas_con_cacao.jpg",
     "nuevo": true,
     "id": "mmm59z91-ngv7s6m"
-  },
-  {
-    "nombre": "Galletas de Maisena",
-    "categoria": "confituras",
-    "precio": 1.87,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": true,
-    "imagen": "img/products/galletas_de_maisena.jpg",
-    "nuevo": true,
-    "id": "mmm5s6g5-11xrbi7"
   },
   {
     "nombre": "Hamburguesa de pollo (4u)",
@@ -2163,5 +2078,17 @@
     "imagen": "img/products/caja_de_jugo_mixto.jpg",
     "nuevo": true,
     "id": "mng8pk26-1w0fg2r"
+  },
+  {
+    "nombre": "Paquete de Galletas Marías 12u (336g)",
+    "categoria": "confituras",
+    "precio": 3.49,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/paquete_de_galletas_maras_12u_336g.webp",
+    "nuevo": true,
+    "id": "mnge3p1j-66tiyy1"
   }
 ]
