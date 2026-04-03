@@ -1435,7 +1435,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/pollo_entero_congelado.jpg",
     "nuevo": true,
     "id": "mm0wz21h-u01m57b"
