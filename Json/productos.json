@@ -2114,5 +2114,29 @@
     "imagen": "img/products/galletas_saltinas_207g.webp",
     "nuevo": true,
     "id": "mngfuky9-18lyhlo"
+  },
+  {
+    "nombre": "Maizena 1kg",
+    "categoria": "despensa",
+    "precio": 6.37,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/maizena_1kg.jpg",
+    "nuevo": true,
+    "id": "mniyvfrn-11e10ac"
+  },
+  {
+    "nombre": "Garbanzos 1Kg",
+    "categoria": "pastas-y-granos",
+    "precio": 4.29,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/garbanzos_1kg.jpg",
+    "nuevo": true,
+    "id": "mniywtl0-62b6089"
   }
 ]
