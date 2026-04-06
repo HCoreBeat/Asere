@@ -212,7 +212,7 @@
     "id": "mlgzank2-g6p9901"
   },
   {
-    "nombre": "Sal x Lb",
+    "nombre": "Paquete de sal (1kg)",
     "categoria": "despensa",
     "precio": 0.97,
     "descuento": 0,
@@ -224,7 +224,7 @@
     "id": "mlgzank2-147xys0"
   },
   {
-    "nombre": "Paquete de harina de trigo",
+    "nombre": "Paquete de Harina (1kg)",
     "categoria": "despensa",
     "precio": 2.29,
     "descuento": 0,
@@ -489,16 +489,16 @@
     "id": "mlgzank3-1f1x18n"
   },
   {
-    "nombre": "Salsa rosa Rayan 440g",
+    "nombre": "Salsa Rosa Rayan 440ml",
     "categoria": "aderezos",
-    "precio": 2.97,
+    "precio": 3.57,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/pasta_de_bocadito.jpg",
     "nuevo": false,
-    "id": "mlgzank3-1g0rdoq"
+    "id": "mlgzank3-w0yr57a"
   },
   {
     "nombre": "Malta Unlaguer x unidad 330ml",
@@ -548,19 +548,6 @@
     "imagen": "img/products/azcar_extra_fina_1kg_mirante.jpg",
     "nuevo": true,
     "id": "mlgzank3-14obyzx"
-  },
-  {
-    "nombre": "Café Purasangre (250g)",
-    "categoria": "café",
-    "precio": 5.17,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/caf_purasangre_250g.jpg",
-    "descripcion": "Descubre la nobleza en cada taza con el Café Purasangre Molido. Este café ha sido cuidadosamente mezclado para lograr un equilibrio de sabor y potencia inigualable, combinando un 70% de granos Robusta para cuerpo y crema, con un 30% de granos Arábica para un aroma fino y delicado. Su Tueste Natural garantiza que disfrutes del sabor puro del café sin aditivos, resaltando las mejores cualidades de esta blend única. Ideal para los verdaderos amantes del café que buscan una experiencia intensa pero armónica. Cada paquete de 250 g promete llevar a tu hogar la fuerza y el carácter que definen a un café de pura casta.",
-    "nuevo": true,
-    "id": "mlgzank3-1hqf420"
   },
   {
     "nombre": "Costillas de Cerdo x Lb",
@@ -954,19 +941,6 @@
     "id": "mlgzank4-1uenll5"
   },
   {
-    "nombre": "Saco de Arroz 25kg",
-    "categoria": "pastas-y-granos",
-    "precio": 45,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/saco_de_arroz_25kg.jpg",
-    "descripcion": "Saco de Arroz de muy buena calidad de 25kg . aproximadamente entre las 54 - 55 libras",
-    "nuevo": true,
-    "id": "mlgzank5-958qdtj"
-  },
-  {
     "nombre": "Saco de Azúcar 50kg",
     "categoria": "despensa",
     "precio": 80,
@@ -1077,18 +1051,6 @@
     "id": "mliq66lf-8t6dfj1"
   },
   {
-    "nombre": "Chocolate en Polvo 400g",
-    "categoria": "despensa",
-    "precio": 5,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/chocolate_en_polvo_400g.jpeg",
-    "nuevo": true,
-    "id": "mliq9chn-qrtck39"
-  },
-  {
     "nombre": "Carne de Res enlatada",
     "categoria": "cárnicos",
     "precio": 2.57,
@@ -1161,7 +1123,7 @@
     "id": "mlq5if2i-yv9djh1"
   },
   {
-    "nombre": "Café Molido Natural Vima",
+    "nombre": "Café Molido Natural Vima (250g)",
     "categoria": "café",
     "precio": 7.97,
     "descuento": 0,
@@ -1389,30 +1351,14 @@
     "id": "mlqxb74h-15nfelz"
   },
   {
-    "nombre": "Café la Llave",
-    "categoria": "café",
-    "precio": 10,
-    "descuento": 0,
-    "oferta": false,
-    "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/caf_la_llave.jpg",
-    "nuevo": true,
-    "id": "mlyhvi5g-qcrnmmf"
-  },
-  {
-    "nombre": "Paquete de salchichas (340g)",
+    "nombre": "Paquete de Salchichas 10u, 340g",
     "categoria": "cárnicos",
-    "precio": 1.57,
+    "precio": 1.59,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/paquete_de_salchichas_340g.webp",
-    "imagenesAdicionales": [
-      "img/products/paquete_de_salchichas_340g_1.jpg",
-      "img/products/paquete_de_salchichas_340g_1.jpg"
-    ],
+    "disponible": true,
+    "imagen": "img/products/paquete_de_salchichas_10u_340g.webp",
     "nuevo": true,
     "id": "mm0wf97i-1hvmh7i"
   },
@@ -1567,7 +1513,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/mantequilla.webp",
     "nuevo": true,
     "id": "mmdrgbwy-op6gwh3"
@@ -1897,7 +1843,7 @@
     "id": "mn4imhrd-xpal1gu"
   },
   {
-    "nombre": "Chocolate en polvo 350g",
+    "nombre": "Chocolate en Polvo Rayan (350g)",
     "categoria": "despensa",
     "precio": 7,
     "descuento": 0,
@@ -2062,7 +2008,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/leche_en_polvo_do_bon_1kg.jpg",
     "nuevo": true,
     "id": "mng1kh9h-fvr83w7"
@@ -2134,7 +2080,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/garbanzos_1kg.jpg",
     "nuevo": true,
     "id": "mniywtl0-62b6089"
