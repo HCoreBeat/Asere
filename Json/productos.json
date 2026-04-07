@@ -1033,7 +1033,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/coffe_mate_311.8g.jpg",
     "nuevo": true,
     "id": "mliq4l5b-tfq39wu"
