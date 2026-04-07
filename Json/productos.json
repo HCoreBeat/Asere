@@ -1459,7 +1459,7 @@
     "id": "mmazpvvv-10w3z76"
   },
   {
-    "nombre": "Paquete de Pollo 2 Kg",
+    "nombre": "Paquete de muslos de pollo (2Kg)",
     "categoria": "cárnicos",
     "precio": 7.27,
     "descuento": 0,
@@ -1471,13 +1471,13 @@
     "id": "mmazm8vj-1b3c7jt"
   },
   {
-    "nombre": "Caja de pollo 12kg (6pqts)",
+    "nombre": "Caja de muslos de pollo (12Kg)",
     "categoria": "cárnicos",
     "precio": 42.84,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/caja_de_pollo_12kg_6pqts.jpg",
     "nuevo": true,
     "id": "mmazne5w-dcfnu17"
