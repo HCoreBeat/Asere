@@ -2008,7 +2008,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/leche_en_polvo_do_bon_1kg.jpg",
     "nuevo": true,
     "id": "mng1kh9h-fvr83w7"
