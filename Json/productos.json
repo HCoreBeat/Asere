@@ -1549,7 +1549,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/pasta_para_bocaditos_465ml.jpg",
     "nuevo": true,
     "id": "mmgryv82-jd94v21"
@@ -1801,7 +1801,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/paquete_de_papas_prefritas.jpg",
     "nuevo": true,
     "id": "mmxptnd5-7a8q8vx"
