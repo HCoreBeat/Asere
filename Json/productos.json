@@ -2084,5 +2084,17 @@
     "imagen": "img/products/garbanzos_1kg.jpg",
     "nuevo": true,
     "id": "mniywtl0-62b6089"
+  },
+  {
+    "nombre": "Pacas de arroz 30u de 1Kg",
+    "categoria": "pastas-y-granos",
+    "precio": 48,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pacas_de_arroz_30u_de_1kg.jpg",
+    "nuevo": true,
+    "id": "mnq50bj3-1qtfbhl"
   }
 ]
