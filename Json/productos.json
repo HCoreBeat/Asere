@@ -230,7 +230,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/paquete_de_harina_de_trigo.jpg",
     "nuevo": false,
     "id": "mlgzank2-1nnvd1p"
@@ -2056,7 +2056,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/galletas_saltinas_207g.webp",
     "nuevo": true,
     "id": "mngfuky9-18lyhlo"
