@@ -1621,7 +1621,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/hamburguesa_de_pollo_4u.jpg",
     "nuevo": true,
     "id": "mmnnilty-luzn711"
