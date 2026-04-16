@@ -767,7 +767,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/helado_nestle_sabor_chocolate_4.5lts.jpg",
     "nuevo": true,
     "id": "mlgzank4-jlsho8g"
@@ -1984,7 +1984,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/helado_nestl_sabor_fresa_4.5lts.jpg",
     "nuevo": true,
     "id": "mna5knx0-b76b8k1"
