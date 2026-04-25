@@ -375,7 +375,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/Malta_Bucanero.jpg",
     "nuevo": false,
     "id": "mlgzank2-xjt0jl1"
@@ -508,10 +508,10 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/malta_guajira_x_unidad_330ml.png",
     "nuevo": false,
-    "id": "mlgzank3-1c0r3fg"
+    "id": "mlgzank3-fe92v6h"
   },
   {
     "nombre": "Refresco Gaseado",
@@ -1070,7 +1070,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/caja_de_malta_bucanero.webp",
     "nuevo": true,
     "id": "mll8va5a-rodndwa"
