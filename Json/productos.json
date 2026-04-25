@@ -1201,8 +1201,8 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/caja_de_nectar_de_mango.jpeg",
+    "disponible": true,
+    "imagen": "img/products/caja_de_nectar_de_mango.jpg",
     "nuevo": true,
     "id": "mlq6kesv-91b3n41"
   },
@@ -1737,7 +1737,7 @@
   {
     "nombre": "Paquete de fresa",
     "categoria": "despensa",
-    "precio": 3.89,
+    "precio": 3.57,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1795,9 +1795,9 @@
     "id": "mmxprxqc-wllozy1"
   },
   {
-    "nombre": "Paquete de papas prefritas",
+    "nombre": "Paquete de papas prefritas 1kg",
     "categoria": "despensa",
-    "precio": 4.79,
+    "precio": 6,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1845,7 +1845,7 @@
   {
     "nombre": "Chocolate en Polvo Rayan (350g)",
     "categoria": "despensa",
-    "precio": 7,
+    "precio": 5,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -2080,7 +2080,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
+    "disponible": true,
     "imagen": "img/products/garbanzos_1kg.jpg",
     "nuevo": true,
     "id": "mniywtl0-62b6089"
@@ -2096,5 +2096,65 @@
     "imagen": "img/products/pacas_de_arroz_30u_de_1kg.jpg",
     "nuevo": true,
     "id": "mnq50bj3-1qtfbhl"
+  },
+  {
+    "nombre": "Refesco sabor Mate 1.5lts",
+    "categoria": "bebidas",
+    "precio": 2.35,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/refesco_sabor_mate_1.5lts.jpeg",
+    "nuevo": true,
+    "id": "moe41gnc-77m3901"
+  },
+  {
+    "nombre": "Packs de 6 pomos de agua 1.5lts",
+    "categoria": "bebidas",
+    "precio": 8.67,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/packs_de_6_pomos_de_agua_1.5lts.jpeg",
+    "nuevo": true,
+    "id": "moe4b14m-34sgfi1"
+  },
+  {
+    "nombre": "Pomo de Alubias blancas 540g",
+    "categoria": "despensa",
+    "precio": 3.87,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pomo_de_alubias_blancas_540g.jpg",
+    "nuevo": true,
+    "id": "moe4pk8o-g9eg3xx"
+  },
+  {
+    "nombre": "Pomo de Garbanzos 540g",
+    "categoria": "despensa",
+    "precio": 2.57,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pomo_de_garbanzos_540g.webp",
+    "nuevo": true,
+    "id": "moe4v4df-1bgw0pm"
+  },
+  {
+    "nombre": "Paquete de Ajos pelados 1kg",
+    "categoria": "despensa",
+    "precio": 4.37,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/paquete_de_ajos_pelados_1kg.jpg",
+    "nuevo": true,
+    "id": "moe4zjto-c02qjr1"
   }
 ]
