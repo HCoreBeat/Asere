@@ -1225,7 +1225,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/pack_de_4_yogurts_de_fresa_vima.webp",
     "nuevo": true,
     "id": "mlq6qth7-16rlvzs"
@@ -1237,7 +1237,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/pack_de_4_yogurts_natural_azucarado_vima.webp",
     "nuevo": true,
     "id": "mlq6rtqp-1d37txu"
@@ -1453,7 +1453,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/croquetas_de_pollo.jpg",
     "nuevo": true,
     "id": "mmazpvvv-10w3z76"
@@ -2008,7 +2008,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/leche_en_polvo_do_bon_1kg.jpg",
     "nuevo": true,
     "id": "mng1kh9h-fvr83w7"
