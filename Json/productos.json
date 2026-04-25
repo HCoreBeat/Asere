@@ -287,12 +287,13 @@
   {
     "nombre": "Pepino x Lb",
     "categoria": "agro",
-    "precio": 0.578,
-    "descuento": 10,
+    "precio": 0.58,
+    "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
+    "disponible": false,
     "imagen": "img/products/Pepino.jpg",
-    "disponible": true,
+    "nuevo": false,
     "id": "mlgzank2-rixdtgx"
   },
   {
@@ -410,7 +411,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/pasta_de_tomate_400g.webp",
     "nuevo": false,
     "id": "mlgzank2-1wjn711"
