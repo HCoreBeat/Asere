@@ -644,7 +644,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/pack_de_12_latas_de_nctar_de_pera.jpg",
     "nuevo": true,
     "id": "mlgzank3-18immgh"
