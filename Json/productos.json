@@ -188,13 +188,12 @@
   {
     "nombre": "Arroz Blanco (1Kg)",
     "categoria": "pastas-y-granos",
-    "precio": 2.17,
+    "precio": 1.79,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
     "disponible": true,
     "imagen": "img/products/arroz_blanco_1kg.jpg",
-    "descripcion": "Este arroz blanco tipo 1 de la marca Rainha Brasil está compuesto por granos largos finos, pulidos y libres de grumos, lo que garantiza una textura uniforme y suave al cocinar. Es una opción nutritiva, ideal para acompañar diversos platos y adaptarse a recetas tradicionales como arroz con frijoles, risottos o guarniciones ligeras y saludables.",
     "nuevo": true,
     "id": "mlgzank2-psrcao1"
   },
@@ -994,7 +993,7 @@
   {
     "nombre": "Aceite 900ml",
     "categoria": "despensa",
-    "precio": 4.37,
+    "precio": 2.99,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
@@ -1796,14 +1795,14 @@
     "id": "mmxprxqc-wllozy1"
   },
   {
-    "nombre": "Paquete de papas prefritas 1kg",
+    "nombre": "Paquete de papas prefritas 2.5kg",
     "categoria": "despensa",
-    "precio": 6,
+    "precio": 7.99,
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": false,
-    "imagen": "img/products/paquete_de_papas_prefritas.jpg",
+    "disponible": true,
+    "imagen": "img/products/paquete_de_papas_prefritas_1kg.jpg",
     "nuevo": true,
     "id": "mmxptnd5-7a8q8vx"
   },
@@ -2021,7 +2020,7 @@
     "descuento": 0,
     "oferta": false,
     "mas_vendido": false,
-    "disponible": true,
+    "disponible": false,
     "imagen": "img/products/caja_de_jugo_mixto.jpg",
     "nuevo": true,
     "id": "mng8pk26-1w0fg2r"
