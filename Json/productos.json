@@ -2157,5 +2157,29 @@
     "imagen": "img/products/paquete_de_ajos_pelados_1kg.jpg",
     "nuevo": true,
     "id": "moe4zjto-c02qjr1"
+  },
+  {
+    "nombre": "Yogurt Probiótico de fresa 1.5lts",
+    "categoria": "bebidas",
+    "precio": 10,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/yogurt_probitico_de_fresa_1.5lts.jpg",
+    "nuevo": true,
+    "id": "moh4pv5i-1at7p4l"
+  },
+  {
+    "nombre": "Yogurt Probiótico de guanabana 1.5lts",
+    "categoria": "bebidas",
+    "precio": 10,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/yogurt_probitico_de_guanabana_1.5lts.webp",
+    "nuevo": true,
+    "id": "moh4s653-24w7f1m"
   }
 ]
