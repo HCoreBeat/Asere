@@ -2384,5 +2384,41 @@
     "imagen": "img/products/caja_de_27_jugos_de_mango.jpg",
     "nuevo": true,
     "id": "moi9mh1b-1kx2nhi"
+  },
+  {
+    "nombre": "Galletas Saltitacos",
+    "categoria": "confituras",
+    "precio": 5,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/galletas_saltitacos.jpg",
+    "nuevo": true,
+    "id": "mon0i35f-oxbfit6"
+  },
+  {
+    "nombre": "Detergente 400g",
+    "categoria": "aseo",
+    "precio": 1.47,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/detergente_400g.jpg",
+    "nuevo": true,
+    "id": "mon0jma2-dc0h1f1"
+  },
+  {
+    "nombre": "Servilletas",
+    "categoria": "otros",
+    "precio": 1.69,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/servilletas.jpg",
+    "nuevo": true,
+    "id": "mon0m7gc-1h93pvk"
   }
 ]
