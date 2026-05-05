@@ -2420,5 +2420,41 @@
     "imagen": "img/products/servilletas.jpg",
     "nuevo": true,
     "id": "mon0m7gc-1h93pvk"
+  },
+  {
+    "nombre": "Pomo de refresco 1.5lts",
+    "categoria": "bebidas",
+    "precio": 2.49,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/pomo_de_refresco_1.5lts.jpeg",
+    "nuevo": true,
+    "id": "mosa4esi-86hcj51"
+  },
+  {
+    "nombre": "Paquete de Salchicha 10u",
+    "categoria": "cárnicos",
+    "precio": 1.49,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/paquete_de_salchicha_10u.webp",
+    "nuevo": true,
+    "id": "mosa5t06-1w5qn4z"
+  },
+  {
+    "nombre": "Mortadella de Pollo 1kg",
+    "categoria": "cárnicos",
+    "precio": 3.79,
+    "descuento": 0,
+    "oferta": false,
+    "mas_vendido": false,
+    "disponible": true,
+    "imagen": "img/products/mortadella_de_pollo_1kg.jpg",
+    "nuevo": true,
+    "id": "mosa6e0m-12bj07q"
   }
 ]
